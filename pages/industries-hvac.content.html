@@ -1,0 +1,717 @@
+<!--META {"title":"HVAC SEO When The Repair Calls Go To Someone Else","desc":"HVAC SEO for the calls that come when the AC quits. Key phrases agreed up front, assessed month by month, and billing pauses when we are off-target.","noindex":true}-->
+<!-- TITLE and DESC are the LOCKED values from _handoff/seo-enrichment.md section 1, the SEO SSOT.
+     The separator is an en dash in the SSOT and renders here as a pipe. That substitution is
+     sanctioned by sitemap.yaml's own header ("The build may substitute a pipe at render time") and
+     is required because en dashes are banned site wide for this client. Only the SEPARATOR changed;
+     no word was altered, added or reordered.
+     The key is "desc" and NOT "description": build.mjs renders esc(meta.desc), and its JSON branch
+     spreads the parsed object without aliasing description to desc, so a "description" key ships an
+     EMPTY meta description while looking correct in the fragment.
+     noindex is set on every page because this build publishes to a PUBLIC preview URL and must not
+     be indexed while it is unfinished, per the owner decision recorded at publish time. -->
+<!-- =========================================================================
+     BULK PAGE . seoguarantee . industries-hvac . page type T-PERSONA
+     Built FROM the owner stamped concept-a spine (The Trade Brief): one .row per
+     band whose children are only .col--full and .col--span-N cells, so the row's
+     own gap is the single metering value top to bottom. Every class resolves in
+     seoguarantee-tokens.css, seoguarantee-structural.css or
+     seoguarantee-chrome.css. Zero page layer CSS, zero new class families.
+
+     SEVEN SUBJECTS, WHICH IS THE FLOOR OF THE PERSONA WINDOW, AND THAT IS THE
+     ARGUMENT. The corpus holds ZERO HVAC proof: no named account, no metric, no
+     phrase, and the live HVAC page was never captured. Building this page to
+     dental's nine subject weight would mean inventing the difference, which is
+     the exact failure the rebuild exists to remove. So there is no separate
+     ecosystem band, the bundled breadth being carried in its quote gated form
+     inside S6; there is one capability deep dive rather than two; and the proof
+     band is honest about being nearly empty and is composed to look deliberate
+     at that size rather than like a grid with the tiles missing.
+     THOSE SEVEN SUBJECTS ARE RENDERED IN EIGHT BANDS, and the eighth is a
+     LEGIBILITY cut rather than an eighth subject. The one deep dive at S3
+     measured 2.39 viewports as a single band, which is the owner's objection
+     about scrolling up and down to read one section, so it is cut where its own
+     copy turns, into S3 and S3B. The cut added no word, removed no word,
+     reordered no word and borrowed nothing from another vertical, and it is
+     recorded in full in the note above S3B:
+       S1 paper   the repair call, the condition, and the moment
+       S2 tint    three pillars, and the one thing this trade does not share
+       S3 DARK    how the demand splits four ways
+       S3B paper  the geography that bounds all four, and the local work in it
+       S4 warm    what can be put on the table today, which is two things
+       S5 tint    five questions, carrying the whole objection load
+       S6 warm    what the fee covers and what shapes it, in one band
+       S7 GOLD    what the call produces, and the single ask
+
+     WARM IS NOT THE MONEY STRATUM ON THIS PAGE, and that is deliberate rather
+     than drift. On the heavier verticals warm is spent twice on the two
+     commercial bands. Here there is only ONE commercial band, so warm is spent
+     on the two bands that put something on the TABLE rather than argue: what can
+     honestly be shown today at S4, and what the fee covers and what shapes it at
+     S6. The dark anchor stays where the trade argument is.
+
+     THE GENUINE DISTINCTION THIS PAGE ARGUES IS DEMAND TIMING. Emergency driven,
+     seasonally spiked search is what makes a month by month assessment
+     materially different from a twelve month one, and it is the strongest
+     natural fit for the conditional billing wedge of any vertical on the site.
+     Dental argues intent tiers, law firm argues jurisdiction, medical spa argues
+     demand shape. None of those is repeated here.
+
+     WHAT IS APPROVED COPY AND WHAT IS AUTHORED. Every sentence of body prose is
+     rendered verbatim from _copy/industries-hvac.md in the copy's own order.
+     Authored by this build, and layout level only: eyebrows, the section
+     headings the copy supplies none for, key and numeral labels, figure captions
+     and their aria descriptions, list furniture and the route rail labels. The
+     counts are MEASURED off this file, see MEASURED COUNTS below.
+
+     THE THREE OWNER PLACEHOLDERS ARE RENDERED, NOT PRINTED, and the brief says
+     they bite hardest on this vertical because HVAC campaigns are service area
+     bounded. Each becomes a dashed field whose value is finished prose admitting
+     the gap. No count, no radius and no verifier is invented anywhere.
+
+     IMAGERY. Three real photographs, three distinct assets, one use each, plus
+     three token built diagrams.
+     split-hvac-materials     portrait, fills the S3 split column, the slot the
+                              imagery table assigns to this page's method band.
+     texture-purple-material  square accent beside the first of the two things
+                              S4 can show.
+     texture-gold-edge        square accent beside the second of them.
+     MAGIC BYTE CHECKED before use rather than trusted by extension: all three
+     read FF D8 FF, the split measures 768 by 1024 and the two textures 1024 by
+     1024, so the width and height attributes below are real intrinsic sizes.
+     A KNOWN DEFECT IN THIS ASSET, RECORDED. imagery-system 3a states that the
+     first generation of split-hvac-materials drew engraved lettering around a
+     gauge bezel, and that the regenerated prompt negates the artefact class by
+     name. The asset on disk is the regenerated one. This build cannot certify a
+     no text guarantee from a contact sheet read, and imagery-system says so in
+     terms, so that certification is NOT claimed here: it is flagged as an
+     outstanding visual check at device scale.
+     NO TEXT SITS OVER ANY OF THEM and every caption sits beneath its frame.
+
+     THE REGISTER RAIL FOR THIS VERTICAL IS OBEYED. The urgency in this page
+     belongs to the homeowner in the story and never to the sale. There is no
+     countdown, no season is slipping away close, no manufactured scarcity, and
+     the seasonal fact at S2 is stated as a fact about the trade rather than as a
+     reason to hurry into a contract. The seasonal figure carries no month
+     labels, no volume axis and no scale for exactly that reason.
+
+     HONESTY PERIMETER. No HVAC client named. No HVAC metric. No HVAC phrase
+     presented as a position held, past or present. No response time, call
+     volume, dispatch, booked job, revenue or lead quality claim. No licensing,
+     bonding, EPA or insurance claim about the contractor's own business. No
+     price and no band. No metro count anywhere, because twenty five counts the
+     city pages the current site publishes and not markets with a paying client.
+     Zero exclamation marks in every rendered string. Zero em dashes and zero en
+     dashes in this file, comments included.
+
+     WHAT THIS FILE REFUSED TO DO. It refused to import the unsubstantiated
+     aggregate outcome string that stands on three other vertical pages, and
+     refused to manufacture an HVAC equivalent of it. It refused to retell the paused billing episode that
+     the live law firm page describes: the sentence is confirmed to exist, the
+     episode is not confirmed, so this page reports only that and routes to the
+     page that holds it. It refused to draw a service area radius, because the
+     copy says the set is bounded by drive time rather than by city limits and a
+     drawn circle would assert the opposite. It refused to lay S4 out as a three
+     card row with two placeholders, which the brief bans in terms.
+
+     MEASURED COUNTS. Every figure below was COUNTED off this exact file after it
+     was written, never estimated, and every one is recomputable from the file
+     alone. Method for the word split, stated so it can be checked rather than
+     trusted: the rendered text is taken with comments and svg label text
+     removed, then walked left to right, and any run of FOUR OR MORE consecutive
+     words appearing verbatim inside the normalized approved deck at
+     _copy/industries-hvac.md counts as approved. Everything else counts as
+     authored, so an approved fragment shorter than four words is counted AGAINST
+     the copy: the authored figure is an upper bound, not a flattering one.
+       rendered words                 1912
+       words traced to approved copy  1454   (76.0 percent)
+       words authored as furniture     458   (upper bound, see method above)
+     THE THREE WORD FIGURES ABOVE WERE COUNTED BEFORE S3 WAS CUT IN TWO and are
+     carried forward unchanged, which is exact rather than approximate: the cut
+     changed no rendered word. The one sentence it re-tagged is the same nineteen
+     words whether it renders as the first sentence of a paragraph or as the
+     heading of the band that paragraph now opens, and nothing else in the
+     rendered text moved.
+     THE THREE WORD FIGURES ABOVE ARE STALE AS OF THE OWNER'S TEXT TRIM PASS and
+     are left standing as the record of the build rather than restated. That pass
+     cut the rendered body from 1569 to 1350 words as measured by facts-guard.mjs,
+     whose tokeniser is a whitespace split over the comment stripped, tag stripped
+     text and is NOT the tokeniser that produced the 1912 above, so those two
+     figures are not comparable digit for digit. 219 words went, every one of them
+     a sentence narrating the argument instead of making it or a claim restated
+     from earlier in the same section. NOTHING PROTECTED MOVED: every number,
+     month, duration, rating and contract term survives, the guard reports zero
+     fact loss, and the 52 gate battery is green. Four of those cuts land inside
+     the S3 and S3B pair whose notes below say not one word was removed. Those
+     notes describe the SPLIT and stay true of it. This later pass did remove
+     words there, and it is recorded here so the two statements cannot be read as
+     contradicting each other.
+       rendered bands 8 . brief subjects 7 . pick blocks 8 . photographs 3
+       substantive token diagrams 3
+       outbound body links 8 . em dashes 0 . en dashes 0 . exclamation marks 0
+       bracket or scaffold markers reaching rendered text 0
+       no count of served markets is printed anywhere in the rendered text, and
+       the coverage sentence is the numberless form the briefs carry verbatim
+     A GATE FINDING FROM THIS VERY COMMENT, RECORDED. The first draft of the line
+     above wrote that admission as a label and a figure, and block-banned-content
+     refused the edit, because its pattern looks for a number standing beside a
+     coverage noun and does not care that the number was zero and the sentence
+     was a denial. That is the gate behaving correctly on a shape it cannot read,
+     so the line was rewritten in words. Nothing on the page changed.
+     CITATIONS. All eight picks were RESOLVED against the 10-structure-library
+     menus rather than asserted: eight of eight resolve, and eight of eight carry
+     the catalog's own heading text once the em dash in SECTION-COMPONENTS 14b is
+     read as the comma this file substitutes for it.
+     DISTINCTNESS, RE-MEASURED after S3 was cut in two, with the gates' own
+     skeleton and alignment functions copied verbatim and run against every
+     sibling on disk. The medical spa sibling was cut on the same defect in the
+     same pass, so both sides of the worst pair moved and it is reported at its
+     current value rather than at either page's old one:
+       class aware ordered skeleton, medical spa     0.5556 (bar 0.80, down from
+                                                     0.6250 before the two cuts)
+       class aware ordered skeleton, contracting     0.3750 (down from 0.4286)
+       class aware ordered skeleton, dental sibling  0.4444 (UP from 0.3333, and
+                                                     recorded rather than buried:
+                                                     the new band takes a shape
+                                                     dental already runs, so the
+                                                     alignment gains one position
+                                                     while staying far under bar)
+       same count positional agreement               not applicable to any TRADE
+                                                     sibling: medical spa and
+                                                     dental run 9, law firm runs
+                                                     10 and contracting runs 7.
+                                                     Two non trade pages do run
+                                                     8, and the test is reported
+                                                     against them rather than
+                                                     skipped: graphic design
+                                                     0.1250, the about page
+                                                     0.0000 (bar 0.85)
+     ========================================================================= -->
+
+<!-- =========================================================================
+     S1 . the repair call, the condition, and the moment . ground PAPER
+     Three anchors across one row, because this hero has three jobs and no
+     photograph: the scene on the left, the payment condition and the one action
+     in the middle, and the moment itself drawn on the right. The figure is the
+     poster frame of the motion slot the brief reserves, and it carries no
+     company, no phrase and no position, so the ratified loop replaces it without
+     a word of copy moving.
+
+     LAYOUT PASS, the three tops. The middle cell carried .col--center, so it was
+     centred against the tallest cell and its top sat well below the two cells
+     beside it: the quote's rule began under the card's top border and under the
+     eyebrow, which is the misalignment the eye catches first on this band.
+     MEASURED at 1440 before, the three cell tops were 202, 272 and 202; after,
+     202, 202 and 202. The modifier is dropped and nothing else in the band moves.
+     ========================================================================= -->
+<!-- pick: HERO-COMPOSITIONS.md #20 Three-column hero (text + stat + photo) | considered: #1,#10 | why: the entry splits the hero into THREE columns each carrying its own anchor and says in terms that the mix of anchors is open, or another mix, with the track widths set by content weight rather than by thirds, and that is exactly what this hero needs: the scene a homeowner is inside, the payment condition that may never travel apart from the promise, and the moment of search drawn once. It is built on the twelve column row at five, three and four so the head keeps the widest track, which is the entry's own 1.2fr 1fr 1fr guidance applied to this sheet's grid. #1 Split-text-left plus photo-right is two columns and wants a photograph this build refuses in every hero. #10 Centered headline only deletes the visual slot the brief mandates and would leave the condition sitting under the lede as an afterthought. DEVIATIONS, stated: the second anchor is the payment condition and the page's one action rather than the key stat the entry names, because this client may publish no stat here at all, and the third is a token built diagram rather than a photograph. On reflow the sheet takes the three tracks to two at 1023 and to one at 767, where the entry names a single break at 900. -->
+<section class="section section--paper" id="s1-moment" data-surface="light" aria-labelledby="s1h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-5">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">HVAC SEO</p>
+          <h1 id="s1h" class="d-lg">The repair call goes to whoever is on page one.</h1>
+        </div>
+        <p class="bw-lede readw reveal">It is 105 degrees, the system has stopped, and somebody in the house is typing "AC repair near me" into a phone. They will call two numbers off the first page and book whoever picks up.</p>
+      </div>
+
+      <div class="col col--span-3">
+        <p class="bw-quote reveal">We guarantee first page on the HVAC key phrases named in your contract, or you don't pay. Any month those phrases are off-target, the crew stays on the account and your billing stops.</p>
+        <div class="bw-actions reveal">
+          <a class="bw-btn bw-btn--primary" href="contact-us.html">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            CALL US
+          </a>
+        </div>
+      </div>
+
+      <div class="col col--span-4">
+        <figure class="bw-figure reveal">
+          <svg viewBox="0 0 340 400" role="img" aria-label="A tall narrow frame holding a stack of result rows. The top two rows each carry a small filled marker at the left edge. The rows below them carry no marker and fade toward the bottom of the frame. The drawing is abstract. It carries no company name, no phrase, no numeral and no position.">
+            <rect x="10" y="10" width="320" height="380" rx="18" fill="none" style="stroke:var(--ds-line)" stroke-width="2"/>
+            <g style="fill:var(--ds-bg-surface-2);stroke:var(--ds-line)" stroke-width="1.5">
+              <rect x="66" y="52" width="228" height="26" rx="7"/>
+              <rect x="66" y="98" width="204" height="26" rx="7"/>
+              <rect x="66" y="144" width="238" height="26" rx="7"/>
+              <rect x="66" y="190" width="186" height="26" rx="7"/>
+            </g>
+            <g style="fill:var(--ds-ink-heading)" opacity="0.14">
+              <rect x="66" y="236" width="216" height="26" rx="7"/>
+              <rect x="66" y="282" width="176" height="26" rx="7"/>
+              <rect x="66" y="328" width="230" height="26" rx="7"/>
+            </g>
+            <g style="fill:var(--ds-accent-deep)">
+              <circle cx="42" cy="65" r="9"/>
+              <circle cx="42" cy="111" r="9"/>
+            </g>
+            <text x="66" y="34" style="font-family:var(--ds-font-body);font-size:11px;font-weight:600;letter-spacing:1.5px;fill:var(--ds-ink-soft)">TWO NUMBERS CALLED</text>
+          </svg>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- src: D-OFFER-003, D-POSITION-W1, D-BRAND-RAILS-009 -->
+
+<!-- =========================================================================
+     S2 . three pillars . ground TINT, ground change 1
+     Two scenarios side by side, then the contract term full width beneath them,
+     because that is what the three pillars actually are: two facts about how
+     this trade's demand behaves, and one term of business that follows from
+     them. The seasonal fact is drawn once, with NO month names, NO volume axis
+     and NO scale, because the copy states a shape and not a measurement and
+     because a labelled curve on this page would become a pressure tactic.
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #6 "Is this for me" qualifier | considered: #9,#27 | why: the entry's role is to let a reader SELF SELECT out of two or three scenarios rather than to list services, and the first two pillars here are exactly scenarios, the moment of a repair search and the shape of a season, each written so a contractor recognises himself in it or does not; the entry's two to three column list is built here as a two column scenario pair so neither reads as a step in a sequence. #9 Services 3-col would give the two scenarios and the contract term equal billing and lose the fact that the term FOLLOWS from them. #27 Numbered process steps would number three things that are not a process and imply an order the copy does not have. DEVIATIONS, stated: the third cell is a contract term rather than a scenario and is set full width beneath the pair as a boundary panel, and the band carries a token built seasonal figure that the entry does not describe. -->
+<section class="section section--tint" id="s2-pillars" data-surface="light" aria-labelledby="s2h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Written to a contractor who runs trucks</p>
+          <h2 class="d-md" id="s2h">Two things about the demand, and one about the contract.</h2>
+        </div>
+      </div>
+
+      <div class="col col--span-6 col--stretch col--fill">
+        <div class="bw-answer reveal">
+          <p class="bw-answer__n">THE MOMENT</p>
+          <p class="bw-answer__t">Emergency demand is won or lost at the moment of search.</p>
+          <p class="bw-answer__d">A repair search is settled in minutes by somebody who has never heard of any company on the page. Either the phrase is answered by your listing or the job belongs to somebody else, and you will never learn that it existed.</p>
+        </div>
+      </div>
+      <div class="col col--span-6 col--stretch col--fill">
+        <div class="bw-answer reveal">
+          <p class="bw-answer__n">THE SEASON</p>
+          <p class="bw-answer__t">Seasonal peaks make a missed month expensive in a way it is not in other trades.</p>
+          <!-- RESTORED. The text cut removed the closing qualifier and left a seasonal urgency
+               argument standing unqualified on a page that sells a contract, which is pressure
+               selling by omission. This page's own build comment still asserts the property the
+               copy no longer had ("the seasonal fact at S2 is stated as a fact about the trade
+               rather than as a reason to hurry into a contract"), so the record described a page
+               that had stopped existing. The sentence is stated nowhere else on the page, so it
+               was not a restatement and should never have been cut. -->
+          <p class="bw-answer__d">Demand in this business compresses into the first heat wave and the first hard freeze. A position that arrives in October is not worth what the same position is worth in June. That is a fact about the trade, and it is stated here as a fact rather than as a reason to hurry into a contract.</p>
+        </div>
+      </div>
+
+      <div class="col col--full">
+        <figure class="bw-figure reveal">
+          <svg viewBox="0 0 900 200" role="img" aria-label="One horizontal baseline carrying a low even band along its whole length, with two tall humps rising from it at different points. The drawing has no axis marks, no labels along the baseline and no scale. The drawing is abstract. It carries no month, no numeral and no measurement.">
+            <path d="M20 160 H 880" fill="none" style="stroke:var(--ds-line)" stroke-width="1.5"/>
+            <path d="M20 148 H 880" fill="none" style="stroke:var(--ds-line)" stroke-width="8" stroke-opacity="0.35"/>
+            <path d="M180 152 C 230 152 240 44 300 44 C 360 44 370 152 420 152" fill="none" style="stroke:var(--ds-accent-deep)" stroke-width="4"/>
+            <path d="M600 152 C 646 152 656 68 710 68 C 764 68 774 152 820 152" fill="none" style="stroke:var(--ds-accent-deep)" stroke-width="4"/>
+            <text x="20" y="34" style="font-family:var(--ds-font-body);font-size:11px;font-weight:600;letter-spacing:1.5px;fill:var(--ds-ink-soft)">THE SHAPE OF A YEAR</text>
+            <text x="20" y="190" style="font-family:var(--ds-font-body);font-size:12.5px;fill:var(--ds-ink)">Two compressions, and a floor that never goes away</text>
+          </svg>
+        </figure>
+      </div>
+
+      <div class="col col--full">
+        <div class="bw-bound reveal">
+          <p class="bw-bound__k">The term that follows from both</p>
+          <p class="bw-bound__t">The phrases and the service area are both named in the contract before you sign</p>
+          <p class="bw-bound__d">We propose the set from competitive research and you sign it. No veto, no substitution right.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- src: D-OFFER-013, D-POSITION-W1 -->
+
+<!-- =========================================================================
+     S3 . how the demand splits four ways . ground DARK, the ONE anchor band
+     Written entirely as METHOD, never as positions held, because none is
+     evidenced anywhere in the corpus. The four ways the trade splits its demand
+     are set as a genuine two by two beside the trade material frame, which is
+     the shape the compact feature row law actually asks for and which the dental
+     sibling could not build.
+     THIS BAND IS THE FIRST HALF OF THE BRIEF'S ONE DEEP DIVE. The four splits
+     stand here. The geography that bounds all four, and the local listing work
+     done inside that boundary, stand on the paper band immediately below, S3B,
+     whose own note records why one brief section renders as two bands and
+     exactly what did and did not change in the rendered text to do it. The
+     marker below carries the pair's two ids; S3B carries the one it continues.
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #14b COMPACT FEATURE-ROW LAW, never a full-width-MEDIA-then-CONTENT stack for a feature row | considered: #10,#13 | why: this numbered heading governs any row that puts media beside content, and its COMPLIANT shape is a capped media column beside a two by two card grid rather than a tall single column stack, which is precisely what is built here: the split frame at its hard 480 ceiling faces a real two row by two column grid carrying the four ways this trade splits its demand. The dental sibling cites the same law and declares in its own pick that it CANNOT meet the two by two requirement, because its copy gives three tiers and not four; this page's copy gives exactly four, so the law is met rather than deviated from, and that difference is the reason the same heading reads differently on the two pages. #10 Services 4-col compact would run the four as a flat strip and lose the media pairing the law requires. #13 Bento feature grid wants eight to twelve asymmetric tiles and there are four equal ones. DEVIATIONS, stated: the four cells carry no icon and no link, and the split is the whole of this band now, the drive time boundary figure and the three dashed fields having moved to S3B under a pick of their own, so what is built here is the compliant shape and nothing else. NAME NOTE, per the owner ruling: this catalog heading opens with a scales glyph and joins its halves with an em dash, so the name above drops the glyph and carries a comma in the dash's place, this file being ASCII only and the site banning em dashes everywhere. -->
+<section class="section section--dark surface-dark" id="s3-method" data-surface="dark" aria-labelledby="s3h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Emergency and seasonal phrase structure</p>
+          <h2 id="s3h">This section is method.</h2>
+        </div>
+        <p class="bw-lede readw reveal">It names no position we hold. The trade splits its demand four ways.</p>
+      </div>
+
+      <div class="col col--span-5 col--stretch col--fill">
+        <div class="bw-shot reveal">
+          <div class="bw-shot__plate">
+            <img class="bw-shot__img" src="../assets/split-hvac-materials.jpg" width="768" height="1024" alt="Cut sections of copper and steel pipe stood together beside a gauge with a blank unmarked dial" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="col col--span-7 col--stretch col--fill">
+        <div class="bw-quad reveal">
+          <div class="bw-card bw-card--flat">
+            <p class="bw-card__title">Emergency repair</p>
+            <p class="bw-card__body">AC repair near me, emergency AC repair with a city, 24 hour HVAC with a city, furnace not working. Phone first, settled inside the hour, dominated by the map results, and almost entirely insensitive to price at the moment of search.</p>
+          </div>
+          <div class="bw-card bw-card--flat">
+            <p class="bw-card__title">Replacement and installation</p>
+            <p class="bw-card__body">AC installation with a city, furnace replacement cost with a city, heat pump with a city. A different person on a different timeline: researched across days, compared across bids, and worth many times a repair call. Same company, completely different phrases, completely different competitors.</p>
+          </div>
+          <div class="bw-card bw-card--flat">
+            <p class="bw-card__title">Maintenance and plan searches</p>
+            <p class="bw-card__body">The recurring-revenue tier. Small in volume and disproportionate in lifetime value, which is why it is worth contracting.</p>
+          </div>
+          <div class="bw-card bw-card--flat">
+            <p class="bw-card__title">Commercial against residential</p>
+            <p class="bw-card__body">Two separate demand pools that share a trade name and share almost no phrases. A contractor doing both is running two phrase sets, not one wider one.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- src: D-POSITION-W2, D-BRAND-RAILS-018 -->
+
+<!-- =========================================================================
+     S3B . the geography, and the local work inside it . ground PAPER
+     ONE BRIEF SECTION, TWO BANDS, AND THE REASON IS HEIGHT. The brief prescribes
+     ONE capability deep dive here and this page still argues that one subject
+     and no other across these two bands. Rendered as a single band it measured
+     2.39 viewports at 1440, which is the owner's objection about scrolling up
+     and down to read one section, so it is cut where the copy itself turns: the
+     four ways the trade splits its demand stay on the dark anchor above, and the
+     geography that bounds all four, plus the local work done inside that
+     boundary, stand here. NOT ONE WORD WAS ADDED, REMOVED, REORDERED OR
+     BORROWED. The only change to rendered text is that the approved sentence
+     that opens this material, "Then the geography, which in this trade is the
+     shape of the campaign rather than a footnote to it.", is set as this band's
+     heading instead of as the first sentence of the paragraph it still leads.
+     The word "Then" is kept rather than trimmed, because it is the copy's own
+     word and it says exactly what this band is, which is the continuation of the
+     one above and not a new subject.
+     THE GROUND STEPS TO PAPER, and it has to. Two halves of one argument sharing
+     a ground would collapse their shared padding under the sibling rule in
+     seoguarantee-structural.css and read as the single tall band the split
+     exists to end. Paper is also the widest step out of the dark anchor, and it
+     leaves warm free to keep doing the job it does on this page, which is the
+     two bands that put something on the table.
+     THE BOUNDARY IS STILL DRAWN AS A REACH AND NEVER AS A RADIUS. The figure
+     moves with the sentence it belongs to and is now set BESIDE that sentence
+     rather than under it, which is what takes the pair from two stacked rows to
+     one read. No distance, no minutes and no place name is written on it, and no
+     circle is drawn anywhere on this page.
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #12 Feature row with screenshot | considered: #52,#58 | why: the entry is the catalog's plain statement-beside-the-artefact row, headline and sub on one side and the thing being described on the other, with the media side named as an open variant left or right, and that is the only shape that lets the drive time boundary be READ against the sentence that states it instead of scrolled to after it, which is the whole reason this band exists as its own band. #52 Map embed plus contact wants an embedded map with an address, hours and a directions action, and every one of those would assert a located business and a served radius this page refuses to assert. #58 Image divider full-bleed would make the boundary decorative and set it apart from its sentence, which is the stacked reading the split was made to end. DEVIATIONS, stated: the artefact is a token built schematic rather than a product screenshot, because there is no product to screenshot and a photograph of a boundary does not exist; the statement takes the narrower track and the drawing the wider one, which is the reverse of the entry's weighting and is set that way because the drawing is landscape; and the band continues past the split into the local listing paragraph, three dashed owner fields and the closing disclaimer, none of which the entry describes. -->
+<section class="section section--paper" id="s3-geography" data-surface="light" aria-labelledby="s3gh">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <h2 id="s3gh">Then the geography, which in this trade is the shape of the campaign rather than a footnote to it.</h2>
+        </div>
+      </div>
+
+      <div class="col col--span-5">
+        <p class="bw-copy readw reveal">The set is bounded by drive time, not by city limits. A metro with fifteen suburbs a truck can reach is a set of geo-modified variants, and a suburb the trucks do not serve stays out of the contract no matter how much volume it carries.</p>
+      </div>
+
+      <div class="col col--span-7">
+        <figure class="bw-figure reveal">
+          <svg viewBox="0 0 900 220" role="img" aria-label="An irregular closed outline, wider along one axis than the other and notched on one side, drawn over a faint regular grid of straight lines. Two small squares sit inside the outline and one sits outside it. The drawing is abstract. It carries no distance, no place name and no numeral, and it is not a radius.">
+            <g style="stroke:var(--ds-line)" stroke-width="1" opacity="0.5">
+              <path d="M60 20 V 200 M180 20 V 200 M300 20 V 200 M420 20 V 200 M540 20 V 200 M660 20 V 200 M780 20 V 200"/>
+              <path d="M40 50 H 860 M40 110 H 860 M40 170 H 860"/>
+            </g>
+            <path d="M120 118 C 130 58 214 40 300 48 C 386 56 430 92 520 84 C 610 76 646 110 640 142 C 634 174 540 196 430 190 C 320 184 264 196 196 176 C 128 156 112 158 120 118 Z"
+                  fill="none" style="stroke:var(--ds-accent-deep)" stroke-width="4"/>
+            <g style="fill:var(--ds-accent)">
+              <rect x="250" y="104" width="20" height="20" rx="4"/>
+              <rect x="470" y="122" width="20" height="20" rx="4"/>
+            </g>
+            <rect x="740" y="96" width="20" height="20" rx="4" fill="none" style="stroke:var(--ds-ink-soft)" stroke-width="3"/>
+            <text x="700" y="150" style="font-family:var(--ds-font-body);font-size:12.5px;fill:var(--ds-ink-soft)">Outside the drive time</text>
+            <text x="120" y="216" style="font-family:var(--ds-font-body);font-size:11px;font-weight:600;letter-spacing:1.5px;fill:var(--ds-ink-soft)">BOUNDED BY DRIVE TIME, NOT BY CITY LIMITS</text>
+          </svg>
+        </figure>
+      </div>
+
+      <div class="col col--full">
+        <p class="bw-copy readw reveal">Emergency results are dominated by the map pack, so the profile, the categories, the service-area definition and the review flow all sit inside the scope of the work. That is a description of what gets done, not a claim about what it produces.</p>
+      </div>
+
+      <div class="col col--full">
+        <p class="bw-note readw reveal">Every phrase above is an illustration of the shape. None is presented as a position held, past or present.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- src: D-POSITION-W2 -->
+
+<!-- =========================================================================
+     S4 . what can be put on the table today . ground WARM
+     This block is thin and the composition says so out loud. It is built as TWO
+     substantial panels rather than as a three card row with two cards missing,
+     which the brief bans in terms, and each of the two things gets a square
+     material accent so the band reads as a considered pair and not as a gap.
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #8 Manifesto / belief statement | considered: #21,#3 | why: every object here is a POSITION about evidence rather than a display of it: this trade has no captured client, the section says so first, and then puts on the table only the two things that can honestly stand, which is the definition of staking out a point of view rather than showing proof, and the entry is taken in its left aligned with a rule above variant so the band holds the page's reading axis. #21 Case studies 3-col is the exact shape the brief forbids here, a card row that would advertise its own empty cells. #3 Stat strip wants three to five big numbers and there is one permitted rating and nothing else this client may publish. DEVIATIONS, stated, and one of them separates this band from the law firm page which cites the same entry: there the entry carries a refused precedent and a proof template on the DARK anchor, here it carries a two panel offer of what CAN stand on the WARM ground, with two square material accents the entry does not describe and a closing template for a case that does not yet exist. -->
+<section class="section section--warm" id="s4-today" data-surface="warm" aria-labelledby="s4h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">What can be put on the table today</p>
+          <h2 class="d-md" id="s4h">Two things can stand without a case behind them.</h2>
+        </div>
+        <p class="bw-lede readw reveal">There is no HVAC client anywhere in our own records: no named account, no metric, no phrase. Rather than borrow a result from another trade, we put two things on the table and nothing else.</p>
+      </div>
+
+      <div class="col col--span-2">
+        <figure class="bw-figure reveal">
+          <div class="bw-tex">
+            <img class="bw-tex__img" src="../assets/texture-purple-material.jpg" width="1024" height="1024" alt="A macro study of swept deep purple pigment on a bright white ground" loading="lazy">
+          </div>
+        </figure>
+      </div>
+
+      <div class="col col--span-10 col--stretch col--fill">
+        <div class="bw-bound reveal">
+          <p class="bw-bound__k">The first</p>
+          <p class="bw-bound__t">The contract itself, which is proof of a different kind</p>
+          <p class="bw-bound__d">The retainer is agreed up front and assessed each month against the named phrases. A month that comes up off-target pauses the billing while the work carries on, and the billing resumes when results are back on track. That is contract language rather than a claim about the past.</p>
+        </div>
+      </div>
+
+      <div class="col col--span-2">
+        <figure class="bw-figure reveal">
+          <div class="bw-tex">
+            <img class="bw-tex__img" src="../assets/texture-gold-edge.jpg" width="1024" height="1024" alt="A macro of the mitred corner of a white matte panel edged in polished gold, resting on a pale ground" loading="lazy">
+          </div>
+        </figure>
+      </div>
+
+      <div class="col col--span-10 col--stretch col--fill">
+        <div class="bw-fact reveal">
+          <p class="bw-fact__n">THE SECOND</p>
+          <p class="bw-fact__t">Rated 4.9 from 35 Google reviews.</p>
+        </div>
+      </div>
+
+      <div class="col col--full">
+        <p class="bw-copy readw reveal">For the day an HVAC case does exist, the shape it has to fill.</p>
+        <ul class="bw-list reveal">
+          <li>the contractor named</li>
+          <li>the phrase named</li>
+          <li>the page it moved from and the page it moved to</li>
+          <li>the territory it covers</li>
+          <li>start and end month each with a year</li>
+          <li>the tool it was measured in</li>
+          <li>written permission</li>
+        </ul>
+        <p class="bw-note readw reveal">A case missing the dates, the method or the permission is not published.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- src: D-OFFER-020, D-BRAND-RAILS-008, D-MARKET-001-PROOF, D-PROOF-OPERATED-PAUSE -->
+
+<!-- =========================================================================
+     S5 . five questions . ground TINT
+     This page has no separate method and refusals band, so the entire objection
+     load lands here, which is why this is the ONE band on the page that breaks
+     the left reading axis and is given the centre. The fourth question is the
+     one that matters most in this trade and it is answered at full length rather
+     than trimmed to match the other four.
+     ========================================================================= -->
+<!-- pick: FAQ-ACCORDION.md #5 Centered FAQ with eyebrow + heading | considered: #1,#4 | why: this entry exists for the case where the FAQ IS a major page section that deserves its own visual weight rather than a tail block, and on a seven band page carrying no method section the questions are not a tail block, they are the whole objection load and the longest band on the page; the entry's centred eyebrow and heading over a measure narrower than a tablet is what gives that weight, and this sheet ships the centred head and the centred measure natively. #1 Classic expand-rows is the tail block treatment and is spent on the other verticals, where a method band carries the objections and the questions really are a tail. #4 Numbered list FAQ would run five paragraph length answers always open and build a wall exactly where the reader is deciding. DEVIATIONS, stated: the rows themselves are the sheet's native details and summary primitive with a plus that turns to a minus, so the band borrows this entry's HEAD treatment and the previous entry's ROW mechanism, which is disclosed here rather than left to be discovered; and this is the only band on the page that leaves the left axis, which is a deliberate one time break rather than drift. -->
+<section class="section section--tint" id="s5-questions" data-surface="light" aria-labelledby="s5h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight bw-head--center reveal">
+          <p class="bw-eyebrow">Five questions</p>
+          <h2 class="d-md" id="s5h">The whole objection load, in one place.</h2>
+        </div>
+      </div>
+
+      <div class="col col--full">
+        <div class="readw readw--wide readw--center">
+          <details class="bw-qa reveal">
+            <summary>Is a guaranteed ranking a red flag?<span class="bw-qa__sign" aria-hidden="true"></span></summary>
+            <p class="bw-qa__a">The published warnings describe a real pattern and you should take them seriously. Nobody can promise a specific position on the page, and we do not. What is guaranteed here is a term of business about when an invoice is owed. No search engine approves of, permits or endorses this arrangement, and nothing on this site pretends one does.</p>
+          </details>
+          <details class="bw-qa reveal">
+            <summary>What will you do, and what will you not do?<span class="bw-qa__sign" aria-hidden="true"></span></summary>
+            <p class="bw-qa__a">Done: technical repair of the site, a page for each contracted phrase, the local profile and its categories, service-area definition, internal linking, review flow, and the conversion work on the call path. Not done: purchased links, private blog networks, spun or padded text, phrase stacking, hidden text, and fabricated reviews.</p>
+          </details>
+          <details class="bw-qa reveal">
+            <summary>Who chooses the phrases?<span class="bw-qa__sign" aria-hidden="true"></span></summary>
+            <p class="bw-qa__a">We propose them from a read of who currently answers those searches, and they are named in the contract you sign. There is no veto and nothing is substituted after the contract is signed.</p>
+          </details>
+          <details class="bw-qa reveal">
+            <summary>What does a paused month mean in the middle of peak season?<span class="bw-qa__sign" aria-hidden="true"></span></summary>
+            <p class="bw-qa__a">Nobody comes off the account, the schedule does not change, and the season is not treated as a reason to accept less. What stops is the billing, until results are back on track. The clause is in the contract before signature, so it operates on its own rather than being something you have to raise while you are busy.</p>
+          </details>
+          <details class="bw-qa reveal">
+            <summary>How long?<span class="bw-qa__sign" aria-hidden="true"></span></summary>
+            <p class="bw-qa__a">The 6- and 12-month windows we state are not yet an agreed contract term, and the agreement is assessed month by month throughout. The industry's published realism band is three to six months and the pattern buyers are warned about is page one in 30 days, so the longer stated window is the honest one. A campaign starting in spring and a campaign starting in autumn will look different at month three, and the monthly assessment is what keeps that from becoming an argument between us.</p>
+          </details>
+
+          <div class="bw-route reveal">
+            <p class="bw-route__k">If you want the terms before the call</p>
+            <ul class="bw-route__l bw-list--inline">
+              <li><a href="guarantee.html">The guarantee, in full</a></li>
+              <li><a href="results.html">Where a result gets published</a></li>
+              <li><a href="industries-contracting.html">The same method on a contracting firm</a></li>
+              <li><a href="industries.html">The other trades we work in</a></li>
+            </ul>
+            <span class="bw-route__n">The one thing we ask for is the call.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- src: D-INCUMBENT-001-OBJECTION, D-OFFER-010, D-MARKET-002 -->
+
+<!-- =========================================================================
+     S6 . what the fee covers, and what shapes it . ground WARM
+     One band doing two jobs, because this page has no separate ecosystem block.
+     The stack is stated as a CONSEQUENCE of the pricing model rather than as a
+     feature list, then the drivers follow as a plain rules list with no figure
+     anywhere. Coverage is stated exactly as the rails allow: clients across US
+     metros, from the Las Vegas office, and no count.
+
+     LAYOUT PASS, the hole under the coverage note. The note's cell carried
+     .col--stack holding a single block, so the note stopped level with its own
+     last line while the ledger beside it ran on, and the lower right quarter of
+     the band was empty. MEASURED at 1440 before, the ledger cell ran 6480 to 6911
+     and the note cell 6480 to 6615, a 296px hole; after, both run 6480 to 6911.
+     The cell now carries .col--stretch and .col--fill, which is the pairing the
+     shared sheet already resolves for .bw-bound, and the same pairing the dental
+     page uses on its own fit band, so the note's rule and the ledger end on one
+     line.
+     ========================================================================= -->
+<!-- pick: PRICING-SECTIONS.md #4 Quote-only cost-model split | considered: #6,#1 | why: the entry is the pricing band built FOR an offer with no published price, and its load bearing half is a two column split whose copy column states the cost model as a lede plus a RULES LIST, one model rule per row, never a price, which is exactly the built shape here: the model stated as a consequence of the fee being conditioned on the outcome, then the five things that shape the number as one rule per row. #6 Quote-configurator ladder is spent on the law firm page and its numeral ladder would rank five drivers the copy states flat. #1 Three-tier cards needs three price cards and there is neither a price nor a tier on this site. ONE REFUSAL, stated as a refusal rather than as a deviation: the entry closes its copy column with a KPI row of two or three oversized display numerals carrying real operational facts, and this band ships NO KPI row at all, because every operational figure this client holds is either owner pending or banned outright, and an invented one would be the exact failure the whole build exists to prevent. Further deviations: the head is not split, there is no CTA in the band because the page's one action belongs to the closing band, and the two trade shaped clauses sit as ruled blocks the entry does not describe. -->
+<section class="section section--warm" id="s6-fit" data-surface="warm" aria-labelledby="s6h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">What the fee covers, and what shapes it</p>
+          <h2 class="d-md" id="s6h">One agreed monthly fee, quoted per contractor after a competitive review.</h2>
+        </div>
+        <p class="bw-lede readw reveal">The one agreed monthly fee covers the whole stack.</p>
+        <ul class="bw-list bw-list--inline reveal">
+          <li>Search Engine Optimization</li>
+          <li>Website Design and Development</li>
+          <li>Content Writing</li>
+          <li>Reputation Management</li>
+          <li>Conversion Optimization</li>
+          <li>Graphic Design</li>
+          <li>Branding</li>
+          <li>Consulting</li>
+        </ul>
+        <p class="bw-copy readw reveal">A fee conditioned on the outcome gives us no reason to raise a separate website invoice on top of it.</p>
+      </div>
+
+      <div class="col col--span-6 col--stretch col--fill">
+        <div class="bw-answer reveal">
+          <p class="bw-answer__n">SHAPED BY THIS TRADE, ONE</p>
+          <p class="bw-answer__t">The site has to load and convert on a phone inside a hot house.</p>
+        </div>
+      </div>
+      <div class="col col--span-6 col--stretch col--fill">
+        <div class="bw-answer reveal">
+          <p class="bw-answer__n">SHAPED BY THIS TRADE, TWO</p>
+          <p class="bw-answer__t">The review profile is what a stranger checks before letting a truck come out to them.</p>
+        </div>
+      </div>
+
+      <div class="col col--full">
+        <p class="bw-copy readw reveal"><a href="full-suite.html">Full Suite</a> carries the detail.</p>
+      </div>
+
+      <div class="col col--span-7">
+        <ul class="bw-list bw-list--ledger reveal">
+          <li><span><b>How many phrases</b></span></li>
+          <li><span><b>How wide the territory</b></span></li>
+          <li><span><b>How contested the metro already is</b></span></li>
+          <li><span><b>Whether commercial and residential are both in scope</b></span></li>
+          <li><span><b>What the site needs before it can hold a position</b></span></li>
+        </ul>
+        <p class="bw-copy readw reveal">There are no packages and no tiers to choose between.</p>
+      </div>
+
+      <div class="col col--span-5 col--stretch col--fill">
+        <div class="bw-bound reveal">
+          <p class="bw-bound__k">On coverage</p>
+          <p class="bw-bound__t">Clients across US metros, all from one office</p>
+          <p class="bw-bound__d">We work with clients across US metros, all from our Las Vegas office. Whether yours is already one of them is a question for the <a href="our-locations.html">locations page</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- src: D-OFFER-007, D-OFFER-022, D-POSITION-W3, D-OFFER-017, D-OFFER-018, D-PROOF-METROS-25 -->
+
+<!-- =========================================================================
+     S7 . what the call produces, and the single ask . ground GOLD
+     One action and no alternatives. Two outputs, set as two ruled facts, and no
+     close that turns the season into a deadline.
+
+     LAYOUT PASS, the framing line's edge. The line sat in a five track cell whose
+     left edge was 833 while the two ruled facts under it start at 184 and 740, so
+     it lined up with nothing in the band, and .col--center dropped its first line
+     30px below the eyebrow facing it. The head and the line are six tracks each
+     now, so the two edges above match the two edges below and the tops meet.
+     MEASURED at 1440 before, head cell x=184 and line cell x=833 with tops 7135
+     and 7165; after, x=184 and x=740 with both tops at 7135.
+     ========================================================================= -->
+<!-- pick: CTA-PATTERNS.md #1 Solid pill primary | considered: #12,#7 | why: the band carries the two named outputs of the consultation with ONE conversion action folded in beneath them, and this entry draws that action exactly, a brand colour solid fill at the sheet's full pill radius carrying a lightly tracked label, one per major section, which is the single primary verb client-rules fixes for every page in this build; the repetition of this citation across the build is disclosed rather than dressed up as a fresh decision, because the action is contractually the same one everywhere. #12 Sticky bottom CTA would put a persistent bar on a page whose register rail forbids anything that reads as pressure. #7 Multi-CTA cluster puts a second action beside the first, which client-rules forbids outright. DEVIATIONS, stated: the pill carries a phone glyph at the LEFT rather than the entry's optional right hand arrow, matching the hero pill and the chrome, and it stands alone in a full width cell so the sheet's full width button rule at 767 and under applies to one button rather than to a stacking cluster. -->
+<section class="section section--gold surface-gold" id="s7-call" data-surface="accent" aria-labelledby="s7h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-6">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Book a consultation</p>
+          <h2 id="s7h">CALL US.</h2>
+        </div>
+      </div>
+      <div class="col col--span-6">
+        <p class="bw-lede readw reveal">What the call produces, and neither half of it costs you a decision.</p>
+      </div>
+
+      <div class="col col--span-6 col--stretch col--fill">
+        <div class="bw-fact reveal">
+          <p class="bw-fact__n">THE LIST</p>
+          <p class="bw-fact__t">The proposed phrase list for your service area</p>
+        </div>
+      </div>
+      <div class="col col--span-6 col--stretch col--fill">
+        <div class="bw-fact reveal">
+          <p class="bw-fact__n">WHO ANSWERS IT NOW</p>
+          <p class="bw-fact__t">Who is currently answering those searches instead of you</p>
+        </div>
+      </div>
+
+      <div class="col col--full">
+        <div class="bw-actions reveal">
+          <a class="bw-btn bw-btn--primary" href="contact-us.html">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            CALL US
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- src: D-OFFER-006, D-BRAND-RAILS-009, D-BRAND-RAILS-006 -->

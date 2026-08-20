@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>First Page SEO Guarantee: Chrome Direction A, "The Counter"</title>
+
+<!-- ============================================================================
+     CHROME TOURNAMENT · DIRECTION A "THE COUNTER"
+     seoguarantee (First Page SEO Guarantee) · P9 chrome round, 1 of 3.
+
+     WHAT THIS IS: the site frame, and only the frame. The bands between the
+     header and the pre-footer are scaffolding whose single job is to give the
+     sticky bar something to travel over so its two states can both be judged.
+     No band below claims anything about the service.
+
+     DESIGN-SYSTEM PROVENANCE (derived, never invented):
+       menu      NAV-PATTERNS.md #3 "Right-aligned link cluster + phone pill".
+                 Chosen because the catalog scopes it to "local services where
+                 the conversion is a phone call", and client-rules.json fixes a
+                 PHONE-FIRST path with one primary verb. The phone pill IS the
+                 single CTA, so this archetype and the locked invariant are the
+                 same decision.
+       menu      FOOTER-STYLES.md #13 "Map-embedded local footer", carrying the
+                 canonical NAP, plus FOOTER-STYLES.md #21 "Pre-footer CTA
+                 section above" as the closing band.
+       menu      NAV-PATTERNS.md #9 supplies ONE borrowed move only: the
+                 category mega-tabs with icons, reused for the seven services.
+       library   _MODERN-WOW-SPEC : depth, edges, figure and ground, motion,
+                 restraint. The bar this is judged against.
+       blueprint composition-agency-creative : the sector spine and technique
+                 ceiling.
+       menus     SURFACE-PATTERNS · MOTION-PATTERNS · CTA-PATTERNS for the
+                 glass bar, the scroll transition, and the closing band.
+
+     WHERE THE PHONE PILL LIVES, AND WHY IT IS NOT INSIDE THE NAV. The archetype
+     draws it at the right end of the link cluster, so the obvious markup is to
+     put it inside the nav. That is wrong twice over: it is a CTA rather than a
+     destination, and the drawer drops CTAs by contract, so nav parity between
+     the two would break. It sits beside the nav in the bar, in both places.
+
+     THE MAP QUESTION, ANSWERED HONESTLY. FOOTER-STYLES #13 wants a map. No map
+     asset exists, and a third party embed is a network call this build will not
+     make. So the locator is a token drawn plate with a real pin and the real
+     address beside it, labelled as a locator rather than dressed up as a map
+     screenshot. Fabricating a map image would break the same rule that governs
+     every other claim on this site.
+
+     ZERO raw brand hex below this line. Every colour resolves through --ds-*.
+     ============================================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="seoguarantee-tokens.css">
+<link rel="stylesheet" href="seoguarantee-structural.css">
+
+<style>
+/* ****************************************************************************
+   DIRECTION A CHROME. Everything here is namespaced ch- so it can be lifted into
+   the locked chrome sheet without colliding with the structural object grammar.
+   **************************************************************************** */
+
+/* ---- 1. THE BAR ---------------------------------------------------------- */
+/* SURFACE-PATTERNS glass bar over a dark hero, resolving to a solid purple deck
+   on scroll. Both states are real: the transparent state is what the visitor
+   meets, the solid state is what they navigate in. */
+.ch-hdr {
+  position: sticky;
+  top: 0;
+  z-index: var(--ds-z-sticky);
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background var(--ds-dur) var(--ds-ease),
+              border-color var(--ds-dur) var(--ds-ease),
+              box-shadow var(--ds-dur) var(--ds-ease);
+}
+.ch-hdr[data-scrolled="true"] {
+  background: var(--ds-primary-deep);
+  border-bottom-color: var(--ds-glass-border);
+  box-shadow: var(--ds-shadow-card-2stop);
+}
+.ch-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-lg);
+  min-height: 78px;
+}
+.ch-hdr[data-scrolled="true"] .ch-bar { min-height: 64px; }
+
+/* the raster wordmark. The logo vector is still owed (C7 section 6), so this is
+   the white raster at its native 250 by 122, never scaled past it. */
+.ch-logo { flex: 0 0 auto; display: inline-flex; align-items: center; }
+.ch-logo img { display: block; height: 34px; width: auto; }
+
+/* NAV-PATTERNS #3: the cluster is pushed ALL the way right, never centred. */
+.ch-nav { margin-left: auto; }
+.ch-nav__list { display: flex; align-items: center; gap: var(--ds-space-md); list-style: none; margin: 0; padding: 0; }
+/* The mega panel is 940 wide and the Services item is about 90, so anchoring the
+   panel to the ITEM threw it off the left edge of the viewport and clipped the
+   first column of services. Caught in the render, not in the markup. The panel
+   is anchored to the header CONTAINER instead, which is the widest box that is
+   still aligned to the bar. The item therefore stays static on purpose. */
+.ch-hdr .container { position: relative; }
+.ch-nav__item { position: static; }
+.ch-nav__link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 2px;
+  font-family: var(--ds-font-display);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .005em;
+  line-height: 1;
+  color: var(--ds-ink-on-dark);
+  text-decoration: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+/* the active underline indicator the archetype specifies, in gold */
+.ch-nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--ds-accent);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--ds-dur) var(--ds-ease);
+}
+.ch-nav__link:hover::after,
+.ch-nav__link:focus-visible::after,
+.ch-nav__item[data-open="true"] .ch-nav__link::after { transform: scaleX(1); }
+.ch-nav__link:focus-visible { outline: 2px solid var(--ds-accent); outline-offset: 4px; border-radius: 2px; }
+.ch-caret { width: 9px; height: 9px; flex: 0 0 auto; transition: transform var(--ds-dur) var(--ds-ease); }
+.ch-nav__item[data-open="true"] .ch-caret { transform: rotate(180deg); }
+
+/* the phone pill: the ONE primary CTA on this site. client-rules.json fixes a
+   phone first path and forbids a second primary verb, so nothing else in this
+   chrome is allowed to compete with it. It is a SIBLING of the nav, never a
+   child of it, for the parity reason recorded in the header comment. */
+.ch-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 20px;
+  border-radius: var(--ds-r-pill);
+  border: 1px solid var(--ds-accent);
+  background: transparent;
+  color: var(--ds-accent);
+  font-family: var(--ds-font-display);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background var(--ds-dur) var(--ds-ease),
+              color var(--ds-dur) var(--ds-ease),
+              box-shadow var(--ds-dur) var(--ds-ease),
+              transform var(--ds-dur) var(--ds-ease);
+}
+.ch-bar > .ch-phone { margin-left: var(--ds-space-md); flex: 0 0 auto; }
+.ch-phone:hover {
+  background: var(--ds-accent);
+  color: var(--ds-primary-deep);
+  box-shadow: var(--ds-glow);
+  transform: translateY(-2px);
+}
+.ch-phone:focus-visible { outline: 2px solid var(--ds-accent); outline-offset: 3px; }
+.ch-phone__ic { width: 15px; height: 15px; flex: 0 0 auto; }
+
+/* ---- 2. THE MEGA MENU ---------------------------------------------------- */
+/* A showcase, not a link grid: a featured zone carrying real graded imagery sits
+   beside the service cards, the whole panel is glass with a layered shadow, and
+   the active card takes an accent glow. */
+.ch-mega {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: min(940px, calc(100vw - 48px));
+  z-index: var(--ds-z-overlay);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity var(--ds-dur) var(--ds-ease),
+              transform var(--ds-dur) var(--ds-ease),
+              visibility 0s linear var(--ds-dur);
+}
+.ch-nav__item[data-open="true"] .ch-mega {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+/* HOVER BRIDGE. The panel is offset from the bar, so without this there is an
+   un hoverable band between trigger and panel and the menu dies mid travel. The
+   bridge is a transparent pad that belongs to the same hover scope. */
+.ch-mega::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -14px;
+  height: 14px;
+}
+.ch-mega__panel {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.42fr) minmax(0, 1fr);
+  gap: var(--ds-space-lg);
+  padding: var(--ds-space-lg);
+  border-radius: var(--ds-r-surface);
+  border: 1px solid var(--ds-glass-border);
+  background: var(--ds-bg-surface);
+  box-shadow: var(--ds-shadow-lift), var(--ds-inset-hi);
+}
+.ch-mega__hd {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--ds-space-md);
+  padding-bottom: var(--ds-space-sm);
+  border-bottom: 1px solid var(--ds-hairline);
+}
+.ch-mega__eyebrow {
+  font-family: var(--ds-font-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ds-accent-ink);
+  margin: 0;
+}
+.ch-mega__all { font-size: 13px; color: var(--ds-primary); text-decoration: none; font-weight: 600; }
+.ch-mega__all:hover { color: var(--ds-primary-deep); }
+
+.ch-svcs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.ch-svc {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border-radius: var(--ds-r-control);
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: background var(--ds-dur-fast) var(--ds-ease),
+              border-color var(--ds-dur-fast) var(--ds-ease),
+              box-shadow var(--ds-dur-fast) var(--ds-ease),
+              transform var(--ds-dur-fast) var(--ds-ease);
+}
+.ch-svc:hover, .ch-svc:focus-visible {
+  background: var(--ds-bg-surface-2);
+  border-color: var(--ds-hairline);
+  box-shadow: var(--ds-shadow-rest), var(--ds-inset-hi);
+  transform: translateY(-2px);
+  outline: none;
+}
+.ch-svc:focus-visible { border-color: var(--ds-accent-deep); }
+/* the mark is drawn from tokens rather than pulled from the icon rasters: only
+   five of the seven services have an icon on disk, and a row of five rasters
+   plus two improvised marks would read as an accident. */
+.ch-svc__mk {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--ds-r-control);
+  background: var(--ds-primary-soft);
+  color: var(--ds-primary);
+  transition: background var(--ds-dur-fast) var(--ds-ease), color var(--ds-dur-fast) var(--ds-ease);
+}
+.ch-svc:hover .ch-svc__mk { background: var(--ds-primary); color: var(--ds-ink-on-dark); }
+.ch-svc__mk svg { width: 17px; height: 17px; display: block; }
+.ch-svc__t { display: block; font-family: var(--ds-font-display); font-size: 14.5px; font-weight: 600; color: var(--ds-ink-heading); line-height: 1.25; }
+.ch-svc__d { display: block; font-size: 12.5px; color: var(--ds-ink-soft); line-height: 1.45; margin-top: 3px; }
+
+/* the featured zone: real imagery, an eyebrow, one editorial line, one link */
+.ch-feat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--ds-r-control);
+  overflow: hidden;
+  border: 1px solid var(--ds-hairline);
+  background: var(--ds-primary-deep);
+  box-shadow: var(--ds-shadow-card), var(--ds-inset-hi);
+}
+.ch-feat__media { position: relative; aspect-ratio: 16 / 10; overflow: hidden; }
+.ch-feat__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ch-feat__scrim { position: absolute; inset: 0; background: var(--ds-scrim); }
+.ch-feat__body { padding: var(--ds-space-md); }
+.ch-feat__eyebrow {
+  font-family: var(--ds-font-display);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ds-accent-light);
+  margin: 0 0 6px;
+}
+.ch-feat__line { font-family: var(--ds-font-display); font-size: 17px; font-weight: 500; line-height: 1.3; color: var(--ds-ink-on-dark); margin: 0 0 10px; }
+.ch-feat__link { font-size: 13px; font-weight: 600; color: var(--ds-accent); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+.ch-feat__link:hover { color: var(--ds-accent-light); }
+.ch-feat__link span { transition: transform var(--ds-dur-fast) var(--ds-ease); }
+.ch-feat__link:hover span { transform: translateX(4px); }
+
+/* ---- 3. MOBILE ----------------------------------------------------------- */
+.ch-burger {
+  display: none;
+  margin-left: auto;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--ds-r-control);
+  border: 1px solid var(--ds-glass-border);
+  background: transparent;
+  color: var(--ds-ink-on-dark);
+  cursor: pointer;
+}
+.ch-burger:focus-visible { outline: 2px solid var(--ds-accent); outline-offset: 2px; }
+.ch-burger svg { width: 20px; height: 20px; }
+
+.ch-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: var(--ds-z-overlay);
+  background: var(--ds-scrim);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--ds-dur) var(--ds-ease), visibility 0s linear var(--ds-dur);
+}
+.ch-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(360px, 88vw);
+  z-index: var(--ds-z-drawer);
+  display: flex;
+  flex-direction: column;
+  background: var(--ds-primary-deep);
+  border-left: 1px solid var(--ds-glass-border);
+  box-shadow: var(--ds-shadow-lift);
+  transform: translateX(100%);
+  transition: transform var(--ds-dur-slow) var(--ds-ease);
+  overflow-y: auto;
+}
+body[data-drawer="open"] .ch-scrim { opacity: 1; visibility: visible; transition-delay: 0s; }
+body[data-drawer="open"] .ch-drawer { transform: translateX(0); }
+.ch-drawer__hd { display: flex; align-items: center; justify-content: space-between; padding: 18px 20px; border-bottom: 1px solid var(--ds-glass-border); }
+.ch-drawer__logo { height: 30px; width: auto; display: block; }
+/* 44 square, not 40: the drawer close is a real touch target and the render
+   check measures it. */
+.ch-drawer__x {
+  width: 44px; height: 44px; display: grid; place-items: center;
+  border-radius: var(--ds-r-control); border: 1px solid var(--ds-glass-border);
+  background: transparent; color: var(--ds-ink-on-dark); cursor: pointer;
+}
+.ch-drawer__x:focus-visible { outline: 2px solid var(--ds-accent); outline-offset: 2px; }
+.ch-drawer__x svg { width: 16px; height: 16px; }
+.ch-drawer__body { padding: 12px 20px 24px; }
+.ch-acc { border-bottom: 1px solid var(--ds-glass-border); }
+.ch-acc__link, .ch-acc__btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 16px 0;
+  font-family: var(--ds-font-display);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ds-ink-on-dark);
+  text-decoration: none;
+  background: none;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+}
+.ch-acc__link:focus-visible, .ch-acc__btn:focus-visible { outline: 2px solid var(--ds-accent); outline-offset: 2px; }
+.ch-acc__panel { display: none; padding-bottom: 10px; }
+.ch-acc[data-open="true"] .ch-acc__panel { display: block; }
+.ch-acc[data-open="true"] .ch-caret { transform: rotate(180deg); }
+.ch-acc__sub { display: block; padding: 10px 0 10px 14px; border-left: 2px solid var(--ds-accent-deep); font-size: 14.5px; color: var(--ds-accent-light); text-decoration: none; }
+.ch-acc__sub:hover { color: var(--ds-accent); }
+.ch-drawer__cta { margin-top: 22px; display: flex; }
+.ch-drawer__cta .ch-phone { flex: 1; justify-content: center; }
+
+/* ---- 4. SCAFFOLDING BANDS ------------------------------------------------ */
+/* Not part of the chrome. These exist so the sticky bar has something to travel
+   over, and are the only reason this file scrolls at all. */
+.ch-hero { position: relative; min-height: 560px; display: flex; align-items: center; background: var(--ds-primary-deep); overflow: hidden; }
+.ch-hero__wash { position: absolute; inset: 0; background: var(--ds-glow-wash); pointer-events: none; }
+.ch-hero__grain { position: absolute; inset: 0; background-image: var(--ds-grain); opacity: var(--ds-opacity-texture); pointer-events: none; }
+.ch-scaffold-note {
+  font-family: var(--ds-font-mono, ui-monospace, Consolas, monospace);
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ds-accent-light);
+  margin: 0 0 14px;
+}
+.ch-scaffold-note--light { color: var(--ds-accent-ink); }
+.ch-hero__h { font-family: var(--ds-font-display); font-size: clamp(31px, 4.1vw, 52px); font-weight: 500; line-height: 1.1; letter-spacing: -.02em; color: var(--ds-ink-on-dark); margin: 0 0 14px; max-width: 18ch; }
+.ch-hero__p { font-size: 16px; line-height: 1.6; color: var(--ds-accent-light); margin: 0; max-width: 52ch; }
+
+/* ---- 5. PRE FOOTER CTA (FOOTER-STYLES #21) ------------------------------- */
+/* The band carries .surface-gold, and INSIDE that scope --ds-accent is PURPLE
+   (the flip makes purple the accent on a gold ground). So painting the ground
+   with var(--ds-accent) produced a purple band, not a gold one. The ground of a
+   flipped surface is --ds-bg-surface, which the flip block sets to the gold.
+   Same trap the flip exists to prevent, sprung one level up. */
+.ch-cta {
+  position: relative;
+  background: var(--ds-bg-surface);
+  overflow: hidden;
+  padding-block: var(--ds-space-2xl);
+}
+.ch-cta__grain { position: absolute; inset: 0; background-image: var(--ds-grain); opacity: var(--ds-opacity-texture); pointer-events: none; }
+.ch-cta__eyebrow { font-family: var(--ds-font-display); font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--ds-primary-deep); margin: 0 0 12px; }
+.ch-cta__h { font-family: var(--ds-font-display); font-size: clamp(31px, 4.1vw, 52px); font-weight: 600; line-height: 1.06; letter-spacing: -.022em; color: var(--ds-primary-deep); margin: 0 0 16px; max-width: 20ch; }
+.ch-cta__sub { font-size: 15.5px; line-height: 1.6; color: var(--ds-primary-deep); opacity: .82; margin: 0 0 26px; max-width: 48ch; }
+.ch-cta__phone {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 16px 30px; border-radius: var(--ds-r-pill);
+  /* --ds-ink-on-dark is ALSO flipped to dark inside .surface-gold, so the label
+     would have been dark ink on a dark pill. --ds-accent-light is not flipped
+     and measures 13.13:1 on the deep ground. */
+  background: var(--ds-primary-deep); color: var(--ds-accent-light);
+  font-family: var(--ds-font-display); font-size: 17px; font-weight: 600; letter-spacing: .01em;
+  text-decoration: none; border: 1px solid var(--ds-primary-deep);
+  box-shadow: var(--ds-shadow-card-2stop);
+  transition: transform var(--ds-dur) var(--ds-ease), box-shadow var(--ds-dur) var(--ds-ease);
+}
+/* structural.css:457 is `.surface-gold a { color: var(--ds-accent) }`, at 0,1,1,
+   which OUTRANKS the 0,1,0 class rule above and forced this label purple on the
+   deep pill, about 2.9:1. That rule is right for a prose link on gold and wrong
+   for a filled pill that supplies its own ground, so the pill states its colour
+   at a specificity that wins. --ds-accent-light is 13.13:1 here. */
+.surface-gold .ch-cta__phone { color: var(--ds-accent-light); }
+.ch-cta__phone:hover { transform: translateY(-3px); box-shadow: var(--ds-shadow-lift); }
+.ch-cta__phone:focus-visible { outline: 2px solid var(--ds-primary-deep); outline-offset: 4px; }
+.ch-cta__ic { width: 18px; height: 18px; flex: 0 0 auto; }
+.ch-cta__risk { display: block; margin-top: 14px; font-size: 13px; color: var(--ds-primary-deep); opacity: .8; }
+
+/* ---- 6. FOOTER (FOOTER-STYLES #13) --------------------------------------- */
+.ch-ft { background: var(--ds-primary-deep); color: var(--ds-ink-on-dark); }
+.ch-ft__local { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0; }
+/* the LOCATOR. A token drawn plate, deliberately not dressed up as a map
+   screenshot, because no map asset exists and inventing one would be a claim. */
+.ch-locator {
+  position: relative;
+  min-height: 320px;
+  background-color: var(--ds-primary);
+  background-image: var(--ds-grid);
+  background-size: var(--ds-grid-size);
+  border-right: 1px solid var(--ds-glass-border);
+}
+.ch-locator__pin { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: grid; place-items: center; }
+.ch-locator__dot { width: 16px; height: 16px; border-radius: var(--ds-r-pill); background: var(--ds-accent); box-shadow: var(--ds-glow); }
+.ch-locator__ring { position: absolute; width: 54px; height: 54px; border-radius: var(--ds-r-pill); border: 1px solid var(--ds-accent); opacity: .55; }
+.ch-locator__lbl { position: absolute; left: 20px; bottom: 18px; font-family: var(--ds-font-mono, ui-monospace, Consolas, monospace); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ds-accent-light); margin: 0; }
+.ch-ftlocal { padding: var(--ds-space-xl) var(--ds-space-lg); }
+.ch-ftlocal__k { font-family: var(--ds-font-display); font-size: 10.5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--ds-accent); margin: 0 0 10px; }
+.ch-ftlocal__addr { font-style: normal; font-size: 16px; line-height: 1.7; color: var(--ds-ink-on-dark); margin: 0 0 18px; }
+.ch-ftlocal__a { color: var(--ds-accent-light); text-decoration: none; }
+.ch-ftlocal__a:hover { color: var(--ds-accent); text-decoration: underline; }
+.ch-dirs {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 11px 20px; border-radius: var(--ds-r-pill);
+  border: 1px solid var(--ds-accent); color: var(--ds-accent);
+  font-family: var(--ds-font-display); font-size: 13.5px; font-weight: 600; text-decoration: none;
+  transition: background var(--ds-dur) var(--ds-ease), color var(--ds-dur) var(--ds-ease);
+}
+.ch-dirs:hover { background: var(--ds-accent); color: var(--ds-primary-deep); }
+.ch-dirs:focus-visible { outline: 2px solid var(--ds-accent); outline-offset: 3px; }
+
+.ch-ft__links { border-top: 1px solid var(--ds-glass-border); padding-block: var(--ds-space-lg); }
+.ch-ftcol__t { font-family: var(--ds-font-display); font-size: 10.5px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--ds-accent); margin: 0 0 12px; }
+.ch-ftcol__l { list-style: none; margin: 0; padding: 0; }
+.ch-ftcol__l li + li { margin-top: 9px; }
+.ch-ftcol__l a { font-size: 14px; color: var(--ds-accent-light); text-decoration: none; }
+.ch-ftcol__l a:hover { color: var(--ds-accent); }
+.ch-ft__legal { border-top: 1px solid var(--ds-glass-border); padding-block: var(--ds-space-md); display: flex; flex-wrap: wrap; gap: 14px; align-items: center; justify-content: space-between; }
+.ch-ft__legal p, .ch-ft__legal a { font-size: 12.5px; color: var(--ds-accent-light); margin: 0; text-decoration: none; }
+.ch-ft__legal a:hover { color: var(--ds-accent); }
+
+/* ---- 7. SKIP LINK -------------------------------------------------------- */
+.ch-skip {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: var(--ds-z-toast);
+  padding: 12px 20px;
+  border-radius: var(--ds-r-control);
+  background: var(--ds-accent);
+  color: var(--ds-primary-deep);
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: top var(--ds-dur) var(--ds-ease);
+}
+.ch-skip:focus { top: 12px; }
+
+/* ---- 8. REFLOW ----------------------------------------------------------- */
+@media (max-width: 1099px) {
+  .ch-nav__list { gap: var(--ds-space-sm); }
+  .ch-nav__link { font-size: 13.5px; }
+}
+@media (max-width: 979px) {
+  .ch-nav { display: none; }
+  .ch-bar > .ch-phone { display: none; }
+  .ch-burger { display: flex; }
+  .ch-bar { min-height: 66px; }
+  .ch-ft__local { grid-template-columns: 1fr; }
+  .ch-locator { min-height: 220px; border-right: 0; border-bottom: 1px solid var(--ds-glass-border); }
+}
+@media (min-width: 980px) { .ch-scrim, .ch-drawer { display: none; } }
+@media (max-width: 767px) {
+  .ch-hero { min-height: 470px; }
+  .ch-ftlocal { padding: var(--ds-space-lg) var(--ds-space-md); }
+}
+
+/* ---- 9. MOTION GATE ------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  .ch-hdr, .ch-mega, .ch-svc, .ch-phone, .ch-drawer, .ch-scrim,
+  .ch-cta__phone, .ch-nav__link::after, .ch-caret { transition: none; }
+  .ch-phone:hover, .ch-svc:hover, .ch-cta__phone:hover { transform: none; }
+}
+</style>
+</head>
+
+<body>
+<a class="ch-skip" href="#main">Skip to content</a>
+
+<header class="ch-hdr" id="chHdr" data-scrolled="false">
+  <div class="container">
+    <div class="ch-bar">
+      <a class="ch-logo" href="#main" aria-label="First Page SEO Guarantee, home">
+        <img src="../../../../assets/seoguarantee.com_wp-content_themes_theme-child_images_seoguarantee-logo-w.png"
+             width="250" height="122" alt="First Page SEO Guarantee">
+      </a>
+
+      <nav class="ch-nav" aria-label="Primary">
+        <ul class="ch-nav__list">
+          <li class="ch-nav__item"><a class="ch-nav__link" href="#main">The Guarantee</a></li>
+
+          <li class="ch-nav__item" id="megaItem" data-open="false">
+            <button class="ch-nav__link" id="megaBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="megaPanel">
+              Services
+              <svg class="ch-caret" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3.2 5 7l4-3.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+
+            <div class="ch-mega" id="megaPanel" role="region" aria-label="Services">
+              <div class="ch-mega__panel">
+                <div class="ch-mega__hd">
+                  <p class="ch-mega__eyebrow">One agreed fee, the whole stack</p>
+                  <a class="ch-mega__all" href="#main">See what is included</a>
+                </div>
+
+                <div class="ch-svcs">
+                  <a class="ch-svc" href="#main">
+                    <span class="ch-svc__mk"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.4 15.4 21 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+                    <span><span class="ch-svc__t">SEO Services</span><span class="ch-svc__d">The ranking work the guarantee is written against.</span></span>
+                  </a>
+                  <a class="ch-svc" href="#main">
+                    <span class="ch-svc__mk"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 9h18" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
+                    <span><span class="ch-svc__t">Web Design</span><span class="ch-svc__d">The site the rankings land on.</span></span>
+                  </a>
+                  <a class="ch-svc" href="#main">
+                    <span class="ch-svc__mk"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="10" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="15" y="4" width="6" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
+                    <span><span class="ch-svc__t">UI/UX Design</span><span class="ch-svc__d">How the page behaves once they arrive.</span></span>
+                  </a>
+                  <a class="ch-svc" href="#main">
+                    <span class="ch-svc__mk"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7 4 12l5 5M15 7l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <span><span class="ch-svc__t">Web Development</span><span class="ch-svc__d">Build, speed and crawlability.</span></span>
+                  </a>
+                  <a class="ch-svc" href="#main">
+                    <span class="ch-svc__mk"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+                    <span><span class="ch-svc__t">CRO Services</span><span class="ch-svc__d">Turning arrivals into calls.</span></span>
+                  </a>
+                  <a class="ch-svc" href="#main">
+                    <span class="ch-svc__mk"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 4v16" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
+                    <span><span class="ch-svc__t">Graphic Design</span><span class="ch-svc__d">The assets the campaigns run on.</span></span>
+                  </a>
+                  <a class="ch-svc" href="#main">
+                    <span class="ch-svc__mk"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 7v5c0 5 3.4 8 8 9 4.6-1 8-4 8-9V7Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
+                    <span><span class="ch-svc__t">Branding</span><span class="ch-svc__d">The identity all of it carries.</span></span>
+                  </a>
+                </div>
+
+                <div class="ch-feat">
+                  <div class="ch-feat__media">
+                    <img src="../../../../assets/seoguarantee.com_wp-content_themes_theme-child_images_full-suite-image.jpg"
+                         width="1920" height="1216" alt="The full suite of services delivered together" loading="lazy">
+                    <span class="ch-feat__scrim"></span>
+                  </div>
+                  <div class="ch-feat__body">
+                    <p class="ch-feat__eyebrow">The Full Suite</p>
+                    <p class="ch-feat__line">Every service above is included in the one agreed monthly fee.</p>
+                    <a class="ch-feat__link" href="#main">See what is included <span aria-hidden="true">&rarr;</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="ch-nav__item"><a class="ch-nav__link" href="#main">Results</a></li>
+          <li class="ch-nav__item"><a class="ch-nav__link" href="#main">Who We Work With</a></li>
+          <li class="ch-nav__item"><a class="ch-nav__link" href="#main">About</a></li>
+        </ul>
+      </nav>
+
+      <a class="ch-phone" href="tel:+17024207272">
+        <svg class="ch-phone__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        (702) 420-7272
+      </a>
+
+      <button class="ch-burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="ch-scrim" id="scrim"></div>
+<aside class="ch-drawer" id="drawer" aria-label="Menu" aria-hidden="true">
+  <div class="ch-drawer__hd">
+    <img class="ch-drawer__logo"
+         src="../../../../assets/seoguarantee.com_wp-content_themes_theme-child_images_seoguarantee-logo-w.png"
+         width="250" height="122" alt="First Page SEO Guarantee">
+    <button class="ch-drawer__x" id="drawerX" type="button" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="ch-drawer__body">
+    <div class="ch-acc"><a class="ch-acc__link" href="#main">The Guarantee</a></div>
+    <div class="ch-acc" id="accServices" data-open="false">
+      <button class="ch-acc__btn" type="button" aria-expanded="false">
+        Services
+        <svg class="ch-caret" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3.2 5 7l4-3.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="ch-acc__panel">
+        <a class="ch-acc__sub" href="#main">SEO Services</a>
+        <a class="ch-acc__sub" href="#main">Web Design</a>
+        <a class="ch-acc__sub" href="#main">UI/UX Design</a>
+        <a class="ch-acc__sub" href="#main">Web Development</a>
+        <a class="ch-acc__sub" href="#main">CRO Services</a>
+        <a class="ch-acc__sub" href="#main">Graphic Design</a>
+        <a class="ch-acc__sub" href="#main">Branding</a>
+      </div>
+    </div>
+    <div class="ch-acc"><a class="ch-acc__link" href="#main">Results</a></div>
+    <div class="ch-acc"><a class="ch-acc__link" href="#main">Who We Work With</a></div>
+    <div class="ch-acc"><a class="ch-acc__link" href="#main">About</a></div>
+    <div class="ch-drawer__cta">
+      <a class="ch-phone" href="tel:+17024207272">
+        <svg class="ch-phone__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        (702) 420-7272
+      </a>
+    </div>
+  </div>
+</aside>
+
+<main id="main">
+  <section class="ch-hero surface-dark">
+    <span class="ch-hero__wash" aria-hidden="true"></span>
+    <span class="ch-hero__grain" aria-hidden="true"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col col--span-8">
+          <p class="ch-scaffold-note">Scaffolding band, not chrome</p>
+          <h1 class="ch-hero__h">The bar sits transparent here, over the dark opening band.</h1>
+          <p class="ch-hero__p">Scroll and it resolves to the solid purple deck. Both states belong to the chrome being judged. Nothing in this band is site copy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper">
+    <div class="container">
+      <div class="row">
+        <div class="col col--span-8">
+          <p class="ch-scaffold-note ch-scaffold-note--light">Scaffolding band, not chrome</p>
+          <h2 class="bw-head">A light band, so the solid bar can be judged against paper</h2>
+          <p class="bw-lede">The chrome under review is the sticky bar, the mega menu, the drawer, the closing band and the footer. This band exists only to create scroll distance between them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="container">
+      <div class="row">
+        <div class="col col--span-8">
+          <p class="ch-scaffold-note ch-scaffold-note--light">Scaffolding band, not chrome</p>
+          <h2 class="bw-head">A tinted band</h2>
+          <p class="bw-lede">Second of two, for the same reason.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="ch-cta surface-gold" aria-labelledby="ctaH">
+  <span class="ch-cta__grain" aria-hidden="true"></span>
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-8">
+        <p class="ch-cta__eyebrow">Talk to us</p>
+        <h2 class="ch-cta__h" id="ctaH">Ask what the guarantee would say for your market.</h2>
+        <p class="ch-cta__sub">One call, one number, one agreed fee. No form to fill in first.</p>
+        <a class="ch-cta__phone" href="tel:+17024207272">
+          <svg class="ch-cta__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          (702) 420-7272
+        </a>
+        <span class="ch-cta__risk">The terms are put in writing before anything starts.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="ch-ft surface-dark">
+  <div class="ch-ft__local">
+    <div class="ch-locator" aria-hidden="true">
+      <span class="ch-locator__pin"><span class="ch-locator__ring"></span><span class="ch-locator__dot"></span></span>
+      <p class="ch-locator__lbl">Locator, not a map</p>
+    </div>
+    <div class="ch-ftlocal">
+      <p class="ch-ftlocal__k">Where we are</p>
+      <address class="ch-ftlocal__addr">
+        6905 W Charleston Blvd, Las Vegas, NV 89117, USA<br>
+        <a class="ch-ftlocal__a" href="tel:+17024207272">+1 (702) 420-7272</a><br>
+        <a class="ch-ftlocal__a" href="mailto:support@seoguarantee.com">support@seoguarantee.com</a>
+      </address>
+      <a class="ch-dirs" href="https://maps.google.com/?q=6905+W+Charleston+Blvd+Las+Vegas+NV+89117" rel="noopener">
+        Get directions
+        <span aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="ch-ft__links">
+    <div class="container">
+      <div class="row row--4up row--tight">
+        <div class="col">
+          <p class="ch-ftcol__t">The Offer</p>
+          <ul class="ch-ftcol__l">
+            <li><a href="#main">The Guarantee</a></li>
+            <li><a href="#main">What is Included</a></li>
+            <li><a href="#main">Results</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <p class="ch-ftcol__t">Services</p>
+          <ul class="ch-ftcol__l">
+            <li><a href="#main">SEO Services</a></li>
+            <li><a href="#main">Web Design</a></li>
+            <li><a href="#main">UI/UX Design</a></li>
+            <li><a href="#main">Web Development</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <p class="ch-ftcol__t">Who We Work With</p>
+          <ul class="ch-ftcol__l">
+            <li><a href="#main">Dental</a></li>
+            <li><a href="#main">Law Firms</a></li>
+            <li><a href="#main">Medical Spas</a></li>
+            <li><a href="#main">HVAC</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <p class="ch-ftcol__t">Company</p>
+          <ul class="ch-ftcol__l">
+            <li><a href="#main">About</a></li>
+            <li><a href="#main">Our Locations</a></li>
+            <li><a href="#main">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="ch-ft__legal">
+      <p>First Page SEO Guarantee, Las Vegas, Nevada.</p>
+      <a href="#main">Privacy policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================================
+   CHROME BEHAVIOUR. Three things, in this order of importance:
+   1. HOVER INTENT. The panel must survive the whole trigger to panel to item
+      traverse. Implemented three ways together, because any one alone fails:
+      the CSS hover scope on the shared parent, the CSS hover bridge that closes
+      the physical gap, and the JS close delay below that survives a diagonal
+      cut across the seam.
+   2. KEYBOARD. Enter or Space opens, Escape closes and returns focus, Tab moves
+      through the panel, and the drawer traps focus while it is open.
+   3. SCROLL STATE. One boolean on the header, flipped past the fold threshold.
+   ========================================================================== */
+(function () {
+  var CLOSE_DELAY = 260; /* inside the 220 to 280 window the spec fixes */
+  var hdr = document.getElementById('chHdr');
+  var item = document.getElementById('megaItem');
+  var btn = document.getElementById('megaBtn');
+  var timer = null;
+
+  function openMega() {
+    if (timer) { clearTimeout(timer); timer = null; }
+    item.setAttribute('data-open', 'true');
+    btn.setAttribute('aria-expanded', 'true');
+  }
+  function closeMega(now) {
+    if (timer) clearTimeout(timer);
+    timer = setTimeout(function () {
+      item.setAttribute('data-open', 'false');
+      btn.setAttribute('aria-expanded', 'false');
+    }, now ? 0 : CLOSE_DELAY);
+  }
+
+  if (item) {
+    item.addEventListener('mouseenter', openMega);
+    item.addEventListener('mouseleave', function () { closeMega(false); });
+    item.addEventListener('focusin', openMega);
+    item.addEventListener('focusout', function (e) {
+      if (!item.contains(e.relatedTarget)) closeMega(true);
+    });
+    btn.addEventListener('click', function () {
+      if (item.getAttribute('data-open') === 'true') { closeMega(true); } else { openMega(); }
+    });
+  }
+
+  /* drawer */
+  var burger = document.getElementById('burger');
+  var drawer = document.getElementById('drawer');
+  var scrim = document.getElementById('scrim');
+  var drawerX = document.getElementById('drawerX');
+
+  function setDrawer(open) {
+    document.body.setAttribute('data-drawer', open ? 'open' : 'closed');
+    drawer.setAttribute('aria-hidden', open ? 'false' : 'true');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open) { var f = drawer.querySelector('a, button'); if (f) f.focus(); }
+    else { burger.focus(); }
+  }
+  if (burger) burger.addEventListener('click', function () { setDrawer(true); });
+  if (drawerX) drawerX.addEventListener('click', function () { setDrawer(false); });
+  if (scrim) scrim.addEventListener('click', function () { setDrawer(false); });
+
+  /* drawer accordion */
+  var acc = document.getElementById('accServices');
+  if (acc) {
+    var accBtn = acc.querySelector('.ch-acc__btn');
+    accBtn.addEventListener('click', function () {
+      var open = acc.getAttribute('data-open') === 'true';
+      acc.setAttribute('data-open', open ? 'false' : 'true');
+      accBtn.setAttribute('aria-expanded', open ? 'false' : 'true');
+    });
+  }
+
+  /* escape closes whatever is open, and focus goes back where it came from */
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    if (document.body.getAttribute('data-drawer') === 'open') { setDrawer(false); return; }
+    if (item && item.getAttribute('data-open') === 'true') { closeMega(true); btn.focus(); }
+  });
+
+  /* focus trap while the drawer is open */
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Tab') return;
+    if (document.body.getAttribute('data-drawer') !== 'open') return;
+    var f = drawer.querySelectorAll('a[href], button:not([disabled])');
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+
+  /* scroll state */
+  function onScroll() {
+    hdr.setAttribute('data-scrolled', window.scrollY > 40 ? 'true' : 'false');
+  }
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* Deterministic state forcing for the render pass, mirroring the feel
+     specimen's ?nomotion=1. The owner read needs the OPEN states captured, and
+     a screenshot cannot hover. */
+  var q = new URLSearchParams(location.search);
+  if (q.get('open') === 'mega') { openMega(); hdr.setAttribute('data-scrolled', 'true'); }
+  if (q.get('open') === 'drawer') { setDrawer(true); }
+  if (q.get('open') === 'drawer-acc') {
+    setDrawer(true);
+    if (acc) { acc.setAttribute('data-open', 'true'); acc.querySelector('.ch-acc__btn').setAttribute('aria-expanded', 'true'); }
+  }
+  if (q.get('scrolled') === '1') { hdr.setAttribute('data-scrolled', 'true'); }
+})();
+</script>
+</body>
+</html>

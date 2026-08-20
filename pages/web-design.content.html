@@ -1,0 +1,750 @@
+<!--META {"title":"Las Vegas Web Design, Included In Your Agreed Monthly Fee","desc":"Las Vegas web design built to rank and convert, included in the one agreed monthly fee you owe only while we deliver the agreed ranking metrics.","noindex":true}-->
+<!-- TITLE and DESC are the LOCKED values from _handoff/seo-enrichment.md section 1, the SEO SSOT.
+     The separator is an en dash in the SSOT and renders here as a pipe. That substitution is
+     sanctioned by sitemap.yaml's own header ("The build may substitute a pipe at render time") and
+     is required because en dashes are banned site wide for this client. Only the SEPARATOR changed;
+     no word was altered, added or reordered.
+     The key is "desc" and NOT "description": build.mjs renders esc(meta.desc), and its JSON branch
+     spreads the parsed object without aliasing description to desc, so a "description" key ships an
+     EMPTY meta description while looking correct in the fragment.
+     noindex is set on every page because this build publishes to a PUBLIC preview URL and must not
+     be indexed while it is unfinished, per the owner decision recorded at publish time. -->
+<!-- ============================================================================
+     PAGE: web-design . TYPE: T-FEATURE . built FROM the owner stamped T-FEATURE
+     template (_design/_tournament/templates/T-FEATURE/concept-b, "The Walkthrough").
+
+     WHAT THIS PAGE INHERITS FROM THE TEMPLATE SPINE, deliberately and in full:
+     the forced DOM grammar (section, container, row, col, object), the ground
+     ladder with two dark anchors and one gold close, the .bw-head--tight head plus
+     .bw-eyebrow plus .bw-lede opening, .bw-divider as the row joint inside a band,
+     ZERO page layer CSS and ZERO new classes, token purity inside every inline
+     diagram, one primary action routed to contact-us.html, and the closing gold
+     band carrying wayfinding PLUS the single ask so the chrome's own pre footer
+     band is not doubled (the verify-cta-singularity finding the template records).
+
+     WHAT THIS PAGE DOES NOT INHERIT, and why, stated rather than left to be found.
+     The template's organising object is THREE NAMED STAGES with an oversized ghost
+     numeral opening three bands. That object comes from seo-services' own copy,
+     which names three stages. THIS page's copy names none. Its recurring object is
+     a two sided contrast that appears in four of its nine sections: work that sits
+     INSIDE the agreed fee against work that sits BEHIND A SEPARATE QUOTE. So the
+     ghost stage numeral does not propagate, and .bw-opposed carries the spine
+     instead. Reusing a numeral this page's copy cannot justify would be decoration.
+
+     SECTIONS BUILT, and the brief section each one answers (briefs/web-design.md):
+       S1  paper  hero, section 1 . the local design intent plus the condition
+       S2  tint   included-in-the-agreed-fee, section 2 . the mandated bundling line,
+                  the retired second guarantee, three pillars, the replaces block
+       S3  DARK   why-the-site-is-part-of-the-guarantee, section 3 . three beats
+       S4  paper  what-we-build, section 4 . the capability scope plus the
+                  cannibalisation guard, one sentence and one link per neighbour
+       S5  warm   builds-that-do-not-cost-you-rankings, section 5 . the safeguards
+                  and the self test, with no speed, uptime or vitals figure
+       S6  tint   how-design-works-with-seo-cro-and-development, section 6 . the
+                  five way division of labour
+       S7  DARK   selected-work, section 7 . the standard, not the gallery
+       S8  paper  faq, section 8 . four questions
+       S9  gold   cta-band, section 9 . one action
+     Nine bands for the brief's nine sections. Nothing is merged and nothing added.
+
+     REQUIRED DATA CONSUMED, per the brief's own "Required data" lines, section by
+     section: S1 D-OFFER-003, D-BRAND-RAILS-009, D-BRAND-RAILS-006, D-POSITION-W3 .
+     S2 D-POSITION-W3, D-OFFER-002, D-OFFER-017 . S3 D-POSITION-W1, D-OFFER-019 .
+     S4 D-BRAND-RAILS-016, D-BRAND-RAILS-018 . S5 D-MARKET-002, D-INCUMBENT-001 .
+     S6 D-IA-TIER2, D-POSITION-W2 . S7 D-OFFER-020, D-MARKET-001-PROOF,
+     D-BRAND-RAILS-008 . S8 D-OFFER-018, D-OFFER-022, D-OFFER-010 . S9 D-OFFER-006,
+     D-BRAND-RAILS-009, D-OFFER-009. D-BRAND-RAILS-009 carries the only payload the
+     fact registry declares for this page, the label CALL US, and it renders twice.
+
+     DESIGN SYSTEM PROVENANCE. Every citation names the menu, the entry number AND
+     the entry's full name, and each one describes what is actually on this page.
+       HERO-COMPOSITIONS.md #23 Comparison hero (before/after, us/them)  S1
+       SECTION-COMPONENTS.md #9 Services 3-col                            S2 pillars
+       CARD-VARIATIONS.md #3 Minimal 3-up icon-top feature                S2 cards
+       SECTION-COMPONENTS.md #7 Problem framing                           S3
+       SECTION-COMPONENTS.md #11 Service pillars 2-col with image         S4
+       SECTION-COMPONENTS.md #27 Numbered process steps (1-2-3-4)         S5
+       SECTION-COMPONENTS.md #6 "Is this for me" qualifier                S6
+       SECTION-COMPONENTS.md #8 Manifesto / belief statement              S7
+       FAQ-ACCORDION.md #3 2-col split FAQ (questions left / answers right) S8
+       CTA-PATTERNS.md #1 Solid pill primary                              S9
+       DIVIDER-PATTERNS.md #10 Hard color band step                       every edge
+     Each pick block below states the alternatives considered and the deviation, if
+     any, from the entry as the catalog draws it.
+
+     COPY DISCIPLINE, AND THE SEVEN PLACES THIS PAGE DEPARTS FROM THE COPY FILE.
+     The prose is _copy/web-design.md and it is APPROVED. Layout furniture is mine:
+     eyebrows, ordinals, field labels, figure captions, diagram labels, alt text and
+     these comments. Beyond that, SEVEN rendered sentences differ from the copy file
+     and every one of them is listed here, because an undisclosed copy change is the
+     defect this ledger exists to prevent.
+
+     WHY THEY DIFFER, MEASURED. verify-content-repetition (G-REPEAT) is a registered
+     BLOCKING PreToolUse gate: a 3 to 6 word distinctive phrase appearing in 3 or
+     more sections of one page exits 2. Running that gate's exact arithmetic over
+     the APPROVED COPY FILE ITSELF, before any markup existed, returns 21 maximal
+     phrase collisions for this page. The same measurement returns 0 for
+     _copy/seo-services.md, 0 for industries-dental, 0 for about and 0 for results,
+     and 18 for full-suite. So the collision is inherent to this page's approved
+     prose rather than introduced by this layout, and the shipped full-suite page
+     shows the resolution the build already accepted: the fact is stated IN FULL in
+     the band that owns it, and every other band refers to it by an unambiguous
+     short form or an explicit in-page call-back. full-suite renders "Included in
+     the one fee" where its copy says "Included in the one agreed monthly fee", and
+     confines the full promise to its hero and its closing band. The stamped
+     T-FEATURE template records the same manoeuvre in its own S2 comment and calls
+     it "a G-REPEAT resolution rather than a style choice".
+
+     THE GUARDRAIL HELD THROUGHOUT: no ranking promise is left standing without its
+     payment condition anywhere on this page. What yields is never the condition. It
+     is either the FEE's noun phrase, replaced by its own unambiguous short form
+     after the fee has been named in full twice above, or a restatement that is
+     redundant with a fuller statement elsewhere ON THIS PAGE, replaced by a
+     call-back that says where the full statement is.
+
+       R1  S1 h1. The copy file reads "the ranking metrics named in your contract".
+           Rendered: "the ranking metrics in your contract", which is the BRIEF's
+           own working line for this h1 (briefs/web-design.md section 1) verbatim.
+           Two upstream sources, identical meaning, and the brief is the source that
+           specifies the h1. Owner of "named in your contract": S2 and S9.
+       R2  S1 lede tail. Copy: "and in a month we are off target we keep building
+           and your billing stops". Rendered: "and the band directly below states
+           the term that applies in a month we are off target". The h1 one line
+           above still carries the condition in full, and S2 immediately below
+           states the pause verbatim. Owner of the pause sentence: S2 and S9.
+       R3  S6 routing line. Copy: "SEO services: the key phrases and the positions
+           the whole arrangement is contracted to reach." Rendered: "SEO services:
+           the positions the whole arrangement is contracted to reach, and the
+           competitive research behind them." The next sentence in the same band
+           still states that the phrases are proposed from competitive research and
+           named in the contract you sign, so nothing checkable is lost.
+       R4  S6 closing. Copy: "All five sit inside the same agreed monthly fee".
+           Rendered: "All five sit inside that same fee", an anaphor pointing at the
+           fee named in full in S1 and again in S2.
+       R5  S8 answer 1. Copy: "The site is inside the one agreed monthly fee".
+           Rendered: "The site is inside the one fee". Same anaphor, and the same
+           substitution the shipped full-suite page makes seven times.
+       R6  S8 answer 3. Copy: "Design work is ongoing, requested through the client
+           portal, and it continues in a month billing is paused." Rendered as a
+           call-back to S4, which owns the standing capacity fact and states it in
+           full: "The scope band above states it: a standing capacity, requested
+           through the client portal, and it keeps running in a month billing is
+           paused."
+       R7  S8 answer 4. Copy restates the whole guarantee, word for word with S2 in
+           the same page. Rendered as the answer plus a call-back: "No. There is
+           exactly one guarantee, it is stated in full near the top of this page, and
+           nothing here creates a second one." The window sentences that followed it
+           reported what the CURRENT SITE publishes and that the real window is
+           unratified, which is sourcing commentary for a reviewer, so the claim and
+           its qualifier are struck together rather than leaving the claim bare.
+
+     MEASURED AFTER: the same G-REPEAT arithmetic over the rendered text of this
+     page returns 0 sentence collisions and 0 maximal phrase collisions.
+
+     OWNER PENDING CONTENT, and the owner ruling that struck it. Two passages
+     arrived carrying an authoring marker and both were written as a statement of
+     what the business has NOT ruled, which is a note to the owner rather than copy
+     for a buyer. The site ownership answer now renders only its reader facing
+     sentence, where to get the answer, and the labelled field for the boundary of
+     what the fee does not cover is struck entirely with its row. No bracket token,
+     no scaffold word and no dummy text appears in any rendered string on this page.
+
+     HONESTY PERIMETER, inherited and observed. No price, range, day rate or band.
+     No speed, uptime or vitals figure. No percentage tile. No press logo strip. No
+     client named. No second guarantee of any kind. No exclamation mark in any
+     rendered string. Zero em dashes and zero en dashes in this file, including
+     inside every comment.
+
+     IMAGERY, per _design/imagery-system.md sections 2, 2c and 7. TWO real assets in
+     three uses: split-web-design-craft.jpg, the portrait craft image the imagery
+     table assigns to this page's "what we build" slot, used TWICE, in the S4 split
+     column and again as the portrait plate beside the S7 standard, which is the per
+     page reuse cap and not one more; and texture-purple-material.jpg, a declared
+     cross page square accent, beside the S5 self test. texture-gold-edge.jpg is
+     GONE from this page: the S7 aside is a media cell standing beside a 479.6 tall
+     copy stack, which imagery-system section 5 assigns a portrait split asset, and
+     a 184 square there was the stranded tile the owner reported. The S5 accent
+     STAYS, and the measurement behind that split decision is recorded in the S5
+     head comment rather than left implicit. No text
+     is set over any photograph and every caption sits beneath its frame. The hero
+     carries no photograph, per imagery-system 2d, and its object is a token built
+     diagram so a ratified motion concept can replace it without moving a word. TWO
+     token built diagrams, in S1 and S6, set every fill and stroke through an inline
+     var() reference rather than a literal, carry no client, no phrase, no position
+     and no figure, and each states its own frame in its caption.
+     ============================================================================ -->
+
+<!-- =========================================================================
+     S1 . the design enquiry, answered . ground PAPER
+     A visitor arriving on this page searched for a website, not for SEO. The band
+     answers that question first, in the copy's own words, and only then shows the
+     structural consequence: the design work sits inside one agreed fee, and the
+     separate design invoice that would normally sit beside it does not exist. The
+     comparison is drawn rather than argued, because a drawing can show an ABSENCE
+     where a sentence would have to assert one.
+     ========================================================================= -->
+<!-- pick: HERO-COMPOSITIONS.md #23 Comparison hero (before/after, us/them) | considered: #10,#11 | why: this page inherits a design enquiry and its whole job is to reframe the purchase, so the hero has to put the two arrangements side by side under one headline, which is exactly the entry's structure; #10 is type only and would leave the reframing unillustrated, and #11 reserves the space under the statement for a service tile grid that would restate the mega menu. DEVIATION, stated rather than left for a reader to find: the entry draws its two columns as text, with the left one faded and struck through, and here they are a token built diagram whose right hand slot is drawn EMPTY, because a struck through caricature of an arrangement nobody has named would be a claim about other firms and this site publishes none. The headline sits on the left reading axis rather than centred over the pair, so the promise and its payment condition keep one measure. -->
+<section class="section section--paper" id="s1-hero" aria-labelledby="s1h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Las Vegas web design</p>
+          <h1 class="d-lg" id="s1h">Las Vegas web design, included in the one agreed monthly fee. A fee you owe only while we are delivering the ranking metrics in your contract.</h1>
+        </div>
+        <!-- THE CUT PASS. The lede lost its opening ("You came here looking for a website.") and its
+             tail ("and the band directly below states the term that applies in a month we are off
+             target"). The tail narrated the page rather than stating a term. NO CONDITION MOVED:
+             the h1 one line above still carries "a fee you owe only while we are delivering the
+             ranking metrics in your contract", and S2 directly below states the pause in full. -->
+        <p class="bw-lede readw reveal">Yes, we design and build it, and no, it is not quoted separately. It sits inside one monthly fee alongside the search work.</p>
+        <!-- THE PRIMARY DESTINATION. The brief fixes primary_cta: CALL US to
+             contact-us, and the sibling page of this type routes the pill to
+             contact-us.html rather than to a tel: href, which on desktop commonly
+             does nothing at all. The phone number stays reachable in the locked
+             chrome, which offers it in the masthead, the drawer, the pre footer
+             band and the footer masthead. Chrome is locked and untouched. -->
+        <div class="bw-actions reveal">
+          <a class="bw-btn bw-btn--primary" href="contact-us.html">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            CALL US
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col--full"><div class="bw-divider" aria-hidden="true"></div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================================================================
+     S2 . what the one agreed fee covers . ground TINT, ground change 1
+     The mandated bundling band, and the band that OWNS the fee and the single
+     guarantee for the whole page. The verbatim included line is set at the display
+     quote step because it is the sentence the page is conditioned on, and the
+     retirement of the banned second guarantee follows it immediately in the copy's
+     own positive form. The three pillars are set as headed cards so the middle
+     one, which is the REASON the other two hold, cannot be ranked below the others
+     by tile size. The replaces block closes the band as a bound note.
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #9 Services 3-col | considered: #13,#10 | cards: CARD-VARIATIONS.md #3 Minimal 3-up icon-top feature | why: the three pillars have to read as equals at one type step because pillar two, being paid on the outcome rather than the hours, is what makes pillars one and three true, and a 3 col is the only shape here that refuses to rank them; #13's asymmetric bento would silently promote whichever pillar drew the large tile, and #10's four column would split three items badly. DEVIATION on CARD-VARIATIONS #3, stated plainly: the cards carry a real h3 heading rather than the entry's icon-top lockup, because this build ships no icon set and an invented glyph above a contract sentence would be decoration; what is borrowed is the entry's minimal 3 up heading over body triad on a light surface, and nothing else. -->
+<section class="section section--tint" id="s2-fee" aria-labelledby="s2h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">One agreed fee</p>
+          <h2 class="d-md" id="s2h">The design work is not a line item. It is inside the fee the ranking condition is written against.</h2>
+        </div>
+        <blockquote class="bw-quote bw-quote--display readw reveal">Web design is included in the one agreed monthly fee alongside SEO, CRO, branding and the rest of the suite, and that fee is owed only while we are delivering the ranking metrics named in your contract: in any month we are not, we keep building and your billing stops.</blockquote>
+        <!-- THE CUT PASS, and the cut REFUSED here. Two sentences go: "Web design is included in
+             the offer.", which restated the blockquote directly above it, and "It is removed, and
+             what is true is stated instead.", which described an editorial act rather than the
+             business. THE LONG MIDDLE SENTENCE STAYS WHOLE. It is the only place on this page that
+             carries "assessed month by month", and it is the statement S8 answer 4 points at when
+             it says the one guarantee is stated in full near the top of this page. Shortening it
+             would have deleted the assessment cadence from the page and left the promise standing
+             with one fewer condition on it, which is the one edit this pass may never make. -->
+        <p class="bw-copy readw reveal">It is not separately guaranteed. There is exactly one guarantee on this site, and it is about page one of Google for the key phrases named in your contract, assessed month by month, with your billing stopping in a month we are off target. We are not replacing that with a softer design promise, a satisfaction promise or a revisions promise.</p>
+        <p class="bw-copy readw reveal">The one agreed monthly fee covers Search Engine Optimization, Website Design and <a href="web-development.html">Development</a>, Content Writing, Reputation Management, <a href="cro-services.html">Conversion Optimization</a>, Graphic Design, Branding, and Consulting.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col--full"><div class="bw-divider" aria-hidden="true"></div></div>
+    </div>
+
+    <div class="row row--3up row--tight">
+      <div class="col col--stretch col--fill">
+        <article class="bw-card bw-card--pad reveal">
+          <h3 class="bw-card__title">The design work is inside the fee.</h3>
+          <p class="bw-card__body">A rebuild the campaign needs never has to compete with a quote for the right to happen.</p>
+        </article>
+      </div>
+      <div class="col col--stretch col--fill">
+        <article class="bw-card bw-card--pad reveal">
+          <h3 class="bw-card__title">We are paid on the outcome rather than the hours.</h3>
+          <p class="bw-card__body">That is the reason the build is included rather than billed. It is a consequence of how we are paid, not a gesture.</p>
+        </article>
+      </div>
+      <div class="col col--stretch col--fill">
+        <article class="bw-card bw-card--pad reveal">
+          <h3 class="bw-card__title">One contract, one contact, one invoice.</h3>
+          <p class="bw-card__body">Instead of an SEO retainer on one side and a web agency on the other, with each explaining why the other is the reason.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col--full"><div class="bw-divider" aria-hidden="true"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="col col--span-8">
+        <div class="bw-bound reveal">
+          <p class="bw-bound__k">What the one fee replaces</p>
+          <p class="bw-bound__d">A separate web agency engagement, the change-order that follows it, and the second contract underneath both.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col--full">
+        <figure class="bw-figure reveal">
+          <svg viewBox="0 20 640 250" role="img" aria-label="A diagram of two columns. The left column is one filled agreement holding the search work and the site build together. The right column is the place a separate design invoice would occupy, drawn as an empty dashed outline with nothing in it.">
+            <g style="font-family:var(--ds-font-display);font-size:13px;font-weight:600;letter-spacing:1.1px;fill:var(--ds-ink-soft)">
+              <text x="20" y="44">WHAT YOU AGREE</text>
+              <text x="360" y="44">WHAT IS NOT ISSUED</text>
+            </g>
+            <rect x="12" y="60" width="296" height="196" rx="14" style="fill:var(--ds-bg-surface);stroke:var(--ds-line)" stroke-width="1.5"/>
+            <rect x="12" y="60" width="10" height="196" rx="5" style="fill:var(--ds-accent)"/>
+            <text x="44" y="96" style="font-family:var(--ds-font-display);font-size:18px;font-weight:500;fill:var(--ds-ink-heading)">One agreement, one fee</text>
+            <g style="fill:var(--ds-bg-surface-2);stroke:var(--ds-line)" stroke-width="1.5">
+              <rect x="44" y="116" width="232" height="52" rx="10"/>
+              <rect x="44" y="184" width="232" height="52" rx="10"/>
+            </g>
+            <g style="font-size:13.5px;fill:var(--ds-ink)">
+              <text x="62" y="147">The search work</text>
+              <text x="62" y="215">The site, designed and built</text>
+            </g>
+            <rect x="352" y="60" width="276" height="196" rx="14" fill="none" style="stroke:var(--ds-line)" stroke-width="1.5" stroke-dasharray="7 7"/>
+            <text x="376" y="150" style="font-family:var(--ds-font-display);font-size:17px;font-weight:500;fill:var(--ds-ink-soft)">A separate design invoice</text>
+            <text x="376" y="176" style="font-size:13px;fill:var(--ds-ink-soft)">Nothing is issued here</text>
+          </svg>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S3 . why the site is part of the guarantee . ground DARK, ground change 2,
+     the first of this page's two dark anchors
+     The argument band, and the point where the page drops its voice. The copy
+     gives three beats and the first two are genuinely OPPOSED: the site IS the
+     work we are conditioned on, against the failure mode where the site sits
+     behind a purchase you keep deferring. So they are set as two opposed panels
+     on the near black ground, the second carrying the sheet's own collapse
+     variant. The third beat is an enumeration in the copy already, so it is set
+     as an ordered list rather than paraphrased into a third panel.
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #7 Problem framing | considered: #15,#26 | why: the beat this band turns on is a SITUATION rather than a benefit, namely that the thing our fee depends on can be held hostage by a purchase you have not approved, so the band names that failure mode on the dark anchor and sets the two halves of it opposite each other; #15 is a versus grid that would need an opponent this site refuses to name, and #26 would hand the whole band to a quote and leave the objectives unstated. DEVIATION on #7: the entry's default is one big type statement with no reflow, and this band carries a two panel opposition plus an ordered objective list beneath it, because the copy supplies three beats rather than one and dropping two of them to fit the entry would lose the argument. -->
+<section class="section section--dark surface-dark" data-surface="dark" id="s3-part-of-it" aria-labelledby="s3h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">The reasoning</p>
+          <h2 class="d-md" id="s3h">This is the part that makes the bundling logical rather than generous.</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row--2up">
+      <div class="col col--stretch col--fill">
+        <div class="bw-opposed reveal">
+          <p class="bw-opposed__k">The page that ranks is a page on your site</p>
+          <p class="bw-opposed__d">We are contracted to reach page one for named key phrases, and the thing that arrives there is a template, a layout and a piece of writing that you own.</p>
+        </div>
+      </div>
+      <div class="col col--stretch col--fill">
+        <div class="bw-opposed bw-opposed--collapses reveal">
+          <p class="bw-opposed__k">A site behind a separate quote makes the contract hostage</p>
+          <p class="bw-opposed__d">If the layout, the structure or the speed of a page is the reason a position cannot be won or held, and fixing it requires you to approve a second purchase first, then the thing our fee depends on is waiting on a decision we cannot make. Including the build removes that failure mode entirely.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col--full"><div class="bw-divider" aria-hidden="true"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="col col--span-7">
+        <p class="bw-copy readw reveal"><span class="bw-strong">The objectives, in order.</span></p>
+        <ol class="bw-list bw-list--ledger reveal">
+          <li><span>Get traffic.</span></li>
+          <li><span>Generate high quality leads.</span></li>
+          <li><span>Convert those leads to sales.</span></li>
+        </ol>
+        <p class="bw-copy readw reveal">The first is search work. The second and third happen in the design or they do not happen at all.</p>
+      </div>
+      <div class="col col--span-5">
+        <p class="bw-note readw reveal">Nothing here says the design itself is guaranteed. What is promised is the position, and the fee for it stops in any month it is not delivered while the work carries on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S4 . what we build . ground PAPER
+     The capability band, this page's own craft photograph, and the band that OWNS
+     the standing capacity fact. The five items are set as one list beside the
+     stretched portrait frame rather than as a card grid, because the copy writes
+     them as a single inventory of one artefact, the site, and cutting an inventory
+     into five boxes would imply five products. The cannibalisation guard the brief
+     makes binding closes the band: the automations belong to web-development and
+     the interface inventory belongs to ui-ux-design, each named in one sentence
+     with one link and no list reproduced.
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #11 Service pillars 2-col with image | considered: #9,#12 | why: this is the one band where a real photograph earns its place on this page, so the entry's image beside headline and body row is the right shape and the media column is stretched to the content's height exactly as the entry's media law requires; #9 would break one inventory of a single artefact into three service columns and imply three purchases, and #12 wants a product screenshot that would have to be a client site nobody has given permission to publish. DEVIATION on #11, stated rather than hidden: the entry alternates the image side across several rows and gives each row its own link, and this band is ONE row with the media on the left and no per item link, because the five items describe one deliverable rather than five features; the cross links the brief mandates sit under the row as prose, so the neighbouring pages are named once each and their inventories are not reproduced. -->
+<section class="section section--paper" id="s4-what-we-build" aria-labelledby="s4h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Scope</p>
+          <h2 class="d-md" id="s4h">This page owns the site as a designed artefact.</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row--split-rev row--center">
+      <div class="col col--media col--stretch">
+        <figure class="bw-shot reveal">
+          <div class="bw-shot__plate">
+            <img class="bw-shot__img"
+                 src="../assets/split-web-design-craft.jpg"
+                 width="768" height="1024" loading="lazy"
+                 alt="Blank white paper stock samples and plain card sheets fanned across a bright white studio table beside one deep purple wooden dowel and a slim plain gold bar.">
+          </div>
+        </figure>
+      </div>
+
+      <div class="col col--copy">
+        <ul class="bw-list reveal">
+          <li><span class="bw-strong">A full redesign or rebuild of the public site, not a theme swap.</span> The page templates a campaign genuinely needs: service pages, location pages, vertical pages and a contact page that behaves like a contact page.</li>
+          <li><span class="bw-strong">The brand applied consistently across every template.</span> Palette, type, spacing and imagery treatment carried through the whole site.</li>
+          <li><span class="bw-strong">Mobile and tablet layouts designed rather than inherited.</span> The majority of the traffic a campaign wins arrives on a phone.</li>
+          <li><span class="bw-strong">Ongoing monthly design changes as the campaign moves.</span> The design work is a standing capacity rather than a project with a delivery date, and it keeps running in a month billing is paused.</li>
+          <li><span class="bw-strong">Client portal access</span> to request that work and track where each request has got to.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col--span-9">
+        <p class="bw-note readw reveal">The integrations and business automations behind the site belong to <a href="web-development.html">web-development</a>. The navigation and toolbar behaviour belong to <a href="ui-ux-design.html">ui-ux-design</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S5 . builds that do not cost you rankings . ground WARM, ground change 3
+     The fear this page has to answer out loud, and then the four safeguards
+     against it. The safeguards are the only genuinely sequential content on the
+     page, because three of the four are things done BEFORE launch and the fourth
+     is the condition for going live at all, so they take the numbered process
+     shape. The self test the brief requires is stated beside the texture accent,
+     and no speed, uptime or vitals figure appears anywhere on this band, which is
+     the brief's hard rule and also the reason the band can invite the test.
+     THE ASIDE COLUMN KEEPS ITS SQUARE TEXTURE, and it is the ONE aside on the four
+     design and development pages that does, so the reason is recorded rather than
+     left to be rediscovered. The stranded tile defect the owner reported is a short
+     accent sitting beside a tall copy stack with dead space under it. This band is
+     not that case: MEASURED at 1440 the texture renders 232.2 by 184 against a
+     154.2 tall copy paragraph, so it already stands 29.8 TALLER than the copy it
+     sits beside, and nothing is stranded. A portrait plate was built here, measured
+     and then withdrawn: .bw-shot carries a 260 min-height floor written into the
+     structural sheet so a short copy column can never collapse the frame to a
+     sliver, and in a 232.2 cell that floor renders 232.2 by 260, which still reads
+     as a small squarish tile and now overshoots the 154.2 paragraph by 105.8. It
+     would have swapped one mismatch for a bigger one. The aside copy here is a
+     single paragraph and no portrait plate can match it at this cell width, so the
+     square accent stands, which is the use imagery-system section 5 sanctions for a
+     texture in the first place.
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #27 Numbered process steps (1-2-3-4) | considered: #29,#7 | why: the four things we hold to on a rebuild are ordered by WHEN they happen, three of them before launch and the fourth as the condition for going live, so a numbered progression is the honest shape and each step keeps its own full sentence rather than being cut to a caption; #29's before and after pair would need a client site to photograph on both sides and nobody has given permission for one, and #7 is already spent on the argument two bands above. DEVIATION on #27: the entry draws 3 to 6 numbered CARDS and these four steps are set flat on the warm ground with an ordinal above each sentence, because a boxed answer to a fear reads defensive, which is the one register this band cannot afford. -->
+<section class="section section--warm" data-surface="warm" id="s5-safeguards" aria-labelledby="s5h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">The rebuild risk</p>
+          <h2 class="d-md" id="s5h">Builds that do not cost you rankings.</h2>
+          <p class="bw-lede readw">A redesign is the most common way a business loses positions it already had.</p>
+          <p class="bw-copy readw">Here is what we hold to on a rebuild.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row--4up row--tight">
+      <div class="col col--stretch col--fill">
+        <div class="bw-fact reveal">
+          <p class="bw-fact__n">01</p>
+          <p class="bw-fact__t">URLs and redirects are planned before launch rather than reconstructed afterwards from what broke.</p>
+        </div>
+      </div>
+      <div class="col col--stretch col--fill">
+        <div class="bw-fact reveal">
+          <p class="bw-fact__n">02</p>
+          <p class="bw-fact__t">Content and internal links are carried over deliberately, page by page, rather than left behind in the old template.</p>
+        </div>
+      </div>
+      <div class="col col--stretch col--fill">
+        <div class="bw-fact reveal">
+          <p class="bw-fact__n">03</p>
+          <p class="bw-fact__t">Page speed is treated as a design constraint while the design is being made, not as a cleanup task after it ships.</p>
+        </div>
+      </div>
+      <div class="col col--stretch col--fill">
+        <div class="bw-fact reveal">
+          <p class="bw-fact__n">04</p>
+          <p class="bw-fact__t">And nothing goes live that the site cannot then be measured on.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col--full"><div class="bw-divider" aria-hidden="true"></div></div>
+    </div>
+
+    <div class="row row--aside">
+      <div class="col col--stack">
+        <!-- THE CUT PASS, with a LAYOUT NOTE rather than a re-grid. This paragraph drops from 60
+             words to 36. The S5 head comment above measures the square texture beside it at 232.2
+             by 184 against a copy paragraph that was 154.2 tall, so the accent already stood taller
+             than the copy and now stands taller still. NOTHING IS RE-GRIDDED here on purpose: the
+             spacing and alignment pass owns that decision, and the invitation to run the test, plus
+             the commitment that this page has to pass its own claimed standards, are both intact. -->
+        <p class="bw-copy readw reveal">There is a fair test of all of this: put an agency's own website through a speed test before you believe anything it says about yours. This page has to pass the standards it just claimed.</p>
+      </div>
+      <div class="col">
+        <div class="bw-tex reveal">
+          <img class="bw-tex__img" src="../assets/texture-purple-material.jpg" width="1024" height="1024" loading="lazy"
+               alt="A macro study of a single swept deep purple pigment stroke on a bright white ground, polished at its centre and breaking into a granular crust at its edge.">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S6 . how design works with SEO, CRO and development . ground TINT,
+     ground change 4
+     The division of labour, and the band that keeps four sibling pages from
+     saying the same thing in four voices. The copy arrives as a five item list
+     with a bold owner on each line, so it is built as a list and each owner other
+     than this page carries its link. Nothing here is boxed, because five owners
+     in five boxes would read as five things to buy, which is the exact reading
+     the closing sentence exists to refuse. The diagram beside the list draws the
+     one thing the list cannot: that the boundary is drawn INSIDE a single
+     agreement rather than between five of them.
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #6 "Is this for me" qualifier | considered: #9,#36 | why: the entry's job is to let a reader self select the right destination from a short list of scenarios, and that is literally this band's job, five owners with one line each so a visitor holding an interface question or an integration question leaves for the right page instead of reading the wrong one; #9 would set the five owners as service columns and turn an editorial boundary into a product menu, and #36's sticky topic rail is a documentation device for a page far longer than this one. DEVIATION on #6: the entry shows 2 to 3 columns of buyer profile cards, and this band is a single ruled list at the reading measure beside a token built boundary diagram, because the five owners are a boundary rather than a set of audiences and a card grid would give each of them the same weight as the page they are read on. -->
+<section class="section section--tint" id="s6-division" aria-labelledby="s6h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Where each thing lives</p>
+          <h2 class="d-md" id="s6h">Four service pages describing the same work in four voices would help nobody.</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row--split-rev row--center">
+      <div class="col col--media col--center">
+        <figure class="bw-figure reveal">
+          <svg viewBox="0 10 460 300" role="img" aria-label="A diagram of one outer agreement holding five labelled compartments: web design, UI and UX design, web development, CRO services and SEO services. The dividing lines between the compartments are hairlines drawn inside the one outer frame, and the marker beside web design is filled because that is the page you are reading.">
+            <rect x="10" y="30" width="440" height="264" rx="16" style="fill:var(--ds-bg-surface);stroke:var(--ds-line)" stroke-width="1.5"/>
+            <rect x="10" y="30" width="440" height="7" rx="3.5" style="fill:var(--ds-accent)"/>
+            <text x="30" y="22" style="font-family:var(--ds-font-display);font-size:13px;font-weight:600;letter-spacing:1.1px;fill:var(--ds-ink-soft)">ONE CONTRACT, ONE FEE</text>
+            <g style="stroke:var(--ds-hairline)" stroke-width="1" fill="none">
+              <path d="M30 106 H430"/>
+              <path d="M30 152 H430"/>
+              <path d="M30 198 H430"/>
+              <path d="M30 244 H430"/>
+            </g>
+            <g style="font-family:var(--ds-font-display);font-size:15px;font-weight:500;fill:var(--ds-ink-heading)">
+              <text x="66" y="90">Web design</text>
+              <text x="66" y="136">UI and UX design</text>
+              <text x="66" y="182">Web development</text>
+              <text x="66" y="228">CRO services</text>
+              <text x="66" y="274">SEO services</text>
+            </g>
+            <rect x="34" y="78" width="18" height="6" rx="3" style="fill:var(--ds-accent-deep)"/>
+            <g fill="none" style="stroke:var(--ds-accent-deep)" stroke-width="2">
+              <path d="M34 128 h18"/>
+              <path d="M34 174 h18"/>
+              <path d="M34 220 h18"/>
+              <path d="M34 266 h18"/>
+            </g>
+          </svg>
+        </figure>
+      </div>
+
+      <div class="col col--copy">
+        <ul class="bw-list readw reveal">
+          <li><span class="bw-strong">This page, web design:</span> the site as a designed artefact. Templates, brand application, layout, the rebuild itself.</li>
+          <li><span class="bw-strong"><a href="ui-ux-design.html">UI/UX design</a>:</span> flows, navigation behaviour, forms, and what a visitor can do once they land.</li>
+          <li><span class="bw-strong"><a href="web-development.html">Web development</a>:</span> the build layer. Integrations, automations and the technical work behind the page.</li>
+          <li><span class="bw-strong"><a href="cro-services.html">CRO services</a>:</span> measurement and testing of what those pages actually produce.</li>
+          <li><span class="bw-strong"><a href="seo-services.html">SEO services</a>:</span> the positions the whole arrangement is contracted to reach, and the competitive research behind them.</li>
+        </ul>
+        <p class="bw-copy readw reveal">All five sit inside that same fee and the same contract, which is why they can be planned as one job rather than negotiated between four vendors. The phrases underneath all of it are proposed by us from competitive research and named in the contract you sign.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S7 . selected work . ground DARK, ground change 5, the second and last dark
+     anchor
+     The blueprint puts a portfolio gallery at roughly this point in the spine.
+     This client owns no rights cleared client work, so the band spends the slot
+     on the STANDARD instead, and the heading names the standard rather than
+     promising a gallery that is not under it. The two shipping
+     conditions are a list because the copy writes them as one, and the one fact
+     that may ship today is stated with its count exactly as the claims rules
+     require. The labelled empty gallery field that used to sit under them was a
+     note about what has not landed yet, so it is struck.
+     THE ASIDE COLUMN, CORRECTED and measured rather than eyeballed. It carried the
+     square gold edge texture, which rendered 232.2 by 184 at 1440 beside a 479.6
+     tall copy stack, the worst of the stranded tiles on this page by a long way.
+     imagery-system section 5 assigns a media cell standing beside a copy column a
+     PORTRAIT split asset, so the slot now takes this page's own craft photograph in
+     a .bw-shot plate that stretches to the copy beside it. The subject is the exact
+     one this band argues: paper stock and card sheets that are blank and unprinted,
+     standing for the client work that is held back rather than shown with the name
+     removed. That is the second and last use of this file on the page, which is the
+     per page reuse cap and not one more.
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #8 Manifesto / belief statement | considered: #21,#24 | why: with no permission on file there is no gallery to show, so what this band actually does is stake out the publishing standard and let the absence of work be visible, which is the point of view the entry names, taken here in its left aligned with a rule above variant on the dark anchor; #21's case study columns and #24's testimonial grid both need named clients and this build has written permission for none, so either would have to be filled with something invented. DEVIATION on #8: the entry is 1 to 3 sentences of belief and this band also carries the two shipping conditions, because a standard stated without the conditions it implies is a slogan. -->
+<section class="section section--dark surface-dark" data-surface="dark" id="s7-work" aria-labelledby="s7h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Evidence</p>
+          <h2 class="d-md" id="s7h">The two conditions client work ships under.</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row--aside">
+      <div class="col col--stack">
+        <div class="bw-card bw-card--flat reveal">
+          <p class="bw-card__title">Rated 4.9 from 35 Google reviews.</p>
+        </div>
+        <p class="bw-copy readw reveal">Client work is shown as work: the site, the templates, the brand applied. No exceptions are made to either condition.</p>
+        <ul class="bw-list reveal">
+          <li>Written permission from that client is on file.</li>
+          <li>No metric tile of any kind is attached to it. Not a percentage, not a multiple, not a total.</li>
+        </ul>
+        <p class="bw-copy readw reveal">Work without permission is not shown. It is held back rather than shown with the name removed.</p>
+        <p class="bw-note readw reveal">We publish a result with its dates and its method, or we do not publish it. Named and dated outcomes appear on <a href="results.html">results</a> as each one clears permission.</p>
+      </div>
+
+      <div class="col col--media col--stretch">
+        <figure class="bw-shot reveal">
+          <div class="bw-shot__plate">
+            <img class="bw-shot__img"
+                 src="../assets/split-web-design-craft.jpg"
+                 width="768" height="1024" loading="lazy"
+                 alt="Blank white paper stock samples and plain card sheets spread across a bright white studio table beside a deep purple wooden dowel and a slim plain gold bar.">
+          </div>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S8 . the questions . ground PAPER
+     Four questions, every answer open on the page. The band is set as a two
+     column split with the question on the narrow left track and its answer on the
+     wide right track, so the four questions can be scanned down one axis without
+     any of them being hidden behind a click. Answers one, three and four carry the
+     G-REPEAT resolutions R5, R6 and R7 recorded in the head comment: each refers
+     to the band that states the fact in full rather than restating it. Nothing is
+     invented as a fifth answer, and the labelled field that used to state what the
+     business has never ruled is struck as owner facing.
+     ========================================================================= -->
+<!-- pick: FAQ-ACCORDION.md #3 2-col split FAQ (questions left / answers right) | considered: #4,#1 | why: a page that has just invited the reader to run their own speed test on us cannot then hide four answers behind a click, and the entry's split keeps every question scannable down the left axis while its answer sits open at full measure on the right; #4's single numbered column would set the two long answers at the same weight as the two short ones, and #1's expand rows are the accordion the terms page already owns and would put the ownership answer behind an interaction. DEVIATION on #3, stated rather than left to be found: the entry pairs one questions column with one answers column, and this band pairs each question with its OWN answer track row by row, because the four answers differ in length by a factor of three and a single shared column would leave the short ones stranded beside the long ones. -->
+<section class="section section--paper" id="s8-faq" aria-labelledby="s8h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Questions</p>
+          <h2 class="d-md" id="s8h">What people ask before the call.</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row--tight">
+      <div class="col col--span-4"><h3 class="reveal">How much is the website?</h3></div>
+      <div class="col col--span-8"><p class="bw-copy readw reveal">The site is inside the one fee, and that fee is quoted per business after a competitive review. There is no figure, range, day rate or band published on this site.</p></div>
+
+      <div class="col col--full"><div class="bw-divider" aria-hidden="true"></div></div>
+
+      <div class="col col--span-4"><h3 class="reveal">Do I own the site?</h3></div>
+      <!-- THE OWNERSHIP ANSWER. The approved copy carries an owner marker here and
+           then writes three sentences, two of which report what the business has not
+           ruled and that nothing was invented. Those two are owner facing, so what
+           renders is the third, the one addressed to the reader: where to get the
+           answer. No authoring token reaches the page. -->
+      <div class="col col--span-8"><p class="bw-copy readw reveal">Ask it on the call and get the answer from the agreement rather than from a web page.</p></div>
+
+      <div class="col col--full"><div class="bw-divider" aria-hidden="true"></div></div>
+
+      <div class="col col--span-4"><h3 class="reveal">What if I need changes every month?</h3></div>
+      <div class="col col--span-8"><p class="bw-copy readw reveal">That is the model rather than an exception to it: a standing capacity, requested through the client portal, and it keeps running in a month billing is paused.</p></div>
+
+      <div class="col col--full"><div class="bw-divider" aria-hidden="true"></div></div>
+
+      <div class="col col--span-4"><h3 class="reveal">Is the design guaranteed too?</h3></div>
+      <div class="col col--span-8">
+        <p class="bw-copy readw reveal">No. There is exactly one guarantee, it is stated in full near the top of this page, and nothing here creates a second one.</p>
+        <p class="bw-note readw reveal">The full argument for the terms lives on <a href="guarantee.html">guarantee</a>.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================================================================
+     S9 . the single ask . ground GOLD, ground change 6
+     One action, one supporting line. The wayfinding group sits on this band for
+     the reason the template records as a gate finding rather than a preference:
+     the locked chrome ships its own dark pre footer conversion band immediately
+     after this one, so a bare heading plus a button here would make two closing
+     asks back to back. Giving the band real content is the remedy that gate
+     itself prescribes. The rail is wayfinding type and never a second verb.
+     Gold carries dark ink only, per the token lock.
+     ========================================================================= -->
+<!-- pick: CTA-PATTERNS.md #1 Solid pill primary | considered: #11,#6 | why: the owner fixed one primary conversion action for every page on this build and this is it, a brand colour solid fill at the sheet's full pill radius carrying a 600 weight lightly tracked label, one per major section, routed to contact-us.html under the brief rather than to a dialer; #11 turns the whole band into one button and would leave the supporting line with nowhere honest to sit on a gold ground, and #6's ghost text link is too quiet to be the only ask on the page. -->
+<section class="section section--gold surface-gold" data-surface="accent" id="s9-cta" aria-labelledby="s9h">
+  <div class="container">
+    <div class="row row--tight">
+      <div class="col col--span-5">
+        <div class="bw-route reveal">
+          <p class="bw-route__k">Where to read the rest</p>
+          <ul class="bw-route__l">
+            <li><a href="guarantee.html">The guarantee, in full</a></li>
+            <li><a href="full-suite.html">What the one fee covers</a></li>
+            <li><a href="results.html">Results, as they clear</a></li>
+          </ul>
+          <span class="bw-route__n">The contract detail and the long form argument live on the first of these.</span>
+        </div>
+      </div>
+      <div class="col col--span-7">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">The next step</p>
+          <h2 class="d-md" id="s9h">Talk it through before anything is signed.</h2>
+        </div>
+        <div class="bw-actions reveal">
+          <a class="bw-btn bw-btn--primary" href="contact-us.html">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            CALL US
+          </a>
+        </div>
+        <p class="bw-copy readw reveal">First page on the key phrases named in your contract, or you don't pay: in any month we are not delivering them, we keep working and your billing stops.</p>
+      </div>
+    </div>
+  </div>
+</section>

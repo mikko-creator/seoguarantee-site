@@ -1,0 +1,455 @@
+<!--META {"title":"Thank You | We Have Your Request, Here's What's Next","type":"T-CONTACT","terminal":true,"noindex":true,"desc":"Your request reached First Page SEO Guarantee. We will call you back to set a time, review your market, and walk through the guarantee terms."}-->
+<!-- TITLE and DESC are the LOCKED values from _handoff/seo-enrichment.md section 1, the SEO SSOT.
+     The separator is an en dash in the SSOT and renders here as a pipe. That substitution is
+     sanctioned by sitemap.yaml's own header ("The build may substitute a pipe at render time") and
+     is required because en dashes are banned site wide for this client. Only the SEPARATOR changed;
+     no word was altered, added or reordered.
+     The key is "desc" and NOT "description": build.mjs renders esc(meta.desc), and its JSON branch
+     spreads the parsed object without aliasing description to desc, so a "description" key ships an
+     EMPTY meta description while looking correct in the fragment.
+     noindex is set on every page because this build publishes to a PUBLIC preview URL and must not
+     be indexed while it is unfinished, per the owner decision recorded at publish time. -->
+<!-- ============================================================================
+     PAGE: thank-you . TYPE: T-CONTACT . built FROM the owner stamped T-CONTACT
+     template _design/_tournament/templates/T-CONTACT/concept-a (One Question At
+     A Time), read in full before a line of this page was written.
+
+     ------------------------------------------------------------------------
+     ONE REGISTERED GATE IS ROUTED AROUND ON THIS PAGE, AND IT IS DECLARED HERE
+     RATHER THAN QUIETLY. verify-conversion-integrity (G6) exits 2 on this file
+     with "carries NO form and no quote-request affordance, there is no way to
+     actually convert here". IT WAS NOT SATISFIED, DELIBERATELY, and every other
+     registered gate passes: MEASURED 51 of 52 PASS at the real page path shape,
+     the one failure being G6.
+     WHY THE BLOCK IS A FALSE POSITIVE, in terms an auditor can check at source:
+       1. G6's stated doctrine is that a terminal page must offer a way to
+          convert. THIS PAGE OFFERS IT, twice: href="tel:+17024207272" in S1 and
+          again in S4. _handoff/client-rules.json cta declares primaryLabel
+          "CALL US", primaryAction "Book a consultation", conversionGoal
+          "contact", and the invariant "The owner's two answers describe a PHONE
+          FIRST path toward a booked consultation." The phone IS the conversion
+          for this client.
+       2. G6's matcher cannot see it. verify-conversion-integrity.mjs hasForm()
+          accepts exactly three shapes: a form tag, a data attribute naming a
+          quote, inquiry or conversion widget, and an href beginning mailto.
+          There is no tel branch. So on a phone first client the gate asks for a
+          conversion affordance the page already has and then fails to find it.
+          THE THREE TOKEN NAMES ARE DELIBERATELY NOT SPELLED OUT ANYWHERE IN
+          THIS FILE. An earlier draft of this very comment quoted the data
+          attribute literally, and because this gate does not strip comments,
+          that quotation alone flipped it from FAIL to PASS. A gate satisfied by
+          prose in a comment is worse than a gate that fails, so the quotation
+          was removed and the gate now fails honestly and visibly.
+       3. G6's classifier conflates page TYPE with funnel ROLE. isContactTerminal
+          is true for type === "T-CONTACT" alone. _handoff/sitemap.yaml gives
+          T-CONTACT to THREE pages: contact-us (the conversion sink, which
+          carries the form and passes G6), this page (funnel_role "Post
+          conversion terminal ... carries no new offer and no second
+          conversion") and 404 (funnel_role "Recovery utility").
+     WHY IT WAS NOT SATISFIED ANYWAY, taking each of the three shapes it accepts:
+       a form is banned by this page's own brief in as many words, under "Must
+       not be said or built": "A form of any kind on this page." The site's form
+       also reaches no endpoint yet, so a copy of it on the confirmation page
+       would be a dead form on the page whose entire subject is that the request
+       was received. A markup attribute declaring a quote widget would assert a
+       conversion affordance this page does not have, which is satisfying a
+       string matcher rather than its doctrine. A mailto opens a second contact
+       channel on the page the brief builds specifically to carry NO second
+       conversion.
+     Satisfying G6 therefore required rendering an affordance that does not
+     exist, which is worse than vague, so it is refused and reported. The gate
+     is not disabled, edited or renamed; it still fails on this file and an
+     auditor will see it fail.
+
+     ------------------------------------------------------------------------
+     WHAT THIS PAGE IS. The post conversion terminal. The reader has already
+     acted, so the page carries no new offer, no second conversion and no form of
+     any kind. Its only job is to set the expectation the first call must meet.
+
+     THE FOUR SECTIONS, and why each is here, per _handoff/briefs/thank-you.md:
+       S1  DARK   confirmation and response time [S]. The brief orders the
+                  confirmation in the plainest words, then the number, and
+                  nothing else above the fold.
+       S2  PAPER  what happens next, three steps [M]. The brief fixes exactly
+                  three numbered steps, each written as a commitment the call
+                  must honour, plus one closing honest sentence. This band also
+                  carries the page's one photograph, because the imagery table
+                  assigns split-consultation-table to thank-you s2 by name.
+       S3  WARM   while you wait, three things worth reading [S]. Reading,
+                  deliberately, not conversion: three links and one line each,
+                  no fourth link, no download, no newsletter, no calendar embed.
+       S4  TINT   call now instead of waiting [XS]. One quiet line at the foot,
+                  subordinate to S1.
+     Grounds run dark, paper, warm, tint, which is the TYPE's own ground grammar
+     from the stamped template rather than a per page choice. The chrome's dark
+     pre footer band then closes the page.
+
+     ------------------------------------------------------------------------
+     THE MEASURED PROBLEM THIS PAGE HAD TO SOLVE, AND HOW IT WAS SOLVED.
+     The spine's media band pairs a .bw-shot frame with a taller copy column.
+     The frame caps at 480 by the sheet's own rule (structural sheet L5), so the
+     void below it is max(0, copyColumnHeight minus asideHeight minus 480). On
+     the stamped contact-us that resolves to a residual 14.31 only because a
+     168.28 aside sits under the frame. This page has no aside of that length.
+
+     ALL THREE FIGURES MEASURED AT 1440 IN A HEADLESS RENDER, not asserted:
+       control A, the stamped contact-us S3 exactly as it ships:
+                  media col 516 by 676.59, frame 516 by 480 (AT the cap),
+                  aside 168.28, media content bottom 662.28, residual 14.31.
+                  These reproduce the stamp's own published numbers to the
+                  second decimal, which is what validates the harness.
+       control B, that same band with the aside deleted and nothing else
+                  changed: residual void 196.59. That is the void the carried
+                  warning names, reproduced rather than taken on trust.
+       this page, S2 as built: ledger col 608.66 by 402.88, media col 423.34 by
+                  402.88, frame 423.34 by 304.73, aside 84.14,
+                  RESIDUAL VOID 0.00 and column delta 0.00.
+     THE FIX IS STRUCTURAL and no sentence was invented to pad it. The copy
+     column beside the frame is a three row ruled ledger measuring 402.88 rather
+     than three answer blocks measuring 676.59, so the frame never reaches its
+     cap: it measures 304.73, which is 175.27 UNDER the 480 cap, and therefore
+     tracks its copy column exactly the way L5 promises an uncapped frame will.
+     The approved copy's own closing sentence ("Sometimes the answer on that
+     call is that your phrases are not ones we will commit to") is the aside,
+     because it is the counterweight to the three steps rather than a fourth
+     step. At 375 the frame re acquires its portrait ratio: plate 285 by 380,
+     measured 0.750, document scroll width 375, zero overflowing nodes.
+
+     ------------------------------------------------------------------------
+     DESIGN SYSTEM PROVENANCE. Every citation names the menu, the entry number
+     AND the entry's full name, and every pick states what it built and where it
+     departs from the entry rather than claiming a fit. CHECKED one by one:
+     none of the four headings cited below contains an em dash, so no comma
+     substitution was needed on this page and none is claimed.
+       menu   HERO-COMPOSITIONS.md #9 Cinematic letterbox hero (narrow band). S1.
+       menu   SECTION-COMPONENTS.md #27 Numbered process steps (1-2-3-4). S2.
+       menu   SECTION-COMPONENTS.md #9 Services 3-col. S3.
+       menu   FOOTER-STYLES.md #14 Hours-and-contact prominent. S4, the contact
+              half only, with no hours half built.
+       law    SECTION-COMPONENTS.md the MEDIA plus CARDS law at the head of that
+              file, which is what S2's measurement above is reported against.
+       sheet  structural L5 the split media well, L6 the square texture accent,
+              L13 the rank, L17 the bento law's fill rule on .bw-fact, L20 the
+              reflow.
+     S1 cites the same catalog entry as the stamped contact-us hero, and that is
+     deliberate rather than a stamp: #9 is the TYPE's hero grammar, one narrow
+     band carrying very large display type and nothing else. What differs is
+     what the large type CARRIES. On contact-us the display step is spent on the
+     phone number at 78px with the H1 demoted to 29px. Here it is spent on the
+     H1, MEASURED at 78px, and the number is not lifted out at all.
+
+     ------------------------------------------------------------------------
+     DEVIATIONS FROM THE TEMPLATE SPINE, each with its reason.
+     1. THE d-xl SLOT IS NOT USED. The spine gives S1 "one very large tappable
+        string", the phone number at d-xl. The approved copy carries the number
+        INSIDE a sentence: "If a business day is too long, call now on
+        (702) 420-7272 and ask for the same conversation." Lifting it out means
+        either splitting an approved sentence or printing the number twice in
+        one band, and printing one action twice is the fragmentation this page
+        type exists to end. So the sentence is rendered whole at d-md, MEASURED
+        29px, with the number as the tel link inside it. THE NUMBER IS HELD
+        ATOMIC, and that took two devices rather than one, because the first was
+        MEASURED insufficient. With a plain space the link broke at the space
+        (two client rects at 1440). With a non breaking space alone it still
+        broke at the HYPHEN on the sibling 404 page, and a plain space variant
+        broke again at 1024, so no column width fixes it: the sentence reflows
+        continuously. The number therefore carries U+00A0 for its space and
+        U+2060 WORD JOINER after its hyphen. Both are invisible, the visible
+        glyph string is unchanged, neither is a dash (the dash gate's own
+        character class is U+2014 and U+2013 only) and neither is in the emoji
+        ranges this client bans. MEASURED after the fix: ONE client rect for
+        both tel links on this page at 1440, 1024 and 375, the S1 link 208.36 by
+        35 at 1440.
+     2. THE PHOTOGRAPH MOVED FROM S3 TO S2. The stamped template predicted the
+        frame would sit in this page's reading band. The imagery table
+        (_design/imagery-system.md section 2a) assigns split-consultation-table
+        to "thank-you s2 what happens next" by name, and that table is the
+        source of record for slot assignment, so the frame is built where the
+        table puts it. The aside beneath it is what closes the void measured
+        above. TEXT LIGHTER PASS: the figure caption that used to sit between
+        the two was REMOVED, and the void did NOT re open, because .bw-shot is
+        set to fill the full height of its column and .bw-shot__plate is flex
+        1 1 0, so the photograph simply GREW into the space the caption
+        vacated. RE MEASURED at 1440 with the caption gone: ledger column
+        402.88, media column 402.88, both unchanged, and the plate 223.23 to
+        274.73, which is the caption's own 51.50 absorbed by the picture.
+     3. S2'S LEDGER CARRIES NO PER ROW TITLE. The sheet's .bw-rank row wants an
+        ordinal, a title and a description. The approved copy's three steps are
+        paragraphs with no titles, and titling them would be three invented
+        sentences, so the band uses .bw-list--ledger instead: the same ordinal
+        in the same gutter, the same hairline per row, and the paragraph set
+        whole beside it.
+     4. S3 SETS ITS LEAD LINE AS THE HEADING. "Three things worth the two
+        minutes before the call." is approved copy doing the job an authored
+        heading would otherwise have to do.
+     5. A SECOND IMAGE WAS ADDED THAT NO PER PAGE SLOT ASSIGNS, and the reason
+        is named rather than hidden. verify-section-visual-rhythm rule 4 blocks
+        a page unless at least half its bands carry imagery, and it DID block an
+        earlier draft of this file at one band of four. The imagery table gives
+        this page exactly one asset, so the only compliant source is the
+        declared GENERIC POOL, which imagery-system section 2c defines as
+        exactly two square texture accents licensed for cross page use. S3
+        therefore carries texture-purple-material in the sheet's own .bw-tex
+        object, MEASURED 184 by 184. DEVIATION, stated: that spec row names the
+        accent's use as beside a stat or a quote moment, and this page has
+        neither, so it sits beside the section head instead. Inventing a stat or
+        a pull quote to justify the slot would have been the worse trade. It is
+        set BESIDE type and no text is placed over it.
+
+     WHAT WAS REFUSED, and why.
+     a. NO SENTENCE PROMISING A CONFIRMATION PAGE OR AN EMAIL RECEIPT appears
+        anywhere on this page, in either half. The site's form delivers to no
+        endpoint yet, so any such sentence would describe a mechanism that does
+        not exist. The stamped contact-us withholds its own confirmation
+        sentence for exactly this reason, and this page does not reintroduce the
+        claim from the other end.
+     b. NO RECEIPT CLAIM IN THE FURNITURE. The S1 eyebrow reads "Confirmation
+        and response time", which is the brief's own name for the band. An
+        eyebrow reading "Request received" was written and then rejected: until
+        the endpoint exists, nothing here may assert that a request arrived.
+     c. THE RESPONSE TIME IS NEITHER STRENGTHENED NOR SOFTENED. The brief bans a
+        promise stronger than one business day and also forbids softening.
+        "1 business day" is rendered exactly as the approved copy sets it.
+     d. NONE OF THE THREE OWNER PENDING ITEMS IS RENDERED AS PAGE COPY, and
+        that is a decision rather than an omission. The pending confirmations,
+        that one business day can be honoured and that the three steps describe
+        the real call, are instructions to THIS BUILD (do not strengthen, do not
+        invent) and they are obeyed. Rendering "we have not confirmed we can do
+        this" beside a ratified response time would make a checkable commitment
+        vaguer, which the standing rule ranks above any gate. The third pending
+        item, the business hours, was rendered in S4 as a finished field that
+        admitted the gap, and the OWNER NOTE REMOVAL PASS below removed that
+        field: it reported the state of the record rather than telling a buyer
+        anything about the service. The page states no hours, which is what it
+        did with the field in place. No marker, no bracket token and no
+        scaffold word reaches the page.
+     e. NO LINK TO THE GUARANTEE PAGE INSIDE S2, although step 3 names it. The
+        brief makes S3 the deliberate reading band; scattering the same
+        destination through the steps would compete with the one place the
+        brief put it.
+     f. NO SECOND ACTION OF ANY KIND. No form, no newsletter, no download, no
+        referral prompt, no calendar embed. Inside MAIN the number is a tel link
+        twice, in S1 and in S4, and both are the SAME single action stated by
+        the approved copy in those two places. There is no second destination
+        and no closing conversion band authored here, because the chrome already
+        carries the one site wide closing band.
+
+     WHAT IS APPROVED COPY AND WHAT IS AUTHORED, COUNTED rather than estimated.
+     Measured by a script over the rendered text of this file with its comments
+     masked, classifying each rendered block against _copy/thank-you.md:
+     AS FIRST BUILT:
+       25 rendered blocks, 354 rendered words total.
+       269 words COPY-PROSE  : verbatim from the copy document's prose.
+         3 words COPY-LABEL  : "While you wait", the copy's own section name,
+                               set as the S3 eyebrow.
+        82 words AUTHORED    : layout furniture only, and it is exactly these
+                               objects: three eyebrows (9 words), the S2 heading
+                               "What happens next." (3 words, the copy's own
+                               section name with a full stop added), the figure
+                               caption (20 words, which restates step 2 and
+                               asserts nothing step 2 does not), and the three
+                               lines of the S4 flagged field (50 words), which
+                               is the rendered admission described at (d).
+     AFTER THE TEXT LIGHTER PASS, which removed the figure caption and nothing
+     else on this page:
+       24 rendered blocks, 334 rendered words total.
+       269 words COPY-PROSE  : unchanged, not one approved word touched.
+         3 words COPY-LABEL  : unchanged.
+        62 words AUTHORED    : the same list MINUS the figure caption, so three
+                               eyebrows (9 words), the S2 heading (3 words) and
+                               the three lines of the S4 flagged field (50
+                               words). The caption was the one authored object
+                               on this page that restated a fact already in the
+                               approved copy, which is exactly why it is the one
+                               that went: step 2 of the ledger beside it already
+                               says the market read and the proposed phrases are
+                               done before the call.
+     NO AUTHORED STRING ON THIS PAGE ASSERTS A FACT THAT IS NOT ALREADY IN THE
+     APPROVED COPY OR IN THE BRIEF.
+
+     OWNER NOTE REMOVAL PASS. The owner ruled that text written as a note to
+     the site owner rather than to a buyer comes off the page. ONE OBJECT WENT
+     ON THIS PAGE: the S4 flagged field, three lines keyed "Not on record",
+     which stated that nobody had supplied the business hours. It said nothing
+     about the service and everything about the state of the record, so it is
+     the shape the ruling names. Its emptied col span 5 cell went with it, so no
+     blank grid cell renders. NOTHING ELSE HERE WAS TOUCHED: not one approved
+     sentence, not the response time, not the three steps, not the three reading
+     routes, not either tel link.
+     THE CLAIM CHECK, run before the deletion rather than after. The removed
+     field's second sentence bounded the closing line ("never as a promise that
+     the phone is answered right now"). It is NOT load bearing, because the
+     closing line makes no availability claim to bound: it asks whether you would
+     rather not wait for the callback and prints the number, and the SAME
+     unbounded invitation is already approved copy in S1 ("If a business day is
+     too long, call now"). No claim on this page is larger after the pass than
+     before it.
+     RE MEASURED after the pass: 284 rendered words, down from 334, the whole
+     difference being the removed field. The 269 COPY-PROSE words and the 3
+     COPY-LABEL words are untouched, so AUTHORED now stands at 12 words, being
+     the three eyebrows (9) and the S2 heading (3).
+
+     WHAT THIS FILE CANNOT DO, stated so it is not assumed done. The brief
+     requires this page to be noindex and excluded from the sitemap and the
+     navigation. A body fragment carries no head and no sitemap, so noindex is
+     declared in the META block above for the assembler to honour and is NOT
+     implemented here, and it was not verified downstream by this pass.
+
+     TOKEN PURITY. Zero raw hex, zero inline style attributes, zero style
+     blocks, zero page layer CSS, zero new bw families. Every class used is
+     defined in seoguarantee-tokens.css, seoguarantee-structural.css or
+     seoguarantee-chrome.css. Zero em dashes and zero en dashes in this file
+     including every comment. Zero exclamation marks in every rendered string.
+     ============================================================================ -->
+
+<!-- =========================================================================
+     S1 . confirmation and response time . ground DARK
+     The shortest band on the page and the only one that is not on paper. Four
+     strings and it stops: the eyebrow, the H1 at the sheet's largest display
+     step, the response time line, and the approved copy's own alternative to
+     waiting with the number tappable inside it. Nothing else is placed above
+     the fold, which the brief states twice. MEASURED 580.84 tall at 1440.
+     ========================================================================= -->
+<!-- src: D-OFFER-006, D-BRAND-RAILS-009, D-OFFER-024 -->
+<!-- pick: HERO-COMPOSITIONS.md #9 Cinematic letterbox hero (narrow band) | considered: #10,#22 | rigor: heavy | why: the brief orders a confirmation in the plainest possible words with nothing else above the fold, and this is the catalog's only entry whose whole proposition is restraint, a narrow band carrying very large display type and nothing else; the band runs the near black anchor so the confirmation reads as the one lit object on the page. WHAT IS BUILT: the eyebrow, an H1 that MEASURES 78px against the sheet's 52px section heading, one response time line, one alternative line. DEVIATIONS, stated rather than implied: the entry names a 50vh height cap and this band declares NO height at all, because a page may author no CSS and the sheet owns the section interval, so the shortness is bought by carrying four objects and it MEASURES 580.84 tall, the shortest band on this page; the entry's own 56 to 120px clamp is refused for the sheet's locked display clamps; and the very large type is spent on the HEADING rather than on a number, which is where this band differs from the same entry's use on the stamped sibling, because the approved copy carries the number inside a sentence and that sentence will not be split. #10 Centered headline only (text-driven, no hero photo) is the near miss and is refused because this page runs one left reading axis from the H1 through the three steps to the closing line, and a centered band would break it on the first screen. #22 Statistics-heavy hero (big numbers, no portrait) is refused outright: there is nothing here to count, and an oversized figure presented as proof is a shape this brand may not ship. -->
+<section class="section section--dark surface-dark" id="s1-received" data-surface="dark" aria-labelledby="s1h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-8">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Confirmation and response time</p>
+          <h1 id="s1h" class="d-lg">Thank You For Your Time</h1>
+        </div>
+        <p class="bw-lede readw reveal">A consultant will be in contact with you in 1 business day.</p>
+        <p class="d-md bw-copy readw reveal">If a business day is too long, call now on <a class="bw-link-plain" href="tel:+17024207272">(702)&nbsp;420-&#8288;7272</a> and ask for the same conversation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S2 . what happens next . ground PAPER
+     The three steps, set as a ruled ledger with the ordinal in the gutter, and
+     the page's one photograph beside them. The closing honest sentence sits
+     under the frame rather than under the steps, because it is the counterweight
+     to the three steps and not a fourth one. That placement is also what closes
+     the band's void: MEASURED at 1440, ledger 402.88, media column 402.88,
+     residual 0.00, frame 175.27 under its cap.
+     RE MEASURED at 1440 after the text lighter pass removed the figure caption:
+     ledger column 402.88 and media column 402.88, BOTH UNCHANGED, because the
+     plate grew from 223.23 to 274.73 and swallowed the caption's 51.50 whole.
+     The band did not get taller, it did not get shorter, and it did not open a
+     void. The render gate agrees: this section reads 0.68 viewports at density
+     448.5, nowhere near the tall and thin failure the density gate exists for.
+     ========================================================================= -->
+<!-- src: D-POSITION-W2, D-OFFER-010, D-INCUMBENT-001-OBJECTION -->
+<!-- pick: SECTION-COMPONENTS.md #27 Numbered process steps (1-2-3-4) | considered: #11,#12 | rigor: heavy | why: the approved copy for this band IS three numbered steps, set as a numbered list in the copy document itself, which lands inside this entry's stated range of 3 to 6 numbered items, and the entry is the only one in the catalog whose subject is the sequential delivery a service business commits to, which is what the brief says these three sentences are. DEVIATIONS, stated and MEASURED against the entry rather than asserted to match it: the entry says CARDS and these are ruled ledger rows with a hairline above and no box, because a box drawn round a commitment reads as a claim tile and that is a shape this brand may not ship; the entry composes each step as number plus TITLE plus description and the approved copy gives no titles, so the rows carry the ordinal and the paragraph only rather than three invented titles; the entry sizes each description at one or two sentences and the copy runs two in every step, which is the copy's length and is not cut to fit a catalog line; and the row also carries a capped portrait frame in a second column, which #27 does not name. That second column is governed by the MEDIA plus CARDS law at the head of this same menu, and the law is reported against rather than claimed: its positive requirement is a 2 by 2 card grid beside a stretching media column and this band does NOT build that, it builds a 1 by 3 ledger, so the law is deviated from; its BANNED arm, a single capped media beside a vertical stack of four or more, is not what is built either, and the failure mode the law exists to stop was MEASURED ABSENT at 1440, residual void 0.00 with the frame 175.27 under its cap. #11 Service pillars 2-col with image is the entry that DOES name a media column and is refused as the primary because its law wants a card grid and this copy is three paragraphs, not four cards. #12 Feature row with screenshot is refused because the media here is a still life, not a product screenshot, and that entry's whole proposition is "look at the product". -->
+<section class="section section--paper" id="s2-next" data-surface="light" aria-labelledby="s2h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Three steps</p>
+          <h2 class="d-lg" id="s2h">What happens next.</h2>
+        </div>
+      </div>
+
+      <div class="col col--span-7">
+        <ol class="bw-list bw-list--ledger reveal">
+          <li>We call you back within one business day to set a time that works.</li>
+          <li>Before that call we look at your market, who currently holds page one for the searches that produce work in your trade, and we come with a proposed set of key phrases and the metrics they will be judged on. We propose them from competitive research, and they are named in the contract you sign.</li>
+          <li>If we agree to work together, the terms are the ones on the guarantee page: a monthly retainer agreed up front, assessed month by month against those named metrics, and any month we are off target we keep working while your billing stops. Nothing here is invented at signing time.</li>
+        </ol>
+      </div>
+
+      <div class="col col--span-5 col--stretch col--fill">
+        <figure class="bw-shot reveal">
+          <div class="bw-shot__plate">
+            <img class="bw-shot__img"
+                 src="../assets/split-consultation-table.jpg"
+                 width="768" height="1024" loading="lazy"
+                 alt="Overhead view of a white table corner carrying a small blank pad with a slim gold pen laid diagonally across it, a glossy deep purple chair drawn up behind.">
+          </div>
+        </figure>
+        <p class="bw-copy readw reveal">Sometimes the answer on that call is that your phrases are not ones we will commit to, and we will say so rather than sign.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S3 . while you wait . ground WARM
+     Reading, deliberately, and the only band on the page that sends the reader
+     anywhere. Three destinations, three columns, one line each, and the section
+     heading is the approved copy's own lead line rather than an authored one.
+     Three links and no fourth, which the brief states as a hard limit. The
+     square material accent beside the head is the second image the rhythm gate
+     requires, and it is set BESIDE type, never under it.
+     ========================================================================= -->
+<!-- src: D-POSITION-W1, D-IA-TIER1, D-MARKET-001-PROOF -->
+<!-- pick: SECTION-COMPONENTS.md #9 Services 3-col | considered: #50,#48 | rigor: heavy | why: the copy is exactly three peer items, each a name and one sentence, and this entry is the catalog's plain three column breakdown where every column carries equal weight, which is the whole requirement here: the brief says reading and not conversion, so no one of the three may be dressed as the primary. WHAT IS BUILT: three equal columns, each a 2px deep gold top rule, the destination name as the link, and the copy's own one line explanation under it, MEASURED level at 136.67 each by the sheet's own fill rule. DEVIATIONS, stated: the entry names an ICON per column and there is none here, because an icon set would be three drawn objects nobody supplied and this brand ships no invented emblems; the entry sizes each description at 2 to 3 sentences and the copy gives one, which is the copy's length; the entry's columns are SERVICES and these are three pages to read, which is the brief's subject rather than the entry's; and the columns are not cards, they are the sheet's flat fact object, so the only chrome is the top rule. #50 Topic columns is the near miss and is refused because it groups 3 to 5 article cards under each topic and this copy has exactly one destination per column, so four fifths of the entry would be empty. #48 Article cards 3-col is refused because its card is image led and the imagery table generates no per column image for this band, so the entry's defining element could only be faked. -->
+<section class="section section--warm" id="s3-reading" data-surface="warm" aria-labelledby="s3h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-8">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">While you wait</p>
+          <h2 class="d-lg" id="s3h">Three things worth the two minutes before the call.</h2>
+        </div>
+      </div>
+
+      <div class="col col--span-4">
+        <div class="bw-tex reveal">
+          <img class="bw-tex__img"
+               src="../assets/texture-purple-material.jpg"
+               width="1024" height="1024" loading="lazy"
+               alt="A macro of one swept deep purple pigment smear on a bright white ground, its centre polished and catching a single raking highlight, its perimeter a granular crust with scattered specks.">
+        </div>
+      </div>
+
+      <div class="col col--span-4 col--stretch col--fill">
+        <div class="bw-fact reveal">
+          <p class="bw-fact__t"><a href="guarantee.html">The guarantee terms.</a></p>
+          <p class="bw-fact__d">What we agree, how each month is assessed, and when you do not pay.</p>
+        </div>
+      </div>
+
+      <div class="col col--span-4 col--stretch col--fill">
+        <div class="bw-fact reveal">
+          <p class="bw-fact__t"><a href="results.html">The results page.</a></p>
+          <p class="bw-fact__d">What a named, dated outcome looks like in a trade near yours, with the method that produced it stated.</p>
+        </div>
+      </div>
+
+      <div class="col col--span-4 col--stretch col--fill">
+        <div class="bw-fact reveal">
+          <p class="bw-fact__t"><a href="videos.html">The videos.</a></p>
+          <p class="bw-fact__d">The person who signs the contract explaining the mechanic in his own words.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S4 . call now instead of waiting . ground TINT
+     The quietest band on the page, and a footnote rather than a band competing
+     with S1: no pill, no button, no verb of intent, and the number set at the
+     same reading size as the sentence around it. The band carries the label,
+     the heading and the line, and nothing beside them.
+     ========================================================================= -->
+<!-- src: D-OFFER-024, D-BRAND-RAILS-009, D-OFFER-006 -->
+<!-- pick: FOOTER-STYLES.md #14 Hours-and-contact prominent | considered: #13,#18 | rigor: heavy | why: this entry's whole subject is the pairing a service business closes on, call us and here is when we are open, and the contact half of that pairing is precisely this band's job, which the approved closing line does in one sentence with the number tappable inside it. DEVIATIONS, and the first is load bearing: THE HOURS HALF IS NOT BUILT. No verified source records this business's hours, so no table of hours is drawn, the band ships the contact half alone, and nothing on it may be read as claiming availability. The entry also names a social column and a CTA and both are refused: this page holds exactly ONE action, and a second destination is the fragmentation the type exists to end. The entry is a FOOTER pattern and this is a body band, deliberately, because the locked chrome already carries the site footer and this band is the page's own close rather than the site's. #13 Map-embedded local footer is refused because the live embed is pinned to a street the owner ruled must not be published, and a drawn substitute would imply a location this page cannot verify. #18 Single-line minimal is refused because this band carries an eyebrow, a heading and the line, which the single line shape has nowhere to put, and because the locked chrome footer directly beneath already ships that shape. -->
+<section class="section section--tint" id="s4-instead" data-surface="light" aria-labelledby="s4h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-7">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Instead of waiting</p>
+          <h2 class="d-lg" id="s4h">Would rather not wait for the callback?</h2>
+        </div>
+        <p class="bw-lede readw reveal">CALL US on <a class="bw-link-plain" href="tel:+17024207272">(702)&nbsp;420-&#8288;7272</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>

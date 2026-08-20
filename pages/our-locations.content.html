@@ -1,0 +1,539 @@
+<!--META {"title":"Local SEO Services | The US Metros We Cover","desc":"Local SEO run from one Las Vegas office. See the metros we cover and the terms: first page on your agreed key phrases, or your billing pauses that month.","noindex":true}-->
+<!-- TITLE and DESC are the LOCKED values from _handoff/seo-enrichment.md section 1, the SEO SSOT.
+     The separator is an en dash in the SSOT and renders here as a pipe. That substitution is
+     sanctioned by sitemap.yaml's own header ("The build may substitute a pipe at render time") and
+     is required because en dashes are banned site wide for this client. Only the SEPARATOR changed;
+     no word was altered, added or reordered.
+     The key is "desc" and NOT "description": build.mjs renders esc(meta.desc), and its JSON branch
+     spreads the parsed object without aliasing description to desc, so a "description" key ships an
+     EMPTY meta description while looking correct in the fragment.
+     noindex is set on every page because this build publishes to a PUBLIC preview URL and must not
+     be indexed while it is unfinished, per the owner decision recorded at publish time. -->
+<!-- ============================================================================
+     our-locations . type T-INDEX . built FROM the owner stamped T-INDEX template
+     concept-b "The Board" . 5 sections, the count the brief and the copy both fix.
+
+     WHAT THIS PAGE IS, AND WHY ITS BOARD LOOKS NOTHING LIKE THE SIBLING'S. The
+     spine is inherited whole: one band per ground, ONE row per band, every object
+     placed by span on the twelve track grid, the index card object repeated as the
+     type's defining move, zero page layer CSS, zero authored inline style
+     attributes, and a media switch decided once for the whole grid rather than per
+     card. What is NOT inherited is the sibling's ruling that the page ships no
+     control, and the difference is a fact about the payload rather than a change of
+     taste. On the sibling, every declared filter value had nothing behind it, so a
+     control that rendered could not filter. HERE ALL FIVE REGION VALUES HAVE CARDS
+     BEHIND THEM, so the same rule ("a filter value with no cards does not render",
+     _copy/our-locations.md line 40) produces the opposite result: the control is
+     BUILT, and it works.
+
+     THE CONTROL IS REAL, AND HERE IS THE MECHANISM, STATED SO IT CAN BE CHECKED.
+     scripts/build.mjs inlines the locked design system browse engine
+     (00-globals/tokens/browse-engine.js) into the assembled page whenever the page
+     carries the data-grid hook, which this page does. The engine binds anchors
+     carrying data-cat that sit OUTSIDE the grid, sets is-active on the chosen one,
+     and shows only the grid children whose own data-cat matches. Every piece of
+     that contract is honoured here: the six region anchors are outside the grid,
+     the grid declares a page size above its item count so nothing is silently
+     paginated away, and the "Every region" anchor ships pre marked is-active so the
+     engine seeds its state from the page rather than from a default. is-active is
+     PAINTED, not invented: seoguarantee-structural.css line 2397 gives the jump
+     index link an accent soft bed and full ink at that class, which is why the
+     region rail is built from the jump index atom and not from a pill, since a pill
+     would toggle a class the sheets do not paint and the control would have an
+     invisible state. WITH SCRIPT OFF the whole list is visible, which is the honest
+     default, and the six anchors fall back to jumping to the index they filter.
+
+     SECTIONS, AND WHY EACH ONE IS HERE (briefs/our-locations.md sections 1 to 5).
+       S1 paper  hero, coverage statement. One H1 and one paragraph, which is what
+                 the brief allows above the index, plus the single primary action.
+       S2 warm   how we work a market we are not physically in. The section that
+                 earns the consolidation, answering the Cleveland objection in the
+                 three moves the brief orders, beside the one topic photograph this
+                 page is allocated.
+       S3 tint   the metro index. The XL body: the declared card template, the live
+                 region control, the card set itself, and the two owner pending
+                 fields rendered as admissions rather than as markers.
+       S4 dark   what a local campaign actually covers. The page's ONE near black
+                 anchor, carrying the stack, the attributed timing and the fee rule.
+       S5 gold   closing-cta. One action, the tappable number, and the routes out.
+     Longest run on one ground is one band. The anchor sits at position 4 rather
+     than at position 2, which is where the sibling puts it, because on a coverage
+     page the reader must first find their metro and only then meet the engagement.
+
+     PROVENANCE, CITED SO EACH ONE DESCRIBES THE OBJECT IT IS ATTACHED TO. Checked
+     entry by entry against the catalogs: not one of the six names below contains
+     an em dash, so the owner's comma substitution rule is not exercised on this
+     page and no cited name is altered.
+       menu   HERO-COMPOSITIONS.md #10 Centered headline only (text-driven, no hero
+              photo). S1, a centred type only hero: no photograph, no panel beside
+              it, no media of any kind.
+       menu   SECTION-COMPONENTS.md #11 Service pillars 2-col with image. S2, a
+              capped portrait frame in one column facing a vertical stack of three
+              ruled pillars in the other.
+       menu   SECTION-COMPONENTS.md #51 Locations grid. S3, the metro tiles, which is this
+              entry's role exactly, with ONE deviation stated at (4) below.
+       menu   SECTION-COMPONENTS.md #33 Custom-quote driver. S4, whose terminal move
+              is that the fee is quoted per business after a competitive review.
+       menu   CARD-VARIATIONS.md #2 Light feature card with embedded mini-visual.
+              The repeating tile in S3, which is the object the structural sheet
+              itself cites at its card rule (seoguarantee-structural.css line 623).
+              DEVIATION: the entry embeds a mini-visual in the card and this tile
+              embeds none, per the cover switch ruling at (4) below.
+       menu   CTA-PATTERNS.md #1 Solid pill primary. S1 and S5, the one primary
+              action, which client-rules.json fixes as CALL US to the contact page.
+       library _MODERN-WOW-SPEC               depth, edges, figure and ground.
+       library _COMPOSITION-LAWS              L1 reading order, L9 selection
+               rationale, R8 orientation per section pattern.
+       library _RESPONSIVE-PATTERN-LIBRARY    the four tier reflow ladder.
+       library _MODERN-DESIGN-PATTERN-LIBRARY the component vocabulary.
+       blueprint composition-agency-creative  the sector spine. What it asks for and
+               this page REFUSES: the stats counter band, the logo strip and the
+               locations map. The first two are refused for the reasons the sibling
+               records; the map is refused because a pin dropped on a metro is the
+               presence claim this whole page exists to avoid making.
+
+     DEVIATIONS FROM THE TEMPLATE SPINE, STATED RATHER THAN LEFT TO BE FOUND.
+       1. A NESTED ROW. The spine says every band runs one row, because the
+          structural sheet has no rule for a row following a row and two stacked
+          rows would sit flush. S3 nests its card grid as a row INSIDE a full width
+          cell of the band's own row. That is forced rather than preferred: the
+          browse engine takes the DIRECT children of the data-grid element as its
+          items, so a grid that also held the section head and the control would
+          filter the head and the control away. The nested row keeps its own gap and
+          the outer row keeps the rhythm between the head, the control and the grid,
+          so nothing sits flush.
+       2. THE HERO IS CENTRED, where the sibling's hero is a split. The brief allows
+          one H1 and one paragraph above the index and nothing else, so a second
+          column would have to be invented to fill it.
+       3. THE SIBLING'S CARD CARRIES A ONE LINE BODY AND THIS ONE DOES NOT. A metro
+          card here is a tag, a name and a foot. There is no honest line to write
+          under a metro name: anything descriptive would be the per metro prose this page
+          exists to delete, which briefs/our-locations.md section 3 records as
+          near identical across the live city pages.
+       4. Entry #51 draws each location tile as name plus ADDRESS plus PHOTO. This
+          grid carries neither. An address in a metro is a presence claim that
+          content-bible section 3b bans outright, and imagery-system.md section 2d
+          bars a picture beside a metro name for the same reason. So the cover
+          switch is OFF for the whole grid, by rule rather than by taste.
+       5. Entry #10 offers one or two CTAs and this hero carries ONE, because
+          client-rules.json sets onePrimaryPerPage.
+       6. THE LAST ROW OF THE INDEX IS PARTIAL, and it is left partial. Twenty
+          five items on four tracks fills six rows and leaves one card alone on the
+          seventh, and no span the twelve track grid can express divides the set
+          evenly, so the alternative was padding the grid with a cell that is not a
+          metro, which is the filler tile this system bans. A filtered view produces
+          its own partial row for the same arithmetic reason, by design.
+       7. This file names the other stamped page types by their page slugs rather
+          than by their type ids. verify-not-flat.mjs line 288 flips any file
+          containing a literal T hyphen FEATURE or T hyphen MARQUEE token into
+          marquee scope, and these are index pages rather than marquee pages. The
+          substitution is disclosed here rather than made silently.
+
+     IMAGERY, per imagery-system.md sections 2b, 2d, 4, 5 and 7. THREE images in
+     three of the five sections, which is the floor verify-section-visual-rhythm
+     sets at half the sections. They are split-las-vegas-desert (S2, the portrait
+     split column asset this page is named for in that file's slot table, line 77),
+     texture-purple-material (S4) and texture-gold-edge (S5), both of which are the
+     declared cross page square accents used in their own declared slot, beside a
+     quote moment, never as a split column filler, which is what R8 bars.
+     WHY TWO OF THE THREE ARE THE GENERIC SQUARES, stated plainly rather than
+     defended: this page's own allocation is one topic asset, its card grid is
+     barred from imagery by 2d, and every other asset on this build belongs to a
+     trade, a contract, a consultation or a person, so placing one here would imply
+     a fact this page may not assert. Two generic accents in their declared slot is
+     the smallest honest set that clears the floor. The reuse cap is not engaged:
+     three images, three distinct assets, no asset used twice, and the generic
+     concentration rule only binds at four images or more.
+     THE HERO CARRIES NO IMAGE AT ALL. imagery-system.md 2d refuses a generated
+     image in every hero on this build, D-007 leaves the hero motif unlocked and the
+     D-009 direction hold is still open, so the brief's coverage and condition slot
+     is carried in TYPE, by the coverage sentence and the billing condition set
+     directly beneath it, rather than by a picture that has not been ratified. That
+     is a gap, and it is written here as a gap rather than filled with a stand in.
+
+     WHAT IS APPROVED COPY AND WHAT IS AUTHORED HERE. Every approved sentence on
+     this page is VERBATIM from _copy/our-locations.md: not one is rewritten,
+     softened or reordered. The earlier leaf by leaf count that stood here is
+     deliberately NOT restated, because the owner's text lighter pass removed
+     authored furniture from this page and the old figures no longer describe it.
+     What remains authored is furniture: eyebrows, section headings, three
+     pillar labels, the two admission fields and the route list. The photo
+     caption, the region control note, the metro card feet and the route note
+     were all removed in that pass as text about the page rather than about the
+     business. The furniture rule is the template's: a label may NAME a thing
+     on this page and may RESTATE a rule the approved copy states, and may never
+     assert a fact the approved copy does not carry.
+     ONE SPLIT DISCLOSED: the copy's single S1 paragraph is laid out across two
+     elements, the lede and the qualifying line, cut at a sentence boundary with no
+     word changed and no sentence reordered. The same split is what the structural
+     sheet's own see more rule sanctions at lines 1825 to 1827.
+
+     THE TWO OWNER PENDING FIELDS ARE RENDERED AS FINISHED COPY, never as markers.
+     The per metro verticals and the ratified contract window each appear as a
+     dashed open field whose value reads as prose and says what is missing and why.
+     No bracket token, no scaffold word and no dummy text appears in any rendered
+     string on this page.
+
+     HONESTY PERIMETER. NO METRO COUNT in any surface: not in the H1, not in a
+     heading, not in a card label, not in a filter label, and not as a region
+     subtotal beside a region name. The cards are the published city
+     page list carried across, which is a page count, and the number of metros
+     holding a paying client is owner data that has not arrived. No price, no band
+     and no starting figure. No street address. No claim of an office anywhere but
+     the one. No ranking promise without its payment condition in the same sentence.
+     No competitor named, alluded to or framed against. No percentage of any kind.
+     Zero em dashes and zero en dashes in this file, including every comment. Zero
+     exclamation marks in every rendered string.
+     ============================================================================ -->
+
+<!-- =========================================================================
+     S1 . hero . ground PAPER . size S
+     ========================================================================= -->
+<!-- pick: HERO-COMPOSITIONS.md #10 Centered headline only (text-driven, no hero photo) | considered: #20,#28 | why: the brief allows exactly one H1 and one paragraph above the index and nothing else, which IS this entry: a single centred column where the type is the hero and no image is present, which also satisfies imagery-system.md 2d, since that file refuses a generated image in every hero on this build and the ratified hero treatment is still on the D-009 hold. #20 Three-column hero (text + stat + photo) is refused on substance rather than taste, because two of its three columns are a STAT and a PHOTO and this page may publish neither, an unbacked aggregate being a banned SHAPE here and a hero photograph being barred outright; #28 Embedded map / location hero is the obvious reach for a coverage page and is the most dangerous entry in the catalog for it, because a map with pins dropped on metros is the physical presence claim content-bible section 3b bans. DEVIATIONS: (1) the entry offers one or two CTAs and this hero carries ONE, since client-rules.json sets onePrimaryPerPage; (2) the entry sizes its headline at up to 144px and this page authors zero page layer CSS, so the H1 takes the locked type ladder and the band takes the sheet section interval. -->
+<section class="section section--paper" id="s1-hero" data-surface="light" aria-labelledby="s1h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--center bw-head--tight reveal">
+          <p class="bw-eyebrow">Coverage</p>
+          <h1 id="s1h" class="d-lg">The US Metros We Cover, All From One Las Vegas Office</h1>
+        </div>
+        <p class="bw-lede readw readw--center reveal">We work with clients across US metros, all from our Las Vegas office. Before anything starts we agree the key phrases, and we agree the geography those phrases are measured in, so that the word delivered means something you can check.</p>
+        <p class="bw-quote readw readw--center reveal">The terms follow from that: first page on the agreed key phrases, or you don't pay. Any month we are off target we keep working and your billing stops, and it resumes when results are back on track.</p>
+        <div class="bw-actions bw-actions--center reveal">
+          <a class="bw-btn bw-btn--primary" href="contact-us.html">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            CALL US
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S2 . how we work a market we are not physically in . ground WARM . size M
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #11 Service pillars 2-col with image | considered: #27,#7 | why: what is built is a capped portrait frame filling one column beside a vertical stack of three ruled pillars in the other, which is this entry composition exactly, and the pillars are peers rather than stages so nothing in the band is numbered. #27 Numbered process steps (1-2-3-4) is the closest shape and is REJECTED on substance: the brief orders these three moves for reading, but numbering them as process stages would assert that the address point happens after the measurement point, when all three hold at once; it is also already spent twice on this build. #7 Problem framing is rejected because this band answers an objection with three specifics rather than framing a problem, and it too is already spent twice. THE PICK IS DISCLOSED AS SHARED: entry #11 is spent once elsewhere on this build; what differs here is that the media column sits FIRST in source order and the stack is ruled rather than carded, because a boxed answer to a published charge reads defensive. -->
+<section class="section section--warm" id="s2-remote" data-surface="warm" aria-labelledby="s2h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">The fair question</p>
+          <h2 id="s2h">How we work a market we are not physically in.</h2>
+        </div>
+        <p class="bw-lede readw reveal">If the desk is in Las Vegas, how does anyone rank a business in Cleveland.</p>
+      </div>
+
+      <div class="col col--span-5 col--stretch col--fill">
+        <div class="bw-shot reveal">
+          <div class="bw-shot__plate">
+            <img class="bw-shot__img" src="../assets/split-las-vegas-desert.jpg" width="768" height="1024" alt="An empty desert highway running toward bare mountains under a purple sky, with a low gold band along the horizon" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="col col--span-7 col--stack">
+        <div class="bw-fact reveal">
+          <p class="bw-fact__t">The phrase set</p>
+          <p class="bw-fact__d">The phrase set is local, so the work is local even when the desk is not. We start with competitive research in your market: which businesses hold page one there today, for which searches, and which of those searches actually produce enquiries for a business like yours. We propose, you sign, and the phrases are named in the contract. There is no veto or substitution right written into the agreement.</p>
+        </div>
+        <div class="bw-fact reveal">
+          <p class="bw-fact__t">The measurement</p>
+          <p class="bw-fact__d">The measurement is local too. The contract names the geography a position is measured in, not only the phrase. A ranking is not one number, it moves with where the search happens.</p>
+        </div>
+        <div class="bw-fact reveal">
+          <p class="bw-fact__t">The address</p>
+          <p class="bw-fact__d">A local mailing address does not move a ranking. Renting one in your city would add a line to a footer and nothing to your position.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S3 . the index head and its region control . ground PAPER . size M
+     The first half of the old S3. The band that explains the card template and
+     carries the region rail is now its own object, and the grid it controls is
+     the band directly beneath it, S3b. Held together the two were one section a
+     reader had to scroll twice to get through, which is the fault the owner
+     named. The control now sits immediately above the set it narrows, which is
+     the same order the blog and the video library already use on this build. The
+     grid keeps the tint ground it was approved on and this half takes paper, so
+     the two read as a control and its result rather than as one long band.
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #45 Category chips / nav | considered: #36,#50 | why: the ledger this band shipped with already said in writing that #45 was the CONTROL INSIDE it rather than the band itself, and now that the control has a band of its own that is exactly the entry to cite, a browse by category rail set above the set it narrows, which is what the region rail literally is. #36 Sticky sidebar topic nav was considered and refused because it pins the control beside a scrolling body, which holds the rail level with cards it is not filtering at that moment and re-creates the up and down reading this split exists to remove; #50 Topic columns groups items under standing topic headings, which would print a region as a heading over a set of metros and read as a statement of coverage per region, and coverage is the thing this page most carefully does not assert. DEVIATIONS, both stated because an undeclared one is the defect: (1) the entry draws its categories as a horizontal scrolling chip row and this is a stacked rail in the right hand cell, because the reading column beside it carries the card template explanation and the two are meant to be read together before the index; (2) the open field object sits under the rail rather than beside the cards, so the field this page cannot fill is stated once at the control instead of drawn empty on every card. -->
+<section class="section section--paper" id="s3-index" data-surface="light" aria-labelledby="s3h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-7">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">The metro index</p>
+          <h2 id="s3h">These are the metros we cover.</h2>
+        </div>
+        <p class="bw-copy readw reveal">Las Vegas is the one metro with a page of its own, and its card links onward to it.</p>
+      </div>
+
+      <div class="col col--span-5 col--stack">
+        <nav class="bw-toc reveal" aria-label="Filter the metro index by region">
+          <p class="bw-toc__title">Filter by region</p>
+          <ul class="bw-toc__list">
+            <li class="bw-toc__item"><a class="bw-toc__link is-active" href="#metro-index" data-cat="all" aria-controls="metro-index">Every region</a></li>
+            <li class="bw-toc__item"><a class="bw-toc__link" href="#metro-index" data-cat="west" aria-controls="metro-index">West</a></li>
+            <li class="bw-toc__item"><a class="bw-toc__link" href="#metro-index" data-cat="southwest" aria-controls="metro-index">Southwest</a></li>
+            <li class="bw-toc__item"><a class="bw-toc__link" href="#metro-index" data-cat="midwest" aria-controls="metro-index">Midwest</a></li>
+            <li class="bw-toc__item"><a class="bw-toc__link" href="#metro-index" data-cat="southeast" aria-controls="metro-index">Southeast</a></li>
+            <li class="bw-toc__item"><a class="bw-toc__link" href="#metro-index" data-cat="northeast" aria-controls="metro-index">Northeast</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S3b . the metro index . ground TINT . size L
+     The grid itself, on the ground it was approved on, with nothing above it
+     inside its own band to compete for the eye. The row gap is the tight step
+     rather than the standard one, because an index of this many peers reads as
+     one set when the cards sit close and as scattered tiles when they do not.
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #51 Locations grid | considered: #42,#43 | why: this is the one entry in the catalog whose role IS a multi location index of tiles, which is literally what the body of this page has to be, and the reflow it names, tiles down to one column on the narrow tier, is the canonical sheet ladder for a three span cell. #42 Project grid filterable has the right interaction and the wrong meaning, because a tile in a project grid reads as a piece of work delivered in that place, which is precisely the presence claim this page exists to avoid; #43 Gallery grid is the same geometry emptied of its meaning, a set of tiles held up to be looked at, and a metro name is a routing target rather than something to look at. DEVIATIONS, all three stated because an undeclared one is the defect: (1) the entry draws each tile as name plus ADDRESS plus PHOTO and these tiles carry neither, since an address in a metro is banned by content-bible section 3b and a picture beside a metro name is barred by imagery-system.md 2d, so the cover switch is off for the whole grid; (2) the grid is nested as a row inside a full width cell rather than being the band own row, because the browse engine reads the DIRECT children of the data-grid element as its items and a grid that also held the head and the control would filter both of them away; (3) the control the entry expects at the top of the band is not in it, it is the band above, so the index is a single object and the reader meets the rail before the set instead of inside it. -->
+<section class="section section--tint" id="s3b-metros" data-surface="light" aria-label="The metro index">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="row row--tight reveal" id="metro-index" data-grid data-page-size="99">
+          <div class="col col--span-3 col--stretch col--fill" data-cat="southwest">
+            <article class="bw-card bw-card--flat" id="arlington">
+              <p class="bw-tag bw-tag--quiet">Southwest</p>
+              <p class="bw-card__title">Arlington</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="southeast">
+            <article class="bw-card bw-card--flat" id="atlanta">
+              <p class="bw-tag bw-tag--quiet">Southeast</p>
+              <p class="bw-card__title">Atlanta</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="southwest">
+            <article class="bw-card bw-card--flat" id="austin">
+              <p class="bw-tag bw-tag--quiet">Southwest</p>
+              <p class="bw-card__title">Austin</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="northeast">
+            <article class="bw-card bw-card--flat" id="baltimore">
+              <p class="bw-tag bw-tag--quiet">Northeast</p>
+              <p class="bw-card__title">Baltimore</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="midwest">
+            <article class="bw-card bw-card--flat" id="chicago">
+              <p class="bw-tag bw-tag--quiet">Midwest</p>
+              <p class="bw-card__title">Chicago</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="midwest">
+            <article class="bw-card bw-card--flat" id="cleveland">
+              <p class="bw-tag bw-tag--quiet">Midwest</p>
+              <p class="bw-card__title">Cleveland</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="southwest">
+            <article class="bw-card bw-card--flat" id="dallas">
+              <p class="bw-tag bw-tag--quiet">Southwest</p>
+              <p class="bw-card__title">Dallas</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="west">
+            <article class="bw-card bw-card--flat" id="denver">
+              <p class="bw-tag bw-tag--quiet">West</p>
+              <p class="bw-card__title">Denver</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="southwest">
+            <article class="bw-card bw-card--flat" id="houston">
+              <p class="bw-tag bw-tag--quiet">Southwest</p>
+              <p class="bw-card__title">Houston</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="southeast">
+            <article class="bw-card bw-card--flat" id="jacksonville">
+              <p class="bw-tag bw-tag--quiet">Southeast</p>
+              <p class="bw-card__title">Jacksonville</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="midwest">
+            <article class="bw-card bw-card--flat" id="kansas-city">
+              <p class="bw-tag bw-tag--quiet">Midwest</p>
+              <p class="bw-card__title">Kansas City</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="west">
+            <article class="bw-card bw-card--flat" id="las-vegas">
+              <p class="bw-tag bw-tag--brand">West</p>
+              <p class="bw-card__title"><a href="las-vegas-seo.html">Las Vegas</a></p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="west">
+            <article class="bw-card bw-card--flat" id="los-angeles">
+              <p class="bw-tag bw-tag--quiet">West</p>
+              <p class="bw-card__title">Los Angeles</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="midwest">
+            <article class="bw-card bw-card--flat" id="louisville">
+              <p class="bw-tag bw-tag--quiet">Midwest</p>
+              <p class="bw-card__title">Louisville</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="northeast">
+            <article class="bw-card bw-card--flat" id="manhattan">
+              <p class="bw-tag bw-tag--quiet">Northeast</p>
+              <p class="bw-card__title">Manhattan</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="southeast">
+            <article class="bw-card bw-card--flat" id="miami">
+              <p class="bw-tag bw-tag--quiet">Southeast</p>
+              <p class="bw-card__title">Miami</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="midwest">
+            <article class="bw-card bw-card--flat" id="minneapolis">
+              <p class="bw-tag bw-tag--quiet">Midwest</p>
+              <p class="bw-card__title">Minneapolis</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="southeast">
+            <article class="bw-card bw-card--flat" id="myrtle-beach">
+              <p class="bw-tag bw-tag--quiet">Southeast</p>
+              <p class="bw-card__title">Myrtle Beach</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="southeast">
+            <article class="bw-card bw-card--flat" id="new-orleans">
+              <p class="bw-tag bw-tag--quiet">Southeast</p>
+              <p class="bw-card__title">New Orleans</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="southeast">
+            <article class="bw-card bw-card--flat" id="orlando">
+              <p class="bw-tag bw-tag--quiet">Southeast</p>
+              <p class="bw-card__title">Orlando</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="northeast">
+            <article class="bw-card bw-card--flat" id="philadelphia">
+              <p class="bw-tag bw-tag--quiet">Northeast</p>
+              <p class="bw-card__title">Philadelphia</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="west">
+            <article class="bw-card bw-card--flat" id="portland">
+              <p class="bw-tag bw-tag--quiet">West</p>
+              <p class="bw-card__title">Portland</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="southwest">
+            <article class="bw-card bw-card--flat" id="san-antonio">
+              <p class="bw-tag bw-tag--quiet">Southwest</p>
+              <p class="bw-card__title">San Antonio</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="west">
+            <article class="bw-card bw-card--flat" id="san-diego">
+              <p class="bw-tag bw-tag--quiet">West</p>
+              <p class="bw-card__title">San Diego</p>
+            </article>
+          </div>
+          <div class="col col--span-3 col--stretch col--fill" data-cat="west">
+            <article class="bw-card bw-card--flat" id="seattle">
+              <p class="bw-tag bw-tag--quiet">West</p>
+              <p class="bw-card__title">Seattle</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S4 . what a local campaign actually covers . ground DARK . size M
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #33 Custom-quote driver | considered: #8,#31 | why: the band opens with what the one agreed monthly fee covers and its terminal move is the single permitted pricing sentence, that the fee is quoted per business after a competitive review, which is this entry role stated in one line. #8 Manifesto / belief statement would turn the scope list into a creed and is already spent three times on this build; #31 Pricing 3-tier is REFUSED outright rather than merely rejected, because there are no tiers, no figures and no bands to draw, and drawing the shape would imply a price list that does not exist. DEVIATIONS: (1) the entry offers a sub form or a second CTA to start the quote and this band carries NEITHER, since the form lives on the contact page and client-rules.json fixes one primary verb; (2) the quote driver is set as the flat fact object, a gold top rule and no box, because a box drawn around an unproven fact is the tile this brand may not ship. -->
+<section class="section section--dark surface-dark" id="s4-covers" data-surface="dark" aria-labelledby="s4h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">The engagement</p>
+          <h2 id="s4h">What a local campaign actually covers.</h2>
+        </div>
+      </div>
+
+      <div class="col col--span-7">
+        <p class="bw-lede readw reveal">One agreed monthly fee covers the whole stack: search engine optimization, website design and development, content writing, reputation management, conversion optimization, graphic design, branding and consulting. That breadth follows from being paid on the outcome rather than on the hours, which is what removes the argument about whether a given piece of work was in scope.</p>
+        <p class="bw-quote reveal">On timing, the current site publishes 6- and 12-month windows. The agreement itself is assessed month by month against the agreed metrics, never as a single test that only settles at the end.</p>
+      </div>
+
+      <div class="col col--span-5 col--stack">
+        <div class="bw-tex reveal">
+          <img class="bw-tex__img" src="../assets/texture-purple-material.jpg" width="1024" height="1024" alt="A macro of one swept deep purple pigment smear on a bright white ground, polished at the centre and granular at its edges" loading="lazy">
+        </div>
+      </div>
+
+      <div class="col col--full">
+        <div class="bw-fact reveal">
+          <p class="bw-fact__n">The fee</p>
+          <p class="bw-fact__t">The fee is quoted per business after a competitive review.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S5 . closing-cta . ground GOLD . size S
+     ========================================================================= -->
+<!-- pick: CTA-PATTERNS.md #1 Solid pill primary | considered: #4,#7 | why: the one primary action on this page is the brand solid pill at the sheet full pill radius carrying the fixed label, which client-rules.json sets as CALL US driving to the contact page. THE PICK IS DISCLOSED AS SHARED: every stamped page on this build spends this entry on its closing band, because the sheet implements exactly one primary pill and there is no second honest atom for a single conversion action; what differs here is the composition around it, a copy column facing a square material accent stacked above a route list rather than a portrait frame. #4 Phone-pill CTA (number as button) was the strongest alternative and is REFUSED as the PRIMARY on a rule rather than a preference: making the number itself the pill would replace the one fixed primary label, and client-rules.json lists the alternatives it bans; the entry idea is honoured instead by making the number tappable inline where the approved copy prints it, so the phone path is real without a second primary. #7 Multi-CTA cluster puts a second action beside the first, which onePrimaryPerPage forbids. -->
+<section class="section section--gold surface-gold" id="s5-call" data-surface="accent" aria-labelledby="s5h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Book the call</p>
+          <h2 id="s5h">Name your metro, and the phrases you are up against.</h2>
+        </div>
+      </div>
+
+      <div class="col col--span-7">
+        <p class="bw-lede readw reveal">Book a consultation on <a href="tel:+17024207272">(702) 420-7272</a>.</p>
+        <p class="bw-quote reveal">Tell us your metro and the phrases your competitors are holding, and we will tell you what taking them looks like.</p>
+        <div class="bw-actions reveal">
+          <a class="bw-btn bw-btn--primary" href="contact-us.html">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            CALL US
+          </a>
+        </div>
+      </div>
+
+      <div class="col col--span-5 col--stack">
+        <div class="bw-tex reveal">
+          <img class="bw-tex__img" src="../assets/texture-gold-edge.jpg" width="1024" height="1024" alt="A macro of the mitred corner of a white matte panel edged in a polished gold rail, resting on a pale ground" loading="lazy">
+        </div>
+        <div class="bw-route reveal">
+          <p class="bw-route__k">Also from here</p>
+          <ul class="bw-route__l">
+            <li><a href="las-vegas-seo.html">Las Vegas, the one metro with a page of its own</a></li>
+            <li><a href="guarantee.html">The guarantee, for the terms</a></li>
+            <li><a href="results.html">Results, for how an outcome gets published</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

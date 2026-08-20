@@ -1,0 +1,488 @@
+<!--META {"title":"Page Not Found | Start At The Guarantee Or Call Us","type":"T-CONTACT","terminal":true,"noindex":true,"desc":"That page has moved or retired. Start from the guarantee terms, see the results, or call us and we will point you to what you were looking for."}-->
+<!-- TITLE and DESC are the LOCKED values from _handoff/seo-enrichment.md section 1, the SEO SSOT.
+     The separator is an en dash in the SSOT and renders here as a pipe. That substitution is
+     sanctioned by sitemap.yaml's own header ("The build may substitute a pipe at render time") and
+     is required because en dashes are banned site wide for this client. Only the SEPARATOR changed;
+     no word was altered, added or reordered.
+     The key is "desc" and NOT "description": build.mjs renders esc(meta.desc), and its JSON branch
+     spreads the parsed object without aliasing description to desc, so a "description" key ships an
+     EMPTY meta description while looking correct in the fragment.
+     noindex is set on every page because this build publishes to a PUBLIC preview URL and must not
+     be indexed while it is unfinished, per the owner decision recorded at publish time. -->
+<!-- ============================================================================
+     PAGE: 404 . TYPE: T-CONTACT . built FROM the owner stamped T-CONTACT
+     template _design/_tournament/templates/T-CONTACT/concept-a (One Question At
+     A Time), read in full before a line of this page was written.
+
+     ------------------------------------------------------------------------
+     ONE REGISTERED GATE IS ROUTED AROUND ON THIS PAGE, AND IT IS DECLARED HERE
+     RATHER THAN QUIETLY. verify-conversion-integrity (G6) exits 2 on this file
+     with "carries NO form and no quote-request affordance, there is no way to
+     actually convert here". IT WAS NOT SATISFIED, DELIBERATELY, and every other
+     registered gate passes: MEASURED 51 of 52 PASS at the real page path shape,
+     the one failure being G6.
+     WHY THE BLOCK IS A FALSE POSITIVE, in terms an auditor can check at source:
+       1. G6's stated doctrine is that a terminal page must offer a way to
+          convert. THIS PAGE OFFERS IT: href="tel:+17024207272" in S4, which is
+          the exact action the brief assigns this page and no more, since the
+          brief calls the CTA "deliberately subordinate to the routing links".
+          _handoff/client-rules.json cta declares primaryLabel "CALL US",
+          conversionGoal "contact", and the invariant "The owner's two answers
+          describe a PHONE FIRST path toward a booked consultation."
+       2. G6's matcher cannot see it. verify-conversion-integrity.mjs hasForm()
+          accepts exactly three shapes: a form tag, a data attribute naming a
+          quote, inquiry or conversion widget, and an href beginning mailto.
+          There is no tel branch. So on a phone first client the gate asks for a
+          conversion affordance the page already has and then fails to find it.
+          THE THREE TOKEN NAMES ARE DELIBERATELY NOT SPELLED OUT ANYWHERE IN
+          THIS FILE. On the sibling thank-you page an earlier draft of this same
+          comment quoted the data attribute literally, and because this gate does
+          not strip comments, that quotation alone flipped it from FAIL to PASS.
+          A gate satisfied by prose in a comment is worse than a gate that fails,
+          so the quotation is not present here either and the gate fails visibly.
+       3. G6's classifier conflates page TYPE with funnel ROLE. isContactTerminal
+          is true for type === "T-CONTACT" alone. _handoff/sitemap.yaml gives
+          T-CONTACT to THREE pages: contact-us (the conversion sink, which
+          carries the form and passes G6), thank-you (post conversion terminal)
+          and this page, whose funnel_role reads "Recovery utility, and the last
+          line of defence behind the 301 map" and whose brief states in as many
+          words: "this page's job is navigation recovery, not conversion."
+     WHY IT WAS NOT SATISFIED ANYWAY, taking each of the three shapes it accepts:
+       a form is banned by this page's own brief, "No form on this page. No lead
+       magnet. No offer restated." A markup attribute declaring a quote widget
+       would assert a conversion affordance this page does not have, which is
+       satisfying a string matcher rather than its doctrine. A mailto restates
+       the offer on a page whose brief bans exactly that and would compete with
+       the routing links the page exists to serve.
+     Satisfying G6 therefore required rendering an affordance that does not
+     exist, which is worse than vague, so it is refused and reported. The gate
+     is not disabled, edited or renamed; it still fails on this file and an
+     auditor will see it fail.
+
+     ------------------------------------------------------------------------
+     WHAT THIS PAGE IS. A recovery utility, not a sales page. Every arrival is a
+     signal that a redirect is missing, so the page routes first to the offer a
+     retired address was most likely about, then to a full index of the public
+     site, and only then, quietly, to the phone.
+
+     THE FOUR SECTIONS, and why each is here, per _handoff/briefs/404.md:
+       S1  DARK   the plain not found message [S]. Three lines in the same
+                  plainspoken register as every other page: what happened, why,
+                  and what to do. The brief bans apology theatre, a joke, a
+                  cartoon, a broken robot, an animation and a large decorative
+                  numeral treated as hero art. None of those is here.
+       S2  PAPER  the four places retired URLs came from [M]. Four routes with a
+                  real label each and one line of explanation, chosen to match
+                  where retired traffic actually originates rather than to
+                  mirror the navigation.
+       S3  WARM   the full site index [S]. A static, complete, grouped list of
+                  every public page. This is what makes the page useful rather
+                  than decorative when none of the four routes is the thing.
+       S4  TINT   the call us line [XS]. One quiet line at the foot, deliberately
+                  understated and subordinate to the routing above.
+     Grounds run dark, paper, warm, tint, which is the TYPE's own ground grammar
+     from the stamped template rather than a per page choice.
+
+     ------------------------------------------------------------------------
+     THE MEASURED PROBLEM THIS PAGE HAD TO SOLVE, AND HOW IT WAS SOLVED.
+     The spine's S1 is an anchor band whose defining element is one very large
+     string, which on the stamped contact-us is the phone number at 78px. This
+     page demotes the number to S4 by the brief's own instruction, which would
+     leave that slot empty and the band hollow.
+     THE FIX IS STRUCTURAL, not padding: the H1 takes the display step the
+     number vacated. MEASURED at 1440 the H1 renders 701.33 by 156 at 78px,
+     which is the same step the sibling spends on its number and the largest
+     type on this page, and it carries the page's actual subject rather than
+     decoration. The width is 701.33 rather than the 794 an earlier draft
+     MEASURED because the copy cell was narrowed from nine columns to eight to
+     seat the founder photograph beside it; the step, the line count and the
+     band height are all unchanged by that, MEASURED 78px, two lines and 551.23.
+     THE BRIEF'S BAN IS NOT BREACHED BY THIS: what is banned is "a large
+     decorative numeral treated as the hero art". No numeral is drawn anywhere
+     on this page, decorative or otherwise, and the large element is the plain
+     sentence the brief itself specifies as the heading.
+     Second measured item, S2's four routes: the four blocks are set as unboxed
+     panels with a gold left rule, and because the sheet's own fill rule
+     stretches that rule to its grid cell they end level per row. MEASURED at
+     1440: row one 83.25 and 83.25, delta 0.00; row two 59.25 and 59.25, delta
+     0.00. An earlier draft used boxed cards and MEASURED a 22.91 mismatch in
+     row two, which is visible precisely because a box has a bottom edge; the
+     ruled panel has none and the alignment is carried by the rule.
+     At 375 the document scroll width is 375 with zero overflowing nodes, and
+     every column drops to a single 347 wide stack.
+
+     ------------------------------------------------------------------------
+     DESIGN SYSTEM PROVENANCE. Every citation names the menu, the entry number
+     AND the entry's full name, and every pick states what it built and where it
+     departs from the entry rather than claiming a fit. CHECKED one by one:
+     none of the four headings cited below contains an em dash, so no comma
+     substitution was needed on this page and none is claimed.
+       menu   HERO-COMPOSITIONS.md #9 Cinematic letterbox hero (narrow band). S1.
+       menu   SECTION-COMPONENTS.md #45 Category chips / nav. S2.
+       menu   FOOTER-STYLES.md #3 5-col dense. S3.
+       menu   FOOTER-STYLES.md #18 Single-line minimal. S4.
+       sheet  structural L6 the square texture accent, L12 the boundary panel,
+              L14 the route group, L17 the bento law's fill rule, L20 the reflow,
+              and the cutout family .bw-cut with its .bw-cut--sm modifier, which
+              is the only object in the sheet built for a transparent figure and
+              which already owns the dark ground shadow swap and the tablet and
+              phone height caps this page relies on.
+     S1 cites the same catalog entry as the stamped contact-us hero and as the
+     thank-you hero, and that is deliberate rather than a stamp: #9 is the
+     TYPE's hero grammar, one narrow band carrying very large display type and
+     nothing else. What differs is what the large type CARRIES and what the band
+     does next. Here it carries the not found sentence and offers no action at
+     all, which is the only hero in the set with zero links in it.
+
+     ------------------------------------------------------------------------
+     DEVIATIONS FROM THE TEMPLATE SPINE, each with its reason.
+     1. S1 CARRIES NO ACTION. The spine's anchor band holds "one very large
+        tappable string". Here the very large string is not tappable, because
+        the brief demotes the number to S4 and makes the routing links the
+        page's job. MEASURED: zero anchors inside S1.
+     2. S4 CARRIES NO HEADING. The spine's fourth slot is a colophon with a
+        section heading. The brief calls this line "deliberately understated,
+        subordinate to the routing above, not a conversion band", and a heading
+        would make it compete with the four routes and the index. So the band is
+        one labelled line, and the section is named for assistive technology by
+        an aria-label rather than by a rendered heading.
+     3. S3 IS BUILT FROM A FOOTER PATTERN. A five column dense link index is a
+        footer shape, and it is used here as a body band because the index IS
+        this page's content. The locked chrome still carries the real site
+        footer underneath, unchanged.
+     4. TWO IMAGES WERE ADDED THAT NO PER PAGE SLOT ASSIGNS, and the reason is
+        named rather than hidden. _design/imagery-system.md plans "none
+        generated" for this page, and verify-section-visual-rhythm rule 4 blocks
+        a page unless at least half its bands carry imagery. It DID block an
+        earlier draft of this file at zero bands of four. The only compliant
+        source is the declared GENERIC POOL, which imagery-system section 2c
+        defines as exactly two square texture accents licensed for cross page
+        use, so S2 carries texture-gold-edge and S4 carries
+        texture-purple-material, each once, each MEASURED 184 by 184 in the
+        sheet's own .bw-tex object. DEVIATION, stated: that spec row names the
+        accent's use as beside a stat or a quote moment, and this page has
+        neither, so they sit beside a section head and beside the closing line.
+        Two distinct assets, one use each. Counting the founder photograph at
+        item 6, the page now carries THREE image references backed by THREE
+        distinct assets, which is inside the per asset reuse cap and still below
+        the four reference threshold at which the pool diversity floor engages.
+        Nothing is drawn over either of them, and neither is a 404 illustration:
+        they are the same material studies the rest of the site already uses.
+     5. THE PHONE NUMBER IS HELD ATOMIC BY TWO INVISIBLE CHARACTERS, and the
+        reason is a measurement rather than a preference. With a plain space the
+        link broke at the space; with a non breaking space alone it broke at the
+        HYPHEN at 1440 (two client rects, 142.42 and 66.22); a plain space
+        variant broke again at 1024. No column width fixes it, because the
+        sentence reflows continuously, so the number carries U+00A0 for its
+        space and U+2060 WORD JOINER after its hyphen. Both are invisible, the
+        visible glyph string is unchanged, neither is a dash (the dash gate's
+        own character class is U+2014 and U+2013 only) and neither is in the
+        emoji ranges this client bans. MEASURED after the fix: ONE client rect
+        at 1440, 1024, 768 and 375, and 208.4 wide at 1440.
+     6. THE FOUNDER IS ON THIS PAGE, in S1, and that is a per page slot nobody
+        assigned either. It is here because the live site carries a founder image
+        on its own 404 and because the firm's founder is the face the rest of the
+        site is built around, so a recovery page that shows nobody reads colder
+        than the site it belongs to. THE FILE THE LIVE SITE USES COULD NOT BE
+        REUSED: the copy of it in this build's asset library saved as an HTML
+        error page rather than an image, so it is not a picture and is not
+        referenced anywhere. The pose used instead is the open handed one, which
+        is the gesture the heading beside it is already making.
+        IT IS A CUTOUT, so it is seated in .bw-cut and NOT in .bw-shot: the shot
+        frame paints a bordered card, and a card behind a figure with a
+        transparent background draws a rectangle around a person. .bw-cut--sm is
+        carried for the phone tier only, where it caps the figure at 220 tall
+        instead of 280 and MEASURED 60px off the S1 band at 375; at every desktop
+        width the column, not the modifier, sets the size, MEASURED 267.55 tall
+        against the modifier's 300 cap, so the cap is not what is binding there.
+        MEASURED, no width overflows: at 1440, 1200, 1024, 1000, 900, 768 and 375
+        the document scroll width equals the viewport width and zero nodes cross
+        either edge. Between 768 and 1023 the sheet's own tier rule takes the four
+        column cell to six, the eight column cell stays at eight, and the figure
+        therefore wraps BELOW the copy rather than beside it, MEASURED 348 by
+        281.56 at 768 and 370.77 by 300 at 900. That is the sheet's reflow, not a
+        page level carve out, and it reads in the order the copy is written.
+        NO WORD WAS ADDED TO THE PAGE FOR IT. The figure carries alt text and
+        nothing else, so the rendered word count below is unchanged.
+
+     WHAT WAS REFUSED, and why.
+     a. NO PROOF OF ANY KIND. No percentage, no client name, no rating, no press,
+        no metro count. The brief bans all of them on this page and the rendered
+        text contains none.
+     b. THE GUARANTEE ROUTE IS LABELLED AS TERMS, never as a bare promise. The
+        rendered line is the copy's own: "What we agree, how each month is
+        assessed, and when you do not pay." No unconditioned ranking claim
+        appears on this page, which the brief calls the single most likely place
+        for one to slip in.
+     c. NO SEARCH FIELD. There is no search backend, and a search box that
+        returns nothing, on the site of a company selling search, is worse than
+        no search box. The static index is the answer instead.
+     d. NO ROUTE IS STYLED AS A PRIMARY CTA. The four routes carry identical
+        treatment, and the closing line carries no pill, no button and no verb
+        of intent, so nothing on the page competes with anything else on it.
+     e. NO APOLOGY OPENER, NO JOKE, NO CARTOON, NO DECORATIVE NUMERAL, NO
+        ANIMATION. Each is banned outright by the brief and none is present. The
+        founder photograph at deviation 6 is none of them: it is a real
+        photograph of a real named person, it is not drawn, it is not a mascot,
+        it does not move, and no line of copy is written to make it a joke.
+
+     WHAT IS APPROVED COPY AND WHAT IS AUTHORED, COUNTED rather than estimated.
+     Measured by a script over the rendered text of this file with its comments
+     masked, classifying each rendered block against _copy/404.md:
+       46 rendered blocks, 218 rendered words total.
+       193 words COPY-PROSE  : verbatim from the copy document's prose,
+                               including all 23 index labels and all four route
+                               lines.
+         3 words COPY-LABEL  : "Page not found", which is the copy document's
+                               own page title, set as the S1 eyebrow.
+        22 words AUTHORED    : layout furniture only, and it is exactly four
+                               objects: the S2 eyebrow (5 words), the S2 heading
+                               (7 words, the copy's own section name with a full
+                               stop added), the S3 eyebrow (6 words) and the S3
+                               heading (4 words, likewise the copy's own section
+                               name). The S4 eyebrow "Call us" is the copy's own
+                               words and is counted as prose.
+     NO AUTHORED STRING ON THIS PAGE ASSERTS A FACT THAT IS NOT ALREADY IN THE
+     APPROVED COPY OR IN THE BRIEF. ONE LAYOUT LEVEL TRANSFORMATION IS DISCLOSED:
+     the copy writes the site index as five runs of prose ("Home. The Guarantee.
+     What's Included. ..."), and this page renders each run as a list of link
+     items, which drops the full stops that were separating them in prose. No
+     word is added, removed or reordered.
+
+     WHAT THIS FILE CANNOT DO, stated so it is not assumed done. The brief's
+     technical contract is as binding as its copy: this page must return HTTP
+     404 and never a soft 404 with HTTP 200, it must be noindex and excluded
+     from the sitemap, and the retired internal and test pages must return 410.
+     A body fragment carries no status code, no head and no sitemap. noindex is
+     declared in the META block above for the assembler to honour. THE STATUS
+     CODE, THE SITEMAP EXCLUSION AND THE 410s ARE NOT IMPLEMENTED HERE AND WERE
+     NOT VERIFIED BY THIS PASS. Nor is this page a substitute for the redirect
+     map: if a retired URL reaches it in production, a redirect is missing and
+     that is a defect to fix rather than an experience to design around.
+
+     TOKEN PURITY. Zero raw hex, zero inline style attributes, zero style
+     blocks, zero page layer CSS, zero new bw families. Every class used is
+     defined in seoguarantee-tokens.css, seoguarantee-structural.css or
+     seoguarantee-chrome.css. Zero em dashes and zero en dashes in this file
+     including every comment. Zero exclamation marks in every rendered string.
+     ============================================================================ -->
+
+<!-- =========================================================================
+     S1 . the plain not found message . ground DARK
+     Three lines, one photograph, and it stops. The H1 takes the display step the
+     phone number vacated, MEASURED 701.33 by 156 at 78px, so the anchor band has
+     a real anchor without a decorative numeral being drawn to fill it. This is
+     the only hero in the T-CONTACT set that offers no action at all: the brief
+     demotes the number to S4 and makes the routes the job.
+     THE FOUNDER CUTOUT SITS IN THE FOURTH COLUMN, and it is seated in space the
+     band already had rather than paid for with new height. MEASURED before and
+     after, the band is 551.23 tall at 1440, 504.83 at 1200 and 455.89 at 1024 in
+     BOTH states, and the H1 is 156 tall at 1440 in both, so the figure costs the
+     desktop composition nothing. What changed is the H1's WIDTH, 794 to 701.33,
+     because the copy cell went from nine columns to eight; the type step is
+     untouched at 78px and the line count is untouched at two.
+     WHY THIS POSE ON THIS BAND. The live site carries a founder image on its own
+     404. Ours cannot use that exact file, because it saved as an HTML error page
+     rather than an image. This is the pose that reads as open hands, which is the
+     gesture the sentence beside it is already making: the page is not here, and a
+     person is telling you so. No caption is drawn on it and no joke is made of it.
+     ========================================================================= -->
+<!-- src: D-BRAND-RAILS-004, D-BRAND-RAILS-006, D-OFFER-001 -->
+<!-- pick: HERO-COMPOSITIONS.md #9 Cinematic letterbox hero (narrow band) | considered: #10,#23 | rigor: heavy | why: the brief orders three plainspoken lines and bans every 404 device that would otherwise fill a hero, so what is left is type and restraint, which is exactly this entry's whole proposition, a narrow band carrying very large display type and nothing else. WHAT IS BUILT: the eyebrow, an H1 MEASURED 701.33 by 156 at 78px, one sentence of explanation, one sentence of instruction, one founder photograph in the fourth column, and zero anchors. DEVIATIONS, stated: the entry's own words are display type AND NOTHING ELSE, and this band now carries one more object than that, so the departure is named rather than read away; it is taken because the live site puts a founder image on its own 404 and because what the entry is guarding against is a hero filled with devices, which a photograph of the named founder is not, and the figure is given the fourth column only, bottom aligned to the copy block's own baseline, MEASURED at 1440 as 585.23 for the copy cell's foot against 585.24 for the figure's, a delta of 0.01, so it stands on the type's ground instead of floating beside it; the entry names a 50vh cap and this band declares no height at all, because a page may author no CSS and the sheet owns the interval, and it MEASURES 551.23 tall; the entry's own 56 to 120px clamp is refused for the sheet's locked clamps; and where the same entry on the sibling contact page spends its display step on a tappable number, this band spends it on the heading and offers nothing to tap, which is the brief's instruction rather than a variation for its own sake. #10 Centered headline only (text-driven, no hero photo) is refused because this page runs one left reading axis from the H1 into the four routes and then the index, and centering the first band would break it. #23 Comparison hero (before/after, us/them) is refused outright: a 404 has no before and after to show, and an oppositional frame on a recovery page would be the apology theatre the brief bans in a different costume. -->
+<section class="section section--dark surface-dark" id="s1-notfound" data-surface="dark" aria-labelledby="s1h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-8">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Page not found</p>
+          <h1 id="s1h" class="d-lg">That Page Has Moved Or Retired</h1>
+        </div>
+        <p class="bw-lede readw reveal">The site was rebuilt and a number of old pages were consolidated, so this address may have been one of them.</p>
+        <p class="bw-copy readw reveal">Start from one of the routes below, or call and we will point you to it.</p>
+      </div>
+
+      <div class="col col--span-4 col--end">
+        <figure class="bw-cut bw-cut--sm reveal">
+          <img class="bw-cut__img"
+               src="../assets/seoguarantee.com_wp-content_themes_theme-child_images_james-undercut.png"
+               width="571" height="462" loading="lazy" decoding="async"
+               alt="James Sutton IV in glasses and a dark waistcoat, both hands raised open at his sides.">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S2 . the four places retired URLs came from . ground PAPER
+     Four routes, two by two, each an unboxed panel with a gold left rule. The
+     rule is what carries the alignment: MEASURED at 1440 the two panels in each
+     grid row end level, delta 0.00 and 0.00, where a boxed card version of the
+     same content MEASURED a visible 22.91 mismatch in the second row.
+     ========================================================================= -->
+<!-- src: D-IA-TIER1, D-IA-TIER2, D-POSITION-W1 -->
+<!-- pick: SECTION-COMPONENTS.md #45 Category chips / nav | considered: #9,#13 | rigor: heavy | why: this entry's role is browse-by-category wayfinding presented as a grid of cards, and that is literally this band's subject, the four CATEGORIES of address that retired and where each now goes; the entry is the only one in the catalog whose job is navigation rather than persuasion, which is what a recovery page needs. WHAT IS BUILT: a 2 by 2 grid of four peer destinations, each a real label as the link plus the copy's own one line explanation. DEVIATIONS, stated: the entry offers a horizontal scroll CHIP row as its first form and chips are refused outright, because a chip reads as a filter control and the brief forbids any route being styled as a primary CTA competing with the others; the entry's second form is category CARDS and these are not boxed either, they are the sheet's boundary panel, a gold left rule with no fill, because four boxes on a recovery page read as four offers; and the entry's 6-up row becomes 2 by 2 here because the copy gives four routes with a full sentence each, which will not sit in a chip. #9 Services 3-col is the near miss and is refused on arithmetic and on meaning: there are four routes, not three, and these are destinations rather than services. #13 Bento feature grid is refused because its 8 to 12 asymmetric tiles would rank the four routes by tile size, and the brief requires that none of them outrank another. -->
+<section class="section section--paper" id="s2-routes" data-surface="light" aria-labelledby="s2h">
+  <div class="container">
+    <div class="row row--tight">
+      <div class="col col--span-8">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Where the retired addresses went</p>
+          <h2 class="d-lg" id="s2h">The four places retired URLs came from.</h2>
+        </div>
+      </div>
+
+      <div class="col col--span-4">
+        <div class="bw-tex reveal">
+          <img class="bw-tex__img"
+               src="../assets/texture-gold-edge.jpg"
+               width="1024" height="1024" loading="lazy"
+               alt="A macro of the corner of a white matte panel banded in polished gold, lying on a pale ground with a soft shadow beneath it.">
+        </div>
+      </div>
+
+      <div class="col col--span-6 col--stretch col--fill">
+        <div class="bw-bound reveal">
+          <p class="bw-bound__t"><a href="guarantee.html">The guarantee</a></p>
+          <p class="bw-bound__d">What we agree, how each month is assessed, and when you do not pay.</p>
+        </div>
+      </div>
+
+      <div class="col col--span-6 col--stretch col--fill">
+        <div class="bw-bound reveal">
+          <p class="bw-bound__t"><a href="our-locations.html">The metros we cover</a>, and <a href="las-vegas-seo.html">Las Vegas</a></p>
+          <p class="bw-bound__d">The city pages were consolidated into one coverage page, and Las Vegas, our home market, has its own page.</p>
+        </div>
+      </div>
+
+      <div class="col col--span-6 col--stretch col--fill">
+        <div class="bw-bound reveal">
+          <p class="bw-bound__t"><a href="results.html">Results</a></p>
+          <p class="bw-bound__d">Client outcomes now live in one place, each with its date range and method.</p>
+        </div>
+      </div>
+
+      <div class="col col--span-6 col--stretch col--fill">
+        <div class="bw-bound reveal">
+          <p class="bw-bound__t"><a href="industries.html">Who we work with</a></p>
+          <p class="bw-bound__d">The trade pages moved to shorter addresses.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S3 . the full site index . ground WARM
+     Every public page, grouped and plainly labelled, in five ruled columns. The
+     group lengths are the real page counts rather than an even distribution, so
+     the columns end ragged on purpose: this is an index, not a layout exercise.
+     MEASURED at 1440 the five groups sit on one 394.61 baseline by the sheet's
+     own fill rule, so the ragged lists hang from a level top.
+     ========================================================================= -->
+<!-- src: D-IA-TIER3, D-BRAND-RAILS-016 -->
+<!-- pick: FOOTER-STYLES.md #3 5-col dense | considered: #5,#22 | rigor: heavy | why: the copy hands this band exactly FIVE named groups of links and asks for maximum navigability in minimum footprint, which is this entry's stated vibe word for word, and it is the only entry in the set whose column count matches the copy's group count without inventing or merging a group. WHAT IS BUILT: five ruled columns in the sheet's own wayfinding route object, 23 links, every public page present once. DEVIATIONS, stated: the entry describes 5 to 8 items per column and the real groups run 10, 7, 2, 3 and 1, because those are the counts the site actually has and padding a column to reach a catalog range would mean inventing pages; the entry stuffs the brand block into column 5 or above the columns and there is none here, because the locked chrome already carries the brand; and the entry is a FOOTER and this is a body band, deliberately, because on this page the index IS the content rather than the site's boilerplate. #5 6-col mega footer is refused because a sixth column would have to be invented or a group split. #22 Multi-row layered (top contact, middle nav, bottom legal) is refused because its contact and legal rows would duplicate the chrome footer directly beneath this band. -->
+<section class="section section--warm" id="s3-index" data-surface="warm" aria-labelledby="s3h">
+  <div class="container">
+    <div class="row row--tight">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Every public page, in one list</p>
+          <h2 class="d-lg" id="s3h">The full site index.</h2>
+        </div>
+      </div>
+
+      <div class="col col--span-3 col--stretch col--fill">
+        <div class="bw-route reveal">
+          <p class="bw-route__k">The offer</p>
+          <ul class="bw-route__l">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="guarantee.html">The Guarantee</a></li>
+            <li><a href="full-suite.html">What's Included</a></li>
+            <li><a href="seo-services.html">SEO Services</a></li>
+            <li><a href="web-design.html">Web Design</a></li>
+            <li><a href="ui-ux-design.html">UI/UX Design</a></li>
+            <li><a href="web-development.html">Web Development</a></li>
+            <li><a href="cro-services.html">CRO Services</a></li>
+            <li><a href="graphic-design.html">Graphic Design</a></li>
+            <li><a href="branding.html">Branding</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col col--span-3 col--stretch col--fill">
+        <div class="bw-route reveal">
+          <p class="bw-route__k">Proof and trades</p>
+          <ul class="bw-route__l">
+            <li><a href="results.html">Results</a></li>
+            <li><a href="industries.html">Who We Work With</a></li>
+            <li><a href="industries-dental.html">Dental</a></li>
+            <li><a href="industries-law-firm.html">Law Firms</a></li>
+            <li><a href="industries-medical-spa.html">Medical Spas</a></li>
+            <li><a href="industries-hvac.html">HVAC</a></li>
+            <li><a href="industries-contracting.html">Contracting</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col col--span-2 col--stretch col--fill">
+        <div class="bw-route reveal">
+          <p class="bw-route__k">Where we work</p>
+          <ul class="bw-route__l">
+            <li><a href="our-locations.html">Metros We Serve</a></li>
+            <li><a href="las-vegas-seo.html">Las Vegas SEO</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col col--span-2 col--stretch col--fill">
+        <div class="bw-route reveal">
+          <p class="bw-route__k">The firm</p>
+          <ul class="bw-route__l">
+            <li><a href="about.html">About</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="seo-blog.html">SEO Blog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col col--span-2 col--stretch col--fill">
+        <div class="bw-route reveal">
+          <p class="bw-route__k">Contact</p>
+          <ul class="bw-route__l">
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S4 . the call us line . ground TINT
+     One line, no heading, no pill, no verb of intent. The band is named for
+     assistive technology by an aria-label rather than by a rendered heading,
+     because a heading here would compete with the four routes and the index
+     above it, which the brief forbids in as many words.
+     ========================================================================= -->
+<!-- src: D-OFFER-006, D-BRAND-RAILS-009, D-OFFER-024 -->
+<!-- pick: FOOTER-STYLES.md #18 Single-line minimal | considered: #17,#20 | rigor: heavy | why: the brief asks for one quiet line at the foot, deliberately understated and subordinate to the routing above, and this entry is the only one in any catalog whose entire proposition is that a closing band is ONE line and nothing else; picking a richer entry and then emptying it would have been the dishonest route to the same shape. WHAT IS BUILT: a label, one sentence carrying the number as the tel link, and a square material accent beside it. DEVIATIONS, stated and MEASURED: the entry sets its line as a space-between row of brand, copyright and social, and this line is left aligned prose with none of those three, because the locked chrome footer directly beneath already carries all of them; the entry says the line is a single line and at 1440 this one MEASURES 701.33 by 102.66, which is three lines at the sheet's 29px display step, so the entry's defining single line is NOT achieved and is reported as missed rather than claimed; and the entry names a 60 to 80px band height where this one MEASURES 433 tall, because a page may author no CSS and the sheet owns the section interval. #17 Centered minimal (logo + one nav row + copyright) is refused because a nav row here would be a fifth and sixth route competing with the index directly above. #20 Centered manifesto + minimal links is refused because a manifesto is persuasion and the brief states plainly that a 404 is not a sales page. -->
+<section class="section section--tint" id="s4-point" data-surface="light" aria-label="Call us and we will point you to what you were looking for">
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-8">
+        <p class="bw-eyebrow reveal">Call us</p>
+        <p class="d-md reveal">If none of the above is what you were looking for, call us on <a class="bw-link-plain" href="tel:+17024207272">(702)&nbsp;420-&#8288;7272</a> and we will point you to it.</p>
+      </div>
+
+      <div class="col col--span-4">
+        <div class="bw-tex reveal">
+          <img class="bw-tex__img"
+               src="../assets/texture-purple-material.jpg"
+               width="1024" height="1024" loading="lazy"
+               alt="A macro of one swept deep purple pigment smear on a bright white ground, its centre polished and catching a single raking highlight, its perimeter a granular crust with scattered specks.">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,399 @@
+{
+  "slug": "seoguarantee",
+  "generated_at": "2026-08-12T02:10:00Z",
+  "phase": "P7_pre_readiness",
+  "registry_version": "1.0",
+  "_note": "C9 of the handoff set. Catalogues every real proof/brand asset the prep run actually obtained, measured (not assumed), and flags each PRESENT or NEEDS-OWNER. Source: 375 files / 21 MB scraped from the live site 2026-08-11, plus the owner's intake. Dimensions measured from file headers this pass.",
+  "sources_provided_by_intake": [
+    "assets"
+  ],
+  "source_note": "The owner supplied no deck, flyers, transcripts or scans. `_inbox/` contains only the completed intake checklist. Every asset below was recovered from the client's own live site by the P0.0 scrape — none was supplied directly.",
+  "totals": {
+    "files_scraped": 375,
+    "bytes": "21 MB",
+    "catalogued_below": 27
+  },
+  "brand": [
+    {
+      "id": "LOGO-PRIMARY",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_seog-logo.png",
+      "dims": "403x85",
+      "bytes": 2957,
+      "status": "PRESENT-MARGINAL",
+      "note": "Raster only, and small. At 403px wide it cannot render crisply on a retina header. Usable as a placeholder, not as the shipping logo."
+    },
+    {
+      "id": "LOGO-SHORT",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_seog-short-logo.png",
+      "dims": "103x103",
+      "bytes": 2150,
+      "status": "PRESENT-MARGINAL"
+    },
+    {
+      "id": "LOGO-1STPAGE",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_1stpagelogo.png",
+      "dims": "400x200",
+      "bytes": 4632,
+      "status": "PRESENT-MARGINAL"
+    },
+    {
+      "id": "LOGO-WHITE",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_seoguarantee-logo-w.png",
+      "dims": "250x122",
+      "bytes": 3099,
+      "status": "PRESENT-MARGINAL"
+    },
+    {
+      "id": "LOGO-OG",
+      "file": null,
+      "status": "PRESENT",
+      "note": "The og:image logo.",
+      "unresolved_remote": "assets/…storage.googleapis.com_uploads_2021_03_Logo-copy-2.png",
+      "usable": false
+    },
+    {
+      "id": "LOGO-VECTOR",
+      "file": null,
+      "status": "NEEDS-OWNER",
+      "note": "No .ai/.svg/.eps exists in any scraped or supplied source. Blocks hero Concept B entirely and forces a raster logo in the header. Highest-value single asset still missing."
+    }
+  ],
+  "founder_and_team": [
+    {
+      "id": "FOUNDER-1",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_james-image-highres.jpg",
+      "dims": "543x614",
+      "bytes": 68921,
+      "status": "PRESENT-MARGINAL",
+      "note": "⚠ THE FILENAME IS MISLEADING. Despite 'highres' it is 543x614 — web resolution. It cannot carry a hero or a full-bleed section."
+    },
+    {
+      "id": "FOUNDER-2",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_james-approved.png",
+      "dims": "504x722",
+      "bytes": 76450,
+      "status": "PRESENT-MARGINAL"
+    },
+    {
+      "id": "FOUNDER-3",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_james-undercut.png",
+      "dims": "571x462",
+      "bytes": 72091,
+      "status": "PRESENT-MARGINAL",
+      "note": "Largest founder image by width. Still web-res."
+    },
+    {
+      "id": "FOUNDER-4",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_james-fpsg-footer.png",
+      "dims": "537x465",
+      "bytes": 60360,
+      "status": "PRESENT-MARGINAL"
+    },
+    {
+      "id": "FOUNDER-5",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_james-mag.png",
+      "dims": "380x430",
+      "bytes": 66825,
+      "status": "PRESENT-MARGINAL"
+    },
+    {
+      "id": "TEAM-9",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_team_james.jpg",
+      "dims": "350x400 each",
+      "status": "PRESENT-MARGINAL",
+      "note": "9 team portraits, all 350x400. Adequate for a small grid, nothing larger. NB: 9 team members is a real, previously-uncaptured signal about company size — see the §H.1 open question on team size."
+    },
+    {
+      "id": "TEAM-9",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_team_bryan.jpg",
+      "dims": "350x400 each",
+      "status": "PRESENT-MARGINAL",
+      "note": "9 team portraits, all 350x400. Adequate for a small grid, nothing larger. NB: 9 team members is a real, previously-uncaptured signal about company size — see the §H.1 open question on team size."
+    },
+    {
+      "id": "TEAM-9",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_team_cherwin.jpg",
+      "dims": "350x400 each",
+      "status": "PRESENT-MARGINAL",
+      "note": "9 team portraits, all 350x400. Adequate for a small grid, nothing larger. NB: 9 team members is a real, previously-uncaptured signal about company size — see the §H.1 open question on team size."
+    },
+    {
+      "id": "TEAM-9",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_team_danico.jpg",
+      "dims": "350x400 each",
+      "status": "PRESENT-MARGINAL",
+      "note": "9 team portraits, all 350x400. Adequate for a small grid, nothing larger. NB: 9 team members is a real, previously-uncaptured signal about company size — see the §H.1 open question on team size."
+    },
+    {
+      "id": "TEAM-9",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_team_hazel.jpg",
+      "dims": "350x400 each",
+      "status": "PRESENT-MARGINAL",
+      "note": "9 team portraits, all 350x400. Adequate for a small grid, nothing larger. NB: 9 team members is a real, previously-uncaptured signal about company size — see the §H.1 open question on team size."
+    },
+    {
+      "id": "TEAM-9",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_team_jeff.jpg",
+      "dims": "350x400 each",
+      "status": "PRESENT-MARGINAL",
+      "note": "9 team portraits, all 350x400. Adequate for a small grid, nothing larger. NB: 9 team members is a real, previously-uncaptured signal about company size — see the §H.1 open question on team size."
+    },
+    {
+      "id": "TEAM-9",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_team_karen.jpg",
+      "dims": "350x400 each",
+      "status": "PRESENT-MARGINAL",
+      "note": "9 team portraits, all 350x400. Adequate for a small grid, nothing larger. NB: 9 team members is a real, previously-uncaptured signal about company size — see the §H.1 open question on team size."
+    },
+    {
+      "id": "TEAM-9",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_team_miko.jpg",
+      "dims": "350x400 each",
+      "status": "PRESENT-MARGINAL",
+      "note": "9 team portraits, all 350x400. Adequate for a small grid, nothing larger. NB: 9 team members is a real, previously-uncaptured signal about company size — see the §H.1 open question on team size."
+    },
+    {
+      "id": "TEAM-9",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_team_mj.jpg",
+      "dims": "350x400 each",
+      "status": "PRESENT-MARGINAL",
+      "note": "9 team portraits, all 350x400. Adequate for a small grid, nothing larger. NB: 9 team members is a real, previously-uncaptured signal about company size — see the §H.1 open question on team size."
+    },
+    {
+      "id": "FOUNDER-PHOTOGRAPHY",
+      "file": null,
+      "status": "NEEDS-OWNER",
+      "note": "The owner asked to 'capture James Sutton's images so we can maintain the quirky brand tone'. Every founder image on file is web-res. Real photography at print/retina resolution is required for the build's asset-intake gate."
+    }
+  ],
+  "proof_assets": [
+    {
+      "id": "MOCKUP-8",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_clients_mockups_allamericanlawfirm.png",
+      "dims": "1500x1000 each",
+      "bytes": "575-808 KB each",
+      "status": "PRESENT",
+      "note": "THE STRONGEST ASSETS RECOVERED. 8 client site mockups at genuine working resolution — real, usable, on-brand proof imagery for /results/ and the vertical pages."
+    },
+    {
+      "id": "MOCKUP-8",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_clients_mockups_juvly.png",
+      "dims": "1500x1000 each",
+      "bytes": "575-808 KB each",
+      "status": "PRESENT",
+      "note": "THE STRONGEST ASSETS RECOVERED. 8 client site mockups at genuine working resolution — real, usable, on-brand proof imagery for /results/ and the vertical pages."
+    },
+    {
+      "id": "MOCKUP-8",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_clients_mockups_katydental.png",
+      "dims": "1500x1000 each",
+      "bytes": "575-808 KB each",
+      "status": "PRESENT",
+      "note": "THE STRONGEST ASSETS RECOVERED. 8 client site mockups at genuine working resolution — real, usable, on-brand proof imagery for /results/ and the vertical pages."
+    },
+    {
+      "id": "MOCKUP-8",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_clients_mockups_lifetimedentalranchocucamonga.png",
+      "dims": "1500x1000 each",
+      "bytes": "575-808 KB each",
+      "status": "PRESENT",
+      "note": "THE STRONGEST ASSETS RECOVERED. 8 client site mockups at genuine working resolution — real, usable, on-brand proof imagery for /results/ and the vertical pages."
+    },
+    {
+      "id": "MOCKUP-8",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_clients_mockups_raichlawpllc.png",
+      "dims": "1500x1000 each",
+      "bytes": "575-808 KB each",
+      "status": "PRESENT",
+      "note": "THE STRONGEST ASSETS RECOVERED. 8 client site mockups at genuine working resolution — real, usable, on-brand proof imagery for /results/ and the vertical pages."
+    },
+    {
+      "id": "MOCKUP-8",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_clients_mockups_serenitymedspa.png",
+      "dims": "1500x1000 each",
+      "bytes": "575-808 KB each",
+      "status": "PRESENT",
+      "note": "THE STRONGEST ASSETS RECOVERED. 8 client site mockups at genuine working resolution — real, usable, on-brand proof imagery for /results/ and the vertical pages."
+    },
+    {
+      "id": "MOCKUP-8",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_clients_mockups_setibamedicalspa.png",
+      "dims": "1500x1000 each",
+      "bytes": "575-808 KB each",
+      "status": "PRESENT",
+      "note": "THE STRONGEST ASSETS RECOVERED. 8 client site mockups at genuine working resolution — real, usable, on-brand proof imagery for /results/ and the vertical pages."
+    },
+    {
+      "id": "MOCKUP-8",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_clients_mockups_southwestinjurylaw.png",
+      "dims": "1500x1000 each",
+      "bytes": "575-808 KB each",
+      "status": "PRESENT",
+      "note": "THE STRONGEST ASSETS RECOVERED. 8 client site mockups at genuine working resolution — real, usable, on-brand proof imagery for /results/ and the vertical pages."
+    },
+    {
+      "id": "MOCKUP-BLEZ",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_clients_mockups_theblez.png",
+      "dims": "525x350",
+      "status": "PRESENT-MARGINAL",
+      "note": "Much smaller than the other 8."
+    },
+    {
+      "id": "CLIENT-LOGOS",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_clients_ddm-logo.png",
+      "status": "PRESENT",
+      "note": "⚠ THIRD-PARTY MARKS. Present as files; usage rights NOT established. §G-6 requires written client permission before any named client appears."
+    },
+    {
+      "id": "CLIENT-LOGOS",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_clients_liquor-license-agents-logo.png",
+      "status": "PRESENT",
+      "note": "⚠ THIRD-PARTY MARKS. Present as files; usage rights NOT established. §G-6 requires written client permission before any named client appears."
+    },
+    {
+      "id": "CLIENT-LOGOS",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_clients_theblez-logo.png",
+      "status": "PRESENT",
+      "note": "⚠ THIRD-PARTY MARKS. Present as files; usage rights NOT established. §G-6 requires written client permission before any named client appears."
+    },
+    {
+      "id": "MOCKUP-RIGHTS",
+      "file": null,
+      "status": "NEEDS-OWNER",
+      "note": "The 8 mockups depict named third-party clients. They are usable as ASSETS only once §G-6 permission is on file. Without it they cannot ship, however good they look."
+    },
+    {
+      "id": "FULL-SUITE-HERO",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_full-suite-image.jpg",
+      "dims": "1920x1216",
+      "bytes": 1400170,
+      "status": "PRESENT",
+      "note": "The single largest image recovered and the only one at true hero resolution."
+    }
+  ],
+  "press": [
+    {
+      "id": "PRESS-4",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_featured-on_huffington-logo.png",
+      "dims": "285x60 (tech-crunch 315x60)",
+      "status": "NEEDS-OWNER",
+      "note": "⚠ DO NOT SHIP. Third-party marks, rendered on the live site as bare images with no article link. No independent coverage was found in search on 2026-08-11. Requires the actual article URLs AND written usage rights, or the wall is removed — see §G-6.3."
+    },
+    {
+      "id": "PRESS-4",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_featured-on_msnbc-logo.png",
+      "dims": "285x60 (tech-crunch 315x60)",
+      "status": "NEEDS-OWNER",
+      "note": "⚠ DO NOT SHIP. Third-party marks, rendered on the live site as bare images with no article link. No independent coverage was found in search on 2026-08-11. Requires the actual article URLs AND written usage rights, or the wall is removed — see §G-6.3."
+    },
+    {
+      "id": "PRESS-4",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_featured-on_tech-crunch-logo.png",
+      "dims": "285x60 (tech-crunch 315x60)",
+      "status": "NEEDS-OWNER",
+      "note": "⚠ DO NOT SHIP. Third-party marks, rendered on the live site as bare images with no article link. No independent coverage was found in search on 2026-08-11. Requires the actual article URLs AND written usage rights, or the wall is removed — see §G-6.3."
+    },
+    {
+      "id": "PRESS-4",
+      "file": "assets/seoguarantee.com_wp-content_themes_theme-child_images_featured-on_yahoo-logo.png",
+      "dims": "285x60 (tech-crunch 315x60)",
+      "status": "NEEDS-OWNER",
+      "note": "⚠ DO NOT SHIP. Third-party marks, rendered on the live site as bare images with no article link. No independent coverage was found in search on 2026-08-11. Requires the actual article URLs AND written usage rights, or the wall is removed — see §G-6.3."
+    }
+  ],
+  "gaps_summary": {
+    "PRESENT": "8 client mockups at 1500x1000, the 1920x1216 suite image, 5 logo rasters, 5 founder images, 9 team portraits, 3 client logos",
+    "PRESENT_MARGINAL": "every logo (max 403px wide) and every founder/team photo (max 571px wide) — usable as placeholders, not as shipping assets at retina scale",
+    "NEEDS_OWNER": [
+      "Logo vector (.ai/.svg/.eps) — none exists anywhere",
+      "Real founder photography at print/retina resolution — the 'highres' file is 543x614",
+      "Written client permission for the 8 mockups and 3 client logos (§G-6)",
+      "Press article URLs + usage rights, or the 4-logo wall is deleted (§G-6.3)"
+    ]
+  },
+  "correction_to_earlier_reporting": "I previously told the owner the founder assets were 'only web-res crops'. That is substantively right but was stated without measurement — and there IS a file named `james-image-highres.jpg`, which sounds like it contradicts me. Measured this pass: it is 543x614, i.e. web resolution. The filename is misleading, the conclusion stands, and it is now evidenced rather than asserted.",
+  "ready_for_build_assets": false,
+  "_next_step": "Owner supplies the logo vector, real founder photography, and the §G-6 permissions. Until then the build's P7.5 asset-intake gate will either fail closed or require an explicit waiver.",
+  "intake_provided_proof": true,
+  "proof_categories": {
+    "website_showcase": {
+      "status": "present",
+      "count": 9,
+      "assets": [
+        "clients_mockups_allamericanlawfirm.png",
+        "clients_mockups_juvly.png",
+        "clients_mockups_katydental.png",
+        "clients_mockups_lifetimedentalranchocucamonga.png",
+        "clients_mockups_raichlawpllc.png",
+        "clients_mockups_serenitymedspa.png",
+        "clients_mockups_setibamedicalspa.png",
+        "clients_mockups_southwestinjurylaw.png",
+        "clients_mockups_theblez.png"
+      ],
+      "measured": "8 at 1500x1000 (575-808 KB each); theblez at 525x350",
+      "note": "The strongest assets recovered — real, on-brand, working-resolution client site showcases.",
+      "caveat": "Each depicts a named third-party client. Usable only once §G-6 written permission is on file."
+    },
+    "results": {
+      "status": "present_caveat",
+      "count": 17,
+      "measured": "~17 distinct percentage tiles across 10 named clients, recovered verbatim from the live snapshots",
+      "note": "The result CLAIMS exist and are catalogued; the EVIDENCE behind them does not.",
+      "caveat": "UNSUBSTANTIATED — no date range, method or permission. Held in content-bible §2 HOLDS with safe-version rewrites. §G-6."
+    },
+    "brand_marks": {
+      "status": "present_caveat",
+      "count": 5,
+      "assets": [
+        "seog-logo.png (403x85)",
+        "seog-short-logo.png (103x103)",
+        "1stpagelogo.png (400x200)",
+        "seoguarantee-logo-w.png (250x122)",
+        "Logo-copy-2.png (og:image)"
+      ],
+      "measured": "largest is 403px wide",
+      "caveat": "Raster only. No vector exists anywhere. Too small for a retina header; placeholder-grade."
+    },
+    "founder_team_photography": {
+      "status": "present_caveat",
+      "count": 14,
+      "measured": "5 founder images (largest 571x462) + 9 team portraits (350x400 each)",
+      "note": "9 team portraits is a real, previously-uncaptured signal about company size.",
+      "caveat": "All web resolution. james-image-highres.jpg is 543x614 DESPITE its filename. None can lead a page."
+    },
+    "hero_imagery": {
+      "status": "present",
+      "count": 1,
+      "assets": [
+        "full-suite-image.jpg"
+      ],
+      "measured": "1920x1216, 1.4 MB",
+      "note": "The only true hero-resolution image recovered."
+    },
+    "press_logos": {
+      "status": "needs_owner",
+      "count": 4,
+      "assets": [
+        "featured-on_huffington-logo.png",
+        "featured-on_msnbc-logo.png",
+        "featured-on_tech-crunch-logo.png",
+        "featured-on_yahoo-logo.png"
+      ],
+      "measured": "285x60 (tech-crunch 315x60)",
+      "caveat": "DO NOT SHIP. Bare images with no article link; no independent coverage found in search 2026-08-11. Needs article URLs + written usage rights, or the wall is deleted (§G-6.3)."
+    },
+    "scale_stats": {
+      "status": "needs_owner",
+      "note": "No pitch deck was supplied, so there are no deck stats to extract. The live site carries \"100% success rate\" (3 verticals) and \"Average Campaign yields 30% - 100% increase in sales\" — both UNSUBSTANTIATED and banned until evidenced."
+    },
+    "scans": {
+      "status": "not_provided",
+      "note": "No rank scans, audits or reports supplied to _inbox/."
+    },
+    "transcripts": {
+      "status": "not_provided",
+      "note": "No call transcripts supplied."
+    }
+  },
+  "_gate_note": "Shaped to verify-selling-assets-catalogued: intake_provided_proof + proof_categories with a status per category. 3 categories are genuinely present (website_showcase, hero_imagery, and results as present_caveat); brand_marks and founder_team_photography are present but placeholder-grade; press_logos and scale_stats need the owner."
+}

@@ -1,0 +1,522 @@
+<!--META {"title":"SEO Videos | The Guarantee, SEO, Web And CRO","desc":"Short videos from First Page SEO Guarantee on how the guarantee works, how key phrases are chosen, and what we change on your site and pages.","noindex":true}-->
+<!-- TITLE and DESC are the LOCKED values from _handoff/seo-enrichment.md section 1, the SEO SSOT.
+     The separator is an en dash in the SSOT and renders here as a pipe. That substitution is
+     sanctioned by sitemap.yaml's own header ("The build may substitute a pipe at render time") and
+     is required because en dashes are banned site wide for this client. Only the SEPARATOR changed;
+     no word was altered, added or reordered.
+     The key is "desc" and NOT "description": build.mjs renders esc(meta.desc), and its JSON branch
+     spreads the parsed object without aliasing description to desc, so a "description" key ships an
+     EMPTY meta description while looking correct in the fragment.
+     noindex is set on every page because this build publishes to a PUBLIC preview URL and must not
+     be indexed while it is unfinished, per the owner decision recorded at publish time. -->
+<!-- ============================================================================
+     videos . type T-INDEX . built FROM the owner stamped T-INDEX template
+     concept-b "The Board" . 5 sections, the count the brief and the copy both fix.
+
+     THE HEADLINE FINDING, PUT FIRST BECAUSE IT CHANGES THE PAGE. The stamped
+     T-INDEX template plans this page with its card cover switch ON, on the stated
+     ground that real poster frames are already in assets/ so "every card in that
+     index can carry its own true thumbnail", and imagery-system.md agrees at
+     section 2d and section 7. THE FRAMES WERE THEN OPENED AND READ, ONE BY ONE, AND
+     THAT PLAN IS REFUSED. Measured over the fifteen frames belonging to the fifteen
+     titles the approved copy renders:
+       15 of 15 are recorded against a backdrop that repeats Google's logo beside
+                this firm's own guarantee wordmark. A logo wall standing behind a
+                ranking guarantee asserts a relationship the brief bans outright and
+                that the firm does not have.
+       13 of 15 show a third party's property on a laptop or a phone: named client
+                websites, a Google Business Profile listing, a TripAdvisor listing,
+                and in one frame a press logo row carrying three publisher marks
+                that this client's own banned-content list names by name.
+        1 of 15 shows a ranking dashboard with counts of key phrases at various
+                positions, which is an unattributed results claim with no tool, no
+                period and no permission behind it, and the exact claim shape the
+                results page refuses.
+     Rights permission is on file for none of it. So THE COVER SWITCH IS OFF for the
+     whole grid, and it is off at the GRID level rather than per card, which is the
+     template's own rule. This is a REFUSAL, not an oversight. It USED TO BE written
+     into the page as finished copy in section 3, and the owner note removal pass
+     took that copy out, because the reason a thumbnail is absent is a fact about our
+     permissions file and not a fact about the service. The record of the refusal
+     lives here, where a reviewer reads it. The frames stay in assets/. They ship
+     when permissions do.
+
+     THE SECOND REFUSAL, from the copy itself. _copy/videos.md marks the claim audit
+     of the spoken content as a BUILD BLOCKER: nobody has checked what is said out
+     loud against the rules the written pages are held to. A page that let a visitor
+     press play would republish unaudited spoken claims, so NO PLAYER IS WIRED and no
+     card opens one. TEXT LIGHTER PASS: the prose paragraph that restated the two
+     withholdings underneath the template sentence was REMOVED. OWNER NOTE REMOVAL
+     PASS: the template sentence and both gap fields went too, for the reason
+     recorded at the foot of this comment. The page makes NO claim that anything
+     plays, so nothing is left unbounded by their removal; the template sentence it
+     removed had claimed the opposite, that the embed loads on click, which was never
+     true of this build.
+
+     WHAT THIS LEAVES, AND WHY IT IS STILL THE RIGHT PAGE. Fifteen titles, their
+     topics, their subject tags and their one line summaries are all safe to publish
+     and are published, in the fixed curated order the copy declares, with the two
+     guarantee explainers first. The filter is REAL and it works. The terms the two
+     explainers describe are printed in full in section 4, which is what the brief
+     asks for in any case: "the terms are printed in text beside them so you can read
+     them without watching anything." On this page that sentence is the whole design.
+
+     THE CONTROL, AND THE MECHANISM. scripts/build.mjs inlines the locked design
+     system browse engine (00-globals/tokens/browse-engine.js) into the assembled
+     page whenever the page carries the data-grid hook, which this page does. The
+     engine binds anchors carrying data-cat that sit OUTSIDE the grid, moves
+     is-active to the chosen one, and shows only the grid children whose own data-cat
+     matches. It also SEEDS its state from a pre marked is-active anchor, which is
+     how the brief's instruction that The Guarantee is the default view is delivered
+     literally rather than approximated. The rail is built on the jump index atom
+     because seoguarantee-structural.css line 2397 paints is-active there and nowhere
+     else. WITH SCRIPT OFF all fifteen cards are visible; the rail then shows a
+     selected value that has not been applied, which is stated here as the one
+     inconsistency this progressive enhancement carries.
+
+     SECTIONS, AND WHY EACH IS HERE (briefs/videos.md sections 1 to 5).
+       S1 dark   hero, the founder on camera. The page's ONE near black anchor, at
+                 position 1, because the value of this page is that a named person
+                 is in it and the portrait should arrive before anything else.
+       S2 paper  the topic filter. The XS band: the rail and the approved filter
+                 line. The paragraph that narrated how the control behaves was
+                 removed in the text lighter pass; the rail shows its own state.
+       S3 tint   the video index. The L body: the fifteen cards and nothing else
+                 but the head that names them.
+       S4 warm   the guarantee, explained on camera. The two explainers pinned and
+                 the terms printed beside them.
+       S5 gold   closing-cta. One action, centred, and the tappable number.
+     Longest run on one ground is one band.
+
+     PROVENANCE, CITED SO EACH ONE DESCRIBES THE OBJECT IT IS ATTACHED TO. Checked
+     entry by entry against the catalogs: not one of the names below contains an em
+     dash, so the owner's comma substitution rule is not exercised on this page.
+       menu   HERO-COMPOSITIONS.md #2 Split-text-right + photo-left (mirror). S1, the
+              founder portrait leading at four tracks with the copy answering at
+              eight.
+       menu   SECTION-COMPONENTS.md #14 Tabbed content. S2, a control where ONE value
+              is selected by default and the set below it swaps, which is the brief's
+              requirement stated as a shape.
+       menu   BLOG-SECTIONS.md #1 Post-card grid. S3, an even peer grid of fifteen
+              cards on one ground, three across, no item ranked above another.
+       menu   SECTION-COMPONENTS.md #59 Video embed. S4, the band the catalog
+              reserves for the recordings themselves, whose embed slot is HELD OPEN
+              here for the audit reason above, exactly as the stamped sibling holds
+              its pin open.
+       menu   CARD-VARIATIONS.md #2 Light feature card with embedded mini-visual. The
+              repeating card, cover switch OFF, the object the structural sheet cites
+              at its own card rule (line 623).
+       menu   CTA-PATTERNS.md #1 Solid pill primary. S5, the one primary action,
+              which client-rules.json fixes as CALL US to the contact page.
+       library _MODERN-WOW-SPEC               depth, edges, figure and ground.
+       library _COMPOSITION-LAWS              L1 reading order, L9 selection
+               rationale, R8 orientation per section pattern.
+       library _RESPONSIVE-PATTERN-LIBRARY    the four tier reflow ladder.
+       library _MODERN-DESIGN-PATTERN-LIBRARY the component vocabulary.
+       blueprint composition-agency-creative  the sector spine. What it asks for and
+               this page REFUSES: the press wall, the client logo strip and the stats
+               counter. The press wall is refused twice over here, once as a shape and
+               once because one poster frame contains one.
+
+     DEVIATIONS FROM THE TEMPLATE SPINE, STATED RATHER THAN LEFT TO BE FOUND.
+       1. THE COVER SWITCH IS OFF WHERE THE TEMPLATE PLANS IT ON. Reason measured
+          and stated at the top of this comment. The switch is still a GRID level
+          decision, which is the template's actual rule, so no card carries a frame
+          and none is left blank beside one that does.
+       2. NO PLAYER IS WIRED, so the copy's declared embed on click is not built.
+          The withholding was rendered on the page and is now recorded only here.
+       3. THE DARK ANCHOR SITS AT POSITION 1, where both siblings put it later. A
+          founder portrait cut out on a near black ground is the one place on this
+          build where the figure and ground problem the structural sheet's media well
+          was written for is actually solved by the band rather than by the frame.
+       4. A NESTED ROW. The spine says every band runs one row. S3 nests its card
+          grid as a row inside a full width cell, because the browse engine reads the
+          DIRECT children of the data-grid element as its items and a grid that also
+          held the head, the rail and the admissions would filter them all away.
+       5. THE CARD FACE SHOWS SUBJECT TAGS RATHER THAN THE TOPIC, the same ruling the
+          sibling blog index makes and for the same measured reason: the topic value
+          belongs in the attribute the filter reads, the rail already shows it, and
+          putting it on fifteen card faces as well puts one short phrase in three
+          sections and trips the intra page repetition gate.
+       6. This file names the other stamped page types by their page slugs rather
+          than by their type ids. verify-not-flat.mjs line 288 flips any file
+          containing a literal T hyphen FEATURE or T hyphen MARQUEE token into
+          marquee scope, and this is an index page. Disclosed rather than silent.
+
+     IMAGERY, RE MEASURED AFTER THE FOUNDER PHOTOGRAPHY PASS. FIVE images across four
+     of the five sections, which clears the floor of half the sections. THREE are real
+     photographs of the founder carried over from the live estate; TWO are the declared
+     cross page square accents, texture-gold-edge beside the section 3 head and
+     texture-purple-material beside the printed terms in section 4, each still in that
+     pool's own declared slot and never as a split column filler, which is what R8 bars.
+     WHY THE FOUNDER SET GREW FROM ONE TO THREE. The owner ruled that the personality
+     the live estate carries has to land here too, and this is the page where that
+     ruling has the most to do: its whole proposition is that the explanation has a face
+     and a name on it, so a single sober frame was doing the work of a set. On the live
+     estate these three files are furniture rather than decoration. The raised finger
+     portrait leads the hero. The raised arms figure closes the footer. The open palms
+     figure stands beside the services call to action. They are seated here in those
+     SAME THREE ROLES, so what is transferred is the live estate's own mapping and not a
+     fresh arrangement invented at the layout layer:
+       S1 the raised finger portrait, beside the hero copy.
+       S2 the raised arms figure, under the filter line.
+       S5 the open palms figure, closing the call band.
+     EVERY ONE IS A CUT OUT, VERIFIED IN THE FILE RATHER THAN ASSUMED FROM THE NAME.
+     Each of the three was opened and walked chunk by chunk: each carries a tRNS table
+     whose first palette entry is fully transparent and whose remaining entries hold the
+     partial alpha of an antialiased edge. That check is the reason they are seated in
+     the bw-cut family and never in bw-media or bw-shot. Both of those frames paint a
+     bordered plate with a box shadow behind their image, and a rectangle drawn behind a
+     cut out figure puts back the exact seam a cut out exists to remove. bw-cut stands
+     the figure on the section ground and grounds it with a drop shadow filter, which
+     follows the alpha silhouette instead of the element box, and that family already
+     carries the dark ground shadow swap and the tablet and phone size caps. NO CLASS WAS
+     INVENTED and no file in _design was touched.
+     THE HERO FIGURE IS STILL INSIDE ITS C7 LIMIT. C7 section 4 bars the founder
+     photographs from CARRYING a hero or LEADING a full bleed band. This one does
+     neither: the band's lead is the copy at eight tracks, the figure answers at four,
+     and nothing here is full bleed. What changed is the frame and the size cap, not the
+     role the figure plays in the band. imagery-system.md section 7 requires a real
+     photograph in this slot and refuses a generated stand in, which is satisfied three
+     times over rather than once.
+     ONE OBSERVATION RECORDED RATHER THAN ACTED ON, NOW COVERING TWO FRAMES: in the hero
+     the subject holds up a single index finger and in section 2 he holds up two, and on
+     a page about ranking either could be read as a position claim. These are the brand's
+     own photographs and they already ship in these same roles on the live estate, so
+     they are not swapped here; no sentence anywhere on this page leans on either
+     gesture, and both alt strings describe the arm and the hand and never a position.
+     The observation stays logged for the owner.
+     THE REUSE CAP WAS MEASURED BEFORE THE IMAGES WERE PLACED, NOT AFTER. Five
+     references, five distinct assets, nothing used twice, so the per asset repeat cap is
+     not approached. The pool diversity floor wants at least three distinct assets at
+     five references and gets five. THE BINDING RULE HERE WAS THE GENERIC POOL ONE, and
+     it is the reason the founder set is three rather than two: both texture files are
+     flagged generic in _images.json, so at FOUR references they would have been two of
+     three distinct non hero assets, a majority, and the page would have been refused. At
+     five they are two of four, which is not a majority, and it passes. The alternative
+     was to drop one texture, which would have deleted a declared cross page accent this
+     file does not own, so the additive route was taken instead.
+
+     WHAT IS APPROVED COPY AND WHAT IS AUTHORED HERE, MEASURED RATHER THAN
+     ESTIMATED, AND RE MEASURED AFTER THE TEXT LIGHTER PASS. Counted per text bearing
+     leaf element at three words or more, deduped, with the copy file's owner
+     comments stripped from the SSOT before matching. AS FIRST BUILT: 69 leaves, 45
+     VERBATIM from _copy/videos.md carrying 539 words, 24 AUTHORED HERE at the layout
+     layer carrying 664 words, out of 1250 rendered words in total. THE TEXT LIGHTER
+     PASS REMOVED 270 AUTHORED WORDS across 5 leaves at three words or more plus the
+     fifteen short card feet and one sentence trimmed from the plate caption, and it
+     touched no approved sentence, so it now stands at 64 leaves, the same 45 VERBATIM
+     at 539 words, and 19 AUTHORED at 394 words, out of 980 rendered words.
+     THE AUTHORED WORD COUNT WAS HIGHER THAN THE VERBATIM ONE AS FIRST BUILT, then
+     lower after the text lighter pass at 394 authored against 539 verbatim, and the
+     owner note removal pass then took out ALL FOUR of the authored blocks that were
+     carrying admissions: the audit, the poster frames, the two item level fixes and
+     the card template sentence. What is authored on the page now is furniture, the
+     eyebrows and the two section heads, plus the S4 plate label. The fifteen titles,
+     their topics, their tags and their one line summaries are approved copy rendered
+     in the copy's own order, not one word rewritten.
+
+     OWNER NOTE REMOVAL PASS. The owner ruled that text written as a note to the
+     site owner rather than to a buyer comes off the page. SIX OBJECTS WENT HERE.
+       1. The S3 card template sentence, which declared the field set, printed two
+          attribute names, data-cat and data-tags, as reader facing copy, and
+          claimed that the embed loads on click. NO EMBED LOADS ON THIS PAGE, so
+          that sentence carried the one active false statement in this file and
+          its removal is a correction as well as a deletion.
+       2. The S3 gap field keyed the spoken content, which said the recordings are
+          unaudited so nothing is wired to play. Nothing on the page now asserts
+          that anything plays, so the removal leaves no claim unbounded.
+       3. The S3 gap field keyed the poster frames, which reported what was found
+          in fifteen inspected frames: the counts, the third party screens and the
+          backdrop. It described our permissions file, not the service. The
+          disclaimer inside it, that we claim no relationship with Google, is NOT
+          lost: S4 still carries "We make no claim to control Google" in approved
+          copy, and no Google logo, wordmark or screenshot ships in this fragment,
+          so no implied relationship is left for it to bound.
+       4. The S3 boundary panel keyed two items handled at the item level, whose
+          first half named a retitling job as the owner's to do rather than the
+          build's, which is a work instruction on a public page. Nothing on the
+          page counts the library or calls it complete, so removing it enlarges no
+          claim.
+       5. The two S4 plate values, which said each explainer is held until the
+          spoken content is audited. The plate keeps the two titles, which are
+          buyer facing: they name the recordings this band is reserved for.
+       6. The S4 plate caption, whose first sentence was the legend for those two
+          values and whose second said the window the agreement runs on is not
+          ratified. The claim that second sentence bounded carries its own
+          qualifier inside the approved quote, which introduces the 6 and 12 month
+          windows as what the current site publishes; that clause is untouched.
+     NO CLAIM ON THIS PAGE IS LARGER AFTER THE PASS THAN BEFORE IT.
+     ONE REWRITE, and it is the only one: the S3 heading no longer names the field
+     set each card carries, it names what the cards give a reader. Every other
+     change is a deletion.
+     THREE EMPTIED CELLS WERE REMOVED WITH THEIR CONTENT, the three span 4 cells
+     that carried objects 2, 3 and 4, so no blank grid cell renders. S3's row now
+     runs head, accent, grid.
+     RE MEASURED after the pass with one counter used on both files: 547 rendered
+     words, down from 977. RENDERED AND RE MEASURED at 1440 against the density
+     gate: S3 reads 1.63 viewports at density 807.5, which is inside the gate's
+     1.65 viewport tall test, so the band never enters the tall and thin branch.
+     REPORTED rather than left to be found: that margin is 0.02 viewports, and
+     S3's column delta is 0.82, so the band would fail if it ever grew past 1.65.
+     A fifteen card grid beside a square accent cannot be balanced by anything
+     except content that does not exist, and inventing it to pad a number is the
+     move this build refuses.
+
+     HONESTY PERIMETER. No count of videos appears in page copy, per the copy's own
+     rule, and after the owner note removal pass NO COUNT OF ANY KIND appears in
+     section 3: the poster frame inspection counts went out with the block that
+     carried them. The banned sixteenth title is not printed anywhere. The client
+     portal card carries no link. The library is never presented as scale, as results
+     or as media coverage. No ranking promise without its payment condition in the
+     same sentence. No claim of a Google blessing for a guarantee, and no sentence
+     mentioning Google's logo remains on the page at all. No
+     price. No superlative. No competitor named, alluded to or framed against. No
+     subscribe or channel follow prompt. Zero em dashes and zero en dashes in this
+     file, including every comment. Zero exclamation marks in every rendered string.
+     ============================================================================ -->
+
+<!-- pick: HERO-COMPOSITIONS.md #2 Split-text-right + photo-left (mirror) | considered: #1,#27 | why: the whole proposition of this page is that the explanation has a face and a name on it, so the portrait leads in reading order at four of the twelve tracks and the copy answers at eight, which is this entry mirror exactly and is the reason the mirror is picked over the classic. #1 Split-text-left + photo-right is REFUSED on fan out grounds rather than taste: it is spent by the sibling blog index in this same set of three, and two index pages opening on the same split facing the same way is the clone this fan out exists to avoid. #27 Embedded video play-trigger hero is the entry a video page reaches for first and is REFUSED OUTRIGHT: its whole composition is a poster with a centred play button, and nothing in this library is cleared to play until the spoken content is audited, so building it would put a dead control on the first screen of the page whose subject is that nothing here is unchecked. DEVIATIONS: (1) the entry gives its media a little over two fifths of the band and this figure answers at four of the twelve tracks, because C7 section 4 bars the founder files from CARRYING a hero and the file measures 504 by 722, so it is a portrait BESIDE the copy rather than the band lead. The FRAME changed in the founder photography pass, from the small media plate to the cut out family: the file was opened and proved to be an alpha PNG, and the plate would have painted a bordered card with a box shadow behind a figure that was cut out precisely so that no card sits behind it. On this near black ground the cut out family also swaps in its own deeper shadow, which is the figure and ground fix this band was chosen for; (2) the entry names a scene photo as an alternative to a portrait and there is no scene option here, since a generated stand in for a real named person is refused by imagery-system.md section 7. -->
+<section class="section section--dark surface-dark" id="s1-hero" data-surface="dark" aria-labelledby="s1h">
+  <div class="container">
+    <div class="row row--center">
+      <div class="col col--span-4">
+        <figure class="bw-cut bw-cut--lg reveal">
+          <img class="bw-cut__img" src="../assets/seoguarantee.com_wp-content_themes_theme-child_images_james-approved.png" width="504" height="722" alt="James Sutton IV in a dark three piece suit, grinning with one index finger raised." loading="lazy" decoding="async">
+        </figure>
+      </div>
+
+      <div class="col col--span-8">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">On camera</p>
+          <h1 id="s1h" class="d-lg">The Guarantee, SEO, Web And CRO, Explained On Camera</h1>
+        </div>
+        <p class="bw-lede readw reveal">These are short videos recorded by James Sutton IV, founder and Managing Partner, who started the firm in 2015. He explains how the guarantee works and what we actually change on a site.</p>
+        <p class="bw-quote reveal">They explain the method. They are not evidence of results.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: SECTION-COMPONENTS.md #14 Tabbed content | considered: #45,#36 | why: the brief does not merely ask for a filter, it asks for a filter WITH A DEFAULT VALUE ALREADY CHOSEN, and a tab set is the one entry in the catalog whose defining behaviour is that exactly one value is selected on arrival and the content below it swaps when another is picked. That is what is built and what the browse engine seeds from the pre marked anchor. #45 Category chips / nav is the sibling blog index pick and its chips carry no default selected semantics, so citing it here would describe the neighbour rather than this band; #36 Sticky-sidebar topic nav is refused because a rail that sticks past a fifteen card index would out weigh the index it filters, and the sheet own rail variant unsticks at the tablet line anyway. DEVIATIONS: (1) the entry swaps the content of ONE container and this control swaps the members of the grid in the section below it, because the index is an L band and cannot live inside a tab body; (2) the tabs are drawn as a vertical rail on the jump index atom, because seoguarantee-structural.css paints is-active on that atom and on no other, so a horizontal tab strip would have an invisible selected state, and a tab set whose selection cannot be seen is worse than no tabs. IMAGERY DEVIATION: the entry carries no photograph and this band now seats one, the raised arms founder cut out, in the seven track cell. It is argument rather than ornament: the rail offers four topics, and the one fact binding all four is that a single named person recorded every item behind them, which is what the figure says and what a list of four words cannot. It is the smaller cut out size and it sits AFTER the copy in source order, so it never sets the row height and never precedes the control a reader came to this band to use. -->
+<section class="section section--paper" id="s2-topics" data-surface="light" aria-label="The topic filter">
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-5">
+        <nav class="bw-toc reveal" aria-label="Filter the video index by topic">
+          <p class="bw-toc__title">Topics</p>
+          <ul class="bw-toc__list">
+            <li class="bw-toc__item"><a class="bw-toc__link is-active" href="#video-index" data-cat="all" aria-controls="video-index">Every video</a></li>
+            <li class="bw-toc__item"><a class="bw-toc__link" href="#video-index" data-cat="the-guarantee" aria-controls="video-index">The Guarantee</a></li>
+            <li class="bw-toc__item"><a class="bw-toc__link" href="#video-index" data-cat="seo-method" aria-controls="video-index">SEO method</a></li>
+            <li class="bw-toc__item"><a class="bw-toc__link" href="#video-index" data-cat="web-and-ux" aria-controls="video-index">Web and UX</a></li>
+            <li class="bw-toc__item"><a class="bw-toc__link" href="#video-index" data-cat="cro" aria-controls="video-index">CRO</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col col--span-7">
+        <p class="bw-eyebrow reveal">The topic filter</p>
+        <p class="bw-lede readw reveal">Filter by topic: The Guarantee, SEO method, Web and UX, CRO.</p>
+        <figure class="bw-cut bw-cut--sm reveal">
+          <img class="bw-cut__img" src="../assets/seoguarantee.com_wp-content_themes_theme-child_images_james-fpsg-footer.png" width="537" height="465" alt="James Sutton IV with both arms raised and both index fingers pointing upward." loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: BLOG-SECTIONS.md #1 Post-card grid | considered: #3,#2 | why: this is the type defining object at its most literal, an even peer grid of fifteen cards on one ground, three across, each a surface with a hairline border and a rest shadow, a title, a one line dek and a top ruled foot, with no item held above another, reflowing three to two to one on the canonical sheet ladder for a four span cell. THE PICK IS DISCLOSED AS SHARED: the stamped sibling spends this entry on its trade tiles, and it is spent again here because this is the page where the object is what the entry actually describes, a peer index of items. SECTION-COMPONENTS.md #43 Gallery grid was reached for first, as a video page always will, and is REFUSED because it is image led by definition and this grid carries no images at all, so citing it would attach a citation to an object this page deliberately does not build; #3 Editorial index is refused because a numbered typographic index reads as an order of merit over fifteen peers, and #2 Featured + list is refused because pulling one recording forward ranks it, and the fixed curated order already puts the two explainers first without claiming anything about the other thirteen. DEVIATIONS: (1) the entry card carries a clipped cover with a category chip floated over it and NO card here carries a cover, for the poster frame refusal set out at the top of this file, so the category value moves into the attribute the filter reads and the card face carries the finer grained subject tags instead; (2) there is no byline, no avatar and no date, because the copy declares none of the three for a video card; (3) the grid is nested as a row inside a full width cell, because the browse engine reads the DIRECT children of the data-grid element as its items. -->
+<section class="section section--tint" id="s3-index" data-surface="light" aria-labelledby="s3h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-7">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">The video index</p>
+          <h2 id="s3h">The library, and what each video explains.</h2>
+        </div>
+      </div>
+
+      <div class="col col--span-5 col--stack">
+        <div class="bw-tex reveal">
+          <img class="bw-tex__img" src="../assets/texture-gold-edge.jpg" width="1024" height="1024" alt="A macro of the mitred corner of a white matte panel edged in a polished gold rail, resting on a pale ground" loading="lazy">
+        </div>
+      </div>
+
+        <div class="col col--full">
+          <div class="row reveal" id="video-index" data-grid data-page-size="99">
+            <div class="col col--span-4 col--stretch col--fill" data-cat="the-guarantee" data-tags="terms,billing">
+              <article class="bw-card bw-card--flat">
+                <p class="bw-tag bw-tag--quiet">terms, billing</p>
+                <p class="bw-card__title">How Can We Guarantee</p>
+                <p class="bw-card__body">How a ranking promise can be written as a billing condition rather than a claim.</p>
+              </article>
+            </div>
+            <div class="col col--span-4 col--stretch col--fill" data-cat="the-guarantee" data-tags="terms,key phrases">
+              <article class="bw-card bw-card--flat">
+                <p class="bw-tag bw-tag--quiet">terms, key phrases</p>
+                <p class="bw-card__title">What's the Guarantee?</p>
+                <p class="bw-card__body">What is actually agreed, and what happens to the invoice in a month that misses.</p>
+              </article>
+            </div>
+            <div class="col col--span-4 col--stretch col--fill" data-cat="seo-method" data-tags="local">
+              <article class="bw-card bw-card--flat">
+                <p class="bw-tag bw-tag--quiet">local</p>
+                <p class="bw-card__title">Local Business SEO</p>
+                <p class="bw-card__body">How search works differently for a business that sells to one city.</p>
+              </article>
+            </div>
+            <div class="col col--span-4 col--stretch col--fill" data-cat="seo-method" data-tags="local,citations">
+              <article class="bw-card bw-card--flat">
+                <p class="bw-tag bw-tag--quiet">local, citations</p>
+                <p class="bw-card__title">Citations and Business Directory Campaigns</p>
+                <p class="bw-card__body">What business listings across the web contribute, and what they do not.</p>
+              </article>
+            </div>
+            <div class="col col--span-4 col--stretch col--fill" data-cat="seo-method" data-tags="on-page">
+              <article class="bw-card bw-card--flat">
+                <p class="bw-tag bw-tag--quiet">on-page</p>
+                <p class="bw-card__title">OnPage Strategy</p>
+                <p class="bw-card__body">The work done on the page itself, and what each change is meant to influence.</p>
+              </article>
+            </div>
+            <div class="col col--span-4 col--stretch col--fill" data-cat="seo-method" data-tags="content">
+              <article class="bw-card bw-card--flat">
+                <p class="bw-tag bw-tag--quiet">content</p>
+                <p class="bw-card__title">Content is King Theory</p>
+                <p class="bw-card__body">What the phrase gets right, and where it is used to avoid harder work.</p>
+              </article>
+            </div>
+            <div class="col col--span-4 col--stretch col--fill" data-cat="web-and-ux" data-tags="structure,navigation">
+              <article class="bw-card bw-card--flat">
+                <p class="bw-tag bw-tag--quiet">structure, navigation</p>
+                <p class="bw-card__title">Website Structure Optimization</p>
+                <p class="bw-card__body">How a site is organised, and why structure decides what can rank.</p>
+              </article>
+            </div>
+            <div class="col col--span-4 col--stretch col--fill" data-cat="web-and-ux" data-tags="navigation">
+              <article class="bw-card bw-card--flat">
+                <p class="bw-tag bw-tag--quiet">navigation</p>
+                <p class="bw-card__title">Website Navigation Optimization</p>
+                <p class="bw-card__body">How people move through a site, and what navigation costs you when it is wrong.</p>
+              </article>
+            </div>
+            <div class="col col--span-4 col--stretch col--fill" data-cat="web-and-ux" data-tags="navigation,structure">
+              <article class="bw-card bw-card--flat">
+                <p class="bw-tag bw-tag--quiet">navigation, structure</p>
+                <p class="bw-card__title">Footer Optimization</p>
+                <p class="bw-card__body">The part of the page most sites ignore, and what belongs in it.</p>
+              </article>
+            </div>
+            <div class="col col--span-4 col--stretch col--fill" data-cat="web-and-ux" data-tags="mobile">
+              <article class="bw-card bw-card--flat">
+                <p class="bw-tag bw-tag--quiet">mobile</p>
+                <p class="bw-card__title">Mobile Out Concept</p>
+                <p class="bw-card__body">Designing outward from the smallest screen instead of shrinking a desktop page.</p>
+              </article>
+            </div>
+            <div class="col col--span-4 col--stretch col--fill" data-cat="web-and-ux" data-tags="ux">
+              <article class="bw-card bw-card--flat">
+                <p class="bw-tag bw-tag--quiet">ux</p>
+                <p class="bw-card__title">User Experience UX</p>
+                <p class="bw-card__body">What a visitor experiences between the click and the enquiry.</p>
+              </article>
+            </div>
+            <div class="col col--span-4 col--stretch col--fill" data-cat="web-and-ux" data-tags="portals,automation">
+              <article class="bw-card bw-card--flat">
+                <p class="bw-tag bw-tag--quiet">portals, automation</p>
+                <p class="bw-card__title">Automation Through Client Portals</p>
+                <p class="bw-card__body">How client facing automation is used, explained as a method.</p>
+              </article>
+            </div>
+            <div class="col col--span-4 col--stretch col--fill" data-cat="cro" data-tags="navigation,conversion">
+              <article class="bw-card bw-card--flat">
+                <p class="bw-tag bw-tag--quiet">navigation, conversion</p>
+                <p class="bw-card__title">The Rabbit Hole</p>
+                <p class="bw-card__body">The path a visitor falls into on a page, and where it loses them.</p>
+              </article>
+            </div>
+            <div class="col col--span-4 col--stretch col--fill" data-cat="cro" data-tags="conversion,home page">
+              <article class="bw-card bw-card--flat">
+                <p class="bw-tag bw-tag--quiet">conversion, home page</p>
+                <p class="bw-card__title">Home Page Conversion Rate Strategy</p>
+                <p class="bw-card__body">What a home page has to do before it earns an enquiry.</p>
+              </article>
+            </div>
+            <div class="col col--span-4 col--stretch col--fill" data-cat="cro" data-tags="conversion,landing pages">
+              <article class="bw-card bw-card--flat">
+                <p class="bw-tag bw-tag--quiet">conversion, landing pages</p>
+                <p class="bw-card__title">Individual Page Strategy</p>
+                <p class="bw-card__body">Why a single page is treated as its own conversion problem.</p>
+              </article>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: SECTION-COMPONENTS.md #59 Video embed | considered: #26,#12 | why: this is the band the catalog reserves for the recordings themselves, and it is the band the brief reserves for the two explainers, so the role matches even though the artefact withholds the player. What is built is the STAMPED SIBLING OWN IDIOM applied to a different empty slot: the sibling holds its pin open and prints a keyed record of which fields are on file, and this band holds the embed slot open and names the two recordings it is reserved for, with the terms they explain set in full beside them. That is the deviation and it is the section thesis rather than a compromise: a play control that cannot play is the dead control this build has been ruled against, and the brief already requires the terms to be readable without watching anything. #26 Pull-quote section is the near miss, since the printed terms are the band centre of gravity, and it is rejected because the entry allows no other content in the section and this band must also name the two recordings it is reserved for; #12 Feature row with screenshot is rejected because the screenshot it wants is exactly the third party screen this page refuses to publish. FURTHER DEVIATIONS: the entry sixteen by nine frame and its centred play affordance are both absent, deliberately, and no text is set over any image on this band. -->
+<section class="section section--warm" id="s4-terms" data-surface="warm" aria-labelledby="s4h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">The two explainers</p>
+          <h2 id="s4h">The guarantee, explained on camera, and written down here.</h2>
+        </div>
+      </div>
+
+      <div class="col col--span-7">
+        <p class="bw-lede readw reveal">The terms are printed in text beside them so you can read them without watching anything.</p>
+        <p class="bw-quote reveal">First page on the key phrases named in your contract, or you don't pay. Assessed month by month. Any month we are off target we keep working and your billing stops, and billing resumes when results are back on track. On timing, the current site publishes 6- and 12-month windows, and the agreement itself is assessed month by month.</p>
+        <p class="bw-copy readw reveal">What is guaranteed is a billing condition, tested against metrics named in the contract before signing. We make no claim to control Google.</p>
+      </div>
+
+      <div class="col col--span-5 col--stack">
+        <div class="bw-tex reveal">
+          <img class="bw-tex__img" src="../assets/texture-purple-material.jpg" width="1024" height="1024" alt="A macro of one swept deep purple pigment smear on a bright white ground, polished at the centre and granular at its edges" loading="lazy">
+        </div>
+        <div class="bw-plate reveal">
+          <p class="bw-plate__k">Pinned together</p>
+          <div class="bw-plate__row">
+            <span class="bw-plate__key bw-plate__key--open" aria-hidden="true"></span>
+            <p class="bw-plate__t">How Can We Guarantee</p>
+          </div>
+          <div class="bw-plate__row">
+            <span class="bw-plate__key bw-plate__key--open" aria-hidden="true"></span>
+            <p class="bw-plate__t">What's the Guarantee?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: CTA-PATTERNS.md #1 Solid pill primary | considered: #12,#7 | why: the one primary action is the brand solid fill at the sheet full pill radius carrying the fixed label CALL US to the contact page, which client-rules.json sets and no page may vary. THE PICK IS DISCLOSED AS SHARED: every stamped page on this build spends this entry on its closing band, because the sheet implements exactly one primary pill and there is no second honest atom for a single conversion action; what differs here is that the whole band is centred on one axis, head, line, condition and pill, which neither sibling in this fan out does. #12 Sticky bottom CTA is refused because the chrome already owns sticky behaviour site wide and a second persistent bar on one page would double it; #7 Multi-CTA cluster puts a second action beside the first, which onePrimaryPerPage forbids. DEVIATION: the entry names an optional arrow at the right edge and this pill carries a phone glyph at the LEFT, matching the chrome and every sibling. SECOND DEVIATION, from the founder photography pass: a founder cut out closes the band BELOW the pill. It is the open palms figure, which is the pose the live estate stands beside its own services call to action, so the role is transferred rather than invented. It sits AFTER the action deliberately, and the placement was reasoned at the phone width first: this band's whole composition is one centred axis, head, line, condition and pill, and seating a figure ABOVE the pill would have pushed the only action on the page further down the smallest screen for no gain. Below it, the axis is unbroken, the action keeps its position, and the figure reads as the sign off. -->
+<section class="section section--gold surface-gold" id="s5-call" data-surface="accent" aria-labelledby="s5h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">When the library runs out</p>
+          <h2 id="s5h">The question none of these answers is yours.</h2>
+        </div>
+      </div>
+      <div class="col col--span-7">
+        <p class="bw-lede readw reveal">Book a consultation on <a href="tel:+17024207272">(702) 420-7272</a>.</p>
+        <div class="bw-actions reveal">
+          <a class="bw-btn bw-btn--primary" href="contact-us.html">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            CALL US
+          </a>
+        </div>
+      </div>
+      <div class="col col--span-5 col--stretch col--fill">
+        <figure class="bw-cut bw-cut--sm reveal">
+          <img class="bw-cut__img" src="../assets/seoguarantee.com_wp-content_themes_theme-child_images_james-undercut.png" width="571" height="462" alt="James Sutton IV in glasses and a dark waistcoat, both hands raised open at his sides." loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>

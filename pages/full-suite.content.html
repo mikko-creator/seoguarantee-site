@@ -1,0 +1,663 @@
+<!--META {"title":"Full Service SEO Agency | Web, CRO And Design Included","desc":"SEO, website design, CRO, content, branding and graphic design in one agreed monthly fee. We are paid on the outcome, not the hours. Call us.","noindex":true}-->
+<!-- TITLE and DESC are the LOCKED values from _handoff/seo-enrichment.md section 1, the SEO SSOT.
+     The separator is an en dash in the SSOT and renders here as a pipe. That substitution is
+     sanctioned by sitemap.yaml's own header ("The build may substitute a pipe at render time") and
+     is required because en dashes are banned site wide for this client. Only the SEPARATOR changed;
+     no word was altered, added or reordered.
+     The key is "desc" and NOT "description": build.mjs renders esc(meta.desc), and its JSON branch
+     spreads the parsed object without aliasing description to desc, so a "description" key ships an
+     EMPTY meta description while looking correct in the fragment.
+     noindex is set on every page because this build publishes to a PUBLIC preview URL and must not
+     be indexed while it is unfinished, per the owner decision recorded at publish time. -->
+<!-- =========================================================================
+     S1 . the headline, the condition, and the seven doors . ground PAPER
+     Three tiles on one row: a full width text tile carrying the promise and the
+     payment condition in one breath, a half width poster tile whose job is to
+     dramatise the billing condition being applied, and a half width INDEX tile
+     carrying all seven routed leaves as links. The index is the whole answer to
+     this direction's risk: the argument that follows never stands between the
+     reader and the door they came for.
+     ========================================================================= -->
+<!-- pick: HERO-COMPOSITIONS.md #18 Asymmetric grid hero (irregular tiles) | considered: #20,#10 | why: this hero is literally a grid of non-uniform cells carrying DIFFERENT CONTENT TYPES, which is this entry's whole definition, and the mapping onto the entry's own large-medium-small taxonomy is stated rather than implied: the entry's LARGE tile is the hero text at span 12, and its MEDIUM photo tile and SMALL card tile are taken here as TWO EQUAL span 6 cells, the custom illustration and the routing index, so this build has TWO span widths and not three, and the tile grid is non-uniform in the 12-then-6-and-6 sense rather than in the entry's four-size sense; the entry's when-to-use names agencies and creative studios, which is the sector blueprint this build runs on; #20 Three-column hero (text + stat + photo) was tested and rejected on a MEASURED ground rather than a taste one, and the measurement was taken in this page's own rendered container rather than estimated: at 1440 the container's inner measure is 1072px and the hero row's gap is 40px, so three EQUAL columns give the headline 331px, and the approved H1 of 153 characters set into 331px at the sheet's own 78px display clamp runs 22 LINES and 1716px, which is taller than this whole hero band and nearly twice the 900px fold; the entry's own weighted 1.2fr variant gives 372px and is barely better at 20 lines and 1560px, against the 7 lines and 546px the same headline sets at the DEFAULT 78px step across the full 1072px measure this concept gives it, the figure deviation (5) below then acts on, while #10 Centered headline only (text-driven, no hero photo) would delete both the mandated motion slot and the routing index, which is the one structural idea this concept exists to test. DEVIATIONS, stated rather than left to be found. (1) The entry draws FOUR tiles on a three column grid-template-areas of "a a b" then "c d b"; this is THREE tiles on the sheet's own 12 track row, at span 12, span 6 and span 6, because the template's compositional rule is one row per band and the sheet supplies no named areas. (2) The entry's medium tile is a PHOTO and this one is a token built SVG, because imagery-system section 2d refuses a generated image in every hero on all 26 pages and D-008 locks the hero to a poster frame first with the loop lazy loaded after LCP, so the poster is what a concept preview can honestly show. (3) The entry's small tiles are a testimonial snippet and a CTA card; there is no publishable testimonial for this brand and the CTA lives in the text tile, so the small tile is the routing index instead. (4) The entry's reflow keeps a 2x2 tile grid at the phone floor and the sheet stacks every span to one column at 767, so the three tiles read in source order on a phone: promise, poster, doors. (5) A MEASURED type step deviation, taken to repair a render defect rather than for taste. At the sheet default h1 step the approved 153 character headline set 7 LINES and 546px inside this row's 1072px measure, which stood the text tile at 829px against a 370px poster tile and a 604px index tile, a 0.55 column delta and a band 1.89 viewports deep. Set at the existing d-lg step the same sentence sets 4 lines and 220px, the text tile falls to 504px, the column delta to 0.39 and the band to 1.52 viewports, so the index tile is now the tallest cell and the poster reads against it rather than against a wall of display type. Not one word changes; only the type step does, and it is the treatment the sibling guarantee, about and web-development pages already ship for a long contract sentence. -->
+<section class="section section--paper" id="s1-hero" data-surface="light" aria-labelledby="s1h">
+  <div class="container">
+    <div class="row">
+
+      <div class="col col--span-12">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Full Suite</p>
+          <h1 class="d-lg" id="s1h">SEO, web, UI/UX, development, CRO, graphic design and branding under one agreed monthly fee, on the key phrases named in your contract, or you don't pay.</h1>
+        </div>
+        <p class="bw-lede readw reveal">The fee is agreed up front. Each month is assessed against the agreed metrics. Any month we are off target, we keep working and your billing stops, and it resumes when results are back on track. That is a pause, not a reversal: the obligation for that month is suspended rather than undone.</p>
+        <div class="bw-actions reveal">
+          <a class="bw-btn bw-btn--primary" href="contact-us.html">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            CALL US
+          </a>
+        </div>
+      </div>
+
+      <div class="col col--span-6">
+        <figure class="bw-figure reveal">
+          <svg viewBox="0 0 520 300" role="img" aria-label="A diagram of twelve monthly blocks in two rows. The upper row, labelled work, is an unbroken run of twelve filled blocks. The lower row, labelled billing, is the same twelve blocks with one drawn as an empty outline while the run either side of it stays filled. The diagram is abstract and dramatises the billing condition only: it names no client, no key phrase and no position, and nothing drawn in it is taken from a real engagement.">
+            <g style="font-family:var(--ds-font-body);font-size:11px;font-weight:600;letter-spacing:1.5px;fill:var(--ds-ink-soft)">
+              <text x="20" y="46">WORK</text>
+              <text x="20" y="176">BILLING</text>
+            </g>
+            <g style="fill:var(--ds-accent-deep)">
+              <rect x="20" y="62" width="30" height="44" rx="4"/>
+              <rect x="60" y="62" width="30" height="44" rx="4"/>
+              <rect x="100" y="62" width="30" height="44" rx="4"/>
+              <rect x="140" y="62" width="30" height="44" rx="4"/>
+              <rect x="180" y="62" width="30" height="44" rx="4"/>
+              <rect x="220" y="62" width="30" height="44" rx="4"/>
+              <rect x="260" y="62" width="30" height="44" rx="4"/>
+              <rect x="300" y="62" width="30" height="44" rx="4"/>
+              <rect x="340" y="62" width="30" height="44" rx="4"/>
+              <rect x="380" y="62" width="30" height="44" rx="4"/>
+              <rect x="420" y="62" width="30" height="44" rx="4"/>
+              <rect x="460" y="62" width="30" height="44" rx="4"/>
+            </g>
+            <g style="fill:var(--ds-primary)">
+              <rect x="20" y="192" width="30" height="44" rx="4"/>
+              <rect x="60" y="192" width="30" height="44" rx="4"/>
+              <rect x="100" y="192" width="30" height="44" rx="4"/>
+              <rect x="140" y="192" width="30" height="44" rx="4"/>
+              <rect x="180" y="192" width="30" height="44" rx="4"/>
+              <rect x="220" y="192" width="30" height="44" rx="4"/>
+              <rect x="300" y="192" width="30" height="44" rx="4"/>
+              <rect x="340" y="192" width="30" height="44" rx="4"/>
+              <rect x="380" y="192" width="30" height="44" rx="4"/>
+              <rect x="420" y="192" width="30" height="44" rx="4"/>
+              <rect x="460" y="192" width="30" height="44" rx="4"/>
+            </g>
+            <rect x="260" y="192" width="30" height="44" rx="4" fill="none" style="stroke:var(--ds-accent-deep)" stroke-width="2.5"/>
+            <path d="M275 122 V 186" fill="none" style="stroke:var(--ds-line)" stroke-width="1.5"/>
+            <path d="M12 56 V 250" fill="none" style="stroke:var(--ds-line)" stroke-width="1.5"/>
+            <g style="font-family:var(--ds-font-body);font-size:11px;font-weight:600;letter-spacing:1.2px;fill:var(--ds-accent-ink)">
+              <text x="236" y="272">ONE MONTH OFF TARGET</text>
+            </g>
+          </svg>
+        </figure>
+      </div>
+
+      <div class="col col--span-6">
+        <p class="bw-micro reveal">Go straight to the one you came for</p>
+        <ol class="bw-list bw-list--ledger reveal">
+          <li><span><a class="bw-link-plain" href="seo-services.html">SEO Services</a>, the positions your contract names</span></li>
+          <li><span><a class="bw-link-plain" href="web-design.html">Web Design</a>, the site those positions land on</span></li>
+          <li><span><a class="bw-link-plain" href="ui-ux-design.html">UI/UX Design</a>, what happens after the click</span></li>
+          <li><span><a class="bw-link-plain" href="web-development.html">Web Development</a>, how fast and how findable</span></li>
+          <li><span><a class="bw-link-plain" href="cro-services.html">CRO Services</a>, the enquiry and not just the visit</span></li>
+          <li><span><a class="bw-link-plain" href="graphic-design.html">Graphic Design</a>, artwork the campaign needs</span></li>
+          <li><span><a class="bw-link-plain" href="branding.html">Branding</a>, how the business looks on arrival</span></li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S2 . why the whole stack sits inside one fee . ground DARK, anchor 1 of 2
+     The argument band, and the page's first non light anchor. It names the
+     reader's current state, then derives the breadth from the billing term
+     rather than boasting about it, then describes the incumbent posture without
+     a figure and without a name, then states the limit out loud.
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #7 Problem framing | considered: #15,#8 | why: this band's opening move is exactly this entry's role, naming the pain the buyer is already living with in the shape "the status quo is broken because", and it is taken in the entry's own big-type statement variant, one measure of prose on a near black ground with a single display clause lifted out of it, which is why nothing here is carded or columned; #15 Comparison table (us vs them) is refused on a rule rather than a preference, because client-rules.json sets competitorFraming.tierBDensityCap to 0 for this tier B page and positioning-plan frames the fight as conditional versus unconditional retainer, a fight that needs no second party in the room, and the T-MARQUEE stamped winner already carries that citation; #8 Manifesto / belief statement states a belief, and this band states a CONSEQUENCE, which is the one thing the approved copy insists it is not allowed to be read as. DEVIATIONS, stated: the entry describes the statement block alone, and this band also carries a token built two state diagram in the facing column and closes on a plain limit note about what a billing term is not, neither of which the entry names; and the display clause is set in the sheet's blockquote primitive rather than as a heading, because it is a sentence of argument and not a section title. -->
+<section class="section section--dark surface-dark" id="s2-wedge" data-surface="dark" aria-labelledby="s2h">
+  <div class="container">
+    <div class="row row--split">
+
+      <div class="col col--copy">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">The wedge</p>
+          <h2 id="s2h">Why the whole stack sits inside one fee.</h2>
+        </div>
+        <p class="bw-copy readw reveal">Look at what you are probably running now. An SEO retainer with one firm. A web agency that owns the site. A conversion consultant brought in when the numbers stall. A brand designer somewhere else. Four contracts, four invoices, and not one of those agreements conditioned on delivering anything in particular.</p>
+        <blockquote class="bw-quote bw-quote--display reveal">The whole stack is included because we are paid on the outcome rather than on the hours.</blockquote>
+        <p class="bw-copy readw reveal">The conventional model runs the other way. It publishes monthly retainer rates and hourly consulting rates and attaches no delivery condition to either, so breadth is something to be sold in pieces. That is a posture, not a flaw in anyone's character.</p>
+        <p class="bw-note readw reveal">The honest limit: this is a billing term. It is not a claim about controlling Google, and Google does not approve, endorse or permit a promise of position.</p>
+      </div>
+
+      <!-- THE DIAGRAM SITS AT THE OPTICAL MIDDLE OF THE ARGUMENT, not at its top.
+           MEASURED at 1440 before the change: the copy cell ran 809 tall against a
+           392 figure, so 417px of empty near-black stood under the diagram in one
+           unbroken rectangle, and on a dark ground an empty rectangle reads as a
+           hole rather than as air. The figure is a fixed 460 by 380 viewBox, so it
+           cannot be grown inside its own track, and the copy cannot be cut. Two
+           other arrangements were rendered and REJECTED on the render rather than
+           on the number: folding the last two paragraphs onto their own full span
+           line balanced the split row to a 58px difference but left the identical
+           empty rectangle to the right of them, and re-tracking the row to
+           .row--aside starved the two-part diagram to a 232px track.
+           .col--center is align-self: center, an existing modifier this build
+           already runs on the guarantee hero, so the 417 is halved into 208 above
+           and 209 below and the diagram lands beside the sentence it illustrates.
+           This does NOT reach the sheet's top-align pair: both of those rules are
+           scoped to .row--center, and this row is .row--split. Under 900 the row
+           is one column and align-self has nothing to centre against. -->
+      <div class="col col--media col--center">
+        <figure class="bw-figure reveal">
+          <svg viewBox="0 0 460 380" role="img" aria-label="A diagram in two halves. On the left, four separate outlined blocks stand apart from one another, each with its own small detached marker. On the right, one filled block stands alone with a single marker. The drawing is abstract and counts agreements only, four on the left and one on the right: no firm is named, no rate is shown and no charge of anyone's is compared.">
+            <g style="font-family:var(--ds-font-body);font-size:11px;font-weight:600;letter-spacing:1.4px;fill:var(--ds-ink-soft)">
+              <text x="16" y="26">WHAT YOU RUN NOW</text>
+              <text x="300" y="26">WHAT THIS IS</text>
+            </g>
+            <g fill="none" style="stroke:var(--ds-line)" stroke-width="1.6">
+              <rect x="16" y="46" width="200" height="58" rx="7"/>
+              <rect x="16" y="128" width="200" height="58" rx="7"/>
+              <rect x="16" y="210" width="200" height="58" rx="7"/>
+              <rect x="16" y="292" width="200" height="58" rx="7"/>
+            </g>
+            <g style="fill:var(--ds-ink-soft)">
+              <rect x="34" y="70" width="90" height="10" rx="5"/>
+              <rect x="34" y="152" width="118" height="10" rx="5"/>
+              <rect x="34" y="234" width="76" height="10" rx="5"/>
+              <rect x="34" y="316" width="104" height="10" rx="5"/>
+            </g>
+            <g style="fill:var(--ds-accent)">
+              <rect x="182" y="66" width="18" height="18" rx="4"/>
+              <rect x="182" y="148" width="18" height="18" rx="4"/>
+              <rect x="182" y="230" width="18" height="18" rx="4"/>
+              <rect x="182" y="312" width="18" height="18" rx="4"/>
+            </g>
+            <path d="M244 46 V 350" fill="none" style="stroke:var(--ds-line)" stroke-width="1.5"/>
+            <rect x="272" y="46" width="172" height="304" rx="9" style="fill:var(--ds-bg-surface-2);stroke:var(--ds-accent)" stroke-width="2"/>
+            <g style="fill:var(--ds-ink-soft)">
+              <rect x="294" y="86" width="90" height="10" rx="5"/>
+              <rect x="294" y="112" width="118" height="10" rx="5"/>
+              <rect x="294" y="138" width="76" height="10" rx="5"/>
+              <rect x="294" y="164" width="104" height="10" rx="5"/>
+              <rect x="294" y="190" width="88" height="10" rx="5"/>
+              <rect x="294" y="216" width="112" height="10" rx="5"/>
+              <rect x="294" y="242" width="68" height="10" rx="5"/>
+            </g>
+            <rect x="294" y="296" width="18" height="18" rx="4" style="fill:var(--ds-accent)"/>
+          </svg>
+        </figure>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S3 . the seven blocks . ground PAPER
+     The T-HUB floor: one block per routed leaf, every block links out, and the
+     closing line names the three capabilities that have no leaf of their own so
+     the nav cannot quietly narrow the offer. The flagship cell is twice the
+     width of its neighbours because the copy says the other six exist to protect
+     and convert it. NO CARD IN THIS GRID CARRIES MEDIA, on seven of seven.
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #10 Services 4-col compact | considered: #9,#13 | why: seven routed leaves is a WIDE service catalog and that is this entry's stated when-to-use, a denser service grid with lighter content per column, and the grid's dominant register is exactly that, four compact cells across the middle band of the run with the copy's own short blocks in them; #9 Services 3-col is refused because seven does not divide by three without a ragged single cell tail AND because a three across grid gives all seven equal billing, which contradicts the copy's own sentence that the other six exist to protect and convert the first; #13 Bento feature grid wants eight to twelve asymmetric tiles of mixed content and the T-INDEX stamped winner already carries the bento, so it would cost this template its distinctness for shape it does not need. DEVIATIONS, stated: the run is NOT a uniform four across, it is 6 and 6 for the flagship and web design, then 4, 4 and 4, then 6 and 6, because the two blocks that absorb retired live pages are briefed to carry real substance rather than a one liner and the compact width would have starved them; and the entry says nothing about a diagram, while this band opens with a full width token built fan above the grid. WHAT IS TAKEN FROM THE ENTRY AND HELD EXACTLY: the denser-than-three grid for a wider catalog, lighter content per compact cell, one link out of every cell, and the same media treatment on every cell in the run, which here is NO media on any of the seven. -->
+<section class="section section--paper" id="s3-included" data-surface="light" aria-labelledby="s3h">
+  <div class="container">
+    <div class="row">
+
+      <div class="col col--span-12">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">What is included</p>
+          <h2 id="s3h">What the one fee covers.</h2>
+        </div>
+      </div>
+
+      <div class="col col--span-12">
+        <figure class="bw-figure reveal">
+          <svg viewBox="0 0 1040 132" role="img" aria-label="A diagram of one wide horizontal bar at the top from which seven tracks descend and spread evenly across the width, each ending in a small square. The bar is the one fee and the seven tracks are the seven pieces of work under it. The drawing is abstract and shows no share, no split and no rate, because none of those is a thing this business publishes.">
+            <rect x="20" y="14" width="1000" height="16" rx="8" style="fill:var(--ds-primary)"/>
+            <g fill="none" style="stroke:var(--ds-line)" stroke-width="1.6">
+              <path d="M520 30 V 56 H 90 V 90"/>
+              <path d="M520 30 V 56 H 233 V 90"/>
+              <path d="M520 30 V 56 H 376 V 90"/>
+              <path d="M520 30 V 90"/>
+              <path d="M520 30 V 56 H 663 V 90"/>
+              <path d="M520 30 V 56 H 806 V 90"/>
+              <path d="M520 30 V 56 H 950 V 90"/>
+            </g>
+            <g style="fill:var(--ds-accent-deep)">
+              <rect x="76" y="90" width="28" height="28" rx="5"/>
+              <rect x="219" y="90" width="28" height="28" rx="5"/>
+              <rect x="362" y="90" width="28" height="28" rx="5"/>
+              <rect x="506" y="90" width="28" height="28" rx="5"/>
+              <rect x="649" y="90" width="28" height="28" rx="5"/>
+              <rect x="792" y="90" width="28" height="28" rx="5"/>
+              <rect x="936" y="90" width="28" height="28" rx="5"/>
+            </g>
+          </svg>
+        </figure>
+      </div>
+
+      <div class="col col--span-6 col--stretch col--fill">
+        <article class="bw-card reveal">
+          <h3 class="bw-card__title">1. SEO Services</h3>
+          <p class="bw-card__body">The ranking work itself. This is the block the guarantee is written against, and the other six exist to protect it and convert it.</p>
+          <div class="bw-card__foot">
+            <p class="bw-card__body"><a class="bw-link-plain" href="seo-services.html">Open SEO Services <span aria-hidden="true">&rarr;</span></a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col col--span-6 col--stretch col--fill">
+        <article class="bw-card reveal">
+          <h3 class="bw-card__title">2. Web Design</h3>
+          <p class="bw-card__body">The site itself, built to hold the positions once they are won. Design work here is covered by the same single guarantee as everything else, never as a separate promise.</p>
+          <div class="bw-card__foot">
+            <p class="bw-card__body"><a class="bw-link-plain" href="web-design.html">Open Web Design <span aria-hidden="true">&rarr;</span></a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col col--span-4 col--stretch col--fill">
+        <article class="bw-card reveal">
+          <h3 class="bw-card__title">3. UI/UX Design</h3>
+          <p class="bw-card__body">Turning won traffic into enquiries: the paths a visitor actually takes, the friction that loses them.</p>
+          <div class="bw-card__foot">
+            <p class="bw-card__body"><a class="bw-link-plain" href="ui-ux-design.html">Open UI/UX Design <span aria-hidden="true">&rarr;</span></a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col col--span-4 col--stretch col--fill">
+        <article class="bw-card reveal">
+          <h3 class="bw-card__title">4. Web Development</h3>
+          <p class="bw-card__body">Fast, crawlable, indexable builds, because a site the crawler struggles with is a contract we struggle to deliver.</p>
+          <div class="bw-card__foot">
+            <p class="bw-card__body"><a class="bw-link-plain" href="web-development.html">Open Web Development <span aria-hidden="true">&rarr;</span></a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col col--span-4 col--stretch col--fill">
+        <article class="bw-card reveal">
+          <h3 class="bw-card__title">5. CRO Services</h3>
+          <p class="bw-card__body">Converting the rankings we are contracted to deliver. Positions are the metric the invoice is judged on. Testing and improving the conversion path is inside the same engagement rather than a follow-on project.</p>
+          <div class="bw-card__foot">
+            <p class="bw-card__body"><a class="bw-link-plain" href="cro-services.html">Open CRO Services <span aria-hidden="true">&rarr;</span></a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col col--span-6 col--stretch col--fill">
+        <article class="bw-card reveal">
+          <h3 class="bw-card__title">6. Graphic Design</h3>
+          <p class="bw-card__body">Ads, social and site assets, produced as the campaign needs them rather than quoted per piece.</p>
+          <div class="bw-card__foot">
+            <p class="bw-card__body"><a class="bw-link-plain" href="graphic-design.html">Open Graphic Design <span aria-hidden="true">&rarr;</span></a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col col--span-6 col--stretch col--fill">
+        <article class="bw-card reveal">
+          <h3 class="bw-card__title">7. Branding</h3>
+          <p class="bw-card__body">Identity work, so the site the rankings point at looks like a business worth calling.</p>
+          <div class="bw-card__foot">
+            <p class="bw-card__body"><a class="bw-link-plain" href="branding.html">Open Branding <span aria-hidden="true">&rarr;</span></a></p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col col--span-12">
+        <p class="bw-note readw--wide reveal">Three further capabilities are part of what is delivered even though they have no page of their own in the menu: content writing, reputation management, and consulting.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S4 . what it replaces, and what nobody has yet ruled out . ground TINT
+     Substitution stated as substitution, never as a saving. The harder half of
+     the band is the anti product, which is UNFILLED upstream and ships as a
+     visible dashed field carrying finished prose. Nothing about the exclusion
+     list is guessed. This band and S5 are the two the industries sibling DROPS.
+     ========================================================================= -->
+<!-- pick: PRICING-SECTIONS.md #4 Quote-only cost-model split | considered: #6,#5 | why: this is the catalog's band for an offer with NO published price, and its composition is what is built here almost line for line, a two column split whose copy column states the model as a lede plus a rules list one item per row, whose visual column is a PORTRAIT media frame at three by four with a capped max-height so the photograph can never dwarf the copy, and which carries a corner badge card restating the model's one promise, all of it with no price anywhere; the sheet's own .bw-shot is that capped portrait frame at its hard 480 ceiling and .bw-stamp is that corner badge sitting across the frame's boundary; #6 Quote-configurator ladder answers "what sets my number" and this band answers "what it stands in for", and the T-PERSONA stamped winner already carries the ladder; #5 Plain-deal honesty stance is empty handed by definition and this band must carry a photograph and a flagged gap, and it is in any case this page's pick at S5. DEVIATIONS, stated in full because an undeclared one is the defect. (1) There is NO KPI row of oversized display numerals. The entry wants two or three real operational figures and this client may publish none: a bare figure without its period, baseline and source is a banned SHAPE here rather than merely a banned number, so the row is not softened, it is absent. (2) THERE IS NO CORNER BADGE CARD, and this one was BUILT AND THEN REMOVED on a rendered measurement rather than dropped on taste. The sheet's badge primitive .bw-stamp is absolutely positioned at the frame's lower left, so at 1440 it landed across the photograph's bottom edge AND over the frame's own honesty caption. Two rules kill it: imagery-system section 3a half two forbids overlaying a headline, label or BADGE on a generated image at all, and the sheet's own note says the stamp must never be given a flow sibling beneath it, which the caption is. The caption is load bearing, so the badge goes and the promise it carried is already the band's heading. (3) The band adds an owner pending GAP field that the entry does not name, because the exclusion list is unruled upstream and must ship visible rather than invented. (4) The entry's eyebrow carries a boxed mono index chip and this one carries the sheet's plain accent rule instead, since the page mints no new object, and the rules list takes the sheet's disc bullets rather than the entry's square accent-tinted chips for the same reason. (5) The entry's split is a single two column row; this band runs FOUR cells on the sheet's 12 track row, 7 and 5 then 7 and 5, and that too was a measured correction: as one 2-col split the copy column stood about 900 tall against the frame pinned at its hard 480 cap, opening roughly 420 of dead space beneath the photograph, which is the exact void the entry's own capped-media note exists to prevent. Splitting the flagged gap and the market note into a second pair of cells brings the frame's row down to the frame's own height and closes the void. -->
+<section class="section section--tint" id="s4-replaces" data-surface="light" aria-labelledby="s4h">
+  <div class="container">
+    <div class="row">
+
+      <div class="col col--span-7">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">The substitution</p>
+          <h2 id="s4h">What it replaces.</h2>
+        </div>
+        <p class="bw-copy readw reveal">This is substitution, not a saving. The one fee replaces the separate web build quote.</p>
+        <ul class="bw-list reveal">
+          <li>The separate conversion engagement.</li>
+          <li>The separate brand and graphic work.</li>
+          <li>The separate content writer.</li>
+        </ul>
+      </div>
+
+      <div class="col col--span-5 col--stretch">
+        <figure class="bw-shot reveal">
+          <div class="bw-shot__plate">
+            <img class="bw-shot__img"
+                 src="../assets/split-one-fee-consolidation.jpg"
+                 width="768" height="1024" loading="lazy"
+                 alt="A purple hardbound folio closed with a gold band, lying on a white surface beside two loose stacks of blank white sheets and one open blank white folder.">
+          </div>
+        </figure>
+      </div>
+
+      <div class="col col--span-5">
+        <p class="bw-note readw reveal">The common first step is a form asking you to select a monthly budget band before anyone has told you what will be delivered. This page runs the sequence the other way round: what is delivered, how it is measured, and then a fee quoted per business after a competitive review.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S5 . where we stand on AI search . ground WARM
+     The empty handed band. Three things and then it stops, with ZERO metrics and
+     nothing to click. It is the one band on the page carrying no media, no card,
+     no table and no action, and that restraint is the argument rather than a
+     hole in the layout. This band and S4 are the two the industries sibling
+     DROPS, which is why neither of them is an anchor.
+     ========================================================================= -->
+<!-- pick: PRICING-SECTIONS.md #5 Plain-deal honesty stance | considered: #4,#2 | why: this entry is the only structure in the catalogs whose defining property is being DELIBERATELY EMPTY HANDED, no cards, no media, no table and no CTA, with the restraint itself as the design and the conversion action left to a neighbouring band, and that is precisely what the approved copy demands here, three statements and a stop, no figure of any kind, on the ground that where there is no method of our own to publish, restraint is the honest position rather than a gap in the copy; #4 Quote-only cost-model split wants a portrait media frame and a KPI row and is this page's pick at S4, and reusing it would make two consecutive bands the same argument shape; #2 Comparison table to cards on mobile is a disclosure structure for a tiered offer and there is no tier, no table and nothing to compare. NAME NOTE on that third id, disclosed here because this is the pick that uses it: the catalog heading is "Comparison table U+2192 cards on mobile" and the character between its two halves is a RIGHTWARDS ARROW, not an em dash, so the owner's comma-for-em-dash ruling does not reach it. This file is ASCII only, so the arrow is written as the word it stands for, "to", and no other word of the name is changed, dropped or reordered. DEVIATIONS, stated: the entry sits on the page's single inversion band and this page spends its inversions on the two dark argument anchors, so the band takes the WARM stratum, which is the one ground used exactly once on the page and therefore reads as the deliberate change of ground the entry asks for; the head is left aligned on the single reading axis this template holds from S1 to S9 rather than centred; and the entry's closing mono spec-chip strip of three label and value pairs is replaced by three ruled answer blocks, because the three things the copy fixes are sentences rather than tokens and compressing them into chips would drop the qualification that makes each one honest. WHAT IS HELD EXACTLY: no card, no media, no table, no CTA, inset rules top and bottom from the ground change itself, and a bounded three part creed. -->
+<section class="section section--warm" id="s5-ai" data-surface="warm" aria-labelledby="s5h">
+  <div class="container">
+    <div class="row row--aside">
+
+      <div class="col col--copy">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">The bounded position</p>
+          <h2 id="s5h">Where we stand on AI search.</h2>
+        </div>
+
+        <div class="bw-answer reveal">
+          <p class="bw-answer__n">01</p>
+          <p class="bw-answer__t">What we do about it.</p>
+          <p class="bw-answer__d">AI Overviews and assistant answers are assembled from the same pages, the same structure and the same authority the ranking work is already building. So the work does not change: it is a consequence of what is already in your contract, not a separate product with its own line.</p>
+        </div>
+
+        <div class="bw-answer reveal">
+          <p class="bw-answer__n">02</p>
+          <p class="bw-answer__t">What the guarantee is written against.</p>
+          <p class="bw-answer__d">First-page organic positions on named key phrases in a named geography. AI surfaces are not part of the contracted metric, and we are not going to pretend otherwise in order to sound current.</p>
+        </div>
+
+        <div class="bw-answer reveal">
+          <p class="bw-answer__n">03</p>
+          <p class="bw-answer__t">What we do not claim to control.</p>
+          <p class="bw-answer__d">How an assistant chooses to summarise a result, whether it cites a source at all, and how any of that changes next quarter. Nobody controls it, and a number attached to it would be a number without a period, a baseline or a source.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S6 . the two things that can actually be shown . ground DARK, anchor 2 of 2
+     Deliberately thin, and thin on purpose. Exactly two permitted items: the
+     rating stated with its count, and the monthly reporting view, which is owner
+     pending and therefore ships as a representative outline that could not be
+     mistaken for a live account. No percentage tile, no logo wall, no named
+     client, no republished review. This band survives the 9 to 7 fold and is the
+     shorter page's middle anchor.
+     ========================================================================= -->
+<!-- pick: PROOF-SECTIONS.md #5 Showcase, image + result split | considered: #4,#2 | why: this entry's load-bearing property is that the "image" is a fully CSS crafted MOCK INTERFACE rather than a photograph, a rounded panel with chrome and blank body rows, set in a split beside the copy that explains it, and that is exactly the honest way to show the monthly reporting view while the real capture is owner pending: an outline that is visibly an outline can never be mistaken for a client's screen; #4 Case-study, metric-led card is refused on the entry's own terms, since its whole proposition is that the headline IS the number and every metric on this page is either banned or unpermissioned, and the T-MARQUEE stamped winner already carries it; #2 Testimonials, single big pull-quote wants a quotation to set, and the one republishable review asserts a number-one ranking, which is banned outright and is specifically tempting on this page because it praises the full suite. NAME NOTE, per the owner dash ruling and disclosed here because it is the ONE affected citation on this page: the catalog heading joins its two halves with an em dash, so the name above carries a COMMA in the dash's place, this file being ASCII only and the site banning em and en dashes everywhere including comments. The same substitution is applied to the two considered names for consistency. DEVIATIONS, stated: no KPI chips, no result badge, no attribution lockup, no client name and no alternating second row, because none of those has a permission or a datum behind it for this client; the crafted mock carries EMPTY phrase rows and EMPTY position cells rather than the entry's sample values, which is the whole point of it; and the copy column carries the one permitted rating beside a square material accent rather than a result paragraph. -->
+<section class="section section--dark surface-dark" id="s6-shown" data-surface="dark" aria-labelledby="s6h">
+  <div class="container">
+    <div class="row row--split">
+
+      <div class="col col--copy">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">What can be shown</p>
+          <h2 id="s6h">Two things we can show you here.</h2>
+        </div>
+
+        <h3 class="bw-visually-hidden">The rating</h3>
+        <img class="bw-tex reveal"
+             src="../assets/texture-purple-material.jpg"
+             width="1024" height="1024" loading="lazy"
+             alt="A single swept smear of deep purple pigment on a bright white ground, polished at the centre with a granular spattered crust and scattered specks around its edge.">
+        <div class="bw-fact reveal">
+          <p class="bw-fact__n">STATED WITH ITS COUNT</p>
+          <p class="bw-fact__t">Rated 4.9 from 35 Google reviews.</p>
+        </div>
+
+        <p class="bw-note readw reveal">For named, dated outcomes with the method that produced them, go to <a href="results.html">results</a>.</p>
+      </div>
+
+      <!-- S6 KEEPS ITS TOP ALIGNMENT and the 159px difference between its two
+           cells is LEFT ALONE. .col--center was applied here, rendered and
+           reverted: it split the difference to 80 above and 79 below, but it also
+           dropped the reporting outline 80px below the cap line of the heading it
+           stands beside, and the pair losing their shared top line read worse than
+           the notch it removed. 159px on a 532px cell is a copy column running one
+           block longer than its figure, which is ordinary, not a defect. -->
+      <div class="col col--media">
+        <h3 class="bw-visually-hidden">The monthly reporting view</h3>
+        <figure class="bw-figure reveal">
+          <svg viewBox="0 0 520 372" role="img" aria-label="An outline of a reporting screen: a panel with a header bar and a table of six rows, each row carrying an empty phrase field and an empty position field, with every field drawn blank. The outline is representative and abstract: no account, no key phrase and no position is shown, and a real capture replaces it.">
+            <rect x="10" y="10" width="500" height="352" rx="10" style="fill:var(--ds-bg-surface-2);stroke:var(--ds-line)" stroke-width="1.6"/>
+            <path d="M10 58 H 510" fill="none" style="stroke:var(--ds-line)" stroke-width="1.6"/>
+            <g style="fill:var(--ds-ink-soft)">
+              <rect x="30" y="28" width="120" height="10" rx="5"/>
+            </g>
+            <g style="font-family:var(--ds-font-body);font-size:10px;font-weight:600;letter-spacing:1.4px;fill:var(--ds-ink-soft)">
+              <text x="30" y="86">KEY PHRASE</text>
+              <text x="392" y="86">POSITION</text>
+            </g>
+            <g fill="none" style="stroke:var(--ds-line)" stroke-width="1.4">
+              <rect x="30" y="100" width="300" height="26" rx="5"/>
+              <rect x="30" y="140" width="300" height="26" rx="5"/>
+              <rect x="30" y="180" width="300" height="26" rx="5"/>
+              <rect x="30" y="220" width="300" height="26" rx="5"/>
+              <rect x="30" y="260" width="300" height="26" rx="5"/>
+              <rect x="30" y="300" width="300" height="26" rx="5"/>
+              <rect x="392" y="100" width="88" height="26" rx="5"/>
+              <rect x="392" y="140" width="88" height="26" rx="5"/>
+              <rect x="392" y="180" width="88" height="26" rx="5"/>
+              <rect x="392" y="220" width="88" height="26" rx="5"/>
+              <rect x="392" y="260" width="88" height="26" rx="5"/>
+              <rect x="392" y="300" width="88" height="26" rx="5"/>
+            </g>
+            <path d="M356 96 V 330" fill="none" style="stroke:var(--ds-accent)" stroke-width="2"/>
+          </svg>
+          <figcaption>Representative example.</figcaption>
+        </figure>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S7 . three ways on . ground PAPER . ROUTING BEAT 1 OF 3
+     Three routes and no fourth. The shape is a THREE COLUMN RAIL of ghost links,
+     each column a keyed group with its own note. Structurally this is the only
+     one of the three routing beats built as a multi column rail, which is what
+     keeps it apart from S8's single measure and S9's creed.
+     ========================================================================= -->
+<!-- pick: CTA-PATTERNS.md #6 Ghost text-link with arrow | considered: #7,#2 | why: what this band actually IS, three times over, is this entry's object exactly as the catalog draws it, no button chrome, no background and no border, just label text with an arrow at the right in brand colour, which the catalog names as the footer "see all" and card level affordance and which is the only link treatment on the page that can carry a route WITHOUT competing with the phone; #7 Multi-CTA cluster (primary + secondary horizontal) puts a second action beside the first and client-rules.json fixes ONE primary verb for this page, so a cluster is forbidden outright rather than merely unwanted; #2 Outline pill secondary would put three pills in the tail of the page and three pills read as three asks, which is exactly the fragmentation the single conversion path exists to prevent. DEVIATIONS, stated: the entry describes the LINK and this band composes three of them as a ruled three column wayfinding rail with a keyed heading and a note under each, which the entry does not describe; and the arrow is a right arrow entity set as decoration rather than the entry's optional icon, so it is never read out twice by a screen reader. -->
+<section class="section section--paper" id="s7-ways" data-surface="light" aria-labelledby="s7h">
+  <div class="container">
+    <div class="row row--3up">
+
+      <div class="col col--span-12">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">Wayfinding</p>
+          <h2 id="s7h">Three ways on.</h2>
+        </div>
+      </div>
+
+      <div class="col col--stretch col--fill">
+        <div class="bw-route reveal">
+          <p class="bw-route__k">01 The terms</p>
+          <ul class="bw-route__l">
+            <li><a class="bw-link-plain" href="guarantee.html">The guarantee <span aria-hidden="true">&rarr;</span></a></li>
+          </ul>
+          <span class="bw-route__n">The terms in contract language.</span>
+        </div>
+      </div>
+
+      <div class="col col--stretch col--fill">
+        <div class="bw-route reveal">
+          <p class="bw-route__k">02 The record</p>
+          <ul class="bw-route__l">
+            <li><a class="bw-link-plain" href="results.html">Results <span aria-hidden="true">&rarr;</span></a></li>
+          </ul>
+          <span class="bw-route__n">Who it has worked for, named and dated.</span>
+        </div>
+      </div>
+
+      <div class="col col--stretch col--fill">
+        <div class="bw-route reveal">
+          <p class="bw-route__k">03 The trade</p>
+          <ul class="bw-route__l">
+            <li><a class="bw-link-plain" href="industries.html">Industries <span aria-hidden="true">&rarr;</span></a></li>
+          </ul>
+          <span class="bw-route__n">Your trade.</span>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S8 . not sure this applies to you . ground TINT . ROUTING BEAT 2 OF 3
+     The qualifier band, in the owner's own target job framing. Its answer to the
+     too-good-to-be-true objection is a PROCEDURE rather than a rebuttal, so the
+     dominant object is a four step ranked sequence in one measure with the two
+     routes folded under it. One measure and a ranked sequence, where S7 was a
+     three column rail and S9 is a creed: three routing beats, three shapes.
+     ========================================================================= -->
+<!-- pick: SECTION-COMPONENTS.md #6 "Is this for me" qualifier | considered: #27,#33 | why: this band's heading is literally the entry's question and its job is literally the entry's role, letting a reader self-select against a stated scenario on a considered purchase that does not want unqualified leads, and the copy hands it one scenario rather than a set, so it is taken in the entry's inline question-and-answer variant rather than its three column card grid; #27 Numbered process steps (1-2-3-4) is the closest structural match to the four step sequence inside this band, but the sequence is a REBUTTAL to an objection rather than a delivery process, three of the five stamped templates already cite #27, and citing it would make the band's subject the procedure rather than the reader; #33 Custom-quote driver is a pricing band with a sub-form and this page carries no field and quotes nothing. DEVIATIONS, stated: the entry offers two to three columns of profiles and this band carries ONE scenario in one measure, because the approved copy names one; the answer under it is a ranked four step sequence in the sheet's rank primitive, which the entry does not describe; and the routes sit in the aside cell rather than under each profile, since there is only one profile. -->
+<section class="section section--tint" id="s8-fit" data-surface="light" aria-labelledby="s8h">
+  <div class="container">
+    <div class="row row--aside">
+
+      <div class="col col--copy">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">The qualifier</p>
+          <h2 id="s8h">Not sure this applies to you.</h2>
+        </div>
+        <p class="bw-copy readw reveal">If your competitors are consistently holding page one for the phrases that matter to your business, it applies to you.</p>
+
+        <div class="bw-rank reveal">
+          <p class="bw-rank__n">01</p>
+          <div>
+            <p class="bw-rank__t">We review your market.</p>
+            <p class="bw-rank__d">Before anything is written down, and before any figure is quoted.</p>
+          </div>
+        </div>
+        <div class="bw-rank reveal">
+          <p class="bw-rank__n">02</p>
+          <div>
+            <p class="bw-rank__t">We propose your key phrases from competitive research.</p>
+            <p class="bw-rank__d">We propose and you sign. There is no veto and no swap.</p>
+          </div>
+        </div>
+        <div class="bw-rank reveal">
+          <p class="bw-rank__n">03</p>
+          <div>
+            <p class="bw-rank__t">They are named in the contract you sign.</p>
+            <p class="bw-rank__d">In writing, by name, before the work starts.</p>
+          </div>
+        </div>
+        <div class="bw-rank reveal">
+          <p class="bw-rank__n">04</p>
+          <div>
+            <p class="bw-rank__t">Each month is assessed against them.</p>
+            <p class="bw-rank__d">Month by month, never one test at the end of a term.</p>
+          </div>
+        </div>
+
+        <p class="bw-copy readw reveal">If we cannot commit to your phrases, we say so on the call rather than signing you.</p>
+      </div>
+
+      <!-- THE ROUTES MOVE OUT OF THE ASIDE TRACK AND UNDER THE SEQUENCE, which is
+           what this band's own note above already says they do: "a four step
+           ranked sequence in one measure with the two routes folded under it".
+           MEASURED at 1440 before the change: the copy cell ran 717 tall and the
+           aside cell 223, so the .45 track carried 494px of empty tint below one
+           small block, the largest single void on the page. AT 390 the aside was
+           worse than empty, it was out of order: .row--aside > .col--copy is
+           display:contents under 900 and its children take order 1 while a bare
+           .col takes 0, so the routes rendered BETWEEN the heading and the
+           qualifying paragraph and asked the reader to book before the band had
+           told them whether it applies. Read the phone capture and it is the first
+           thing under the heading.
+           IT IS ITS OWN FULL SPAN CELL rather than a block appended inside the
+           copy cell, and that is the spacing half of the fix. Appended, the gap
+           above it measured ZERO: .bw-bound carries no margin of its own and the
+           closing paragraph carries margin-bottom 0, so its gold rule began exactly
+           where the sentence box ended, against a 40px head step and a 14px
+           paragraph step everywhere else in the cell. On its own grid line the
+           row's own 40px gap supplies it. .row--aside > .col--full is exempted
+           back to grid-column 1 / -1 in section 2 of the sheet, so it takes a line
+           of its own under both tracks and closes the band as one rail.
+           IT CARRIES .col--copy AS WELL AS .col--full, and that pair is what
+           holds the phone order. Under 900 the sheet dissolves .row--aside >
+           .col--copy to display:contents and orders its children 1, while a BARE
+           .col keeps order 0. Rendered at 390 without .col--copy the routes went
+           straight back to sitting between the heading and the qualifying
+           paragraph, which is the defect this whole change exists to remove. With
+           it the block is ordered 1 like every other child of the band and reads
+           last at 390 as it does at 1440. -->
+      <div class="col col--copy col--full">
+        <div class="bw-bound reveal">
+          <p class="bw-bound__k">Two ways from here</p>
+          <p class="bw-bound__t">Book the conversation through <a href="contact-us.html">contact us</a>, or find your trade on <a href="industries.html">industries</a>.</p>
+          <p class="bw-bound__d">Both are the same conversation.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     S9 . the line where a figure would be, and the one action . ground GOLD
+     ROUTING BEAT 3 OF 3, and deliberately NOT a dedicated closing CTA band. The
+     locked chrome already ships the site's single closing conversion band, so
+     this beat is CONTENT FIRST with the one action folded inline: a creed lead
+     across the full width, the no-figure line set as a ruled statement, and the
+     pill sitting beside it in its own cell. Three cells, the closing argument split
+     across the first two and the action in the third under a one line note, and no
+     closing-band class anywhere on the section tag.
+     ========================================================================= -->
+<!-- pick: COMPANY-SECTIONS.md #2 Manifesto / values creed type-block | considered: #1,#5 | why: what this band is made of is TYPE and hairlines, a giant lead creed sentence stating the position followed by a statement set as an accent index plus an oversized line plus a small support line on a rule, uncarded and unsurfaced, which is this entry's composition exactly and is also its explicit shape skeleton, a heading plus big paragraphs with no media and no cards; #1 Founder / company editorial hero wants a founder portrait and this band closes an argument rather than introducing a person, and the five founder photographs are web resolution only and cannot lead a band; #5 Press / third-party coverage strip is refused on evidence rather than taste, since no independent coverage was found for this brand and the four live press logos are marked DO NOT SHIP, so the strip would be a band with nothing rights cleared to put in it. A THIRD candidate is named across catalogs because it is the obvious one for a closing beat and it is refused on a MEASURED ground: SECTION-COMPONENTS.md #41 Closing CTA (final action) is out because verify-cta-singularity treats the locked chrome's own pre footer band as the site's ONE closing conversion band and blocks a body section whose proposition is that it IS the closing CTA, so citing #41 would assert precisely the shape this band deliberately does not have. DEVIATIONS, stated: the entry carries no action at all and this band folds ONE pill in beside the statement, because the page must end on its single primary verb and the chrome band cannot carry the page's own restatement; the entry's values run as several statements and there is exactly one here, since the copy closes on one line and nothing after it; and the creed is set left on the page's single reading axis rather than as an uppercase display lead, because the closing line is a contract sentence and shouting it would be the register this brand removed from the live site. -->
+<section class="section section--gold surface-gold" id="s9-instead" data-surface="accent" aria-labelledby="s9h">
+  <div class="container">
+    <div class="row">
+
+      <div class="col col--span-12">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">The close</p>
+          <h2 id="s9h">First page on the key phrases named in your contract, and any month we are off target we keep working and your billing stops.</h2>
+        </div>
+      </div>
+
+      <div class="col col--span-7">
+        <div class="bw-fact reveal">
+          <p class="bw-fact__n">IN PLACE OF A RATE</p>
+          <p class="bw-fact__t">One agreed monthly fee covers SEO, web, CRO, branding and design, quoted per business after a competitive review.</p>
+        </div>
+      </div>
+
+      <div class="col col--span-5">
+        <div class="bw-actions reveal">
+          <a class="bw-btn bw-btn--primary" href="contact-us.html">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            CALL US
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,595 @@
+{
+  "schemaVersion": 1,
+
+  "_meta": {
+    "id": "C3",
+    "slug": "seoguarantee",
+    "authored": "2026-08-12",
+    "phase": "P7_readiness_remediation",
+    "purpose": "The per-client BUILD doctrine, as DATA. Consumed by scripts/revision-rules.mjs (thin loader) and single-sourced by build.mjs lint(), block-banned-content.mjs and audit.mjs. Authored to CLIENT-RULES-SCHEMA.md §1.",
+    "derived_from": [
+      "content-bible.md §1 (voice rails), §2 (HOLDS), §3 (DO-CLAIM), §3b (DON'T-CLAIM), §4 (tie-break ranks), §5 (glossary)",
+      "decisions-ledger.md D-001..D-008",
+      "intake-brief.md §H + the D-OFFER-* / D-BRAND-RAILS-* registry",
+      "positioning-plan.md §2, §5, §6",
+      "sitemap.yaml (the 26 typed page rows, for tiers[] membership)"
+    ],
+    "closes": "P7 readiness blocker 1 (handoff member C3 of 12)",
+    "amended": "2026-08-12 — MACHINE-MIRROR FAIL-OPEN SWEEP (P7 blockers 12 and 13, plus the blocker-9 scope gap). DIRECTION OF TRUTH: the 26 P6 briefs and content-bible.md are CURRENT; this file was the STALE side. A prior pass corrected the PROSE registries and did not sweep the MACHINE-READABLE ones, so the doctrine this file mirrors had moved while this file still PERMITTED what the briefs ban. THE HEADLINE DEFECT, now closed: bannedContent's offices rule deferred the metro-count question to unsubstantiatedClaims.U5, U5 said 'rationed, not banned, at rationedClaims.metros-25' on the premise that content-bible §2 mandated the sentence, and rationedClaims.metros-25 PERMITTED the pattern '25 US metros' on 3 slugs at maxPerPage 1. The enforcement chain terminated in a PERMISSION for the exact string the briefs list under 'Must not be said'. Both premises were false: content-bible §2 now mandates the numberless form and §3b line 82 carries an explicit ban. WHAT MOVED: (1) the VALUE, not only the flag — the ration is now a zero-slug BAN and the authoritative site-wide ban is a new bannedContent entry mirroring content-bible line 82 with its variants (25, 26, spelled-out, rounded, hedged, over/nearly [n]) and its surfaces (body, headings, titles, metas, nav labels, card counts, structured data), carrying the our-locations CARD-GRID carve-out; (2) the offices rule's deferral tail now points at that ban instead of an unresolved question; (3) U5's premise and perimeter corrected, status DISPUTED -> BANNED; (4) U6's stale 'ships as VERIFIED fact on 6 pages' perimeter corrected against the swept briefs, and the operated-pause claim given the machine mirror it never had — its overclaim cross-reference previously said 'governed separately' while pointing at no rule; (5) the 6/12-month window ban widened from ONE slug to site-wide, and the overclaim.guarantee pattern NARROWED because as written it false-blocked briefs/guarantee.md line 108's mandated attributed sentence; (6) rationedClaims.google-rating-4-9's allowedSlugs corrected from 6 to 20 against brief:line evidence — a fail-CLOSED defect of the same never-swept family, which would have blocked mandated copy on 14 pages; (7) RP-6 and RP-7 added to carry the attribution residue the narrowed patterns deliberately do not catch; (8) three capabilityTruth flags added. WHAT DID NOT MOVE, DELIBERATELY: no permission was widened except the rating's allowedSlugs (evidenced brief-by-brief); the offer mechanic D-003 — monthly retainer, month-by-month assessment, billing pauses and resumes, work continues — is OWNER-RULED, fully publishable, and is untouched in productModel, capabilityTruth, positioning and RP-1/RP-2. Only the claim that it has already been EXERCISED is unverified. Blockers 9, 12 and 13 remained OPEN and owner-pending AS OF THIS AMENDMENT; this pass closed the FAIL-OPEN, not the blockers. ⚠ STATUS SUPERSEDED 2026-08-12 BY OWNER ELECTION — see the THIRD AMENDMENT at the end of this note: 5, 9, 12 and 13 are WAIVED. The waiver moves the BLOCKER STATUS and nothing else; every ban, ration, requiredPairing and capabilityTruth flag this pass installed is UNCHANGED and PERMANENT. ⚠ SECOND AMENDMENT, SAME DAY 2026-08-12 — FALSE-BLOCK REPAIR AND STATUS RECONCILIATION. (a) THE OFFICES RULE WAS RE-AUTHORED. Its pattern was a live, build-breaking FALSE-BLOCK: it fired on the mere co-occurrence of an office noun — optionally SINGULAR — with a coverage noun in one sentence, so it blocked briefs/about.md line 30's mandated 'One Las Vegas office serving clients across US metros.' and briefs/our-locations.md line 13. Ten brief lines matched before; six do now, and all six are ban notices that QUOTE the banned claim. The re-authored rule requires brand-attributed or locative PLURALITY — offices the firm HAS IN the coverage metros — and carries an honest-denial guard and an other-party guard so negated true copy and the CLIENT's own premises stay clean. Verified by compiling the on-disk pattern and running 35 cases plus a 26-brief sweep; the full evidence is recorded in that entry's own message. This is the same failure class the ration fixes above were about, seen from the opposite side: fail-CLOSED against true copy rather than fail-OPEN for a banned claim. (b) BLOCKER STATUS AS RECONCILED AT THIS PASS — ⚠ THE STATUS HALF OF (b) IS SUPERSEDED 2026-08-12 BY THE THIRD AMENDMENT BELOW; ITS ENFORCEMENT HALF STANDS, UNCHANGED AND PERMANENT. AS RECONCILED THEN, readiness-verdict.md PUBLISHED blocker_count = 7 — blockers 3, 5, 9, 12, 13, 15 and the D-009 direction_locked hold. BLOCKERS 12 AND 13 WERE OPEN, AND THE TWO HALVES OF THAT STATE MUST NEVER BE COLLAPSED IN EITHER DIRECTION — and the two-halves rule OUTLIVES the waiver rather than dissolving in it: a WAIVED blocker is precisely one whose evidence never arrived, so the ENFORCEMENT half is the only half that ever protected the reader, and it is now the permanent one. THE COPY DEFECT IS FIXED AND MECHANICALLY ENFORCED: the metro count is banned site-wide at bannedContent and mirrored as a zero-slug ban at rationedClaims.metros-25, the operated-pause assertion is banned at bannedContent with RP-7 carrying its attribution residue, capabilityTruth.published-metro-count and .operated-pause-precedent are both FALSE, and 0 of the 26 briefs assert either claim. THE BLOCKER IS OPEN BECAUSE THE OWNER DATA HAS NOT ARRIVED: readiness-verdict.md §5 item 4 defines closure of 12 as the owner's real list of US metros holding a paying client plus the period it covers, and §5 item 2 defines closure of 13 as confirmation the pause was actually operated — which account, which months, and the client's consent to reference it. Neither has landed in _inbox/. A repaired copy defect is not a cleared blocker; enforcement proves nothing ships the claim, it does not supply the fact. Verified by read 2026-08-12 that the sibling handoff members agree: this file (C3), seo-enrichment.md §4 (C11, 'NOT closed — REDUCED to an [OWNER-DATA] dependency') and fact-registry.json (C12, 'BLOCKER 12 — OPEN, OWNER-PENDING') all read OPEN. ⚠ THOSE TWO QUOTATIONS ARE HISTORICAL AS OF 2026-08-12 — both siblings have since been restamped to WAIVED by the owner-ruling pass, and so has this file. They are kept because they record the agreement that existed at THIS pass; do not read them as the siblings' current wording. The agreement itself still holds in the only way that matters: all three still BAN the count. BLOCKERS 6 AND 11 STAY CLOSED — their defects are verifiably repaired and their outstanding owner items GOVERN future wording rather than restoring the defect. (c) Two stale statements in this file were restamped to the measured state: requiredPairings.RP-2's message (the JSON-LD replacement and the 6 metas now DO carry the pause) and unsubstantiatedClaims.U4's perimeter (19 briefs reference the window, ZERO assert it as a term). ⚠⚠ THIRD AMENDMENT, SAME DAY 2026-08-12 — OWNER RULINGS. THIS PASS RESTAMPED STATUS PROSE AND NOTHING ELSE. Source: _inbox/2026-08-12-owner-rulings.md, a durable owner-authored artifact, rank 2 on the content-bible §4 order. NOT ONE ENFORCEMENT VALUE IN THIS FILE MOVED: bannedContent, overclaim, rationedClaims, requiredPairings, the capabilityTruth booleans, tiers, glossary and citationRanks are byte-identical in effect to the second amendment, and no unsubstantiatedClaims status was relaxed. (i) BLOCKER 3 IS CLOSED, AND D-003'S PROVENANCE IMPROVED. The owner was shown BOTH readings of the billing mechanic — the MONTHLY pause-and-resume this spec had committed to across 24 briefs, and the TERMINAL reading the intake shorthand 'or you don't pay' admits — was told the terminal reading would force substantial rework, and ELECTED MONTHLY. D-003 therefore no longer rests on an agent's transcription of a chat message (rank 3 in effect); it rests on a rank-2 owner election recorded in a durable file, and it is STRONGER than the original capture because the competing reading was put to the owner and rejected rather than paraphrased away. Everything D-003 governs in this file — productModel.billing-pause / work-continues, capabilityTruth, positioning, RP-1 and RP-2 — is untouched and now sits on firmer ground. 'Or you don't pay' remains PERMITTED as the owner's canonical shorthand, and RP-2's same-page pause framing remains REQUIRED at BLOCK severity, because the shorthand is shorthand FOR the pause and must never be left where a reader could take it as terminal. (ii) BLOCKERS 5, 9, 12 AND 13 ARE WAIVED by owner election, effective 2026-08-12. A written WAIVER is a sanctioned resolution, so they leave blocker_count. ⚠ THE WAIVER DOES NOT UNBAN ANYTHING, AND THE OWNER WAS TOLD SO EXPLICITLY AND ACCEPTED IT: waiving does not make any of these claims usable; it means the site ships honestly WITHOUT them. Concretely and permanently — the metro-count ban stays site-wide at bannedContent and zero-slug at rationedClaims.metros-25, and the coverage sentence still ships with NO number; the operated-pause assertion stays banned at bannedContent with RP-7 carrying its attribution residue, so the mechanic ships in full while the claim that it has already been EXERCISED does not ship at all; the 6/12-month window stays barred from the marquee contract-terms table, page metas and structured data, permitted only as an attributed report of what the client's own live site says under RP-6; the §G-6 claim families stay UNPROVEN and unusable, so /results launches with its case-study grid empty and a card missing a date range, a method or written permission still does not render. All three capabilityTruth flags stay FALSE. Each waiver is RE-OPENABLE: when the owner supplies the evidence, flipping a flag and lifting a ban is a copy edit, not a rebuild — and until that evidence lands, NOTHING changes. (iii) STILL OPEN, DELIBERATELY: blocker 15, the privacy policy, which the owner did NOT waive and which must not be waived — the site collects PII through lead forms, loads third-party trackers and footer-links the policy from all 26 pages, so an agent-written policy would affirmatively misstate the real processors and retention; and the D-009 direction_locked hold, which stays FALSE on the owner's explicit reaffirmation that the hero is to be rendered ANIMATED and ruled on first. NEW AUTHORITATIVE blocker_count = 2 (blocker 15 + the D-009 hold). ready_for_build STAYS false. Nothing in this pass flips direction_locked and nothing in it authorises a handoff.",
+    "encoding": "UTF-8, no BOM (written via the Write tool; never PowerShell Out-File)",
+    "_extensions_beyond_schema_v1": [
+      "requiredPairings", "punctuationPolicy", "cta", "nap", "unsubstantiatedClaims", "glossary", "citationRanks"
+    ],
+    "_extensions_rationale": "CLIENT-RULES-SCHEMA.md §1 has no field for a required CO-OCCURRENCE rule, a punctuation policy, a canonical NAP, a CTA label, an unsubstantiated-claim register, or the citation tie-break order. Every one of those is load-bearing doctrine for THIS client, so each is added as a clearly-named top-level extension rather than smuggled into an existing field. The 15 schema-required keys are all present and correctly typed, so the existing loader destructures unchanged; a loader that does not know the extensions simply ignores them."
+  },
+
+  "brand": {
+    "name": "First Page SEO Guarantee",
+    "wordmark": "First Page SEO Guarantee",
+    "accent": "#7f2199",
+    "ink": "",
+    "fonts": [],
+    "fontLink": "",
+    "designSheets": [],
+    "docsUrl": "",
+    "loginUrl": "",
+    "copyright": "",
+    "_notes": {
+      "accent": "#7f2199 is a MEASURED existing brand value (D-BRAND-RAILS-002, 10 occurrences across index / services-suite / industries-dental — the dominant authored purple). Recorded as a RECORD of the existing brand, not as a designed token.",
+      "ink": "DELIBERATELY EMPTY. No ink hex exists in the client's brand record; choosing one would be DESIGN, which prep does not do (PF4). The build's P8 designs the ink and the whole token system. See C6 seoguarantee-tokens-spec.md for the full measured brand card.",
+      "fonts": "DELIBERATELY EMPTY. D-BRAND-RAILS-003 is an owner rail ('sans-serif family', owner rank 2) and explicitly states 'Build P8 selects final families'. The OBSERVED live families (Montserrat / Roboto / Roboto Slab) are logged in C6 as an observation, not pre-selected here.",
+      "designSheets": "DELIBERATELY EMPTY. The build tree Code/client-sites/seoguarantee/ does not exist yet; P8 names its own sheets.",
+      "copyright": "DELIBERATELY EMPTY. The registered legal entity name is owner-pending (readiness blocker 15, privacy-policy counsel slot). Inventing an entity name for a footer is exactly the fabrication class D-002 forbids.",
+      "palette_full": "The full existing palette recorded at D-BRAND-RAILS-002 is #7f2199 purple, #ffba00 gold, #a13cbc secondary purple, #ffffff white ground. Recorded in full in C6."
+    }
+  },
+
+  "bannedVocab": [
+    {
+      "pattern": "[A-Za-z0-9,)\"']!(?!=)",
+      "flags": "g",
+      "message": "EXCLAMATION MARK — banned outright. content-bible §1 + §3b, D-BRAND-RAILS-006, owner verbatim rank 2: 'remove all exclamation points and emojis'. This SUPERSEDES the earlier agent-derived 'one-max' policy: the owner said ALL. The pattern deliberately requires the '!' to follow a word/quote/paren character with no space, so it does not fire on '<!--', '<!DOCTYPE' or a CSS '!important'."
+    },
+    {
+      "pattern": "[\\uD83C-\\uDBFF][\\uDC00-\\uDFFF]",
+      "flags": "g",
+      "message": "EMOJI (astral plane, U+1F300 and above) — banned outright. content-bible §1 + §3b, D-BRAND-RAILS-007, same owner sentence as the exclamation ban. Scope is SITE COPY only; this rule is evaluated against built pages under Code/client-sites/seoguarantee/, never against spec artifacts (the warning marker used in spec annotations is not site copy)."
+    },
+    {
+      "pattern": "[\\u2600-\\u27BF\\u2B00-\\u2BFF\\uFE0F]",
+      "flags": "g",
+      "message": "EMOJI / pictographic dingbat (Misc Symbols, Dingbats, Misc Symbols & Arrows, and the emoji variation selector U+FE0F) — banned outright, same owner ruling. Same scope note as above: built pages only."
+    }
+  ],
+
+  "_bannedVocab_deliberate_omission": {
+    "em_dash": "NOT BANNED FOR THIS CLIENT, and the omission is deliberate rather than an oversight. The skill's brand-agnostic client-rules.default.json carries an em-dash entry as its house-style default. Importing it here would fail closed against this client's own LOCKED copy: content-bible §2's mandated safe version reads 'We guarantee first page for the key phrases named in your contract — or you don't pay.' and positioning-plan.md §6's lead message carries an em-dash too. A banlist that blocks the content bible's own mandated strings is a defect, so the em-dash policy is not carried. If the build wants a dash house-style, it must be raised as a decision, not inherited silently."
+  },
+
+  "bannedContent": [
+    {
+      "pattern": "\\b(money[- ]?back|refund(s|ed|able)?|risk[- ]?free|no[- ]risk)\\b",
+      "flags": "gi",
+      "message": "D-003 / content-bible §2 + §3b. The remedy is a PAUSE, never a refund. Billing pauses while off-target and RESUMES when results are back on track; the work continues throughout. Describing it as money-back / refund / risk-free overstates the remedy and hands D-INCUMBENT-001 the exact attack it publishes. Safe version: 'Any month we're not delivering what your contract says, we keep working and your billing stops.'"
+    },
+    {
+      "pattern": "there is no invoice|nothing to refund|no invoice is (ever )?raised",
+      "flags": "gi",
+      "message": "D-003 / content-bible §2. A pause is not an absence of obligation. Banned verbatim by the HOLDS table."
+    },
+    {
+      "pattern": "100\\s*%\\s*success\\s*rate",
+      "flags": "gi",
+      "message": "UNSUBSTANTIATED (§G-6.1). Live in THREE verticals (dental, law firm, medical spa). Owner committed to substantiate 2026-08-11; nothing has landed in _inbox/. Unusable as fact. See unsubstantiatedClaims.U1."
+    },
+    {
+      "pattern": "\\b(every|all|each|always)\\b[^.!?]{0,80}\\bcampaign(s)?\\b[^.!?]{0,80}\\b(reached|hit|achieved|made)\\b[^.!?]{0,40}\\bfirst page\\b|\\balways\\b[^.!?]{0,60}\\b(reach|rank|get you|land)\\b[^.!?]{0,40}\\bfirst page\\b",
+      "flags": "gi",
+      "message": "ABSOLUTE SUCCESS-RATE CLAIM in any shape. content-bible §3b: 'Never state an absolute success rate in any vertical.' Bans the SHAPE rather than a wording, so it survives a rewrite of the safe version. READINESS BLOCKER 7 IS NOW FIXED UPSTREAM: content-bible §2's safe row was rewritten on 2026-08-12 to a BOUNDED, DATED COUNT — 'Between [start] and [end] we ran [n] [vertical] campaigns under the guarantee; [k] of them reached first page on the contracted key phrases inside the agreed window.' That form is VERIFIED to pass this pattern. The previous safe version ('Every [vertical] campaign we have run…') was itself an absolute claim of the banned shape; it is superseded and must not be reinstated."
+    },
+    {
+      "pattern": "\\bsuccess\\s*rate\\b",
+      "flags": "gi",
+      "message": "The bare phrase 'success rate' is banned outright, not only in its '100%' form. content-bible §2's rewritten safe row explicitly bans 'success rate' INSIDE the permitted sentence, and §3b bans stating an absolute success rate in any vertical. Since no rate is publishable for this client in any shape, there is no legitimate use of the phrase. Report a BOUNDED DATED COUNT instead: '[k] of [n], between [dates]'."
+    },
+    {
+      "pattern": "\\b100\\s*%|\\b100\\s+percent\\b",
+      "flags": "gi",
+      "message": "The token '100%' is banned outright. It is the payload of BOTH unsubstantiated claim families — '100% success rate' (§G-6.1, three verticals) and the '30% - 100% increase in sales' earnings claim (§G-6.2) — and content-bible §2's rewritten safe row bans it explicitly, including as a restatement of a k/n count as a percentage or ratio. NOTE THE ONE PERMITTED FORM: where k equals n the copy may still read '[n] of [n], between [dates]' — a closed dated count is allowed, converting it to a percentage is not, and it may never be generalised past that set nor projected forward to a prospect. No legitimate use of '100%' exists for this client."
+    },
+    {
+      "pattern": "average\\s+campaign|increase in sales|\\b\\d{1,3}\\s*%\\s*(to|[-–])\\s*\\d{1,3}\\s*%\\s*increase",
+      "flags": "gi",
+      "message": "EARNINGS CLAIM — UNSUBSTANTIATED (§G-6.2). 'Average Campaign yields 30% - 100% increase in sales' is live on all three vertical pages with no n, no period and no source. content-bible §3b: 'Never make an earnings claim about what a prospect will make.' See unsubstantiatedClaims.U2."
+    },
+    {
+      "pattern": "guaranteed\\s*#\\s*1|#\\s*1\\s+on\\s+google|top of google|number one on google|rank(ed)?\\s*#\\s*1",
+      "flags": "gi",
+      "message": "content-bible §2 + §5. The canonical term is 'first page' — page one of Google organic results for an agreed key phrase in an agreed geography. Never '#1', never 'top of Google'. Google Search Central: 'No one can guarantee a #1 ranking on Google'. This also covers the republished Otto B. testimonial ('I'm ranked #1 for a lot of phrases', live on 41 pages): republishing does not launder a claim the brand may not make itself."
+    },
+    {
+      "pattern": "google (approves|endorses|permits|allows|partners)|(approved|endorsed|certified) by google",
+      "flags": "gi",
+      "message": "content-bible §3b, hard prohibition. Never claim or imply Google approves, endorses, or permits ranking guarantees."
+    },
+    {
+      "pattern": "best in class web design guarantee|web design guarantee",
+      "flags": "gi",
+      "message": "content-bible §2 + §5. THERE IS EXACTLY ONE GUARANTEE — singular and definite. 'Best In Class Web Design Guarantee' is live on 31 pages and is both an unqualified superlative AND a second competing guarantee. Web design is INCLUDED in the offer, not separately guaranteed. Removed, not rewritten."
+    },
+    {
+      "pattern": "seo guarantees\\b",
+      "flags": "gi",
+      "message": "content-bible §2 + §5. PLURAL 'guarantees' fragments the single-offer story. Live on 29 pages as 'WANT OUR SEO GUARANTEES?'. Always singular: 'Want our SEO guarantee?'"
+    },
+    {
+      "pattern": "\\b(the )?best seo (company|agency|firm)\\b|#\\s*1\\s+seo\\s+(company|agency|firm)",
+      "flags": "gi",
+      "message": "content-bible §2. Unqualified superlative. Safe version is the real number including the modest count: 'Rated 4.9 from 35 Google reviews.'"
+    },
+    {
+      "pattern": "one price|\\bWEB \\+ CRO \\+ SEO\\b",
+      "flags": "gi",
+      "message": "content-bible §2. 'WEB + CRO + SEO - ONE PRICE' asserts a price while showing none. Safe version: 'One agreed monthly fee covers SEO, web, CRO, branding and design. Quoted per business after a competitive review.'"
+    },
+    {
+      "pattern": "\\$\\s*\\d|\\b(from|starting at|as low as|only|just)\\s*\\$|\\b\\d+\\s*(dollars|usd)\\s*(per|a|/)\\s*(month|mo|year)",
+      "flags": "gi",
+      "message": "D-001 PRICING IS QUOTE-GATED — LOCKED. Owner verbatim (intake line 127): 'DO NOT show any pricing yet, pricing depends on the need of the client which varies from business to business'. NO figures anywhere, INCLUDING 'from $X' / 'starting at'. content-bible §3b: 'Never publish a price, including starting at.' See pricing.model."
+    },
+    {
+      "pattern": "strike any (you don't|you do not) believe in|you're in the room when they're named|you tell us what counts|(veto|swap out|substitute|reject) (any )?(key ?phrase|keyword)",
+      "flags": "gi",
+      "message": "D-003 / §G-2.3, owner-ruled 2026-08-11: THE AGENCY PROPOSES, THE CLIENT SIGNS. There is NO client veto or substitution right over key phrases. Publishing one would be refuted by the contract at signing. Safe version: 'We propose the key phrases from competitive research. They're named in the contract you sign.'"
+    },
+    {
+      "pattern": "\\b(?:our|the\\s+(?:firm|company|agency)['’]?s?|we\\s+(?:have|maintain|operate|staff|run|open(?:ed)?)|we['’]ve\\s+(?:got\\s+|opened\\s+)?)\\s+(?:[a-z0-9]+[\\s-]+){0,2}(?<!(?:\\b(?:no|not|never|nor|neither|without)\\b|n[’']t)[^.!?\\n]{0,25})(?<!\\b(?:your|their|his|her|its|each|every|client|clients|patient|patients|practice|practices|business|businesses|customer|customers)\\b[^.!?\\n]{0,20})offices\\b|\\b(?<!(?:\\b(?:no|not|never|nor|neither|without)\\b|n[’']t)[^.!?\\n]{0,25})(?<!\\b(?:your|their|his|her|its|each|every|client|clients|patient|patients|practice|practices|business|businesses|customer|customers)\\b[^.!?\\n]{0,20})offices\\b(?:[\\s,]{0,3}(?:(?:are|were|sit|located|based|situated|spread|dotted)[\\s,]{0,3}){0,2}\\b(?:in|across|throughout|around)\\b[^.!?]{0,40}?\\b(?:metros?|metro\\s+areas?|metropolitan\\s+areas?|markets?|cities|Arlington|Atlanta|Austin|Baltimore|Chicago|Cleveland|Dallas|Denver|Houston|Jacksonville|Kansas\\s+City|Los\\s+Angeles|Louisville|Manhattan|Miami|Minneapolis|Myrtle\\s+Beach|New\\s+Orleans|Orlando|Philadelphia|Portland|San\\s+Antonio|San\\s+Diego|Seattle)\\b|\\s+(?:nationwide|countrywide|across\\s+the\\s+country|throughout\\s+the\\s+country|coast[\\s-]to[\\s-]coast)\\b)|\\b(?:our|the\\s+(?:firm|company|agency)['’]?s?|we\\s+(?:have|maintain|operate|staff|run|open(?:ed)?)|we['’]ve\\s+(?:got\\s+|opened\\s+)?)\\s+(?:[a-z]+[\\s-]+){0,1}(?:\\d{1,3}|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|twenty[\\s-]?(?:five|six))[\\s-]+(?:[a-z0-9]+[\\s-]+){0,2}(?<!(?:\\b(?:no|not|never|nor|neither|without)\\b|n[’']t)[^.!?\\n]{0,25})(?<!\\b(?:your|their|his|her|its|each|every|client|clients|patient|patients|practice|practices|business|businesses|customer|customers)\\b[^.!?\\n]{0,20})(?:offices|locations|branches)\\b|\\b(?:our|the)\\s+(?<!(?:\\b(?:no|not|never|nor|neither|without)\\b|n[’']t)[^.!?\\n]{0,25})(?<!\\b(?:your|their|his|her|its|each|every|client|clients|patient|patients|practice|practices|business|businesses|customer|customers)\\b[^.!?\\n]{0,20})(?:Arlington|Atlanta|Austin|Baltimore|Chicago|Cleveland|Dallas|Denver|Houston|Jacksonville|Kansas\\s+City|Los\\s+Angeles|Louisville|Manhattan|Miami|Minneapolis|Myrtle\\s+Beach|New\\s+Orleans|Orlando|Philadelphia|Portland|San\\s+Antonio|San\\s+Diego|Seattle)\\s+(?:offices?|team|staff|branch|location|crew|studio)\\b|\\b(?<!(?:\\b(?:no|not|never|nor|neither|without)\\b|n[’']t)[^.!?\\n]{0,25})(?<!\\b(?:your|their|his|her|its|each|every|client|clients|patient|patients|practice|practices|business|businesses|customer|customers)\\b[^.!?\\n]{0,20})locally\\s+based\\s+in\\b|\\b(?:\\d{1,3}|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|twenty[\\s-]?(?:five|six))[\\s-]+(?:[a-z0-9]+[\\s-]+){0,2}(?<!(?:\\b(?:no|not|never|nor|neither|without)\\b|n[’']t)[^.!?\\n]{0,25})(?<!\\b(?:your|their|his|her|its|each|every|client|clients|patient|patients|practice|practices|business|businesses|customer|customers)\\b[^.!?\\n]{0,20})(?:offices|branches)\\b",
+      "flags": "gi",
+      "message": "content-bible §3b: 'Never imply physical offices in the location metros.' There is ONE office, at the canonical NAP. The safe geography framing is 'from our Las Vegas office'. WHAT THIS RULE TARGETS, stated exactly because the previous pattern got it wrong: a claim that the firm HAS OFFICES LOCATED IN the coverage metros — a plural physical presence. It does NOT target a SINGLE office SERVING those metros, which is the mandated truth. ⚠ PATTERN RE-AUTHORED 2026-08-12 — THE PREVIOUS PATTERN WAS A LIVE, BUILD-BREAKING FALSE-BLOCK. It matched the mere CO-OCCURRENCE of an office noun — optionally SINGULAR — within 40 characters of in/across/throughout and within 30 more of metros/markets/cities. So it fired on 'One Las Vegas office serving clients across US metros.', which is VERBATIM what briefs/about.md line 30 mandates the about page say, and on 'From our Las Vegas office, check in one screen whether your market is covered.' Swept across the 26 briefs it hit 10 lines, and the classification is stated exactly rather than rounded: TWO hits landed directly on copy the page is MANDATED to carry — about.md:30 (the verbatim §4 geography sentence) and our-locations.md:13 (the Outcome line) — and those are the unambiguous false-blocks. FOUR more landed on lines that MANDATE the permitted numberless coverage sentence and ban the alternatives in the same breath, where the match fell on the ban clause: index.md:55, industries-contracting.md:91, industries-hvac.md:91 and industries.md:97. Only FOUR were pure ban-notice rows: about.md:63, guarantee.md:278, index.md:210 and our-locations.md:73. bannedContent hits are hard errors in build.mjs lint(), audit.mjs and the block-banned-content write hook, so the rule made mandated brief copy unshippable — CLIENT-RULES-SCHEMA.md §2's named worst failure class, and this file's own standing warning at _rationedClaims_notes. THE RETIRED PATTERN, RECORDED VERBATIM SO THE HISTORY IS NOT LOST RATHER THAN ONLY DESCRIBED: '\\boffices?\\b[^.!?]{0,40}\\b(in|across|throughout)\\b[^.!?]{0,30}\\b(metros?|markets?|cities)\\b|\\b(\\d{2}) (offices|locations)\\b'. THE NEW PATTERN REQUIRES BRAND-ATTRIBUTED OR LOCATIVE PLURALITY, never co-occurrence. Six alternatives: (1) the brand possessing PLURAL offices — 'our offices', 'we have offices', 'the firm's offices' — which is false on its face because there is exactly one; (2) 'offices' asserted as located IN a coverage noun (metros / metro areas / metropolitan areas / markets / cities) or in one of the 24 published coverage metros BY NAME, or claimed 'nationwide' / 'coast to coast'; (3) the brand asserting a COUNT of offices, locations or branches ('we operate 25 locations', 'our 12 US offices'); (4) a per-metro presence claim — 'our Portland office', 'our Miami team' — which briefs/our-locations.md line 81 and briefs/index.md line 55 ban by name; (5) 'locally based in', also named at our-locations.md line 81; (6) an UNATTRIBUTED count of offices or branches ('25 offices', 'twenty-five offices', '12 regional offices'), which restores the coverage the retired pattern's second limb had at '\\b(\\d{2}) (offices|locations)\\b' — dropping it in the rewrite would have been a fail-OPEN regression introduced while fixing a fail-CLOSED one. NOTE WHAT ALTERNATIVE 6 DELIBERATELY OMITS: 'locations'. An unattributed count of LOCATIONS is not banned, because in this bundle that word belongs to the CLIENT's premises — briefs/industries-dental.md line 112 and industries-medical-spa.md line 97 both mandate asking 'how many locations the practice runs'. A count of locations is caught only under alternative 3, where the brand attributes it to itself. LAS VEGAS IS DELIBERATELY ABSENT from the metro-name list: it is the one real office and its name must never trip this rule. TWO GUARDS, both lookbehinds, both present to protect true copy. The HONEST-DENIAL guard keeps negated statements clean — 'We have no offices in the metros we cover', 'We do not have offices in Miami, Denver or Seattle', and briefs/industries.md line 97's 'Never any implication of offices in any metro' — because denying a branch network is exactly what this brand's honest copy does. The OTHER-PARTY guard keeps the CLIENT's premises clean — 'your offices in three cities' and briefs/industries-dental.md line 112 / industries-medical-spa.md line 97, whose mandated line asks 'how many locations the practice runs'. ENGINE REQUIREMENT, STATED BECAUSE IT IS NEW TO THIS FILE: both guards are LOOKBEHIND assertions, and this is the first rule here to use one. Every declared consumer is a Node ESM script — scripts/revision-rules.mjs, build.mjs lint(), block-banned-content.mjs, audit.mjs — and V8 has supported variable-length lookbehind since Node 8.3, so the dependency is already satisfied. A consumer written in an engine WITHOUT lookbehind (Go RE2, older Safari, Python re without the regex module) will throw on compile rather than silently mis-match; if one is ever added, this rule must be re-authored, not skipped. FLAGS ARE LEFT AS AUTHORED at 'gi' — see _rationedClaims_notes.flags_are_deliberately_non_global, which records that a /g RegExp reused across pages via .test() keeps lastIndex and can silently skip a hit. That hazard is PRE-EXISTING on this entry and is not repaired here, because the consumers that would be affected live in a build tree that does not exist yet and the change could not be verified. Flagged, not fixed. VERIFIED 2026-08-12 by reading this pattern back OFF DISK, compiling it and running it: 42 of 42 cases behaved as specified, 0 failures. CLEAN on about.md:30 verbatim, our-locations.md:13 verbatim, 'One Las Vegas office serving clients across US metros.', 'From our Las Vegas office, check in one screen whether your market is covered.', the mandated numberless coverage sentence, and the denial and client-premises cases above. FIRES on 'We have offices in 25 US metros.', 'Our offices across Phoenix, Denver and Miami', 'with offices in Miami, Denver and Seattle', 'Our Portland office', 'our Miami team', 'We maintain offices throughout the major markets we serve.', 'offices nationwide', 'We operate 25 locations across the country.', 'our 12 US offices' and 'We are locally based in Denver.' Sweep of all 26 briefs: 10 matching lines before, 6 after — about.md:63, guarantee.md:278, index.md:210, our-locations.md:20, our-locations.md:73 and our-locations.md:81 — and every one of the 6 is a ban notice — a 'Must not be said' row, a HOLDS table row, or a ⚠OWNER PLACEHOLDER 'do not write' instruction — that QUOTES the banned claim verbatim in order to forbid it. ZERO matches on mandated or descriptive copy, down from six. COVERAGE LIMIT, STATED PLAINLY rather than implied: the pattern is case-insensitive and so cannot detect a proper noun, which means a presence claim naming a city OUTSIDE the 24 published coverage metros ('our Boise office') is not mechanically caught; and the honest-denial guard suppresses a violation that happens to sit within 25 characters after a negator. Both residues are authoring rules for the build's P11 content pass, enforced by the ⚠OWNER PLACEHOLDER wording on every coverage-carrying brief — do not read this entry as complete mechanical coverage. THE METRO COUNT IS NO LONGER AN OPEN QUESTION AND IS NOT DEFERRED FROM HERE — it is BANNED, by the next entry in this array (the metro-count rule), mirroring content-bible §3b line 82. These are TWO DISTINCT PROHIBITIONS: this rule bans claiming a physical presence, that one bans claiming a serviced-market count, and a sentence can clear this one while breaching that one. ⚠ CORRECTED 2026-08-12: this message previously ended 'See unsubstantiatedClaims.U5 for the separate, unresolved question of how many metros may be claimed at all' — a deferral to a register entry that itself deferred to a RATION which PERMITTED the banned string. The chain terminated in a permission; it now terminates in a ban."
+    },
+    {
+      "pattern": "\\b(?:\\d{1,3}|twenty[\\s-]?(?:five|six)|two\\s+dozen|dozens?)\\b[\\s\\-–—]*\\+?[\\s\\-–—]*(?:of[\\s\\-]+)?(?:(?:us|u\\.s\\.|american|major|top|key|metro|metropolitan|different|separate|new|additional|local)[\\s\\-]+){0,3}(?:metros?|metro\\s+areas?|metropolitan\\s+areas?|markets?|cities)\\b|\\b(?:locations?|metros?|markets?|cities)\\s*[\\(\\[]\\s*\\d{1,3}\\s*[\\)\\]]|\\b(?:metros?|markets?|cities)(?:\\s+(?:we|they)\\s+\\w+){0,2}\\s*[:=]\\s*(?:\\d{1,3}|twenty[\\s-]?(?:five|six))\\b",
+      "flags": "i",
+      "message": "METRO COUNT — BANNED OUTRIGHT, NOT RATIONED. Mirrors content-bible §3b line 82 (the standalone metro-count prohibition added 2026-08-12, P7 blocker 12): never state a count of metros holding a paying client — not '25 US metros', not 'the 25 metros we serve', not '26', and not a spelled-out ('twenty-five', 'twenty-six'), rounded, hedged or 'over/nearly [n]' variant. NO SURFACE IS EXEMPT: body copy, headings, page titles, metas, nav labels, card counts and structured data are all in scope. WHY: 25 is a count of PUBLISHED CITY PAGES on the current site (/our-locations/, counted 2026-08-11) and nothing more; how many of those metros hold a paying client is evidenced nowhere in the corpus and is [OWNER-DATA]. The spec proved a page count and asserted a business fact from it — the count is not wrong, the thing it is a count OF is. THIS IS A SEPARATE PROHIBITION FROM THE OFFICES RULE ABOVE — that one bans claiming a physical presence, this one bans claiming a serviced-market count. THE ONLY PERMITTED COVERAGE SENTENCE is the numberless form the 26 briefs carry verbatim: 'We work with clients across US metros, all from our Las Vegas office.' — verified by read 2026-08-12 in index, our-locations, seo-services, industries-hvac and industries-contracting, with about mandating the same geography 'stated with NO metro count'. CARVE-OUT — RENDERING THE 25 METRO CARDS ON our-locations IS NOT A BREACH: the card set is the published-page list our-locations §3 requires, and this pattern deliberately requires a NUMBER ADJACENT TO A COVERAGE NOUN, so a card grid that carries no count cannot trip it. The number returns only on owner-supplied data carrying its period and source (§1 'numbers always carry their frame'), never inferred from the page count."
+    },
+    {
+      "pattern": "\\b(?:our|your|the|a)\\s+(?:6|six|12|twelve)[\\s-]?months?\\s+(?:seo\\s+)?guarantee\\b|\\b(?:6|six|12|twelve)[\\s-]?months?\\s*(?:&|and|or|to|/)\\s*(?:6|six|12|twelve)[\\s-]?months?\\s+(?:seo\\s+)?guarantee\\b|\\bguarantee(?:d|s)?\\s+[^.?!\\n]{0,40}?\\b(?:with)?in\\s+(?:6|six|12|twelve)[\\s-]?months?\\b|\\bfirst\\s+page\\s+[^.?!\\n]{0,30}?\\b(?:with)?in\\s+(?:6|six|12|twelve)[\\s-]?months?\\b|\\b(?:6|six|12|twelve)[\\s-]?months?\\s+(?:contract\\s+)?term\\b",
+      "flags": "i",
+      "message": "6/12-MONTH WINDOW ASSERTED AS A CONTRACT TERM — BANNED SITE-WIDE. content-bible §3b line 77: 'Never assert the 6- or 12-month guarantee window as a TERM OF THE CONTRACT — it is unratified.' Sole source is the client's own rank-3 marketing copy at /our-locations/las-vegas-seo/; §4 makes rank 3 authoritative for what the brand SAYS, never for whether it is TRUE, and the intake's direct question returned the bare word 'confirm'. See unsubstantiatedClaims.U4. SCOPE CORRECTION 2026-08-12: this was previously enforced ONLY at overclaim.guarantee — one slug — while U4 records the window shipping as contract terms on 19 of 26 briefs. Enforcement is now site-wide. WHAT REMAINS PERMITTED, and why this pattern matches the ASSERTION SHAPE rather than the bare token: the briefs MANDATE the attributed report — 'the current site publishes 6- and 12-month windows, and the agreement itself is assessed month by month' (guarantee.md line 108, las-vegas-seo.md 27/71, index.md 83, our-locations.md 57), each carrying ⚠OWNER PLACEHOLDER. A flat ban on '12 month' would false-block that mandated sentence, which CLIENT-RULES-SCHEMA.md §2 names the worst failure class. Reporting what the current site says is permitted and flagged; asserting agreed terms is not. Attribution is required by requiredPairings.RP-6."
+    },
+    {
+      "pattern": "\\b(?:pause|precedent)\\s+has\\s+(?:already\\s+)?been\\s+(?:operated|exercised|invoked|triggered|used|run)\\b|\\b(?:has|have|had)\\s+(?:already\\s+)?been\\s+operated\\s+on\\s+a\\s+live\\s+account\\b|\\bwe\\s+(?:have\\s+|had\\s+|already\\s+){0,2}(?:actually\\s+)?(?:operated|exercised|invoked|triggered)\\s+(?:the|this|our)\\s+pause\\b|\\bwe\\s+(?:have|had)\\s+(?:already\\s+)?paused\\b|\\bwe['’]ve\\s+(?:already\\s+)?paused\\b|\\bwe\\s+(?:already\\s+)?paused\\s+(?:a|one|our|this)\\s+client|\\bwe\\s+stopped\\s+billing\\s+(?:a|one|our|this|their)\\s+client\\b|\\bproven\\s+in\\s+practice\\b",
+      "flags": "i",
+      "message": "OPERATED-PAUSE PRECEDENT ASSERTED AS FACT — BANNED. content-bible §3b line 78: 'Never state or imply that the billing pause HAS ALREADY BEEN OPERATED on a live account until the owner confirms the account, the months and the client's consent' (P7 blocker 13). See unsubstantiatedClaims.U6. NOT AT ISSUE AND NOT NARROWED BY THIS RULE: the offer mechanic D-003 — monthly retainer, month-by-month assessment, billing pauses and resumes, the work continues — is OWNER-RULED and FULLY PUBLISHABLE, rests on the owner's ruling alone and needs no precedent. Only the claim that it has already been EXERCISED is unverified. This pattern therefore matches PAST-TENSE ASSERTION SHAPES ONLY and is verified not to fire on the mandated present-tense mechanic ('billing pauses while off-target and resumes', 'we keep working and your billing stops') which requiredPairings.RP-2 obliges every 'or you don't pay' page to carry. It also deliberately does NOT fire on the ATTRIBUTED report the briefs permit ('the current site says payments were paused...', visibly flagged) — guarantee.md line 126 permits exactly that. COVERAGE LIMIT, STATED PLAINLY: a bare unattributed retelling such as 'we paused their payments until we had their results back on track' is NOT caught by this regex, because catching it would also catch the permitted attributed quote. That residue is governed by requiredPairings.RP-7 (attribution required) and by the ⚠OWNER PLACEHOLDER on all 6 pause-carrying briefs — it is an authoring rule, not a gate. Do not read this entry as full mechanical coverage."
+    },
+    {
+      "pattern": "\\bcomplimentary\\b",
+      "flags": "gi",
+      "message": "content-bible §5 glossary. The canonical term is 'complementary' (included at no extra charge). Never 'complimentary'."
+    },
+    {
+      "pattern": "\\bdesireable\\b",
+      "flags": "gi",
+      "message": "D-BRAND-RAILS-019 / content-bible §3b. A misspelling carried in the live copy at /services/suite/. Never reproduced. Correct spelling: 'desirable'."
+    },
+    {
+      "pattern": "WHY OUR MARKETING IS AMAZING",
+      "flags": "gi",
+      "message": "D-BRAND-RAILS-019 / content-bible §3b. Broken headline grammar carried across the live /industries/* pages. Never reproduced."
+    },
+    {
+      "pattern": "\\ba roofing company\\b",
+      "flags": "gi",
+      "message": "content-bible §2. The live All American Law Firm case card describes a LAW FIRM as 'a roofing company based out of the Dallas-Fort Worth area'. The card is not reusable as written, and this internal inconsistency must never be carried forward."
+    },
+    {
+      "pattern": "\\b(huffpost|huffington post|msnbc|techcrunch|tech crunch|yahoo)\\b",
+      "flags": "gi",
+      "message": "PRESS WALL — UNSUBSTANTIATED (§G-6.3). Live as bare images with NO wrapping link; no independent coverage found in search on 2026-08-11. content-bible §3b: 'Never display a press or partner logo without a live link to the coverage and confirmed rights.' Each logo needs its actual article URL, publication date AND written usage rights, or the wall is REMOVED. See unsubstantiatedClaims.U3."
+    }
+  ],
+
+  "requiredPairings": [
+    {
+      "id": "RP-1-PROMISE-NEEDS-CONDITION",
+      "when": {
+        "pattern": "\\b(guarantee|guaranteed|guarantees)\\b[^.?]{0,120}\\bfirst page\\b|\\bfirst page\\b[^.?]{0,120}\\b(guarantee|guaranteed)\\b",
+        "flags": "gi"
+      },
+      "requires": {
+        "pattern": "or you don't pay|or you do not pay|your billing stops|billing (pauses|stops)|you stop paying|the meter stops",
+        "flags": "gi"
+      },
+      "scope": "sentence",
+      "fallbackScope": "block",
+      "severity": "BLOCK",
+      "message": "THE PROMISE MAY NEVER TRAVEL ALONE. content-bible §1: 'Say the condition and the promise together' — hard rule. §3b: 'Never state the ranking promise without the payment condition in the same breath.' The ranking promise is only defensible as a BILLING TERM; stated bare it becomes a claim of algorithmic control, which is the exact claim D-INCUMBENT-001 attacks and Google Search Central refutes. Canonical paired form: 'We guarantee first page for the key phrases named in your contract — or you don't pay.'"
+    },
+    {
+      "id": "RP-2-CONDITION-NEEDS-PAUSE-FRAMING",
+      "when": {
+        "pattern": "or you don't pay|or you do not pay",
+        "flags": "gi"
+      },
+      "requires": {
+        "pattern": "billing (pauses|stops)|your billing stops|pause[sd]? (the |your )?billing|resumes? when|back on track|we keep working|the work continues",
+        "flags": "gi"
+      },
+      "scope": "page",
+      "severity": "BLOCK",
+      "message": "READINESS BLOCKER 6. 'or you don't pay' is the OWNER'S OWN canonical phrase (content-bible §5) and is fully permitted — but standing alone it asserts a TERMINAL remedy that D-003 says does not exist. D-003 is a monthly PAUSE that RESUMES, with the work continuing throughout. Any page (including its metas and its JSON-LD description) that carries 'or you don't pay' must also carry the pause framing somewhere on the page. ⚠ RESTAMPED 2026-08-12 — THE CLOSING SENTENCE WAS STALE IN THE PRESENT TENSE. It read: 'The index and guarantee metas already do this correctly; the site-wide JSON-LD replacement and 6 other metas do not, which is what this rule exists to catch.' That described the state at the moment blocker 6 was RAISED. It HAS SINCE BEEN REPAIRED, and a rule that describes a repaired defect as still live reads as an open defect. MEASURED STATE, verified by read of seo-enrichment.md on 2026-08-12: the site-wide JSON-LD replacement description NOW CARRIES the pause and all three load-bearing facts — the work continues, the billing pauses, the billing resumes — reading 'First-page SEO on the key phrases agreed in your contract. Any month we are off target we keep working and your billing pauses until we are back on target.', and §3 makes that string NORMATIVE wherever the build emits a description in Organization, LocalBusiness, Service or WebSite JSON-LD. All SIX named metas were rewritten in the same pass and now carry the pause — seo-enrichment.md §1 rows at line 20 (seo-services), 29 (industries-dental), 31 (industries-medical-spa), 34 (our-locations), 35 (las-vegas-seo) and 36 (about), each verified by read. That file's own changelog records the repair at line 189, and readiness-verdict.md carries blocker 6 as CLOSED. THIS RULE IS THEREFORE A REGRESSION GUARD, NOT A REPAIR ORDER: no surface in the bundle currently breaches it, and its job is to catch a FUTURE shortening — in a meta, a JSON-LD description, a hero or a card — that keeps 'or you don't pay' while dropping the pause, leaving a terminal remedy standing where D-003 has only a monthly one. seo-enrichment.md §3 names exactly that shortening as the defect its normative string exists to prevent. BLOCKER 6 STAYS CLOSED: the defect is verifiably repaired, and the outstanding owner item — whether 'or you don't pay' survives unqualified, capabilityTruth._notes.terminal-non-payment-remedy and readiness verdict §5 item 10 — GOVERNS a future restatement rather than restoring the defect. ⚠ RESTAMPED AGAIN 2026-08-12 — THAT OUTSTANDING OWNER ITEM IS NOW RULED, AND THIS RULE GETS STRONGER, NOT WEAKER. The owner was shown the TERMINAL and the MONTHLY readings of D-003 side by side and ELECTED THE MONTHLY PAUSE-AND-RESUME (_inbox/2026-08-12-owner-rulings.md, rank 2), closing readiness blocker 3. 'Or you don't pay' is thereby confirmed as the owner's canonical SHORTHAND FOR THAT PAUSE and NOT a separate terminal remedy — so this pairing is no longer a fail-closed precaution awaiting a ruling, it is the RULED requirement and it is PERMANENT. Enforcement is unchanged in every respect: same pattern, same page scope, same BLOCK severity."
+    },
+    {
+      "id": "RP-3-NUMBERS-CARRY-THEIR-FRAME",
+      "when": {
+        "pattern": "\\b\\d{1,3}\\s*%|\\b\\d+(\\.\\d+)?\\s*x\\b\\s*(more|increase|growth)",
+        "flags": "gi"
+      },
+      "requires": {
+        "pattern": "\\b(19|20)\\d{2}\\b|\\bbetween\\b[^.]{0,40}\\band\\b|\\bmeasured in\\b|\\bover \\d+ (months?|weeks?|years?)\\b|\\bsource:|\\bper \\w+ (data|analytics|console)",
+        "flags": "gi"
+      },
+      "scope": "block",
+      "severity": "BLOCK",
+      "message": "content-bible §1, HARD RULE: 'Numbers always carry their frame. A percentage without a time period, a baseline, and a named source is not usable copy.' §3b: 'Never state a percentage, multiple, or count without its time period and source.' This is the rule the ~17 bare percentage tiles across 10 named clients violate (§G-6.4). Safe version: '[Client] — [metric] +[x]% between [start] and [end], measured in [tool]. Published with permission.'"
+    },
+    {
+      "id": "RP-4-NAMED-CLIENT-NEEDS-PERMISSION",
+      "when": {
+        "pattern": "\\b(Advanced Dental Wellness|All American Law Firm|Juvly Aesthetics|Katy Dental Experts|Lifetime Dental Rancho|RAICH Law|SOUTHWEST Injury Law|Serenity Med Spa|Setiba Medical Spa|The Blez|DDM Garage Doors|Liquor License Agents)\\b",
+        "flags": "gi"
+      },
+      "requires": {
+        "pattern": "published with permission|used with permission|permission on file",
+        "flags": "gi"
+      },
+      "scope": "block",
+      "severity": "BLOCK",
+      "message": "content-bible §3b: 'Never name a client without written permission on file.' §G-6.4 lists these 10 named clients (plus 2) carrying ~17 percentage tiles. NO written permission is on file for any of them as of 2026-08-12. Until §G-6 material lands in _inbox/, a named client may not ship at all — this rule is the floor, not the licence. The 8 client mockups at 1500x1000 are subject to the same gate (selling-asset-manifest MOCKUP-RIGHTS: NEEDS-OWNER)."
+    },
+    {
+      "id": "RP-5-RATING-CARRIES-ITS-COUNT",
+      "when": { "pattern": "\\b4\\.9\\b", "flags": "g" },
+      "requires": { "pattern": "\\b35\\b[^.]{0,30}\\breviews?\\b|\\breviews?\\b[^.]{0,20}\\b35\\b", "flags": "gi" },
+      "scope": "sentence",
+      "severity": "BLOCK",
+      "message": "content-bible §2 + §3. The rating is publishable ONLY as the real number including the modest count: 'Rated 4.9 from 35 Google reviews.' Positioning §4 DO-NOT-COMPETE on scale — state it honestly rather than dressing it up."
+    },
+    {
+      "id": "RP-6-WINDOW-NEEDS-ATTRIBUTION",
+      "when": {
+        "pattern": "\\b(?:6|six|12|twelve)[\\s-]?months?\\b",
+        "flags": "gi"
+      },
+      "requires": {
+        "pattern": "the current site (publishes|says|advertises)|currently publish(es|ed)?|published on the (current|live) site|unratified|not (yet )?(a|an) (agreed )?(contract )?term|owner placeholder",
+        "flags": "gi"
+      },
+      "scope": "block",
+      "severity": "BLOCK",
+      "message": "ADDED 2026-08-12. The 6/12-month window may appear ONLY as an ATTRIBUTED REPORT of what the current site says, visibly flagged — content-bible §3b line 77 and §3 line 58. Its sole source is rank-3 marketing copy and the intake's direct question returned the bare word 'confirm'. This pairing is what makes the site-wide bannedContent rule safe to narrow to the assertion shape: the ban catches 'our 12-month guarantee', this pairing catches a bare '12 months' floating without its attribution. The window may not enter the marquee contract-terms table, page metas or structured data in ANY form, attributed or not. NOTE ON STATUS: requiredPairings is an extension beyond CLIENT-RULES-SCHEMA.md §1 and is NOT compiled by revision-rules.mjs — like RP-1..RP-5 it binds the build's P11 content pass, not a gate."
+    },
+    {
+      "id": "RP-7-PAUSE-PRECEDENT-NEEDS-ATTRIBUTION",
+      "when": {
+        "pattern": "paused (their|his|her|the client'?s?) (payments?|billing|invoices?)|payments? (were|was) paused|billing (was|were) paused|paused (their|the) (payments?|billing)",
+        "flags": "gi"
+      },
+      "requires": {
+        "pattern": "the current site (says|publishes|states)|the live (site|page) (says|contains)|contains this sentence|unverified|not verified|owner placeholder|we have not confirmed",
+        "flags": "gi"
+      },
+      "scope": "block",
+      "severity": "BLOCK",
+      "message": "ADDED 2026-08-12, and this is the rule that carries the residue the bannedContent operated-pause pattern deliberately does not catch. A PAST-TENSE pause episode may be reported ONLY as what the client's own live page SAYS, visibly flagged as unverified — briefs/guarantee.md line 126 permits exactly that and no more. Stated without attribution it asserts THE EVENT HAPPENED, which content-bible §3b line 78 bans until the owner confirms the account, the months and the client's consent. A de-identified retelling does NOT clear this: de-identifying protects the client, it does not evidence the event. WHY THIS IS A PAIRING AND NOT A BAN: the banned and the permitted forms share the same words and differ only by attribution, so a flat ban would false-block the mandated flagged report. NOT IN SCOPE — the present-tense mechanic ('billing pauses while off-target and resumes when results are back on track', 'we keep working and your billing stops') is D-003, owner-ruled, fully publishable, and is REQUIRED on the page by RP-2. Same status caveat as RP-6: authoring rule for P11, not a compiled gate."
+    }
+  ],
+
+  "punctuationPolicy": {
+    "exclamationMarks": "disallowed",
+    "exclamationSource": "D-BRAND-RAILS-006, owner rank 2, verbatim: 'remove all exclamation points and emojis' (_inbox/seoguarantee-intake.md line 99)",
+    "exclamationMaxPerPage": 0,
+    "emoji": "disallowed",
+    "emojiSource": "D-BRAND-RAILS-007, same owner sentence",
+    "emojiMaxPerPage": 0,
+    "allCapsShouting": "discouraged",
+    "allCapsNote": "content-bible §1: 'Plainspoken and specific, not loud.' The live site is saturated with caps and exclamations; none survive. Warmth and personality live in the VOICE and the founder PHOTOGRAPHY, not in punctuation or capitals. Not a hard ban because the CTA label itself is 'CALL US' (owner-set, see cta.primaryLabel) and the brand wordmark carries caps.",
+    "scope": "Built pages under Code/client-sites/seoguarantee/ only. Spec artifacts (annotations, warning markers, this file) are NOT site copy and are out of scope.",
+    "supersedes": "The earlier agent-derived 'one exclamation max per page' policy is WITHDRAWN. The owner said ALL, not one."
+  },
+
+  "cta": {
+    "primaryLabel": "CALL US",
+    "primaryAction": "Book a consultation",
+    "conversionGoal": "contact",
+    "onePrimaryPerPage": true,
+    "source": "D-BRAND-RAILS-009 + D-OFFER-006, owner rank 2 (_inbox/seoguarantee-intake.md lines 101 and 25). content-bible §1: 'Primary CTA: CALL US, driving to Book a consultation. One primary action per page. Do not invent alternative primary verbs.'",
+    "supersedes": "The earlier agent-derived CTA set ('Get my guarantee' / 'See the terms' / 'Book a call') is WITHDRAWN.",
+    "invariant": "The owner's two answers describe a PHONE-FIRST path toward a booked consultation. No downstream phase may invent a different primary verb. The current live site fragments this across 5+ CTAs; the new site consolidates to one.",
+    "bannedAlternativePrimaries": ["Get my guarantee", "See the terms", "Book a call", "Get started", "Learn more", "Sign up"]
+  },
+
+  "nap": {
+    "status": "OWNER-RULED 2026-08-12 (closes §G-8)",
+    "rank": 2,
+    "renderRule": "Rendered BYTE-IDENTICALLY everywhere it appears: footer on all 26 pages, contact-us, about, and the LocalBusiness structured data.",
+    "name": "First Page SEO Guarantee",
+    "street": "6905 W Charleston Blvd",
+    "city": "Las Vegas",
+    "region": "NV",
+    "postalCode": "89117",
+    "country": "USA",
+    "formatted": "6905 W Charleston Blvd, Las Vegas, NV 89117, USA",
+    "telephone": "+1 (702) 420-7272",
+    "email": "support@seoguarantee.com",
+    "openIssues": [
+      "Whether the directories' suite number '#110' belongs in the NAP is an OPEN owner decision (decisions-ledger §G-8 follow-up). Until ruled, the formatted string above ships WITHOUT it.",
+      "OUTSIDE THE BUILD: the live map embed and the Yelp listing still show a different street and must be corrected at source."
+    ],
+    "bannedPlaceholder": {
+      "pattern": "\\[address on file\\]|\\[NAP\\]|\\[phone\\]|address TBD",
+      "flags": "gi",
+      "message": "No page may ship an address placeholder. §G-8 closed 2026-08-12 with the canonical NAP above."
+    }
+  },
+
+  "pricing": {
+    "model": "quote-gated",
+    "framing": "One agreed monthly fee covers SEO, web, CRO, branding and design. Quoted per business after a competitive review. A monthly retainer agreed up front, assessed month by month against the agreed metrics.",
+    "ladder": [],
+    "_notes": {
+      "decision": "D-001, LOCKED 2026-08-11. Owner verbatim (intake line 127): 'DO NOT show any pricing yet, pricing depends on the need of the client which varies from business to business'.",
+      "consequence": "No pricing page exists in the 26-page set. The trust burden shifts entirely onto the guarantee page (T-MARQUEE).",
+      "ladder_empty": "DELIBERATELY EMPTY. D-OFFER-008: no figures are published by design, so no ladder is required for the build and G-ARITH has nothing to reconcile against. Package NAMES observed on the live site ('Full Suite Package', 'Silver', 'Custom VIP Package') appear ONLY inside customer testimonials; there is no packaging page and the real internal ladder is parked at §G-3. Do not reconstruct one.",
+      "open_owner_input": "What the agreed monthly fee does NOT cover (ad spend, licences, hosting) is UNANSWERED — §G-4, D-OFFER-018. The readiness verdict calls it the highest-leverage unanswered input in the bundle. Until it is answered, no page may assert an exclusion list."
+    }
+  },
+
+  "tiers": {
+    "A": [],
+    "C": ["about", "privacy-policy", "contact-us", "thank-you", "404"],
+    "defaultTier": "B",
+    "_notes": {
+      "A_empty": "DELIBERATELY EMPTY. No page in this set LEADS with competitor framing. positioning-plan.md §3 M§4.2 rules that the objection is answered 'on-page, in the owner's own plain terms' — the category line leads, never a competitor comparison. An empty tier A means no page is exempt from de-incumbenting, which is the correct posture here.",
+      "C_source": "Derived from sitemap.yaml's type rows: T-COMPANY (about), T-LEGAL (privacy-policy) and T-CONTACT (contact-us, thank-you, 404). These are company/legal/ops pages and are NOT depth-gated.",
+      "B_membership": "The remaining 21 pages fall through to tier B: index, guarantee, full-suite, seo-services, web-design, ui-ux-design, web-development, cro-services, graphic-design, branding, results, industries, industries-dental, industries-law-firm, industries-medical-spa, industries-hvac, industries-contracting, our-locations, las-vegas-seo, seo-blog, videos."
+    }
+  },
+
+  "competitors": ["Thrive Internet Marketing Agency", "Thrive Agency", "thriveagency", "WebFX"],
+  "competitorRegex": "",
+
+  "competitorFraming": {
+    "tierBDensityCap": 0,
+    "tierBEyebrowBanned": [
+      { "pattern": "\\bvs\\.?\\s+(thrive|webfx)\\b", "flags": "i" },
+      { "pattern": "\\b(better|cheaper|faster) than\\b", "flags": "i" },
+      { "pattern": "\\bwhy we beat\\b", "flags": "i" }
+    ],
+    "_notes": {
+      "cap_zero": "Zero competitor mentions permitted on tier-B pages. positioning-plan.md §2 anti_incumbent_angle frames the fight as CONDITIONAL vs UNCONDITIONAL RETAINER — a fight about the client's own billing term, which needs no competitor named. §3 M§4.2: 'Answer it on-page, in the owner's own plain terms.'",
+      "narrowing_that_must_hold": "positioning-plan.md §4 'Whitespace, honestly scoped': D-MARKET-001 DOES sell a pay-for-performance line, scoped to self-serve local reputation software, not SEO ranking outcomes. The claim 'no competitor conditions its SEO fee on delivery' is true ONLY as narrowed to SEO rankings and must NEVER be stated flat as 'nobody else does pay-for-performance.'"
+    }
+  },
+
+  "overclaim": {
+    "industries-dental": [
+      { "pattern": "100\\s*%\\s*success", "flags": "i", "message": "§G-6.1 — the dental variant of the 100% success-rate claim. UNPROVEN; no dataset supplied to _inbox/." },
+      { "pattern": "average campaign|increase in sales", "flags": "i", "message": "§G-6.2 — the 30-100% sales earnings claim, live on this page. UNPROVEN." }
+    ],
+    "industries-law-firm": [
+      { "pattern": "100\\s*%\\s*success", "flags": "i", "message": "§G-6.1 — the law-firm variant. UNPROVEN." },
+      { "pattern": "average campaign|increase in sales", "flags": "i", "message": "§G-6.2 — UNPROVEN." },
+      { "pattern": "a roofing company", "flags": "i", "message": "The live All American Law Firm case card calls a law firm a roofing company in the Dallas-Fort Worth area. The card is not reusable as written." },
+      { "pattern": "\\b\\d{1,3}\\s*%", "flags": "g", "message": "The two unflagged percentage tiles on the All American card carry no date range, method or permission. The OPERATED-PAUSE PRECEDENT SENTENCE on this page is governed separately and is UNVERIFIED (readiness blocker 13) — do not smuggle the tiles in alongside it. ⚠ 'GOVERNED SEPARATELY' NOW RESOLVES TO A RULE, 2026-08-12: it previously pointed at nothing, which left the assertion unenforced anywhere in this file. It is the bannedContent operated-pause entry (assertion shapes, site-wide), requiredPairings.RP-7 (attribution) and unsubstantiatedClaims.U6." }
+    ],
+    "industries-medical-spa": [
+      { "pattern": "100\\s*%\\s*success", "flags": "i", "message": "§G-6.1 — the medical-spa variant. UNPROVEN. NOTE: the perimeter is THREE verticals, not two; this row was added when the perimeter was corrected 2026-08-11." },
+      { "pattern": "average campaign|increase in sales", "flags": "i", "message": "§G-6.2 — UNPROVEN." }
+    ],
+    "results": [
+      { "pattern": "\\b\\d{1,3}\\s*%", "flags": "g", "message": "§G-6.4 — ~17 distinct bare percentage tiles across 10 named clients. No date range, no method, no permission on file. A tile may ship ONLY in the safe form: '[Client] — [metric] +[x]% between [start] and [end], measured in [tool]. Published with permission.'" },
+      { "pattern": "\\b(Advanced Dental Wellness|All American Law Firm|Juvly Aesthetics|Katy Dental Experts|Lifetime Dental Rancho|RAICH Law|SOUTHWEST Injury Law|Serenity Med Spa|Setiba Medical Spa|The Blez)\\b", "flags": "i", "message": "§G-6.4 — no written permission is on file for any named client as of 2026-08-12." }
+    ],
+    "index": [
+      { "pattern": "\\b(huffpost|huffington|msnbc|techcrunch|tech crunch|yahoo)\\b", "flags": "i", "message": "§G-6.3 — the 4-logo press wall. Bare images, no article links, no independent coverage found 2026-08-11, no usage rights. Needs the article URLs AND written rights, or the wall is deleted." }
+    ],
+    "guarantee": [
+      { "pattern": "\\b(?:guarantee\\s+window|guarantee\\s+period|contract\\s+term|term\\s+length|contract\\s+terms)\\b[^.?!\\n]{0,40}\\b(?:6|six|12|twelve)[\\s-]?months?\\b|\\b(?:6|six|12|twelve)[\\s-]?months?\\b[^.?!\\n]{0,20}\\b(?:guarantee\\s+window|guarantee\\s+period|contract\\s+term|term\\s+length)\\b", "flags": "i", "message": "READINESS BLOCKER 9 + 11 — the 6/12-month window is UNSUBSTANTIATED as a contract term. Its ONLY source is the client's live marketing copy (rank 3), which content-bible §4 says is 'authoritative for what the brand currently says, never for whether it is true'. It ALSO sits incoherently beside the monthly pause without reconciling what the window is a term OF. Needs the verbatim signed contract language. See unsubstantiatedClaims.U4. THIS ENTRY IS THE MARQUEE-TABLE GUARD: guarantee is the T-MARQUEE page and content-bible §3 line 58 singles out the 'marquee contract-terms table' as a surface the window may not enter, so this pattern fires when the window is presented in TERM-TABLE framing on this page. ⚠ PATTERN NARROWED 2026-08-12 — it previously matched the bare token '\\b(6|six|12|twelve)[\\s-]?(month|months)\\b' anywhere on this page, which FALSE-BLOCKED the brief's own mandated sentence: briefs/guarantee.md line 108 instructs 'State the timeline exactly as this: the current site publishes 6- and 12-month windows, and the agreement itself is assessed month by month', flagged ⚠OWNER PLACEHOLDER at line 110 and confirmed reportable in body copy at line 299. overclaim entries are hard errors in revision-gate.mjs, so the old pattern made a mandated brief line unshippable — CLIENT-RULES-SCHEMA.md §2's named worst failure class. The site-wide ban on ASSERTING the window as a contract term now lives in bannedContent (the 6/12-month rule), which reaches all 26 pages rather than this one." }
+    ]
+  },
+
+  "depthRequired": {},
+  "_depthRequired_note": "DELIBERATELY EMPTY. No per-page minimum real-depth markers are evidenced anywhere in the spec, and inventing them would be exactly the 'ship the source platform's truth' failure CLIENT-RULES-SCHEMA.md §2 warns against. The build may populate this from its own P11 content pass once real depth exists.",
+
+  "rationedClaims": {
+    "google-rating-4-9": {
+      "pattern": "4\\.9[^.]{0,40}reviews?",
+      "flags": "i",
+      "allowedSlugs": ["index", "guarantee", "about", "results", "contact-us", "las-vegas-seo", "full-suite", "seo-services", "web-design", "web-development", "ui-ux-design", "cro-services", "graphic-design", "branding", "industries", "industries-dental", "industries-law-firm", "industries-medical-spa", "industries-hvac", "industries-contracting"],
+      "maxPerPage": 1,
+      "message": "content-bible §3 DO-CLAIM: 'Google rating: 4.9 from 35 reviews, stated with the count.' Receipt: the live rating widget. Rationed because positioning §4 rules DO-NOT-COMPETE on scale (M§3.1) — repeating a modest count is not persuasion, it is padding. Always paired with its count per requiredPairings.RP-5. NOTE that maxPerPage is ADVISORY, not enforced: revision-gate.mjs checks allowedSlugs membership only and never counts occurrences, so 'once per page' is an authoring rule for the build's P11 content pass. ⚠ allowedSlugs CORRECTED 2026-08-12 — see _rationedClaims_notes.google-rating-4-9 for the brief:line evidence behind each of the 20 slugs and the 6 deliberate exclusions."
+    },
+    "metros-25": {
+      "pattern": "\\b(?:\\d{1,3}|twenty[\\s-]?(?:five|six)|two\\s+dozen|dozens?)\\b[\\s\\-–—]*\\+?[\\s\\-–—]*(?:of[\\s\\-]+)?(?:(?:us|u\\.s\\.|american|major|top|key|metro|metropolitan|different|separate|new|additional|local)[\\s\\-]+){0,3}(?:metros?|metro\\s+areas?|metropolitan\\s+areas?|markets?|cities)\\b|\\b(?:locations?|metros?|markets?|cities)\\s*[\\(\\[]\\s*\\d{1,3}\\s*[\\)\\]]|\\b(?:metros?|markets?|cities)(?:\\s+(?:we|they)\\s+\\w+){0,2}\\s*[:=]\\s*(?:\\d{1,3}|twenty[\\s-]?(?:five|six))\\b",
+      "flags": "i",
+      "allowedSlugs": [],
+      "maxPerPage": 0,
+      "message": "⚠ THIS IS A BAN, NOT A RATION — allowedSlugs is DELIBERATELY EMPTY so the rationed-claim check in revision-gate.mjs errors on EVERY slug the pattern matches. The id is retained (rather than the entry deleted) because other spec files cite 'rationedClaims.metros-25' by name — fact-registry.json's D-PROOF-METROS-25 note flags it as cross-file residue — and a reader following that pointer must land on the ban, not on a missing key. THE AUTHORITATIVE BAN IS THE MATCHING bannedContent ENTRY (the metro-count rule), which reaches the broader enforcement surface: the block-banned-content write hook, audit.mjs's banned-token sweep and build.mjs lint(). This entry is the belt-and-braces copy on the revision-gate path; the two patterns are byte-identical and must be edited together. ⚠ CORRECTED 2026-08-12 (P7 blocker 12 machine-mirror sweep). WHAT THIS ENTRY USED TO SAY, recorded once as a quarantine record and never again as a permitted value: it PERMITTED the pattern '25 US metros' on allowedSlugs our-locations / las-vegas-seo / about at maxPerPage 1, and justified not banning it on the premise that 'content-bible §2 currently MANDATES the sentence verbatim'. BOTH PREMISES ARE NOW FALSE — verified by read 2026-08-12: content-bible §2's row now mandates the NUMBERLESS form and says 'Neither 25 nor 26 ships; do not reinstate', and content-bible §3b line 82 carries an explicit standalone ban on stating a count of metros holding a paying client. A correct status flag beside a field that still carried the banned value is FAIL-OPEN: a consumer reading the permitted value without checking the flag shipped the banned string. The VALUE is fixed here, not only the flag. CARVE-OUT: rendering the 25 metro CARDS on our-locations is NOT a breach — the pattern requires a NUMBER adjacent to a coverage noun, so the card grid cannot trip it."
+    }
+  },
+
+  "_rationedClaims_notes": {
+    "flags_are_deliberately_non_global": "Every rationedClaims pattern carries flags 'i', never 'gi'. revision-gate.mjs evaluates them with spec.re.test(text) inside a loop over pages; a /g RegExp keeps lastIndex between .test() calls and would silently SKIP a hit on the next page. The new bannedContent metro-count, window and operated-pause entries use 'i' for the same reason — audit.mjs line 92 also re-uses one compiled RegExp across every content file via .test(). The pre-existing 'gi' entries in bannedContent are left as authored (build.mjs lint() uses String.match, which is not stateful); this note records the hazard rather than silently restyling rules this pass did not need to touch.",
+    "metros-25": "Converted from a PERMISSION to a BAN — see the entry's own message. The chain that made this the headline defect ran: bannedContent (offices rule) deferred the count question to unsubstantiatedClaims.U5 -> U5 said 'rationed, not banned, at rationedClaims.metros-25' -> this entry PERMITTED the banned string on 3 slugs. Every link is now corrected in the same pass.",
+    "google-rating-4-9": "allowedSlugs WIDENED 2026-08-12 to the slugs the P6 briefs actually authorise, closing a FAIL-CLOSED defect of the same family: the ration was authored at P7 against 6 slugs and never swept against the briefs, so revision-gate.mjs would have errored on 14 pages whose brief MANDATES the line as one of the only facts that may ship today. CLIENT-RULES-SCHEMA.md §2: 'the worst failure class is a gate that false-blocks true copy.' The claim itself is unchanged and still owner-receipted (content-bible §3 DO-CLAIM, live rating widget) and still paired with its count by requiredPairings.RP-5. EVIDENCE, verified by read of briefs/ on 2026-08-12 — brief:line mandating or expressly permitting the line: about:39, branding:90, contact-us:62, cro-services:96, full-suite:85, graphic-design:86, guarantee:36+202, index:53, industries:123, industries-contracting:59, industries-dental:84, industries-hvac:59, industries-law-firm:67, industries-medical-spa:67, las-vegas-seo:80, results:116, seo-services:79, ui-ux-design:89, web-design:91, web-development:104. DELIBERATELY EXCLUDED (no brief mentions the rating at all, so the ration keeps them clean): our-locations, seo-blog, videos, privacy-policy, thank-you, 404. 20 permitted + 6 excluded = the 26-page set."
+  },
+
+  "positioning": {
+    "leadWith": "Your competitors own page one for the phrases that matter. We'll take those positions — and any month we're not delivering what your contract says, we keep working and your billing stops.",
+    "antiIncumbentAngle": "Every agency in this market bills a monthly retainer. Ours is the one where the retainer stops being owed if the agreed metrics are not delivered. The fight is conditional vs unconditional retainer, never retainer vs no-retainer.",
+    "categoryLine": "A marketing agency that guarantees you'll be in the first page of Google on key phrases that matter or you don't pay",
+    "categoryLineStatus": "OWNER-SUPPLIED VERBATIM, rank 2, LOCKED. _inbox/seoguarantee-intake.md lines 19 and 21, where the owner gave the identical sentence for BOTH 'One sentence: what is it?' and 'We are a ___'. P2 may sharpen phrasing but must not replace the substance.",
+    "proofPillars": [
+      "P1 — the contract mechanic itself, stated plainly and identically everywhere. GAP: the string 'or you don't pay' appears in 0 of 49 captured pages of the client's own site, so the strongest asset in the whole spec is currently unpublished.",
+      "P2 — named client results carrying a date range and a stated method, replacing bare percentage tiles. BLOCKED on §G-6.4 permissions.",
+      "P3 — the real Google rating stated with its true count, plus a bounded position on AI search."
+    ],
+    "targetJob": "An owner whose competitors are consistently ranking for the key phrases that matter to their business, and who wants those positions without carrying the risk of paying for an attempt.",
+    "targetJobNote": "This is the OWNER'S framing (rank 2, intake line 23): COMPETITOR-DISPLACEMENT. The earlier agent-derived 'already burned by an agency' ICP is DEMOTED to a secondary observation supported by live testimonials — it may inform copy warmth, never the primary frame.",
+    "sequence": "the condition -> what 'delivering' means, named in your contract -> the pause mechanic in plain terms -> why everything else is included -> who it has worked for, named and dated -> the honest answer to 'isn't a guaranteed ranking a red flag?' -> CALL US",
+    "voiceRegister": [
+      "Plainspoken and specific, not loud. The offer is a billing term. Terms are stated, not shouted.",
+      "Founder-direct, and quirky is permitted. The owner asks to maintain the quirky brand tone via James Sutton's imagery. Warmth and personality live in the voice and photography, not in punctuation or capitals.",
+      "Contractual over promotional. Describe the guarantee in the language of terms: what is agreed, over what period, and what happens to the invoice if it is not delivered.",
+      "Numbers always carry their frame.",
+      "Say the condition and the promise together."
+    ],
+    "mustNotEscapeTheCategory": "D-INCUMBENT-001's own definition ('promises a specific result — typically first-page rankings for a certain number of keywords') CAPTURES this offer. The client must win INSIDE the category, not claim to be outside it. The answer is never 'our promise is safer' — it is 'we don't ask you to believe the promise; we ask you to check whether we delivered before you pay.'"
+  },
+
+  "productModel": {
+    "features": [
+      { "id": "seo", "name": "Search Engine Optimization", "supported": true, "notes": "The billed product is the SEO guarantee itself (D-OFFER-001)." },
+      { "id": "web-design", "name": "Website Design & Development", "supported": true, "notes": "Included in the one agreed fee. NOT separately guaranteed." },
+      { "id": "content-writing", "name": "Content Writing", "supported": true, "notes": "" },
+      { "id": "reputation-management", "name": "Reputation Management", "supported": true, "notes": "" },
+      { "id": "cro", "name": "Conversion Optimization", "supported": true, "notes": "" },
+      { "id": "graphic-design", "name": "Graphic Design", "supported": true, "notes": "" },
+      { "id": "branding", "name": "Branding", "supported": true, "notes": "" },
+      { "id": "consulting", "name": "Consulting", "supported": true, "notes": "" },
+      { "id": "monthly-assessment", "name": "Month-by-month assessment against agreed metrics", "supported": true, "notes": "D-003, owner-ruled 2026-08-11. NOT a single end-of-term test." },
+      { "id": "billing-pause", "name": "Automatic billing pause while off-target", "supported": true, "notes": "D-003. Contract-triggered and automatic, never a negotiated concession. Billing RESUMES when results are back on track." },
+      { "id": "work-continues", "name": "The work continues during a pause", "supported": true, "notes": "D-003. positioning §5: 'The work does not stop, the billing does.' This is the decisive property separating this from the remedy D-INCUMBENT-001 attacks." },
+      { "id": "agency-proposes-phrases", "name": "Agency proposes key phrases, client signs", "supported": true, "notes": "D-003 / §G-2.3, owner-ruled. Phrases are named in the contract." }
+    ],
+    "sourceOfTruth": "D-OFFER-017 (what's-included list, verified against /services/suite/ and the homepage hero) + D-003 (the offer mechanic, owner rank 2)."
+  },
+
+  "capabilityTruth": {
+    "seo": true,
+    "web-design": true,
+    "content-writing": true,
+    "reputation-management": true,
+    "cro": true,
+    "graphic-design": true,
+    "branding": true,
+    "consulting": true,
+    "monthly-assessment": true,
+    "billing-pause": true,
+    "work-continues": true,
+    "agency-proposes-phrases": true,
+    "client-veto-over-phrases": false,
+    "refund": false,
+    "money-back-guarantee": false,
+    "risk-free": false,
+    "terminal-non-payment-remedy": false,
+    "google-endorsement": false,
+    "separate-web-design-guarantee": false,
+    "offices-in-metros": false,
+    "published-pricing": false,
+    "absolute-success-rate": false,
+    "earnings-claim": false,
+    "press-coverage": false,
+    "published-metro-count": false,
+    "operated-pause-precedent": false,
+    "ratified-guarantee-window": false,
+    "_notes": {
+      "published-metro-count": "ADDED 2026-08-12. FALSE means there is no publishable count of metros holding a paying client — not that the client works in no metros. The national footprint is real and publishable in the numberless §2 form; only the COUNT is unevidenced ([OWNER-DATA], readiness blocker 12 — ⚠ WAIVED 2026-08-12 BY OWNER ELECTION, which moved the BLOCKER STATUS ONLY: this flag stays FALSE and the site-wide metro-count ban stays in force PERMANENTLY, because the owner elected to ship WITHOUT the claim, not to license it). Flip to true ONLY when the owner supplies the real list plus the period it covers, and never by deriving it from the 25 published city pages.",
+      "operated-pause-precedent": "ADDED 2026-08-12. FALSE means the client has no VERIFIED precedent of the pause having been operated — it does NOT mean the pause mechanic is unreal. Read it alongside productModel.billing-pause / work-continues, which are TRUE and owner-ruled (D-003) and must PASS the honesty gate. The distinction is the whole of readiness blocker 13: the MECHANIC is capability truth, the EXERCISED-ALREADY claim is not. ⚠ BLOCKER 13 WAIVED 2026-08-12 BY OWNER ELECTION — STATUS ONLY. This flag stays FALSE, the bannedContent operated-pause entry and requiredPairings.RP-7 stay in force PERMANENTLY, and the distinction above is exactly what survives the waiver: D-003 ships in full — and now on a rank-2 owner election rather than a transcription — while the claim that it has already been EXERCISED does not ship at all.",
+      "ratified-guarantee-window": "ADDED 2026-08-12. FALSE means no guarantee window has been ratified as a contract term (readiness blocker 9). The client's live site publishes 6- and 12-month windows and that FACT may be reported with attribution; the window itself is not an agreed term until the signed agreement lands in _inbox/. ⚠ BLOCKER 9 WAIVED 2026-08-12 BY OWNER ELECTION — STATUS ONLY. This flag stays FALSE; the window still ships attributed to the client's own live site and NEVER as a contract term, and stays barred from the marquee contract-terms table, page metas and structured data, with the RP-6 attribution the only permitted form. The signed agreement remains the sole thing that could flip this.",
+      "purpose": "The honesty gate's fast lookup. TRUE means the client genuinely HAS it, so true copy about it must PASS (CLIENT-RULES-SCHEMA.md §2: 'the worst failure class is a gate that false-blocks true copy'). FALSE means the client does NOT have it and any copy asserting it is an overclaim.",
+      "terminal-non-payment-remedy": "FALSE per D-003 — and ⚠ AS OF 2026-08-12 THAT IS AN OWNER RULING RATHER THAN A FAIL-CLOSED DEFAULT: the ONLY remedy is the monthly pause. The owner was shown the competing TERMINAL reading of 'or you don't pay' alongside the MONTHLY pause-and-resume and ELECTED MONTHLY (_inbox/2026-08-12-owner-rulings.md, rank 2), closing readiness blocker 3, so there is no terminal non-payment remedy to record. HISTORY, kept rather than deleted: this note previously read that the question was an OPEN OWNER DECISION (readiness verdict §5 item 10) and that FALSE was merely the fail-closed reading; it is now the RULED reading, and the value did not move. NOTHING RELAXES. 'Or you don't pay' stays PERMITTED as the owner's own canonical phrase (content-bible §5) and requiredPairings.RP-2 still ENFORCES the pause framing on the same page at BLOCK severity — the shorthand may never be left anywhere a reader could take it as terminal, in body copy, metas or structured data.",
+      "press-coverage": "FALSE not because the client has never been covered, but because NO independent coverage was found in search on 2026-08-11 and no article URLs or usage rights exist. If the owner supplies them, flip to true and remove the bannedContent press entry."
+    }
+  },
+
+  "unsubstantiatedClaims": {
+    "_rule": "NEVER USABLE AS FACT. Each entry is recorded as a CLAIM THAT EXISTS ON THE LIVE SITE, not as a fact about the business. §G-6 is simultaneously recorded as owner-committed and unproven (readiness blocker 5): the owner re-confirmed the commitment on 2026-08-11 against the CORRECTED perimeter, but NOTHING has been supplied to _inbox/. A commitment is not evidence. Every item stays UNPROVEN and unusable until the material lands. ⚠ BLOCKER 5 WAIVED 2026-08-12 BY OWNER ELECTION — STATUS ONLY, AND THE PRECEDING SENTENCE IS THE POINT OF THE WAIVER RATHER THAN ITS CASUALTY. The owner elected to ship with the conservative copy this register already specifies, having been told explicitly — and having accepted — that waiving does NOT make these claims usable. It does not. The blocker leaves blocker_count; every entry below keeps its UNSUBSTANTIATED / BANNED / UNVERIFIED status, /results launches with its case-study grid empty, and a card missing a date range, a method or written permission still does not render. Re-openable the moment evidence lands in _inbox/ — which is a copy edit, not a rebuild.",
+    "U1": {
+      "claim": "100% success rate",
+      "perimeter": "THREE verticals — industries-dental.html, industries-law-firm.html, industries-medical-spa.html. The owner's 'I can substantiate them' was given against a 4-item list that UNDERCOUNTED the exposure; the perimeter was corrected 2026-08-11 by re-scanning all 49 captured pages.",
+      "status": "UNSUBSTANTIATED",
+      "clearedBy": "The dataset behind the claim in all three verticals: n, the period, and the campaign count.",
+      "note": "Even WITH data, content-bible §3b bans stating an absolute success rate in any vertical. Readiness blocker 7 records that the content bible's own 'safe' replacement row is itself an absolute claim of the banned shape and is scheduled for rewrite."
+    },
+    "U2": {
+      "claim": "Average Campaign yields 30% - 100% increase in sales",
+      "perimeter": "Live on all three vertical pages.",
+      "status": "UNSUBSTANTIATED",
+      "clearedBy": "The basis for the figure: n campaigns, the date range, the measurement method.",
+      "note": "An EARNINGS-STYLE claim about what a prospect will make. content-bible §3b bans these outright, independent of evidence."
+    },
+    "U3": {
+      "claim": "Press wall — HuffPost / MSNBC / TechCrunch / Yahoo",
+      "perimeter": "4 logos, rendered as bare img elements with no wrapping link. No independent coverage found in search 2026-08-11.",
+      "status": "UNSUBSTANTIATED",
+      "clearedBy": "The four actual article URLs with publication dates, PLUS written usage rights.",
+      "note": "Any logo without a live linked article is REMOVED. selling-asset-manifest PRESS-4 status: NEEDS-OWNER, marked DO NOT SHIP."
+    },
+    "U4": {
+      "claim": "6-month and 12-month guarantee windows",
+      "perimeter": "19 of 26 briefs REFERENCE a 6- or 12-month window; ZERO assert it as a contract term. ⚠ CORRECTED 2026-08-12 — this field previously read 'Ships as CONTRACT TERMS on 19 of 26 briefs.' That was the PRE-SWEEP state. U5 and U6 were both restamped earlier the same day and carry their '⚠ CORRECTED 2026-08-12' marker; U4 sits between them and was SKIPPED, so the register went on publishing a stale perimeter for the one entry the window's enforcement rules are sized against. MEASURED 2026-08-12 by scanning all 26 files in briefs/ for a 6/12-month window token: 19 match, 7 do not. Every one of the 19 attributes the window to the CURRENT LIVE SITE under a ⚠OWNER PLACEHOLDER recording that the real contract window is UNRATIFIED, in the mandated form 'the current site publishes 6- and 12-month windows, and the agreement itself is assessed month by month' — verified line by line at web-design.md:101, ui-ux-design.md:68, contact-us.md:49, guarantee.md:108, index.md:83, las-vegas-seo.md:27 and :71, and our-locations.md:57. The only two window lines carrying no attribution on the line itself assert nothing at all: they are rhetorical contrasts — guarantee.md:22 ('no twelve-month act of faith') and industries-hvac.md:111 ('materially different from a twelve-month one'). NOTHING IN THE BUNDLE SHIPS THE WINDOW AS A TERM TODAY. The copy defect is repaired and enforced; READINESS BLOCKER 9 WAS OPEN AT THIS WRITING because ratification is owner DATA, not a wording problem — readiness-verdict.md §5 item 1, the guarantee contract language verbatim from the signed agreement. Do not read this corrected perimeter as a closure. ⚠ RESTAMPED 2026-08-12: BLOCKER 9 IS WAIVED BY OWNER ELECTION. STATUS ONLY — the window still ships attributed to the client's own live site, NEVER as a contract term, and stays barred from the marquee table, metas and structured data. Ratification is still owner DATA that has not arrived; the waiver is an election to ship without it, not a substitute for it.",
+      "status": "UNSUBSTANTIATED",
+      "clearedBy": "The guarantee contract language verbatim from the signed agreement: the real window(s), how many key phrases, geography, measurement method, who verifies, and how the window reconciles with month-by-month billing.",
+      "note": "ENFORCEMENT CORRECTED 2026-08-12: the ban on ASSERTING the window as a contract term is now site-wide at the bannedContent 6/12-month entry. It was previously enforced only at overclaim.guarantee — ONE slug, against a perimeter this very entry records as 19 of 26 briefs — and that single entry matched the bare token, so it simultaneously under-covered 25 pages and FALSE-BLOCKED the mandated attributed sentence on the one page it did cover. Both halves are fixed: overclaim.guarantee is narrowed to the marquee term-table shape, and the site-wide rule matches the ASSERTION shape only. WHAT STAYS PERMITTED, and it is mandated rather than merely allowed: the attributed report 'the current site publishes 6- and 12-month windows, and the agreement itself is assessed month by month', carrying ⚠OWNER PLACEHOLDER — verified by read 2026-08-12 at guarantee.md:108, index.md:83, las-vegas-seo.md:27 and :71, our-locations.md:57. Reporting what the current site SAYS is permitted and flagged; asserting agreed TERMS is not, and content-bible §3 line 58 additionally bars the window from the marquee contract-terms table, page metas and structured data. Attribution is required by requiredPairings.RP-6. READINESS BLOCKER 9 — ⚠ WAIVED 2026-08-12 BY OWNER ELECTION, STATUS ONLY: this entry's status stays UNSUBSTANTIATED, every permission and prohibition stated in this note is unchanged, and content-bible §3 line 58's bar on the marquee table, metas and structured data stands. The SOLE source is the client's live marketing copy at /our-locations/las-vegas-seo/ — rank 3, which content-bible §4 says is 'authoritative for what the brand currently SAYS, never for whether it is TRUE'. The intake asked directly; the answer was the bare word 'confirm' against a question (one of the 12 ambiguous answers §G-12 undercounts as 4). BLOCKER 11 is the same defect seen from the other side: the marquee contract-terms table holds a monthly pause and a 6/12-month window simultaneously without reconciling what the window is a term OF."
+    },
+    "U5": {
+      "claim": "BANNED — DO NOT PUBLISH IN ANY SURFACE. A COUNT of US metros presented as a count of markets holding a paying client. The banned verbatim is recorded ONCE in the note below as a quarantine record and never again in a value slot.",
+      "perimeter": "ZERO pages. ⚠ CORRECTED 2026-08-12 — this field previously read 'Mandated verbatim by content-bible §2, therefore reaching all 26 pages through the mandated sentence.' That premise is now FALSE in both halves. Verified by read 2026-08-12: content-bible §2's coverage row mandates the NUMBERLESS sentence and states 'Neither 25 nor 26 ships; do not reinstate', and the 26 P6 briefs carry no metro count — 5 briefs (index, our-locations, seo-services, industries-hvac, industries-contracting) carry the numberless sentence verbatim with a ⚠OWNER PLACEHOLDER, about mandates the same geography 'stated with NO metro count', and every surviving mention of '25 US metros' in briefs/ is a BAN NOTICE rather than mandated copy.",
+      "status": "BANNED (was DISPUTED). The claim is not merely unproven — publishing it in any form is prohibited by content-bible §3b line 82 until owner data lands.",
+      "clearedBy": "The owner's real list of US metros with a paying client, plus the period it covers. On arrival the honest form is 'we work with clients in [n] US metros, from our Las Vegas office' with n owner-supplied, carrying its period and source, and NEVER derived from the page count.",
+      "note": "READINESS BLOCKER 12 — ⚠ WAIVED 2026-08-12 BY OWNER ELECTION (was OPEN, OWNER-PENDING). THE WAIVER MOVED THE BLOCKER STATUS AND NOTHING ELSE: this entry's status stays BANNED, the site-wide bannedContent metro-count entry and its zero-slug rationedClaims.metros-25 mirror stay in force PERMANENTLY, capabilityTruth.published-metro-count stays FALSE, and the coverage sentence still ships with NO number. The owner was told that waiving does not make the count usable, and elected to ship without it; re-openable on owner data as a copy edit, not a rebuild. THE HISTORY BELOW IS KEPT EXACTLY AS WRITTEN, and its enforcement half is the half that survives. ⚠ RE-AFFIRMED 2026-08-12 against readiness-verdict.md's blocker_count = 7 (3, 5, 9, 12, 13, 15, D-009 hold), after an adversarial audit found spec-manifest.json publishing blocker_count = 5 with 12 and 13 marked CLOSED. THE MANIFEST WAS THE OUTLIER AND IT LOSES: this file (C3), seo-enrichment.md §4 (C11) and fact-registry.json (C12) all read OPEN, and readiness-verdict.md §5 item 4 defines closure as the owner's real list of US metros holding a paying client PLUS the period it covers. TWO-PART TRUTH, NEVER TO BE COLLAPSED IN EITHER DIRECTION: the COPY DEFECT IS FIXED AND MECHANICALLY ENFORCED — the banned sentences are banned site-wide, mirrored on the revision-gate path, capabilityTruth.published-metro-count is FALSE, and 0 of the 26 briefs assert a metro count — while the BLOCKER IS OPEN because the owner data has not arrived. Enforcement proves nothing ships the claim; it does not supply the fact. A repaired copy defect is not a cleared blocker. ENFORCEMENT, WHICH IS THE POINT OF THIS CORRECTION: BANNED at the bannedContent metro-count entry (site-wide, reaching the write hook, audit.mjs and build.mjs lint) and mirrored as a zero-slug ban at rationedClaims.metros-25 (revision-gate path). ⚠ THIS ENTRY USED TO SAY 'Rationed, not banned, at rationedClaims.metros-25', on the premise that the sentence was mandated by content-bible §2 — and that ration PERMITTED the pattern '25 US metros' on our-locations, las-vegas-seo and about. That was the terminal link of a chain that began at the bannedContent offices rule and ended in a PERMISSION for the exact string the briefs list under 'Must not be said'. Recorded once as a quarantine record, never again as a value: the superseded sentence was 'We work with clients across 25 US metros from our Las Vegas office.' WHY IT IS BANNED: 25 is a verified count of PUBLISHED CITY PAGES (25 '*-seo' city leaves plus the index under /our-locations/, measured 2026-08-11) and is CORRECT as a page count; it was asserted as a count of MARKETS WITH A PAYING CLIENT, which nothing in the corpus verifies. The count is not wrong; the thing it is a count OF is. THE ONLY PERMITTED COVERAGE SENTENCE, numberless, with the briefs as its SSOT: 'We work with clients across US metros, all from our Las Vegas office.' CARVE-OUT: rendering the 25 metro CARDS on our-locations is NOT a breach — the card set is the published-page list our-locations §3 requires; asserting the count as clients is."
+    },
+    "U6": {
+      "claim": "UNVERIFIED — DO NOT ASSERT: that the billing pause has already been operated on a live account. What IS verified is that the SENTENCE EXISTS in the client's own rank-3 marketing copy; that the EVENT happened is not.",
+      "perimeter": "6 pages carry the subject and all 6 are already correctly flagged: guarantee, industries, industries-law-firm, industries-hvac, industries-contracting, industries-dental (cross-reference only). ⚠ CORRECTED 2026-08-12 — this field previously read 'Ships as VERIFIED fact on 6 pages', which is stale. Verified by read of briefs/ on 2026-08-12: every one of the 6 now carries a ⚠OWNER PLACEHOLDER stating that only the sentence's existence is verified — guarantee.md:72/126/296, industries.md:71, industries-law-firm.md:59/141, industries-hvac.md:57, industries-contracting.md:59, industries-dental.md:134. Nothing ships it as fact today.",
+      "status": "UNVERIFIED — BANNED AS AN ASSERTION (was DISPUTED). Reportable only as what the current site says, visibly flagged; never as proof, never as evidence the mechanic has been run rather than merely promised.",
+      "clearedBy": "Owner confirmation the pause was actually operated: which account, which months, and client consent to reference it. If unconfirmable, the sentence is DELETED from all 6 pages.",
+      "note": "READINESS BLOCKER 13 — ⚠ WAIVED 2026-08-12 BY OWNER ELECTION (was OPEN, OWNER-PENDING). THE WAIVER MOVED THE BLOCKER STATUS AND NOTHING ELSE: this entry's status stays UNVERIFIED — BANNED AS AN ASSERTION, the bannedContent operated-pause entry and requiredPairings.RP-7 stay in force PERMANENTLY, capabilityTruth.operated-pause-precedent stays FALSE, and all 6 subject-carrying briefs keep their ⚠OWNER PLACEHOLDER. The mechanic ships in full; the claim that it has already been exercised does not ship at all. Re-openable on owner confirmation as a copy edit, not a rebuild. THE HISTORY BELOW IS KEPT EXACTLY AS WRITTEN, and its enforcement half is the half that survives. ⚠ RE-AFFIRMED 2026-08-12 against readiness-verdict.md's blocker_count = 7, same correction and same reason as U5: spec-manifest.json had published blocker_count = 5 with 12 and 13 marked CLOSED, and it was the outlier. readiness-verdict.md §5 item 2 defines closure as owner confirmation the pause was ACTUALLY OPERATED — which account, which months, and the client's consent to reference it — and if it is unconfirmable the sentence is DELETED from all 6 pages. TWO-PART TRUTH, NEVER TO BE COLLAPSED IN EITHER DIRECTION: the COPY DEFECT IS FIXED AND MECHANICALLY ENFORCED — the assertion shapes are banned site-wide at bannedContent, attribution is required by requiredPairings.RP-7, capabilityTruth.operated-pause-precedent is FALSE, and all 6 subject-carrying briefs already flag the claim ⚠OWNER PLACEHOLDER so nothing ships it as fact — while the BLOCKER IS OPEN because the owner confirmation has not arrived. Enforcement proves nothing asserts the event; it does not evidence the event. A repaired copy defect is not a cleared blocker. Sourced solely to one sentence of marketing copy — 'when things initially went wrong with their campaign due to external factors, we paused their payments until we had their results back on track' — on the very case card the spec elsewhere rules unusable (it calls a law firm a roofing company). positioning-plan.md §5 called it 'Verified precedent', which conflates A STRING EXISTS IN THE SNAPSHOT with THE EVENT HAPPENED. The precedent is strategically the single most valuable sentence available to this brand, which is exactly why it must not ship unverified. ENFORCEMENT ADDED 2026-08-12 — this register entry previously had NO machine mirror anywhere in this file, and overclaim.industries-law-firm's percentage row said the precedent sentence was 'governed separately' while pointing at nothing: a deferral tail that terminated in no rule at all, the same fail-open shape as the metro count. It is now BANNED in its assertion forms at the bannedContent operated-pause entry, with the coverage limit stated plainly there (an unattributed retelling is not mechanically caught, because a pattern that caught it would also false-block the attributed report guarantee.md:126 permits) and attribution required by requiredPairings.RP-7. NOT AT ISSUE AND NOT WEAKENED: the offer mechanic D-003 — monthly retainer, month-by-month assessment, billing pauses and resumes, the work continues — is OWNER-RULED and fully publishable on that ruling alone, needs no precedent, and is recorded as TRUE in productModel and capabilityTruth. Only the claim that it has already been EXERCISED is unverified. ⚠ AND AS OF 2026-08-12 THAT RULING IS ON MUCH FIRMER GROUND: the owner was shown the competing TERMINAL reading and ELECTED the monthly pause-and-resume in a durable rank-2 artifact (_inbox/2026-08-12-owner-rulings.md), closing readiness blocker 3. D-003 no longer rests on an agent's transcription of a chat message. That strengthens the mechanic and changes nothing about this entry — the EXERCISED-ALREADY claim remains unverified and banned as an assertion."
+    },
+    "U7": {
+      "claim": "~17 percentage tiles across 10 named clients",
+      "perimeter": "Advanced Dental Wellness, All American Law Firm, Juvly Aesthetics, Katy Dental Experts, Lifetime Dental Rancho, RAICH Law PLLC, SOUTHWEST Injury Law, Serenity Med Spa, Setiba Medical Spa, The Blez (plus DDM Garage Doors and Liquor License Agents). Corrected 2026-08-11 from an earlier undercount of 3.",
+      "status": "UNSUBSTANTIATED",
+      "clearedBy": "Written permission, date ranges and measurement method per named client.",
+      "note": "The result CLAIMS exist and are catalogued; the EVIDENCE behind them does not. The same permission gate governs the 8 client mockups at 1500x1000 — the strongest assets recovered, and unusable without it."
+    }
+  },
+
+  "glossary": {
+    "first page": {
+      "definition": "Page one of Google organic results for an agreed key phrase in an agreed geography.",
+      "never": ["#1", "top of Google", "number one", "the top spot"]
+    },
+    "key phrases": {
+      "definition": "The owner's own term (intake lines 19 and 23). RETAINED over 'keywords'.",
+      "never": ["keywords"]
+    },
+    "the guarantee": {
+      "definition": "Singular and definite, always. There is exactly ONE.",
+      "never": ["guarantees", "our guarantees", "a web design guarantee"]
+    },
+    "or you don't pay": {
+      "definition": "The owner's phrase and the canonical statement of the condition. PREFERRED over any agent paraphrase. Governed by requiredPairings.RP-2 — it may never stand without the pause framing.",
+      "never": []
+    },
+    "Full Suite": { "definition": "The bundled offer. CAPITALISED.", "never": ["full suite", "the suite package"] },
+    "complementary": { "definition": "Included at no extra charge.", "never": ["complimentary"] }
+  },
+
+  "citationRanks": {
+    "_purpose": "content-bible §4 tie-break order. The rank a statement inherits from its source decides whether it may ship as fact. Mirrored here machine-readably so the build never has to re-derive it, and so fact-registry.json's rank field has a schema.",
+    "1": "Owner-supplied signed material (contracts, rate cards, written permissions, campaign data exports). NONE SUPPLIED as of 2026-08-12.",
+    "2": "Owner's direct written answers — _inbox/seoguarantee-intake.md and the owner's in-session corrections.",
+    "3": "The client's own live site, snapshot-locked — authoritative for what the brand currently SAYS, never for whether it is TRUE.",
+    "4": "First-party competitor captures — market-intel/_snapshots/.",
+    "5": "Independent third parties (Google Search Central, BBB, review platforms) — OUTRANK the client's own site on matters of external fact.",
+    "6": "Agent inference — always labelled agent-derived; NEVER used for a price, a proof number, or a quote.",
+    "standingException": "On any question of whether a CLAIM IS TRUE, rank 5 outranks rank 3.",
+    "processRule": "Added 2026-08-11: rank 2 was available on disk and UNREAD while P1 and P2 were authored on rank-6 inference. Before any phase writes, re-check _inbox/ for new material — it is a live drop-point throughout the run, not a P0.0-only step. This rule exists because ignoring it corrupted a LOCKED file."
+  },
+
+  "bespoke_pages": ["index", "guarantee"],
+  "_bespoke_pages_note": "D-OFFER-021, confirmed by the P4 type assignment in sitemap.yaml: index is T-HOME and guarantee is T-MARQUEE — the only two page types permitted the bespoke hand-crafted ceiling. These two slugs are what cause the marquee sub-gates of gate-consistency / gate-a11y-mock to spawn at all."
+}

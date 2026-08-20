@@ -1,0 +1,2130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guarantee, T-MARQUEE concept C, "The Ledger Column"</title>
+
+<!-- ============================================================================
+     T-MARQUEE TEMPLATE TOURNAMENT : CONCEPT C, "THE LEDGER COLUMN"
+     seoguarantee (First Page SEO Guarantee). Page: guarantee. Type: T-MARQUEE,
+     bespoke. 15 sections, laying out the FINAL approved copy in
+     _copy/guarantee.md. No copy is rewritten here; this file is the LAYOUT.
+
+     ------------------------------------------------------------------------
+     THE THESIS
+     ------------------------------------------------------------------------
+     The offer is billed month by month, so the page is composed around a
+     PERSISTENT STRUCTURAL COLUMN that carries the mechanic while the argument
+     runs beside it. A narrower LEFT rail holds the running term (what is
+     agreed, how it is measured, when billing pauses); a wider RIGHT track
+     carries the argument, the proof and the objections. Each rail item is the
+     contract term that GOVERNS the band it sits beside, so the reader can
+     always see the term that rules the paragraph they are reading.
+
+     Asymmetry is the signature. The rail is 0.45fr against the track's 1.55fr,
+     roughly 226px against 781px inside the 1120px container, so the page never
+     reads as a two column split: it reads as a margin and a body.
+
+     THE LEDGER STEPS ASIDE FOUR TIMES, and only four, each for a reason:
+       s2  the terms table itself. The rail's CONTENTS are defined here, so the
+           table takes the full measure. The rail is extracted from this band
+           and runs beside everything after it.
+       s8  the gold inversion band. The wedge is about what the terms REPLACE,
+           so no single term governs it.
+       s13 the routes. A rail beside a rail is noise.
+       s15 the signature. The ledger closes with the person who signs it.
+
+     ------------------------------------------------------------------------
+     MOBILE COLLAPSE, WHICH IS PART OF THE CONCEPT AND NOT AN AFTERTHOUGHT
+     ------------------------------------------------------------------------
+     AT 375 EACH RAIL ITEM MOVES TO SIT DIRECTLY ABOVE THE SECTION IT GOVERNS.
+     That is guaranteed STRUCTURALLY rather than by a media query trick: every
+     rail item already lives INSIDE its own section's .row--aside as the FIRST
+     .col, so when the locked sheet collapses .row--aside to one column at 899
+     and below (seoguarantee-structural.css tier 2), the term lands immediately
+     above the argument it rules. There is never a detached list of orphan
+     fragments, because there is never a single page level rail to detach.
+
+     The item also CHANGES ROLE as it lands: at 900 and up it is a marginal
+     entry with a vertical spine (border-left plus a gold entry mark); at 899
+     and below the spine rotates to a horizontal top rule and the item reads as
+     the caption bar of the band beneath it. Same DOM, same words, correct
+     posture at both widths. The two track rows carry NO .col--copy or
+     .col--media role class, so the locked sheet's display:contents stack law
+     (authored for text plus media splits) never fires on the rail and DOM
+     order alone governs the collapse.
+
+     ------------------------------------------------------------------------
+     DESIGN SYSTEM PROVENANCE (derived from .claude/design-system-unified,
+     never invented). Structure library menus, globals libraries, blueprint.
+     ------------------------------------------------------------------------
+     menu  SECTION-COMPONENTS.md #36 "Sticky-sidebar topic nav" : THE GOVERNING
+           PICK. A narrow topic rail beside a wider scrolling body, stacking to
+           one column with the rail ABOVE the content at 900 and below. Adapted
+           from a docs nav to a CONTRACT rail: the rail carries the governing
+           term rather than a link, because on a terms page the thing worth
+           pinning beside the argument is the clause, not a jump target.
+     menu  SECTION-COMPONENTS.md #11 "Service pillars 2-col with image" : the
+           stretched media plus card grid shell used inside the right track at
+           s5 and s7, obeying the media plus cards LAW (2x2 card grid, media
+           stretches to the grid height, never a capped media beside a 1xN
+           stack).
+     menu  SECTION-COMPONENTS.md #14b "COMPACT FEATURE-ROW LAW" (a) media plus
+           compare split : s7 pairs its capped media BESIDE its matrix, never a
+           full width media with the content stacked below it.
+     menu  SECTION-COMPONENTS.md #15 "Comparison table (us vs them)" : s9, the
+           four dimension teardown against the MODEL, not a named firm.
+     menu  HERO-COMPOSITIONS.md #10 "Centered headline only (text-driven, no
+           hero photo)" : the no photo ruling, re-set on the asymmetric axis.
+           There is no legal hero image on this build (imagery-system 2d bars a
+           generated hero on all 26 pages, the one true hero resolution file is
+           already spent in the chrome mega panel, and the founder files cannot
+           carry a hero), so the hero is TYPE LED and the ledger head is its
+           visual weight. No placeholder art stands in for the unratified D-007
+           motion poster.
+     menu  LIVE-DEMO-SECTIONS.md #2 "Live-status header bar" crowning
+           LIVE-DEMO-SECTIONS.md #1 "Auto-running sequenced demo track" : s3.
+           Motion, not click controls, per that catalog's LAW.
+     menu  CARD-VARIATIONS.md #3 "Minimal 3-up icon-top feature" : s4 pillars.
+     menu  CARD-VARIATIONS.md #5 "Stat tile 4-up (light/dark alternating)" :
+           the ranked evidence tiles at s12.
+     menu  FAQ-ACCORDION.md #1 "Classic expand-rows with + indicator" : s14,
+           built on native details and summary so it is keyboard operable with
+           zero script.
+     menu  PRICING-SECTIONS.md #5 "Plain-deal honesty stance" : s8 is the
+           page's ONE figure and ground inversion band, empty handed by design.
+     menu  PROOF-SECTIONS.md #4 "Case-study - metric-led card" : inverted at
+           s12. The catalog leads with the number; this page cannot, so the
+           same structure is ranked weakest evidence FIRST.
+     menu  TRUST-STATS-SECTIONS.md #4 "Stats - big-number band" : the rating
+           figure at s12 keeps its large numeral and its count.
+     menu  CTA-PATTERNS.md #4 "Phone-pill CTA (number as button)" : the one
+           primary verb, in the hero and in the signature.
+     menu  DIVIDER-PATTERNS.md #8 "Shadow drop band" : already carried by the
+           locked structural sheet on the six light to light seams.
+     lib   _MODERN-WOW-SPEC : depth, figure and ground, restrained motion.
+     lib   _COMPOSITION-LAWS : R8 orientation law, L1 stack law.
+     lib   _RESPONSIVE-PATTERN-LIBRARY : the reflow ladder and the media fits
+           track anchor.
+     lib   _PAGE-COMPOSITION-LIBRARY : the T-MARQUEE inner page spine.
+     blueprint  composition-agency-creative : the sector spine. Section 4 of
+           that blueprint is what licences the type led hero here, "Type-led
+           hero, not stock-photo-behind-a-box", and its "one dark anchor plus a
+           single closing CTA ask" is why the body authors NO closing band.
+
+     ------------------------------------------------------------------------
+     FORCED DOM-STRUCTURE GRAMMAR (owner locked, G-DOM)
+     ------------------------------------------------------------------------
+     Every band in main is section, then div.container, then div.row, then
+     div.col, then the OBJECT. Skin classes bw-* sit on the OBJECT only. The
+     structure layers carry layout only. The two track layout is expressed with
+     .row--aside plus .col, and NO new layout primitive is invented: the only
+     addition is a MIRROR of the shipped .row--aside proportions under the
+     concept's data-ledger attribute, exactly the mirror the locked sheet
+     already ships for .row--split as .row--split-rev. The tracks are the
+     sheet's own 1.55fr and 0.45fr values, swapped, so the narrow track leads.
+     The rail's full height stretch is declared ONCE on that same two track row
+     geometry rather than repeated as a modifier on eleven separate cells, so
+     the concept adds exactly one layout rule in total.
+
+     The CHROME below is the LOCKED carrier _design/_chrome-block.html, reused
+     verbatim as the frame with only the asset paths re-depthed for this
+     directory. The pre-footer CTA is the chrome's, and it is the page's ONE
+     closing CTA band: the body authors no second one.
+
+     ------------------------------------------------------------------------
+     CLAIM PERIMETER HELD IN THE LAYOUT, not only in the words
+     ------------------------------------------------------------------------
+     Every OWNER PLACEHOLDER in the approved copy ships as a VISIBLE flagged
+     gap object, never softened and never filled. No text is set over any
+     image, generated or real (imagery-system 3a, half two). No figure appears
+     on either side of s8 or s9. Zero exclamation marks, zero em and en dashes
+     (including inside a CSS escape), zero raw hex: every colour resolves
+     through a --ds-* token, and the file carries no inline style attribute.
+     ============================================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="seoguarantee-tokens.css">
+<link rel="stylesheet" href="seoguarantee-structural.css">
+<link rel="stylesheet" href="seoguarantee-chrome.css">
+
+<style>
+/* ============================================================================
+   CONCEPT C SKIN. Objects only. Nothing here paints a .container, a .row or a
+   .col, and nothing here declares a colour outside a --ds-* token.
+   ============================================================================ */
+
+/* --- 1. THE TWO TRACK GEOMETRY ---------------------------------------------
+   The ONE layout declaration in this file, and it is a MIRROR of a shipped
+   primitive rather than a new one. seoguarantee-structural.css line 185 ships
+   .row--aside as 1.55fr then 0.45fr, wide track first. This concept needs the
+   narrow track FIRST, which is the same relationship the sheet already ships
+   between .row--split and .row--split-rev. Values are the sheet's, swapped.
+   The attribute sits on the SECTION, so no structure class is touched.
+
+   align-items:stretch belongs HERE, on the row, not on eleven separate cells.
+   The rail's spine has to run the full height of its band for consecutive
+   bands to read as ONE continuous column, and that is a property of the two
+   track GEOMETRY, so it is declared once with the tracks it belongs to. ----- */
+[data-ledger] .row--aside {
+  grid-template-columns: minmax(0, .45fr) minmax(0, 1.55fr);
+  align-items: stretch;
+}
+
+/* --- 2. THE MATERIAL LAYER, painted rather than added to the DOM -----------
+   The locked sheet's .bw-atmos / .bw-mesh / .bw-grain are DOM spans, and a
+   span is not a legal direct child of a section under the forced grammar
+   (R1 wants a .container there). So the same three token materials arrive as
+   a pseudo element on the section itself. ::after is used because the sheet
+   already owns ::before for the light to light seam ramp. ------------------- */
+.section[data-material]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: var(--ds-z-base);
+  pointer-events: none;
+  opacity: var(--ds-opacity-faint);
+}
+.section[data-material="wash"]::after { background-image: var(--ds-glow-wash); }
+.section[data-material="mesh"]::after { background-image: var(--ds-grid); background-size: var(--ds-grid-size); }
+.section[data-material="grain"]::after { background-image: var(--ds-grain); }
+
+/* --- 3. THE RAIL ITEM. The concept's signature object. ---------------------
+   A marginal entry with a vertical spine. The row above stretches its cells,
+   so height:100% here runs the spine the FULL height of the band and
+   consecutive bands read as one continuous column rather than as a row of
+   disconnected cards. -------------------------------------------------------*/
+.bw-term {
+  position: relative;
+  height: 100%;
+  padding: var(--ds-space-xs) 0 var(--ds-space-md) var(--ds-space-md);
+  border-left: 2px solid var(--ds-line);
+}
+/* the gold entry mark. This is the tie between the term and the band it rules,
+   and it is the one place gold does structural work in the rail. */
+.bw-term::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 0;
+  width: 2px;
+  height: 64px;
+  background-color: var(--ds-accent-deep);
+}
+.bw-term__k {
+  font-family: var(--ds-font-body);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ds-accent-ink);
+  margin: 0;
+}
+.bw-term__v {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  line-height: 1.25;
+  color: var(--ds-ink-heading);
+  margin: var(--ds-space-xs) 0 0;
+}
+.bw-term__d {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--ds-ink-soft);
+  margin: var(--ds-space-sm) 0 0;
+}
+.bw-term__x {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: var(--ds-ink-soft);
+  margin: var(--ds-space-md) 0 0;
+  padding-top: var(--ds-space-sm);
+  border-top: 1px solid var(--ds-hairline);
+}
+/* the hero variant: the ledger opens with its own index of the five terms */
+.bw-term__ix {
+  list-style: none;
+  counter-reset: bwterm;
+  margin: var(--ds-space-md) 0 0;
+  padding: 0;
+}
+.bw-term__ix li {
+  counter-increment: bwterm;
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr);
+  gap: var(--ds-space-sm);
+  align-items: baseline;
+  padding-block: var(--ds-space-xs);
+  border-top: 1px solid var(--ds-hairline);
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: var(--ds-ink);
+}
+.bw-term__ix li::before {
+  content: counter(bwterm, decimal-leading-zero);
+  font-family: var(--ds-font-display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  color: var(--ds-accent-ink);
+}
+
+/* --- 4. THE HERO STATEMENT -------------------------------------------------
+   The H1 carries the ranking promise and the payment condition in ONE
+   sentence, which is the brief's highest risk requirement. At the locked h1
+   scale a sentence that long would set at four oversized lines and lose its
+   grammar, so the hero statement takes a display size one step down and a
+   tighter leading. It is still the largest type on the page. ---------------- */
+.bw-statement {
+  font-family: var(--ds-font-display);
+  font-size: clamp(28px, 3.3vw, 44px);
+  font-weight: 300;
+  letter-spacing: -.022em;
+  line-height: 1.12;
+  color: var(--ds-ink-heading);
+  margin: var(--ds-space-md) 0 0;
+  text-wrap: balance;
+}
+.bw-proofline {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-space-sm);
+  margin-top: var(--ds-space-lg);
+  padding: var(--ds-space-sm) var(--ds-space-md);
+  border: 1px solid var(--ds-hairline);
+  border-left: 3px solid var(--ds-accent-deep);
+  border-radius: var(--ds-r-control);
+  background-color: var(--ds-bg-surface-2);
+  font-size: 14px;
+  color: var(--ds-ink);
+}
+
+/* --- 5. THE OWNER PLACEHOLDER FLAG ----------------------------------------
+   A contract terms page that invents its own terms is the worst available
+   outcome on this build, so every unruled term ships as a VISIBLE gap. The
+   object is deliberately unfinished looking: a dashed edge, an accent label,
+   no card shadow. It must never be mistaken for a filled row. ------------- */
+.bw-gap {
+  padding: var(--ds-space-md);
+  border: 1px dashed var(--ds-accent-deep);
+  border-radius: var(--ds-r-surface);
+  background-color: var(--ds-accent-soft);
+}
+.bw-gap + .bw-gap { margin-top: var(--ds-space-sm); }
+/* the two inset variants, so no gap object ever needs an inline style */
+.bw-gap--inset    { margin-top: var(--ds-space-sm); }
+.bw-gap--inset-md { margin-top: var(--ds-space-md); }
+.bw-gap__k {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ds-accent-ink);
+  margin: 0 0 var(--ds-space-xs);
+}
+.bw-gap__t {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.3;
+  color: var(--ds-ink-heading);
+  margin: 0;
+}
+.bw-gap__d { font-size: 14px; line-height: 1.55; color: var(--ds-ink); margin: var(--ds-space-xs) 0 0; }
+.bw-gaps { display: grid; gap: var(--ds-space-sm); margin-top: var(--ds-space-lg); }
+
+/* --- 6. s3 THE RUNNING MONTH RAIL -----------------------------------------
+   LIVE-DEMO-SECTIONS.md #2 status ribbon crowning #1 auto-running track.
+   Motion only, no controls: nothing here is a button, so the beat can never
+   render broken on load and adds no interactive burden. Everything is
+   opacity:1 at load and the animations move transform or background-position
+   only. The reduced motion block at the foot of this sheet freezes both. --- */
+.bw-months {
+  padding: var(--ds-space-lg);
+  border: 1px solid var(--ds-hairline);
+  border-radius: var(--ds-r-surface);
+  background-color: var(--ds-bg-surface);
+  box-shadow: var(--ds-shadow-card), var(--ds-inset-hi);
+}
+.bw-months__bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--ds-space-sm) var(--ds-space-md);
+  padding-bottom: var(--ds-space-md);
+  border-bottom: 1px solid var(--ds-hairline);
+}
+.bw-months__live {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-space-xs);
+  padding: 5px var(--ds-space-sm);
+  border-radius: var(--ds-r-pill);
+  background-color: var(--ds-primary-soft);
+  color: var(--ds-primary);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.surface-dark .bw-months__live { background-color: var(--ds-accent-soft); color: var(--ds-accent-ink); }
+.bw-months__pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--ds-r-pill);
+  background-color: var(--ds-accent-deep);
+  animation: bw-lc-pulse 2.6s var(--ds-ease) infinite;
+}
+.bw-months__cap { font-size: 12.5px; line-height: 1.5; color: var(--ds-ink-soft); margin: 0; }
+.bw-months__track {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: var(--ds-space-md);
+  margin-top: var(--ds-space-lg);
+  padding-top: var(--ds-space-xl);
+}
+/* the rail line the stage nodes thread */
+.bw-months__track::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 21px;
+  height: 2px;
+  background-color: var(--ds-line);
+}
+/* the accent highlight that travels the rail. background-position only. */
+.bw-months__track::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 21px;
+  height: 2px;
+  background-image: linear-gradient(90deg, transparent 0%, var(--ds-accent-deep) 22%, transparent 44%);
+  background-size: 260% 100%;
+  background-repeat: no-repeat;
+  animation: bw-lc-sweep 7.2s linear infinite;
+}
+.bw-months__stage { position: relative; }
+.bw-months__n {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--ds-r-pill);
+  background-color: var(--ds-bg-surface);
+  border: 2px solid var(--ds-accent-deep);
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--ds-accent-ink);
+}
+.bw-months__t {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ds-ink-heading);
+  margin: 0;
+}
+.bw-months__d { font-size: 14px; line-height: 1.55; color: var(--ds-ink-soft); margin: var(--ds-space-xs) 0 0; }
+.bw-months__inv {
+  display: inline-block;
+  margin-top: var(--ds-space-sm);
+  padding: 4px var(--ds-space-sm);
+  border-radius: var(--ds-r-control);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  background-color: var(--ds-primary-soft);
+  color: var(--ds-primary);
+}
+.bw-months__inv--paused { background-color: var(--ds-accent-soft); color: var(--ds-accent-ink); }
+.bw-months__frame {
+  margin: var(--ds-space-md) 0 0;
+  padding: var(--ds-space-md);
+  border-radius: var(--ds-r-control);
+  background-color: var(--ds-bg-surface-2);
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--ds-ink);
+}
+
+@keyframes bw-lc-sweep {
+  from { background-position: -60% 0; }
+  to   { background-position: 160% 0; }
+}
+@keyframes bw-lc-pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.55); }
+}
+
+/* --- 7. s4 THE PILLAR TRIAD (CARD-VARIATIONS.md #3, no card chrome) ------- */
+.bw-triad { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--ds-space-lg); }
+
+/* --- 8. s5 and s7 MEDIA PLUS CARDS ----------------------------------------
+   SECTION-COMPONENTS.md #11 media plus cards LAW. The media STRETCHES to the
+   card grid's height so the two columns end level, and the cards are a 2 col
+   GRID, never a 1xN stack. The media frame carries width:100% AND min-width:0,
+   the media fits track anchor (_RESPONSIVE-PATTERN-LIBRARY section 6,
+   G-MEDIA-TRACK), plus a max-height cap so the media can never dwarf the copy
+   column even on a very tall grid. ----------------------------------------- */
+.bw-mediacards {
+  display: grid;
+  grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr);
+  gap: var(--ds-space-md);
+  align-items: stretch;
+  margin-top: var(--ds-space-lg);
+}
+.bw-mediacards__media {
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  max-height: 520px;
+  align-self: stretch;
+  margin-inline: 0;
+}
+.bw-mediacards__media .bw-media__plate { height: 100%; }
+.bw-mediacards__media .bw-media__img { height: 100%; object-fit: cover; }
+.bw-mediacards__cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--ds-space-md); }
+.bw-mediacards__rows { display: grid; gap: var(--ds-space-md); align-content: start; }
+
+/* --- 9. s6 THE DEFINITION, with a square texture ACCENT ------------------- */
+.bw-define { display: grid; grid-template-columns: minmax(0, 1fr) 168px; gap: var(--ds-space-lg); align-items: start; }
+.bw-accent-sq { width: 168px; max-width: 100%; margin: 0; padding: var(--ds-space-2xs); }
+.bw-accent-sq .bw-media__plate { aspect-ratio: 1 / 1; }
+.bw-accent-sq .bw-media__img { height: 100%; object-fit: cover; }
+
+/* --- 10. s8 THE WEDGE. The page's ONE inversion band. -------------------- */
+.bw-wedge { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--ds-space-lg); }
+.bw-wedge__side { padding-top: var(--ds-space-md); border-top: 3px solid var(--ds-ink); }
+.bw-wedge__k {
+  font-family: var(--ds-font-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ds-ink-heading);
+  margin: 0 0 var(--ds-space-sm);
+}
+
+/* --- 11. s9 THE TEARDOWN. SECTION-COMPONENTS.md #15, structural, no
+   figures on either side, and no named firm in a losing column. ----------- */
+.bw-cmp { display: grid; gap: 0; margin-top: var(--ds-space-lg); }
+.bw-cmp__hd, .bw-cmp__row {
+  display: grid;
+  grid-template-columns: minmax(0, .74fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--ds-space-md);
+}
+.bw-cmp__hd { padding-bottom: var(--ds-space-sm); border-bottom: 2px solid var(--ds-accent-deep); }
+.bw-cmp__row { padding-block: var(--ds-space-md); border-bottom: 1px solid var(--ds-line); }
+.bw-cmp__h {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ds-accent-ink);
+  margin: 0;
+}
+.bw-cmp__k {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--ds-ink-heading);
+  margin: 0;
+}
+.bw-cmp__a { font-size: 14.5px; line-height: 1.55; color: var(--ds-ink-soft); margin: 0; }
+.bw-cmp__b {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--ds-ink);
+  margin: 0;
+  padding-left: var(--ds-space-md);
+  border-left: 2px solid var(--ds-accent-deep);
+}
+
+/* --- 12. s10 THE SEVEN CHARGES. Two columns so an XL band stays compact. - */
+.bw-charges { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--ds-space-lg); margin-top: var(--ds-space-lg); }
+.bw-charge { padding-top: var(--ds-space-md); border-top: 1px solid var(--ds-line); }
+.bw-charge__n {
+  font-family: var(--ds-font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  color: var(--ds-accent-ink);
+  margin: 0 0 var(--ds-space-xs);
+}
+.bw-charge__t {
+  font-family: var(--ds-font-display);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.24;
+  letter-spacing: -.01em;
+  color: var(--ds-ink-heading);
+  margin: 0;
+}
+.bw-charge__d { font-size: 14.5px; line-height: 1.6; color: var(--ds-ink); margin: var(--ds-space-sm) 0 0; }
+.bw-charge--wide { grid-column: 1 / -1; }
+
+/* --- 13. s11 THE BOUNDARY PANELS ---------------------------------------- */
+.bw-bounds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--ds-space-md); margin-top: var(--ds-space-lg); }
+.bw-bound--wide { grid-column: 1 / -1; }
+
+/* --- 14. s12 THE EVIDENCE RANK, weakest FIRST so the ordering is visible.
+   PROOF-SECTIONS.md #4 structure, inverted. TRUST-STATS-SECTIONS.md #4 keeps
+   the rating numeral large and always beside its count. ------------------- */
+.bw-rank { display: grid; gap: var(--ds-space-md); margin-top: var(--ds-space-lg); }
+.bw-rank__i { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: var(--ds-space-md); align-items: start; }
+.bw-rank__n {
+  font-family: var(--ds-font-display);
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1;
+  color: var(--ds-ink-heading);
+  opacity: var(--ds-opacity-muted);
+  margin: 0;
+  padding-top: 2px;
+}
+.bw-rating { display: flex; align-items: center; gap: var(--ds-space-md); flex-wrap: wrap; }
+.bw-rating__n {
+  font-family: var(--ds-font-display);
+  font-size: clamp(40px, 4vw, 56px);
+  font-weight: 300;
+  line-height: .95;
+  letter-spacing: -.03em;
+  color: var(--ds-ink-heading);
+  margin: 0;
+}
+.bw-rating__u { font-size: 13.5px; line-height: 1.5; color: var(--ds-ink-soft); margin: 0; }
+/* the separated body line under the rating lockup, so no inline style is used */
+.bw-card__body--sep { margin-top: var(--ds-space-md); }
+
+/* --- 15. s13 THE ROUTES. Full measure, three across. -------------------- */
+.bw-routes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--ds-space-md); }
+.bw-route { padding-top: var(--ds-space-md); border-top: 2px solid var(--ds-line); }
+.bw-route:hover { border-top-color: var(--ds-accent-deep); }
+.bw-route__t {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--ds-ink-heading);
+  margin: 0;
+}
+.bw-route__d { font-size: 13.5px; line-height: 1.55; color: var(--ds-ink-soft); margin: var(--ds-space-xs) 0 0; }
+.bw-route__l { display: flex; flex-wrap: wrap; gap: var(--ds-space-xs) var(--ds-space-sm); margin: var(--ds-space-sm) 0 0; padding: 0; list-style: none; font-size: 13.5px; }
+
+/* --- 16. s14 THE FAQ. Native details and summary: keyboard operable with
+   zero script, and it cannot render broken on load. FAQ-ACCORDION.md #1. -- */
+.bw-faq { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 var(--ds-space-lg); margin-top: var(--ds-space-lg); }
+.bw-q { border-top: 1px solid var(--ds-line); }
+.bw-q > summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 20px;
+  gap: var(--ds-space-md);
+  align-items: start;
+  padding-block: var(--ds-space-md);
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 15.5px;
+  line-height: 1.3;
+  color: var(--ds-ink-heading);
+}
+.bw-q > summary::-webkit-details-marker { display: none; }
+.bw-q > summary::after {
+  content: "+";
+  font-family: var(--ds-font-display);
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1;
+  color: var(--ds-accent-ink);
+  justify-self: end;
+}
+/* the open indicator is a plain hyphen-minus. No em or en dash ships anywhere
+   in this file: not in the markup, not in a CSS comment, not in a CSS escape. */
+.bw-q[open] > summary::after { content: "-"; }
+.bw-q > summary:focus-visible { outline: 2px solid var(--ds-accent-deep); outline-offset: 3px; }
+.bw-q__a { font-size: 14.5px; line-height: 1.62; color: var(--ds-ink); margin: 0 0 var(--ds-space-md); }
+
+/* --- 17. s15 THE SIGNATURE. The ledger closes with the person who signs it.
+   The founder photograph is a REAL asset at 543 by 614, so it is framed in
+   the locked well at its native scale and never stretched, and NO text is set
+   over it. This band is NOT a second closing CTA: it is a founder statement
+   that carries the same single primary verb. The page's one closing band is
+   the chrome's. ---------------------------------------------------------- */
+.bw-sign__q {
+  font-family: var(--ds-font-display);
+  font-size: clamp(20px, 2.1vw, 28px);
+  font-weight: 400;
+  line-height: 1.26;
+  letter-spacing: -.015em;
+  color: var(--ds-ink-heading);
+  margin: var(--ds-space-md) 0 0;
+}
+.bw-sign__by { font-size: 13.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--ds-ink-soft); margin: var(--ds-space-md) 0 0; }
+.bw-portrait { max-width: 340px; margin-inline: 0; }
+.bw-portrait .bw-media__plate { aspect-ratio: 543 / 614; }
+.bw-portrait .bw-media__img { height: 100%; object-fit: cover; }
+
+/* --- 18. SHARED SMALL PARTS ---------------------------------------------- */
+.bw-kicker {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ds-accent-ink);
+  margin: 0 0 var(--ds-space-xs);
+}
+.bw-quote--close { margin-top: var(--ds-space-xl); }
+
+/* ============================================================================
+   THE REFLOW. Tier boundaries are the locked sheet's own: 1023, 899, 767, 380.
+   The rail's collapse at 899 is the concept's, and it is stated in the header
+   comment: the item lands directly above the band it governs and rotates its
+   spine from a left margin rule to a top rule.
+   ============================================================================ */
+@media (max-width: 1023px) {
+  .bw-triad { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--ds-space-md); }
+  .bw-mediacards { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); }
+  .bw-cmp__hd, .bw-cmp__row { grid-template-columns: minmax(0, .8fr) minmax(0, 1fr) minmax(0, 1fr); }
+}
+
+@media (max-width: 899px) {
+  /* THE RAIL LANDS. Same DOM, new posture. */
+  .bw-term {
+    height: auto;
+    padding: var(--ds-space-md) 0 0;
+    border-left: 0;
+    border-top: 2px solid var(--ds-line);
+  }
+  .bw-term::before { left: 0; top: -2px; width: 72px; height: 2px; }
+  .bw-term__x { margin-top: var(--ds-space-sm); }
+
+  .bw-define { grid-template-columns: minmax(0, 1fr); }
+  .bw-accent-sq { width: 168px; }
+  .bw-wedge { grid-template-columns: minmax(0, 1fr); gap: var(--ds-space-md); }
+  .bw-charges { grid-template-columns: minmax(0, 1fr); gap: var(--ds-space-md); }
+  .bw-charge--wide { grid-column: auto; }
+  .bw-faq { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .bw-routes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .bw-months__track { grid-auto-flow: row; grid-auto-columns: auto; padding-top: 0; gap: var(--ds-space-lg); }
+  .bw-months__track::before, .bw-months__track::after { display: none; }
+  .bw-months__n { position: static; margin-bottom: var(--ds-space-sm); }
+}
+
+@media (max-width: 767px) {
+  .bw-triad { grid-template-columns: minmax(0, 1fr); }
+  .bw-mediacards { grid-template-columns: minmax(0, 1fr); }
+  /* stacked, the media re-acquires a sane cap so it can never sprawl */
+  .bw-mediacards__media { max-height: 420px; }
+  .bw-mediacards__media .bw-media__plate { aspect-ratio: 3 / 4; }
+  .bw-mediacards__cards { grid-template-columns: minmax(0, 1fr); }
+  .bw-cmp__hd { display: none; }
+  .bw-cmp__row { grid-template-columns: minmax(0, 1fr); gap: var(--ds-space-sm); }
+  .bw-bounds { grid-template-columns: minmax(0, 1fr); }
+  .bw-routes { grid-template-columns: minmax(0, 1fr); }
+  .bw-months { padding: var(--ds-space-md); }
+}
+
+@media (max-width: 380px) {
+  .bw-statement { font-size: 27px; }
+  .bw-accent-sq { width: 132px; }
+  .bw-rank__i { grid-template-columns: 40px minmax(0, 1fr); gap: var(--ds-space-sm); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bw-months__track::after { animation: none; background-position: 34% 0; }
+  .bw-months__pulse { animation: none; transform: none; }
+  .bw-route { transition: none; }
+}
+</style>
+</head>
+
+<body>
+<!-- ============================================================================
+     LOCKED CHROME CARRIER, reused VERBATIM from _design/_chrome-block.html.
+     The only edit is depth: the carrier's ../assets/ paths become
+     ../../../assets/ so they resolve from this tournament directory. Nav items
+     and drawer items are byte identical to the carrier, in the same order.
+     ============================================================================ -->
+<a class="ch-skip" href="#main">Skip to content</a>
+
+<header class="ch-hdr" id="chHdr" data-scrolled="false">
+  <div class="container">
+    <div class="ch-row1">
+      <div class="ch-util">
+        <button class="ch-burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <span class="ch-util__i">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          Las Vegas, Nevada
+        </span>
+        <span class="ch-util__i">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5.2l3.4 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          Mon to Fri
+        </span>
+        <a class="ch-util__i ch-util__i--mail" href="mailto:support@seoguarantee.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m3 7 9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          support@seoguarantee.com
+        </a>
+      </div>
+
+      <a class="ch-logo" href="#main" aria-label="First Page SEO Guarantee, home">
+        <img src="../../../../../assets/seoguarantee.com_wp-content_themes_theme-child_images_seoguarantee-logo-w.png"
+             width="250" height="122" alt="First Page SEO Guarantee">
+      </a>
+
+      <div class="ch-cta-slot">
+        <a class="ch-phone" href="tel:+17024207272">
+          <svg class="ch-phone__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          (702) 420-7272
+        </a>
+      </div>
+    </div>
+
+    <div class="ch-row2">
+      <nav class="ch-nav" aria-label="Primary">
+        <ul class="ch-nav__list">
+          <li class="ch-nav__item"><a class="ch-nav__link ch-nav__link--offer" href="#main"><span class="ch-dot" aria-hidden="true"></span>The Guarantee</a></li>
+
+          <li class="ch-nav__item" id="megaItem" data-open="false">
+            <button class="ch-nav__link" id="megaBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="megaPanel">
+              Services
+              <svg class="ch-caret" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3.2 5 7l4-3.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+
+            <div class="ch-mega" id="megaPanel" role="region" aria-label="Services">
+              <div class="ch-mega__panel">
+                <div class="ch-mega__hd">
+                  <p class="ch-mega__eyebrow">Contents, one agreed fee</p>
+                  <a class="ch-mega__all" href="#main">See what is included</a>
+                </div>
+
+                <div class="ch-svcs">
+                  <a class="ch-svc" href="#main"><span class="ch-svc__n">01</span><span><span class="ch-svc__t">SEO Services</span><span class="ch-svc__d">The ranking work the guarantee is written against.</span></span></a>
+                  <a class="ch-svc" href="#main"><span class="ch-svc__n">02</span><span><span class="ch-svc__t">Web Design</span><span class="ch-svc__d">The site the rankings land on.</span></span></a>
+                  <a class="ch-svc" href="#main"><span class="ch-svc__n">03</span><span><span class="ch-svc__t">UI/UX Design</span><span class="ch-svc__d">How the page behaves once they arrive.</span></span></a>
+                  <a class="ch-svc" href="#main"><span class="ch-svc__n">04</span><span><span class="ch-svc__t">Web Development</span><span class="ch-svc__d">Build, speed and crawlability.</span></span></a>
+                  <a class="ch-svc" href="#main"><span class="ch-svc__n">05</span><span><span class="ch-svc__t">CRO Services</span><span class="ch-svc__d">Turning arrivals into calls.</span></span></a>
+                  <a class="ch-svc" href="#main"><span class="ch-svc__n">06</span><span><span class="ch-svc__t">Graphic Design</span><span class="ch-svc__d">The assets the campaigns run on.</span></span></a>
+                  <a class="ch-svc" href="#main"><span class="ch-svc__n">07</span><span><span class="ch-svc__t">Branding</span><span class="ch-svc__d">The identity all of it carries.</span></span></a>
+                </div>
+
+                <div class="ch-feat">
+                  <div class="ch-feat__media">
+                    <img src="../../../../../assets/seoguarantee.com_wp-content_themes_theme-child_images_full-suite-image.jpg"
+                         width="1920" height="1216" alt="The full suite of services delivered together" loading="lazy">
+                    <span class="ch-feat__scrim"></span>
+                  </div>
+                  <div class="ch-feat__body">
+                    <p class="ch-feat__eyebrow">The Full Suite</p>
+                    <p class="ch-feat__line">All seven are included in the one agreed monthly fee, not sold as tiers.</p>
+                    <a class="ch-feat__link" href="#main">See what is included <span aria-hidden="true">&rarr;</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="ch-nav__item"><a class="ch-nav__link" href="#main">Results</a></li>
+          <li class="ch-nav__item"><a class="ch-nav__link" href="#main">Who We Work With</a></li>
+          <li class="ch-nav__item"><a class="ch-nav__link" href="#main">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="ch-scrim" id="scrim"></div>
+<aside class="ch-drawer" id="drawer" aria-label="Menu" aria-hidden="true">
+  <div class="ch-drawer__hd">
+    <img class="ch-drawer__logo"
+         src="../../../../../assets/seoguarantee.com_wp-content_themes_theme-child_images_seoguarantee-logo-w.png"
+         width="250" height="122" alt="First Page SEO Guarantee">
+    <button class="ch-drawer__x" id="drawerX" type="button" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="ch-drawer__body">
+    <div class="ch-acc"><a class="ch-acc__link" href="#main">The Guarantee</a></div>
+    <div class="ch-acc" id="accServices" data-open="false">
+      <button class="ch-acc__btn" type="button" aria-expanded="false">
+        Services
+        <svg class="ch-caret" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3.2 5 7l4-3.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="ch-acc__panel">
+        <a class="ch-acc__sub" href="#main"><em>01</em> SEO Services</a>
+        <a class="ch-acc__sub" href="#main"><em>02</em> Web Design</a>
+        <a class="ch-acc__sub" href="#main"><em>03</em> UI/UX Design</a>
+        <a class="ch-acc__sub" href="#main"><em>04</em> Web Development</a>
+        <a class="ch-acc__sub" href="#main"><em>05</em> CRO Services</a>
+        <a class="ch-acc__sub" href="#main"><em>06</em> Graphic Design</a>
+        <a class="ch-acc__sub" href="#main"><em>07</em> Branding</a>
+      </div>
+    </div>
+    <div class="ch-acc"><a class="ch-acc__link" href="#main">Results</a></div>
+    <div class="ch-acc"><a class="ch-acc__link" href="#main">Who We Work With</a></div>
+    <div class="ch-acc"><a class="ch-acc__link" href="#main">About</a></div>
+    <div class="ch-drawer__cta">
+      <a class="ch-phone" href="tel:+17024207272">
+        <svg class="ch-phone__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        (702) 420-7272
+      </a>
+    </div>
+  </div>
+</aside>
+
+<main id="main">
+
+<!-- ==========================================================================
+     s1 BESPOKE HERO. Two track, and the concept declares itself in the first
+     viewport: the ledger OPENS on the left with its index of the five terms,
+     the statement runs on the right. HERO-COMPOSITIONS.md #10 (text driven, no
+     hero photo) re-set on the asymmetric axis, licensed by
+     composition-agency-creative section 4 "Type-led hero, not
+     stock-photo-behind-a-box". CTA-PATTERNS.md #4 phone pill.
+     src: D-OFFER-003, D-BRAND-RAILS-009, D-BRAND-RAILS-002, D-BRAND-RAILS-006
+     ========================================================================== -->
+<section id="s1" class="section section--paper" data-ledger data-material="wash" aria-labelledby="s1h">
+  <div class="container">
+    <div class="row row--aside row--loose">
+
+      <div class="col">
+        <aside class="bw-term" aria-label="The running terms">
+          <p class="bw-term__k">The running terms</p>
+          <p class="bw-term__v">Five, and this page carries them</p>
+          <ol class="bw-term__ix">
+            <li>Billing basis</li>
+            <li>Assessment cadence</li>
+            <li>The metric</li>
+            <li>Remedy on miss</li>
+            <li>The work</li>
+          </ol>
+          <p class="bw-term__x">Stated in full in the next band, then held beside every argument on this page.</p>
+        </aside>
+      </div>
+
+      <div class="col">
+        <p class="bw-eyebrow">The guarantee</p>
+        <h1 id="s1h" class="bw-statement">We guarantee first page for the key phrases named in your contract, assessed month by month, and any month we are off target we keep working and your billing stops.</h1>
+        <p class="bw-lede readw">The guarantee, in the language of the contract: what is agreed, how it is measured, and when you stop paying.</p>
+        <p class="bw-body readw">A monthly retainer, agreed up front. Every month is judged against the metrics your contract names. In a month we deliver them, the month is invoiced. In a month we do not, the invoicing stops and the campaign carries on at our cost.</p>
+        <div class="bw-actions">
+          <a class="bw-btn bw-btn--primary" href="tel:+17024207272">Call us, (702) 420-7272</a>
+        </div>
+        <p class="bw-proofline">Rated 4.9 from 35 Google reviews.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     s2 CONTRACT TERMS TABLE. THE LEDGER STEPS ASIDE, ONE. This band is where
+     the rail's contents are DEFINED, so the terms take the full measure on the
+     near black anchor ground. Everything after this band carries one of these
+     five rows in its margin. The three unruled terms ship as VISIBLE flagged
+     gaps: a terms page that invents its own terms is the worst outcome
+     available on this build.
+     src: D-OFFER-010, D-OFFER-007
+     ========================================================================== -->
+<section id="s2" class="section section--dark surface-dark" data-material="mesh" aria-labelledby="s2h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-12">
+        <p class="bw-eyebrow">The instrument</p>
+        <h2 id="s2h">The five terms, as the contract states them.</h2>
+        <p class="bw-lede readw">This is not a summary of the offer. It is the part of the agreement you came here to check.</p>
+      </div>
+    </div>
+
+    <div class="row row--tight">
+      <div class="col col--span-12">
+        <div class="bw-table__scroll">
+          <table class="bw-table">
+            <caption>The five contract terms and what each one says.</caption>
+            <thead>
+              <tr><th scope="col">Term</th><th scope="col">What it says</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Term"><span class="bw-strong">BILLING BASIS</span></td>
+                <td data-label="What it says">A monthly retainer, agreed up front. Quoted per business after a competitive review.</td>
+              </tr>
+              <tr>
+                <td data-label="Term"><span class="bw-strong">ASSESSMENT CADENCE</span></td>
+                <td data-label="What it says">Month by month. Each month is assessed against the agreed metrics. Never a single end-of-term test.</td>
+              </tr>
+              <tr>
+                <td data-label="Term"><span class="bw-strong">THE METRIC</span></td>
+                <td data-label="What it says">Page one of Google organic results for the key phrases named in your contract, in the agreed geography.</td>
+              </tr>
+              <tr>
+                <td data-label="Term"><span class="bw-strong">REMEDY ON MISS</span></td>
+                <td data-label="What it says">Billing pauses while we are off target, and resumes once results are back on track.</td>
+              </tr>
+              <tr>
+                <td data-label="Term"><span class="bw-strong">THE WORK</span></td>
+                <td data-label="What it says">Continues throughout, unchanged, while billing is paused.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row--tight">
+      <div class="col col--span-7">
+        <p class="bw-body readw">Three terms belong in this table and are not in it yet. They are contract terms, so they are shown as gaps rather than filled with something plausible.</p>
+        <p class="bw-note readw">A terms page that invents its own terms is worse than a terms page with three visible gaps. These stay visible until the owner rules them.</p>
+      </div>
+      <div class="col col--span-5">
+        <div class="bw-gaps">
+          <div class="bw-gap">
+            <p class="bw-gap__k">Owner placeholder</p>
+            <p class="bw-gap__t">How many key phrases the guarantee covers.</p>
+            <p class="bw-gap__d">Not ruled. No number is stated on this page.</p>
+          </div>
+          <div class="bw-gap">
+            <p class="bw-gap__k">Owner placeholder</p>
+            <p class="bw-gap__t">The search geography the position is measured in.</p>
+            <p class="bw-gap__d">Not ruled. Named per contract, and not described here in the general case.</p>
+          </div>
+          <div class="bw-gap">
+            <p class="bw-gap__k">Owner placeholder</p>
+            <p class="bw-gap__t">The measurement method, and who verifies it.</p>
+            <p class="bw-gap__d">Not ruled. See s6, where the same gap is flagged against the reporting instrument.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     s3 LIVE DEMO. The rail resumes, carrying ASSESSMENT CADENCE. The right
+     track runs LIVE-DEMO-SECTIONS.md #2 status ribbon crowning
+     LIVE-DEMO-SECTIONS.md #1 auto-running track. Motion, never controls: the
+     sweep travels background-position and the status dot scales, both frozen
+     under reduced motion, and every stage is legible at opacity 1 on load, so
+     the beat can never render broken and adds no interactive control burden.
+     The frame line stays on screen throughout, as the copy requires.
+     src: D-POSITION-W1, D-BRAND-RAILS-013
+     ========================================================================== -->
+<section id="s3" class="section section--paper" data-ledger data-material="grain" aria-labelledby="s3h">
+  <div class="container">
+    <div class="row row--aside row--loose">
+
+      <div class="col">
+        <aside class="bw-term" aria-label="Governing contract term">
+          <p class="bw-term__k">Governing term</p>
+          <p class="bw-term__v">Assessment cadence</p>
+          <p class="bw-term__d">Month by month. Each month is assessed against the agreed metrics. Never a single end-of-term test.</p>
+          <p class="bw-term__x">Row two of the terms table</p>
+        </aside>
+      </div>
+
+      <div class="col">
+        <p class="bw-eyebrow">The mechanic</p>
+        <h2 id="s3h">Step through a year of billing.</h2>
+        <p class="bw-body readw">Move through the sequence one month at a time and watch what happens to the invoice.</p>
+
+        <div class="bw-months">
+          <div class="bw-months__bar">
+            <span class="bw-months__live"><span class="bw-months__pulse" aria-hidden="true"></span>Running</span>
+            <p class="bw-months__cap">An illustration of the contract mechanic. Generic months.</p>
+          </div>
+
+          <div class="bw-months__track">
+            <div class="bw-months__stage">
+              <span class="bw-months__n" aria-hidden="true">01</span>
+              <p class="bw-months__t">A month on target</p>
+              <p class="bw-months__d">The agreed metrics are being delivered. The month is invoiced, at the retainer you agreed before you signed.</p>
+              <span class="bw-months__inv">Invoiced</span>
+            </div>
+            <div class="bw-months__stage">
+              <span class="bw-months__n" aria-hidden="true">02</span>
+              <p class="bw-months__t">A month off target</p>
+              <p class="bw-months__d">The agreed metrics are not being delivered. The invoicing stops for that month. Nothing else stops: the same team, the same schedule, the same work.</p>
+              <span class="bw-months__inv bw-months__inv--paused">Billing paused</span>
+            </div>
+            <div class="bw-months__stage">
+              <span class="bw-months__n" aria-hidden="true">03</span>
+              <p class="bw-months__t">A month back on track</p>
+              <p class="bw-months__d">The agreed metrics are being delivered again. Invoicing resumes from that month forward.</p>
+              <span class="bw-months__inv">Invoiced</span>
+            </div>
+          </div>
+
+          <p class="bw-months__frame">This is an illustration of the contract mechanic, not a record of any engagement. The months are generic, and no client, position or figure shown is drawn from a live account.</p>
+        </div>
+
+        <p class="bw-body readw">That is the whole mechanic. It is worth stepping through because it is the part of the offer that cannot be described convincingly in a sentence: the invoice is the thing that moves, and it moves on its own, because the contract says so.</p>
+        <p class="bw-note readw">The sequence is keyboard-operable and reads correctly with motion suppressed. Nothing about it depends on animation to be understood.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     s4 BENEFIT PILLARS. Rail carries BILLING BASIS, because each pillar is a
+     consequence of it. Right track runs CARD-VARIATIONS.md #3, a minimal 3-up
+     with no card chrome, on the locked .bw-fact object.
+     src: D-OFFER-013, D-OFFER-019
+     ========================================================================== -->
+<section id="s4" class="section section--tint" data-ledger aria-labelledby="s4h">
+  <div class="container">
+    <div class="row row--aside row--loose">
+
+      <div class="col">
+        <aside class="bw-term" aria-label="Governing contract term">
+          <p class="bw-term__k">Governing term</p>
+          <p class="bw-term__v">Billing basis</p>
+          <p class="bw-term__d">A monthly retainer, agreed up front. Quoted per business after a competitive review.</p>
+          <p class="bw-term__x">Row one of the terms table</p>
+        </aside>
+      </div>
+
+      <div class="col">
+        <p class="bw-eyebrow">What the terms let you do</p>
+        <h2 id="s4h">Three things this lets you do.</h2>
+        <p class="bw-lede readw">You are here because your competitors are consistently holding page one for the phrases that bring work into your trade. These are the three things the terms above let you do about that.</p>
+
+        <div class="bw-triad">
+          <div class="bw-fact">
+            <p class="bw-fact__n">01</p>
+            <p class="bw-fact__t">Judge the month before you pay for it.</p>
+            <p class="bw-fact__d">Traffic work is funded in the months it is actually producing the agreed positions, and not in the months it is not. That is the first objective, get traffic, with the commercial risk of the attempt sitting on our side of the table.</p>
+          </div>
+          <div class="bw-fact">
+            <p class="bw-fact__n">02</p>
+            <p class="bw-fact__t">Read the exact phrases your money is tied to, before you sign.</p>
+            <p class="bw-fact__d">The phrases are chosen for commercial intent and buying moment, so the positions you are paying for are the ones that produce enquiries rather than impressions. That is the second objective, generate high-quality leads.</p>
+          </div>
+          <div class="bw-fact">
+            <p class="bw-fact__n">03</p>
+            <p class="bw-fact__t">Keep the campaign running through a bad month without funding it.</p>
+            <p class="bw-fact__d">Continuity is what turns rankings into revenue, and the work that converts a visitor does not pause when the invoicing does. That is the third objective, convert those leads to sales.</p>
+          </div>
+        </div>
+
+        <p class="bw-note readw">None of these is an adjective about us. Each is a consequence of the billing basis in s2.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     s5 CAPABILITY SHOWCASE 1, how your key phrases are named. Rail carries THE
+     METRIC in its phrase schedule reading. Right track runs the media plus
+     cards LAW: portrait media LEFT stretching to the grid height, a 2x2 card
+     GRID right, never a capped media beside a 1xN stack.
+     Image: split-contract-terms, portrait_4_3, the declared orientation for a
+     split column (imagery-system section 5, DS LAW R8). No text over it.
+     src: D-POSITION-W2, D-BRAND-RAILS-018
+     ========================================================================== -->
+<section id="s5" class="section section--paper" data-ledger aria-labelledby="s5h">
+  <div class="container">
+    <div class="row row--aside row--loose">
+
+      <div class="col">
+        <aside class="bw-term" aria-label="Governing contract term">
+          <p class="bw-term__k">Governing term</p>
+          <p class="bw-term__v">The metric, the phrase schedule</p>
+          <p class="bw-term__d">Page one of Google organic results for the key phrases named in your contract, in the agreed geography.</p>
+          <p class="bw-term__x">Row three of the terms table</p>
+        </aside>
+      </div>
+
+      <div class="col">
+        <p class="bw-eyebrow">The naming process</p>
+        <h2 id="s5h">How your key phrases get named.</h2>
+        <p class="bw-lede readw">The published charge against services like this one is that the agency guarantees phrases it can easily rank rather than phrases that produce work. It is a fair charge, and the answer to it is the naming process, not a reassurance.</p>
+
+        <div class="bw-mediacards">
+          <figure class="bw-media bw-mediacards__media bw-figure">
+            <p class="bw-media__cap bw-micro">The phrase schedule, attached to the agreement</p>
+            <span class="bw-media__plate">
+              <img class="bw-media__img" src="../../../../../assets/split-contract-terms.jpg"
+                   width="768" height="1024" loading="lazy"
+                   alt="An open deep purple document folio with blank unprinted pages and a slim gold pen laid across them on a white studio table.">
+            </span>
+          </figure>
+
+          <div class="bw-mediacards__cards">
+            <div class="bw-card bw-card--pad bw-card--flat">
+              <p class="bw-card__title">We run competitive research on your market first.</p>
+              <p class="bw-card__body">We look at who currently holds page one for the searches that produce work in your trade, in your geography, and at what those positions are worth to a business your size.</p>
+            </div>
+            <div class="bw-card bw-card--pad bw-card--flat">
+              <p class="bw-card__title">We propose the key phrases.</p>
+              <p class="bw-card__body">Each one is proposed for a reason we will state out loud: commercial intent and buying moment. A phrase that is cheap to win and brings nobody who is ready to buy does not go on the schedule, because we would be the only party it benefits.</p>
+            </div>
+            <div class="bw-card bw-card--pad bw-card--flat">
+              <p class="bw-card__title">They are named in the contract you sign.</p>
+              <p class="bw-card__body">The phrase schedule is attached to the agreement, with the geography set out beside each phrase. We propose, you sign. There is no separate approval step and no informal list running alongside the contract, because the schedule you sign is the same document the billing is judged against.</p>
+            </div>
+            <div class="bw-card bw-card--pad bw-card--tint">
+              <p class="bw-card__title">The counterweight that makes this credible.</p>
+              <p class="bw-card__body">If we cannot commit to the phrases your business actually needs, we say so at the consultation. We would rather lose the work at the call than write a contract we cannot deliver against, because under this billing basis an undeliverable contract costs us the retainer anyway.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     s6 CAPABILITY SHOWCASE 2, how first page is measured. Rail carries THE
+     METRIC in its position reading. The definition is set as the band's pull
+     quote with the square texture accent BESIDE it, which is the only slot
+     imagery-system section 2c allows a square_hd asset to hold: a small square
+     accent beside a quote moment, never a split column filler.
+     src: D-BRAND-RAILS-016, D-OFFER-001
+     ========================================================================== -->
+<section id="s6" class="section section--warm" data-ledger aria-labelledby="s6h">
+  <div class="container">
+    <div class="row row--aside row--loose">
+
+      <div class="col">
+        <aside class="bw-term" aria-label="Governing contract term">
+          <p class="bw-term__k">Governing term</p>
+          <p class="bw-term__v">The metric, the position test</p>
+          <p class="bw-term__d">Page one of Google organic results for the key phrases named in your contract, in the agreed geography.</p>
+          <p class="bw-term__x">Row three of the terms table</p>
+        </aside>
+      </div>
+
+      <div class="col">
+        <p class="bw-eyebrow">The definition the offer turns on</p>
+        <h2 id="s6h">What "first page" means here.</h2>
+
+        <div class="bw-define">
+          <div>
+            <blockquote class="bw-quote bw-quote--display">
+              First page means page one of Google organic results for an agreed key phrase in an agreed geography.
+              <cite class="bw-quote__cite">The whole definition, and the offer turns on it</cite>
+            </blockquote>
+            <p class="bw-body readw">It is not a claim about a specific position on that page. It is not a claim about paid placement, map results or AI-generated answers, and none of those enters the metric unless your contract names them.</p>
+          </div>
+          <figure class="bw-media bw-accent-sq bw-figure">
+            <span class="bw-media__plate">
+              <img class="bw-media__img" src="../../../../../assets/texture-purple-material.jpg"
+                   width="1024" height="1024" loading="lazy"
+                   alt="Macro material study of a single swept deep purple pigment stroke on a bright white ground.">
+            </span>
+          </figure>
+        </div>
+
+        <h3 class="bw-kicker">The reporting instrument already exists</h3>
+        <p class="bw-body readw">A monthly keyword page-ranking report lists every phrase named in your contract with its position for that month. It is the same document the assessment in s2 is read from, which is the point: the thing that decides the invoice is a document you also hold.</p>
+
+        <h3 class="bw-kicker">On timelines, stated exactly</h3>
+        <p class="bw-body readw">The current site publishes 6- and 12-month windows, and the agreement itself is assessed month by month, which is the ASSESSMENT CADENCE row in s2.</p>
+
+        <div class="bw-gaps">
+          <div class="bw-gap">
+            <p class="bw-gap__k">Owner placeholder</p>
+            <p class="bw-gap__t">Those published windows are the current site's own marketing language and are not a ratified contract term.</p>
+            <p class="bw-gap__d">No signed agreement has been supplied for them, so they are reported here as what the current site says and nothing more. They do not appear in the terms table above, in this page's title or description, or in its structured data.</p>
+          </div>
+          <div class="bw-gap">
+            <p class="bw-gap__k">Owner placeholder</p>
+            <p class="bw-gap__t">Who verifies the position, in which tool, and on what schedule, is not ruled.</p>
+            <p class="bw-gap__d">It is a contract term and it is not invented here.</p>
+          </div>
+        </div>
+
+        <p class="bw-body readw">The critics who publish the case against this category also publish their own realism band of three to six months, and the windows the current site publishes sit inside it. The pattern that band exists to warn buyers about is the promise of page-one rankings in 30 days. That is a checkable difference about timelines rather than a boast, and you can check it in a search.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     s7 CAPABILITY SHOWCASE 3, a month we are off target. Rail carries REMEDY
+     ON MISS and THE WORK together, because this band is where the two rows
+     act as one. Right track runs SECTION-COMPONENTS.md #14b (a): capped media
+     BESIDE its content, never a full width media with the content stacked
+     below. Here the content is a three row consequence matrix plus the honest
+     comparison, so the shape is deliberately NOT s5's 2x2 card grid.
+     Image: split-monthly-assessment, portrait_4_3. No text over it.
+     src: D-MARKET-001-RISK, D-OFFER-014
+     ========================================================================== -->
+<section id="s7" class="section section--paper" data-ledger aria-labelledby="s7h">
+  <div class="container">
+    <div class="row row--aside row--loose">
+
+      <div class="col">
+        <aside class="bw-term" aria-label="Governing contract terms">
+          <p class="bw-term__k">Governing terms</p>
+          <p class="bw-term__v">Remedy on miss, and the work</p>
+          <p class="bw-term__d">Billing pauses while we are off target, and resumes once results are back on track. The work continues throughout, unchanged, while billing is paused.</p>
+          <p class="bw-term__x">Rows four and five of the terms table</p>
+        </aside>
+      </div>
+
+      <div class="col">
+        <p class="bw-eyebrow">The pause, in full</p>
+        <h2 id="s7h">A month we are off target.</h2>
+        <p class="bw-lede readw">Three things happen, and the third is the one the category does not offer.</p>
+
+        <div class="bw-mediacards">
+          <figure class="bw-media bw-mediacards__media bw-figure">
+            <p class="bw-media__cap bw-micro">Twelve months, each assessed on its own result</p>
+            <span class="bw-media__plate">
+              <img class="bw-media__img" src="../../../../../assets/split-monthly-assessment.jpg"
+                   width="768" height="1024" loading="lazy"
+                   alt="Twelve identical blank white cards standing in an evenly spaced row on a white studio surface, one card lifted forward and edged in gold.">
+            </span>
+          </figure>
+
+          <div class="bw-mediacards__rows">
+            <div class="bw-card bw-card--pad bw-card--flat">
+              <p class="bw-card__title">It is automatic, and it was written in before you signed.</p>
+              <p class="bw-card__body">The pause is a contract trigger, not a concession you have to ask for after a bad quarter. Nobody at this firm decides whether you have complained enough to deserve it. That is the entire distinction between this and the remedies buyers are warned about in this category, which are discretionary by design and can be declined.</p>
+            </div>
+            <div class="bw-card bw-card--pad bw-card--flat">
+              <p class="bw-card__title">Nothing is handed back, because nothing was charged.</p>
+              <p class="bw-card__body">The obligation for that month is suspended, not erased after the fact. There is no reversal to chase and no credit note to negotiate, because the invoice for that month does not go out.</p>
+            </div>
+            <div class="bw-card bw-card--pad bw-card--tint">
+              <p class="bw-card__title">The work does not stop. The billing does.</p>
+              <p class="bw-card__body">The same team, the same schedule, the same campaign, running through the month you are not paying for. When the agreed metrics are being delivered again, invoicing resumes.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="bw-kicker">The honest comparison</h3>
+        <p class="bw-body readw">The strongest agencies in this market offer month-to-month contracts and a commitment to consistent communication and complete transparency. That is real, and it is worth something: you are free to leave at any point. But freedom to leave is not a condition on the fee. The client still carries the whole outcome risk while the retainer is owed either way. That is a structural fact about how the category is sold, not a criticism of anyone selling it.</p>
+        <p class="bw-note readw">The mechanic above stands on the agreement, not on a story. It needs no precedent to be true, and we do not offer one. See s12 for why.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     s8 REPLACES, WEDGE AND INCLUSION VALUE. THE LEDGER STEPS ASIDE, TWO. This
+     band is about what the terms REPLACE, so no single term governs it, and it
+     takes the full measure on the page's ONE figure and ground inversion: the
+     gold stratum. PRICING-SECTIONS.md #5 plain-deal honesty stance, empty
+     handed by design. NO figure appears on either side, including anyone
+     else's: the comparison runs on structure alone.
+     src: D-POSITION-W3, D-OFFER-017, D-OFFER-022
+     ========================================================================== -->
+<section id="s8" class="section section--gold surface-gold" aria-labelledby="s8h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-12">
+        <p class="bw-eyebrow">The wedge</p>
+        <h2 id="s8h">What a conditional retainer replaces, and what it collapses.</h2>
+      </div>
+    </div>
+
+    <div class="row row--tight">
+      <div class="col col--span-12">
+        <div class="bw-wedge">
+          <div class="bw-wedge__side">
+            <p class="bw-wedge__k">Replaces</p>
+            <p class="bw-body">The unconditional monthly retainer. Hourly SEO consulting. Per-project SEO invoices. And the remedies this category offers instead of a payment condition: money returned at the agency's discretion, a period of free work, or a different piece of work in place of the one that missed. Each of those leaves the agency holding what you already invested, which is precisely why the category's own critics dismiss them.</p>
+          </div>
+          <div class="bw-wedge__side">
+            <p class="bw-wedge__k">Collapses</p>
+            <p class="bw-body">The separately retained stack. One agreed monthly fee covers SEO, website design and development, content writing, reputation management, conversion optimisation, graphic design, branding and consulting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row--tight">
+      <div class="col col--span-7">
+        <p class="bw-body readw">The causal order matters and it runs one way only. We are paid on the metric rather than on the hours, so every part of the stack is pointed at the one thing you are paying for. Holding the web work or the conversion work back to sell it separately would only make our own job harder and our own invoice less likely. The breadth is not generosity and it is not a bonus. It is what outcome-pricing forces.</p>
+      </div>
+      <div class="col col--span-5">
+        <p class="bw-body readw">You will find no figure on this page, on either side of that comparison, including anyone else's. The comparison runs on structure alone.</p>
+        <p class="bw-note readw">One agreed monthly fee covers SEO, web, CRO, branding and design, quoted per business after a competitive review.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     s9 FULL TEARDOWN. The rail returns carrying the payment condition, the
+     dimension the whole comparison turns on. Right track runs
+     SECTION-COMPONENTS.md #15 as a structural opposition rather than a table
+     of numbers: four dimensions, the MODEL on the left, this offer on the
+     right behind a gold rule. No currency figure on either side, and no named
+     firm in a losing column.
+     src: D-INCUMBENT-001, D-INCUMBENT-001-PRICING, D-MARKET-001
+     ========================================================================== -->
+<section id="s9" class="section section--dark surface-dark" data-ledger data-material="wash" aria-labelledby="s9h">
+  <div class="container">
+    <div class="row row--aside row--loose">
+
+      <div class="col">
+        <aside class="bw-term" aria-label="Governing contract term">
+          <p class="bw-term__k">Governing term</p>
+          <p class="bw-term__v">Billing basis, as the payment condition</p>
+          <p class="bw-term__d">A monthly retainer, agreed up front. Owed only while the agreed metrics are delivered.</p>
+          <p class="bw-term__x">Row one of the terms table, read against the market</p>
+        </aside>
+      </div>
+
+      <div class="col">
+        <p class="bw-eyebrow">Against the status quo</p>
+        <h2 id="s9h">The status quo, and this offer, on four dimensions.</h2>
+        <p class="bw-lede readw">This compares against a MODEL, the unconditional monthly retainer, rather than against any particular firm. The firms selling it include some of the most capable operators in the market.</p>
+
+        <div class="bw-cmp">
+          <div class="bw-cmp__hd">
+            <p class="bw-cmp__h">Dimension</p>
+            <p class="bw-cmp__h">The market as it is sold today</p>
+            <p class="bw-cmp__h">This offer</p>
+          </div>
+          <div class="bw-cmp__row">
+            <p class="bw-cmp__k">Payment condition</p>
+            <p class="bw-cmp__a">The retainer is owed regardless of delivery</p>
+            <p class="bw-cmp__b">Owed only while the agreed metrics are delivered</p>
+          </div>
+          <div class="bw-cmp__row">
+            <p class="bw-cmp__k">Remedy mechanics</p>
+            <p class="bw-cmp__a">Discretionary concessions offered after a complaint: money returned, free work, another offer</p>
+            <p class="bw-cmp__b">Automatic monthly pause, contract-triggered before signing, and the work continues</p>
+          </div>
+          <div class="bw-cmp__row">
+            <p class="bw-cmp__k">Metric agreement</p>
+            <p class="bw-cmp__a">Vague, unfalsifiable, or defined after the fact</p>
+            <p class="bw-cmp__b">Named in the contract before you sign, in an agreed geography</p>
+          </div>
+          <div class="bw-cmp__row">
+            <p class="bw-cmp__k">Bundled breadth</p>
+            <p class="bw-cmp__a">Full stack, separately retained and separately invoiced</p>
+            <p class="bw-cmp__b">One agreed monthly fee, because we are paid on the outcome</p>
+          </div>
+        </div>
+
+        <p class="bw-body readw">The most capable firm in this market answers the risk question with a month-to-month contract and a commitment to consistent communication and complete transparency. Read that fairly: it is contractual freedom, and it is genuinely better than a long lock-in. It is not a condition on the fee, and the client keeps the outcome risk.</p>
+        <p class="bw-note readw">One scoping note we hold ourselves to. No competitor we researched conditions its SEO fee on delivery of agreed ranking metrics. That is a statement about what we found, not a claim that nobody in the industry does anything of the kind. No figures appear on either side of this table.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     s10 OBJECTION ANSWER, the XL band and the reason this page ranks. The
+     rail's fullest use: it carries the SEVEN CHARGES as an index, in the order
+     the case against this category is usually made, so the reader can see
+     which charge is being answered while reading the answer. The right track
+     sets the answers in TWO columns, which is what keeps an XL band compact
+     instead of a band the reader has to scroll up and down to take in.
+     src: D-MARKET-002, D-INCUMBENT-001-OBJECTION
+     ========================================================================== -->
+<section id="s10" class="section section--paper" data-ledger data-material="mesh" aria-labelledby="s10h">
+  <div class="container">
+    <div class="row row--aside row--loose">
+
+      <div class="col">
+        <aside class="bw-term" aria-label="The published case against this category">
+          <p class="bw-term__k">The case against</p>
+          <p class="bw-term__v">Seven charges, in order</p>
+          <ol class="bw-term__ix">
+            <li>Search engines warn against it</li>
+            <li>You cannot guarantee what you do not control</li>
+            <li>It may involve tactics that risk a penalty</li>
+            <li>It may provide little benefit</li>
+            <li>One-size-fits-all does not work</li>
+            <li>The wrong tactics can hurt you</li>
+            <li>Page-one rankings in 30 days</li>
+          </ol>
+          <p class="bw-term__x">Answered on their merits, beside each number</p>
+        </aside>
+      </div>
+
+      <div class="col">
+        <p class="bw-eyebrow">The red flag question</p>
+        <h2 id="s10h">Is a guaranteed ranking a red flag? Seven answers, in the order the case against it is usually made.</h2>
+        <p class="bw-lede readw">If you have read the standard warning article about this category, you have read seven arguments. Here they are in order, answered on their merits.</p>
+
+        <div class="bw-charges">
+          <div class="bw-charge">
+            <p class="bw-charge__n">Charge 01</p>
+            <p class="bw-charge__t">Search engines warn against guaranteed rankings. Conceded, and it goes first.</p>
+            <p class="bw-charge__d">Google Search Central states: "No one can guarantee a #1 ranking on Google." Google's own beginner documentation goes further: "If they guarantee you that their changes will give you first place in search results, find someone else." Both are correct, and neither is a technicality we are about to work around. Nothing we do gives us control of a ranking algorithm, Google does not approve, endorse or permit a promise of position, and we make no suggestion otherwise. What is under our control is our own invoice. That is what the contract conditions.</p>
+          </div>
+          <div class="bw-charge">
+            <p class="bw-charge__n">Charge 02</p>
+            <p class="bw-charge__t">You cannot make a guarantee about something you cannot control. Correct, and we agree.</p>
+            <p class="bw-charge__d">Which is why what we guarantee is not the algorithm. It is the billing. We control when we bill, absolutely and unilaterally, and we have written into the contract that we do not bill in a month the agreed metrics are not delivered.</p>
+          </div>
+          <div class="bw-charge">
+            <p class="bw-charge__n">Charge 03</p>
+            <p class="bw-charge__t">A guaranteed service may involve tactics that risk a penalty.</p>
+            <p class="bw-charge__d">This is the fair version of the objection, because a fee tied to a position is a fee that rewards shortcuts. The answer is the published method in s5 and the standing commitment in s11: we do not use a tactic that puts your domain at risk of a search penalty. Note also what the billing basis does to the incentive. A penalty ends the positions, which ends the invoice, and the recovery work would then run at our cost for as long as it took.</p>
+          </div>
+          <div class="bw-charge">
+            <p class="bw-charge__n">Charge 04</p>
+            <p class="bw-charge__t">Guaranteed rankings may provide little benefit.</p>
+            <p class="bw-charge__d">The specific charge is that the guaranteed phrases are the easy ones. s5 is the answer: the phrases are proposed from competitive research on commercial intent and buying moment, and named in the contract before you sign, so you can read exactly what your money is tied to and judge whether those phrases would produce work for you.</p>
+          </div>
+          <div class="bw-charge">
+            <p class="bw-charge__n">Charge 05</p>
+            <p class="bw-charge__t">One-size-fits-all strategies do not work.</p>
+            <p class="bw-charge__d">Agreed, and the trade-specific pages are where that is answered rather than asserted. See the pages for dental practices, law firms, medical spas, HVAC businesses and contracting businesses. Each carries the substance of that trade, because a dental practice and an HVAC business are not competing for the same kind of search at the same moment.</p>
+          </div>
+          <div class="bw-charge">
+            <p class="bw-charge__n">Charge 06</p>
+            <p class="bw-charge__t">The wrong tactics can hurt your business.</p>
+            <p class="bw-charge__d">Also true, which is why s11 exists and why it states what this guarantee does not cover as plainly as the terms table states what it does.</p>
+          </div>
+          <div class="bw-charge">
+            <p class="bw-charge__n">Charge 07</p>
+            <p class="bw-charge__t">Page-one rankings in 30 days.</p>
+            <p class="bw-charge__d">This is the checkable one. The current site publishes 6- and 12-month windows, which sit inside the three-to-six-month band the category's own critics publish as realistic, and the agreement itself is assessed month by month.</p>
+            <div class="bw-gap bw-gap--inset">
+              <p class="bw-gap__k">Owner placeholder</p>
+              <p class="bw-gap__t">The published windows are reported as what the current site says.</p>
+              <p class="bw-gap__d">They are not a ratified contract term and they are not asserted as one.</p>
+            </div>
+          </div>
+          <div class="bw-charge bw-charge--wide">
+            <p class="bw-charge__n">One thing we will not claim</p>
+            <p class="bw-charge__t">This offer is a guaranteed SEO service by the standard definition: a service promising a specific result, typically first-page rankings for a set of key phrases, inside a timeframe.</p>
+            <p class="bw-charge__d">We are inside that category, not beside it, and saying otherwise would be falsifiable in a single search.</p>
+          </div>
+        </div>
+
+        <blockquote class="bw-quote bw-quote--display bw-quote--close">
+          We are not asking you to believe the promise. We are asking you to check whether we delivered, before you pay for it.
+          <cite class="bw-quote__cite">The reframe this page was built to earn</cite>
+        </blockquote>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     s11 SCOPE BOUNDARY. Rail carries the boundary itself: the terms table says
+     what the guarantee covers, this band says what it does not. Three parts as
+     three panels, and the two parts the owner has not ruled ship as VISIBLE
+     flagged gaps rather than an invented list.
+     src: D-OFFER-018, D-BRAND-RAILS-008
+     ========================================================================== -->
+<section id="s11" class="section section--tint" data-ledger aria-labelledby="s11h">
+  <div class="container">
+    <div class="row row--aside row--loose">
+
+      <div class="col">
+        <aside class="bw-term" aria-label="Governing contract term">
+          <p class="bw-term__k">Governing term</p>
+          <p class="bw-term__v">The metric, and its edges</p>
+          <p class="bw-term__d">Page one of Google organic results, and nothing narrower. What sits outside the metric sits outside the guarantee.</p>
+          <p class="bw-term__x">Row three of the terms table, read from the outside in</p>
+        </aside>
+      </div>
+
+      <div class="col">
+        <p class="bw-eyebrow">The anti-product</p>
+        <h2 id="s11h">What this guarantee does not cover.</h2>
+        <p class="bw-lede readw">A terms page with no boundary is a terms page hiding something. This section is the boundary.</p>
+
+        <div class="bw-bounds">
+          <div class="bw-card bw-card--pad">
+            <p class="bw-card__title">1. What we will not do.</p>
+            <p class="bw-card__body">We do not use a tactic that puts your domain at risk of a search penalty. That is a standing commitment about our own conduct, not a list of anyone else's sins.</p>
+            <div class="bw-gap bw-gap--inset-md">
+              <p class="bw-gap__k">Owner placeholder</p>
+              <p class="bw-gap__t">The definitive, itemised version of this list has never been stated by the business and is not invented here.</p>
+              <p class="bw-gap__d">It ships as a visible gap until the owner rules it.</p>
+            </div>
+          </div>
+
+          <div class="bw-card bw-card--pad">
+            <p class="bw-card__title">3. What falls outside it.</p>
+            <div class="bw-gap bw-gap--inset">
+              <p class="bw-gap__k">Owner placeholder</p>
+              <p class="bw-gap__t">The conditions under which the guarantee does not apply have never been stated by the business.</p>
+              <p class="bw-gap__d">They are contract terms, and inventing them here would put a sentence on this page that your contract would then contradict. This ships as a visible gap until the owner rules it.</p>
+            </div>
+          </div>
+
+          <div class="bw-card bw-card--pad bw-bound--wide">
+            <p class="bw-card__title">2. What the guarantee is not. These are already ruled and ship as written.</p>
+            <ul class="bw-list">
+              <li>It is not a promise of a specific position on page one. First page means page one of Google organic results, and nothing narrower.</li>
+              <li>It is not a promise of a sales figure, a revenue number or a lead volume. We make no claim about what your business will earn.</li>
+              <li>It is not money returned to you. Billing pauses and later resumes, and the obligation is suspended rather than erased.</li>
+              <li>It is not a promise about paid placement, map results or AI-generated answers, unless your contract names them.</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="bw-note readw">Nothing from the current site's unsubstantiated claim set is imported into this page to prop up the guarantee, in this section or anywhere else on it.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     s12 REAL PROOF. Rail carries the evidence rule this band runs on. The
+     right track inverts PROOF-SECTIONS.md #4: that catalog leads with the
+     number, and this page cannot, so the same structure is ranked WEAKEST
+     evidence first and the ordering is made visible. The rating keeps its
+     count beside it (TRUST-STATS-SECTIONS.md #4), with the gold texture as the
+     square accent beside that stat moment, never as a split filler. The rating
+     panel is a PLAIN card, not the tinted emphasis card used at s5 and s7: its
+     weight comes from the numeral and the accent square, not from a fill.
+     src: D-OFFER-020, D-MARKET-001-PROOF
+     ========================================================================== -->
+<section id="s12" class="section section--paper" data-ledger aria-labelledby="s12h">
+  <div class="container">
+    <div class="row row--aside row--loose">
+
+      <div class="col">
+        <aside class="bw-term" aria-label="The evidence rule">
+          <p class="bw-term__k">The evidence rule</p>
+          <p class="bw-term__v">The mechanic stands on the contract</p>
+          <p class="bw-term__d">The capabilities described on this page are real and are not placeholders. The mechanic is contract language. What is placeholder here is customers, metrics and quotes.</p>
+          <p class="bw-term__x">Ranked weakest first, so the ordering is visible</p>
+        </aside>
+      </div>
+
+      <div class="col">
+        <p class="bw-eyebrow">What we can show today</p>
+        <h2 id="s12h">What we can actually show you today.</h2>
+        <p class="bw-lede readw">Ranked by the strength of the evidence behind it, weakest first so the ordering is visible.</p>
+
+        <div class="bw-rank">
+          <div class="bw-rank__i">
+            <p class="bw-rank__n">1</p>
+            <div>
+              <div class="bw-gap">
+                <p class="bw-gap__k">Owner placeholder</p>
+                <p class="bw-gap__t">A paused-billing episode described on the current site is not published here.</p>
+                <p class="bw-gap__d">We have not confirmed the account, the months, or the client's consent, and an episode we cannot confirm is not evidence of anything. The mechanic in s2, s3, s5, s6 and s7 does not rest on it. Those are contract terms, and they are true because the contract says so, not because of a story about a past client.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bw-rank__i">
+            <p class="bw-rank__n">2</p>
+            <div class="bw-card bw-card--pad">
+              <div class="bw-rating">
+                <div>
+                  <p class="bw-rating__n">4.9</p>
+                  <p class="bw-rating__u">Rated 4.9 from 35 Google reviews.</p>
+                </div>
+                <figure class="bw-media bw-accent-sq bw-figure">
+                  <span class="bw-media__plate">
+                    <img class="bw-media__img" src="../../../../../assets/texture-gold-edge.jpg"
+                         width="1024" height="1024" loading="lazy"
+                         alt="Macro material study of a polished gold edge meeting a bright white matte plane.">
+                  </span>
+                </figure>
+              </div>
+              <p class="bw-card__body bw-card__body--sep">The rating with its count, as the rating widget reports it. Thirty-five is a modest number and it is stated rather than dressed up, because a rating without its count is the habit this page exists to argue against.</p>
+            </div>
+          </div>
+
+          <div class="bw-rank__i">
+            <p class="bw-rank__n">3</p>
+            <div>
+              <div class="bw-gap">
+                <p class="bw-gap__k">Owner placeholder</p>
+                <p class="bw-gap__t">Named client outcomes. None ship yet.</p>
+                <p class="bw-gap__d">Each one requires the client's name, the metric with its start and end month, the method that produced it, the tool it was measured in, and written permission on file. A card missing any of the date range, the method or the permission does not render at all. It is held back, not softened into something vaguer, and not shipped with the missing field quietly dropped.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="bw-note readw">Deliberately excluded from this page, and not returning: press logos without a live link to dated coverage and confirmed rights; bare percentage tiles; any republished review asserting a top ranking, because republishing a claim does not make it one we are allowed to make.</p>
+        <p class="bw-body readw">The named and dated outcomes live on the results page as they clear permission.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     s13 CROSS-LINK RAIL. THE LEDGER STEPS ASIDE, THREE. A rail beside a rail
+     is noise, so the routes take the full measure. This page is net-new with
+     zero inbound redirect history, so this band is load bearing rather than
+     decorative: it is the page's only initial internal-link equity.
+     src: D-IA-TIER1, D-IA-TIER2, D-IA-TIER3
+     ========================================================================== -->
+<section id="s13" class="section section--warm" data-material="grain" aria-labelledby="s13h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-12">
+        <p class="bw-eyebrow">Routes</p>
+        <h2 id="s13h">Where to go next.</h2>
+      </div>
+    </div>
+
+    <div class="row row--tight">
+      <div class="col col--span-12">
+        <div class="bw-routes">
+          <div class="bw-route">
+            <p class="bw-route__t"><a class="bw-link-plain" href="#main">Full Suite</a></p>
+            <p class="bw-route__d">What the one agreed monthly fee covers.</p>
+          </div>
+          <div class="bw-route">
+            <p class="bw-route__t"><a class="bw-link-plain" href="#main">Results</a></p>
+            <p class="bw-route__d">The outcomes, named and dated.</p>
+          </div>
+          <div class="bw-route">
+            <p class="bw-route__t"><a class="bw-link-plain" href="#main">About</a></p>
+            <p class="bw-route__d">Who signs the contract.</p>
+          </div>
+          <div class="bw-route">
+            <p class="bw-route__t">SEO by trade</p>
+            <p class="bw-route__d">The trade-specific answer to point 5 above.</p>
+            <ul class="bw-route__l">
+              <li><a class="bw-link-plain" href="#main">For dental practices</a></li>
+              <li><a class="bw-link-plain" href="#main">For law firms</a></li>
+              <li><a class="bw-link-plain" href="#main">For medical spas</a></li>
+              <li><a class="bw-link-plain" href="#main">For HVAC businesses</a></li>
+              <li><a class="bw-link-plain" href="#main">For contracting businesses</a></li>
+              <li><a class="bw-link-plain" href="#main">Industries</a></li>
+            </ul>
+          </div>
+          <div class="bw-route">
+            <p class="bw-route__t">Home market and coverage</p>
+            <p class="bw-route__d">Where we are, and how a market is worked.</p>
+            <ul class="bw-route__l">
+              <li><a class="bw-link-plain" href="#main">Las Vegas SEO</a></li>
+              <li><a class="bw-link-plain" href="#main">Our locations</a></li>
+            </ul>
+          </div>
+          <div class="bw-route">
+            <p class="bw-route__t"><a class="bw-link-plain" href="#main">Videos</a></p>
+            <p class="bw-route__d">Including "What's the Guarantee" and "How Can We Guarantee".</p>
+            <ul class="bw-route__l">
+              <li><a class="bw-link-plain" href="#main">Home, back to the start of the sequence</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     s14 OBJECTION FAQ. The rail carries the ruled and not ruled split, which
+     is the honest frame for a question set where three of seven answers are
+     owner gaps. Native details and summary, in two columns:
+     FAQ-ACCORDION.md #1 classic expand-rows with a plus indicator, keyboard
+     operable with zero script.
+     src: D-OFFER-009, D-OFFER-008
+     ========================================================================== -->
+<section id="s14" class="section section--tint" data-ledger aria-labelledby="s14h">
+  <div class="container">
+    <div class="row row--aside row--loose">
+
+      <div class="col">
+        <aside class="bw-term" aria-label="What is ruled and what is not">
+          <p class="bw-term__k">Reading this band</p>
+          <p class="bw-term__v">Ruled, or flagged</p>
+          <p class="bw-term__d">Every answer whose fact has been ruled ships as written. Every answer whose fact has not been ruled ships flagged rather than guessed.</p>
+          <p class="bw-term__x">Four ruled, three flagged</p>
+        </aside>
+      </div>
+
+      <div class="col">
+        <p class="bw-eyebrow">Residual questions</p>
+        <h2 id="s14h">The questions this page still owes you.</h2>
+
+        <div class="bw-faq">
+          <details class="bw-q" open>
+            <summary>How long is the agreement?</summary>
+            <div class="bw-q__a">
+              <div class="bw-gap">
+                <p class="bw-gap__k">Owner placeholder</p>
+                <p class="bw-gap__t">The term length is a contract question that has not been ruled, and it is not guessed here.</p>
+                <p class="bw-gap__d">What is settled is the cadence: the agreement is assessed month by month, and each month is billed or paused on its own result.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="bw-q" open>
+            <summary>What counts as back on track?</summary>
+            <p class="bw-q__a">The agreed metrics in your contract are being delivered again, read from the same monthly ranking report the pause was triggered from. It is the same test in both directions, which is what stops it being a judgement call.</p>
+          </details>
+
+          <details class="bw-q">
+            <summary>Who verifies the ranking, and in what tool?</summary>
+            <div class="bw-q__a">
+              <div class="bw-gap">
+                <p class="bw-gap__k">Owner placeholder</p>
+                <p class="bw-gap__t">Not ruled. This is a contract term and it is flagged rather than answered.</p>
+                <p class="bw-gap__d">Ask on the call, and hold us to the answer in writing.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="bw-q">
+            <summary>What happens if I change my site mid-campaign?</summary>
+            <p class="bw-q__a">Tell us first. Site changes are part of the work and most of them are ours to make anyway, since web and development sit inside the same fee. A change made without us that moves a contracted position is the kind of thing the agreement has to account for, which is another reason the scope boundary in s11 needs the owner's ruling rather than ours.</p>
+          </details>
+
+          <details class="bw-q">
+            <summary>What if my competitors outspend me?</summary>
+            <p class="bw-q__a">Spend is not the metric and it is not what the contract is judged on. If a phrase becomes undeliverable for your business, the honest moment to say so is at the consultation, before it is on the schedule. If it becomes undeliverable later, the billing consequence is the one in s2: we are off target, so we keep working and you stop paying.</p>
+          </details>
+
+          <details class="bw-q">
+            <summary>What happens to the work I have already had if I leave?</summary>
+            <div class="bw-q__a">
+              <div class="bw-gap">
+                <p class="bw-gap__k">Owner placeholder</p>
+                <p class="bw-gap__t">What transfers on exit, and on what terms, has not been ruled.</p>
+                <p class="bw-gap__d">It belongs in the contract and it is not invented here.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="bw-q">
+            <summary>Is the consultation free?</summary>
+            <div class="bw-q__a">
+              <div class="bw-gap">
+                <p class="bw-gap__k">Owner placeholder</p>
+                <p class="bw-gap__t">The entry offer has never been defined in the business's own copy, so it is not branded or priced here.</p>
+                <p class="bw-gap__d">What is described plainly is the thing itself: a conversation about the phrases your competitors currently hold in your market, and whether they are ones we can commit to.</p>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     s15 DUAL CTA CLOSE. THE LEDGER STEPS ASIDE, FOUR, and closes with the
+     person who signs it. SECTION-COMPONENTS.md #16 founder bio split, real
+     photography at its native scale in the locked framed well, with NO text
+     set over it.
+     THIS IS NOT A SECOND PRE-FOOTER CTA BAND. The page's ONE closing band is
+     the chrome's dark .ch-cta immediately below, per composition-agency-
+     creative "one dark anchor and a single closing CTA ask". This band is the
+     founder statement, carrying the same single primary verb the hero carries,
+     on a light ground so the chrome's dark band still lands as the close.
+     src: D-OFFER-006, D-BRAND-RAILS-009, D-BRAND-RAILS-011
+     ========================================================================== -->
+<section id="s15" class="section section--paper" aria-labelledby="s15h">
+  <div class="container">
+    <div class="row row--split row--loose">
+
+      <div class="col col--media">
+        <figure class="bw-media bw-portrait bw-figure">
+          <p class="bw-media__cap bw-micro">James Sutton IV, founder and Managing Partner</p>
+          <span class="bw-media__plate">
+            <img class="bw-media__img" src="../../../../../assets/seoguarantee.com_wp-content_themes_theme-child_images_james-image-highres.jpg"
+                 width="543" height="614" loading="lazy"
+                 alt="James Sutton IV, founder and Managing Partner of First Page SEO Guarantee.">
+          </span>
+        </figure>
+      </div>
+
+      <div class="col col--copy">
+        <p class="bw-eyebrow">Who signs the contract</p>
+        <h2 id="s15h">The ledger is signed.</h2>
+        <blockquote class="bw-sign__q">
+          I put the ranking commitment in the contract because a promise you cannot check is not worth reading. Call and I will tell you which phrases in your market are worth committing to, and which are not.
+        </blockquote>
+        <p class="bw-sign__by">James Sutton IV, founder and Managing Partner</p>
+        <div class="bw-actions">
+          <a class="bw-btn bw-btn--primary" href="tel:+17024207272">Call us, (702) 420-7272</a>
+          <a class="bw-btn bw-btn--secondary" href="#main">Book a consultation</a>
+        </div>
+        <p class="bw-note readw">The same action in written form, never an alternative offer.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ==========================================================================
+     THE ONE PRE-FOOTER CTA BAND. Chrome, locked, verbatim. The body above
+     authors no second closing band.
+     ========================================================================== -->
+<section class="ch-cta surface-dark" aria-labelledby="ctaH">
+  <span class="ch-cta__wash" aria-hidden="true"></span>
+  <span class="ch-cta__grain" aria-hidden="true"></span>
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-12">
+        <span class="ch-cta__rule" aria-hidden="true"></span>
+        <p class="ch-cta__eyebrow">Talk to us</p>
+        <h2 class="ch-cta__h" id="ctaH">Ask what the guarantee would say for your market.</h2>
+        <p class="ch-cta__sub">One call, one number, one agreed fee. No form to fill in first.</p>
+        <a class="ch-cta__phone" href="tel:+17024207272">
+          <svg class="ch-cta__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          (702) 420-7272
+        </a>
+        <span class="ch-cta__risk">The terms are put in writing before anything starts.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="ch-ft">
+  <div class="container">
+    <div class="ch-ft__top">
+      <img class="ch-ft__mark"
+           src="../../../../../assets/seoguarantee.com_wp-content_themes_theme-child_images_seog-logo.png"
+           width="403" height="85" alt="First Page SEO Guarantee">
+      <p class="ch-ft__tagline">Month by month. Paid, or paused.</p>
+    </div>
+
+    <div class="ch-mast">
+      <div class="row row--3up row--tight">
+        <div class="col">
+          <p class="ch-mast__k">Offices</p>
+          <address class="ch-mast__v">6905 W Charleston Blvd, Las Vegas, NV 89117, USA</address>
+          <a class="ch-mast__dirs" href="https://maps.google.com/?q=6905+W+Charleston+Blvd+Las+Vegas+NV+89117" rel="noopener">Get directions <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="col">
+          <p class="ch-mast__k">Speak to us</p>
+          <p class="ch-mast__v">
+            <a href="tel:+17024207272">+1 (702) 420-7272</a><br>
+            <a href="mailto:support@seoguarantee.com">support@seoguarantee.com</a>
+          </p>
+        </div>
+        <div class="col">
+          <p class="ch-mast__k">Published</p>
+          <p class="ch-mast__v">Monthly, for as long as the agreement runs.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ch-ft__links">
+      <div class="row row--4up row--tight">
+        <div class="col">
+          <p class="ch-ftcol__t">The Offer</p>
+          <ul class="ch-ftcol__l">
+            <li><a href="#main">The Guarantee</a></li>
+            <li><a href="#main">What is Included</a></li>
+            <li><a href="#main">Results</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <p class="ch-ftcol__t">Services</p>
+          <ul class="ch-ftcol__l">
+            <li><a href="#main">SEO Services</a></li>
+            <li><a href="#main">Web Design</a></li>
+            <li><a href="#main">UI/UX Design</a></li>
+            <li><a href="#main">Web Development</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <p class="ch-ftcol__t">Who We Work With</p>
+          <ul class="ch-ftcol__l">
+            <li><a href="#main">Dental</a></li>
+            <li><a href="#main">Law Firms</a></li>
+            <li><a href="#main">Medical Spas</a></li>
+            <li><a href="#main">HVAC</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <p class="ch-ftcol__t">Company</p>
+          <ul class="ch-ftcol__l">
+            <li><a href="#main">About</a></li>
+            <li><a href="#main">Our Locations</a></li>
+            <li><a href="#main">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="ch-ft__legal">
+      <p>First Page SEO Guarantee, Las Vegas, Nevada.</p>
+      <a href="#main">Privacy policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================================
+   CHROME BEHAVIOUR, locked and verbatim from the carrier. The BODY adds none:
+   the ledger is CSS, the demo beat is ambient motion, and the FAQ is native
+   details and summary, so this page ships zero body script.
+   ========================================================================== */
+(function () {
+  var CLOSE_DELAY = 260;
+  var hdr = document.getElementById('chHdr');
+  var item = document.getElementById('megaItem');
+  var btn = document.getElementById('megaBtn');
+  var timer = null;
+
+  function openMega() {
+    if (timer) { clearTimeout(timer); timer = null; }
+    item.setAttribute('data-open', 'true');
+    btn.setAttribute('aria-expanded', 'true');
+  }
+  function closeMega(now) {
+    if (timer) clearTimeout(timer);
+    timer = setTimeout(function () {
+      item.setAttribute('data-open', 'false');
+      btn.setAttribute('aria-expanded', 'false');
+    }, now ? 0 : CLOSE_DELAY);
+  }
+
+  if (item) {
+    item.addEventListener('mouseenter', openMega);
+    item.addEventListener('mouseleave', function () { closeMega(false); });
+    item.addEventListener('focusin', openMega);
+    item.addEventListener('focusout', function (e) { if (!item.contains(e.relatedTarget)) closeMega(true); });
+    btn.addEventListener('click', function () {
+      if (item.getAttribute('data-open') === 'true') { closeMega(true); } else { openMega(); }
+    });
+  }
+
+  var burger = document.getElementById('burger');
+  var drawer = document.getElementById('drawer');
+  var scrim = document.getElementById('scrim');
+  var drawerX = document.getElementById('drawerX');
+
+  function setDrawer(open) {
+    document.body.setAttribute('data-drawer', open ? 'open' : 'closed');
+    drawer.setAttribute('aria-hidden', open ? 'false' : 'true');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open) { var f = drawer.querySelector('a, button'); if (f) f.focus(); }
+    else { burger.focus(); }
+  }
+  if (burger) burger.addEventListener('click', function () { setDrawer(true); });
+  if (drawerX) drawerX.addEventListener('click', function () { setDrawer(false); });
+  if (scrim) scrim.addEventListener('click', function () { setDrawer(false); });
+
+  var acc = document.getElementById('accServices');
+  if (acc) {
+    var accBtn = acc.querySelector('.ch-acc__btn');
+    accBtn.addEventListener('click', function () {
+      var open = acc.getAttribute('data-open') === 'true';
+      acc.setAttribute('data-open', open ? 'false' : 'true');
+      accBtn.setAttribute('aria-expanded', open ? 'false' : 'true');
+    });
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    if (document.body.getAttribute('data-drawer') === 'open') { setDrawer(false); return; }
+    if (item && item.getAttribute('data-open') === 'true') { closeMega(true); btn.focus(); }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Tab') return;
+    if (document.body.getAttribute('data-drawer') !== 'open') return;
+    var f = drawer.querySelectorAll('a[href], button:not([disabled])');
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+
+  function onScroll() { hdr.setAttribute('data-scrolled', window.scrollY > 40 ? 'true' : 'false'); }
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  var q = new URLSearchParams(location.search);
+  if (q.get('open') === 'mega') { openMega(); }
+  if (q.get('open') === 'drawer') { setDrawer(true); }
+  if (q.get('open') === 'drawer-acc') {
+    setDrawer(true);
+    if (acc) { acc.setAttribute('data-open', 'true'); acc.querySelector('.ch-acc__btn').setAttribute('aria-expanded', 'true'); }
+  }
+  if (q.get('scrolled') === '1') { hdr.setAttribute('data-scrolled', 'true'); }
+})();
+</script>
+
+<!-- ==========================================================================
+     SELECTION LEDGER for concept C, one defended pick per composed slot.
+
+     s1  HERO-COMPOSITIONS.md #10 text driven, no hero photo, re-set on the
+         asymmetric axis. DEFENDED: there is no legal hero image on this build,
+         and composition-agency-creative section 4 names the type led hero as
+         this sector's default. CTA-PATTERNS.md #4 phone pill for the one verb.
+     s2  SECTION-COMPONENTS.md #15 comparison structure inverted into a plain
+         two column instrument on the locked .bw-table, full measure. DEFENDED:
+         the rail is EXTRACTED from this band, so the band cannot also carry it.
+     s3  LIVE-DEMO-SECTIONS.md #2 crowning #1. DEFENDED by that catalog's LAW:
+         motion, never click controls, so the beat carries no interactive
+         burden and cannot render broken on load.
+     s4  CARD-VARIATIONS.md #3 minimal 3-up, no card chrome, on .bw-fact.
+         DEFENDED: three consequences of one term read as an editorial triad,
+         not as three product tiles.
+     s5  SECTION-COMPONENTS.md #11 with the media plus cards LAW: stretched
+         portrait media LEFT, 2x2 card GRID right.
+     s6  A definition set as the band's pull quote with a square texture ACCENT
+         beside it, the only use imagery-system 2c permits for a square_hd.
+     s7  SECTION-COMPONENTS.md #14b (a) capped media beside its content.
+         DEFENDED: a different shape from s5 so no adjacent feature row repeats.
+     s8  PRICING-SECTIONS.md #5 plain-deal honesty stance on the page's ONE
+         inversion band. DEFENDED: empty handed by design, no figure either
+         side, which is exactly what the brief demands of the wedge.
+     s9  SECTION-COMPONENTS.md #15 comparison, run as a structural opposition
+         rather than a matrix of numbers.
+     s10 The rail's fullest use: a seven item charge index beside a two column
+         answer set. DEFENDED: two columns is what keeps an XL band compact.
+     s11 Three boundary panels, two of which are visible owner gaps.
+     s12 PROOF-SECTIONS.md #4 inverted to weakest evidence first, with
+         TRUST-STATS-SECTIONS.md #4 keeping the rating numeral large and always
+         beside its count.
+     s13 Full measure route grid. DEFENDED: a rail beside a rail is noise, and
+         this band is the page's only initial link equity.
+     s14 FAQ-ACCORDION.md #1 on native details and summary, two columns.
+     s15 SECTION-COMPONENTS.md #16 founder split, real photography only, and
+         explicitly NOT a second closing band.
+
+     TREATMENT VARIETY, checked rather than assumed. The tinted emphasis card
+     is used in exactly two bands (s5 and s7, both to mark the counterweight
+     paragraph of a media plus cards row) and nowhere else; s11's panels and
+     s12's rating panel are plain. The rail's full height stretch is one row
+     level declaration, not a modifier repeated on eleven cells.
+
+     IMAGE LEDGER, against the imagery-system reuse cap for this page.
+       split-contract-terms      portrait_4_3  s5   1 use
+       split-monthly-assessment  portrait_4_3  s7   1 use
+       texture-purple-material   square_hd     s6   1 use, square ACCENT only
+       texture-gold-edge         square_hd     s12  1 use, square ACCENT only
+       james-image-highres       real asset    s15  1 use, native scale
+     5 images, 5 distinct, no repeat, and the two generic pool members are a
+     minority of the distinct set. Zero text is set over any of them.
+     ========================================================================== -->
+</body>
+</html>

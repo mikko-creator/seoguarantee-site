@@ -1,0 +1,1043 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>First Page SEO Guarantee: FEEL SPECIMEN, band fragments on the locked Ledger identity</title>
+
+<!-- ============================================================================
+     E1 FEEL SPECIMEN - seoguarantee - THE SINGLE ARTIFACT
+     Owner ruling 2026-07-17 forbids a FEEL fan-out. This is one composed
+     specimen; the owner confirms and iterates on it. There is no concept-a /
+     concept-b / concept-c here and none may be authored.
+
+     WHAT THIS IS: BAND FRAGMENTS that lock the BODY FEEL. Figure/ground,
+     type-scale application, section rhythm, motion, surface treatment.
+
+     WHAT THIS IS NOT: a page. It carries no main element, no header, no nav, no
+     mega menu, no footer and no sticky bar. The slate at the top and the
+     colophon at the bottom are specimen apparatus, marked as such, and are plain
+     div elements so they can never read as page structure.
+
+     IDENTITY: LOCKED. Concept B "The Ledger", owner-picked, stamped in
+     _approvals.json. Every colour, radius, shadow, spacing step, easing curve
+     and z-layer resolves through a --ds-* token declared in
+     seoguarantee-tokens.css. ZERO new tokens are emitted here. ZERO raw brand
+     hex appears below this line.
+
+     THE THESIS BEING PROVED (read this before the CSS):
+     C7 section 8.2 records that the owner-chosen structural reference is a DARK
+     site whose three grounds are three near-blacks about seven units apart. That
+     value ladder INVERTS TO NOTHING on white. Computed this pass with the WCAG
+     relative-luminance formula against the exact values of the three light
+     ground tokens (hexes deliberately NOT reprinted here: tokens.css is the one
+     place brand hex lives, and this file must carry none):
+         --ds-bg-surface    (paper)         Y = 1.0000
+         --ds-bg-surface-2  (purple tint)   Y = 0.8987   vs paper = 1.107:1
+         --ds-bg-warm       (gold tint)     Y = 0.9093   vs paper = 1.095:1
+     Worse, and measured live in the browser rather than computed: the tint-to-warm
+     seam is 1.011:1. Those two adjacent bands are optically the SAME luminance.
+     A 1.01:1 boundary is not an edge, it is a printing error. So on this surface
+     the grounds are demoted to a supporting HUE cue and SEVEN separation devices
+     do the work instead. They are numbered SEP-1 through SEP-7 in the CSS below.
+
+     DESIGN-SYSTEM PROVENANCE (derived, never invented):
+       library   _MODERN-WOW-SPEC.md            the technique ceiling
+       library   _MODERN-DESIGN-PATTERN-LIBRARY.md  recipe ids per block
+       blueprint composition-agency-creative    the SECTOR spine, obeyed
+       menus     HERO-COMPOSITIONS, SECTION-COMPONENTS, CARD-VARIATIONS,
+                 CTA-PATTERNS, DIVIDER-PATTERNS, plus the globals catalogs
+                 SURFACE-PATTERNS, MOTION-PATTERNS, TYPOGRAPHY-PAIRINGS.
+     Every band carries its own selection-ledger pick block at HEAVY rigor,
+     immediately before it.
+
+     RENDER NOTE: scroll-reveal is used. It is switched OFF, revealed state
+     forced, for all of: no JavaScript, prefers-reduced-motion, and the query
+     param ?nomotion=1. Screenshot this file with ?nomotion=1 and nothing is
+     ever hidden.
+     ============================================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="seoguarantee-tokens.css">
+
+<style>
+/* ****************************************************************************
+   ZERO raw brand hex below this line. Every colour resolves through a --ds-*
+   token declared in seoguarantee-tokens.css. No new custom property is emitted
+   by this specimen; the one local var (--i, the stagger index) is set inline by
+   the observer and always carries a literal fallback.
+   **************************************************************************** */
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--ds-bg-surface);
+  color: var(--ds-ink);
+  font-family: var(--ds-font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+
+/* ============================================================================
+   THE BANDS. Edge to edge, no shadow of their own. In THE LEDGER a band's power
+   is solidity (SURFACE-PATTERNS.md #12 Solid-fill-block); elevation is spent on
+   cards only, never on a band.
+   ============================================================================ */
+.fs-band {
+  position: relative;
+  padding-block: var(--ds-section-py);
+  background: var(--ds-bg-surface);
+  color: var(--ds-ink);
+  overflow: hidden;
+}
+.fs-band--paper  { background: var(--ds-bg-surface); }
+.fs-band--tint   { background: var(--ds-bg-surface-2); }
+.fs-band--warm   { background: var(--ds-bg-warm); }
+.fs-band--anchor { background: var(--ds-bg-surface); }  /* .surface-dark flips the token */
+.fs-band--gold   { background: var(--ds-bg-surface); }  /* .surface-gold flips the token */
+
+/* ----------------------------------------------------------------------------
+   SEP-1  THE HAIRLINE. Every light-to-light seam carries a 1px --ds-line rule.
+          Measured in the browser it lands at 1.368:1 against paper and 1.236:1
+          against the purple tint. Against a tint-to-warm ground step of 1.011:1
+          that is roughly twenty times the separation the grounds deliver on
+          their own, and the line carries HUE (it is purple-tinted, never grey),
+          which is what a light surface reads fastest.
+   SEP-2  THE CONTACT SHADOW. DIVIDER-PATTERNS.md #8 Shadow drop band: a 20px
+          graded ink ramp immediately under the seam, so the band above reads as
+          RESTING on the band below. The hairline states the boundary; the
+          contact shadow gives it a direction. This is the pair that replaces the
+          reference's near-black value ladder, and it is the whole answer to
+          "the ladder inverts to nothing on white".
+   ---------------------------------------------------------------------------- */
+.fs-band + .fs-band { border-top: 1px solid var(--ds-line); }
+.fs-band + .fs-band::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 20px;
+  background-image: linear-gradient(180deg, var(--ds-hairline), transparent);
+  pointer-events: none;
+  z-index: var(--ds-z-base);
+}
+/* Into the dark anchor and into the gold the measured ground step is 17.61:1 and
+   11.27:1, so the seam is already unmissable and BOTH devices are switched OFF
+   rather than left on out of habit. A hairline there is either invisible (over
+   near-black it composites to near-black, measured at 1.00:1, so it is a
+   declaration that paints nothing) or a second competing edge beside a 17:1 one.
+   A contact shadow there would paint a light halo, which is the value-ladder
+   mistake running in the other direction. The selectors below deliberately carry
+   THREE class tokens so they outrank the adjacent-sibling rule above; at two
+   tokens they tie and lose, which is a real defect this specimen was caught
+   shipping at first render. */
+.fs-band + .fs-band--anchor, .fs-band + .fs-band--gold { border-top: 0; }
+.fs-band--anchor::before, .fs-band--gold::before { display: none; }
+
+/* SEP-6  THE MATERIAL LAYER. One band carries a token grid at --ds-opacity-faint
+   and the anchor carries token grain. Two planes at the same VALUE but different
+   MATERIAL still separate; two planes at the same value and the same material
+   do not. */
+.fs-atmos, .fs-mesh, .fs-grain {
+  position: absolute;
+  inset: 0;
+  z-index: var(--ds-z-below);
+  pointer-events: none;
+}
+.fs-atmos {
+  background-image: var(--ds-glow-wash);
+  opacity: var(--ds-opacity-faint);
+}
+.fs-mesh {
+  background-image: var(--ds-grid);
+  background-size: var(--ds-grid-size);
+  opacity: var(--ds-opacity-faint);
+}
+.fs-grain {
+  background-image: var(--ds-grain);
+  opacity: var(--ds-opacity-faint);
+}
+
+.fs-wrap {
+  position: relative;
+  z-index: var(--ds-z-raised);
+  max-width: var(--ds-container-max);
+  margin-inline: auto;
+  padding-inline: var(--ds-space-md);
+}
+
+/* THE MEASURE. One reading column, pinned to one left axis across every band.
+   Polarity-free, and the strongest transferable idea in the owner-chosen
+   reference. */
+.readw { max-width: 62ch; }
+.readw--wide { max-width: 78ch; }
+
+/* ============================================================================
+   TYPE. TYPOGRAPHY-PAIRINGS.md #26 Montserrat + Hind, the locked pair. Posture
+   is oversized and light-at-large: display weight falls as size rises, which
+   the pattern library records as reading luxe rather than loud. Sentence case
+   throughout. No exclamation marks anywhere on this specimen (owner rail).
+   ============================================================================ */
+.fs-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-sm);
+  font-family: var(--ds-font-body);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ds-accent-ink);
+  margin: 0 0 var(--ds-space-sm);
+}
+/* SEP-4  THE STRUCTURAL ACCENT RULE. --ds-accent-deep measures 8.40:1 on paper.
+   It is the one unambiguous dark-on-light edge every band opens with, and it is
+   gold doing a STRUCTURAL job rather than decorating. */
+.fs-eyebrow::after {
+  content: "";
+  flex: 0 0 44px;
+  height: 2px;
+  background: var(--ds-accent-deep);
+}
+.fs-eyebrow--quiet { color: var(--ds-ink-soft); }
+.fs-eyebrow--quiet::after { display: none; }
+
+.d-xl, .d-lg, .d-md {
+  font-family: var(--ds-font-display);
+  color: var(--ds-ink-heading);
+  margin: 0;
+  text-wrap: balance;
+}
+.d-xl { font-size: clamp(44px, 5.9vw, 78px); font-weight: 300; letter-spacing: -.03em;  line-height: 1.0; }
+.d-lg { font-size: clamp(31px, 4.1vw, 52px); font-weight: 400; letter-spacing: -.025em; line-height: 1.06; }
+.d-md { font-size: clamp(21px, 2.2vw, 29px); font-weight: 500; letter-spacing: -.015em; line-height: 1.18; }
+
+.fs-lede { font-size: 20px; line-height: 1.55; color: var(--ds-ink-soft); margin: var(--ds-space-md) 0 0; }
+.fs-body { margin: var(--ds-space-sm) 0 0; color: var(--ds-ink); }
+.fs-note { font-size: 13.5px; line-height: 1.6; color: var(--ds-ink-soft); margin: var(--ds-space-sm) 0 0; }
+.fs-micro {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--ds-ink-soft);
+  margin: 0;
+}
+
+/* Section heads get three treatments, not one, so the rhythm is composed rather
+   than stamped. */
+.fs-head { margin-bottom: var(--ds-space-xl); }
+.fs-head--split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  gap: var(--ds-space-lg);
+  align-items: end;
+}
+.fs-head--split > div { min-width: 0; }
+.fs-head--tight { margin-bottom: var(--ds-space-lg); }
+
+.fs-rule { height: 3px; width: 64px; background: var(--ds-accent-deep); margin-bottom: var(--ds-space-md); }
+
+/* ============================================================================
+   THE SPECIMEN SLATE. Apparatus, not chrome. A <div>, deliberately, so it can
+   never be mistaken for a page header.
+   ============================================================================ */
+.fs-slate {
+  max-width: var(--ds-container-max);
+  margin-inline: auto;
+  padding: var(--ds-space-xl) var(--ds-space-md) var(--ds-space-lg);
+}
+.fs-slate__rule { height: 6px; width: 96px; background: var(--ds-accent-deep); margin-bottom: var(--ds-space-md); }
+.fs-slate__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ds-space-sm) var(--ds-space-lg);
+  margin-top: var(--ds-space-lg);
+  padding-top: var(--ds-space-md);
+  border-top: 1px solid var(--ds-line);
+}
+.fs-slate__meta > div { min-width: 168px; }
+.fs-slate__k {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--ds-ink-soft);
+  margin: 0 0 3px;
+}
+.fs-slate__v { font-size: 13.5px; color: var(--ds-ink); margin: 0; }
+
+/* ============================================================================
+   BAND 1  HERO FRAGMENT
+   ============================================================================ */
+.fs-hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
+  gap: var(--ds-space-xl);
+  align-items: center;
+}
+.fs-hero__lane { min-width: 0; }
+
+/* The promise and the pause always travel together. The pair is a single
+   object in this system so a later pass cannot ship one without the other. */
+.fs-pair { margin-top: var(--ds-space-md); }
+.fs-pair__promise { margin: 0; }
+.fs-pair__pause {
+  margin: var(--ds-space-md) 0 0;
+  padding-left: var(--ds-space-md);
+  border-left: 2px solid var(--ds-accent-deep);
+  font-size: 17.5px;
+  line-height: 1.55;
+  color: var(--ds-ink-soft);
+}
+
+.fs-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--ds-space-sm) var(--ds-space-md);
+  margin-top: var(--ds-space-lg);
+}
+
+/* CTA-PATTERNS.md #1 solid pill primary, SURFACE-PATTERNS.md #18
+   Solid-pill-modern-marketing. Motion is the quiet lift, MOTION-PATTERNS.md #10,
+   never an arrow translate: this surface runs ONE gesture. */
+.fs-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-space-xs);
+  font-family: var(--ds-font-body);
+  font-size: 14.5px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  line-height: 1;
+  padding: 16px 28px;
+  border-radius: var(--ds-r-pill);
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--ds-dur) var(--ds-ease),
+              border-color var(--ds-dur) var(--ds-ease),
+              box-shadow var(--ds-dur) var(--ds-ease),
+              transform var(--ds-dur) var(--ds-ease);
+}
+.fs-btn--primary {
+  background-color: var(--ds-primary);
+  border-color: var(--ds-primary);
+  color: var(--ds-ink-on-dark);
+  box-shadow: var(--ds-shadow-rest);
+}
+.fs-btn--primary:hover {
+  background-color: var(--ds-primary-deep);
+  border-color: var(--ds-primary-deep);
+  box-shadow: var(--ds-shadow-card);
+  transform: translateY(-2px);
+}
+.fs-btn--primary:focus-visible { outline: 3px solid var(--ds-accent-deep); outline-offset: 3px; }
+.fs-btn--quiet {
+  background-color: transparent;
+  border-color: var(--ds-line);
+  color: var(--ds-primary);
+  box-shadow: none;
+}
+.fs-btn--quiet:hover {
+  background-color: var(--ds-primary-soft);
+  border-color: var(--ds-primary);
+  color: var(--ds-primary);
+  transform: translateY(-2px);
+}
+.fs-btn--quiet:focus-visible { outline: 3px solid var(--ds-accent-deep); outline-offset: 3px; }
+
+.fs-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  border-radius: var(--ds-r-pill);
+  color: var(--ds-ink-soft);
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--ds-line);
+}
+.fs-chip__dot { width: 6px; height: 6px; border-radius: var(--ds-r-pill); background: var(--ds-accent-deep); }
+
+/* ----------------------------------------------------------------------------
+   SEP-3  THE FRAMED MEDIA WELL, and the sharpest instance of the whole problem.
+   Every rights-clear founder file is a TRANSPARENT CUTOUT. Dropped on paper a
+   cutout has literally no edge: the figure and the ground are the same pixel
+   value at the boundary. The well gives it one, by carrying a tinted plane, a
+   token grid material, a hairline and a two-stop ink-tinted shadow. The photo
+   is never scaled past its native pixels (504 x 722 rendered at 420 wide).
+   ---------------------------------------------------------------------------- */
+.fs-frame {
+  position: relative;
+  max-width: 420px;
+  margin-inline: auto;
+  padding: var(--ds-space-sm);
+  border: 1px solid var(--ds-hairline);
+  border-radius: var(--ds-r-surface);
+  background-color: var(--ds-bg-surface);
+  box-shadow: var(--ds-shadow-card), var(--ds-inset-hi);
+}
+.fs-frame__plate {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--ds-r-control);
+  background-color: var(--ds-bg-surface-2);
+  background-image: var(--ds-grid);
+  background-size: var(--ds-grid-size);
+  box-shadow: inset 0 0 0 1px var(--ds-hairline);
+}
+.fs-frame__img {
+  width: 100%;
+  height: auto;
+  filter: saturate(.96) contrast(1.03);
+}
+/* The caption sits ABOVE the plate, not below it. At first render it sat below
+   and the overlapping stamp landed straight on top of it, which is what an
+   absolutely positioned element does to a flow sibling it was never measured
+   against. Moving the caption up gives the stamp a clear lower-left field to
+   overlap and gives the frame a spec-sheet header. */
+.fs-frame__cap { margin: 2px 2px var(--ds-space-sm); }
+
+/* One element overlaps the frame edge, which is the WOW spec's asymmetry rule
+   and also a second reading of the same figure/ground idea: the stamp proves
+   its own elevation by sitting across a boundary. */
+.fs-stamp {
+  position: absolute;
+  left: calc(var(--ds-space-md) * -1);
+  bottom: var(--ds-space-lg);
+  padding: var(--ds-space-sm) var(--ds-space-md);
+  border: 1px solid var(--ds-hairline);
+  border-radius: var(--ds-r-control);
+  background: var(--ds-bg-surface);
+  box-shadow: var(--ds-shadow-lift), var(--ds-inset-hi);
+  max-width: 240px;
+}
+.fs-stamp__k {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: var(--ds-accent-ink);
+  margin: 0 0 4px;
+}
+.fs-stamp__v {
+  font-family: var(--ds-font-display);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.3;
+  color: var(--ds-ink-heading);
+  margin: 0;
+}
+
+/* ============================================================================
+   BAND 2  PROOF STRIP. Three items, stated flat, no tiles.
+   SURFACE-PATTERNS.md #27 Hairline-full-width and #28 Hairline-with-eyebrow-label
+   are the whole chrome. Nothing here is boxed, because a box around an unproven
+   fact is the tile this brand is banned from shipping.
+   ============================================================================ */
+.fs-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--ds-space-lg);
+  margin-top: var(--ds-space-lg);
+}
+.fs-fact {
+  min-width: 0;
+  padding-top: var(--ds-space-md);
+  border-top: 2px solid var(--ds-accent-deep);
+}
+.fs-fact__n {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: .1em;
+  color: var(--ds-accent-ink);
+  margin: 0 0 var(--ds-space-sm);
+}
+.fs-fact__t {
+  font-family: var(--ds-font-display);
+  font-weight: 500;
+  font-size: clamp(19px, 1.9vw, 24px);
+  line-height: 1.22;
+  letter-spacing: -.012em;
+  color: var(--ds-ink-heading);
+  margin: 0;
+}
+.fs-fact__d { font-size: 14.5px; line-height: 1.55; color: var(--ds-ink-soft); margin: var(--ds-space-sm) 0 0; }
+
+/* ============================================================================
+   BAND 3  CARD ROW. CARD-VARIATIONS.md #2 light feature card with an embedded
+   mini-visual, on the gold-tinted plane. SEP-5: three stacked edge events per
+   card, a hairline, an inset top highlight and a two-stop ink-tinted shadow.
+   ============================================================================ */
+.fs-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--ds-space-lg);
+  margin-top: var(--ds-space-lg);
+}
+.fs-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: var(--ds-space-md);
+  border: 1px solid var(--ds-hairline);
+  border-radius: var(--ds-r-surface);
+  background: var(--ds-bg-surface);
+  box-shadow: var(--ds-shadow-card), var(--ds-inset-hi);
+  transition: box-shadow var(--ds-dur) var(--ds-ease), transform var(--ds-dur) var(--ds-ease);
+}
+.fs-card:hover { box-shadow: var(--ds-shadow-lift), var(--ds-inset-hi); transform: translateY(-4px); }
+.fs-card__vis {
+  position: relative;
+  height: 136px;
+  margin-bottom: var(--ds-space-md);
+  padding: var(--ds-space-sm);
+  overflow: hidden;
+  border-radius: var(--ds-r-control);
+  background-color: var(--ds-bg-surface-2);
+  background-image: var(--ds-grid);
+  background-size: var(--ds-grid-size);
+  box-shadow: inset 0 0 0 1px var(--ds-hairline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ds-primary);
+}
+.fs-card__vis--photo { align-items: flex-end; padding: 0; }
+.fs-card__title {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.3;
+  color: var(--ds-ink-heading);
+  margin: 0 0 6px;
+}
+.fs-card__body { font-size: 14.5px; line-height: 1.58; color: var(--ds-ink-soft); margin: 0; }
+.fs-card__foot { margin-top: var(--ds-space-md); padding-top: var(--ds-space-sm); border-top: 1px solid var(--ds-line); }
+
+.fs-shot { width: auto; height: 132px; margin-inline: auto; filter: saturate(.96) contrast(1.03); }
+
+/* the mini month row inside card one */
+.fs-ticks { display: flex; gap: 5px; width: 100%; align-items: flex-end; }
+.fs-tick {
+  flex: 1 1 0;
+  height: 46px;
+  border-radius: 3px;
+  background: var(--ds-accent);
+  box-shadow: var(--ds-inset-hi);
+}
+.fs-tick--paused { background: transparent; box-shadow: inset 0 0 0 2px var(--ds-accent); }
+
+.fs-ico { display: block; width: 100%; height: auto; max-width: 200px; color: var(--ds-primary); }
+
+/* ============================================================================
+   BAND 4  THE DARK ANCHOR. The one dark full-bleed moment, which C7 section 0
+   names as brand signature (dark-purple-chrome, dark-hero) and which must
+   survive in modernized execution. Here it also supplies the specimen's
+   LUMINANCE RANGE: paper at Y 1.0000 against the anchor at 19.28:1, so the eye
+   has a reference for what a plane is before it reads the near-identical light
+   ones above.
+   ============================================================================ */
+.fs-anchor__grid {
+  display: grid;
+  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+  gap: var(--ds-space-xl);
+  align-items: start;
+}
+.fs-anchor__lane { min-width: 0; }
+
+/* THE MONTH STRIP. A crafted CSS diagram of the mechanic, which C7 section 5
+   names as the technique this sector should spend craft on. It ILLUSTRATES the
+   month-by-month assessment and the month billing pauses. It reports no client
+   history and asserts no precedent. */
+.fs-strip {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 6px;
+  margin-top: var(--ds-space-md);
+}
+.fs-cell {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--ds-r-control);
+  background: var(--ds-accent);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 7px;
+  font-family: var(--ds-font-display);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ds-primary-deep);
+  box-shadow: var(--ds-inset-hi);
+}
+.fs-cell--paused {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px var(--ds-accent);
+  color: var(--ds-accent-ink);
+}
+.fs-cell--paused::before {
+  content: "";
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  top: 46%;
+  height: 2px;
+  background: var(--ds-accent);
+}
+.fs-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ds-space-md) var(--ds-space-lg);
+  margin-top: var(--ds-space-md);
+  padding-top: var(--ds-space-md);
+  border-top: 1px solid var(--ds-hairline);
+}
+.fs-legend > div { display: flex; gap: var(--ds-space-sm); align-items: flex-start; max-width: 34ch; }
+.fs-key {
+  flex: 0 0 24px;
+  height: 32px;
+  border-radius: var(--ds-r-control);
+  background: var(--ds-accent);
+  margin-top: 2px;
+}
+.fs-key--paused { background: transparent; box-shadow: inset 0 0 0 2px var(--ds-accent); }
+.fs-key__t { font-size: 13px; line-height: 1.5; color: var(--ds-ink-soft); margin: 0; }
+.fs-key__t b { display: block; color: var(--ds-ink); font-weight: 600; }
+
+/* ============================================================================
+   BAND 5  THE GOLD FEE BAND. Gold's one structural job: a ground you stand on.
+   DARK ink only, always. White on the brand gold measures 1.71:1 and does not
+   ship on this surface in any size, which is the live site's trap and the
+   .surface-gold flip is what prevents it being re-inherited.
+   ============================================================================ */
+.fs-fee__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, .45fr);
+  gap: var(--ds-space-xl);
+  align-items: end;
+}
+.fs-fee__grid > div { min-width: 0; }
+.fs-fee__aside { text-align: right; }
+
+/* ============================================================================
+   COLOPHON. Apparatus, a <div>, never a footer.
+   ============================================================================ */
+.fs-colophon {
+  max-width: var(--ds-container-max);
+  margin-inline: auto;
+  padding: var(--ds-space-xl) var(--ds-space-md) var(--ds-space-2xl);
+  border-top: 1px solid var(--ds-line);
+}
+.fs-list { list-style: none; margin: var(--ds-space-md) 0 0; padding: 0; counter-reset: fsn; }
+.fs-list li {
+  counter-increment: fsn;
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: var(--ds-space-md);
+  padding: var(--ds-space-md) 0;
+  border-top: 1px solid var(--ds-line);
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--ds-ink-soft);
+}
+.fs-list li::before {
+  content: counter(fsn, decimal-leading-zero);
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: .06em;
+  color: var(--ds-accent-ink);
+}
+.fs-list b { color: var(--ds-ink); font-weight: 600; }
+.fs-list__k { display: block; }
+
+/* ============================================================================
+   MOTION. ONE gesture for the whole surface: a short fade plus a small rise on
+   ONE easing curve, with a small stagger on grouped items. No bounce, no
+   overshoot, no rotation, no flip, no loop, no autoplay. Every transition names
+   its properties; the blanket all-properties shorthand is never used, and no
+   hover state is a bare opacity change.
+   MOTION-PATTERNS.md #21 Fade-up.
+
+   Hidden-before-reveal is scoped to .js-reveal, a class the head script adds
+   ONLY when JavaScript is on, reduced motion is off, and ?nomotion=1 is absent.
+   So with no JS, with reduced motion, or with ?nomotion=1, nothing is ever
+   hidden and a static capture can never come back blank.
+   ============================================================================ */
+.js-reveal .reveal { opacity: 0; transform: translateY(22px); }
+.js-reveal .reveal.is-in {
+  opacity: 1;
+  transform: none;
+  transition: opacity var(--ds-dur-slow) var(--ds-ease-out),
+              transform var(--ds-dur-slow) var(--ds-ease-out);
+  transition-delay: calc(var(--i, 0) * 80ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal .reveal { opacity: 1; transform: none; }
+  .js-reveal .reveal.is-in { transition: none; transition-delay: 0ms; }
+  .fs-btn, .fs-card { transition: none; }
+  .fs-btn--primary:hover, .fs-btn--quiet:hover, .fs-card:hover { transform: none; }
+}
+
+@media (max-width: 900px) {
+  .fs-hero__grid, .fs-anchor__grid, .fs-fee__grid, .fs-head--split { grid-template-columns: minmax(0, 1fr); gap: var(--ds-space-lg); }
+  .fs-fee__aside { text-align: left; }
+  .fs-facts, .fs-cards { grid-template-columns: minmax(0, 1fr); gap: var(--ds-space-md); }
+  .fs-strip { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .fs-stamp { position: static; max-width: none; margin-top: var(--ds-space-sm); }
+  .fs-frame { max-width: none; }
+}
+</style>
+
+<script>
+/* The motion latch. Runs before first paint so the revealed state is never a
+   flash. ?nomotion=1 and prefers-reduced-motion both force fully revealed. */
+(function () {
+  var forced = window.location.search.indexOf('nomotion=1') > -1;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!forced && !reduce) { document.documentElement.className += ' js-reveal'; }
+})();
+</script>
+</head>
+
+<body>
+
+<div class="fs-slate">
+  <div class="fs-slate__rule" aria-hidden="true"></div>
+  <p class="fs-eyebrow">Feel specimen, band fragments</p>
+  <h1 class="d-lg">Figure and ground on a white page</h1>
+  <p class="fs-lede readw">Five band fragments on the locked Ledger identity. This is not a page: there is no header, no nav and no footer, and nothing below is a page composition. What is being locked here is the body feel, which means the section rhythm, the type scale in use, the surface treatment, the one motion gesture, and above all how one band is told apart from the next when every band is close to white.</p>
+  <div class="fs-slate__meta">
+    <div>
+      <p class="fs-slate__k">Identity</p>
+      <p class="fs-slate__v">Concept B, The Ledger. Locked and stamped.</p>
+    </div>
+    <div>
+      <p class="fs-slate__k">Grounds in play</p>
+      <p class="fs-slate__v">Paper, purple tint, gold tint, near-black anchor, gold.</p>
+    </div>
+    <div>
+      <p class="fs-slate__k">Separation devices</p>
+      <p class="fs-slate__v">Hairline plus contact shadow, seven in total, numbered in the source.</p>
+    </div>
+    <div>
+      <p class="fs-slate__k">Motion</p>
+      <p class="fs-slate__v">One gesture. Add ?nomotion=1 to force the revealed state.</p>
+    </div>
+  </div>
+</div>
+
+<!-- pick: HERO-COMPOSITIONS.md #4 Diptych portrait plus product/service | considered: #5 Full-bleed image with overlay text,#22 Statistics-heavy hero | rigor: heavy | seam: DIVIDER-PATTERNS.md #8 Shadow drop band | globals: SURFACE-PATTERNS.md #10 Soft-shadow-lift, MOTION-PATTERNS.md #21 Fade-up, TYPOGRAPHY-PAIRINGS.md #26 Montserrat plus Hind | library: _MODERN-WOW-SPEC layout sophistication, one element overlapping a boundary | blueprint: composition-agency-creative slot 2, type-led hero is this vertical's default and imagery is banded rather than boxed | why: the diptych gives equal billing to the founder and to the mechanic, which is precisely this brand's pair, and it is the only hero shape in the menu that survives a concept swap: the media tile is a fixed-ratio well the ratified hero poster can drop into later without moving one line of type. #5 was rejected on measured resolution, since the largest rights-clear founder file is 571px wide and the single 1920px asset is a dated infographic with baked-in words the build cannot restyle, so a full-bleed would either blur or reprint copy. #22 was rejected outright because an oversized aggregate numeral is a banned SHAPE for this client and not merely a banned number. -->
+<section class="fs-band fs-band--paper reveal">
+  <div class="fs-atmos" aria-hidden="true"></div>
+  <div class="fs-mesh" aria-hidden="true"></div>
+  <div class="fs-wrap">
+    <div class="fs-hero__grid">
+
+      <div class="fs-hero__lane">
+        <p class="fs-eyebrow">The terms, first</p>
+        <h2 class="d-xl">Month by month. Paid, or paused.</h2>
+
+        <div class="fs-pair">
+          <p class="fs-pair__promise fs-lede readw">We guarantee first page for the key phrases named in your contract, or you don&rsquo;t pay.</p>
+          <p class="fs-pair__pause readw">Any month we&rsquo;re not delivering what your contract says, we keep working and your billing stops.</p>
+        </div>
+
+        <div class="fs-actions">
+          <a class="fs-btn fs-btn--primary" href="#fs-book">Book a consultation</a>
+          <span class="fs-chip"><span class="fs-chip__dot" aria-hidden="true"></span>Rated 4.9 from 35 Google reviews</span>
+        </div>
+
+        <p class="fs-note readw">Type posture, shown in use: display weight falls as size rises, so the largest setting is the lightest one. Sentence case throughout. The promise and the pause are one object in this system, never two, so no later pass can ship the first sentence on its own.</p>
+      </div>
+
+      <div class="fs-hero__lane">
+        <div class="fs-frame">
+          <p class="fs-frame__cap fs-micro">Owner-supplied founder photography, 504 by 722, never upscaled</p>
+          <div class="fs-frame__plate">
+            <img class="fs-frame__img"
+                 src="../assets/seoguarantee.com_wp-content_themes_theme-child_images_james-approved.png"
+                 alt="James Sutton IV, founder of First Page SEO Guarantee, in a dark three-piece suit raising one finger."
+                 width="504" height="722" decoding="async">
+          </div>
+          <div class="fs-stamp">
+            <p class="fs-stamp__k">The figure/ground case</p>
+            <p class="fs-stamp__v">A transparent cutout on white has no edge. The tinted plate, the grid material and the hairline give it one.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- pick: SECTION-COMPONENTS.md #3 Stat strip / metric band | considered: #2 Trust strip / logo wall,#4 Press band as seen in | rigor: heavy | seam: DIVIDER-PATTERNS.md #8 Shadow drop band | globals: SURFACE-PATTERNS.md #27 Hairline-full-width, SURFACE-PATTERNS.md #28 Hairline-with-eyebrow-label | library: _MODERN-DESIGN-PATTERN-LIBRARY category E, editorial display against calm body | blueprint: composition-agency-creative slot 12 places borrowed credibility directly under the hero | why: both obvious occupants of the under-hero proof slot are barred for this client, the logo wall on unestablished rights and the press band on marks marked do-not-ship, so the slot keeps its shape and inverts its contents to three checkable facts stated flat with no tiles. Choosing the metric band and then deliberately refusing to put an invented metric in it is the whole move: the one number that ships travels with its own modest count, and the other two items are a person and a place, which is what credibility looks like while the numbers are not yet yours to publish. The chrome is hairlines only, because a box drawn around an unproven fact is exactly the tile this brand is banned from shipping. -->
+<section class="fs-band fs-band--tint reveal">
+  <div class="fs-wrap">
+    <div class="fs-head fs-head--split">
+      <div>
+        <p class="fs-eyebrow">Proof, by the third band</p>
+        <h2 class="d-lg">Three things you can check yourself</h2>
+      </div>
+      <div>
+        <p class="fs-body readw">Proof arrives early and is never deferred below the fold. Nothing here is boxed, tiled or animated into a counter, because the shape of a claim is read before its content is.</p>
+      </div>
+    </div>
+
+    <div class="fs-facts">
+      <div class="fs-fact reveal">
+        <p class="fs-fact__n">01</p>
+        <p class="fs-fact__t">Rated 4.9 from 35 Google reviews</p>
+        <p class="fs-fact__d">The count travels with the rating, always. The modest count is the point: it is checkable in one click, which a rounded superlative never is.</p>
+      </div>
+      <div class="fs-fact reveal">
+        <p class="fs-fact__n">02</p>
+        <p class="fs-fact__t">James Sutton IV, founder, since 2015</p>
+        <p class="fs-fact__d">A named person, stated plainly and not built into a heritage theme. Founder-direct is the register, and the quirk lives in the photography and the voice.</p>
+      </div>
+      <div class="fs-fact reveal">
+        <p class="fs-fact__n">03</p>
+        <p class="fs-fact__t">We work with clients across US metros, all from our Las Vegas office.</p>
+        <p class="fs-fact__d">Verbatim, and carrying no count. What is measured is a list of published city pages, which is a different fact from a list of markets holding a client.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: CARD-VARIATIONS.md #2 Light feature card with embedded mini-visual | considered: #1 Dark service tile with icon-top-right,#5 Stat tile 4-up | rigor: heavy | seam: DIVIDER-PATTERNS.md #8 Shadow drop band | globals: SURFACE-PATTERNS.md #10 Soft-shadow-lift, MOTION-PATTERNS.md #10 Lift | library: _MODERN-WOW-SPEC depth and elevation, layered shadow with a hairline and an inset top highlight | blueprint: composition-agency-creative slot 5, the capabilities grid is mandatory in this vertical and is always icon-tiled | why: on a white-dominant page the light card is the only variant that can separate from its ground without inverting, and it earns that separation from three stacked edge events rather than from a background value: a hairline, a one-pixel inset top highlight and a two-stop ink-tinted contact shadow. #1 inverts to dark and would spend the brand's single dark moment on a card row instead of on the anchor band where the signature belongs. #5 is a stat tile and this client has no publishable stat set, so it would ship either as an empty frame or as an invented number, and both are worse than no card at all. The three mini-visuals are deliberately three different kinds of object so the row reads as composed rather than stamped. -->
+<section class="fs-band fs-band--warm reveal">
+  <div class="fs-wrap">
+    <div class="fs-head">
+      <p class="fs-eyebrow">The card, and the only thing that floats</p>
+      <h2 class="d-lg">Bands are solid. Cards are lifted.</h2>
+      <p class="fs-body readw">The gold-tinted plane sits 1.095 to 1 against paper, which is no boundary at all on its own. It reads as a distinct stratum because of the hairline above it, the graded contact shadow under that hairline, and the fact that everything resting on it casts.</p>
+    </div>
+
+    <div class="fs-cards">
+
+      <div class="fs-card reveal">
+        <div class="fs-card__vis">
+          <div class="fs-ticks" aria-hidden="true">
+            <div class="fs-tick"></div>
+            <div class="fs-tick"></div>
+            <div class="fs-tick"></div>
+            <div class="fs-tick fs-tick--paused"></div>
+            <div class="fs-tick"></div>
+            <div class="fs-tick"></div>
+          </div>
+        </div>
+        <h3 class="fs-card__title">Assessed month by month</h3>
+        <p class="fs-card__body">Each month is measured against the metrics your contract names. A month that is off target is a month the work continues and the billing stops.</p>
+        <div class="fs-card__foot"><p class="fs-micro">Crafted CSS diagram, not an icon</p></div>
+      </div>
+
+      <div class="fs-card reveal">
+        <div class="fs-card__vis">
+          <svg class="fs-ico" viewBox="0 0 200 108" role="img" aria-label="A contract line with the agreed key phrases underlined in gold.">
+            <rect x="1" y="1" width="198" height="106" rx="8" fill="none" stroke="currentColor" stroke-opacity=".22" stroke-width="2"></rect>
+            <rect x="18" y="24" width="112" height="7" rx="3.5" fill="currentColor" fill-opacity=".26"></rect>
+            <rect x="18" y="44" width="150" height="7" rx="3.5" fill="currentColor" fill-opacity=".16"></rect>
+            <rect x="18" y="68" width="84" height="10" rx="5" fill="var(--ds-accent)"></rect>
+            <rect x="18" y="84" width="84" height="3" rx="1.5" fill="var(--ds-accent-deep)"></rect>
+            <rect x="112" y="68" width="46" height="10" rx="5" fill="currentColor" fill-opacity=".16"></rect>
+          </svg>
+        </div>
+        <h3 class="fs-card__title">The phrases are named in the contract</h3>
+        <p class="fs-card__body">We propose the key phrases from competitive research. They are then named in the contract you sign, along with the geography the position is measured in.</p>
+        <div class="fs-card__foot"><p class="fs-micro">Inline SVG, token-coloured</p></div>
+      </div>
+
+      <div class="fs-card reveal">
+        <div class="fs-card__vis fs-card__vis--photo">
+          <img class="fs-shot"
+               src="../assets/seoguarantee.com_wp-content_themes_theme-child_images_james-undercut.png"
+               alt="James Sutton IV with both hands raised, wearing a patterned shirt and dark waistcoat."
+               width="571" height="462" decoding="async">
+        </div>
+        <h3 class="fs-card__title">Run from one office, on purpose</h3>
+        <p class="fs-card__body">A local mailing address does not move a ranking. The phrase set is local, so the work is local even when the desk is not, and we would rather say that than rent one.</p>
+        <div class="fs-card__foot"><p class="fs-micro">Owner-supplied photography, 571 by 462</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- pick: SECTION-COMPONENTS.md #8 Manifesto / belief statement | considered: #26 Pull-quote section,#7 Problem framing | rigor: heavy | seam: measured value jump of 17.61:1 into the anchor, so both seam devices are switched OFF here | globals: SURFACE-PATTERNS.md #12 Solid-fill-block, MOTION-PATTERNS.md #21 Fade-up | library: _MODERN-WOW-SPEC texture and material, an ultra-subtle grain layer to kill flatness on the anchor | blueprint: composition-agency-creative names ONE near-black anchor band per page, and this is it | why: the near-black anchor is the single place this surface is allowed to raise its voice, and the sentence that earns it is the one the brand can say without anybody's permission, which is that we do not publish a success rate. #26 was rejected because a pull-quote needs an attributed speaker and every quotable client here is rights-blocked, so the pattern would ship hollow. #7 was rejected because problem framing puts the reader's failure on screen where this band should be putting the vendor's own restraint, which is the stronger answer to a category whose published critique is that guarantee sellers are vague and unfalsifiable. The band also carries the specimen's luminance range, so the eye learns what a plane is here before it is asked to read the near-identical light ones above. -->
+<section class="fs-band fs-band--anchor surface-dark reveal">
+  <div class="fs-atmos" aria-hidden="true"></div>
+  <div class="fs-grain" aria-hidden="true"></div>
+  <div class="fs-wrap">
+    <div class="fs-anchor__grid">
+
+      <div class="fs-anchor__lane">
+        <p class="fs-eyebrow">The anchor</p>
+        <h2 class="d-lg">We do not publish a success rate.</h2>
+        <p class="fs-body readw">Saying it is stronger than leaving it out. A rate with no dataset behind it is the exact tell buyers in this category are taught to look for, so the honest position is to state the absence and then show the one thing that is fully ours to show.</p>
+        <p class="fs-note readw">Scoped, and never stated flat: no competitor we researched conditions its SEO fee on delivery of agreed ranking metrics.</p>
+      </div>
+
+      <div class="fs-anchor__lane">
+        <div class="fs-rule" aria-hidden="true"></div>
+        <h3 class="d-md">The month strip</h3>
+        <p class="fs-note">An illustration of the mechanic, drawn in CSS. It reports no account and asserts no precedent.</p>
+
+        <div class="fs-strip" role="img" aria-label="Twelve months. Ten are billed and two are paused, with the work continuing through all twelve.">
+          <div class="fs-cell">1</div>
+          <div class="fs-cell">2</div>
+          <div class="fs-cell">3</div>
+          <div class="fs-cell fs-cell--paused">4</div>
+          <div class="fs-cell">5</div>
+          <div class="fs-cell">6</div>
+          <div class="fs-cell">7</div>
+          <div class="fs-cell">8</div>
+          <div class="fs-cell fs-cell--paused">9</div>
+          <div class="fs-cell">10</div>
+          <div class="fs-cell">11</div>
+          <div class="fs-cell">12</div>
+        </div>
+
+        <div class="fs-legend">
+          <div>
+            <span class="fs-key" aria-hidden="true"></span>
+            <p class="fs-key__t"><b>On target</b>The month is billed at the agreed fee.</p>
+          </div>
+          <div>
+            <span class="fs-key fs-key--paused" aria-hidden="true"></span>
+            <p class="fs-key__t"><b>Off target</b>Billing stops for that month and resumes when results are back on track. The work continues throughout.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- pick: CTA-PATTERNS.md #11 Full-width band CTA, the section as the button | considered: #1 Solid pill primary,#7 Multi-CTA cluster | rigor: heavy | seam: measured value jump of 11.27:1 into the gold, so both seam devices are switched OFF here | globals: SURFACE-PATTERNS.md #18 Solid-pill-modern-marketing, MOTION-PATTERNS.md #10 Lift | library: _MODERN-DESIGN-PATTERN-LIBRARY category F component polish, one accent used consistently | blueprint: composition-agency-creative slot 14, one closing ask and no CTA on every band | why: gold's entire job in this identity is to be a ground you stand on rather than a colour you decorate with, so the ask IS the band and the pill inside it is only the affordance. #1 on its own would demote gold to a chip, which breaks the one rule the locked identity holds hardest and would leave the brand's punctuation colour doing no structural work anywhere on the surface. #7 splits a single ask into two, which the sector blueprint names as the failure mode here, since this vertical resolves into one dark anchor and one closing ask. Dark ink is not a preference on this ground but a floor: white on the brand gold measures 1.71:1, so it does not ship at any size. -->
+<section class="fs-band fs-band--gold surface-gold reveal" id="fs-book">
+  <div class="fs-wrap">
+    <div class="fs-fee__grid">
+      <div>
+        <p class="fs-eyebrow fs-eyebrow--quiet">What the fee covers</p>
+        <h2 class="d-lg">One agreed monthly fee covers SEO, web, CRO, branding and design.</h2>
+        <p class="fs-body readw--wide">Quoted per business after a competitive review. No figure appears on this surface, including a from-price, because the number depends on the market you are competing in and a printed one would be a guess dressed as a term.</p>
+      </div>
+      <div class="fs-fee__aside">
+        <a class="fs-btn fs-btn--primary" href="#fs-book">Book a consultation</a>
+        <p class="fs-note">Purple on gold, measured at 4.76:1. The primary stays purple here so the structural accent never changes job.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="fs-colophon">
+  <p class="fs-eyebrow fs-eyebrow--quiet">Colophon, what this specimen claims and what it refuses</p>
+  <h2 class="d-md">How the light surface was separated, and what was left out</h2>
+
+  <ol class="fs-list readw--wide">
+    <li><span class="fs-list__k"><b>The value ladder was refused, not adapted.</b> The owner-chosen structural reference separates three near-black grounds about seven units apart. Measured live in the browser, this surface's light grounds sit at 1.107:1 paper to tint and 1.011:1 tint to warm. The second pair is optically the same luminance. A value ladder does none of the work here, so it is demoted to a supporting hue cue and never asked to carry a boundary.</span></li>
+    <li><span class="fs-list__k"><b>SEP-1 hairline plus SEP-2 contact shadow do the work instead.</b> Every light-to-light seam carries a 1px purple-tinted rule, measured at 1.368:1 against paper and 1.236:1 against the tint, plus a 20px graded ink ramp directly beneath it. The line states the boundary and the ramp gives it a direction, so the band above reads as resting on the band below rather than merely ending. Into the anchor and into the gold, where the measured ground step is already 17.61:1 and 11.27:1, both devices are switched off rather than left on out of habit.</span></li>
+    <li><span class="fs-list__k"><b>SEP-3 the framed media well.</b> Every rights-clear founder file is a transparent cutout, which on white has no edge at all at the boundary. The well supplies one: a tinted plate, a token grid material, a hairline and a two-stop ink-tinted shadow. Neither photo is scaled past its native pixels.</span></li>
+    <li><span class="fs-list__k"><b>SEP-4 the structural accent rule, SEP-5 the three-edge card.</b> Each band opens on a 2px deep-gold rule at 8.40:1, an unambiguous dark-on-light edge. Each card carries a hairline, a one-pixel inset top highlight and a two-stop ink-tinted shadow: three edge events per card boundary rather than none.</span></li>
+    <li><span class="fs-list__k"><b>SEP-6 material, SEP-7 range.</b> Planes at the same value but different material still separate, so the hero carries a token grid and the anchor carries token grain, both at the faint opacity step. The near-black anchor and the gold band then supply the luminance range, which is what teaches the eye what a plane is before it reads the near-identical light ones.</span></li>
+    <li><span class="fs-list__k"><b>Tokens were spent, never minted.</b> Zero new custom properties, zero raw brand hex. The purple glow wash is the locked token dialled to the faint opacity step, because the same value that reads as atmosphere on near-black reads as a stain on paper. That inversion is the general rule this specimen is arguing for.</span></li>
+    <li><span class="fs-list__k"><b>The one 1920px asset was refused.</b> The only hero-resolution file on disk is a dated infographic with words baked into the pixels. It cannot be restyled, it reprints copy the build must own, and it belongs to the execution the direction says to leave behind. No stock wash was substituted for it.</span></li>
+    <li><span class="fs-list__k"><b>What does not appear, and may not.</b> No price of any kind. No metro count. No success rate, percentage or aggregate total. No client name, client logo or press logo. No refund, money-back or risk-free language, because billing pauses and resumes. No claim that the pause has ever been operated on a live account. No exclamation mark and no emoji.</span></li>
+    <li><span class="fs-list__k"><b>Still open.</b> The hero animation slot is a fixed-ratio well here on purpose: the ratified poster and loop are governed by their own engineering rule and are not composed into this specimen. The logo vector and founder photography at retina resolution are still owed, so every lockup remains typeset and every portrait remains small and framed.</span></li>
+  </ol>
+
+  <p class="fs-note readw--wide">Iterate on this specimen rather than replacing it. The E1 ruling forbids a feel fan-out: there is one artifact, it is this one, and the owner confirms or redirects it.</p>
+</div>
+
+<script>
+/* ONE gesture: a short fade plus a small rise on one easing curve, with a small
+   stagger across grouped items (the observer hands each member of an entering
+   batch its index, so a card row cascades instead of popping together).
+   Reduced motion and ?nomotion=1 never reach the hiding path at all, because the
+   head latch does not add .js-reveal in either case.
+   MOTION-PATTERNS.md #21 Fade-up. */
+(function () {
+  var nodes = [].slice.call(document.querySelectorAll('.reveal'));
+  function revealAll() { nodes.forEach(function (n) { n.classList.add('is-in'); }); }
+
+  if (!document.documentElement.classList.contains('js-reveal') || !('IntersectionObserver' in window)) {
+    revealAll();
+    return;
+  }
+
+  /* The stagger index is taken from the node's position among its REVEALING
+     SIBLINGS, not from its position in the observer's entry batch. Batch order is
+     arbitrary and, worse, the safety sweep below can legitimately win the race to
+     reveal a node, in which case a batch index is never assigned at all. Measured
+     on this file: with a batch index, every node came through the sweep and the
+     stagger silently never applied. Deriving it from the DOM makes the cascade
+     identical whichever path fires, so a card row always reads 0, 80, 160ms. */
+  function stagger(n) {
+    /* A BAND enters on its own beat, never delayed: its siblings are the other
+       bands, which are screens apart and must not inherit each other's index.
+       Only a GROUP cascades, which is what the doctrine asks for. */
+    if (!n.parentNode || n.parentNode === document.body) { return '0'; }
+    var group = [].slice.call(n.parentNode.children).filter(function (c) {
+      return c.classList && c.classList.contains('reveal');
+    });
+    if (group.length < 2) { return '0'; }
+    var k = group.indexOf(n);
+    return String((k < 0 ? 0 : k) % 4);
+  }
+  function show(n) { n.style.setProperty('--i', stagger(n)); n.classList.add('is-in'); io.unobserve(n); }
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) { return; }
+      show(entry.target);
+    });
+  }, { rootMargin: '0px 0px 14% 0px', threshold: 0.03 });
+  nodes.forEach(function (n) { io.observe(n); });
+
+  /* THE GUARANTEE, and it is here because this file was MEASURED failing without
+     it. An IntersectionObserver only fires for an element the viewport actually
+     lands on. Jump straight to the document end (the End key, an anchor jump, a
+     fast fling, or a tall static capture) and every band the jump flew past is
+     never observed intersecting, so it stays at opacity 0 permanently. On the
+     first render of this specimen that left two of five bands invisible. The
+     sweep below reveals anything that has reached or passed the fold, fires
+     slightly later than the observer so the staggered entrance still owns the
+     normal case, and is rAF-throttled and passive so it costs nothing. */
+  var ticking = false;
+  function sweep() {
+    ticking = false;
+    var h = window.innerHeight || 0;
+    for (var i = nodes.length - 1; i >= 0; i--) {
+      var n = nodes[i];
+      if (n.classList.contains('is-in')) { nodes.splice(i, 1); continue; }
+      if (n.getBoundingClientRect().top < h) { show(n); nodes.splice(i, 1); }
+    }
+  }
+  function schedule() { if (!ticking) { ticking = true; window.requestAnimationFrame(sweep); } }
+  window.addEventListener('scroll', schedule, { passive: true });
+  window.addEventListener('resize', schedule, { passive: true });
+  window.addEventListener('load', schedule);
+  schedule();
+})();
+</script>
+
+</body>
+</html>

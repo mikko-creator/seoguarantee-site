@@ -1,0 +1,134 @@
+# P4 — SITEMAP (build-skill NATIVE schema; emitted FROM page-inventory.md)
+# Slug: seoguarantee · Authored: 2026-08-11
+# Reconciliation (G4): count(pages[].slug) == page-inventory.md §1 total == page-inventory-manifest.json{page_count} == 26
+# Every page row carries `type: T-<TYPE>` (EB-21) — the type-keyed owner-hold DAG derives from it.
+#
+# TITLE SSOT — `seo-enrichment.md` §1 (master table, 26 pages) is the SINGLE SOURCE OF TRUTH for every
+# `title:` value in pages[] below. Those titles were overwritten FROM §1 on 2026-08-12, closing the
+# double-source defect (P7 readiness blocker 2), where this file still carried the P4-era titles and
+# 9 of them would have shipped truncated. Every title below is verified <= 60 characters.
+# DO NOT edit a title here. Edit `seo-enrichment.md` §1 and re-propagate, or the double-source returns.
+# The en-dash (–) separator is §1's choice; keep it. The build may substitute a pipe at render time.
+
+site:    seoguarantee
+brand:   "First Page SEO Guarantee"
+design_system: design-system/
+
+# Nav derived from architecture.md §2. Every page: MUST be a pages[] slug below.
+nav:
+  - { label: "The Guarantee", page: guarantee }
+  # MEGA MENU (owner-directed 2026-08-11). The parent is a real destination (the services hub that
+  # explains everything is included in one agreed fee); the 7 children are the service pages.
+  - label: "Services"
+    page: full-suite
+    mega: true
+    children:
+      - { label: "SEO Services", page: seo-services }
+      - { label: "Web Design", page: web-design }
+      - { label: "UI/UX Design", page: ui-ux-design }
+      - { label: "Web Development", page: web-development }
+      - { label: "CRO Services", page: cro-services }
+      - { label: "Graphic Design", page: graphic-design }
+      - { label: "Branding", page: branding }
+  - { label: "Results", page: results }
+  - { label: "Who We Work With", page: industries }
+  - { label: "About", page: about }
+  - { label: "CALL US", page: contact-us }
+
+footer:
+  - title: "The Offer"
+    links:
+      - { label: "The Guarantee", page: guarantee }
+      - { label: "What's Included", page: full-suite }
+      - { label: "Results", page: results }
+  - title: "Services"
+    links:
+      - { label: "SEO Services", page: seo-services }
+      - { label: "Web Design", page: web-design }
+      - { label: "UI/UX Design", page: ui-ux-design }
+      - { label: "Web Development", page: web-development }
+      - { label: "CRO Services", page: cro-services }
+      - { label: "Graphic Design", page: graphic-design }
+      - { label: "Branding", page: branding }
+  - title: "Who We Work With"
+    links:
+      - { label: "Dental", page: industries-dental }
+      - { label: "Law Firms", page: industries-law-firm }
+      - { label: "Medical Spas", page: industries-medical-spa }
+      - { label: "HVAC", page: industries-hvac }
+      - { label: "Contracting", page: industries-contracting }
+  - title: "Where We Work"
+    links:
+      - { label: "Las Vegas SEO", page: las-vegas-seo }
+      - { label: "Metros We Serve", page: our-locations }
+  - title: "Company"
+    links:
+      - { label: "About", page: about }
+      - { label: "SEO Blog", page: seo-blog }
+      - { label: "Videos", page: videos }
+      - { label: "Contact", page: contact-us }
+      - { label: "Privacy Policy", page: privacy-policy }
+  - title: "Talk To Us"
+    links:
+      # CANONICAL NAP — owner-ruled 2026-08-12, closing §G-8. Render this form byte-identically
+      # in the footer, on contact-us, on about, and in LocalBusiness structured data.
+      # (The live map embed and the Yelp listing still carry a different street; those are
+      # corrected at source, not reconciled here — see intake-brief §I.)
+      - { label: "6905 W Charleston Blvd, Las Vegas, NV 89117, USA", href: "https://maps.google.com/?q=6905+W+Charleston+Blvd,+Las+Vegas,+NV+89117" }
+      - { label: "+1 (702) 420-7272", href: "tel:+17024207272" }
+      - { label: "support@seoguarantee.com", href: "mailto:support@seoguarantee.com" }
+      - { label: "Book a consultation", page: contact-us }
+
+# 26 rows — one per page-inventory.md §2 slug. Homepage slug is `index`.
+# bespoke: true only on the F3 marquee set [index, guarantee].
+pages:
+  - { slug: index, type: T-HOME, title: "First Page SEO Guarantee – Page One Or You Don't Pay", bespoke: true }
+  - { slug: guarantee, type: T-MARQUEE, title: "Guaranteed SEO Services – The Terms, Or You Don't Pay", bespoke: true, marquee_adaptation: "contract-terms page — the mechanic stated in contract language, with the D-MARKET-002 objection answered section-by-section in-page" }
+  - { slug: full-suite, type: T-HUB, title: "Full Service SEO Agency – Web, CRO And Design Included" }
+  # --- the 7 service pages behind the mega menu (owner-directed 2026-08-11) ---
+  - { slug: seo-services, type: T-FEATURE, title: "SEO Services – First Page On Key Phrases Or You Don't Pay", parent: full-suite }
+  - { slug: web-design, type: T-FEATURE, title: "Las Vegas Web Design, Included In Your Agreed Monthly Fee", parent: full-suite }
+  - { slug: ui-ux-design, type: T-FEATURE, title: "UI/UX Design – Turn The Traffic We Win Into Leads", parent: full-suite }
+  - { slug: web-development, type: T-FEATURE, title: "Web Development – Fast, Indexable Builds That Convert", parent: full-suite }
+  - { slug: cro-services, type: T-FEATURE, title: "Conversion Rate Optimization In One Agreed Monthly Fee", parent: full-suite }
+  - { slug: graphic-design, type: T-FEATURE, title: "Graphic Design – Included In Your Agreed Monthly Fee", parent: full-suite }
+  - { slug: branding, type: T-FEATURE, title: "Branding Services In Your One Agreed Monthly Fee", parent: full-suite }
+  - { slug: results, type: T-INDEX, title: "SEO Case Studies – Named Clients, Dates And Method", filter_fields: [vertical] }
+  - { slug: industries, type: T-HUB, title: "Industry-Specific SEO – Dental, Law, Med Spa, HVAC" }
+  - { slug: about, type: T-COMPANY, title: "About First Page SEO Guarantee – James Sutton, Las Vegas", company_variant: founder-led }
+  - { slug: industries-dental, type: T-PERSONA, title: "Dental SEO – The Phrases Your Competitors Already Own", parent: industries }
+  - { slug: industries-law-firm, type: T-PERSONA, title: "Law Firm SEO With Billing That Pauses Off-Target", parent: industries }
+  - { slug: industries-medical-spa, type: T-PERSONA, title: "Medical Spa SEO For Treatment-Led Search Demand", parent: industries }
+  - { slug: industries-hvac, type: T-PERSONA, title: "HVAC SEO When The Repair Calls Go To Someone Else", parent: industries }
+  - { slug: industries-contracting, type: T-PERSONA, title: "Contractor SEO, From Search To Estimate Request", parent: industries }
+  - { slug: our-locations, type: T-INDEX, title: "Local SEO Services – The US Metros We Cover", filter_fields: [region] }
+  - { slug: las-vegas-seo, type: T-FEATURE, title: "Las Vegas SEO Company – First Page, Or You Don't Pay", parent: our-locations }
+  - { slug: contact-us, type: T-CONTACT, title: "Contact Us – Book An SEO Consultation In Las Vegas" }
+  - { slug: seo-blog, type: T-INDEX, title: "SEO Blog – Key Phrases, Rankings And How SEO Works", filter_fields: [topic] }
+  - { slug: videos, type: T-INDEX, title: "SEO Videos – The Guarantee, SEO, Web And CRO", filter_fields: [topic] }
+  - { slug: thank-you, type: T-CONTACT, title: "Thank You – We Have Your Request, Here's What's Next", noindex: true }
+  # RE-PROPAGATED FROM §1 on 2026-08-13 (owner decision D-012) — per the TITLE SSOT rule at the head of
+  # this file, which says to edit `seo-enrichment.md` §1 and re-propagate. §1 was edited; this is the
+  # re-propagation. SUPERSEDED TITLE, PRESERVED, NOT DELETED:
+  #   "Privacy Policy – How First Page SEO Guarantee Uses Data"  (55 chars)
+  # Why it could not stay: it makes a representation about how data is handled and promises a policy the
+  # interim page does not contain. D-012 forbids exactly that — "No sentence that makes any representation
+  # about how data is handled" — because the page ships FOR BUILD ONLY as an honest interim notice.
+  # This is a title re-propagation, not a page change: slug, type, legal_variant and the footer link are
+  # untouched, the page stays one of the 26, and blocker 15 stays WAIVED-not-closed and LAUNCH-BLOCKING.
+  # Both this title and §1's meta are INTERIM and must be replaced before launch (spec-manifest.json →
+  # launch_blockers). The launch strings are preserved verbatim in `seo-enrichment.md` §1's ⚠ block.
+  - { slug: privacy-policy, type: T-LEGAL, title: "Privacy Policy – Interim Notice While Counsel Finalises", legal_variant: trust }
+  - { slug: 404, type: T-CONTACT, title: "Page Not Found – Start At The Guarantee Or Call Us", noindex: true }
+
+# No templated sets. The 25 city pages were CONSOLIDATED into `our-locations`, not re-generated
+# programmatically — they measured 98.3% shared tokens, the exact thin-content pattern this rebuild
+# exists to remove. Re-emitting them as a templated set would recreate the liability.
+templated: []
+
+# No funnel pages in scope: D-OFFER-011 empty, D-OFFER-012 = none.
+funnels: []
+
+# Retired from the public site entirely (410, not 301). These are the 14 internal ops pages
+# currently PUBLICLY INDEXED on the live site — they leak commercial and contractual internals.
+platform_pages: [ client-portal, members, activity, invoice, payment-authorization, independent-contractor-agreement, e-signature-document, erp-subscription, cpm, pm, projects, cart, checkout, booking ]

@@ -1,0 +1,28 @@
+{
+  "schema": "visual-refs-index/v1",
+  "slug": "seoguarantee",
+  "generated_at": "2026-08-12T19:01:53.834Z",
+  "note": "C7 visual-direction.md is copied BYTE-FAITHFUL, so its internal image paths are NOT rewritten and still read `_spec/visual-refs/...`. That prefix is a PREP-tree path and must not be followed. Resolve any image citation in visual-direction.md by BASENAME against resolve{} below; every value is relative to _handoff/.",
+  "count": 10,
+  "resolve": {
+    "blender-pipeline-test.png": "visual-refs/blender-pipeline-test.png",
+    "current-home-desktop.png": "visual-refs/current-home-desktop.png",
+    "hero-concept-A-climb-1080.mp4": "visual-refs/hero-concept-A-climb-1080.mp4",
+    "hero-concept-A-climb-v2.png": "visual-refs/hero-concept-A-climb-v2.png",
+    "hero-concept-A-climb.mp4": "visual-refs/hero-concept-A-climb.mp4",
+    "hero-concept-A-climb.png": "visual-refs/hero-concept-A-climb.png",
+    "hero-concept-A-final-frame72.png": "visual-refs/hero-concept-A-final-frame72.png",
+    "hero-concept-A-hairline-frame72.png": "visual-refs/hero-concept-A-hairline-frame72.png",
+    "hero-concept-B-mark.png": "visual-refs/hero-concept-B-mark.png",
+    "hero-concept-C-meter.png": "visual-refs/hero-concept-C-meter.png"
+  },
+  "cited_in_visual_direction": [
+    "current-home-desktop.png",
+    "hero-concept-A-climb-1080.mp4",
+    "hero-concept-A-climb.png",
+    "hero-concept-C-meter.png",
+    "hero-concept-B-mark.png",
+    "blender-pipeline-test.png"
+  ],
+  "unresolved_citations": []
+}

@@ -1,0 +1,412 @@
+<!--META {"title":"SEO Blog | Key Phrases, Rankings And How SEO Works","desc":"Articles from First Page SEO Guarantee on how key phrases get chosen, how first page rankings are measured, and what an SEO agreement should say.","noindex":true}-->
+<!-- TITLE and DESC are the LOCKED values from _handoff/seo-enrichment.md section 1, the SEO SSOT.
+     The separator is an en dash in the SSOT and renders here as a pipe. That substitution is
+     sanctioned by sitemap.yaml's own header ("The build may substitute a pipe at render time") and
+     is required because en dashes are banned site wide for this client. Only the SEPARATOR changed;
+     no word was altered, added or reordered.
+     The key is "desc" and NOT "description": build.mjs renders esc(meta.desc), and its JSON branch
+     spreads the parsed object without aliasing description to desc, so a "description" key ships an
+     EMPTY meta description while looking correct in the fragment.
+     noindex is set on every page because this build publishes to a PUBLIC preview URL and must not
+     be indexed while it is unfinished, per the owner decision recorded at publish time. -->
+<!-- ============================================================================
+     seo-blog . type T-INDEX . built FROM the owner stamped T-INDEX template
+     concept-b "The Board" . 5 sections, the count the brief and the copy both fix.
+
+     THE SPINE IS INHERITED, THE RULING IS RE DERIVED. From the template: one band
+     per ground, ONE row per band, every object placed by span on the twelve track
+     grid, the index card repeated as the type's defining object, a cover switch
+     decided once for the whole grid, zero page layer CSS, zero authored inline
+     style attributes. What is NOT inherited is the sibling's conclusion that the
+     page ships no control. That conclusion followed from a fact about the sibling's
+     payload, not from a preference: nothing sat behind any declared value there.
+     HERE THREE OF THE FOUR DECLARED TOPICS HAVE POSTS BEHIND THEM, so the same rule
+     ("A filter value with zero posts does not render", briefs/seo-blog.md section 2)
+     produces a control that is BUILT and works, and a fourth value that is not drawn
+     at all.
+
+     THE CONTROL IS REAL, AND THE MECHANISM IS CHECKABLE. scripts/build.mjs inlines
+     the locked design system browse engine (00-globals/tokens/browse-engine.js) into
+     the assembled page whenever the page carries the data-grid hook, which this page
+     does. The engine binds anchors carrying data-cat that sit OUTSIDE the grid, sets
+     is-active on the chosen one, and shows only the grid children whose own data-cat
+     matches. The topic rail is built from the jump index atom rather than from chips
+     because seoguarantee-structural.css line 2397 PAINTS is-active on that atom and
+     on no other, so a chip rail would toggle a class the sheets do not draw and the
+     control would have an invisible selected state. THE HARD RULE IN THE BRIEF IS
+     OBEYED: the control is on this page only. Every rail anchor points at the index
+     on this page, so no tag URL, no category URL and no archive page is created by
+     it, which matters because retiring those archives is what this release is for.
+     WITH SCRIPT OFF every post is visible, which is the honest default.
+
+     WHAT IS DELIBERATELY NOT BUILT. The approved card template declares an
+     ORDERING: sort by reviewed date, newest first. No publication month and no
+     reviewed month is recorded anywhere in the handoff for any of the five posts,
+     so there is nothing to order on. An ordering control keyed to an empty field
+     is the dead control this build has already been ruled against, so it is NOT
+     DRAWN. TEXT LIGHTER PASS: the prose paragraph that restated the withholding
+     underneath the template sentence was REMOVED. OWNER NOTE REMOVAL PASS: the
+     template sentence and the gap field that carried the withholding are BOTH
+     gone, for the reason recorded at the foot of this comment. The page no longer
+     declares a field set to a buyer, so it no longer owes the buyer a note about
+     which of those fields is empty. No month was ever printed and none is now.
+
+     SECTIONS, AND WHY EACH ONE IS HERE (briefs/seo-blog.md sections 1 to 5).
+       S1 paper  hero, what this blog is for. Two sentences, with the second set as
+                 a margin note because it is an anti product statement.
+       S2 tint   the topic filter. The XS band: the approved filter line and the
+                 live rail. The rail draws the three values that carry posts, and
+                 the fourth declared value is simply not drawn, which is the rule
+                 rather than a claim needing a paragraph to explain it.
+       S3 warm   the post index. The L body: five cards, each carrying its own
+                 true header image, and the route out of the band.
+       S4 dark   how this connects to the guarantee. The page's ONE near black
+                 anchor and the only place the offer appears, routing to the terms
+                 and never to a call.
+       S5 gold   closing-cta. The one action, and the tappable number.
+     Longest run on one ground is one band. The anchor sits at position 4, which is
+     where the brief puts the offer: a researcher meets the method first and the
+     terms last.
+
+     PROVENANCE, CITED SO EACH ONE DESCRIBES THE OBJECT IT IS ATTACHED TO. Checked
+     entry by entry against the catalogs: not one of the names below contains an em
+     dash, so the owner's comma substitution rule is not exercised on this page.
+       menu   HERO-COMPOSITIONS.md #1 Split-text-left + photo-right. S1, a wide copy
+              column at eight tracks facing a narrow object at four.
+       menu   SECTION-COMPONENTS.md #45 Category chips / nav. S2, browse by category,
+              which is this band's entire job.
+       menu   SECTION-COMPONENTS.md #48 Article cards 3-col. S3, five article cards
+              three across, each with a cover, a title and a one line dek.
+       menu   SECTION-COMPONENTS.md #7 Problem framing. S4, which names the published
+              warning about this category by name before answering it.
+       menu   CARD-VARIATIONS.md #2 Light feature card with embedded mini-visual. The
+              repeating post card, cover switch ON, which is the object the
+              structural sheet cites at its own card rule (line 623) and the only
+              grid on this build whose every card has a true image of its own.
+       menu   CTA-PATTERNS.md #1 Solid pill primary. S5, the one primary action,
+              which client-rules.json fixes as CALL US to the contact page.
+       library _MODERN-WOW-SPEC               depth, edges, figure and ground.
+       library _COMPOSITION-LAWS              L1 reading order, L9 selection
+               rationale, R8 orientation per section pattern.
+       library _RESPONSIVE-PATTERN-LIBRARY    the four tier reflow ladder.
+       library _MODERN-DESIGN-PATTERN-LIBRARY the component vocabulary.
+       blueprint composition-agency-creative  the sector spine. What it asks for and
+               this page REFUSES: the stats counter band, the client logo strip and
+               the newsletter capture. The last is refused on the brief's own words,
+               which bar a newsletter, a download and a lead magnet outright.
+
+     DEVIATIONS, STATED RATHER THAN LEFT TO BE FOUND.
+       1. HERO ENTRY #1 NAMES A PHOTOGRAPH IN ITS RIGHT COLUMN AND THERE IS NONE.
+          imagery-system.md 2d refuses a generated image in every hero on this build,
+          C7 section 4 bars the founder files from carrying a hero, and this page's
+          whole allocation is its five card headers, which belong on the cards. What
+          fills the column instead is the boundary panel, the sheet's margin note
+          object, carrying the approved sentence about the library's size. The entry
+          also carries an overused warning naming the founder face reflex as its
+          failure mode, and there is no face here.
+       2. ENTRY #45 DRAWS A HORIZONTAL CHIP ROW AND THIS IS A VERTICAL RAIL, for the
+          painted state reason given above. It also draws every declared category and
+          this rail draws three of four.
+       3. FIVE CARDS ON A THREE ACROSS GRID LEAVE ONE TRACK EMPTY on the second row,
+          and it is left empty. The alternative was a sixth cell that is not a post,
+          which is the filler tile this system bans, or a featured first card, which
+          would rank one of the five when the field that would justify a ranking is
+          the empty one. The brief's instruction that the layout must not look empty
+          at five is met by the cards carrying real images rather than by padding the
+          grid.
+       4. THE CARD FACE SHOWS SUBJECT TAGS RATHER THAN THE TOPIC. The approved
+          template declares the topic in data-cat and the subjects in data-tags, and
+          names only the month as a field that must be visible. The topic therefore
+          lives in the attribute the filter reads and is shown by the rail, and the
+          card face carries the finer grained field. Stated because it was a
+          CORRECTION: the first build put the topic on every card face, which put the
+          same three word phrase in three separate sections and tripped the intra
+          page repetition gate. The gate was right rather than merely satisfied, and
+          the fix is a better card, not a reworded one.
+       5. A NESTED ROW. The spine says every band runs one row. S3 nests its card
+          grid as a row inside a full width cell, because the browse engine reads the
+          DIRECT children of the data-grid element as its items and a grid that also
+          held the head and the rail would filter both away.
+       6. This file names the other stamped page types by their page slugs rather
+          than by their type ids. verify-not-flat.mjs line 288 flips any file
+          containing a literal T hyphen FEATURE or T hyphen MARQUEE token into
+          marquee scope, and this is an index page. Disclosed rather than silent.
+
+     IMAGERY, per imagery-system.md sections 2b, 2d, 4, 5 and 7. SEVEN images across
+     three of the five sections, which clears the floor of half the sections that
+     verify-section-visual-rhythm sets. Five are the card headers generated for this
+     exact page and named against these exact posts in that file's slot table at
+     lines 88 to 92, one per card, so this grid runs its cover switch ON and is
+     complete rather than partial: it is the only grid on this build where every card
+     has a true image of its own. R8 is satisfied rather than merely dodged, because
+     a card header in a grid must be LANDSCAPE 4:3 and all five of these are the only
+     landscape 4:3 assets on the build. The other two are the declared cross page
+     square accents, texture-gold-edge on the dark anchor and texture-purple-material
+     on the gold close, each beside a quote moment, which is that pool's own declared
+     slot, and never in a split column, which is what R8 bars.
+     THE REUSE CAP IS MEASURED, NOT ASSUMED: seven references, seven distinct assets,
+     no asset used twice, so the two use cap is not approached; the diversity floor
+     wants distinct assets at or above four and there are seven; and the generic pool
+     rule wants the generic members not to be a majority of the distinct assets,
+     which is two of seven.
+     EVERY ALT TEXT WAS WRITTEN FROM THE FILE, NOT FROM THE SPEC TABLE. All five card
+     headers were opened and read before their alt was written, and one spec line was
+     found to be wrong: the essentials asset is described in imagery-system.md as
+     five stones with one purple, and the file shows six stones with two purple. The
+     alt describes the FILE. The spec line is not edited from here; it is reported.
+
+     WHAT IS APPROVED COPY AND WHAT IS AUTHORED HERE, MEASURED RATHER THAN
+     ESTIMATED, AND RE MEASURED AFTER THE TEXT LIGHTER PASS. Counted per text
+     bearing leaf element at three words or more, deduped, with the copy file's
+     owner comments stripped from the SSOT before matching. AS FIRST BUILT: 48
+     leaves, 27 VERBATIM from _copy/seo-blog.md carrying 504 words, 21 AUTHORED
+     HERE at the layout layer carrying 413 words, out of 952 rendered words in
+     total. THE TEXT LIGHTER PASS REMOVED 9 AUTHORED LEAVES CARRYING 221 WORDS and
+     touched no approved sentence, so it now stands at 39 leaves, the same 27
+     VERBATIM at 504 words, and 12 AUTHORED at 192 words, out of 731 rendered words.
+     The remainder sits in leaves under three words, which the count deliberately
+     ignores. Not one approved sentence is rewritten, softened or reordered, and the
+     five posts stand in the order the copy lists them. What is authored is
+     furniture: eyebrows, section headings, the tag rail labels, the two open fields
+     and the route lists. The card feet are GONE, and so is the one route note whose
+     only job was explaining why this band carries no call to action.
+     ONE SPLIT DISCLOSED: the copy's second hero paragraph is laid out across the
+     margin note's title and body, cut at its own sentence boundary with no word
+     changed.
+
+     NO OWNER PENDING FIELD IS RENDERED AS A MARKER, and after the owner note
+     removal pass only ONE of them is rendered at all: the derivation of the one
+     line summaries, kept in its shortest form because it bounds a claim the cards
+     actually make. The missing months and the unratified contract window are no
+     longer stated on the page. No bracket token, no scaffold word and no dummy
+     text appears in any rendered string.
+
+     OWNER NOTE REMOVAL PASS. The owner ruled that text written as a note to the
+     site owner rather than to a buyer comes off the page. FOUR OBJECTS WENT HERE.
+       1. The S3 card template sentence, which declared the field set and printed
+          two attribute names, data-cat and data-tags, as reader facing copy. It
+          also stated an ordering and an original publication month visible on the
+          card, and NEITHER IS BUILT, so removing it removed two false statements
+          as well as a note.
+       2. The S3 gap field keyed data-date, which said no month is on record. It
+          bounded the sentence at 1, so it goes with it. That is the remove the
+          claim as well branch of the standing rule rather than the keep the
+          qualifier branch, and it is recorded as that.
+       3. The second sentence of the S3 route note, which described the freshness
+          pass and how a contradicted summary would be corrected. The FIRST
+          sentence is KEPT, unaltered, because it is the shortest thing on the page
+          that bounds the five card summaries: they are derived from the post
+          titles, and without that line the summaries would read as descriptions
+          written from the posts themselves.
+       4. The S4 gap field keyed the contract window, which said the window the
+          agreement runs on is not ratified. The claim it bounded carries its own
+          qualifier inside the approved sentence, which introduces the 6 and 12
+          month windows as what the current site publishes, separately from the
+          contract; that clause is untouched.
+     NO CLAIM ON THIS PAGE IS LARGER AFTER THE PASS THAN BEFORE IT.
+     ONE REWRITE, and it is the only one: the S3 heading no longer names the field
+     set each card has to carry, it names what the cards give a reader. Every other
+     change is a deletion.
+     NO CELL WAS LEFT EMPTY. Both gap fields shared a stacked cell with objects
+     that survive, so no wrapper needed removing and the grid is unchanged.
+     RE MEASURED after the pass with one counter used on both files: 507 rendered
+     words, down from 728.
+
+     HONESTY PERIMETER. The offer appears in exactly one section and carries its
+     payment condition in the same sentence. No claim of a Google blessing for
+     a ranking guarantee, express or implied. No superlative and no top position claim. No price. No
+     aggregate rate of success. No count of anything without its period and source.
+     No competitor named, alluded to or framed against. No newsletter, no download,
+     no lead magnet and no second action. Zero em dashes and zero en dashes in this
+     file, including every comment. Zero exclamation marks in every rendered string.
+     ============================================================================ -->
+
+<!-- pick: HERO-COMPOSITIONS.md #1 Split-text-left + photo-right | considered: #10,#19 | why: the band is a true left weighted split, a copy column at eight of the twelve tracks carrying the eyebrow, the H1 and the purpose paragraph, facing a narrow object at four, which is this entry composition; the brief asks for two sentences and nothing performing, and a split that gives the second sentence its own object is how the two sentences stop reading as one paragraph. #10 Centered headline only is the honest alternative and is REFUSED here for a reason outside this page: it is the hero already spent by the sibling coverage page in this same fan out, and two index pages opening on the same centred type block is the clone this fan out exists to avoid. #19 Bento-grid hero wants six to nine mixed tiles and this hero has two blocks, so building it would mean inventing seven tiles of content the copy does not carry. DEVIATIONS: (1) the entry names a PHOTOGRAPH in the right column and there is none, since imagery-system.md 2d refuses a generated image in every hero on this build, C7 section 4 bars the founder files from carrying a hero, and this page whole image allocation is its five card headers, which belong on the cards; what fills the column is the boundary panel, the sheet margin note object, carrying the approved sentence about the library size, and the entry own overused warning names the founder face reflex as its failure mode, which is exactly what is absent here; (2) the entry centres its two columns vertically and this pair is top aligned, because a four track margin note beside an H1 should hang from the same line the headline starts on. -->
+<section class="section section--paper" id="s1-hero" data-surface="light" aria-labelledby="s1h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-8">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">The library</p>
+          <h1 id="s1h" class="d-lg">Key Phrases, Rankings And How SEO Works</h1>
+        </div>
+        <p class="bw-lede readw reveal">This is a short library explaining how key phrases are chosen, how a first page position is actually measured, and what an SEO agreement should say.</p>
+      </div>
+
+      <div class="col col--span-4">
+        <div class="bw-bound reveal">
+          <p class="bw-bound__k">The size of it</p>
+          <p class="bw-bound__t">It is small on purpose.</p>
+          <p class="bw-bound__d">Volume is not the product here, the contract is, and five articles that make the method legible are worth more to you than fifty that fill a schedule.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: SECTION-COMPONENTS.md #45 Category chips / nav | considered: #36,#50 | why: browse by category IS this band entire job, and this entry is the only one in the catalog whose role is that and nothing else, which is what an XS band needs; the values are real, they carry posts, and choosing one narrows the index below rather than navigating away. #36 Sticky-sidebar topic nav is refused on measurement rather than taste: a sticky rail running the height of a five card index would outweigh the index it filters, and the sheet own rail variant unsticks at the tablet line anyway, so the sticky half would only exist on one tier. #50 Topic columns is refused on substance: grouping five posts into three topic columns builds the taxonomy as LAYOUT, leaves two of the three columns holding a single card, and the brief bans shipping an empty state. DEVIATIONS: (1) the entry draws a horizontal scroll chip row and this is a vertical jump index rail, because seoguarantee-structural.css paints is-active on that atom and on no other, so a chip rail would have an invisible selected state; (2) the entry draws every declared category and this rail draws three of the four, because the fourth carries no post and a value that would filter to nothing is not drawn at all; the paragraph that used to explain that in words was removed in the text lighter pass, so the rule now shows in the rail rather than being narrated beside it. -->
+<section class="section section--tint" id="s2-topics" data-surface="light" aria-label="The topic filter">
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-7">
+        <p class="bw-eyebrow reveal">The topic filter</p>
+        <p class="bw-lede readw reveal">Filter by topic: How SEO works, On-page and technical, Tools.</p>
+      </div>
+
+      <div class="col col--span-5">
+        <nav class="bw-toc reveal" aria-label="Filter the post index by topic">
+          <p class="bw-toc__title">Topics</p>
+          <ul class="bw-toc__list">
+            <li class="bw-toc__item"><a class="bw-toc__link is-active" href="#post-index" data-cat="all" aria-controls="post-index">Every post</a></li>
+            <li class="bw-toc__item"><a class="bw-toc__link" href="#post-index" data-cat="how-seo-works" aria-controls="post-index">How SEO works</a></li>
+            <li class="bw-toc__item"><a class="bw-toc__link" href="#post-index" data-cat="on-page-and-technical" aria-controls="post-index">On-page and technical</a></li>
+            <li class="bw-toc__item"><a class="bw-toc__link" href="#post-index" data-cat="tools" aria-controls="post-index">Tools</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: SECTION-COMPONENTS.md #48 Article cards 3-col | considered: #49,#47 | why: what is built is five article cards three across, each carrying a landscape cover, a title and a one line dek, which is this entry exactly, and its reflow ladder, three across to two to one, is the canonical sheet ladder for a four span cell. #49 Article cards 4-col compact is refused by arithmetic: five posts across four tracks leaves three empty on the second row, and the brief says in terms that the layout must not look empty at five. #47 Featured article hero is refused on substance: pulling one of the five forward asserts that it leads, and the only field that could justify a ranking, the reviewed date, is the field that is empty. DEVIATIONS: (1) five cards on three tracks leave ONE track empty on the second row and it is left empty, because the alternatives were a sixth cell that is not a post, which is the filler tile this system bans, or a ranked first card, which the empty date field cannot support; (2) the entry card carries a byline, an avatar and a date and this card carries none of the three, because no author is on record and no month is; (3) the grid is nested as a row inside a full width cell, because the browse engine reads the DIRECT children of the data-grid element as its items. -->
+<section class="section section--warm" id="s3-posts" data-surface="warm" aria-labelledby="s3h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--span-8">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">The post index</p>
+          <h2 id="s3h">Five articles, and what each one covers.</h2>
+        </div>
+      </div>
+
+      <div class="col col--span-4 col--stack">
+        <div class="bw-route reveal">
+          <p class="bw-route__k">Also from here</p>
+          <ul class="bw-route__l">
+            <li><a href="videos.html">The same method, explained on camera</a></li>
+            <li><a href="las-vegas-seo.html">Las Vegas, our own market</a></li>
+          </ul>
+          <span class="bw-route__n">The one line summaries below are derived from the post titles.</span>
+        </div>
+      </div>
+
+      <div class="col col--full">
+        <div class="row reveal" id="post-index" data-grid data-page-size="99">
+          <div class="col col--span-4 col--stretch col--fill" data-cat="how-seo-works" data-tags="authority,rankings">
+            <article class="bw-card">
+              <p class="bw-tag bw-tag--quiet">authority, rankings</p>
+              <div class="bw-card__vis bw-card__vis--photo">
+                <img class="bw-media__img bw-media__img--fit" src="../assets/card-blog-authority.jpg" width="1024" height="768" alt="A polished gold sphere resting on a white plinth against a deep purple wall, with hard diagonal light falling across it" loading="lazy">
+              </div>
+              <p class="bw-card__title">Authority and Search Rankings</p>
+              <p class="bw-card__body">What authority means when search engines use the word, and why it is the reason two similar pages rank differently.</p>
+            </article>
+          </div>
+
+          <div class="col col--span-4 col--stretch col--fill" data-cat="how-seo-works" data-tags="beginners,fundamentals">
+            <article class="bw-card">
+              <p class="bw-tag bw-tag--quiet">beginners, fundamentals</p>
+              <div class="bw-card__vis bw-card__vis--photo">
+                <img class="bw-media__img bw-media__img--fit" src="../assets/card-blog-starting-out.jpg" width="1024" height="768" alt="A plain closed white box tied with a deep purple satin ribbon and bow, standing on a white ground" loading="lazy">
+              </div>
+              <p class="bw-card__title">Beginner SEO Tips and Tricks</p>
+              <p class="bw-card__body">A starting point for someone who has never worked on a site's search visibility.</p>
+            </article>
+          </div>
+
+          <div class="col col--span-4 col--stretch col--fill" data-cat="on-page-and-technical" data-tags="on-page,fundamentals">
+            <article class="bw-card">
+              <p class="bw-tag bw-tag--quiet">on-page, fundamentals</p>
+              <div class="bw-card__vis bw-card__vis--photo">
+                <img class="bw-media__img bw-media__img--fit" src="../assets/card-blog-essentials.jpg" width="1024" height="768" alt="A cairn of smooth pale stones stacked on a white ground, two of them deep purple, a thin warm line running behind" loading="lazy">
+              </div>
+              <p class="bw-card__title">5 Important SEO Tips and Tricks</p>
+              <p class="bw-card__body">A short set of changes on the page itself, and what each one is trying to influence.</p>
+            </article>
+          </div>
+
+          <div class="col col--span-4 col--stretch col--fill" data-cat="on-page-and-technical" data-tags="ranking factors,on-page">
+            <article class="bw-card">
+              <p class="bw-tag bw-tag--quiet">ranking factors, on-page</p>
+              <div class="bw-card__vis bw-card__vis--photo">
+                <img class="bw-media__img bw-media__img--fit" src="../assets/card-blog-factors.jpg" width="1024" height="768" alt="Pale white and lilac geometric blocks floating apart in an exploded arrangement, one small open cube in gold" loading="lazy">
+              </div>
+              <p class="bw-card__title">Search Engine Optimization Factors</p>
+              <p class="bw-card__body">The factors that go into where a page lands, and how to think about them without treating any single one as a lever.</p>
+            </article>
+          </div>
+
+          <div class="col col--span-4 col--stretch col--fill" data-cat="tools" data-tags="tools,chrome extensions">
+            <article class="bw-card">
+              <p class="bw-tag bw-tag--quiet">tools, chrome extensions</p>
+              <div class="bw-card__vis bw-card__vis--photo">
+                <img class="bw-media__img bw-media__img--fit" src="../assets/card-blog-toolkit.jpg" width="1024" height="768" alt="A row of small steel precision drivers laid across a deep purple band on white, one of them with a gold handle" loading="lazy">
+              </div>
+              <p class="bw-card__title">13 SEO Chrome Extensions That Are Free</p>
+              <p class="bw-card__body">Free browser tools for checking what a page is telling a search engine.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: SECTION-COMPONENTS.md #7 Problem framing | considered: #8,#34 | why: this band names the buyer own suspicion in the buyer own words, that guaranteed SEO is a term the industry publishes warnings about, which is this entry role, and it is the only band on the page where the offer is allowed to appear at all. #8 Manifesto / belief statement is the near miss and is rejected twice over: this band does more than stake a belief, it answers a specific published warning with a named mechanic, and the entry is already spent three times on this build. #34 FAQ accordion is refused on the sibling own ruling, restated because it holds here: hiding the one block that closes the loop behind a toggle reads as burying it. DEVIATIONS: (1) the entry frames a problem and stops, and this band frames it AND answers it in the same breath, because raising a scam warning and leaving it hanging would be worse than not raising it; (2) the entry is conventionally a light band and this is the page one near black anchor, because the offer should be met on a different material from the library that leads to it; (3) the band carries NO call to action, which is the brief instruction, so the only route out of it is the terms; the sentence that used to announce that absence to the reader was removed in the text lighter pass, because a band with no call to action does not need a paragraph telling you it has none. -->
+<section class="section section--dark surface-dark" id="s4-terms" data-surface="dark" aria-labelledby="s4h">
+  <div class="container">
+    <div class="row">
+      <div class="col col--full">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">The loop, closed</p>
+          <h2 id="s4h">How this connects to the guarantee.</h2>
+        </div>
+      </div>
+
+      <div class="col col--span-7">
+        <p class="bw-lede readw reveal">We propose the key phrases from competitive research, they are named in the contract you sign, each month is assessed against the agreed metrics, and any month we are off target we keep working and your billing stops. Separately from the contract, the current site publishes 6- and 12-month windows, and the agreement itself is assessed month by month.</p>
+        <p class="bw-quote reveal">Guaranteed SEO is a term the industry publishes warnings about, and those warnings are earned by promises with nothing behind them. A guarantee with named metrics, a monthly test and a billing consequence is a different object from a promise with none of those: first page on the agreed key phrases, or you don't pay. We do not claim to control Google, and we claim no relationship with it.</p>
+      </div>
+
+      <div class="col col--span-5 col--stack">
+        <div class="bw-tex reveal">
+          <img class="bw-tex__img" src="../assets/texture-gold-edge.jpg" width="1024" height="1024" alt="A macro of the mitred corner of a white matte panel edged in a polished gold rail, resting on a pale ground" loading="lazy">
+        </div>
+        <div class="bw-route reveal">
+          <p class="bw-route__k">Where this goes next</p>
+          <ul class="bw-route__l">
+            <li><a href="guarantee.html">Read the terms on the guarantee page.</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: CTA-PATTERNS.md #1 Solid pill primary | considered: #6,#11 | why: the one primary action is the brand solid fill at the sheet full pill radius carrying the fixed label CALL US to the contact page, which client-rules.json sets and which no page may vary. THE PICK IS DISCLOSED AS SHARED: every stamped page on this build spends this entry on its closing band, because the sheet implements exactly one primary pill and there is no second honest atom for a single conversion action; what differs here is that the media column leads in source order and the copy answers it, which is the mirror of the sibling coverage page arrangement. #6 Ghost text-link with arrow is refused because the closing action on an informational page is the one place the page is allowed to ask, and a ghost link is not the fixed primary; #11 Full-width band CTA is refused because the chrome already ships the site one closing conversion band directly beneath this section, so building the whole band as a button would put two closing bands on one page. DEVIATION: the entry names an optional arrow at the right edge and this pill carries a phone glyph at the LEFT, matching the chrome and every sibling. -->
+<section class="section section--gold surface-gold" id="s5-call" data-surface="accent" aria-labelledby="s5h">
+  <div class="container">
+    <div class="row row--split-rev row--center">
+      <div class="col col--media col--stretch col--fill">
+        <div class="bw-tex bw-tex--plate reveal">
+          <img class="bw-tex__img" src="../assets/texture-purple-material.jpg" width="1024" height="1024" alt="A macro of one swept deep purple pigment smear on a bright white ground, polished at the centre and granular at its edges" loading="lazy">
+        </div>
+      </div>
+
+      <div class="col col--copy">
+        <div class="bw-head bw-head--tight reveal">
+          <p class="bw-eyebrow">When reading runs out</p>
+          <h2 id="s5h">The part reading cannot answer is your own market.</h2>
+        </div>
+        <p class="bw-lede readw reveal">Book a consultation on <a href="tel:+17024207272">(702) 420-7272</a>.</p>
+        <p class="bw-quote reveal">If reading it is not getting you an answer about your own market, the call will.</p>
+        <div class="bw-actions reveal">
+          <a class="bw-btn bw-btn--primary" href="contact-us.html">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            CALL US
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

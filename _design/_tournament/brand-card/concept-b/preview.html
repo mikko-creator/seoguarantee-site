@@ -1,0 +1,1328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>First Page SEO Guarantee: Identity Sheet, Concept B "The Ledger"</title>
+
+<!-- ============================================================================
+     BRAND-CARD IDENTITY SHEET · CONCEPT B "THE LEDGER"
+     seoguarantee (First Page SEO Guarantee) · P8 identity round, 2 of 3.
+
+     WHAT THIS IS: a chrome-less SPECIMEN SHEET, the brand DNA laid out as an
+     object. It is deliberately NOT a web page: no site header, no nav, no mega
+     menu, no sticky bar, no footer, no hero. The title block below is the only
+     chrome permitted on this artifact.
+
+     DESIGN-SYSTEM PROVENANCE (every visual decision is derived, not invented):
+       library   _MODERN-WOW-SPEC.md : the quality bar. Depth, edges,
+                 figure/ground, motion, texture, type, light, detail, restraint.
+       library   _MODERN-DESIGN-PATTERN-LIBRARY.md : recipe ids cited per block
+                 (TOP-12, plus categories D depth, E typography, F colour/light,
+                 G layout, I component polish, J signature touches).
+       blueprint composition-agency-creative : the sector spine. It governs
+                 exactly two things here, the technique ceiling this sheet's
+                 atoms and motif must read as belonging to, and the ONE mini
+                 vignette. It is NOT used to turn the sheet into a homepage.
+       tokens    BRAND-TOKEN-SCHEMA (00-globals/tokens) + GLOBALS-OVERLAY-SPEC.
+       menus     COMPANY-SECTIONS · CARD-VARIATIONS · DIVIDER-PATTERNS ·
+                 SECTION-COMPONENTS · TRUST-STATS-SECTIONS · CTA-PATTERNS ·
+                 FORM-LAYOUTS · DATAVIZ-SECTIONS · FAQ-ACCORDION, plus the four
+                 00-globals catalogs SURFACE-PATTERNS · MOTION-PATTERNS ·
+                 TYPOGRAPHY-PAIRINGS · COLOR-THEORY-PRESETS.
+
+     THE ACCENT RULING THIS CONCEPT HOLDS. The pattern library's single most
+     emphasised discipline is "ONE accent, used consistently"; this brand has two
+     measured colours. Resolved as one accent ROLE: PURPLE STRUCTURES, GOLD
+     PUNCTUATES. They are never co-equal and never carry the same job inside one
+     composition. In THE LEDGER gold's one disciplined job is to be a GROUND.
+     ============================================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Hind:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="seoguarantee-tokens.css">
+
+<style>
+/* ****************************************************************************
+   ZERO raw brand hex below this line. Every colour resolves through a --ds-*
+   token declared in seoguarantee-tokens.css. The only hex strings anywhere on
+   this sheet are the printed LABEL text beside a swatch, which is markup
+   content, not a declaration.
+   **************************************************************************** */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--ds-bg-surface);
+  color: var(--ds-ink);
+  font-family: var(--ds-font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* THE STRATA. Concept B's material is large flat colour planes. Each band is
+   edge to edge and carries NO shadow, because its power is solidity
+   (SURFACE-PATTERNS #12 Solid-fill-block). Transitions between strata come from
+   colour-band contrast and whitespace, never from a divider zoo. */
+.band {
+  position: relative;
+  padding-block: var(--ds-section-py);
+  background: var(--ds-bg-surface);
+  color: var(--ds-ink);
+}
+.band--tint  { background: var(--ds-bg-surface-2); }
+.band--warm  { background: var(--ds-bg-warm); }
+.band--gold  { background: var(--ds-bg-surface); }   /* .surface-gold flips the token */
+.band--anchor{ background: var(--ds-bg-surface); }   /* .surface-dark flips the token */
+
+/* a band that follows a band of the SAME ground pays no second interval */
+.band + .band.is-continuous { padding-top: 0; }
+
+.wrap {
+  max-width: var(--ds-container-max);
+  margin-inline: auto;
+  padding-inline: var(--ds-space-md);
+}
+
+/* THE MEASURE. One fixed reading column, pinned to one left axis, with exactly
+   one documented exception (the palette strata, which are bands not prose).
+   A polarity-free structural idea taken from the owner-chosen reference. */
+.readw { max-width: 62ch; }
+
+/* TYPE ROLES.
+   Concept B's posture: OVERSIZED AND LIGHT-AT-LARGE. Montserrat is pushed to
+   the top of the clamp range at 300 to 500, which the pattern library records
+   as reading luxe at display size (category E). The deliberate inverse of a
+   heavy compressed setting. Nothing here shouts: sentence case throughout, and
+   no exclamation marks anywhere on this sheet (owner brand rail). */
+.eyebrow {
+  font-family: var(--ds-font-body);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ds-accent-ink);
+  margin: 0 0 var(--ds-space-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-sm);
+}
+.eyebrow::after {
+  content: "";
+  flex: 0 0 44px;
+  height: 2px;
+  background: var(--ds-accent-deep);
+}
+.eyebrow--plain::after { display: none; }
+
+.d-xl, .d-lg, .d-md {
+  font-family: var(--ds-font-display);
+  color: var(--ds-ink-heading);
+  margin: 0;
+  text-wrap: balance;
+}
+.d-xl { font-size: clamp(52px, 7.6vw, 92px); font-weight: 300; letter-spacing: -.03em;  line-height: .98; }
+.d-lg { font-size: clamp(34px, 4.4vw, 56px); font-weight: 400; letter-spacing: -.025em; line-height: 1.04; }
+.d-md { font-size: clamp(23px, 2.4vw, 32px); font-weight: 500; letter-spacing: -.015em; line-height: 1.16; }
+
+.lede {
+  font-size: 20px;
+  line-height: 1.55;
+  color: var(--ds-ink-soft);
+  margin: var(--ds-space-md) 0 0;
+}
+.body-copy { margin: var(--ds-space-sm) 0 0; color: var(--ds-ink); }
+.note {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--ds-ink-soft);
+  opacity: var(--ds-opacity-muted);
+  margin: var(--ds-space-sm) 0 0;
+}
+.spec-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ds-ink-soft);
+  margin: 0;
+}
+.spec-val { font-size: 13.5px; color: var(--ds-ink-soft); margin: 0; }
+.ratio {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  min-width: 5.4em;
+}
+
+.head-block { margin-bottom: var(--ds-space-xl); }
+/* Section heads are not all set the same way. Three treatments so the sheet has
+   rhythm rather than nine identical intro stacks: the default vertical stack,
+   a two-column split where the standfirst sits beside the title, and a compact
+   head that pays a shorter interval where the specimen below does the talking. */
+.head-block--split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--ds-space-lg);
+  align-items: end;
+}
+.head-block--split > div { min-width: 0; }
+.head-block--compact { margin-bottom: var(--ds-space-lg); }
+
+/* TITLE BLOCK, the only chrome on the sheet */
+.sheet-title { padding-block: var(--ds-space-xl) var(--ds-space-lg); }
+.sheet-title__rule {
+  height: 6px;
+  background: var(--ds-accent-deep);
+  width: 96px;
+  margin-bottom: var(--ds-space-md);
+}
+.sheet-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ds-space-sm) var(--ds-space-lg);
+  margin-top: var(--ds-space-lg);
+  padding-top: var(--ds-space-md);
+  border-top: 1px solid var(--ds-line);
+}
+.sheet-meta div { min-width: 150px; }
+
+/* WORDMARK LOCKUPS */
+.lockup-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1px;
+  background: var(--ds-line);
+  border: 1px solid var(--ds-line);
+}
+.lockup {
+  background: var(--ds-bg-surface);
+  padding: var(--ds-space-lg) var(--ds-space-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--ds-space-lg);
+  min-height: 210px;
+}
+.lockup--dark { background: var(--ds-primary-deep); }
+.lockup--dark .lockup__cap { color: var(--ds-accent-light); }
+
+.lockup__cap {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ds-accent-ink);
+  margin: 0;
+}
+
+/* THE WORDMARK IS TYPESET, NOT PLACED. No vector logo exists in any supplied or
+   scraped source and the largest raster on disk is 403px wide, which cannot
+   render crisply in a retina lockup. Placing that PNG and calling it a lockup
+   would be a defect. LOGO-VECTOR: NEEDS-OWNER. */
+.wm {
+  font-family: var(--ds-font-display);
+  color: var(--ds-ink-heading);
+  line-height: .96;
+  letter-spacing: -.028em;
+}
+.lockup--dark .wm { color: var(--ds-ink-on-dark); }
+.wm__first { font-weight: 600; }
+.wm__rest  { font-weight: 300; }
+.wm__accent { color: var(--ds-accent-ink); font-weight: 600; }
+.lockup--dark .wm__accent { color: var(--ds-accent); }
+
+.wm--h { font-size: clamp(22px, 2.3vw, 29px); }
+.wm--stack { font-size: clamp(24px, 2.5vw, 32px); }
+.wm--stack span { display: block; }
+
+.wm-mono {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 34px;
+  letter-spacing: -.04em;
+  line-height: 1;
+  width: 76px;
+  height: 76px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--ds-r-control);
+  background: var(--ds-grad-brand);   /* the ONE gradient this concept spends */
+  color: var(--ds-ink-on-dark);
+  box-shadow: var(--ds-inset-hi);
+}
+
+/* clear-space and minimum-size rules, shown graphically */
+.rule-demo { display: flex; align-items: flex-end; gap: var(--ds-space-lg); flex-wrap: wrap; margin-top: var(--ds-space-lg); }
+.rule-demo > div { max-width: 420px; }
+.clearspace {
+  position: relative;
+  padding: 26px;
+  outline: 1px dashed var(--ds-accent-deep);
+  outline-offset: 0;
+}
+.clearspace::before {
+  content: "";
+  position: absolute;
+  inset: 26px;
+  border: 1px solid var(--ds-hairline);
+}
+.clearspace__x {
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  color: var(--ds-accent-ink);
+}
+.minsize { border-left: 2px solid var(--ds-accent-deep); padding-left: var(--ds-space-sm); }
+.rule-cap { margin-bottom: var(--ds-space-xs); }
+
+/* PALETTE STRATA. The documented exception to the fixed measure. Swatches
+   present as full-width BANDS, not chips, because in this concept colour is a
+   plane you stand on. Each band prints its role name, its hex and the measured
+   ratio against the ground it is actually used on, in the ink that band
+   carries, so the contrast is provable by eye and not just by table. */
+.strata { display: flex; flex-direction: column; gap: 2px; }
+.strata-group { margin-top: var(--ds-space-lg); }
+.strata-group:first-child { margin-top: 0; }
+.strata-group > .spec-label { margin-bottom: var(--ds-space-xs); }
+
+.sw {
+  display: grid;
+  grid-template-columns: minmax(190px, 1.15fr) minmax(96px, .5fr) minmax(150px, 1.5fr);
+  align-items: center;
+  gap: var(--ds-space-md);
+  min-height: 54px;
+  padding: var(--ds-space-xs) var(--ds-space-md);
+  font-size: 13px;
+}
+.sw__name { font-weight: 600; letter-spacing: .01em; }
+.sw__hex  { letter-spacing: .04em; opacity: var(--ds-opacity-muted); }
+.sw__note { font-size: 12.5px; opacity: var(--ds-opacity-muted); }
+
+.sw--primary      { background: var(--ds-primary);      color: var(--ds-ink-on-dark); }
+.sw--primary-deep { background: var(--ds-primary-deep); color: var(--ds-ink-on-dark); }
+.sw--primary-soft { background: var(--ds-primary-soft); color: var(--ds-ink); }
+.sw--accent       { background: var(--ds-accent);       color: var(--ds-primary-deep); }
+.sw--accent-ink   { background: var(--ds-accent-ink);   color: var(--ds-ink-on-dark); }
+.sw--accent-soft  { background: var(--ds-accent-soft);  color: var(--ds-ink); }
+.sw--accent-deep  { background: var(--ds-accent-deep);  color: var(--ds-ink-on-dark); }
+.sw--accent-light { background: var(--ds-accent-light); color: var(--ds-primary-deep); }
+.sw--surface      { background: var(--ds-bg-surface);   color: var(--ds-ink); box-shadow: inset 0 0 0 1px var(--ds-hairline); }
+.sw--surface-2    { background: var(--ds-bg-surface-2); color: var(--ds-ink); box-shadow: inset 0 0 0 1px var(--ds-hairline); }
+.sw--warm         { background: var(--ds-bg-warm);      color: var(--ds-ink); box-shadow: inset 0 0 0 1px var(--ds-hairline); }
+.sw--ink          { background: var(--ds-ink);          color: var(--ds-ink-on-dark); }
+.sw--ink-heading  { background: var(--ds-ink-heading);  color: var(--ds-ink-on-dark); }
+.sw--ink-soft     { background: var(--ds-ink-soft);     color: var(--ds-ink-on-dark); }
+.sw--line         { background: var(--ds-line);         color: var(--ds-ink); }
+.sw--on-dark      { background: var(--ds-ink-on-dark);  color: var(--ds-ink); box-shadow: inset 0 0 0 1px var(--ds-hairline); }
+.sw--scrim        { background: var(--ds-scrim);        color: var(--ds-ink-on-dark); }
+
+.ground-proof {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin-top: var(--ds-space-md);
+  border: 1px solid var(--ds-hairline);
+}
+.ground-proof > div { padding: var(--ds-space-md); font-size: 12.5px; }
+.gp--1 { background: var(--ds-bg-surface); }
+.gp--2 { background: var(--ds-bg-surface-2); }
+.gp--3 { background: var(--ds-bg-warm); }
+.gp--4 { background: var(--ds-primary-deep); color: var(--ds-ink-on-dark); }
+
+.stack-md { margin-top: var(--ds-space-md); }
+.readw--wide { max-width: 78ch; }
+
+/* TYPE SPECIMENS */
+.ladder { display: flex; flex-direction: column; gap: var(--ds-space-lg); }
+.ladder__row {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: var(--ds-space-md);
+  align-items: baseline;
+  padding-top: var(--ds-space-md);
+  border-top: 1px solid var(--ds-line);
+}
+.ladder__spec { display: flex; flex-direction: column; gap: 3px; }
+.ladder__body { margin: 0; }
+
+.numeral {
+  font-family: var(--ds-font-display);
+  font-weight: 300;
+  font-size: clamp(88px, 14vw, 176px);
+  line-height: .84;
+  letter-spacing: -.045em;
+  color: var(--ds-ink-heading);
+  margin: 0;
+}
+.numeral-row { display: flex; align-items: flex-end; gap: var(--ds-space-lg); flex-wrap: wrap; }
+.numeral-side { padding-bottom: 10px; min-width: 0; }
+.numeral-side .d-md { margin-top: var(--ds-space-xs); }
+
+/* GOLD STRATUM. The concept's boldest moment, and the modernization of the live
+   site's gold CTA band: ONE gold band instead of a saturated direct-response
+   page, DARK ink instead of the white that measures 1.71:1, and whitespace
+   instead of crowding. */
+.gold-band__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) auto;
+  gap: var(--ds-space-xl);
+  align-items: end;
+}
+.gold-band__inner > div { min-width: 0; }
+.gold-band__inner .eyebrow { color: var(--ds-ink-soft); }
+.gold-band__inner .body-copy { color: var(--ds-ink); }
+.gold-band__note { color: var(--ds-ink-soft); opacity: 1; }
+
+/* ATOMS */
+.atom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: var(--ds-space-lg);
+}
+.atom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ds-space-sm);
+  align-items: flex-start;
+}
+.atom__cap {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ds-ink-soft);
+}
+.atom .note { margin-top: 0; }
+.atom p { margin: 0; }
+
+/* buttons. CTA-PATTERNS #1 solid pill primary; SURFACE-PATTERNS #18
+   solid-pill-modern-marketing. MOTION-PATTERNS #4 arrow-translate is NOT used:
+   this concept's hover is a quiet lift, so a moving arrow would be a second,
+   competing gesture. */
+.btn {
+  font-family: var(--ds-font-body);
+  font-size: 14.5px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  line-height: 1;
+  padding: 15px 26px;
+  border-radius: var(--ds-r-pill);
+  border: 1px solid transparent;
+  background-color: var(--ds-primary);
+  background-clip: padding-box;
+  border-color: var(--ds-primary);
+  color: var(--ds-ink-on-dark);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-space-xs);
+  box-shadow: var(--ds-shadow-rest);
+  transition: background-color var(--ds-dur) var(--ds-ease),
+              border-color var(--ds-dur) var(--ds-ease),
+              box-shadow var(--ds-dur) var(--ds-ease),
+              transform var(--ds-dur) var(--ds-ease);
+}
+.btn:hover, .btn.is-hover {
+  background-color: var(--ds-primary-deep);
+  border-color: var(--ds-primary-deep);
+  box-shadow: var(--ds-shadow-card);
+  transform: translateY(-2px);
+}
+.btn:focus-visible, .btn.is-focus {
+  outline: 3px solid var(--ds-accent-deep);
+  outline-offset: 3px;
+}
+.btn--secondary {
+  background-color: transparent;
+  border-color: var(--ds-primary);
+  color: var(--ds-primary);
+  box-shadow: none;
+}
+.btn--secondary:hover, .btn--secondary.is-hover {
+  background-color: var(--ds-primary-soft);
+  border-color: var(--ds-primary);
+  color: var(--ds-primary);
+  transform: translateY(-2px);
+  box-shadow: none;
+}
+.btn--ghost {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--ds-accent-ink);
+  padding-inline: 6px;
+  box-shadow: none;
+}
+.btn--ghost:hover, .btn--ghost.is-hover {
+  background-color: var(--ds-accent-soft);
+  border-color: transparent;
+  color: var(--ds-accent-ink);
+  transform: none;
+  box-shadow: none;
+}
+.btn[disabled], .btn.is-disabled {
+  opacity: var(--ds-opacity-disabled);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+.btn-row { display: flex; flex-wrap: wrap; gap: var(--ds-space-sm); align-items: center; }
+.state-tag {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ds-ink-soft);
+}
+
+/* field. SURFACE-PATTERNS #40 underline-only, the architectural setting that
+   suits a banded concept and gives a boundary at 8.03:1 rather than a pale box */
+.field { width: 100%; max-width: 340px; }
+.field__label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ds-ink-soft);
+  margin-bottom: var(--ds-space-xs);
+}
+.field__input {
+  width: 100%;
+  font-family: var(--ds-font-body);
+  font-size: 16px;
+  color: var(--ds-ink);
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid var(--ds-ink-soft);
+  border-radius: 0;
+  padding: 10px 2px;
+  transition: border-color var(--ds-dur) var(--ds-ease);
+}
+.field__input::placeholder { color: var(--ds-ink-soft); opacity: var(--ds-opacity-muted); }
+.field__input:focus {
+  outline: 3px solid var(--ds-accent-deep);
+  outline-offset: 3px;
+  border-bottom-color: var(--ds-primary);
+}
+
+/* card. CARD-VARIATIONS #2 light feature card with an embedded mini-visual.
+   SURFACE-PATTERNS #10 soft-shadow-lift, two-stop and ink-tinted, plus the
+   hairline and the inset top highlight the WOW bar requires on elevated
+   surfaces. In THE LEDGER only CARDS get elevation; bands never do. */
+.card {
+  background: var(--ds-bg-surface);
+  border: 1px solid var(--ds-hairline);
+  border-radius: var(--ds-r-surface);
+  padding: var(--ds-space-md);
+  box-shadow: var(--ds-shadow-card), var(--ds-inset-hi);
+  max-width: 340px;
+  transition: box-shadow var(--ds-dur) var(--ds-ease), transform var(--ds-dur) var(--ds-ease);
+}
+.card:hover { box-shadow: var(--ds-shadow-lift), var(--ds-inset-hi); transform: translateY(-4px); }
+.card__vis {
+  height: 56px;
+  border-radius: var(--ds-r-control);
+  background-color: var(--ds-bg-surface-2);
+  background-image: var(--ds-grid);
+  background-size: var(--ds-grid-size);
+  display: grid;
+  place-items: center;
+  margin-bottom: var(--ds-space-sm);
+  color: var(--ds-primary);
+}
+.card__title { font-family: var(--ds-font-display); font-weight: 600; font-size: 17px; margin: 0 0 4px; color: var(--ds-ink-heading); }
+.card__body { font-size: 14.5px; color: var(--ds-ink-soft); margin: 0; }
+
+/* tag, badge, pill */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: var(--ds-r-control);
+  background: var(--ds-primary-soft);
+  color: var(--ds-primary);
+}
+.tag--gold { background: var(--ds-accent-soft); color: var(--ds-accent-ink); }
+.tag--pill { border-radius: var(--ds-r-pill); background: transparent; box-shadow: inset 0 0 0 1px var(--ds-line); color: var(--ds-ink-soft); }
+.tag--quiet { color: var(--ds-ink-soft); }
+.tag__dot { width: 6px; height: 6px; border-radius: var(--ds-r-pill); background: currentColor; }
+
+/* text link. MOTION-PATTERNS #17 underline-grow, the one link gesture */
+.tlink {
+  color: var(--ds-primary);
+  font-weight: 500;
+  text-decoration: none;
+  background-image: linear-gradient(var(--ds-primary), var(--ds-primary));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  padding-bottom: 2px;
+  transition: background-size var(--ds-dur) var(--ds-ease), color var(--ds-dur) var(--ds-ease);
+}
+.tlink:hover, .tlink.is-hover { background-size: 100% 2px; }
+.tlink:focus-visible { outline: 3px solid var(--ds-accent-deep); outline-offset: 3px; border-radius: 2px; }
+.tlink--rest { background-size: 100% 2px; }
+
+/* DARK ANCHOR and SIGNATURE MOTIF */
+.anchor { position: relative; overflow: hidden; }
+.anchor__wash {
+  position: absolute;
+  inset: 0;
+  background: var(--ds-glow-wash);
+  z-index: var(--ds-z-below);
+  pointer-events: none;
+}
+.anchor__grain {
+  position: absolute;
+  inset: 0;
+  background-image: var(--ds-grain);
+  opacity: var(--ds-opacity-faint);
+  z-index: var(--ds-z-below);
+  pointer-events: none;
+}
+.anchor > .wrap { position: relative; z-index: var(--ds-z-raised); }
+.anchor .body-copy { color: var(--ds-ink-soft); }
+
+/* THE MONTH STRIP. The signature motif, built as a crafted CSS diagram rather
+   than an icon. It dramatises the one mechanic no competitor can show: the
+   month-by-month assessment, and the month where billing stops. It ILLUSTRATES
+   the mechanic. It does not report any client's history. */
+.strip {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 6px;
+  margin-top: var(--ds-space-md);
+}
+.cell {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--ds-r-control);
+  background: var(--ds-accent);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 8px;
+  font-family: var(--ds-font-display);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ds-primary-deep);
+  box-shadow: var(--ds-inset-hi);
+}
+.cell--paused {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px var(--ds-accent);
+  color: var(--ds-accent-ink);
+}
+.cell--paused::before {
+  content: "";
+  position: absolute;
+  left: 14%;
+  right: 14%;
+  top: 46%;
+  height: 2px;
+  background: var(--ds-accent);
+}
+.strip-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ds-space-md) var(--ds-space-lg);
+  margin-top: var(--ds-space-md);
+  padding-top: var(--ds-space-md);
+  border-top: 1px solid var(--ds-hairline);
+}
+.legend-item { display: flex; gap: var(--ds-space-sm); align-items: flex-start; max-width: 32ch; }
+.legend-key {
+  flex: 0 0 26px;
+  height: 34px;
+  border-radius: var(--ds-r-control);
+  background: var(--ds-accent);
+  margin-top: 2px;
+}
+.legend-key--paused { background: transparent; box-shadow: inset 0 0 0 2px var(--ds-accent); }
+.legend-text { font-size: 13px; color: var(--ds-ink-soft); margin: 0; }
+.legend-text b { color: var(--ds-ink); font-weight: 600; display: block; }
+
+.motif-construction {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--ds-space-md);
+  margin-top: var(--ds-space-lg);
+  font-size: 12.5px;
+  color: var(--ds-ink-soft);
+}
+.motif-construction div { padding-left: var(--ds-space-sm); border-left: 2px solid var(--ds-accent); }
+.motif-construction b { color: var(--ds-ink); }
+
+/* THE ONE MINI-VIGNETTE */
+.vignette-frame {
+  border: 1px solid var(--ds-hairline);
+  padding: var(--ds-space-md);
+  background: var(--ds-bg-surface);
+  max-width: 560px;
+}
+.vignette {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--ds-r-surface);
+  background: var(--ds-primary-deep);
+  color: var(--ds-ink-on-dark);
+  padding: var(--ds-space-md);
+  height: 424px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--ds-shadow-lift);
+}
+.vignette__media { position: relative; width: 92px; height: 92px; flex: 0 0 auto; }
+.vignette__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 22%;
+  border-radius: var(--ds-r-pill);
+  display: block;
+  filter: saturate(.94) contrast(1.04);
+}
+.vignette__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--ds-r-pill);
+  background: var(--ds-fade-to-paper);
+  box-shadow: inset 0 0 0 1px var(--ds-hairline);
+}
+.vignette__top { display: flex; gap: var(--ds-space-md); align-items: center; }
+.vignette__name { font-family: var(--ds-font-display); font-weight: 500; font-size: 17px; margin: 0; }
+.vignette__role { font-size: 12.5px; color: var(--ds-ink-soft); margin: 2px 0 0; }
+.vignette__claim { font-family: var(--ds-font-display); font-weight: 300; font-size: 25px; line-height: 1.16; letter-spacing: -.02em; margin: 0; color: var(--ds-ink-on-dark); }
+.vignette__pause { font-size: 14px; line-height: 1.5; color: var(--ds-ink-soft); margin: var(--ds-space-sm) 0 0; }
+.vignette__foot { display: flex; align-items: center; justify-content: space-between; gap: var(--ds-space-sm); flex-wrap: wrap; }
+.vignette__rule { height: 3px; background: var(--ds-accent); width: 64px; margin-bottom: var(--ds-space-md); }
+.vig-caption { font-size: 12.5px; color: var(--ds-ink-soft); margin: var(--ds-space-sm) 0 0; }
+
+.cta-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-space-xs);
+  font-family: var(--ds-font-body);
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  padding: 12px 22px;
+  border-radius: var(--ds-r-pill);
+  background-color: var(--ds-accent-deep);
+  background-clip: padding-box;
+  border: 1px solid var(--ds-accent-deep);
+  color: var(--ds-ink-on-dark);
+  text-decoration: none;
+  box-shadow: var(--ds-glow);
+  transition: background-color var(--ds-dur) var(--ds-ease), box-shadow var(--ds-dur) var(--ds-ease);
+}
+.cta-gold:hover { background-color: var(--ds-accent-ink); box-shadow: none; }
+.cta-gold:focus-visible { outline: 3px solid var(--ds-ink-on-dark); outline-offset: 3px; }
+
+/* COLOPHON */
+.numbered { list-style: none; margin: 0; padding: 0; counter-reset: n; }
+.numbered li {
+  counter-increment: n;
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: var(--ds-space-md);
+  padding: var(--ds-space-md) 0;
+  border-top: 1px solid var(--ds-line);
+  font-size: 14.5px;
+  color: var(--ds-ink-soft);
+}
+.numbered li::before {
+  content: counter(n, decimal-leading-zero);
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: .06em;
+  color: var(--ds-accent-ink);
+}
+.numbered b { color: var(--ds-ink); font-weight: 600; }
+
+/* MOTION. One gesture for the whole surface: a short fade plus a small rise, on
+   one easing curve, with a small stagger on grouped items. Hidden-before-reveal
+   is scoped to a class set by a one-line script, so with no JavaScript nothing
+   is ever hidden. MOTION-PATTERNS #21 fade-up. */
+.js-reveal .reveal { opacity: 0; transform: translateY(24px); }
+.js-reveal .reveal.is-in {
+  opacity: 1;
+  transform: none;
+  transition: opacity var(--ds-dur-slow) var(--ds-ease-out),
+              transform var(--ds-dur-slow) var(--ds-ease-out);
+  transition-delay: calc(var(--i, 0) * 80ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal .reveal { opacity: 1; transform: none; }
+  .js-reveal .reveal.is-in { transition: none; transition-delay: 0ms; }
+  .btn, .btn--secondary, .card, .tlink, .field__input, .cta-gold { transition: none; }
+  .btn:hover, .btn.is-hover, .btn--secondary:hover, .card:hover { transform: none; }
+}
+
+@media (max-width: 860px) {
+  .sw { grid-template-columns: minmax(0, 1fr); gap: 2px; min-height: 0; padding-block: var(--ds-space-sm); }
+  .ladder__row { grid-template-columns: minmax(0, 1fr); }
+  .head-block--split { grid-template-columns: minmax(0, 1fr); gap: var(--ds-space-md); }
+  .gold-band__inner { grid-template-columns: minmax(0, 1fr); gap: var(--ds-space-lg); }
+  .strip { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .numeral-row { gap: var(--ds-space-md); }
+}
+</style>
+</head>
+
+<body>
+<script>document.documentElement.className += ' js-reveal';</script>
+
+<main>
+
+<!-- pick: COMPANY-SECTIONS.md #2 Manifesto / values creed type-block | considered: #1 Founder / company editorial hero,#3 Origin timeline single vertical spine | rigor: heavy | globals: TYPOGRAPHY-PAIRINGS.md #26 Montserrat + Hind | pattern: _MODERN-DESIGN-PATTERN-LIBRARY category E oversized display | why: the sheet opens on a creed type-block rather than an editorial hero because this artifact is an identity specimen and a portrait-led opener would read as the page this round must not build; the creed block also lets the thesis carry the WOW bar 64px display floor at 1440px on its own, with no imagery propping it up. -->
+<section class="band sheet-title">
+  <div class="wrap">
+    <div class="sheet-title__rule"></div>
+    <p class="eyebrow eyebrow--plain">Brand identity sheet &middot; concept B of 3</p>
+    <h1 class="d-xl">The Ledger</h1>
+    <p class="lede readw">Month by month is a rhythm, so the identity is built in strata: white measure, dark purple anchor, gold band. You read the brand the way you read a payment schedule.</p>
+
+    <div class="sheet-meta">
+      <div>
+        <p class="spec-label">Brand</p>
+        <p class="spec-val">First Page SEO Guarantee</p>
+      </div>
+      <div>
+        <p class="spec-label">Founder</p>
+        <p class="spec-val">James Sutton IV, since 2015</p>
+      </div>
+      <div>
+        <p class="spec-label">Surface polarity</p>
+        <p class="spec-val">Light. Balanced brand, no inversion</p>
+      </div>
+      <div>
+        <p class="spec-label">Status</p>
+        <p class="spec-val">Palette proposed for ratification</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: CARD-VARIATIONS.md #3 Minimal 3-up icon-top feature | considered: #2 Light feature card with embedded mini-visual,#4 Circle-icon service card with arrow link | rigor: heavy | globals: SURFACE-PATTERNS.md #1 Brutalist zero | why: the three lockups need equal weight and a shared baseline, which the minimal 3-up gives without the card chrome that #2 and #4 both bring; the hairline-seamed zero-radius grid is also the honest frame for a mark that is TYPESET rather than placed, since no logo vector exists and a rounded card would imply a finished asset the brand does not yet own. -->
+<section class="band band--tint reveal">
+  <div class="wrap">
+    <div class="head-block">
+      <p class="eyebrow">Wordmark lockups</p>
+      <h2 class="d-lg">Set, not placed</h2>
+      <p class="body-copy readw">No vector logo exists in any supplied or scraped source, and the largest raster on file is 403&nbsp;pixels wide, too small to render crisply in a retina lockup. Every mark below is therefore typeset in the brand display face. <b>LOGO-VECTOR: NEEDS-OWNER.</b></p>
+    </div>
+
+    <div class="lockup-grid">
+      <div class="lockup">
+        <p class="lockup__cap">Primary horizontal &middot; on light</p>
+        <p class="wm wm--h"><span class="wm__accent">First Page</span> <span class="wm__rest">SEO Guarantee</span></p>
+      </div>
+      <div class="lockup lockup--dark">
+        <p class="lockup__cap">Primary horizontal &middot; on dark</p>
+        <p class="wm wm--h"><span class="wm__accent">First Page</span> <span class="wm__rest">SEO Guarantee</span></p>
+      </div>
+      <div class="lockup">
+        <p class="lockup__cap">Stacked &middot; on light</p>
+        <p class="wm wm--stack"><span class="wm__first">First</span><span class="wm__accent">Page</span><span class="wm__rest">SEO Guarantee</span></p>
+      </div>
+      <div class="lockup lockup--dark">
+        <p class="lockup__cap">Stacked &middot; on dark</p>
+        <p class="wm wm--stack"><span class="wm__first">First</span><span class="wm__accent">Page</span><span class="wm__rest">SEO Guarantee</span></p>
+      </div>
+      <div class="lockup">
+        <p class="lockup__cap">Short mark &middot; on light</p>
+        <div class="wm-mono">1P</div>
+      </div>
+      <div class="lockup lockup--dark">
+        <p class="lockup__cap">Short mark &middot; on dark</p>
+        <div class="wm-mono">1P</div>
+      </div>
+    </div>
+
+    <div class="rule-demo">
+      <div>
+        <p class="spec-label rule-cap">Clear space</p>
+        <div class="clearspace">
+          <span class="clearspace__x">x</span>
+          <p class="wm wm--h"><span class="wm__accent">First Page</span> <span class="wm__rest">SEO Guarantee</span></p>
+        </div>
+        <p class="note">Clear space on all four sides equals the cap height of the word <b>First</b>. Nothing crosses the dashed boundary.</p>
+      </div>
+      <div class="minsize">
+        <p class="spec-label rule-cap">Minimum size</p>
+        <p class="wm"><span class="wm__accent">First Page</span> <span class="wm__rest">SEO Guarantee</span></p>
+        <p class="note">Horizontal lockup: 132&nbsp;px wide on screen, 30&nbsp;mm in print. Below that, use the short mark.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: DIVIDER-PATTERNS.md #10 Hard color band step | considered: #9 Gradient fade,#2 Wave smooth single curve | rigor: heavy | globals: SURFACE-PATTERNS.md #12 Solid-fill-block | pattern: _MODERN-WOW-SPEC figure/ground, three distinguishable grounds plus a near-black anchor | why: colour is presented as strata rather than chips because in this concept a swatch IS a plane you stand on, and the hard band step proves each ratio by eye in the ink that band actually carries; a gradient fade or a wave would soften exactly the edge-to-edge solidity that is this direction's whole material argument, and the pattern library rates band contrast plus whitespace above a wavy divider for premium read. -->
+<section class="band reveal">
+  <div class="wrap">
+    <div class="head-block head-block--split">
+      <div>
+        <p class="eyebrow">Palette, 17 roles</p>
+        <h2 class="d-lg">Purple structures. Gold punctuates.</h2>
+      </div>
+      <div>
+        <p class="body-copy readw">Purple <span class="sw__hex">#7f2199</span> and gold <span class="sw__hex">#ffba00</span> are measured from the live site, not chosen. Every derived value below was computed this pass against the exact hexes in the token sheet. Each band prints its ratio against the ground it is actually used on.</p>
+        <p class="note readw">One binding rule sits above the arithmetic: neither accent is ever body text, on either canvas. The purple clears 8.14:1 on white and is still barred, because that headroom buys eyebrows, labels, links and icons, never paragraphs.</p>
+      </div>
+    </div>
+
+    <div class="strata">
+      <div class="strata-group">
+        <p class="spec-label">Purple, the structural accent</p>
+        <div class="sw sw--primary">
+          <span class="sw__name">--ds-primary</span><span class="sw__hex">#7f2199</span>
+          <span class="sw__note"><span class="ratio">8.14:1</span> white ink on it &middot; CTA surface</span>
+        </div>
+        <div class="sw sw--primary-deep">
+          <span class="sw__name">--ds-primary-deep</span><span class="sw__hex">#1a0426</span>
+          <span class="sw__note"><span class="ratio">17.48:1</span> ink-on-dark on it &middot; THE dark ground, and the heading ink</span>
+        </div>
+        <div class="sw sw--primary-soft">
+          <span class="sw__name">--ds-primary-soft</span><span class="sw__hex">#f2e6f6</span>
+          <span class="sw__note"><span class="ratio">6.75:1</span> primary on it &middot; tinted badge ground</span>
+        </div>
+      </div>
+
+      <div class="strata-group">
+        <p class="spec-label">Gold, the punctuation accent</p>
+        <div class="sw sw--accent">
+          <span class="sw__name">--ds-accent</span><span class="sw__hex">#ffba00</span>
+          <span class="sw__note"><span class="ratio">11.27:1</span> deep ink on it &middot; a GROUND only, never small text on light</span>
+        </div>
+        <div class="sw sw--accent-ink">
+          <span class="sw__name">--ds-accent-ink</span><span class="sw__hex">#7a5200</span>
+          <span class="sw__note"><span class="ratio">6.92:1</span> on paper &middot; 6.25:1 on tint &middot; 6.32:1 on warm</span>
+        </div>
+        <div class="sw sw--accent-soft">
+          <span class="sw__name">--ds-accent-soft</span><span class="sw__hex">#fdf0d0</span>
+          <span class="sw__note"><span class="ratio">6.11:1</span> accent-ink on it &middot; soft badge ground</span>
+        </div>
+        <div class="sw sw--accent-deep">
+          <span class="sw__name">--ds-accent-deep</span><span class="sw__hex">#6b4600</span>
+          <span class="sw__note"><span class="ratio">8.40:1</span> on paper &middot; 7.61:1 ink-on-dark ON it &middot; rules and focus rings</span>
+        </div>
+        <div class="sw sw--accent-light">
+          <span class="sw__name">--ds-accent-light</span><span class="sw__hex">#ffcf52</span>
+          <span class="sw__note"><span class="ratio">13.13:1</span> on the dark ground &middot; 11.95:1 on ink</span>
+        </div>
+      </div>
+
+      <div class="strata-group">
+        <p class="spec-label">Grounds, three light planes and one anchor</p>
+        <div class="sw sw--surface">
+          <span class="sw__name">--ds-bg-surface</span><span class="sw__hex">#ffffff</span>
+          <span class="sw__note"><span class="ratio">17.54:1</span> ink on it &middot; paper</span>
+        </div>
+        <div class="sw sw--surface-2">
+          <span class="sw__name">--ds-bg-surface-2</span><span class="sw__hex">#f6f2f8</span>
+          <span class="sw__note"><span class="ratio">15.85:1</span> ink on it &middot; purple-tinted plane</span>
+        </div>
+        <div class="sw sw--warm">
+          <span class="sw__name">--ds-bg-warm</span><span class="sw__hex">#fbf4e6</span>
+          <span class="sw__note"><span class="ratio">16.03:1</span> ink on it &middot; gold-tinted plane</span>
+        </div>
+      </div>
+
+      <div class="strata-group">
+        <p class="spec-label">Ink and line</p>
+        <div class="sw sw--ink">
+          <span class="sw__name">--ds-ink</span><span class="sw__hex">#241033</span>
+          <span class="sw__note"><span class="ratio">17.54:1</span> on paper &middot; tinted near-black, never pure black</span>
+        </div>
+        <div class="sw sw--ink-heading">
+          <span class="sw__name">--ds-ink-heading</span><span class="sw__hex">= --ds-primary-deep</span>
+          <span class="sw__note"><span class="ratio">19.28:1</span> on paper &middot; light polarity, schema-mandated</span>
+        </div>
+        <div class="sw sw--ink-soft">
+          <span class="sw__name">--ds-ink-soft</span><span class="sw__hex">#5b4a66</span>
+          <span class="sw__note"><span class="ratio">8.03:1</span> on paper &middot; 7.25:1 on tint &middot; also the field boundary</span>
+        </div>
+        <div class="sw sw--line">
+          <span class="sw__name">--ds-line</span><span class="sw__hex">#e2d9ea</span>
+          <span class="sw__note"><span class="ratio">non-text</span> band seam and rule &middot; never a control boundary</span>
+        </div>
+        <div class="sw sw--on-dark">
+          <span class="sw__name">--ds-ink-on-dark</span><span class="sw__hex">#f7f2fa</span>
+          <span class="sw__note"><span class="ratio">17.48:1</span> on the dark ground &middot; 7.38:1 on primary</span>
+        </div>
+        <div class="sw sw--scrim">
+          <span class="sw__name">--ds-scrim</span><span class="sw__hex">rgba(26,4,38,.62)</span>
+          <span class="sw__note"><span class="ratio">n/a</span> brand-tinted legibility scrim over imagery</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ground-proof">
+      <div class="gp--1"><b>Paper</b><br>#ffffff</div>
+      <div class="gp--2"><b>Tinted plane</b><br>#f6f2f8</div>
+      <div class="gp--3"><b>Warm plane</b><br>#fbf4e6</div>
+      <div class="gp--4"><b>Anchor</b><br>#1a0426</div>
+    </div>
+    <p class="note">Shown adjacent so the separation is provable by eye. Paper is permitted to be pure white here only because the other two light planes carry a real measurable tint.</p>
+
+    <p class="note readw stack-md"><b>The one ratio that shapes everything:</b> gold on white measures 1.71:1. Not marginal, but a hard failure at the 4.5:1 body floor and at the 3:1 large-text floor. That is why gold in this identity is a surface you stand on rather than a colour you write in, and why white never appears on a gold ground anywhere.</p>
+  </div>
+</section>
+
+<!-- pick: SECTION-COMPONENTS.md #8 Manifesto / belief statement | considered: #7 Problem framing,#26 Pull-quote section | rigor: heavy | globals: TYPOGRAPHY-PAIRINGS.md #26 Montserrat + Hind | pattern: _MODERN-DESIGN-PATTERN-LIBRARY category E, light weight at large size reads luxe | why: the display ladder is specimened on a belief statement because the strongest sentence this brand owns is a statement about its own conduct rather than a problem or a client quote, and setting it at 300 weight is the exact inverse of the shouting capitals C7 tells this build to leave behind; the pull-quote alternative would need attribution the rights position cannot supply. -->
+<section class="band band--warm reveal">
+  <div class="wrap">
+    <div class="head-block">
+      <p class="eyebrow">Type scale</p>
+      <h2 class="d-lg">Oversized, and light at large</h2>
+      <p class="body-copy readw">Montserrat is the measured brand display face. Hind carries the body: a warm humanist sans with an open aperture, set slightly larger and looser than a marketing default so the sheet breathes. Two faces, no third.</p>
+    </div>
+
+    <div class="ladder">
+      <div class="ladder__row">
+        <div class="ladder__spec">
+          <p class="spec-label">Display XL</p>
+          <p class="spec-val">Montserrat 300 &middot; clamp(52 to 92px) &middot; tracking -0.03em &middot; leading 0.98</p>
+        </div>
+        <p class="d-xl">We do not publish a success rate.</p>
+      </div>
+
+      <div class="ladder__row">
+        <div class="ladder__spec">
+          <p class="spec-label">Display L</p>
+          <p class="spec-val">Montserrat 400 &middot; clamp(34 to 56px) &middot; tracking -0.025em &middot; leading 1.04</p>
+        </div>
+        <p class="d-lg">A marketing agency that guarantees you&rsquo;ll be in the first page of Google on key phrases that matter or you don&rsquo;t pay</p>
+      </div>
+
+      <div class="ladder__row">
+        <div class="ladder__spec">
+          <p class="spec-label">Display M</p>
+          <p class="spec-val">Montserrat 500 &middot; clamp(23 to 32px) &middot; tracking -0.015em &middot; leading 1.16</p>
+        </div>
+        <p class="d-md">One agreed monthly fee covers SEO, web, CRO, branding and design</p>
+      </div>
+
+      <div class="ladder__row">
+        <div class="ladder__spec">
+          <p class="spec-label">Body, at measure</p>
+          <p class="spec-val">Hind 400 &middot; 17px &middot; leading 1.65 &middot; measure 62ch</p>
+        </div>
+        <p class="readw ladder__body">We propose the key phrases from competitive research. They are named in the contract you sign, and each month is assessed against the metrics that contract sets. The reading measure is fixed at 62 characters and pinned to one left axis for the whole sheet; the palette strata are the single documented exception, because a band is not prose.</p>
+      </div>
+
+      <div class="ladder__row">
+        <div class="ladder__spec">
+          <p class="spec-label">Micro-caps eyebrow</p>
+          <p class="spec-val">Hind 600 &middot; 11px &middot; tracking +0.14em &middot; 44px accent rule</p>
+        </div>
+        <div>
+          <p class="eyebrow ladder__body">How the guarantee is assessed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: TRUST-STATS-SECTIONS.md #4 Stats big-number band | considered: #3 Stats count-up 3-up,#1 Trust bar mono logo row | rigor: heavy | globals: COLOR-THEORY-PRESETS.md derived-from-brand route | pattern: _MODERN-WOW-SPEC type, oversized numerals for the numeric moment | why: the live site big-stat-band survives as CRAFT while its occupant changes, because both alternatives here are structurally unavailable to this brand: a count-up on an aggregate total is the exact tell the category critic teaches buyers to look for, and a logo row has no permission on file; the one number that is genuinely owned travels with its own count, which is what makes an oversized numeral honest rather than loud. -->
+<section class="band band--warm is-continuous reveal">
+  <div class="wrap">
+    <div class="head-block head-block--compact">
+      <p class="eyebrow">Numeral specimen</p>
+      <h2 class="d-md">The oversized numeral, and what it is allowed to say</h2>
+    </div>
+
+    <div class="numeral-row">
+      <p class="numeral">4.9</p>
+      <div class="numeral-side">
+        <p class="spec-label">Montserrat 300 &middot; clamp(88 to 176px) &middot; tracking -0.045em</p>
+        <p class="d-md">from 35 Google reviews</p>
+      </div>
+    </div>
+
+    <p class="body-copy readw stack-md"><b>Rated 4.9 from 35 Google reviews.</b> The count always travels with the rating. It is a modest number and it is stated as one, because a rating without its sample size is the shape this identity refuses.</p>
+
+    <div class="motif-construction">
+      <div><b>Permitted occupants</b><br>The month-by-month cadence. The rating with its count. The founding year, 2015.</div>
+      <div><b>Refused occupants</b><br>Any percentage. Any aggregate total. Any success rate or ratio. Any count of metros. Any price.</div>
+      <div><b>Refused motion</b><br>No count-up on a total. The numeral arrives with the same fade and rise as everything else on the surface.</div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: CTA-PATTERNS.md #11 Full-width band CTA (section as button) | considered: #4 Phone-pill CTA (number as button),#7 Multi-CTA cluster | rigor: heavy | globals: SURFACE-PATTERNS.md #12 Solid-fill-block | pattern: _MODERN-DESIGN-PATTERN-LIBRARY category F, committed colour over decorated colour | why: this is the direct modernization of the live gold CTA band and the concept's boldest moment, and the change is that there is now ONE gold band instead of a saturated direct-response page, it carries dark ink instead of the white that measures 1.71:1, and it is surrounded by whitespace instead of crowding; a multi-CTA cluster would break the one-primary-per-surface discipline the blueprint is emphatic about, and the phone-pill stays a secondary rather than becoming the band. -->
+<section class="band band--gold surface-gold reveal">
+  <div class="wrap">
+    <div class="gold-band__inner">
+      <div>
+        <p class="eyebrow">The gold band</p>
+        <h2 class="d-lg">One agreed monthly fee covers SEO, web, CRO, branding and design.</h2>
+        <p class="body-copy readw">Quoted per business after a competitive review. On a gold ground the purple becomes the accent and the ink goes dark, at 11.27:1. There is exactly one primary action on any surface this identity paints.</p>
+      </div>
+      <div>
+        <div class="btn-row">
+          <a class="btn" href="#book">Book a consultation</a>
+          <a class="btn btn--secondary" href="#call">CALL US</a>
+        </div>
+        <p class="note gold-band__note">Primary: purple pill, white ink, 8.14:1 on the pill.<br>Secondary: outline pill, purple on gold at 4.76:1.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: CTA-PATTERNS.md #1 Solid pill primary | considered: #3 Arrow-circle CTA (label + circular icon),#6 Ghost text-link with arrow | rigor: heavy | globals: MOTION-PATTERNS.md #36 Button press | pattern: _MODERN-WOW-SPEC detail, fine and visible focus states | why: the solid pill is the correct primary for a brand whose CTA must read as a commitment rather than a flourish, and it keeps the single motion gesture intact where the arrow-circle would introduce a second competing one; the specimen shows rest, hover and focus side by side because an identity that leaves focus to the browser default has shipped an accessibility defect, which for a vendor whose prospects audit its own site is a positioning defect too. -->
+<section class="band reveal">
+  <div class="wrap">
+    <div class="head-block">
+      <p class="eyebrow">Controls</p>
+      <h2 class="d-lg">Rest, hover, focus. All three shown</h2>
+      <p class="body-copy readw">Every state is rendered side by side rather than left to a mouse. Hover is a colour change plus a two-pixel rise on named properties only; focus is a three-pixel deep-gold ring at a three-pixel offset, visible on light and gold grounds alike.</p>
+    </div>
+
+    <div class="atom-grid">
+      <div class="atom">
+        <span class="atom__cap">Primary</span>
+        <div class="btn-row"><a class="btn" href="#a">Book a consultation</a><span class="state-tag">rest</span></div>
+        <div class="btn-row"><span class="btn is-hover">Book a consultation</span><span class="state-tag">hover</span></div>
+        <div class="btn-row"><span class="btn is-focus">Book a consultation</span><span class="state-tag">focus</span></div>
+      </div>
+
+      <div class="atom">
+        <span class="atom__cap">Secondary</span>
+        <div class="btn-row"><a class="btn btn--secondary" href="#b">CALL US</a><span class="state-tag">rest</span></div>
+        <div class="btn-row"><span class="btn btn--secondary is-hover">CALL US</span><span class="state-tag">hover</span></div>
+        <div class="btn-row"><span class="btn btn--secondary is-focus">CALL US</span><span class="state-tag">focus</span></div>
+      </div>
+
+      <div class="atom">
+        <span class="atom__cap">Ghost</span>
+        <div class="btn-row"><a class="btn btn--ghost" href="#c">How the guarantee works</a><span class="state-tag">rest</span></div>
+        <div class="btn-row"><span class="btn btn--ghost is-hover">How the guarantee works</span><span class="state-tag">hover</span></div>
+        <div class="btn-row"><span class="btn btn--ghost is-focus">How the guarantee works</span><span class="state-tag">focus</span></div>
+      </div>
+
+      <div class="atom">
+        <span class="atom__cap">Disabled</span>
+        <div class="btn-row"><button class="btn" type="button" disabled>Book a consultation</button></div>
+        <p class="note">Opacity 0.45 through the disabled opacity step, pointer refused, no hover transform. Inactive controls sit outside the WCAG contrast requirement and are marked as such rather than quietly dimmed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: FORM-LAYOUTS.md #6 Inline newsletter (email + button only) | considered: #1 Single-column stacked inquiry form,#10 Quote / calculator form | rigor: heavy | globals: SURFACE-PATTERNS.md #40 Underline-only (editorial / luxury) | pattern: _MODERN-DESIGN-PATTERN-LIBRARY category I, component polish with hairline plus inset highlight on elevated surfaces | why: the field atom is specimened at its smallest legible unit, one input and one action, because an identity sheet needs the control rather than the form, and a quote form is off the table anyway while no price may appear; the underline-only setting gives a boundary at 8.03:1 where a boxed field on a tinted plane would sit near the 3:1 floor, and it keeps the architectural read the strata establish. -->
+<section class="band band--tint reveal">
+  <div class="wrap">
+    <div class="head-block">
+      <p class="eyebrow">Fields and surfaces</p>
+      <h2 class="d-lg">The card is the only thing that floats</h2>
+      <p class="body-copy readw">In this identity the bands carry no elevation at all, because their power is edge-to-edge solidity. Depth is spent on cards, and it is spent properly: a two-stop purple-tinted shadow, a one-pixel hairline, and an inset top highlight.</p>
+    </div>
+
+    <div class="atom-grid">
+      <div class="atom">
+        <span class="atom__cap">Input, underline-only</span>
+        <label class="field">
+          <span class="field__label">Work email</span>
+          <input class="field__input" type="email" placeholder="you@company.com" autocomplete="email">
+        </label>
+        <p class="note">Focus paints the same deep-gold ring as every other control, and turns the two-pixel rule purple.</p>
+      </div>
+
+      <div class="atom">
+        <span class="atom__cap">Card</span>
+        <div class="card">
+          <div class="card__vis" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+              <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+              <path d="M3 9h18"></path><path d="M8 4v5"></path><path d="M7 14h4"></path>
+            </svg>
+          </div>
+          <p class="card__title">Assessed monthly</p>
+          <p class="card__body">Each month is measured against the metrics named in the contract.</p>
+        </div>
+      </div>
+
+      <div class="atom">
+        <span class="atom__cap">Tag, badge, pill</span>
+        <span class="tag"><span class="tag__dot"></span>On target</span>
+        <span class="tag tag--gold">Full Suite</span>
+        <span class="tag tag--pill">Las Vegas</span>
+        <p class="note">One radius language across the sheet: six pixels for controls, thirteen for surfaces, full round for pills.</p>
+      </div>
+
+      <div class="atom">
+        <span class="atom__cap">Text link</span>
+        <p><a class="tlink tlink--rest" href="#d">How the guarantee works</a> <span class="state-tag">rest</span></p>
+        <p><a class="tlink is-hover" href="#e">How the guarantee works</a> <span class="state-tag">hover</span></p>
+        <p class="note">The underline is drawn, not inherited. It grows from zero on hover and is always present at rest, so a link is never identified by colour alone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: DATAVIZ-SECTIONS.md #10 Compact KPI strip (dense single-row metrics) | considered: #3 Horizontal ranked bars (pill tracks),#6 Single-value ring gauges | rigor: heavy | globals: MOTION-PATTERNS.md #21 Fade-up | pattern: _MODERN-WOW-SPEC texture, an ultra-low-opacity material layer, and light, one soft wash behind one moment | why: the motif has to read as a CADENCE, which is what a dense single row of equal cells does and what neither alternative can do honestly here, since ranked bars would draw a rank chart this brand may not fabricate and a ring gauge is a success rate in a circle, the precise claim shape that is banned; spending the vertical portfolio energy on the mechanic diagram is also where C7 says technique belongs, because the mechanic is the most persuasive thing the brand owns. -->
+<section class="band band--anchor surface-dark anchor reveal">
+  <div class="anchor__wash" aria-hidden="true"></div>
+  <div class="anchor__grain" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="head-block head-block--split">
+      <div>
+        <p class="eyebrow">Signature motif</p>
+        <h2 class="d-lg">The month strip</h2>
+      </div>
+      <div>
+        <p class="body-copy readw">Twelve cells, one per assessed month. Filled means on target. The hollow cell is the month the work continues and the billing stops. This diagram illustrates the mechanic. It does not report any client&rsquo;s history, and no cell here corresponds to a real account.</p>
+      </div>
+    </div>
+
+    <div class="strip" role="img" aria-label="Twelve month cells; eleven filled to show on-target months and one hollow to show a month where billing stops.">
+      <div class="cell">01</div>
+      <div class="cell">02</div>
+      <div class="cell">03</div>
+      <div class="cell">04</div>
+      <div class="cell cell--paused">05</div>
+      <div class="cell">06</div>
+      <div class="cell">07</div>
+      <div class="cell">08</div>
+      <div class="cell">09</div>
+      <div class="cell">10</div>
+      <div class="cell">11</div>
+      <div class="cell">12</div>
+    </div>
+
+    <div class="strip-legend">
+      <div class="legend-item">
+        <div class="legend-key" aria-hidden="true"></div>
+        <p class="legend-text"><b>Filled cell</b>On target for the month against the metrics the contract names. Work continues, billing continues.</p>
+      </div>
+      <div class="legend-item">
+        <div class="legend-key legend-key--paused" aria-hidden="true"></div>
+        <p class="legend-text"><b>Hollow cell</b>Off target for the month. We keep working and your billing stops until it is back on target.</p>
+      </div>
+      <div class="legend-item">
+        <p class="legend-text"><b>Why a strip and not a chart</b>A chart would imply a measured history. A strip states a rule. The mechanic is the claim, and it is the only claim here.</p>
+      </div>
+    </div>
+
+    <div class="motif-construction">
+      <div><b>Construction</b><br>Twelve equal cells on a 3:4 ratio, six-pixel gutter, six-pixel control radius. Nothing is weighted, because no month outranks another.</div>
+      <div><b>The hollow cell</b><br>Two-pixel gold inset ring, transparent fill, one gold bar across the midline. The absence is drawn, not implied by a paler fill.</div>
+      <div><b>Where it recurs</b><br>Anywhere the cadence is explained. It scales to three cells inline, and to a single cell as a status marker.</div>
+    </div>
+  </div>
+</section>
+
+<!-- pick: SECTION-COMPONENTS.md #16 Founder bio split | considered: #17 Centered manifesto bio,#57 Quote / pull-quote standalone | rigor: heavy | globals: SURFACE-PATTERNS.md #35 Circular-mask (portraits / avatars) | pattern: _MODERN-DESIGN-PATTERN-LIBRARY category H, imagery and masks with a vignette on any photograph | why: exactly one applied vignette is permitted and the founder split is the only composition the surviving photography can carry honestly, since every founder file on disk is web resolution and the largest is 571 by 462, so a centered bio or a standalone pull-quote would both want the portrait bigger than it can go; at chip scale with a bottom fade it reads as deliberate rather than upscaled, and it is where the founder-led signature move survives on a chrome-less sheet. -->
+<section class="band reveal">
+  <div class="wrap">
+    <div class="head-block">
+      <p class="eyebrow">Applied, one vignette</p>
+      <h2 class="d-lg">A taste, at one-sixth scale</h2>
+      <p class="body-copy readw">One card-sized composition, framed as a specimen inside the sheet. This is not a page and it is not a hero. It is the smallest honest demonstration that the strata, the ink, the gold and the founder portrait hold together.</p>
+    </div>
+
+    <div class="vignette-frame">
+      <div class="vignette surface-dark">
+        <div class="vignette__top">
+          <div class="vignette__media">
+            <img src="../../../../assets/seoguarantee.com_wp-content_themes_theme-child_images_james-image-highres.jpg"
+                 alt="James Sutton IV, founder of First Page SEO Guarantee." width="92" height="92" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <p class="vignette__name">James Sutton IV</p>
+            <p class="vignette__role">Founder &middot; Las Vegas &middot; since 2015</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="vignette__rule" aria-hidden="true"></div>
+          <p class="vignette__claim">We guarantee first page for the key phrases named in your contract, or you don&rsquo;t pay.</p>
+          <p class="vignette__pause">Any month we&rsquo;re not delivering what your contract says, we keep working and your billing stops.</p>
+        </div>
+
+        <div class="vignette__foot">
+          <a class="cta-gold" href="#book2">Book a consultation</a>
+          <span class="tag tag--pill tag--quiet">Rated 4.9 from 35 reviews</span>
+        </div>
+      </div>
+      <p class="vig-caption"><b>SPECIMEN, the identity in use.</b> 424&nbsp;px tall at 1440&nbsp;px, inset and framed, never full-bleed. The two sentences always travel together: the promise never appears without the pause that describes it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- pick: FAQ-ACCORDION.md #4 Numbered list FAQ (no expansion) | considered: #1 Classic expand-rows with plus indicator,#7 Category-grouped sections | rigor: heavy | globals: SURFACE-PATTERNS.md #27 Hairline-full-width | pattern: _MODERN-WOW-SPEC restraint, the premium signal is what you leave out | why: the outstanding items and the honesty rails must be readable without a click, because a reviewer who has to expand a row to find out that the logo vector is still owed will not expand it; the numbered no-expansion list also closes the sheet on hairlines and whitespace rather than another band, which is the restraint the strata above have earned. -->
+<section class="band band--tint reveal">
+  <div class="wrap">
+    <div class="head-block head-block--compact">
+      <p class="eyebrow eyebrow--plain">Colophon, what this sheet does not claim</p>
+      <h2 class="d-md">Open items, stated rather than hidden</h2>
+    </div>
+
+    <ol class="numbered readw--wide">
+      <li><span><b>The logo vector is still owed.</b> LOGO-VECTOR: NEEDS-OWNER. Every lockup on this sheet is typeset in Montserrat because no vector exists in any supplied or scraped source and the largest raster is 403&nbsp;px wide.</span></li>
+      <li><span><b>The palette is proposed, not ratified.</b> The white-dominant ground with purple and gold accents remains provisional and awaits confirmation against a rendered specimen. This sheet is that specimen.</span></li>
+      <li><span><b>No price appears anywhere</b>, including a &ldquo;from&rdquo; figure. There is no pricing atom in this system and no tier card was drawn, even as a card specimen.</span></li>
+      <li><span><b>No client name, client logo, press logo or client mockup appears.</b> The strongest assets on disk are rights-blocked and stay blocked until written permission is on file.</span></li>
+      <li><span><b>No invented percentage, success rate, aggregate total or metro count appears</b>, and none may. The shape is refused, not only the number.</span></li>
+      <li><span><b>Photography is at the resolution that exists.</b> Every founder image on file is web resolution, so the vignette uses a 92&nbsp;px portrait chip and never a full-bleed. Real photography at retina resolution is still owed.</span></li>
+      <li><span><b>Terminology is fixed.</b> First page, never a position claim. Key phrases, and only ever key phrases. The guarantee, singular and definite, because there is exactly one. Full Suite, capitalised. Complementary, spelled with an e.</span></li>
+      <li><span><b>Contact, rendered identically everywhere it appears:</b> 6905 W Charleston Blvd, Las Vegas, NV 89117, USA &middot; +1 (702) 420-7272 &middot; support@seoguarantee.com &middot; seoguarantee.com</span></li>
+    </ol>
+
+    <p class="note readw--wide"><b>Signature moves, and how each survives.</b> Dark-purple-chrome and dark-hero survive as the near-black anchor stratum, a real token rather than a chip. Gold-cta-band survives as one full gold ground with dark ink and a single purple primary on it. Big-stat-bands survives as craft with an owned occupant. Founder-video-hero survives as a portrait chip inside the one vignette. The move is kept; the dated execution is not.</p>
+  </div>
+</section>
+
+</main>
+
+<script>
+/* One gesture for the whole surface: a short fade plus a small rise on one
+   easing curve, with a small stagger on grouped items. Reduced motion is
+   honoured by the stylesheet AND short-circuited here, so nothing is ever left
+   hidden. With JavaScript disabled the .js-reveal class is never added and the
+   hidden-before-reveal rules never apply. MOTION-PATTERNS #21 Fade-up. */
+(function () {
+  var nodes = document.querySelectorAll('.reveal');
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) {
+    for (var i = 0; i < nodes.length; i++) { nodes[i].classList.add('is-in'); }
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry, k) {
+      if (!entry.isIntersecting) return;
+      entry.target.style.setProperty('--i', String(k % 4));
+      entry.target.classList.add('is-in');
+      io.unobserve(entry.target);
+    });
+  }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+  for (var j = 0; j < nodes.length; j++) { io.observe(nodes[j]); }
+})();
+</script>
+
+</body>
+</html>

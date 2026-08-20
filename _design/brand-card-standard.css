@@ -1,0 +1,80 @@
+/* ============================================================================
+   seoguarantee : CARD TIER SHEET, STANDARD
+   The restrained default treatment every ORDINARY page gets.
+
+   HOW THIS SHEET LOADS (fixed convention, build.mjs): exactly ONE tier sheet is
+   linked per page, LAST, after the three core sheets (tokens, chrome,
+   structural), and only if the file exists. A slug listed in
+   client-rules.json bespoke_pages gets brand-card-bespoke.css; every other slug
+   gets this one. So the two tier sheets NEVER co-exist on a page and neither
+   needs to undo the other.
+
+   WHAT IT IS: a per-page CARD-TREATMENT override, NOT a theme. It assumes
+   seoguarantee-structural.css has already loaded and already defined .bw-card
+   and its parts in full. It therefore restates NOTHING: every rule below is a
+   short, additive adjustment to declarations that already exist.
+
+   IT MINTS NO TOKENS AND REDEFINES NONE. Zero raw brand hex. Every value is a
+   var(--ds-*) from seoguarantee-tokens.css or a structural literal.
+
+   THE TREATMENT, in one sentence: on an ordinary page the BAND does the talking
+   and the card recedes, so the card keeps all three of SEP-5's edge events (the
+   hairline, the inset top highlight and the ink-tinted contact shadow) but pays
+   each of them one step quieter, and its lift on hover is half the distance.
+   Provenance: CARD-VARIATIONS.md #2 light feature card, SURFACE-PATTERNS.md #10
+   soft-shadow-lift, MOTION-PATTERNS.md #10 lift, _MODERN-WOW-SPEC depth and
+   elevation, blueprint composition-agency-creative.
+   ============================================================================ */
+
+/* REST. The two-stop contact shadow drops to the single-stop rest shadow. The
+   hairline and the inset top highlight both stay, because they are what give a
+   light card an edge against a light ground: at the measured 1.011:1 to 1.107:1
+   ground steps this surface runs, an unbordered card simply has no boundary. */
+.bw-card {
+  box-shadow: var(--ds-shadow-rest), var(--ds-inset-hi);
+}
+
+/* HOVER. Half the travel of the structural default (2px, not 4px) and one
+   shadow step up rather than two. The gesture is the same single lift the whole
+   surface runs, just spoken quietly. */
+.bw-card:hover {
+  box-shadow: var(--ds-shadow-card), var(--ds-inset-hi);
+  transform: translateY(-2px);
+}
+
+/* the flat variant keeps its contract: no rest elevation, materialise on hover */
+.bw-card--flat:hover {
+  box-shadow: var(--ds-shadow-rest), var(--ds-inset-hi);
+  transform: none;
+}
+
+/* THE EMBEDDED VISUAL. Shorter on an ordinary page, so a card row reads as a
+   line of statements rather than a gallery. The grid material stays: two planes
+   at the same value but a different MATERIAL still separate, and that is the
+   only thing holding the plate off the card face. */
+.bw-card__vis {
+  height: 120px;
+  margin-bottom: var(--ds-space-sm);
+}
+
+/* TYPE. Unchanged from the structural ladder. The standard tier does not step
+   the title up: the size difference between the tiers is a bespoke-page signal,
+   and spending it here would erase it. Only the foot rule softens, from the
+   full band line to the faint hairline, so the card's internal division never
+   competes with its own outer edge. */
+.bw-card__foot {
+  border-top-color: var(--ds-hairline);
+}
+
+/* THE STAMP. On an ordinary page the overlapping stamp sits closer in and
+   carries the card shadow rather than the lift shadow, so it reads as attached
+   to the frame instead of floating above it. */
+.bw-stamp {
+  left: calc(var(--ds-space-sm) * -1);
+  box-shadow: var(--ds-shadow-card), var(--ds-inset-hi);
+}
+
+/* MOTION GATE. This sheet introduces one transform, so this sheet zeroes it. */
+@media (prefers-reduced-motion: reduce) {
+  .bw-card:hover { transform: none; }
+}

@@ -1,0 +1,207 @@
+/* ============================================================================
+   seoguarantee : BRAND TOKEN LOCK · CONCEPT B "THE LEDGER"
+   Identity-sheet token system. Shape per BRAND-TOKEN-SCHEMA (00-globals/tokens).
+   Globals overlay per GLOBALS-OVERLAY-SPEC. Technique ceiling per
+   _MODERN-WOW-SPEC.md and _MODERN-DESIGN-PATTERN-LIBRARY.md. Sector blueprint:
+   composition-agency-creative.
+
+   VALUES ARE THIS BRAND'S. Purple #7f2199 and gold #ffba00 are MEASURED from the
+   client's live templates (C7 §2 / C6 §2), not chosen. Every derived tint below
+   was computed this pass with the WCAG 2.x relative-luminance formula against the
+   exact hexes in this file. No ratio was inherited from the structural reference
+   or from any other build. Theme polarity: LIGHT (C7 §2 primary_surface: light),
+   so --ds-ink-heading resolves to --ds-primary-deep.
+
+   THE ONE PLACE BRAND HEX LIVES. Every fill, border, shadow and gradient stop in
+   the identity sheet resolves through a --ds-* token declared here.
+   ============================================================================ */
+
+:root {
+
+  /* COLOUR · 17 required roles.
+     Ratios are measured; each is stated against the ground the role actually
+     lands on in this concept. */
+
+  /* PURPLE, the STRUCTURAL accent. The pattern library's "ONE accent" discipline
+     is resolved here as one accent ROLE: purple structures, gold punctuates. */
+  --ds-primary:        #7f2199;  /* CTA surface + structural accent. white on it 8.14:1 */
+  --ds-primary-deep:   #1a0426;  /* THE DARK GROUND, a purple-tinted near-black.
+                                    NOT a deeper purple. 19.28:1 vs white; carries
+                                    --ds-ink-on-dark at 17.48:1. Also the heading ink. */
+  --ds-primary-soft:   #f2e6f6;  /* tinted purple ground for badges and soft panels.
+                                    --ds-primary on it 6.75:1 */
+
+  /* GOLD, the PUNCTUATION accent. In THE LEDGER gold is a GROUND you stand on and
+     never small text on light: #ffba00 measures 1.71:1 on #ffffff, a hard fail at
+     both the 4.5:1 and the 3:1 floor. That one fact drives the whole gold family. */
+  --ds-accent:         #ffba00;  /* gold as a SURFACE only. dark ink on it 10.26 to 11.27:1 */
+  --ds-accent-ink:     #7a5200;  /* darkened gold for small text on light.
+                                    6.92:1 on surface · 6.25:1 on surface-2 · 6.32:1 on warm */
+  --ds-accent-soft:    #fdf0d0;  /* tinted gold ground. --ds-accent-ink on it 6.11:1 */
+  --ds-accent-deep:    #6b4600;  /* deepened gold: dark-band CTA surface + accent rules.
+                                    8.40:1 on #fff · 7.59:1 on surface-2 · 7.67:1 on warm;
+                                    --ds-ink-on-dark ON it 7.61:1 */
+  --ds-accent-light:   #ffcf52;  /* lightened gold: accent FOREGROUND on dark grounds.
+                                    13.13:1 on --ds-primary-deep · 11.95:1 on --ds-ink */
+
+  /* GROUNDS. Three distinguishable light planes, shown adjacent on the sheet.
+     Paper is permitted to be pure #ffffff only because surface-2 and warm carry a
+     real measurable tint; all three are never the same value. */
+  --ds-bg-surface:     #ffffff;  /* paper */
+  --ds-bg-surface-2:   #f6f2f8;  /* purple-tinted plane: cards, alternate strata */
+  --ds-bg-warm:        #fbf4e6;  /* gold-tinted plane: the warm stratum */
+
+  /* INK + LINE */
+  --ds-ink:            #241033;  /* tinted near-black, never #000. 17.54:1 on paper */
+  --ds-ink-heading:    var(--ds-primary-deep);  /* LIGHT polarity, schema-mandated */
+  --ds-ink-soft:       #5b4a66;  /* secondary text. 8.03:1 paper · 7.25:1 surface-2 */
+  --ds-line:           #e2d9ea;  /* decorative hairline / band seam (non-text) */
+  --ds-ink-on-dark:    #f7f2fa;  /* near-white ink on dark and on --ds-primary */
+  --ds-scrim:          rgba(26, 4, 38, .62);   /* brand-tinted legibility scrim */
+
+  /* GRADIENT group, rationed. ONE gradient in this concept, and it is the in-brand
+     pair the client's own booking plugin already runs. */
+  --ds-accent-2:       #a13cbc;  /* measured secondary purple (C7 §2) */
+  --ds-grad-brand:     linear-gradient(135deg, var(--ds-primary), var(--ds-accent-2));
+  --ds-fade-to-paper:  linear-gradient(180deg, rgba(26, 4, 38, 0) 0%, rgba(26, 4, 38, .78) 78%);
+
+  /* TYPOGRAPHY · 2 required. Montserrat is the measured brand display face. Body is
+     Hind per TYPOGRAPHY-PAIRINGS.md #26 (Montserrat + Hind), the only library entry
+     that pairs Montserrat in the DISPLAY role. No third face: --ds-font-mono is
+     deliberately NOT emitted, because this concept sets no tabular figures and
+     ships no monospaced specimen. */
+  --ds-font-display:   'Montserrat', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --ds-font-body:      'Hind', 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  /* RADIUS · exactly 3, ROLE-NAMED. Mid-set so the strata stay architectural. */
+  --ds-r-control:      6px;    /* buttons, inputs, badges, chips, bullets */
+  --ds-r-surface:      13px;   /* cards, panels, media frames */
+  --ds-r-pill:         999px;  /* pills, avatars */
+
+  /* SHADOW · 2 required. Both two-stop and INK-TINTED (purple), never black. In
+     THE LEDGER the bands themselves carry NO shadow, because their power is
+     edge-to-edge solidity, so elevation is spent on cards only. */
+  --ds-shadow-card:    0 1px 2px rgba(26, 4, 38, .05), 0 10px 28px rgba(26, 4, 38, .09);
+  --ds-shadow-lift:    0 2px 6px rgba(26, 4, 38, .08), 0 22px 56px rgba(26, 4, 38, .16);
+  --ds-shadow-rest:    0 1px 2px rgba(26, 4, 38, .045);
+  --ds-shadow-card-2stop: 0 2px 4px rgba(26, 4, 38, .06), 0 16px 40px rgba(26, 4, 38, .12);
+
+  /* SPACING · the canonical 7 steps (no 3xl) + layout */
+  --ds-space-2xs: 4px;
+  --ds-space-xs:  8px;
+  --ds-space-sm:  14px;
+  --ds-space-md:  24px;
+  --ds-space-lg:  40px;
+  --ds-space-xl:  64px;
+  --ds-space-2xl: 96px;
+  --ds-section-py:    clamp(64px, 8vw, 112px);
+  --ds-container-max: 1120px;
+
+  /* MOTION · 2 required + the extension set. ONE easing curve for the whole
+     surface: a short fade plus a small rise. No bounce, overshoot, rotation,
+     flip, loop or autoplay anywhere in this identity. */
+  --ds-ease:      cubic-bezier(.22, .61, .36, 1);
+  --ds-dur:       220ms;
+  --ds-dur-fast:  140ms;
+  --ds-dur-slow:  600ms;
+  --ds-ease-out:  cubic-bezier(.2, .6, .2, 1);
+  --ds-dur-data:  1.4s;  /* reserved JS data duration. UNCONSUMED here by rule:
+                            count-up on an aggregate total is a banned SHAPE for
+                            this brand, not merely a banned number. */
+
+  /* GLOBALS OVERLAY · the design LANGUAGE, locked once here so every later surface
+     inherits polish instead of re-inventing it. 14 of 15 emitted; --ds-icon-tint is
+     the single permitted omission, because this sheet draws every icon as inline
+     SVG using currentColor and ships zero source raster icons, so an icon-recolour
+     filter would be a dead token. */
+  --ds-glass-bg:     rgba(255, 255, 255, .62);
+  --ds-glass-blur:   blur(14px) saturate(150%);
+  --ds-glass-border: rgba(255, 255, 255, .55);
+  --ds-hairline:     rgba(26, 4, 38, .10);
+  --ds-inset-hi:     inset 0 1px 0 rgba(255, 255, 255, .70);
+  --ds-glow:         0 0 42px rgba(255, 186, 0, .34);
+  --ds-glow-wash:    radial-gradient(62% 74% at 50% 0%, rgba(127, 33, 153, .34), rgba(127, 33, 153, 0) 72%);
+  --ds-grain:        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.86' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23g)' opacity='.5'/%3E%3C/svg%3E");
+  --ds-grid:         linear-gradient(rgba(127, 33, 153, .07) 1px, transparent 1px),
+                     linear-gradient(90deg, rgba(127, 33, 153, .07) 1px, transparent 1px);
+  --ds-grid-size:    44px 44px;
+  --ds-divider-h:    72px;
+
+  /* Z-INDEX · the 8 semantic layers */
+  --ds-z-below:   -1;
+  --ds-z-base:     0;
+  --ds-z-raised:   1;
+  --ds-z-sticky:  1000;
+  --ds-z-overlay: 1040;
+  --ds-z-drawer:  1050;
+  --ds-z-modal:   1060;
+  --ds-z-toast:   1080;
+
+  /* OPACITY · the 6 semantic steps */
+  --ds-opacity-muted:    .72;
+  --ds-opacity-disabled: .45;
+  --ds-opacity-faint:    .12;
+  --ds-opacity-scrim:    .55;
+  --ds-opacity-texture:  .40;
+  --ds-opacity-veil:     .85;
+}
+
+/* ============================================================================
+   DUAL-SURFACE FLIP. Any dark stratum re-asserts its own ink, accent, surface,
+   line and shadow rather than inheriting the light values. That inheritance is
+   the dark-on-dark trap C7 §2 names as recurring. Every ratio below was computed
+   against the flipped grounds in this block, not against the light ones.
+   ============================================================================ */
+.surface-dark {
+  /* SURFACE, the dark plane set */
+  --ds-bg-surface:   #1a0426;   /* the anchor ground */
+  --ds-bg-surface-2: #241033;   /* raised panel on dark. ink 15.90:1 */
+  --ds-bg-warm:      #2a1330;   /* warm-shifted dark plane. ink 15.42:1 */
+
+  /* INK, flipped to light so headings and body read on the dark ground */
+  --ds-ink:          #f7f2fa;   /* 17.48:1 on the anchor ground */
+  --ds-ink-heading:  #ffffff;
+  --ds-ink-soft:     #c9b8d6;   /* 10.38:1 on anchor · 9.45:1 on raised panel */
+  --ds-ink-on-dark:  #f7f2fa;
+
+  /* ACCENT: gold becomes FOREGROUND here. It is safe on dark and lethal on light. */
+  --ds-accent:       #ffba00;   /* 11.27:1 on the anchor ground */
+  --ds-accent-ink:   #ffcf52;   /* small accent text on dark. 13.13:1 anchor · 11.95:1 panel */
+  --ds-accent-soft:  rgba(255, 186, 0, .14);
+  --ds-accent-deep:  #ffba00;   /* the CTA surface on dark; dark ink ON it 11.27:1 */
+  --ds-accent-light: #ffd98a;   /* 14.27:1 on anchor · 12.99:1 on panel */
+
+  /* LINE, SHADOW and GLASS on dark */
+  --ds-line:         #3b2149;
+  --ds-hairline:     rgba(255, 255, 255, .14);
+  --ds-inset-hi:     inset 0 1px 0 rgba(255, 255, 255, .10);
+  --ds-shadow-card:  0 1px 2px rgba(0, 0, 0, .34), 0 14px 36px rgba(0, 0, 0, .46);
+  --ds-shadow-lift:  0 2px 8px rgba(0, 0, 0, .40), 0 26px 64px rgba(0, 0, 0, .58);
+  --ds-glass-bg:     rgba(36, 16, 51, .58);
+  --ds-glass-border: rgba(255, 255, 255, .14);
+  --ds-scrim:        rgba(10, 1, 16, .72);
+  --ds-grid:         linear-gradient(rgba(255, 186, 0, .07) 1px, transparent 1px),
+                     linear-gradient(90deg, rgba(255, 186, 0, .07) 1px, transparent 1px);
+}
+
+/* ============================================================================
+   GOLD STRATUM. Gold is a GROUND in this concept, so it gets its own flip with
+   DARK ink only. White on #ffba00 is 1.71:1, so it does not ship, in any size,
+   anywhere. That is the live site's gold-band trap, and this block is what
+   prevents it being re-inherited.
+   ============================================================================ */
+.surface-gold {
+  --ds-bg-surface:   #ffba00;
+  --ds-bg-surface-2: #f0a800;   /* deep ink 9.46:1 on it */
+  --ds-ink:          #1a0426;   /* 11.27:1 */
+  --ds-ink-heading:  #1a0426;
+  --ds-ink-soft:     #5a3d00;   /* 5.84:1 */
+  --ds-ink-on-dark:  #1a0426;
+  --ds-accent:       #7f2199;   /* on gold the PURPLE becomes the accent. 4.76:1 */
+  --ds-accent-ink:   #7f2199;
+  --ds-line:         rgba(26, 4, 38, .22);
+  --ds-hairline:     rgba(26, 4, 38, .18);
+  --ds-inset-hi:     inset 0 1px 0 rgba(255, 255, 255, .34);
+  --ds-shadow-card:  0 1px 2px rgba(26, 4, 38, .10), 0 12px 30px rgba(26, 4, 38, .16);
+  --ds-shadow-lift:  0 2px 8px rgba(26, 4, 38, .16), 0 24px 56px rgba(26, 4, 38, .24);
+}

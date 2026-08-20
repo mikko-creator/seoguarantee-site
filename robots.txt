@@ -1,0 +1,15 @@
+# First Page SEO Guarantee, PREVIEW BUILD.
+#
+# This is an UNFINISHED preview published to a public URL so the team can review it.
+# It must not be indexed: it would compete with the client's live site and it carries a
+# privacy policy that states on its face that it is not the policy yet.
+#
+# Crawling is disallowed here AND every page carries a noindex meta tag, because robots.txt
+# alone is advisory and does not reliably keep a directly-linked page out of an index.
+
+User-agent: *
+Disallow: /
+
+# The sitemap below is authored and correct, but is unreachable while the disallow above
+# stands. It is kept current so that going live is a robots.txt change, not a rebuild.
+Sitemap: https://mikko-creator.github.io/squah-previews/seoguarantee/sitemap.xml

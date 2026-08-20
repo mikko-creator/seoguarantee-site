@@ -1,0 +1,17 @@
+# Build output. These are DERIVED from pages/*.content.html plus _design/ and the
+# chrome carrier, and they are already published in full at
+# github.com/mikko-creator/squah-previews. Tracking them here would double the
+# repository and produce a large diff on every build for zero information, since
+# a rebuild reproduces them byte for byte from what IS tracked.
+pages/*.html
+!pages/*.content.html
+
+# Never commit credentials or machine-local config.
+.mcp.json
+*.env
+.env*
+node_modules/
+
+# OS noise
+Thumbs.db
+.DS_Store

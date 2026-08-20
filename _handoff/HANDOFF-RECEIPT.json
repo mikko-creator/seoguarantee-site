@@ -1,0 +1,74 @@
+{
+  "schema": "handoff-receipt/v1",
+  "slug": "seoguarantee",
+  "copied_at": "2026-08-12T19:01:54.040Z",
+  "prep_spec_root": "C:/Users/Dell/Oso/Code/client-site-prep/seoguarantee/_spec",
+  "spec_manifest_checksum": "b72d3e96fd3628692f28c59412d4687eaabfbc4a24fc13e007c7d4b8dd965751",
+  "decisions_ledger_checksum": "80b068cb4fdc2e56338dbc857946a6384d92fa7df2e7b8899c15aa0f026ac05c",
+  "client_rules_checksum": "8787155d442af2fa319a5a50f59ef0fe3b5d3a6695e83274a2e761302542ecac",
+  "visual_direction_checksum": "0967c00744fab892fd32f57374520a6bede8086e800653b1e17035909058cfd5",
+  "files": [
+    {
+      "id": "C1",
+      "path": "sitemap.yaml",
+      "sha256": "8f632c4a04bbf2e5cac78b15c4bb37324924200d1aecd032e1e8de8d43117947"
+    },
+    {
+      "id": "C2",
+      "path": "briefs/",
+      "sha256": "357565b9387beb5dd2f20ff4763afd338388401e833cc664d5470e378047e068"
+    },
+    {
+      "id": "C3",
+      "path": "client-rules.json",
+      "sha256": "8787155d442af2fa319a5a50f59ef0fe3b5d3a6695e83274a2e761302542ecac"
+    },
+    {
+      "id": "C4",
+      "path": "content-bible.md",
+      "sha256": "454d3acc51d4564ae276062c668a8a7cbdf175efa5cc46b599f7b82ec19125c5"
+    },
+    {
+      "id": "C5",
+      "path": "decisions-ledger.md",
+      "sha256": "80b068cb4fdc2e56338dbc857946a6384d92fa7df2e7b8899c15aa0f026ac05c"
+    },
+    {
+      "id": "C6",
+      "path": "seoguarantee-tokens-spec.md",
+      "sha256": "6a7378c6ab26164d4b6bf27d37fdd9c3d480493107f433f7713c7f6da89fed5f"
+    },
+    {
+      "id": "C7",
+      "path": "visual-direction.md",
+      "sha256": "0967c00744fab892fd32f57374520a6bede8086e800653b1e17035909058cfd5"
+    },
+    {
+      "id": "C8",
+      "path": "link-funnel-map.md",
+      "sha256": "5b98f48a836a5f21667225e06183d9865842a3e74cd841f54a391cc27d7753b2"
+    },
+    {
+      "id": "C9",
+      "path": "selling-asset-manifest.json",
+      "sha256": "22e1eba8636ef19112e9e0a2f3c0f72ea3eeb15d59e8dd0155b603767e628486"
+    },
+    {
+      "id": "C10",
+      "path": "seo-manifest.json",
+      "sha256": "328eca81b8177b9ab25fa4b49a381ae2efad080d2a87190c14cf3a4ec6d5ee51"
+    },
+    {
+      "id": "C11",
+      "path": "seo-enrichment.md",
+      "sha256": "a50a26c0e36b68be25a1d6e2e6d2967febf5de63e52034633f8273c55baeb3bb"
+    },
+    {
+      "id": "C12",
+      "path": "fact-registry.json",
+      "sha256": "4046cf1399225af5b14452f76377b1c7311d7dbec24aa332656d6e6db1ae92eb"
+    }
+  ],
+  "concat_sha256": "357565b9387beb5dd2f20ff4763afd338388401e833cc664d5470e378047e068",
+  "handoff_kickoff_checksum": null
+}

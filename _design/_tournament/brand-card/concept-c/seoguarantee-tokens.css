@@ -1,0 +1,178 @@
+/* ============================================================================
+   seoguarantee : BRAND TOKEN LOCK : CONCEPT C, "THE ASCENT"
+   First Page SEO Guarantee . brand-card identity sheet . P8 identity round
+   ----------------------------------------------------------------------------
+   Shape: 00-globals/tokens/BRAND-TOKEN-SCHEMA.md (17 colour roles, 2 type,
+          3 ROLE-NAMED radii, 2 shadow, 7-step spacing, 2 motion, the 15
+          globals-overlay tokens per GLOBALS-OVERLAY-SPEC).
+   Values: DERIVED from the client's own measured brand (visual-direction.md C7
+          sec 0 / sec 2: #7f2199 purple, #ffba00 gold, #a13cbc secondary purple,
+          #ffffff ground). Nothing is inherited from the owner-chosen structural
+          reference: that page is a DARK site and every one of its accent, deep,
+          warning, canvas, panel and ink values was checked against this sheet
+          and appears here zero times. Its METHOD transfers, its numbers do not.
+   Palette route: 00-globals/color/menu.md "When no library entry matches":
+          constructed from the measured brand hexes, with color/menu.md #30
+          (Hot Magenta + Deep Plum) cited for the derivation DISCIPLINE only.
+   Contrast: every ratio in the comments below was COMPUTED this pass with the
+          WCAG 2.x relative-luminance formula against these exact hexes.
+   THIS FILE IS THE ONLY PLACE A BRAND HEX MAY APPEAR. Every other surface
+          resolves colour through var(--ds-*).
+   No em/en dashes anywhere (owner brand rail). Encoding: UTF-8, no BOM.
+   ========================================================================== */
+
+:root {
+
+  /* ---- COLOUR : 17 required roles ---------------------------------------- */
+
+  /* BRAND */
+  --ds-primary:        #7f2199;  /* measured brand purple. CTA surface. 8.14:1 on #fff as small text (label / eyebrow / link only: C7 sec 2 bars either accent as BODY text). --ds-ink-on-dark on it = 7.32:1 */
+  --ds-primary-deep:   #160321;  /* THE DARK GROUND: purple-tinted NEAR-BLACK. 19.64:1 vs white. --ds-ink-on-dark on it = 17.67:1. NOT "a deeper purple": the measured live chrome #4b0670 is a mid purple and is far too bright for this role. */
+  --ds-primary-soft:   #f3e9f7;  /* purple tint ground for soft chips. --ds-primary on it = 6.90:1, --ds-accent-ink on it = 5.87:1 */
+
+  /* ACCENT : gold. The accent-ink / accent-deep / accent-light triad exists
+     because raw gold on paper measures 1.71:1 and is a hard fail as text. */
+  --ds-accent:         #ffba00;  /* measured brand gold. SURFACE plus on-dark foreground ONLY. 11.48:1 on --ds-primary-deep. NEVER small text on a light ground. */
+  --ds-accent-ink:     #7a5200;  /* darkened gold: small TEXT on light. 6.92:1 on #fff, 5.97:1 on --ds-bg-surface-2, 6.27:1 on --ds-bg-warm, 6.28:1 on --ds-accent-soft */
+  --ds-accent-soft:    #fff3d6;  /* gold tint ground for badges */
+  --ds-accent-deep:    #6b4600;  /* deepened gold: SURFACE role. 8.40:1 on #fff, 7.24:1 on surface-2, 7.61:1 on warm; --ds-ink-on-dark ON it = 7.55:1 */
+  --ds-accent-light:   #ffc933;  /* lightened gold: accent FOREGROUND on dark. 12.77:1 on --ds-primary-deep, 11.41:1 on --ds-ink */
+
+  /* GROUND : three distinguishable light grounds. The owner asked for
+     "majority white", so --ds-bg-surface stays pure paper and the separation is
+     carried by the two tinted grounds (cool purple against warm gold: opposite
+     hue sides, so they read apart by eye, not only by lightness). */
+  --ds-bg-surface:     #ffffff;  /* paper */
+  --ds-bg-surface-2:   #f2ecf7;  /* purple-tinted elevated / band ground. 1.16 lightness step off paper */
+  --ds-bg-warm:        #fbf3e3;  /* gold-tinted warm band. 1.10 off paper, opposite hue to surface-2 */
+
+  /* INK */
+  --ds-ink:            #241033;  /* tinted near-black body ink, never #000. 17.54:1 on paper, 15.14:1 on surface-2, 15.90:1 on warm */
+  --ds-ink-heading:    var(--ds-primary-deep);  /* THEME POLARITY = LIGHT (C7 sec 2 primary_surface: light), so heading ink is the near-black ground token */
+  --ds-ink-soft:       #5b4a66;  /* secondary ink. 8.03:1 on paper, 6.92:1 on surface-2, 7.27:1 on warm */
+  --ds-ink-on-dark:    #f6f1fb;  /* near-white for dark and accent surfaces */
+
+  /* STRUCTURE */
+  --ds-line:           #e7dff0;  /* purple-tinted border / divider */
+  --ds-scrim:          rgba(22, 3, 33, .62);  /* brand-tinted legibility scrim over photography */
+
+  /* ---- COLOUR : optional roles this concept actually consumes ------------- */
+  --ds-signature:      #cf90de;  /* purple LIGHTENED for accent foreground on dark. 8.14:1 on --ds-primary-deep. (Raw #a13cbc measures 3.64:1 there and is barred as small text on dark.) */
+
+  /* ---- GRADIENT group : rationed. The brand gradient is genuinely in-brand
+          (the live booking plugin runs #7f2199 to #a13cbc). Used ONCE each. --- */
+  --ds-accent-2:       #a13cbc;  /* measured secondary purple, second gradient stop. 5.40:1 on paper */
+  --ds-grad-brand:     linear-gradient(135deg, var(--ds-primary) 0%, var(--ds-accent-2) 100%);
+  --ds-grad-text:      linear-gradient(100deg, var(--ds-primary) 0%, var(--ds-accent-2) 74%);
+  --ds-fade-to-paper:  linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, var(--ds-bg-surface) 82%);
+
+  /* ---- TYPOGRAPHY : 2 required plus 1 optional --------------------------- */
+  --ds-font-display:   'Montserrat', -apple-system, 'Segoe UI', system-ui, sans-serif;
+  --ds-font-body:      'Plus Jakarta Sans', -apple-system, 'Segoe UI', system-ui, sans-serif;
+  --ds-font-mono:      ui-monospace, 'Cascadia Mono', 'SFMono-Regular', Menlo, Consolas, monospace;  /* measurement face ONLY: role names, hexes, ratios. A system stack, so zero webfont payload, because this brand's own PageSpeed is part of its argument. */
+
+  /* ---- RADIUS : exactly 3, ROLE-NAMED. The chip/sm/md/lg/xl scale was
+          constrained out 2026-06-24 and emitting it is a schema violation.
+          Concept C sits at the GENEROUS end. This is where "hip" lands. ------ */
+  --ds-r-control:      8px;    /* buttons, inputs, badges, chips, bullets */
+  --ds-r-surface:      18px;   /* cards, panels, media frames */
+  --ds-r-pill:         999px;  /* pills, avatars, rank chips */
+
+  /* ---- SHADOW : one family, two stops, INK-TINTED (never pure black) ------ */
+  --ds-shadow-rest:    0 1px 2px rgba(36, 16, 51, .05), 0 3px 10px -3px rgba(36, 16, 51, .06);
+  --ds-shadow-card:    0 2px 6px -1px rgba(36, 16, 51, .08), 0 16px 36px -12px rgba(36, 16, 51, .18);
+  --ds-shadow-lift:    0 4px 10px -2px rgba(36, 16, 51, .10), 0 28px 58px -16px rgba(36, 16, 51, .26);
+
+  /* ---- SPACING and LAYOUT : the canonical 7 steps (no 3xl) ---------------- */
+  --ds-space-2xs:      4px;
+  --ds-space-xs:       8px;
+  --ds-space-sm:       14px;
+  --ds-space-md:       24px;
+  --ds-space-lg:       40px;
+  --ds-space-xl:       64px;
+  --ds-space-2xl:      96px;
+  --ds-section-py:     clamp(48px, 5.6vw, 88px);
+  --ds-container-max:  1180px;
+
+  /* ---- MOTION : 2 required. ONE easing for the whole surface. ------------- */
+  --ds-ease:           cubic-bezier(.22, .61, .36, 1);
+  --ds-dur:            220ms;
+
+  /* ---- GLOBALS OVERLAY : all 15. Locked ONCE here so every later surface
+          INHERITS the polish instead of re-inventing it. --------------------- */
+  --ds-glass-bg:       rgba(255, 255, 255, .58);            /* light-ground glass */
+  --ds-glass-blur:     blur(18px) saturate(165%);
+  --ds-glass-border:   rgba(255, 255, 255, .55);
+  --ds-hairline:       rgba(36, 16, 51, .10);
+  --ds-inset-hi:       inset 0 1px 0 rgba(255, 255, 255, .90);
+  --ds-glow:           0 0 0 1px rgba(255, 186, 0, .30), 0 10px 30px -8px rgba(255, 186, 0, .48);
+  --ds-glow-wash:      radial-gradient(58% 74% at 20% 8%, rgba(161, 60, 188, .34) 0%, rgba(161, 60, 188, 0) 68%);
+  --ds-grain:          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.86' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  --ds-grid:           linear-gradient(rgba(127, 33, 153, .07) 1px, transparent 1px), linear-gradient(90deg, rgba(127, 33, 153, .07) 1px, transparent 1px);
+  --ds-grid-size:      44px 44px;
+  --ds-divider-h:      72px;
+  --ds-dur-fast:       160ms;
+  --ds-dur-slow:       600ms;
+  --ds-ease-out:       cubic-bezier(.16, 1, .3, 1);
+  --ds-icon-tint:      brightness(0) saturate(100%) invert(17%) sepia(72%) saturate(3894%) hue-rotate(285deg) brightness(85%) contrast(101%);  /* recolours a SOURCE (non-currentColor) raster icon to --ds-primary. This sheet's own icons are inline SVG on currentColor and do not need it; it is declared here because the identity sheet is the LOCK every later surface inherits from. */
+
+  /* ---- MOTION extension and system scales -------------------------------- */
+  --ds-dur-data:       1.4s;   /* off-scale: JS data animation only */
+
+  --ds-z-below:        -1;
+  --ds-z-base:         0;
+  --ds-z-raised:       1;
+  --ds-z-sticky:       1000;
+  --ds-z-overlay:      1040;
+  --ds-z-drawer:       1050;
+  --ds-z-modal:        1060;
+  --ds-z-toast:        1080;
+
+  --ds-opacity-muted:    .72;
+  --ds-opacity-disabled: .45;
+  --ds-opacity-faint:    .12;
+  --ds-opacity-scrim:    .55;
+  --ds-opacity-texture:  .40;
+  --ds-opacity-veil:     .85;
+}
+
+/* ============================================================================
+   DARK SURFACE : the modernized dark-purple-chrome and dark-hero signature.
+   Dropping class="surface-dark" onto any block re-skins every surface-dependent
+   role, so a dark panel NEVER inherits a light ink (C7 sec 2's recurring trap).
+   Every ratio below computed this pass.
+   ========================================================================== */
+.surface-dark {
+  /* SURFACE */
+  --ds-bg-surface:     #160321;  /* the near-black anchor ground */
+  --ds-bg-surface-2:   #22093a;  /* raised dark surface. --ds-ink-on-dark on it = 16.17:1 */
+  --ds-bg-warm:        #2b1042;  /* dark warm-shifted band */
+  /* INK : all flip to light so nothing reads dark on dark */
+  --ds-ink:            #f6f1fb;  /* 17.67:1 on the dark ground */
+  --ds-ink-heading:    #f6f1fb;
+  --ds-ink-soft:       #b8a6c6;  /* 8.71:1 on the dark ground, 7.97:1 on dark surface-2 */
+  --ds-ink-on-dark:    #f6f1fb;
+  /* ACCENT : gold LIGHTENS on dark; the darkened text-gold would disappear here */
+  --ds-accent:         #ffc933;  /* 12.77:1 on the dark ground */
+  --ds-accent-ink:     #ffc933;  /* 12.77:1, the on-dark small-text gold */
+  --ds-accent-soft:    rgba(255, 186, 0, .14);
+  --ds-accent-deep:    #ffba00;
+  --ds-accent-light:   #ffd15c;
+  --ds-primary-soft:   rgba(207, 144, 222, .16);
+  --ds-signature:      #cf90de;  /* 8.14:1 on the dark ground */
+  /* LINE */
+  --ds-line:           rgba(246, 241, 251, .16);
+  /* SHADOW and GLASS : on a dark ground the ambient stop deepens and the glass
+     inverts to a translucent light film. */
+  --ds-shadow-rest:    0 1px 2px rgba(0, 0, 0, .34), 0 3px 12px -3px rgba(12, 2, 20, .48);
+  --ds-shadow-card:    0 2px 8px -1px rgba(0, 0, 0, .40), 0 20px 44px -14px rgba(12, 2, 20, .66);
+  --ds-shadow-lift:    0 6px 14px -3px rgba(0, 0, 0, .46), 0 34px 68px -18px rgba(12, 2, 20, .74);
+  --ds-glass-bg:       rgba(246, 241, 251, .07);
+  --ds-glass-border:   rgba(246, 241, 251, .18);
+  --ds-hairline:       rgba(246, 241, 251, .14);
+  --ds-inset-hi:       inset 0 1px 0 rgba(246, 241, 251, .14);
+  /* material re-tuned for the dark ground */
+  --ds-grid:           linear-gradient(rgba(255, 201, 51, .06) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 201, 51, .06) 1px, transparent 1px);
+  --ds-glow-wash:      radial-gradient(58% 74% at 20% 8%, rgba(161, 60, 188, .42) 0%, rgba(161, 60, 188, 0) 70%);
+  --ds-scrim:          rgba(10, 1, 16, .68);
+}

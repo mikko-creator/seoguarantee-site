@@ -1,0 +1,52 @@
+{
+  "slug": "seoguarantee",
+  "generated_at": "2026-08-11T23:40:00Z",
+  "registry_version": "1.0",
+  "phase": "P5_seo_enrichment",
+  "families_filled": ["D-SEO"],
+  "artifacts": { "seo_enrichment_md": "seo-enrichment.md" },
+  "page_count": 26,
+  "slug_status_tally": { "U": 8, "R": 10, "N": 8, "total": 26 },
+  "validation": {
+    "titles_max_60_keyword_in_first_30": "26/26 pass",
+    "meta_max_160": "26/26 pass",
+    "zero_exclamation_marks": "26/26 pass (owner rail D-BRAND-RAILS-006 — 'remove all exclamation points and emojis')",
+    "verified_how": "character counts recomputed independently from the derivation agents' self-reported lengths; all 26 matched exactly"
+  },
+  "title_separator": {
+    "chosen": "en-dash",
+    "why": "a literal pipe fragments the spec's own master table (G5 splits rows on '|'), and the en-dash reads less SERP-generic. The build may substitute a pipe at render time; character counts leave room."
+  },
+  "redirect_ordinance": {
+    "all_status": "planned⚠",
+    "why_none_live": "No redirect is deployed. This is a pre-build specification and nothing can be curl-verified until the new site ships. Marking any redirect [LIVE] before deployment would be false.",
+    "largest_cluster": "20 URLs collapse onto /las-vegas-seo/ — the biggest cannibalisation fix in the ordinance",
+    "mega_menu_upside": "D-005 improved this: /services/las-vegas-web-design/ and /services/las-vegas-conversion-rate-optimization/ now REMASTER onto dedicated pages instead of merging into full-suite and forfeiting their keyword equity. The two off-sitemap duplicate paths collapse onto the same canonical targets.",
+    "410_not_301": "14 internal ops pages + 3 test pages are removed with no destination — a 301 to the homepage would be dishonest signalling."
+  },
+  "structured_data_ordinance": {
+    "_note": "New in P5. The live site's highest-reach claim lives in machine-readable metadata.",
+    "removed": [
+      "JSON-LD description 'Our Las Vegas SEO Service is guaranteed to bring you to the first page of Google!' — live on 46 of 49 captured pages",
+      "'Best In Class Web Design Guarantee' — 31 pages; unqualified superlative AND a second competing guarantee",
+      "'WANT OUR SEO GUARANTEES?' plural CTA — 29 pages; the guarantee is singular and definite"
+    ],
+    "replacement_description_ssot": "seo-enrichment.md §3 — the SINGLE SOURCE OF TRUTH for this string. The `replacement_description` field below is a machine-readable COPY of it. If the two ever differ, §3 wins and this field is restamped from §3 — never the reverse, and this field is never edited on its own. Same ordinance as the title SSOT (seo-enrichment.md §1).",
+    "replacement_description": "First-page SEO on the key phrases agreed in your contract. Any month we are off target we keep working and your billing pauses until we are back on target.",
+    "replacement_description_rule": "Emit verbatim wherever the build writes a `description` in Organization, LocalBusiness, Service or WebSite JSON-LD. A shortening is permitted ONLY if it still contains the pause; a shortening that drops the pause is the defect this ordinance exists to prevent. No exclamation mark, no emoji, no superlative.",
+    "replacement_description_corrected": {
+      "date": "2026-08-12",
+      "trigger": "P7 regression 2 — a machine-read double-source: seo-enrichment.md §3 had been corrected for blocker 6, but this field still carried the superseded string.",
+      "superseded_value": "SEO with a first-page guarantee on agreed key phrases — or you don't pay.",
+      "why_wrong": "It asserts a TERMINAL non-payment remedy, which D-003 does not contain. D-003 is a monthly retainer agreed up front and assessed month by month: any month we are off target the work CONTINUES and the billing PAUSES, resuming when back on target. The obligation is suspended, not erased. No artifact may state or imply a refund, money-back, risk-free, 'there is no invoice', or any other terminal remedy.",
+      "reach": "This field is machine-read by the build and lands in JSON-LD on every page — the highest-reach string in the spec, and the most dangerous place to assert the wrong remedy.",
+      "do_not_reinstate": true
+    }
+  },
+  "open_dependencies": [
+    "§G-8 canonical NAP — LocalBusiness structured data and contact-us both need it; street address deliberately absent until the owner rules",
+    "§G-6 claims substantiation — governs how much real proof /results/ and the vertical pages can carry; titles and metas are written to work either way"
+  ],
+  "ready_for_briefs": true,
+  "_next_step": "P6 — write briefs/<slug>.md for all 26 pages + link-funnel-map.md + briefs-manifest.json, then render _owner-preview/content-claims.html and PAUSE at the content-claims owner gate."
+}

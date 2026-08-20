@@ -1,0 +1,1767 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>First Page SEO Guarantee: brand identity sheet, Concept C, The Ascent</title>
+
+<!-- ============================================================================
+     DESIGN-SYSTEM PROVENANCE. This artifact is DERIVED, not invented.
+       technique ceiling ....... _MODERN-WOW-SPEC (the 7-point bar, "wow felt, not noticed")
+       buildable recipes ....... _MODERN-DESIGN-PATTERN-LIBRARY: TOP-12 #1 (one accent over a
+                                 committed neutral), #2 (display face + oversized negative-tracked
+                                 type), #3 (ink-tinted two-stop shadow + lift), #4 (scroll-reveal
+                                 with sibling stagger), #8 (image bottom-fade), #10 (micro-caps
+                                 eyebrow + accent rule), #12a (ambient glow behind the dark moment);
+                                 categories D1 depth, D2 glass (the inset top-highlight is what
+                                 sells it), D3 ambient glow, E2 display metrics, E4 eyebrow,
+                                 I5 tinted icon chip.
+       globals lock ............ GLOBALS-OVERLAY-SPEC: the 15 overlay tokens, locked ONCE here.
+       token shape ............. BRAND-TOKEN-SCHEMA: 17 colour roles, 2 type, 3 role-named radii,
+                                 2 shadow, 7-step spacing, 2 motion, 15 globals.
+       sector blueprint ........ composition-agency-creative (40-research). Its technique ceiling
+                                 and composition signature govern the atoms and the motif. Its
+                                 15-slot page spine deliberately does NOT govern this artifact,
+                                 which is a chrome-less identity sheet, not a homepage.
+       brand inputs ............ visual-direction.md (C7) measured signature, palette and hard
+                                 rules; content-bible.md claim perimeter.
+     ICONS: every icon on this sheet is inline SVG painted with currentColor, so --ds-icon-tint is
+     not consumed here; it is still emitted in the token lock for downstream raster-icon surfaces.
+     ============================================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="./seoguarantee-tokens.css">
+
+<style>
+/* ============================================================================
+   IDENTITY-SHEET STRUCTURAL CSS : token-pure. ZERO raw brand hex lives here;
+   every fill, border, shadow and gradient stop resolves through var(--ds-*).
+   The only hex strings on this sheet are the printed LABELS beside the swatches.
+   ========================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--ds-bg-surface);
+  color: var(--ds-ink);
+  font-family: var(--ds-font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+/* ---- SHEET SHELL --------------------------------------------------------
+   The reference's strongest transferable idea: ONE fixed measure pinned to ONE
+   left axis, with exactly one documented exception (the palette grid, which is
+   a table of specimens rather than prose). Polarity-free, so it survives the
+   inversion from that dark reference onto this light canvas. */
+.sg-sheet {
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.sg-bandinner {
+  max-width: var(--ds-container-max);
+  margin: 0 auto;
+  padding-inline: var(--ds-space-md);
+}
+
+/* ---- TITLE BLOCK : the ONLY chrome this sheet is allowed ---------------- */
+.sg-ident {
+  position: relative;
+  padding: clamp(40px, 6vw, 84px) 0 var(--ds-space-xl);
+  background-color: var(--ds-bg-surface);
+  background-image: var(--ds-grid);
+  background-size: var(--ds-grid-size);
+  border-bottom: 1px solid var(--ds-line);
+  isolation: isolate;
+}
+.sg-ident::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: var(--ds-z-below);
+  background-image: var(--ds-glow-wash);
+  pointer-events: none;
+}
+.sg-identkick {
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-sm);
+  font-family: var(--ds-font-body);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ds-primary);
+  margin-bottom: var(--ds-space-md);
+}
+.sg-identkick::after {
+  content: "";
+  flex: 0 0 48px;
+  height: 2px;
+  border-radius: var(--ds-r-pill);
+  background: var(--ds-accent);
+}
+.sg-identtitle {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: clamp(46px, 6.4vw, 76px);
+  line-height: 1.02;
+  letter-spacing: -.03em;
+  margin: 0 0 var(--ds-space-md);
+  max-width: 20ch;
+  color: var(--ds-ink-heading);
+}
+/* The ONE clipped-text gradient moment on the whole sheet. */
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .sg-identtitle {
+    background-image: var(--ds-grad-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+.sg-identthesis {
+  font-size: 22px;
+  line-height: 1.5;
+  letter-spacing: -.006em;
+  color: var(--ds-ink-soft);
+  margin: 0 0 var(--ds-space-lg);
+}
+.sg-identmeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ds-space-xs) var(--ds-space-md);
+  font-family: var(--ds-font-mono);
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--ds-ink-soft);
+  margin: 0 0 var(--ds-space-md);
+  padding: 0;
+  list-style: none;
+}
+.sg-identnote {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ds-space-xs);
+  padding: 8px 14px;
+  border-radius: var(--ds-r-control);
+  background: var(--ds-accent-soft);
+  color: var(--ds-accent-ink);
+  border: 1px solid var(--ds-hairline);
+  font-size: 13.5px;
+  font-weight: 500;
+  margin-right: var(--ds-space-xs);
+  margin-bottom: var(--ds-space-xs);
+}
+
+/* ---- BANDS ------------------------------------------------------------- */
+.sg-band {
+  position: relative;
+  padding-block: var(--ds-section-py);
+  background: var(--ds-bg-surface);
+}
+.sg-band--tint { background: var(--ds-bg-surface-2); }
+.sg-band--warm { background: var(--ds-bg-warm); }
+.sg-band--dark {
+  background-color: var(--ds-bg-surface);
+  color: var(--ds-ink);
+  isolation: isolate;
+  overflow: hidden;
+}
+/* Section transition is colour-band contrast plus a soft seam, never a wavy
+   SVG: the pattern library rates band contrast, whitespace and a hairline above
+   a shape divider for restraint-led verticals. --ds-divider-h sets seam depth. */
+.sg-band--dark::before {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  top: calc(var(--ds-divider-h) * -1);
+  height: var(--ds-divider-h);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, var(--ds-bg-surface) 100%);
+  opacity: var(--ds-opacity-veil);
+  pointer-events: none;
+}
+.sg-band--dark::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: var(--ds-z-below);
+  background-image: var(--ds-glow-wash), var(--ds-grid);
+  background-size: auto, var(--ds-grid-size);
+  pointer-events: none;
+}
+
+.sg-bandhead {
+  display: flex;
+  align-items: baseline;
+  gap: var(--ds-space-md);
+  margin-bottom: var(--ds-space-lg);
+  flex-wrap: wrap;
+}
+.sg-bandnum {
+  font-family: var(--ds-font-mono);
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: .06em;
+  color: var(--ds-accent-ink);
+  padding-top: 6px;
+}
+.sg-headgroup { flex: 1 1 320px; min-width: 0; }
+.sg-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-sm);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ds-primary);
+  margin: 0 0 var(--ds-space-xs);
+}
+.sg-eyebrow::after {
+  content: "";
+  flex: 0 0 32px;
+  height: 2px;
+  border-radius: var(--ds-r-pill);
+  background: var(--ds-accent);
+}
+.sg-h2 {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: clamp(28px, 3.2vw, 40px);
+  line-height: 1.1;
+  letter-spacing: -.022em;
+  color: var(--ds-ink-heading);
+  margin: 0;
+}
+.sg-h3 {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: -.012em;
+  color: var(--ds-ink-heading);
+  margin: 0 0 var(--ds-space-xs);
+}
+.sg-lede {
+  font-size: 22px;
+  line-height: 1.5;
+  letter-spacing: -.006em;
+  color: var(--ds-ink-soft);
+  margin: 0;
+}
+.sg-body { margin: 0 0 var(--ds-space-sm); color: var(--ds-ink); }
+.sg-small { font-size: 15px; line-height: 1.55; color: var(--ds-ink-soft); margin: 0; }
+.sg-mono {
+  font-family: var(--ds-font-mono);
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--ds-ink-soft);
+  letter-spacing: .01em;
+}
+.sg-caption {
+  font-family: var(--ds-font-mono);
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--ds-ink-soft);
+  margin: var(--ds-space-xs) 0 0;
+}
+.sg-note {
+  border-left: 2px solid var(--ds-accent);
+  padding: 2px 0 2px var(--ds-space-sm);
+  margin: var(--ds-space-md) 0 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--ds-ink-soft);
+}
+.sg-hr { height: 1px; border: 0; background: var(--ds-line); margin: var(--ds-space-lg) 0; }
+
+.sg-grid { display: grid; gap: var(--ds-space-md); }
+.sg-grid--2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.sg-grid--3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.sg-grid--4 { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+.sg-gridgap { margin-top: var(--ds-space-md); }
+
+/* a specimen frame: everything on this sheet that is "shown as a specimen"
+   sits in one of these, so nothing is mistaken for a page element. */
+.sg-spec {
+  border: 1px solid var(--ds-hairline);
+  border-radius: var(--ds-r-surface);
+  background: var(--ds-bg-surface);
+  padding: var(--ds-space-md);
+  box-shadow: var(--ds-shadow-rest), var(--ds-inset-hi);
+}
+.sg-speclabel {
+  font-family: var(--ds-font-mono);
+  font-size: 11.5px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ds-ink-soft);
+  margin: 0 0 var(--ds-space-sm);
+}
+
+/* ---- 01 : WORDMARK LOCKUPS (typeset, because no vector exists) ---------- */
+.sg-locktile {
+  border: 1px solid var(--ds-line);
+  border-radius: var(--ds-r-surface);
+  background: var(--ds-bg-surface);
+  padding: var(--ds-space-lg) var(--ds-space-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 148px;
+}
+/* A dark tile ALSO carries the surface-dark class in its markup, so every ink,
+   line and shadow role flips with the ground. Painting a dark background while
+   leaving the light token context in place is the dark-panel trap: it rendered
+   the descriptor at 2.45:1 and the monogram plate at 1.04:1 before this fix. */
+.sg-locktile--dark {
+  background: var(--ds-bg-surface);
+  border-color: var(--ds-hairline);
+  box-shadow: var(--ds-shadow-card);
+}
+/* equalise the three plates in a lockup row: the stacked variant is two lines
+   tall and would otherwise leave the row ragged. Scoped with :has() so the
+   other grids on the sheet are untouched. */
+.sg-grid--3 > div:has(> .sg-locktile) { display: flex; flex-direction: column; }
+.sg-grid--3 > div:has(> .sg-locktile) > .sg-locktile { flex: 1 1 auto; }
+.sg-lockup { display: inline-flex; align-items: center; gap: 12px; }
+.sg-lockstack { flex-direction: column; align-items: flex-start; gap: 10px; }
+.sg-lockmark {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  color: var(--ds-primary);
+}
+.sg-locktile--dark .sg-lockmark { color: var(--ds-signature); }
+.sg-lockword {
+  font-family: var(--ds-font-display);
+  font-size: 20px;
+  line-height: 1.08;
+  letter-spacing: -.022em;
+  color: var(--ds-ink-heading);
+  white-space: nowrap;
+}
+.sg-locktile--dark .sg-lockword { color: var(--ds-ink-on-dark); }
+.sg-lockword1 { font-weight: 700; }
+.sg-lockword2 { font-weight: 500; color: var(--ds-ink-soft); }
+.sg-lockmono {
+  width: 62px;
+  height: 62px;
+  border-radius: var(--ds-r-surface);
+  background: var(--ds-primary);
+  color: var(--ds-ink-on-dark);
+  display: grid;
+  place-items: center;
+  font-family: var(--ds-font-display);
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -.03em;
+  position: relative;
+  box-shadow: var(--ds-shadow-card), var(--ds-inset-hi);
+}
+.sg-lockmono::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 14px;
+  height: 3px;
+  border-radius: var(--ds-r-pill);
+  background: var(--ds-accent);
+}
+.sg-locktile--dark .sg-lockmono { background: var(--ds-bg-surface-2); }
+
+.sg-clearspace {
+  position: relative;
+  display: inline-block;
+  padding: 26px;
+  outline: 1px dashed var(--ds-line);
+  outline-offset: 0;
+}
+.sg-clearbox {
+  position: absolute;
+  inset: 26px;
+  border: 1px solid var(--ds-accent-deep);
+  border-radius: 2px;
+  opacity: var(--ds-opacity-disabled);
+  pointer-events: none;
+}
+.sg-minrow { display: flex; align-items: center; gap: var(--ds-space-lg); flex-wrap: wrap; }
+.sg-minsize { width: 152px; }
+.sg-minsize .sg-lockword { font-size: 14px; }
+.sg-minsize .sg-lockmark { width: 24px; height: 24px; }
+
+/* ---- 02 : PALETTE ------------------------------------------------------ */
+/* The documented single exception to the fixed measure: a specimen table needs
+   the full container, exactly as the reference allows its one price table. */
+.sg-swatchgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(228px, 1fr));
+  gap: var(--ds-space-sm);
+}
+.sg-swatch {
+  border: 1px solid var(--ds-hairline);
+  border-radius: var(--ds-r-control);
+  overflow: hidden;
+  background: var(--ds-bg-surface);
+  box-shadow: var(--ds-shadow-rest);
+}
+.sg-swatchchip {
+  height: 62px;
+  border-bottom: 1px solid var(--ds-hairline);
+  position: relative;
+}
+.sg-swatchchip::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: var(--ds-inset-hi);
+  pointer-events: none;
+}
+.sg-swatchmeta { padding: 10px 12px 12px; }
+.sg-swatchrole {
+  font-family: var(--ds-font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ds-ink);
+  display: block;
+  word-break: break-all;
+}
+.sg-swatchhex {
+  font-family: var(--ds-font-mono);
+  font-size: 11.5px;
+  color: var(--ds-ink-soft);
+  display: block;
+  margin-top: 2px;
+}
+.sg-swatchratio {
+  font-family: var(--ds-font-mono);
+  font-size: 11.5px;
+  color: var(--ds-accent-ink);
+  display: block;
+  margin-top: 4px;
+}
+.sg-chip-primary   { background: var(--ds-primary); }
+.sg-chip-deep      { background: var(--ds-primary-deep); }
+.sg-chip-psoft     { background: var(--ds-primary-soft); }
+.sg-chip-accent    { background: var(--ds-accent); }
+.sg-chip-aink      { background: var(--ds-accent-ink); }
+.sg-chip-asoft     { background: var(--ds-accent-soft); }
+.sg-chip-adeep     { background: var(--ds-accent-deep); }
+.sg-chip-alight    { background: var(--ds-accent-light); }
+.sg-chip-surface   { background: var(--ds-bg-surface); }
+.sg-chip-surface2  { background: var(--ds-bg-surface-2); }
+.sg-chip-warm      { background: var(--ds-bg-warm); }
+.sg-chip-ink       { background: var(--ds-ink); }
+.sg-chip-heading   { background: var(--ds-ink-heading); }
+.sg-chip-inksoft   { background: var(--ds-ink-soft); }
+.sg-chip-line      { background: var(--ds-line); }
+.sg-chip-ondark    { background: var(--ds-ink-on-dark); }
+.sg-chip-scrim     { background: var(--ds-primary-deep); }
+.sg-chip-scrim::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--ds-scrim);
+}
+.sg-chip-sig       { background: var(--ds-signature); }
+.sg-chip-accent2   { background: var(--ds-accent-2); }
+.sg-chip-grad      { background-image: var(--ds-grad-brand); }
+
+.sg-barred {
+  border: 1px solid var(--ds-hairline);
+  border-left: 3px solid var(--ds-accent-deep);
+  border-radius: var(--ds-r-control);
+  background: var(--ds-bg-surface);
+  padding: var(--ds-space-md);
+  box-shadow: var(--ds-shadow-rest);
+}
+.sg-barredrow {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--ds-space-md);
+  padding: 9px 0;
+  border-bottom: 1px solid var(--ds-line);
+  font-family: var(--ds-font-mono);
+  font-size: 12.5px;
+  color: var(--ds-ink);
+}
+.sg-barred .sg-barredrow:last-of-type { border-bottom: 0; }
+.sg-barredfail { color: var(--ds-accent-ink); font-weight: 500; white-space: nowrap; }
+
+/* ---- 03 : TYPE --------------------------------------------------------- */
+.sg-ramprow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 214px;
+  gap: var(--ds-space-md);
+  align-items: baseline;
+  padding: var(--ds-space-sm) 0;
+  border-bottom: 1px solid var(--ds-line);
+}
+.sg-ramprow:last-of-type { border-bottom: 0; }
+.sg-rampmeta {
+  font-family: var(--ds-font-mono);
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: var(--ds-ink-soft);
+  text-align: right;
+  margin: 0;
+}
+.sg-t-display {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: clamp(46px, 6.4vw, 76px);
+  line-height: 1.02;
+  letter-spacing: -.03em;
+  color: var(--ds-ink-heading);
+  margin: 0;
+}
+.sg-t-head {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: clamp(28px, 3.2vw, 40px);
+  line-height: 1.1;
+  letter-spacing: -.022em;
+  color: var(--ds-ink-heading);
+  margin: 0;
+}
+.sg-t-sub {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: -.018em;
+  color: var(--ds-ink-heading);
+  margin: 0;
+}
+.sg-t-lede { font-size: 22px; line-height: 1.5; letter-spacing: -.006em; color: var(--ds-ink-soft); margin: 0; }
+.sg-t-body { font-size: 17px; line-height: 1.65; color: var(--ds-ink); margin: 0; }
+.sg-t-small { font-size: 15px; line-height: 1.5; color: var(--ds-ink-soft); margin: 0; }
+.sg-t-caps {
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ds-primary);
+  margin: 0;
+}
+p.sg-measure { max-width: 62ch; }
+
+.sg-numeral { display: flex; align-items: flex-end; gap: var(--ds-space-md); flex-wrap: wrap; }
+.sg-numbig {
+  font-family: var(--ds-font-display);
+  font-weight: 700;
+  font-size: clamp(64px, 8vw, 104px);
+  line-height: .92;
+  letter-spacing: -.04em;
+  color: var(--ds-ink-heading);
+  font-variant-numeric: tabular-nums;
+  margin: 0;
+}
+.sg-numlabel { flex: 1 1 320px; }
+.sg-tnum { font-variant-numeric: tabular-nums; font-family: var(--ds-font-display); font-weight: 600; }
+
+/* ---- 04 : GROUNDS, ELEVATION, MATERIAL --------------------------------- */
+.sg-grounds {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  border: 1px solid var(--ds-hairline);
+  border-radius: var(--ds-r-surface);
+  overflow: hidden;
+  box-shadow: var(--ds-shadow-rest);
+}
+.sg-ground { padding: var(--ds-space-lg) var(--ds-space-md); min-height: 132px; }
+.sg-ground--paper { background: var(--ds-bg-surface); }
+.sg-ground--tint  { background: var(--ds-bg-surface-2); }
+.sg-ground--warm  { background: var(--ds-bg-warm); }
+.sg-ground--anchor { background: var(--ds-primary-deep); }
+.sg-groundlabel {
+  font-family: var(--ds-font-mono);
+  font-size: 11.5px;
+  line-height: 1.6;
+  color: var(--ds-ink-soft);
+  display: block;
+}
+.sg-ground--anchor .sg-groundlabel { color: var(--ds-signature); }
+.sg-groundname {
+  display: block;
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ds-ink-heading);
+  margin-bottom: 4px;
+}
+.sg-ground--anchor .sg-groundname { color: var(--ds-ink-on-dark); }
+
+.sg-riser {
+  border-radius: var(--ds-r-surface);
+  border: 1px solid var(--ds-hairline);
+  background: var(--ds-bg-surface);
+  padding: var(--ds-space-md);
+  min-height: 118px;
+}
+.sg-riser--rest { box-shadow: var(--ds-shadow-rest), var(--ds-inset-hi); }
+.sg-riser--card { box-shadow: var(--ds-shadow-card), var(--ds-inset-hi); }
+.sg-riser--lift { box-shadow: var(--ds-shadow-lift), var(--ds-inset-hi); transform: translateY(-5px); }
+
+.sg-mat {
+  height: 118px;
+  border-radius: var(--ds-r-surface);
+  border: 1px solid var(--ds-hairline);
+  position: relative;
+  overflow: hidden;
+  background: var(--ds-bg-surface);
+}
+.sg-mat--grid { background-image: var(--ds-grid); background-size: var(--ds-grid-size); }
+.sg-mat--grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--ds-grain);
+  opacity: var(--ds-opacity-texture);
+  mix-blend-mode: multiply;
+}
+.sg-mat--glow { background-color: var(--ds-primary-deep); background-image: var(--ds-glow-wash); }
+
+.sg-frame {
+  position: relative;
+  border-radius: var(--ds-r-surface);
+  overflow: hidden;
+  border: 1px solid var(--ds-hairline);
+  box-shadow: var(--ds-shadow-card);
+  background: var(--ds-bg-surface-2);
+}
+.sg-frameimg { width: 100%; height: 118px; object-fit: cover; }
+.sg-framevig {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 100% at 50% 30%, rgba(0, 0, 0, 0) 42%, var(--ds-scrim) 100%);
+  pointer-events: none;
+}
+.sg-framefade {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  height: 48px;
+  background: var(--ds-fade-to-paper);
+  pointer-events: none;
+}
+
+/* ---- 05 : BUTTONS ------------------------------------------------------ */
+.sg-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 24px;
+  border-radius: var(--ds-r-pill);
+  border: 1px solid var(--ds-line);
+  background-color: var(--ds-bg-surface);
+  background-clip: padding-box;
+  color: var(--ds-ink);
+  font-family: var(--ds-font-body);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color var(--ds-dur-fast) var(--ds-ease),
+              border-color var(--ds-dur-fast) var(--ds-ease),
+              color var(--ds-dur-fast) var(--ds-ease),
+              box-shadow var(--ds-dur) var(--ds-ease),
+              transform var(--ds-dur) var(--ds-ease);
+}
+.sg-btn--primary {
+  background-color: var(--ds-primary);
+  border-color: var(--ds-primary);
+  color: var(--ds-ink-on-dark);
+  box-shadow: var(--ds-shadow-card), var(--ds-glow);
+}
+.sg-btn--primary:hover,
+.sg-btn--primary.is-hover {
+  background-color: var(--ds-accent-2);
+  border-color: var(--ds-accent-2);
+  box-shadow: var(--ds-shadow-lift), var(--ds-glow);
+  transform: translateY(-2px);
+}
+.sg-btn--secondary {
+  background-color: var(--ds-bg-surface);
+  border-color: var(--ds-primary);
+  color: var(--ds-primary);
+}
+.sg-btn--secondary:hover,
+.sg-btn--secondary.is-hover {
+  background-color: var(--ds-primary-soft);
+  border-color: var(--ds-primary);
+  color: var(--ds-primary);
+}
+.sg-btn--ghost {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--ds-primary);
+  padding-inline: 4px;
+}
+.sg-btn--ghost .sg-btnarrow { transition: transform var(--ds-dur) var(--ds-ease); }
+.sg-btn--ghost:hover .sg-btnarrow,
+.sg-btn--ghost.is-hover .sg-btnarrow { transform: translateX(5px); }
+.sg-btn:focus-visible,
+.sg-btn.is-focus {
+  outline: 2px solid var(--ds-primary);
+  outline-offset: 3px;
+  box-shadow: var(--ds-shadow-card), 0 0 0 5px var(--ds-primary-soft);
+}
+.sg-btn.is-disabled,
+.sg-btn[disabled] {
+  background-color: var(--ds-bg-surface-2);
+  border-color: var(--ds-line);
+  color: var(--ds-ink-soft);
+  box-shadow: none;
+  opacity: var(--ds-opacity-disabled);
+  cursor: not-allowed;
+  transform: none;
+}
+.sg-btn:active { transform: scale(.985); }
+.sg-btnarrow { flex: 0 0 auto; width: 15px; height: 15px; }
+
+.sg-stategroup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--ds-space-md);
+  align-items: start;
+}
+.sg-statecap {
+  font-family: var(--ds-font-mono);
+  font-size: 11.5px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ds-ink-soft);
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* ---- 06 : FIELD -------------------------------------------------------- */
+.sg-field { position: relative; }
+.sg-fieldinput {
+  width: 100%;
+  padding: 24px 16px 9px;
+  border-radius: var(--ds-r-control);
+  border: 1px solid var(--ds-line);
+  background: var(--ds-bg-surface);
+  color: var(--ds-ink);
+  font-family: var(--ds-font-body);
+  font-size: 16px;
+  line-height: 1.3;
+  transition: border-color var(--ds-dur-fast) var(--ds-ease),
+              box-shadow var(--ds-dur-fast) var(--ds-ease);
+}
+.sg-fieldlabel {
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  color: var(--ds-ink-soft);
+  font-size: 15px;
+  line-height: 1;
+  pointer-events: none;
+  transition: transform var(--ds-dur) var(--ds-ease),
+              font-size var(--ds-dur) var(--ds-ease),
+              color var(--ds-dur) var(--ds-ease);
+}
+.sg-fieldinput:focus + .sg-fieldlabel,
+.sg-fieldinput:not(:placeholder-shown) + .sg-fieldlabel,
+.sg-field.is-focus .sg-fieldlabel {
+  transform: translateY(-10px);
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ds-accent-ink);
+}
+.sg-fieldinput:focus,
+.sg-field.is-focus .sg-fieldinput {
+  outline: none;
+  border-color: var(--ds-primary);
+  box-shadow: 0 0 0 4px var(--ds-primary-soft);
+}
+.sg-fieldinput:disabled {
+  background: var(--ds-bg-surface-2);
+  color: var(--ds-ink-soft);
+  opacity: var(--ds-opacity-disabled);
+  cursor: not-allowed;
+}
+.sg-fieldhelp { font-size: 13px; line-height: 1.5; color: var(--ds-ink-soft); margin: 8px 0 0; }
+
+/* ---- 07 : MARKS AND LINKS ---------------------------------------------- */
+.sg-marks { display: flex; flex-wrap: wrap; gap: var(--ds-space-sm); align-items: center; }
+.sg-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: var(--ds-r-control);
+  background: var(--ds-primary-soft);
+  color: var(--ds-primary);
+  border: 1px solid var(--ds-hairline);
+  font-size: 13px;
+  font-weight: 600;
+}
+.sg-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 12px;
+  border-radius: var(--ds-r-pill);
+  background: var(--ds-accent-soft);
+  color: var(--ds-accent-ink);
+  border: 1px solid var(--ds-hairline);
+  font-size: 12.5px;
+  font-weight: 600;
+}
+.sg-rankpill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 13px;
+  border-radius: var(--ds-r-pill);
+  background: var(--ds-accent);
+  color: var(--ds-primary-deep);
+  font-family: var(--ds-font-display);
+  font-size: 12.5px;
+  font-weight: 700;
+  box-shadow: var(--ds-shadow-rest), var(--ds-inset-hi);
+}
+.sg-link {
+  position: relative;
+  color: var(--ds-primary);
+  font-weight: 600;
+  text-decoration: none;
+  padding-bottom: 3px;
+}
+.sg-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: var(--ds-r-pill);
+  background: var(--ds-accent);
+  transform: scaleX(.28);
+  transform-origin: left center;
+  transition: transform var(--ds-dur) var(--ds-ease-out);
+}
+.sg-link:hover::after, .sg-link.is-hover::after { transform: scaleX(1); }
+.sg-link:focus-visible { outline: 2px solid var(--ds-primary); outline-offset: 3px; border-radius: 2px; }
+
+/* ---- 08 : CARD ATOM ---------------------------------------------------- */
+.sg-plate {
+  border: 1px solid var(--ds-hairline);
+  border-radius: var(--ds-r-surface);
+  background: var(--ds-bg-surface);
+  padding: var(--ds-space-md);
+  box-shadow: var(--ds-shadow-card), var(--ds-inset-hi);
+  transition: box-shadow var(--ds-dur) var(--ds-ease),
+              transform var(--ds-dur) var(--ds-ease),
+              border-color var(--ds-dur) var(--ds-ease);
+}
+.sg-plate:hover, .sg-plate.is-hover {
+  box-shadow: var(--ds-shadow-lift), var(--ds-inset-hi);
+  transform: translateY(-5px);
+  border-color: var(--ds-line);
+}
+.sg-plateicon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--ds-r-pill);
+  display: grid;
+  place-items: center;
+  background: var(--ds-primary-soft);
+  color: var(--ds-primary);
+  margin-bottom: var(--ds-space-sm);
+  box-shadow: var(--ds-inset-hi);
+}
+.sg-plate.is-hover .sg-plateicon { background: var(--ds-accent-soft); color: var(--ds-accent-ink); }
+.sg-platecopy { font-size: 15px; line-height: 1.55; color: var(--ds-ink-soft); margin: 0 0 var(--ds-space-sm); }
+
+/* ---- 09 : SIGNATURE MOTIF, THE CLIMB CHIP ------------------------------ */
+.sg-motif {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  gap: var(--ds-space-lg);
+  align-items: start;
+}
+.sg-climb {
+  border-radius: var(--ds-r-surface);
+  border: 1px solid var(--ds-hairline);
+  background: var(--ds-bg-surface-2);
+  padding: var(--ds-space-md);
+  box-shadow: var(--ds-shadow-card), var(--ds-inset-hi);
+}
+.sg-climbrow {
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-sm);
+  padding: 13px 14px;
+  border-radius: var(--ds-r-control);
+  border: 1px solid transparent;
+  margin-bottom: 8px;
+}
+.sg-climbrank {
+  flex: 0 0 30px;
+  height: 30px;
+  border-radius: var(--ds-r-pill);
+  display: grid;
+  place-items: center;
+  font-family: var(--ds-font-display);
+  font-weight: 700;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  background: var(--ds-glass-bg);
+  color: var(--ds-ink-soft);
+  border: 1px solid var(--ds-glass-border);
+}
+.sg-climbname { flex: 1 1 auto; min-width: 0; }
+.sg-climbtrack {
+  display: block;
+  height: 9px;
+  border-radius: var(--ds-r-pill);
+  background: var(--ds-glass-bg);
+  border: 1px solid var(--ds-glass-border);
+  margin-bottom: 7px;
+}
+.sg-climbtrack--short { width: 44%; }
+.sg-climbtrack--mid   { width: 58%; }
+.sg-climbtrack--long  { width: 72%; }
+.sg-climbmeta {
+  display: block;
+  height: 7px;
+  width: 26%;
+  border-radius: var(--ds-r-pill);
+  background: var(--ds-glass-bg);
+}
+/* the risen row: lifted, gold-underlined, carrying the rank chip */
+.sg-climbrow--won {
+  background: var(--ds-primary);
+  border-color: var(--ds-accent);
+  box-shadow: var(--ds-shadow-lift), var(--ds-glow);
+  transform: translateY(-6px);
+  position: relative;
+}
+.sg-climbrow--won .sg-climbrank {
+  background: var(--ds-accent);
+  color: var(--ds-primary-deep);
+  border-color: var(--ds-accent);
+}
+.sg-climbwon {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -.012em;
+  color: var(--ds-ink-on-dark);
+}
+.sg-climbunder {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: -1px;
+  height: 3px;
+  border-radius: var(--ds-r-pill);
+  background: var(--ds-accent);
+}
+.sg-climbtrace {
+  display: block;
+  width: 100%;
+  height: 54px;
+  color: var(--ds-accent);
+  margin-top: var(--ds-space-sm);
+}
+/* the ONE glass surface on the sheet: it sits on the dark ground with the
+   ambient wash behind it, which is the only place glass reads as refraction. */
+.sg-glass {
+  border-radius: var(--ds-r-surface);
+  background: var(--ds-glass-bg);
+  -webkit-backdrop-filter: var(--ds-glass-blur);
+  backdrop-filter: var(--ds-glass-blur);
+  border: 1px solid var(--ds-glass-border);
+  box-shadow: var(--ds-shadow-card), var(--ds-inset-hi);
+  padding: var(--ds-space-md);
+}
+.sg-annotrow {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--ds-space-md);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--ds-line);
+  font-family: var(--ds-font-mono);
+  font-size: 12px;
+  color: var(--ds-ink-soft);
+}
+.sg-annotrow:last-of-type { border-bottom: 0; }
+.sg-annotval { color: var(--ds-accent-ink); white-space: nowrap; }
+
+/* ---- 10 : MOTION AND FOCUS --------------------------------------------- */
+.sg-motionrow { display: flex; flex-wrap: wrap; gap: var(--ds-space-sm); }
+.sg-motionchip {
+  --i: 0;
+  padding: 14px 18px;
+  border-radius: var(--ds-r-control);
+  border: 1px solid var(--ds-hairline);
+  background: var(--ds-bg-surface);
+  box-shadow: var(--ds-shadow-rest), var(--ds-inset-hi);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ds-ink);
+}
+.js-reveal .sg-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--ds-dur-slow) var(--ds-ease-out),
+              transform var(--ds-dur-slow) var(--ds-ease-out);
+  transition-delay: calc(var(--i, 0) * 80ms);
+}
+.js-reveal .sg-reveal.is-in { opacity: 1; transform: none; }
+.sg-focusring {
+  display: inline-flex;
+  padding: 12px 18px;
+  border-radius: var(--ds-r-control);
+  background: var(--ds-bg-surface);
+  border: 1px solid var(--ds-line);
+  outline: 2px solid var(--ds-primary);
+  outline-offset: 3px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ---- 11 : MINI-VIGNETTE, exactly one, framed, never full-bleed ---------- */
+.sg-vigframe {
+  border: 1px dashed var(--ds-line);
+  border-radius: calc(var(--ds-r-surface) + 8px);
+  padding: var(--ds-space-md);
+  background: var(--ds-bg-surface);
+  max-width: 620px;
+}
+.sg-vig {
+  max-width: 560px;
+  border-radius: var(--ds-r-surface);
+  border: 1px solid var(--ds-hairline);
+  background: var(--ds-bg-surface);
+  box-shadow: var(--ds-shadow-lift), var(--ds-inset-hi);
+  padding: var(--ds-space-md);
+}
+.sg-vigtop { display: flex; align-items: center; gap: var(--ds-space-sm); margin-bottom: var(--ds-space-sm); }
+.sg-vigportrait {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--ds-r-pill);
+  object-fit: cover;
+  object-position: top center;
+  border: 1px solid var(--ds-line);
+  box-shadow: var(--ds-shadow-rest);
+  background: var(--ds-bg-surface-2);
+}
+.sg-vigwho { font-size: 13.5px; line-height: 1.4; color: var(--ds-ink-soft); }
+.sg-vigwho strong { color: var(--ds-ink); font-weight: 600; }
+.sg-vigclaim {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 1.24;
+  letter-spacing: -.016em;
+  color: var(--ds-ink-heading);
+  margin: 10px 0;
+}
+.sg-vigpause { font-size: 14.5px; line-height: 1.5; color: var(--ds-ink-soft); margin: 0 0 var(--ds-space-sm); }
+.sg-vigfoot { display: flex; flex-wrap: wrap; align-items: center; gap: var(--ds-space-sm); }
+
+/* ---- RESPONSIVE -------------------------------------------------------- */
+@media (max-width: 860px) {
+  .sg-motif { grid-template-columns: minmax(0, 1fr); }
+  .sg-ramprow { grid-template-columns: minmax(0, 1fr); }
+  .sg-rampmeta { text-align: left; }
+}
+
+/* ---- REDUCED MOTION : everything zeroes out ---------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .sg-btn, .sg-plate, .sg-link::after, .sg-fieldinput, .sg-fieldlabel,
+  .sg-btn--ghost .sg-btnarrow, .js-reveal .sg-reveal {
+    transition-duration: 1ms;
+    transition-delay: 0ms;
+  }
+  .js-reveal .sg-reveal { opacity: 1; transform: none; }
+  .sg-btn--primary:hover, .sg-plate:hover, .sg-riser--lift, .sg-climbrow--won { transform: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="sg-sheet">
+
+  <!-- TITLE BLOCK: the only chrome an identity sheet is allowed.
+       No nav, no hero, no footer. This is a specimen sheet. -->
+  <div class="sg-ident">
+    <div class="sg-bandinner">
+      <p class="sg-identkick">Brand identity sheet &middot; concept C of three</p>
+      <h1 class="sg-identtitle">The Ascent</h1>
+      <p class="sg-identthesis">The product is movement up a list, so the identity is built on rise and light: surfaces that float, geometry that steps, and gold used as the light that marks the position gained.</p>
+      <ul class="sg-identmeta">
+        <li>First Page SEO Guarantee</li>
+        <li>seoguarantee.com</li>
+        <li>James Sutton IV, founder, since 2015</li>
+        <li>6905 W Charleston Blvd, Las Vegas, NV 89117, USA</li>
+      </ul>
+      <p>
+        <span class="sg-identnote">LOGO-VECTOR: NEEDS-OWNER</span>
+        <span class="sg-identnote">Palette proposed for ratification, not ratified</span>
+      </p>
+      <p class="sg-mono">Every contrast ratio printed on this sheet was computed against these exact token values with the WCAG 2.x relative-luminance formula. Nothing is inherited from the structural reference except its method and its polarity-free structural ideas.</p>
+    </div>
+  </div>
+
+  <!-- pick: 00-globals/surface/menu.md #9 Hairline-outline (SURFACE-PATTERNS) | considered: #8 Flat-no-chrome, #12 Solid-fill-block | why: a lockup plate has to be a MEASURING frame rather than a floating object, because the thing being specified is clear space and minimum size, not elevation, and with no logo vector on file the mark is typeset and must not be flattered by chrome; transparent plus hairline is the library's maximal-restraint card treatment, which keeps this block honest against the WOW bar's restraint clause while the sheet spends its depth where depth argues something. -->
+  <section class="sg-band">
+    <div class="sg-bandinner">
+      <div class="sg-bandhead">
+        <span class="sg-bandnum">01</span>
+        <div class="sg-headgroup">
+          <p class="sg-eyebrow">Wordmark</p>
+          <h2 class="sg-h2">Lockups, typeset</h2>
+        </div>
+      </div>
+
+      <p class="sg-lede sg-measure">No vector source exists in any supplied or scraped file and the largest raster is 403px wide, so every lockup here is set in the display face rather than traced from a placeholder PNG. The mark is a stepped rise closed by a gold rule: the climb, reduced to three strokes.</p>
+
+      <hr class="sg-hr">
+
+      <div class="sg-grid sg-grid--3">
+        <div>
+          <p class="sg-speclabel">Primary horizontal on paper</p>
+          <div class="sg-locktile">
+            <span class="sg-lockup">
+              <svg class="sg-lockmark" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+                <path d="M4 26h6v-6H4z M13 26h6V14h-6z M22 26h6V6h-6z" fill="currentColor" opacity=".92"></path>
+                <rect x="4" y="29" width="24" height="3" rx="1.5" fill="var(--ds-accent)"></rect>
+              </svg>
+              <span class="sg-lockword"><span class="sg-lockword1">First Page</span> <span class="sg-lockword2">SEO Guarantee</span></span>
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <p class="sg-speclabel">Stacked on paper</p>
+          <div class="sg-locktile">
+            <span class="sg-lockup sg-lockstack">
+              <svg class="sg-lockmark" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+                <path d="M4 26h6v-6H4z M13 26h6V14h-6z M22 26h6V6h-6z" fill="currentColor" opacity=".92"></path>
+                <rect x="4" y="29" width="24" height="3" rx="1.5" fill="var(--ds-accent)"></rect>
+              </svg>
+              <span class="sg-lockword sg-lockword1">First Page</span>
+              <span class="sg-lockword sg-lockword2">SEO Guarantee</span>
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <p class="sg-speclabel">Monogram on paper</p>
+          <div class="sg-locktile">
+            <span class="sg-lockmono">1P</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sg-grid sg-grid--3 sg-gridgap">
+        <div>
+          <p class="sg-speclabel">Primary horizontal on the anchor</p>
+          <div class="sg-locktile sg-locktile--dark surface-dark">
+            <span class="sg-lockup">
+              <svg class="sg-lockmark" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+                <path d="M4 26h6v-6H4z M13 26h6V14h-6z M22 26h6V6h-6z" fill="currentColor" opacity=".92"></path>
+                <rect x="4" y="29" width="24" height="3" rx="1.5" fill="var(--ds-accent-light)"></rect>
+              </svg>
+              <span class="sg-lockword"><span class="sg-lockword1">First Page</span> <span class="sg-lockword2">SEO Guarantee</span></span>
+            </span>
+          </div>
+        </div>
+        <div>
+          <p class="sg-speclabel">Stacked on the anchor</p>
+          <div class="sg-locktile sg-locktile--dark surface-dark">
+            <span class="sg-lockup sg-lockstack">
+              <svg class="sg-lockmark" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+                <path d="M4 26h6v-6H4z M13 26h6V14h-6z M22 26h6V6h-6z" fill="currentColor" opacity=".92"></path>
+                <rect x="4" y="29" width="24" height="3" rx="1.5" fill="var(--ds-accent-light)"></rect>
+              </svg>
+              <span class="sg-lockword sg-lockword1">First Page</span>
+              <span class="sg-lockword sg-lockword2">SEO Guarantee</span>
+            </span>
+          </div>
+        </div>
+        <div>
+          <p class="sg-speclabel">Monogram on the anchor</p>
+          <div class="sg-locktile sg-locktile--dark surface-dark">
+            <span class="sg-lockmono">1P</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="sg-hr">
+
+      <div class="sg-grid sg-grid--2">
+        <div class="sg-spec">
+          <p class="sg-speclabel">Clear space</p>
+          <span class="sg-clearspace">
+            <span class="sg-clearbox"></span>
+            <span class="sg-lockup">
+              <svg class="sg-lockmark" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+                <path d="M4 26h6v-6H4z M13 26h6V14h-6z M22 26h6V6h-6z" fill="currentColor" opacity=".92"></path>
+                <rect x="4" y="29" width="24" height="3" rx="1.5" fill="var(--ds-accent)"></rect>
+              </svg>
+              <span class="sg-lockword"><span class="sg-lockword1">First Page</span> <span class="sg-lockword2">SEO Guarantee</span></span>
+            </span>
+          </span>
+          <p class="sg-caption">Clear space on all four sides equals the height of the mark, 26px at the 34px lockup. The dashed rule is the exclusion zone and the inner rule is the mark bounding box. Nothing enters the zone, including a section edge.</p>
+        </div>
+
+        <div class="sg-spec">
+          <p class="sg-speclabel">Minimum size</p>
+          <div class="sg-minrow">
+            <div class="sg-minsize">
+              <span class="sg-lockup">
+                <svg class="sg-lockmark" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+                  <path d="M4 26h6v-6H4z M13 26h6V14h-6z M22 26h6V6h-6z" fill="currentColor" opacity=".92"></path>
+                  <rect x="4" y="29" width="24" height="3" rx="1.5" fill="var(--ds-accent)"></rect>
+                </svg>
+                <span class="sg-lockword sg-lockword1">First Page</span>
+              </span>
+            </div>
+            <span class="sg-lockmono" aria-hidden="true">1P</span>
+          </div>
+          <p class="sg-caption">The horizontal lockup stops at 152px wide. Below that the gold rule falls under one device pixel and the descriptor closes up, so the monogram takes over at 40px and down.</p>
+        </div>
+      </div>
+
+      <p class="sg-note">Owed asset: a vector master. Until one is supplied these lockups are the specification, not the artwork, and they may not be rasterised into a header at retina scale.</p>
+    </div>
+  </section>
+
+  <!-- pick: 00-globals/color/menu.md #30 Hot Magenta + Deep Plum (COLOR-THEORY-PRESETS) | considered: #60 Premium Consulting Burgundy + Gold, #29 Emerald + Gold | why: the palette is not a free pick here, because #7f2199 and #ffba00 are measured facts of this client's live site, so this block takes the menu's documented "when no library entry matches" route and cites #30 only for its derivation DISCIPLINE, the plum-to-near-black ramp that keeps a saturated purple usable as ink; printing the measured ratio beside every swatch is what turns TOP-12 #1's one-accent-over-a-committed-neutral rule into something a reviewer can audit rather than admire. -->
+  <section class="sg-band sg-band--tint">
+    <div class="sg-bandinner">
+      <div class="sg-bandhead">
+        <span class="sg-bandnum">02</span>
+        <div class="sg-headgroup">
+          <p class="sg-eyebrow">Palette</p>
+          <h2 class="sg-h2">Seventeen roles, every one measured</h2>
+        </div>
+      </div>
+
+      <p class="sg-lede sg-measure">Purple is the structural accent. Gold is the punctuation. They are never co-equal and never carry the same job inside one composition, which is what lets a two-colour brand obey the library's one-accent discipline.</p>
+
+      <hr class="sg-hr">
+
+      <div class="sg-swatchgrid">
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-primary"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-primary</span><span class="sg-swatchhex">#7f2199</span><span class="sg-swatchratio">8.14:1 on paper, CTA surface</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-deep"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-primary-deep</span><span class="sg-swatchhex">#160321</span><span class="sg-swatchratio">ink-on-dark on it 17.67:1</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-psoft"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-primary-soft</span><span class="sg-swatchhex">#f3e9f7</span><span class="sg-swatchratio">primary on it 6.90:1</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-accent"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-accent</span><span class="sg-swatchhex">#ffba00</span><span class="sg-swatchratio">11.48:1 on the anchor, surface only</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-aink"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-accent-ink</span><span class="sg-swatchhex">#7a5200</span><span class="sg-swatchratio">6.92 paper, 5.97 tint, 6.27 warm</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-asoft"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-accent-soft</span><span class="sg-swatchhex">#fff3d6</span><span class="sg-swatchratio">accent-ink on it 6.28:1</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-adeep"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-accent-deep</span><span class="sg-swatchhex">#6b4600</span><span class="sg-swatchratio">8.40 on paper, ink-on-dark on it 7.55</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-alight"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-accent-light</span><span class="sg-swatchhex">#ffc933</span><span class="sg-swatchratio">12.77 on primary-deep, 11.41 on ink</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-surface"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-bg-surface</span><span class="sg-swatchhex">#ffffff</span><span class="sg-swatchratio">paper, ink on it 17.54:1</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-surface2"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-bg-surface-2</span><span class="sg-swatchhex">#f2ecf7</span><span class="sg-swatchratio">ink on it 15.14:1</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-warm"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-bg-warm</span><span class="sg-swatchhex">#fbf3e3</span><span class="sg-swatchratio">ink on it 15.90:1</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-ink"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-ink</span><span class="sg-swatchhex">#241033</span><span class="sg-swatchratio">tinted near-black, never #000</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-heading"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-ink-heading</span><span class="sg-swatchhex">var(--ds-primary-deep)</span><span class="sg-swatchratio">light polarity, 19.64:1 on paper</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-inksoft"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-ink-soft</span><span class="sg-swatchhex">#5b4a66</span><span class="sg-swatchratio">8.03 paper, 6.92 tint, 7.27 warm</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-line"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-line</span><span class="sg-swatchhex">#e7dff0</span><span class="sg-swatchratio">border role, not a text role</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-ondark"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-ink-on-dark</span><span class="sg-swatchhex">#f6f1fb</span><span class="sg-swatchratio">17.67 on anchor, 7.32 on primary</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-scrim"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-scrim</span><span class="sg-swatchhex">rgba(22,3,33,.62)</span><span class="sg-swatchratio">brand-tinted photo scrim</span></div></div>
+      </div>
+
+      <hr class="sg-hr">
+
+      <p class="sg-speclabel">Emitted because this concept consumes them</p>
+      <div class="sg-swatchgrid">
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-sig"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-signature</span><span class="sg-swatchhex">#cf90de</span><span class="sg-swatchratio">purple lightened, 8.14:1 on the anchor</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-accent2"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-accent-2</span><span class="sg-swatchhex">#a13cbc</span><span class="sg-swatchratio">5.40:1 on paper, gradient stop two</span></div></div>
+        <div class="sg-swatch"><div class="sg-swatchchip sg-chip-grad"></div><div class="sg-swatchmeta"><span class="sg-swatchrole">--ds-grad-brand</span><span class="sg-swatchhex">135deg, primary to accent-2</span><span class="sg-swatchratio">the live booking plugin already runs it</span></div></div>
+      </div>
+
+      <hr class="sg-hr">
+
+      <div class="sg-barred">
+        <p class="sg-speclabel">Barred pairs, measured rather than asserted</p>
+        <div class="sg-barredrow"><span>Raw gold as text on paper</span><span class="sg-barredfail">1.71:1, barred</span></div>
+        <div class="sg-barredrow"><span>Near-white text on a gold ground</span><span class="sg-barredfail">1.54:1, barred</span></div>
+        <div class="sg-barredrow"><span>Secondary purple as small text on the anchor</span><span class="sg-barredfail">3.64:1, barred</span></div>
+        <div class="sg-barredrow"><span>Either accent as body copy on either canvas</span><span class="sg-barredfail">barred by brand rule</span></div>
+        <p class="sg-caption">The first three are arithmetic. The fourth is stricter than the arithmetic and binds anyway: purple clears 8.14:1 as small text on paper and is still not body copy. That headroom buys eyebrows, labels, links and icons.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- pick: 00-globals/typography/menu.md #26 Montserrat + Hind (TYPOGRAPHY-PAIRINGS) | considered: #37 Unbounded + Plus Jakarta Sans, #39 Space Grotesk + Inter | why: Montserrat is the brand's own measured display face so the pair is fixed at the display end, and #26 is the only library entry that puts it there, but Hind's tall contrast fights the calm sentence-case posture this concept needs, so the body face is TUNED to Plus Jakarta Sans taken from #37 and documented here as the menu's own no-exact-match clause requires; the result holds TOP-12 #2's negative-tracked display floor while an enlarged 22px lede does the persuading, which is the point of a concept that earns its energy from depth rather than from shouting. -->
+  <section class="sg-band">
+    <div class="sg-bandinner">
+      <div class="sg-bandhead">
+        <span class="sg-bandnum">03</span>
+        <div class="sg-headgroup">
+          <p class="sg-eyebrow">Typography</p>
+          <h2 class="sg-h2">Calm ladder, one loud step</h2>
+        </div>
+      </div>
+
+      <div class="sg-ramprow">
+        <p class="sg-t-display">Ascent</p>
+        <p class="sg-rampmeta">Display<br>Montserrat 600<br>clamp(46px, 6.4vw, 76px)<br>line-height 1.02, tracking -0.03em</p>
+      </div>
+      <div class="sg-ramprow">
+        <p class="sg-t-head">One agreed monthly fee</p>
+        <p class="sg-rampmeta">Head<br>Montserrat 600<br>clamp(28px, 3.2vw, 40px)<br>line-height 1.10, tracking -0.022em</p>
+      </div>
+      <div class="sg-ramprow">
+        <p class="sg-t-sub">What the contract names</p>
+        <p class="sg-rampmeta">Sub<br>Montserrat 600, 28px<br>line-height 1.18, tracking -0.018em</p>
+      </div>
+      <div class="sg-ramprow">
+        <p class="sg-t-lede">The lede runs one step under the sub and two steps over the body, because this concept argues in sentences rather than in size.</p>
+        <p class="sg-rampmeta">Lede<br>Plus Jakarta Sans 400, 22px<br>line-height 1.50, tracking -0.006em</p>
+      </div>
+      <div class="sg-ramprow">
+        <p class="sg-t-body sg-measure">Body copy sits at its real measure here, not at a demo width. Sixty-two characters is the line this identity is set to, and emphasis inside a paragraph is carried by <strong>ink weight</strong> rather than by an intermediate size step.</p>
+        <p class="sg-rampmeta">Body<br>Plus Jakarta Sans 400, 17px<br>line-height 1.65, measure 62ch</p>
+      </div>
+      <div class="sg-ramprow">
+        <p class="sg-t-small">Small print, captions and field help sit here and stay legible on all three light grounds.</p>
+        <p class="sg-rampmeta">Small<br>Plus Jakarta Sans 500, 15px<br>line-height 1.50</p>
+      </div>
+      <div class="sg-ramprow">
+        <p class="sg-t-caps">The guarantee</p>
+        <p class="sg-rampmeta">Micro-caps eyebrow<br>Plus Jakarta Sans 600, 11.5px<br>tracking +0.12em, accent rule 32px</p>
+      </div>
+
+      <hr class="sg-hr">
+
+      <div class="sg-numeral">
+        <p class="sg-numbig">4.9</p>
+        <div class="sg-numlabel">
+          <p class="sg-t-caps">Numerals</p>
+          <p class="sg-small">Rated 4.9 from 35 Google reviews. The oversized numeral survives from the live site; what changed is the occupant. It carries an owned, third-party-checkable number that always travels with its count, never an aggregate total and never a success rate.</p>
+        </div>
+      </div>
+      <p class="sg-caption">Tabular figures, so a column of numbers never jitters: <span class="sg-tnum">2015</span> and <span class="sg-tnum">0123456789</span></p>
+
+      <p class="sg-note">We do not publish a success rate. Stating the absence is more persuasive than hiding it, and it is the direct answer to the argument the category's loudest incumbent makes against ranking guarantees.</p>
+    </div>
+  </section>
+
+  <!-- pick: 00-globals/surface/menu.md #11 Deep-shadow-floating (SURFACE-PATTERNS) | considered: #10 Soft-shadow-lift, #13 Glass-translucent | why: this is the concept where surfaces genuinely leave the page, so the elevation family has to be the deep two-stop pair rather than the single default lift, otherwise the climb motif has nowhere to rise TO and the thesis collapses into a flat sheet; the shadow rgba is tinted toward the purple ink exactly as pattern-library D1 requires, and every riser also carries the hairline plus inset top-highlight that the WOW bar's edge clause calls the difference between expensive and unstyled. -->
+  <section class="sg-band sg-band--warm">
+    <div class="sg-bandinner">
+      <div class="sg-bandhead">
+        <span class="sg-bandnum">04</span>
+        <div class="sg-headgroup">
+          <p class="sg-eyebrow">Surface</p>
+          <h2 class="sg-h2">Grounds, elevation, material</h2>
+        </div>
+      </div>
+
+      <p class="sg-speclabel">Four grounds, shown adjacent so the separation is provable by eye</p>
+      <div class="sg-grounds">
+        <div class="sg-ground sg-ground--paper"><span class="sg-groundname">Paper</span><span class="sg-groundlabel">--ds-bg-surface<br>#ffffff</span></div>
+        <div class="sg-ground sg-ground--tint"><span class="sg-groundname">Tinted</span><span class="sg-groundlabel">--ds-bg-surface-2<br>#f2ecf7, cool</span></div>
+        <div class="sg-ground sg-ground--warm"><span class="sg-groundname">Warm</span><span class="sg-groundlabel">--ds-bg-warm<br>#fbf3e3, warm</span></div>
+        <div class="sg-ground sg-ground--anchor"><span class="sg-groundname">Anchor</span><span class="sg-groundlabel">--ds-primary-deep<br>#160321</span></div>
+      </div>
+      <p class="sg-caption">The two tinted grounds sit on opposite sides of the hue circle, cool purple against warm gold, so they read apart even though their lightness steps are small. The anchor is the modernized dark purple chrome: still unmistakably the brand, no longer a mid purple used as a ground.</p>
+
+      <hr class="sg-hr">
+
+      <div class="sg-grid sg-grid--3">
+        <div class="sg-riser sg-riser--rest">
+          <p class="sg-h3">Rest</p>
+          <p class="sg-mono">--ds-shadow-rest<br>0 1px 2px and 0 3px 10px -3px<br>rgba(36,16,51,.05 / .06)</p>
+        </div>
+        <div class="sg-riser sg-riser--card">
+          <p class="sg-h3">Card</p>
+          <p class="sg-mono">--ds-shadow-card<br>0 2px 6px -1px and 0 16px 36px -12px<br>rgba(36,16,51,.08 / .18)</p>
+        </div>
+        <div class="sg-riser sg-riser--lift">
+          <p class="sg-h3">Lift</p>
+          <p class="sg-mono">--ds-shadow-lift plus translateY(-5px)<br>0 4px 10px -2px and 0 28px 58px -16px<br>rgba(36,16,51,.10 / .26)</p>
+        </div>
+      </div>
+      <p class="sg-caption">One shadow family, two stops each, ink-tinted purple rather than black, negative spread so the penumbra tucks under the surface. Every elevated surface also carries a 1px hairline and an inset top highlight.</p>
+
+      <hr class="sg-hr">
+
+      <div class="sg-grid sg-grid--4">
+        <div>
+          <div class="sg-mat sg-mat--grid"></div>
+          <p class="sg-caption">--ds-grid, a 44px line grid at 7 per cent purple</p>
+        </div>
+        <div>
+          <div class="sg-mat sg-mat--grain"></div>
+          <p class="sg-caption">--ds-grain, fractal noise at 40 per cent opacity</p>
+        </div>
+        <div>
+          <div class="sg-mat sg-mat--glow"></div>
+          <p class="sg-caption">--ds-glow-wash, one radial bloom, on the dark moment only</p>
+        </div>
+        <div>
+          <div class="sg-frame">
+            <img class="sg-frameimg" src="../../../../assets/seoguarantee.com_wp-content_themes_theme-child_images_full-suite-image.jpg" alt="Image treatment specimen: the brand's own full suite photograph, graded with a brand-tinted vignette and faded into the page ground at its lower edge." width="1920" height="1216" loading="lazy" decoding="async">
+            <span class="sg-framevig"></span>
+            <span class="sg-framefade"></span>
+          </div>
+          <p class="sg-caption">Image treatment, vignette plus bottom fade, no translucent overlay band</p>
+        </div>
+      </div>
+      <p class="sg-caption">Glass is used exactly once on this sheet and it is in block 09, over the ambient wash, because glass only reads as refraction against a rich backdrop and collapses on a flat one.</p>
+    </div>
+  </section>
+
+  <!-- pick: 00-globals/surface/menu.md #18 Solid-pill-modern-marketing (SURFACE-PATTERNS) | considered: #17 Solid-square-precise, #19 Outline-ghost | why: the pill is the shape that reads as forward motion, which is the one thing this brand's product actually is, and the radius contrast between a 999px control and an 18px surface pops the single primary action without the colour having to shout; the gold bloom on that one pill is where the live site's gold CTA band survives, reduced from a full saturated stripe to the light on a single object, and the hover moves named properties only because the pattern library treats an opacity-only hover as a failure state. -->
+  <section class="sg-band">
+    <div class="sg-bandinner">
+      <div class="sg-bandhead">
+        <span class="sg-bandnum">05</span>
+        <div class="sg-headgroup">
+          <p class="sg-eyebrow">Atoms</p>
+          <h2 class="sg-h2">Buttons and their states</h2>
+        </div>
+      </div>
+
+      <p class="sg-lede sg-measure">One primary per surface. The primary is the only object on the sheet allowed an accent bloom, and it is the only place gold behaves as light rather than as an area.</p>
+
+      <hr class="sg-hr">
+
+      <p class="sg-speclabel">Primary: rest, hover, focus, disabled</p>
+      <div class="sg-stategroup">
+        <div>
+          <span class="sg-statecap">Rest</span>
+          <a class="sg-btn sg-btn--primary" href="#book">Book a consultation</a>
+        </div>
+        <div>
+          <span class="sg-statecap">Hover</span>
+          <a class="sg-btn sg-btn--primary is-hover" href="#book">Book a consultation</a>
+        </div>
+        <div>
+          <span class="sg-statecap">Focus visible</span>
+          <a class="sg-btn sg-btn--primary is-focus" href="#book">Book a consultation</a>
+        </div>
+        <div>
+          <span class="sg-statecap">Disabled</span>
+          <button class="sg-btn sg-btn--primary is-disabled" type="button" disabled>Book a consultation</button>
+        </div>
+      </div>
+
+      <hr class="sg-hr">
+
+      <div class="sg-stategroup">
+        <div>
+          <span class="sg-statecap">Secondary, rest</span>
+          <a class="sg-btn sg-btn--secondary" href="#call">CALL US</a>
+        </div>
+        <div>
+          <span class="sg-statecap">Secondary, hover</span>
+          <a class="sg-btn sg-btn--secondary is-hover" href="#call">CALL US</a>
+        </div>
+        <div>
+          <span class="sg-statecap">Ghost, rest</span>
+          <a class="sg-btn sg-btn--ghost" href="#how">How the guarantee works
+            <svg class="sg-btnarrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </a>
+        </div>
+        <div>
+          <span class="sg-statecap">Ghost, hover</span>
+          <a class="sg-btn sg-btn--ghost is-hover" href="#how">How the guarantee works
+            <svg class="sg-btnarrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <p class="sg-caption">CALL US is the owner-set label and its capitals are permitted for that label alone. Transitions name background-color, border-color, color, box-shadow and transform. There is no transition on the all shorthand, and no hover that only changes opacity.</p>
+    </div>
+  </section>
+
+  <!-- pick: 00-globals/surface/menu.md #41 Floating-label (SURFACE-PATTERNS) | considered: #39 Boxed-default, #43 Pill-input | why: the only form this brand ever asks a stranger to fill is a consultation request, so the field has to look considered rather than transactional, and the floating label keeps the question visible after the answer is typed, which matters when the fields are named phrases rather than a generic email capture; the shrunk label lands in the darkened gold at 6.92:1 on paper, which is how gold earns a place on a light ground at small size without breaking the barred pair in block 02. -->
+  <section class="sg-band sg-band--tint">
+    <div class="sg-bandinner">
+      <div class="sg-bandhead">
+        <span class="sg-bandnum">06</span>
+        <div class="sg-headgroup">
+          <p class="sg-eyebrow">Atoms</p>
+          <h2 class="sg-h2">Input</h2>
+        </div>
+      </div>
+
+      <div class="sg-grid sg-grid--3">
+        <div class="sg-spec">
+          <p class="sg-speclabel">Rest</p>
+          <div class="sg-field">
+            <input class="sg-fieldinput" id="f1" type="text" placeholder=" ">
+            <label class="sg-fieldlabel" for="f1">Key phrase</label>
+          </div>
+          <p class="sg-fieldhelp">Help text sits under the control at 13px.</p>
+        </div>
+        <div class="sg-spec">
+          <p class="sg-speclabel">Focus</p>
+          <div class="sg-field is-focus">
+            <input class="sg-fieldinput" id="f2" type="text" value="las vegas dentist" placeholder=" ">
+            <label class="sg-fieldlabel" for="f2">Key phrase</label>
+          </div>
+          <p class="sg-fieldhelp">The focus ring is a 4px soft purple halo plus a border shift, never an outline removed with nothing put back.</p>
+        </div>
+        <div class="sg-spec">
+          <p class="sg-speclabel">Disabled</p>
+          <div class="sg-field">
+            <input class="sg-fieldinput" id="f3" type="text" placeholder=" " disabled>
+            <label class="sg-fieldlabel" for="f3">Key phrase</label>
+          </div>
+          <p class="sg-fieldhelp">Disabled drops to the tinted ground at 45 per cent and refuses the pointer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- pick: 00-globals/motion/menu.md #17 Underline-grow (MOTION-PATTERNS) | considered: #18 Color-shift, #19 Highlight-sweep | why: a link whose gold rule grows from a resting stub to full width is this concept's whole argument compressed into one four-pixel gesture, the same rise the motif makes at full scale, so the identity reads consistently at its smallest size; a colour shift would spend the accent as an area on a light ground where gold measures 1.71:1 and is barred, and a highlight sweep would read as an effect rather than as movement, which is exactly the dial-it-back rule the WOW spec governs everything by. -->
+  <section class="sg-band">
+    <div class="sg-bandinner">
+      <div class="sg-bandhead">
+        <span class="sg-bandnum">07</span>
+        <div class="sg-headgroup">
+          <p class="sg-eyebrow">Atoms</p>
+          <h2 class="sg-h2">Tags, badges, pills, links</h2>
+        </div>
+      </div>
+
+      <div class="sg-grid sg-grid--2">
+        <div class="sg-spec">
+          <p class="sg-speclabel">Marks</p>
+          <div class="sg-marks">
+            <span class="sg-tag">Full Suite</span>
+            <span class="sg-tag">Key phrases</span>
+            <span class="sg-badge">
+              <svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.6l1.9 4 4.4.6-3.2 3.1.8 4.3L8 11.6l-3.9 2 .8-4.3L1.7 6.2l4.4-.6z" fill="currentColor"></path></svg>
+              4.9 from 35 Google reviews
+            </span>
+            <span class="sg-rankpill">
+              <svg width="12" height="12" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 2.4l5 5.2H10v6H6v-6H3z" fill="currentColor"></path></svg>
+              First page
+            </span>
+          </div>
+          <p class="sg-caption">The tag carries the structural accent on its soft tint. The badge carries the darkened gold on the gold tint. The rank pill is the only object that takes gold as a full surface, and it takes near-black ink on it at 11.48:1.</p>
+        </div>
+
+        <div class="sg-spec">
+          <p class="sg-speclabel">Text link</p>
+          <p class="sg-body">The rule sits at 28 per cent at rest and grows to full width on hover and on focus, so the affordance is present before the pointer arrives: <a class="sg-link" href="#terms">read the terms in plain language</a>.</p>
+          <p class="sg-body">Shown held open: <a class="sg-link is-hover" href="#terms">read the terms in plain language</a></p>
+          <p class="sg-caption">Underline offset 3px, weight 2px, radius pill, one easing curve shared with every other transition on the sheet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- pick: 10-structure-library/cards/cards/menu.md #4 Circle-icon service card with arrow link (CARD-VARIATIONS) | considered: #2 Light feature card with embedded mini-visual, #3 Minimal 3-up icon-top feature | why: the sector blueprint records the icon-tiled capability tile as the one section present in every inspected demo in this vertical, so the sheet has to specify that atom or the later build will invent it, and the circular tinted chip plus arrow link is the variant that survives having no photography rights, which is this client's actual constraint; #2 needs a mini-visual the asset window cannot supply and #3 strips the arrow that carries the forward motion this identity is built on. -->
+  <section class="sg-band sg-band--warm">
+    <div class="sg-bandinner">
+      <div class="sg-bandhead">
+        <span class="sg-bandnum">08</span>
+        <div class="sg-headgroup">
+          <p class="sg-eyebrow">Atoms</p>
+          <h2 class="sg-h2">Card</h2>
+        </div>
+      </div>
+
+      <div class="sg-grid sg-grid--2">
+        <div class="sg-plate">
+          <span class="sg-plateicon">
+            <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 15h3.4v-4H3zM8.3 15h3.4V7H8.3zM13.6 15H17V3h-3.4z" fill="currentColor"></path></svg>
+          </span>
+          <p class="sg-h3">Rest</p>
+          <p class="sg-platecopy">One agreed monthly fee covers SEO, web, CRO, branding and design. Quoted per business after a competitive review.</p>
+          <a class="sg-link" href="#review">What the review looks at</a>
+        </div>
+
+        <div class="sg-plate is-hover">
+          <span class="sg-plateicon">
+            <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 15h3.4v-4H3zM8.3 15h3.4V7H8.3zM13.6 15H17V3h-3.4z" fill="currentColor"></path></svg>
+          </span>
+          <p class="sg-h3">Hover, held open</p>
+          <p class="sg-platecopy">The chip flips from the purple tint to the gold tint, the surface rises five pixels and the shadow deepens to the lift pair. Named properties only.</p>
+          <a class="sg-link is-hover" href="#review">What the review looks at</a>
+        </div>
+      </div>
+      <p class="sg-caption">Radius 18px on the surface, 999px on the icon chip. One radius language across the whole sheet: 8px controls, 18px surfaces, pill for anything round.</p>
+    </div>
+  </section>
+
+  <!-- pick: 10-structure-library/sections/dataviz/menu.md #3 Horizontal ranked bars (pill tracks) (DATAVIZ-PATTERNS) | considered: #6 Single-value ring gauges, #10 Compact KPI strip | why: the ranked-row form is the only device that can show a position being gained rather than a quantity being reported, which is the difference between illustrating this client's mechanic and fabricating a result, and the greyed rows carry no labels so nothing here can be read as a real search page; the sector blueprint's portfolio slot is rights-blocked for this client, so the craft that would have gone into a work gallery is spent on the mechanic instead, which is where the technique ceiling says to spend it. -->
+  <section class="sg-band sg-band--dark surface-dark">
+    <div class="sg-bandinner">
+      <div class="sg-bandhead">
+        <span class="sg-bandnum">09</span>
+        <div class="sg-headgroup">
+          <p class="sg-eyebrow">Signature</p>
+          <h2 class="sg-h2">The climb chip</h2>
+        </div>
+      </div>
+
+      <div class="sg-motif">
+        <div class="sg-climb">
+          <div class="sg-climbrow sg-climbrow--won">
+            <span class="sg-climbrank">1</span>
+            <span class="sg-climbname"><span class="sg-climbwon">The agreed key phrase</span></span>
+            <span class="sg-climbunder"></span>
+          </div>
+          <div class="sg-climbrow">
+            <span class="sg-climbrank">2</span>
+            <span class="sg-climbname"><span class="sg-climbtrack sg-climbtrack--long"></span><span class="sg-climbmeta"></span></span>
+          </div>
+          <div class="sg-climbrow">
+            <span class="sg-climbrank">3</span>
+            <span class="sg-climbname"><span class="sg-climbtrack sg-climbtrack--mid"></span><span class="sg-climbmeta"></span></span>
+          </div>
+          <div class="sg-climbrow">
+            <span class="sg-climbrank">4</span>
+            <span class="sg-climbname"><span class="sg-climbtrack sg-climbtrack--long"></span><span class="sg-climbmeta"></span></span>
+          </div>
+          <div class="sg-climbrow">
+            <span class="sg-climbrank">5</span>
+            <span class="sg-climbname"><span class="sg-climbtrack sg-climbtrack--short"></span><span class="sg-climbmeta"></span></span>
+          </div>
+
+          <svg class="sg-climbtrace" viewBox="0 0 320 54" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path d="M4 50 C 90 50, 150 34, 200 20 S 280 6, 316 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".55"></path>
+            <circle cx="316" cy="4" r="3.4" fill="currentColor"></circle>
+          </svg>
+          <p class="sg-caption">Illustrative. The greyed rows are unlabelled by design: this diagram explains the mechanic and reports no client, no market and no outcome.</p>
+        </div>
+
+        <div class="sg-glass">
+          <p class="sg-speclabel">Construction</p>
+          <div class="sg-annotrow"><span>Rise interval</span><span class="sg-annotval">translateY(-6px)</span></div>
+          <div class="sg-annotrow"><span>Chip surface</span><span class="sg-annotval">--ds-primary</span></div>
+          <div class="sg-annotrow"><span>Rank marker</span><span class="sg-annotval">--ds-accent on --ds-r-pill</span></div>
+          <div class="sg-annotrow"><span>Marker ink</span><span class="sg-annotval">--ds-primary-deep, 11.48:1</span></div>
+          <div class="sg-annotrow"><span>Underline</span><span class="sg-annotval">3px --ds-accent, pill</span></div>
+          <div class="sg-annotrow"><span>Bloom</span><span class="sg-annotval">--ds-glow</span></div>
+          <div class="sg-annotrow"><span>Trace</span><span class="sg-annotval">2px --ds-accent at 55 per cent</span></div>
+          <div class="sg-annotrow"><span>Ground</span><span class="sg-annotval">--ds-primary-deep and --ds-glow-wash</span></div>
+          <p class="sg-caption">This panel is the only glass surface on the sheet: translucent fill, blur with saturation, a hairline border and the inset top highlight that makes the edge catch light.</p>
+        </div>
+      </div>
+
+      <p class="sg-note">Signature moves, and how each one survived here. Dark hero and dark purple chrome became this anchor ground, a real token rather than a decorative tint. The gold CTA band became the bloom on one pill and the rank marker, so gold is light rather than a stripe. Big stat bands became the 4.9 numeral in block 03, an owned number that travels with its count. The founder video hero became an image-treatment specimen in block 04 and a portrait chip in block 11, because the resolution on file will not honestly carry more than that.</p>
+    </div>
+  </section>
+
+  <!-- pick: 00-globals/motion/menu.md #26 Fade-in-on-view (MOTION-PATTERNS) | considered: #21 Fade-up, #29 Stagger-grid | why: this client sells the discipline that makes a page fast and prospects run a performance audit on the vendor's own site as basic diligence, so the reveal has to be the observer-driven variant that renders content visible with no script rather than the load-time animation that hides it first; one gesture, one curve, 80ms between siblings, and the whole thing collapses to fully visible under a reduced-motion preference, which is the WOW spec's non-negotiable gate on every animated clause it contains. -->
+  <section class="sg-band">
+    <div class="sg-bandinner">
+      <div class="sg-bandhead">
+        <span class="sg-bandnum">10</span>
+        <div class="sg-headgroup">
+          <p class="sg-eyebrow">Motion</p>
+          <h2 class="sg-h2">One gesture, one curve</h2>
+        </div>
+      </div>
+
+      <div class="sg-motionrow">
+        <span class="sg-motionchip sg-reveal" style="--i:0">opacity 0 to 1</span>
+        <span class="sg-motionchip sg-reveal" style="--i:1">translateY 24px to 0</span>
+        <span class="sg-motionchip sg-reveal" style="--i:2">600ms</span>
+        <span class="sg-motionchip sg-reveal" style="--i:3">cubic-bezier(.16, 1, .3, 1)</span>
+        <span class="sg-motionchip sg-reveal" style="--i:4">80ms sibling stagger</span>
+      </div>
+
+      <hr class="sg-hr">
+
+      <div class="sg-grid sg-grid--2">
+        <div class="sg-spec">
+          <p class="sg-speclabel">Interaction timings</p>
+          <div class="sg-annotrow"><span>Hover and control feedback</span><span class="sg-annotval">--ds-dur-fast 160ms</span></div>
+          <div class="sg-annotrow"><span>Lift, underline, label float</span><span class="sg-annotval">--ds-dur 220ms</span></div>
+          <div class="sg-annotrow"><span>Scroll reveal</span><span class="sg-annotval">--ds-dur-slow 600ms</span></div>
+          <div class="sg-annotrow"><span>Settle curve</span><span class="sg-annotval">--ds-ease</span></div>
+          <div class="sg-annotrow"><span>Reveal curve</span><span class="sg-annotval">--ds-ease-out</span></div>
+          <p class="sg-caption">No bounce, no overshoot, no rotation, no flip, no loop, no autoplay. Nothing animates the all shorthand.</p>
+        </div>
+
+        <div class="sg-spec">
+          <p class="sg-speclabel">Focus is visible, always</p>
+          <p class="sg-body"><span class="sg-focusring">Focus specimen</span></p>
+          <p class="sg-caption">A 2px accent outline at 3px offset on every interactive object. Removing an outline without replacing it is an accessibility defect, so no rule on this sheet does it.</p>
+          <p class="sg-caption">Under prefers-reduced-motion every transition on this sheet drops to 1ms, revealed content renders at full opacity and final position, and the lifted states hold still.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- pick: 10-structure-library/sections/company/menu.md #1 Founder / company editorial hero (COMPANY-PATTERNS) | considered: #2 Manifesto / values creed type-block, #4 Founder bios named duo grid | why: the one thing this identity has to prove in use is that a contractual promise can be delivered by a named person without sliding into direct response, so the vignette pairs the founder chip at the only scale his 543px source honestly carries with the locked sentence and its pause clause, and stops there; #2 has no human in it and would lose the founder presence the owner named as a brand asset, while #4 needs a second named face and a team the asset window does not supply at usable resolution. -->
+  <section class="sg-band sg-band--tint">
+    <div class="sg-bandinner">
+      <div class="sg-bandhead">
+        <span class="sg-bandnum">11</span>
+        <div class="sg-headgroup">
+          <p class="sg-eyebrow">Applied</p>
+          <h2 class="sg-h2">One vignette, specimen scale</h2>
+        </div>
+      </div>
+
+      <div class="sg-vigframe">
+        <p class="sg-speclabel">Specimen, the identity in use, 560 by 440 at 1440</p>
+        <div class="sg-vig">
+          <div class="sg-vigtop">
+            <img class="sg-vigportrait" src="../../../../assets/seoguarantee.com_wp-content_themes_theme-child_images_james-approved.png" alt="James Sutton IV, founder of First Page SEO Guarantee." width="120" height="120" loading="lazy" decoding="async">
+            <span class="sg-vigwho"><strong>James Sutton IV</strong><br>Founder, since 2015, Las Vegas</span>
+          </div>
+          <p class="sg-t-caps">The guarantee</p>
+          <p class="sg-vigclaim">We guarantee first page for the key phrases named in your contract, or you don&rsquo;t pay.</p>
+          <p class="sg-vigpause">Any month we&rsquo;re not delivering what your contract says, we keep working and your billing stops.</p>
+          <div class="sg-vigfoot">
+            <a class="sg-btn sg-btn--primary" href="#book">Book a consultation</a>
+            <span class="sg-badge">
+              <svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.6l1.9 4 4.4.6-3.2 3.1.8 4.3L8 11.6l-3.9 2 .8-4.3L1.7 6.2l4.4-.6z" fill="currentColor"></path></svg>
+              4.9 from 35 Google reviews
+            </span>
+          </div>
+        </div>
+        <p class="sg-caption">This is a specimen, not a page. It is the only applied composition on the sheet, it is framed as an inset, and it never bleeds. The two sentences travel together by rule: the promise is never printed without the pause clause on the same surface.</p>
+      </div>
+
+      <p class="sg-note">Perimeter held on this sheet: no price and no from-figure, no client name, client logo, press logo or mockup, no invented percentage, success rate or metro count, no position claim beyond first page, no countdown or scarcity device, no exclamation mark and no emoji. The 4.9 rating is the only third-party credibility used and its review count travels with it every time.</p>
+    </div>
+  </section>
+
+</div>
+
+<script>
+/* Scroll reveal: one gesture, observer-driven, and it FAILS TO VISIBLE.
+   The hidden state is applied only after JS confirms it can un-apply it, and it
+   is never applied at all when the visitor prefers reduced motion. */
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) return;
+  document.documentElement.classList.add('js-reveal');
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.2 });
+  document.querySelectorAll('.sg-reveal').forEach(function (el) { io.observe(el); });
+})();
+</script>
+
+</body>
+</html>

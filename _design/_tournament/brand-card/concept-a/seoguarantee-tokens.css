@@ -1,0 +1,235 @@
+/* =============================================================================
+   seoguarantee: BRAND IDENTITY TOKENS
+   CONCEPT A · "THE INSTRUMENT"  (brand-card tournament, P8 identity round)
+
+   Thesis: the guarantee is a contract clause, so the identity is set like a legal
+   instrument: ruled, precise, measured. The wow lives in the precision, not the
+   flourish.
+
+   SHAPE  : per BRAND-TOKEN-SCHEMA.md, §Required tokens (seventeen colour roles ·
+            two typography · three ROLE-NAMED radii · two shadow · the seven-step
+            spacing scale · two motion) plus the fifteen globals-overlay tokens
+            described in GLOBALS-OVERLAY-SPEC.md and the system families
+            (z-index · opacity · motion extension).
+   VALUES : DERIVED from this client's own measured brand, purple #7f2199 and
+            gold #ffba00, per _handoff/visual-direction.md §0/§2. Nothing is
+            inherited from the owner-chosen STRUCTURAL reference: none of its
+            hexes appear here, only its METHOD (measure every text role against
+            the worst-case ground it can land on, delete what fails, write the
+            surviving rule down).
+   COLOUR PROVENANCE : the palette is NOT a free pick from COLOR-THEORY-PRESETS.md,
+            because #7f2199 and #ffba00 are measured brand facts. Constructed via
+            that catalog's documented "When no library entry matches" route:
+            derive from the brand hexes, cite the closest family entry for the
+            derivation discipline (COLOR-THEORY-PRESETS.md, §one-hue-plus-ink),
+            and record every derived tint with its MEASURED ratio. Every ratio in
+            the comments below was computed this pass with the WCAG 2.x relative-
+            luminance formula against these exact hexes.
+
+   ONE ACCENT ROLE, held: purple is the STRUCTURAL accent, gold is the
+   PUNCTUATION. They are never co-equal and never carry the same job in one
+   composition. In this concept gold is THE SEAL, rationed to the smallest area
+   of the three directions, and never a ground on light.
+
+   Theme polarity: LIGHT (primary_surface: light, C7 §2), therefore
+   --ds-ink-heading = var(--ds-primary-deep).
+   ============================================================================= */
+
+:root {
+  /* ---- COLOUR · brand ------------------------------------------------------
+     --ds-primary       the brand purple, the STRUCTURAL accent + CTA surface.
+                        8.14:1 on paper · 7.09:1 on surface-2 · 7.43:1 on warm.
+                        Ink-on-dark painted ON it: 7.42:1. Barred from body copy
+                        by C7 §2 even though the maths passes; that headroom
+                        buys eyebrows, labels, links and rules, never paragraphs.
+     --ds-primary-deep  THE DARK GROUND. A purple-tinted NEAR-BLACK, not a deeper
+                        purple. 19.28:1 against paper; --ds-ink-on-dark on it is
+                        17.59:1. This is where dark-hero + dark-purple-chrome
+                        survive, modernized: the measured live chrome #4b0670 is
+                        a mid purple (13.47:1) and far too bright for a ground,
+                        so the measured #350151 was pushed down to near-black.
+     --ds-primary-soft  tinted purple ground for badges and soft rules.
+                        --ds-accent-ink on it: 5.65:1. --ds-ink on it: 14.33:1. */
+  --ds-primary:        #7f2199;
+  --ds-primary-deep:   #1a0426;
+  --ds-primary-soft:   #f1e4f5;
+
+  /* ---- COLOUR · accent (gold, the punctuation) -----------------------------
+     --ds-accent        the raw brand gold. MEASURED 1.71:1 on paper, a hard
+                        fail as text on light, and it fails the large-text 3:1
+                        floor too. It is therefore never text on a light ground
+                        anywhere in this system; it is a rule, a seal, a chip,
+                        and a CTA SURFACE carrying dark ink (11.27:1).
+     --ds-accent-ink    heavily darkened gold for SMALL text on light.
+                        6.92:1 paper · 6.02:1 surface-2 · 6.31:1 warm ·
+                        6.12:1 on --ds-accent-soft. Headroom taken deliberately.
+     --ds-accent-soft   gold-tinted ground for a soft badge.
+     --ds-accent-deep   deepened gold used as a SURFACE (a distinct role from
+                        --ds-accent-ink, which is text). 7.91:1 paper ·
+                        6.88:1 surface-2 · 7.22:1 warm; --ds-ink-on-dark ON it
+                        7.21:1.
+     --ds-accent-light  lightened gold, the accent FOREGROUND on dark grounds.
+                        12.54:1 on --ds-primary-deep · 11.41:1 on --ds-ink. A
+                        modest lift only; bleaching it to cream loses the brand. */
+  --ds-accent:         #ffba00;
+  --ds-accent-ink:     #7a5200;
+  --ds-accent-soft:    #fdf0d2;
+  --ds-accent-deep:    #6f4a00;
+  --ds-accent-light:   #ffc933;
+
+  /* ---- COLOUR · grounds ----------------------------------------------------
+     Three light grounds that are provably distinguishable side by side:
+       paper to surface-2  1.15:1      paper to warm  1.10:1
+       surface-2 to warm   1.05:1
+     Paper stays pure white because the owner asked for "majority white" and the
+     brand's measured body IS rgb(255,255,255); the pattern library's never-#fff
+     rule is satisfied at SYSTEM level instead, since the other two grounds carry
+     a real, measurable tint, so figure/ground survives. The ink rule is absolute
+     and is honoured below: --ds-ink is a tinted near-black, never #000. */
+  --ds-bg-surface:     #ffffff;
+  --ds-bg-surface-2:   #f3edf8;
+  --ds-bg-warm:        #fbf4e4;
+
+  /* ---- COLOUR · ink + line -------------------------------------------------
+     --ds-ink       17.54:1 paper · 15.27:1 surface-2 · 16.01:1 warm.
+     --ds-ink-soft   8.03:1 paper ·  6.99:1 surface-2 ·  7.32:1 warm. Also the
+                     control-boundary ink for the underline input, so the field
+                     edge clears the non-text 3:1 floor with room to spare.
+     --ds-line      the hairline. 1.81:1 against paper: a rule, never text. */
+  --ds-ink:            #241033;
+  --ds-ink-heading:    var(--ds-primary-deep);
+  --ds-ink-soft:       #5b4a66;
+  --ds-line:           #c9bcd4;
+  --ds-ink-on-dark:    #f7f3fa;
+  --ds-scrim:          rgba(26, 4, 38, .62);
+
+  /* ---- TYPOGRAPHY ----------------------------------------------------------
+     Display  Montserrat, the brand's own display face (C7 §0), pushed heavy
+              (700/800) and compressed. Base pair: TYPOGRAPHY-PAIRINGS.md, entry
+              twenty-six, "Montserrat + Hind".
+     Body     TUNED off that base, as that catalog's "When no library entry
+              matches" clause requires the tune to be documented: Hind is a warm
+              humanist and reads soft against a legal instrument, so the body
+              family is taken from TYPOGRAPHY-PAIRINGS.md, entry thirty-nine,
+              "Space Grotesk + Inter", giving Inter, a neutral engineered
+              grotesk. One display face, one body face.
+     Mono     a SYSTEM stack, deliberately: this client sells SEO and prospects
+              run PageSpeed on the vendor's own surfaces, so clause numbers,
+              ratios and month labels get tabular figures for ZERO extra font
+              bytes. */
+  --ds-font-display: 'Montserrat', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --ds-font-body:    'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --ds-font-mono:    ui-monospace, 'SFMono-Regular', 'Roboto Mono', Menlo, Consolas, monospace;
+
+  /* ---- RADIUS · three ROLE-NAMED steps, tight end of the range -------------
+     The instrument is ruled, so the geometry is nearly square. The dark
+     "attested" ground carries NO radius at all: it is hard-edged by rule. */
+  --ds-r-control:      4px;
+  --ds-r-surface:      8px;
+  --ds-r-pill:         999px;
+
+  /* ---- SHADOW · two stops, ink-tinted (purple), never pure black ----------- */
+  --ds-shadow-rest:    0 1px 2px rgba(36, 16, 51, .05);
+  --ds-shadow-card:    0 1px 2px rgba(36, 16, 51, .06), 0 14px 30px -12px rgba(36, 16, 51, .16);
+  --ds-shadow-lift:    0 2px 6px rgba(36, 16, 51, .09), 0 26px 52px -18px rgba(36, 16, 51, .24);
+
+  /* ---- SPACING + LAYOUT ---------------------------------------------------- */
+  --ds-space-2xs:      4px;
+  --ds-space-xs:       8px;
+  --ds-space-sm:       14px;
+  --ds-space-md:       24px;
+  --ds-space-lg:       40px;
+  --ds-space-xl:       64px;
+  --ds-space-2xl:      96px;
+  --ds-section-py:     clamp(40px, 4.6vw, 76px);
+  --ds-container-max:  1120px;
+
+  /* ---- MOTION · one curve for the whole surface ---------------------------- */
+  --ds-ease:           cubic-bezier(.2, .7, .2, 1);
+  --ds-dur:            200ms;
+
+  /* ---- GLOBALS OVERLAY · the design LANGUAGE, locked once here -------------
+     GLOBALS-OVERLAY-SPEC.md: these fifteen carry corners/edges, layering,
+     glass, hover, motion, texture and light so every later surface INHERITS
+     polish instead of re-inventing it. This sheet is that lock.
+     --ds-grid is the material layer for this concept: a fine purple line-grid
+     that reads as ruled paper and as measurement. Grain exists as a token for
+     downstream surfaces, but the instrument's own texture is the grid.
+     --ds-icon-tint is emitted for downstream chrome that injects SOURCE raster
+     icon chips; this sheet itself draws every mark as inline SVG on
+     currentColor and never applies it. */
+  --ds-glass-bg:       rgba(26, 4, 38, .66);
+  --ds-glass-blur:     blur(16px) saturate(160%);
+  --ds-glass-border:   rgba(247, 243, 250, .16);
+  --ds-hairline:       rgba(36, 16, 51, .14);
+  --ds-inset-hi:       inset 0 1px 0 rgba(255, 255, 255, .72);
+  --ds-glow:           0 0 0 1px rgba(255, 186, 0, .34), 0 12px 34px -14px rgba(255, 186, 0, .55);
+  --ds-glow-wash:      radial-gradient(72% 88% at 50% 0%, rgba(127, 33, 153, .30), rgba(127, 33, 153, 0) 70%);
+  --ds-grain:          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  --ds-grid:           linear-gradient(rgba(127, 33, 153, .085) 1px, rgba(127, 33, 153, 0) 1px), linear-gradient(90deg, rgba(127, 33, 153, .085) 1px, rgba(127, 33, 153, 0) 1px);
+  --ds-grid-size:      32px 32px;
+  --ds-divider-h:      64px;
+  --ds-dur-fast:       140ms;
+  --ds-dur-slow:       600ms;
+  --ds-ease-out:       cubic-bezier(.2, .6, .2, 1);
+  --ds-icon-tint:      brightness(0) saturate(100%) invert(16%) sepia(64%) saturate(3600%) hue-rotate(283deg) brightness(92%) contrast(101%);
+
+  /* ---- SYSTEM · z-index scale --------------------------------------------- */
+  --ds-z-below:        -1;
+  --ds-z-base:          0;
+  --ds-z-raised:        1;
+  --ds-z-sticky:     1000;
+  --ds-z-overlay:    1040;
+  --ds-z-drawer:     1050;
+  --ds-z-modal:      1060;
+  --ds-z-toast:      1080;
+
+  /* ---- SYSTEM · opacity scale --------------------------------------------- */
+  --ds-opacity-muted:    .72;
+  --ds-opacity-disabled: .45;
+  --ds-opacity-faint:    .12;
+  --ds-opacity-scrim:    .55;
+  --ds-opacity-texture:  .40;
+  --ds-opacity-veil:     .85;
+
+  /* ---- SYSTEM · motion extension ------------------------------------------ */
+  --ds-dur-data:       1.4s;
+}
+
+/* =============================================================================
+   DARK SURFACE: the same token API, re-measured for the near-black ground.
+   Every surface-dependent role flips here so a dark band never inherits a light
+   value. This is the modernized survival of dark-purple-chrome and dark-hero:
+   the purple is not deleted to achieve "clean", it becomes the ground.
+     --ds-ink-on-dark on --ds-primary-deep      17.59:1
+     --ds-ink-on-dark on the dark card ground   16.42:1
+     dark --ds-ink-soft  #bcaac9                 8.93:1 / 8.34:1
+     dark --ds-primary   #c77ad8                 6.61:1 / 6.17:1
+       (the raw #a13cbc measures 3.57:1 on this ground and FAILS as small text,
+        which is exactly why the purple is lightened here and darkened on light)
+     dark --ds-accent    #ffc933                12.54:1 / 11.70:1
+   ============================================================================= */
+.surface-dark,
+[data-surface="dark"] {
+  --ds-bg-surface:   #1a0426;
+  --ds-bg-surface-2: #250836;
+  --ds-bg-warm:      #2a0b23;
+  --ds-ink:          #f7f3fa;
+  --ds-ink-heading:  #f7f3fa;
+  --ds-ink-soft:     #bcaac9;
+  --ds-line:         rgba(247, 243, 250, .18);
+  --ds-primary:      #c77ad8;
+  --ds-primary-soft: rgba(199, 122, 216, .16);
+  --ds-accent:       #ffc933;
+  --ds-accent-ink:   #ffc933;
+  --ds-accent-soft:  rgba(255, 186, 0, .14);
+  --ds-accent-deep:  #ffba00;
+  --ds-hairline:     rgba(247, 243, 250, .18);
+  --ds-inset-hi:     inset 0 1px 0 rgba(255, 255, 255, .08);
+  --ds-shadow-rest:  0 1px 2px rgba(6, 0, 10, .38);
+  --ds-shadow-card:  0 1px 2px rgba(6, 0, 10, .40), 0 16px 34px -14px rgba(6, 0, 10, .62);
+  --ds-shadow-lift:  0 2px 6px rgba(6, 0, 10, .48), 0 28px 56px -20px rgba(6, 0, 10, .70);
+  --ds-glass-bg:     rgba(247, 243, 250, .07);
+  --ds-glass-border: rgba(247, 243, 250, .18);
+  --ds-grid:         linear-gradient(rgba(247, 243, 250, .07) 1px, rgba(247, 243, 250, 0) 1px), linear-gradient(90deg, rgba(247, 243, 250, .07) 1px, rgba(247, 243, 250, 0) 1px);
+}

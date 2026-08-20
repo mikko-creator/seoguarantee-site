@@ -1,0 +1,141 @@
+/* ============================================================================
+   seoguarantee : CARD TIER SHEET, BESPOKE
+   The elevated treatment for the MARQUEE pages. Per client-rules.json
+   bespoke_pages that is index (T-HOME) and guarantee (T-MARQUEE), and nothing
+   else.
+
+   HOW THIS SHEET LOADS (fixed convention, build.mjs): exactly ONE tier sheet is
+   linked per page, LAST, after the three core sheets (tokens, chrome,
+   structural), and only if the file exists. A bespoke slug gets this sheet;
+   every other slug gets brand-card-standard.css. The two NEVER co-exist, so
+   nothing here has to undo the standard tier.
+
+   WHAT IT IS: a per-page CARD-TREATMENT override, NOT a theme. Same token API,
+   same DOM grammar, same single motion gesture, same type ladder. It is a step
+   up in PRESENCE, never a different brand. It assumes seoguarantee-structural.css
+   has already defined .bw-card and its parts in full, so it restates nothing:
+   every rule below is a short additive adjustment.
+
+   IT MINTS NO TOKENS AND REDEFINES NONE. Zero raw brand hex.
+
+   WHAT THE STEP UP ACTUALLY BUYS, and why each item is the honest choice here:
+     1. A gold hairline rail across the card top. SEP-4, the structural accent
+        rule, applied at card scale: --ds-accent-deep measures 8.40:1 on paper,
+        so it is a real dark-on-light edge and not a decoration. It is the single
+        added mark, and it is the same mark every band already opens with.
+     2. Deeper rest elevation. The two-stop ink-tinted contact shadow, so a
+        marquee card is unambiguously ABOVE its band before anyone touches it.
+     3. A longer lift, and the hairline warms to the accent on hover, so the
+        card answers the pointer with the brand's own colour rather than only
+        with distance.
+     4. More air (the large padding step) and one step up the LOCKED type ladder
+        for the title. No new size is invented for this tier.
+     5. A taller embedded visual, because on a marquee page the crafted CSS
+        diagram that explains the mechanic is the thing worth spending room on.
+   Provenance: CARD-VARIATIONS.md #2 light feature card, SURFACE-PATTERNS.md #10
+   soft-shadow-lift, MOTION-PATTERNS.md #10 lift, _MODERN-WOW-SPEC depth and
+   elevation, asymmetry, one element overlapping a boundary, blueprint
+   composition-agency-creative.
+   ============================================================================ */
+
+/* REST. Two-stop ink-tinted elevation plus the inset top highlight, and more
+   air inside. The card is clipped so the top rail below can follow the surface
+   radius exactly instead of squaring off its corners. */
+.bw-card {
+  overflow: hidden;
+  padding: var(--ds-space-lg);
+  box-shadow: var(--ds-shadow-card-2stop), var(--ds-inset-hi);
+  transition: box-shadow var(--ds-dur) var(--ds-ease),
+              border-color var(--ds-dur) var(--ds-ease),
+              transform var(--ds-dur) var(--ds-ease);
+}
+
+/* 1. THE GOLD RAIL. A 3px deep-gold bar across the card top, drawn as a
+   pseudo-element so it costs no markup and no extra node in the grammar. On the
+   gold stratum it repaints to the flip's own accent (purple, 4.76:1 on gold),
+   because a deep gold rail on a gold ground is a rail that paints nothing. */
+.bw-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 3px;
+  background: var(--ds-accent-deep);
+  z-index: var(--ds-z-raised);
+  pointer-events: none;
+}
+.surface-gold .bw-card::before { background: var(--ds-accent); }
+/* the flat variant is the one card that stays unrailed and unlifted, so a
+   marquee page still has a quiet card available when it needs one */
+.bw-card--flat::before { display: none; }
+
+/* 3. HOVER. A longer lift than the standard tier (6px against 2px), the full
+   lift shadow, and the hairline warms to the structural accent. */
+.bw-card:hover {
+  border-color: var(--ds-accent-deep);
+  box-shadow: var(--ds-shadow-lift), var(--ds-inset-hi);
+  transform: translateY(-6px);
+}
+.surface-gold .bw-card:hover { border-color: var(--ds-accent); }
+.bw-card--flat:hover {
+  border-color: var(--ds-hairline);
+  box-shadow: var(--ds-shadow-card), var(--ds-inset-hi);
+  transform: none;
+}
+
+/* 4. TYPE. One step UP the locked ladder for the card title, matching the flat
+   fact's size so a marquee card row and a fact row read at the same pitch. No
+   new size is minted. The foot keeps the full band line here rather than the
+   faint hairline, because at this padding the card can carry the stronger rule. */
+.bw-card__title {
+  font-size: clamp(19px, 1.9vw, 24px);
+  font-weight: 500;
+  letter-spacing: -.012em;
+  line-height: 1.22;
+  margin-bottom: var(--ds-space-xs);
+}
+.bw-card__body { font-size: 15px; }
+.bw-card__foot { padding-top: var(--ds-space-md); border-top-color: var(--ds-line); }
+
+/* 5. THE EMBEDDED VISUAL, taller, and inset from the card's new padding so the
+   plate never runs into the rail. */
+.bw-card__vis {
+  height: 168px;
+  margin-bottom: var(--ds-space-md);
+}
+
+/* THE TINT VARIANT gets the purple-tinted plane plus a full hairline, so a
+   featured card in a row of paper cards separates by MATERIAL and edge rather
+   than by a size change that would break the row's rhythm. */
+.bw-card--tint { border-color: var(--ds-line); }
+
+/* THE STAMP. On a marquee page the overlapping stamp reaches further across the
+   boundary and carries the deepest elevation the identity owns, because proving
+   its own layer is the whole point of the device. */
+.bw-stamp {
+  left: calc(var(--ds-space-lg) * -1);
+  box-shadow: var(--ds-shadow-lift), var(--ds-inset-hi);
+}
+
+/* MOTION GATE. This sheet introduces one transform and one colour transition,
+   so this sheet zeroes both. */
+@media (prefers-reduced-motion: reduce) {
+  .bw-card { transition: none; }
+  .bw-card:hover { transform: none; }
+}
+
+/* THE REFLOW. The bespoke padding is a desktop luxury; below the tablet line it
+   would eat the reading width, so it steps back down the locked scale. The
+   stamp has already returned to the flow at this width (structural tier 2), so
+   its bespoke offset is released with it. */
+@media (max-width: 899px) {
+  .bw-card { padding: var(--ds-space-md); }
+  .bw-card__vis { height: 144px; }
+  .bw-stamp { left: auto; }
+}
+
+@media (max-width: 767px) {
+  .bw-card { padding: var(--ds-space-sm); }
+  .bw-card__vis { height: 128px; }
+}

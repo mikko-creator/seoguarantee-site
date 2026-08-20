@@ -1,0 +1,1869 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>First Page SEO Guarantee, brand identity sheet, Concept A: The Instrument</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="seoguarantee-tokens.css">
+<!--
+  ARTIFACT      brand-card IDENTITY SHEET (a chrome-less specimen sheet, not a web page).
+  CONCEPT       A of three: "THE INSTRUMENT".
+  BUILT FROM    _handoff/visual-direction.md (C7) · _handoff/seoguarantee-tokens-spec.md (C6)
+                _handoff/content-bible.md (C4) · _handoff/decisions-ledger.md (C5)
+                _handoff/client-rules.json (C3)
+  DESIGN CEILING
+                _MODERN-WOW-SPEC, the quality bar ("wow felt, not noticed")
+                _MODERN-DESIGN-PATTERN-LIBRARY, TOP-12 recipes, cited by id below
+                composition-agency-creative, the sector blueprint for this vertical
+                GLOBALS-OVERLAY-SPEC.md, the fifteen globals, locked once, here
+                BRAND-TOKEN-SCHEMA.md, the required token shape
+  ICONOGRAPHY   every mark on this sheet is inline SVG or crafted CSS on currentColor.
+                No source raster icons ship here, so --ds-icon-tint is emitted for
+                downstream chrome but never applied on this surface.
+  SCOPE NOTE    no site header, no nav, no footer, no page hero. A title block and a
+                closing colophon are the only chrome an identity sheet is allowed.
+-->
+<style>
+/* ============================================================================
+   CONCEPT A · THE INSTRUMENT. Sheet CSS.
+   Every colour, edge, shadow, motion and texture value resolves through a
+   --ds-* token from seoguarantee-tokens.css. There is no raw brand hex in this
+   stylesheet; the only place a hex string appears on this sheet is as the
+   printed LABEL text beside a swatch, which is data, not styling.
+
+   Applied recipes, cited: _MODERN-DESIGN-PATTERN-LIBRARY TOP-12 #3 (ink-tinted
+   two-stop shadow plus lift), TOP-12 #4 (scroll-reveal with sibling stagger),
+   TOP-12 #10 (micro-caps eyebrow plus accent rule), TOP-12 #11 (section rhythm,
+   alternating grounds, one near-black anchor), and _MODERN-WOW-SPEC §1 (hairline
+   plus inset top-highlight), §3 (material layer), §7 (fine focus states).
+   The vertical's ambient glass/glow signature is deliberately NOT taken: this
+   concept's material is flat, ruled paper.
+   ========================================================================= */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--ds-bg-surface);
+  color: var(--ds-ink);
+  font-family: var(--ds-font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- the sheet ---------------------------------------------------------- */
+/* THE SINGLE FIXED MEASURE, pinned to ONE left axis. The strongest transferable
+   idea in the owner-chosen structural reference, and the one that is entirely
+   polarity-free. It is honoured literally in this sheet's own construction:
+   every specimen body starts on the same axis and holds the same measure.
+   There is exactly ONE documented exception, marked on the sheet where it
+   occurs (the palette register, because a register is not prose). */
+.sheet {
+  --axis: 104px;
+  position: relative;
+  max-width: var(--ds-container-max);
+  margin: 0 auto;
+  padding: 0 var(--ds-space-md) var(--ds-space-2xl);
+  isolation: isolate;
+}
+
+/* the ruled material layer: a fine purple line-grid that reads as ruled paper
+   and as measurement. This concept's texture is the grid, never grain. */
+.sheet__grain {
+  position: absolute;
+  inset: 0;
+  z-index: var(--ds-z-below);
+  pointer-events: none;
+  background-image: var(--ds-grid);
+  background-size: var(--ds-grid-size);
+  opacity: var(--ds-opacity-veil);
+  mask-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.55) 42%, rgba(0,0,0,.14) 100%);
+  -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.55) 42%, rgba(0,0,0,.14) 100%);
+}
+
+/* the left axis rule: the instrument's spine, running the height of the sheet */
+.axis {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--axis);
+  width: 1px;
+  background: var(--ds-line);
+  z-index: var(--ds-z-base);
+  pointer-events: none;
+}
+
+/* ---- shared type atoms --------------------------------------------------- */
+.eyebrow {
+  margin: 0 0 var(--ds-space-xs);
+  font-family: var(--ds-font-body);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ds-accent-ink);
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-sm);
+}
+.eyebrow::after {
+  content: "";
+  width: 44px;
+  height: 2px;
+  background: var(--ds-accent);
+  flex: none;
+}
+.lead {
+  margin: 0 0 var(--ds-space-md);
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--ds-ink-soft);
+}
+.readw { max-width: 66ch; }
+.mono {
+  font-family: var(--ds-font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+  letter-spacing: .01em;
+}
+.note {
+  margin: var(--ds-space-sm) 0 0;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--ds-ink-soft);
+}
+.caps {
+  display: block;
+  margin: 0;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ds-ink-soft);
+}
+.hr-gold {
+  width: 56px;
+  height: 3px;
+  background: var(--ds-accent);
+  border: 0;
+  margin: 0;
+}
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip-path: inset(50%);
+  white-space: nowrap; border: 0;
+}
+
+/* ---- title block (the only chrome an identity sheet is allowed) ---------- */
+.sheet__head {
+  display: grid;
+  grid-template-columns: var(--axis) minmax(0, 1fr);
+  gap: 0 var(--ds-space-md);
+  padding: var(--ds-space-2xl) 0 var(--ds-space-xl);
+  border-bottom: 1px solid var(--ds-line);
+}
+.sheet__badge {
+  font-family: var(--ds-font-mono);
+  font-size: 11px;
+  letter-spacing: .06em;
+  color: var(--ds-ink-soft);
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.sheet__title {
+  margin: var(--ds-space-sm) 0 var(--ds-space-md);
+  font-family: var(--ds-font-display);
+  font-weight: 800;
+  font-size: clamp(52px, 6.4vw, 84px);
+  line-height: .96;
+  letter-spacing: -.04em;
+  color: var(--ds-ink-heading);
+}
+.sheet__thesis {
+  margin: 0 0 var(--ds-space-lg);
+  max-width: 62ch;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ds-ink);
+}
+.sheet__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ds-space-xs) var(--ds-space-md);
+  margin: var(--ds-space-md) 0 0;
+  padding: var(--ds-space-sm) 0 0;
+  border-top: 1px solid var(--ds-line);
+  list-style: none;
+}
+.sheet__metaitem {
+  font-family: var(--ds-font-mono);
+  font-size: 11.5px;
+  color: var(--ds-ink-soft);
+}
+.sheet__metaitem b {
+  color: var(--ds-ink);
+  font-weight: 600;
+}
+
+/* ---- specimen shell ------------------------------------------------------ */
+/* ONE rhythm interval, paid top and bottom by every specimen. No bespoke
+   padding anywhere on this sheet. */
+.spec {
+  display: grid;
+  grid-template-columns: var(--axis) minmax(0, 1fr);
+  gap: 0 var(--ds-space-md);
+  padding: var(--ds-section-py) 0;
+  border-bottom: 1px solid var(--ds-line);
+}
+.spec__no {
+  position: relative;
+  padding-top: 6px;
+}
+.spec__num {
+  display: block;
+  font-family: var(--ds-font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  color: var(--ds-primary);
+}
+/* the clause tick: the signature motif's terminus, reused at label scale */
+.spec__tick {
+  display: block;
+  width: 26px;
+  height: 2px;
+  margin-top: 10px;
+  background: var(--ds-accent);
+}
+.spec__body { min-width: 0; }
+.spec__title {
+  margin: 0 0 var(--ds-space-sm);
+  font-family: var(--ds-font-display);
+  font-weight: 800;
+  font-size: clamp(34px, 3.6vw, 46px);
+  line-height: 1;
+  letter-spacing: -.03em;
+  color: var(--ds-ink-heading);
+}
+.spec__hd { margin-bottom: var(--ds-space-lg); }
+/* THE ONE DOCUMENTED EXCEPTION to the fixed measure. */
+.spec__wide { max-width: none; }
+
+/* ============================ 01 · WORDMARK ============================== */
+.wm__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
+  gap: var(--ds-space-md);
+}
+.wm__slot {
+  padding: var(--ds-space-md);
+  background: var(--ds-bg-surface);
+  border: 1px solid var(--ds-line);
+  border-radius: var(--ds-r-surface);
+  box-shadow: var(--ds-shadow-card), var(--ds-inset-hi);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--ds-space-md);
+  min-height: 178px;
+}
+/* the horizontal lockup needs two grid tracks so it stays on ONE line, which is
+   the whole point of a horizontal lockup */
+.wm__slot--wide { grid-column: span 2; }
+.wm__slot.wm--dark {
+  background: var(--ds-primary-deep);
+  border-color: var(--ds-hairline);
+  border-radius: 0;
+}
+.wm__lock { display: inline-block; }
+.wm__first {
+  display: block;
+  font-family: var(--ds-font-display);
+  font-weight: 800;
+  font-size: 34px;
+  line-height: .98;
+  letter-spacing: -.035em;
+  color: var(--ds-ink-heading);
+}
+.wm__rule {
+  display: block;
+  height: 3px;
+  margin-top: 7px;
+  background: var(--ds-accent);
+}
+.wm__sub {
+  display: block;
+  margin-top: 9px;
+  font-family: var(--ds-font-body);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: var(--ds-ink-soft);
+}
+/* horizontal variant: name, then a divider, then the descriptor on one baseline */
+.wm__row {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--ds-space-sm);
+}
+.wm__div {
+  width: 1px;
+  align-self: stretch;
+  background: var(--ds-line);
+}
+.wm__row .wm__sub { margin-top: 0; padding-bottom: 5px; white-space: nowrap; }
+.wm__row .wm__first { white-space: nowrap; }
+/* the short mark */
+.wm__mark {
+  width: 68px;
+  height: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid var(--ds-ink-heading);
+  background: var(--ds-bg-surface);
+}
+.wm--dark .wm__mark {
+  background: var(--ds-primary-deep);
+  border-color: var(--ds-hairline);
+}
+.wm__markletters {
+  font-family: var(--ds-font-display);
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: -.03em;
+  color: var(--ds-ink-heading);
+}
+.wm__markrule { width: 26px; height: 3px; background: var(--ds-accent); }
+/* clear space and minimum size, shown graphically */
+.wm__clear {
+  position: relative;
+  display: inline-block;
+  padding: 26px;
+  outline: 1px dashed var(--ds-primary);
+  outline-offset: 0;
+}
+.wm__clearlab {
+  position: absolute;
+  top: 5px; left: 7px;
+  font-family: var(--ds-font-mono);
+  font-size: 10px;
+  color: var(--ds-primary);
+}
+.wm__min { display: flex; align-items: flex-end; gap: var(--ds-space-md); }
+.wm__minbar { width: 132px; }
+.wm__minbar .wm__first { font-size: 21px; }
+.wm__minbar .wm__sub { font-size: 7.5px; letter-spacing: .2em; }
+.wm__dim {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-family: var(--ds-font-mono);
+  font-size: 10.5px;
+  white-space: nowrap;
+  color: var(--ds-ink-soft);
+}
+.wm__dimrule {
+  width: 132px;
+  height: 1px;
+  background: var(--ds-ink-soft);
+  position: relative;
+}
+.wm__dimrule::before,
+.wm__dimrule::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  width: 1px;
+  height: 9px;
+  background: var(--ds-ink-soft);
+}
+.wm__dimrule::before { left: 0; }
+.wm__dimrule::after { right: 0; }
+.wm--dark .wm__first,
+.wm--dark .wm__markletters { color: var(--ds-ink-on-dark); }
+.wm--dark .wm__sub { color: var(--ds-ink-soft); }
+.wm__slotlab {
+  font-family: var(--ds-font-mono);
+  font-size: 10.5px;
+  letter-spacing: .04em;
+  color: var(--ds-ink-soft);
+}
+
+/* ============================ 02 · PALETTE =============================== */
+.pal { display: block; }
+.pal__head {
+  display: grid;
+  grid-template-columns: 96px minmax(170px, 1.1fr) 100px minmax(0, 2.2fr);
+  gap: var(--ds-space-md);
+  padding: 0 0 var(--ds-space-xs);
+  border-bottom: 1px solid var(--ds-ink-heading);
+}
+.pal__group {
+  margin: var(--ds-space-lg) 0 var(--ds-space-xs);
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--ds-line);
+}
+.pal__row {
+  display: grid;
+  grid-template-columns: 96px minmax(170px, 1.1fr) 100px minmax(0, 2.2fr);
+  gap: var(--ds-space-md);
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--ds-hairline);
+}
+.pal__chip {
+  height: 34px;
+  border: 1px solid var(--ds-hairline);
+  box-shadow: var(--ds-shadow-rest);
+}
+.pal__role {
+  font-family: var(--ds-font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ds-ink);
+  word-break: break-word;
+}
+.pal__hex {
+  font-family: var(--ds-font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 11.5px;
+  color: var(--ds-ink-soft);
+  word-break: break-word;
+}
+.pal__meas {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ds-ink-soft);
+}
+.pal__meas b { color: var(--ds-ink); font-weight: 600; }
+.pal__bar {
+  display: inline-block;
+  padding: 1px 7px;
+  margin-right: 6px;
+  border-radius: var(--ds-r-control);
+  background: var(--ds-primary-soft);
+  color: var(--ds-primary);
+  font-family: var(--ds-font-mono);
+  font-size: 11px;
+  font-weight: 600;
+}
+.pal__bar--fail {
+  background: var(--ds-accent-soft);
+  color: var(--ds-accent-ink);
+}
+/* the three light grounds, shown adjacent so the separation is provable by eye */
+.grounds {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: var(--ds-space-lg);
+  border: 1px solid var(--ds-line);
+  border-radius: var(--ds-r-surface);
+  overflow: hidden;
+}
+.grounds__p {
+  padding: var(--ds-space-md);
+  min-height: 128px;
+  border-right: 1px solid var(--ds-hairline);
+}
+.grounds__p:last-child { border-right: 0; }
+.grounds__lab {
+  display: block;
+  font-family: var(--ds-font-mono);
+  font-size: 11px;
+  color: var(--ds-ink-soft);
+  margin-top: 4px;
+}
+.grounds__nm {
+  font-family: var(--ds-font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ds-ink);
+}
+/* the near-black anchor: a substantial, hard-edged dark specimen block.
+   dark-hero and dark-purple-chrome survive here, modernized. */
+.anchor {
+  position: relative;
+  margin-top: var(--ds-space-lg);
+  padding: var(--ds-space-xl) var(--ds-space-lg) var(--ds-space-lg);
+  background: var(--ds-primary-deep);
+  border-radius: 0;
+  border-top: 3px solid var(--ds-accent);
+  overflow: hidden;
+  isolation: isolate;
+}
+.anchor__wash {
+  position: absolute;
+  inset: -20% -10% auto;
+  height: 72%;
+  z-index: var(--ds-z-below);
+  background: var(--ds-glow-wash);
+  pointer-events: none;
+}
+.anchor__ttl {
+  margin: 0 0 var(--ds-space-md);
+  font-family: var(--ds-font-display);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  color: var(--ds-ink-heading);
+}
+.anchor__lead {
+  margin: 0 0 var(--ds-space-md);
+  max-width: 66ch;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--ds-ink-soft);
+}
+.anchor__rows {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: var(--ds-space-md);
+  margin-top: var(--ds-space-md);
+}
+.anchor__row {
+  padding-top: var(--ds-space-sm);
+  border-top: 1px solid var(--ds-line);
+}
+.anchor__nm {
+  display: block;
+  font-family: var(--ds-font-mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--ds-ink);
+}
+.anchor__val {
+  display: block;
+  margin-top: 3px;
+  font-family: var(--ds-font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 11.5px;
+  color: var(--ds-ink-soft);
+}
+.anchor__demo {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ds-ink);
+}
+.anchor__demo--accent { color: var(--ds-accent); }
+.anchor__demo--primary { color: var(--ds-primary); }
+.anchor__demo--soft { color: var(--ds-ink-soft); font-weight: 400; }
+.anchor__note {
+  margin: var(--ds-space-md) 0 0;
+  max-width: 66ch;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--ds-ink-soft);
+}
+.anchor__note b { color: var(--ds-ink); font-weight: 600; }
+
+/* ============================ 03 · TYPE ================================== */
+.ty__row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 208px;
+  gap: var(--ds-space-md);
+  align-items: end;
+  padding: var(--ds-space-md) 0;
+  border-bottom: 1px solid var(--ds-hairline);
+}
+.ty__met {
+  font-family: var(--ds-font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 11px;
+  line-height: 1.75;
+  color: var(--ds-ink-soft);
+  padding-bottom: 6px;
+}
+.ty__met b {
+  display: block;
+  color: var(--ds-accent-ink);
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.d1 {
+  margin: 0;
+  font-family: var(--ds-font-display);
+  font-weight: 800;
+  font-size: clamp(52px, 6.4vw, 84px);
+  line-height: .96;
+  letter-spacing: -.04em;
+  color: var(--ds-ink-heading);
+}
+.d2 {
+  margin: 0;
+  font-family: var(--ds-font-display);
+  font-weight: 800;
+  font-size: clamp(34px, 3.6vw, 46px);
+  line-height: 1;
+  letter-spacing: -.03em;
+  color: var(--ds-ink-heading);
+}
+.d3 {
+  margin: 0;
+  font-family: var(--ds-font-display);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  color: var(--ds-ink-heading);
+}
+.ty__hole {
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-md);
+  padding: var(--ds-space-sm) 0;
+  border-bottom: 1px solid var(--ds-hairline);
+  font-family: var(--ds-font-mono);
+  font-size: 11px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ds-primary);
+}
+.ty__hole::before,
+.ty__hole::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--ds-primary-soft);
+}
+.body-spec { font-size: 16px; line-height: 1.62; color: var(--ds-ink); margin: 0; }
+.body-spec + .body-spec { margin-top: var(--ds-space-sm); }
+.micro-spec {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ds-accent-ink);
+  margin: 0;
+}
+.num-spec {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--ds-space-sm);
+  margin: 0;
+}
+.num-spec__fig {
+  font-family: var(--ds-font-display);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums lining-nums;
+  font-size: clamp(48px, 5.4vw, 72px);
+  line-height: .9;
+  letter-spacing: -.045em;
+  color: var(--ds-ink-heading);
+}
+.num-spec__lab {
+  font-family: var(--ds-font-mono);
+  font-size: 12px;
+  color: var(--ds-ink-soft);
+}
+/* the cadence strip: twelve monthly assessments, tabular, and owned */
+.cadence {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: var(--ds-space-md) 0 0;
+  padding: 0;
+  list-style: none;
+}
+.cadence__m {
+  min-width: 34px;
+  padding: 5px 0;
+  text-align: center;
+  font-family: var(--ds-font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+  color: var(--ds-ink-soft);
+  border-top: 2px solid var(--ds-line);
+}
+.cadence__m--now {
+  color: var(--ds-primary);
+  font-weight: 600;
+  border-top-color: var(--ds-primary);
+}
+
+/* ============================ 04 · ATOMS ================================= */
+.at__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
+  gap: var(--ds-space-lg) var(--ds-space-md);
+}
+.at__group { min-width: 0; }
+.at__lab {
+  display: block;
+  margin: 0 0 var(--ds-space-sm);
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--ds-line);
+  font-family: var(--ds-font-mono);
+  font-size: 11px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ds-ink-soft);
+}
+.at__states { display: flex; flex-wrap: wrap; align-items: flex-start; gap: var(--ds-space-sm); }
+.at__state { display: flex; flex-direction: column; gap: 7px; }
+.at__statelab {
+  font-family: var(--ds-font-mono);
+  font-size: 10px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ds-ink-soft);
+}
+
+/* buttons: solid-square-precise. Named-property transitions only. */
+.at-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  border-radius: var(--ds-r-control);
+  font-family: var(--ds-font-body);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  line-height: 1;
+  cursor: pointer;
+  text-decoration: none;
+  background-clip: padding-box;
+  transition: background-color var(--ds-dur-fast) var(--ds-ease),
+              border-color var(--ds-dur-fast) var(--ds-ease),
+              color var(--ds-dur-fast) var(--ds-ease),
+              box-shadow var(--ds-dur) var(--ds-ease),
+              transform var(--ds-dur-fast) var(--ds-ease);
+}
+.at-btn svg { display: block; }
+.at-btn:focus-visible,
+.at-btn.is-focus {
+  outline: 2px solid var(--ds-ink-heading);
+  outline-offset: 3px;
+}
+.at-btn:active { transform: translateY(1px); }
+
+/* PRIMARY, the gold surface. This is where gold-cta-band survives in this
+   concept: gold is never a ground on the light sheet, but the CTA itself IS
+   the gold surface, carrying dark purple ink at 11.27:1. */
+.at-btn--gold {
+  background-color: var(--ds-accent);
+  border-color: var(--ds-accent-deep);
+  color: var(--ds-primary-deep);
+  box-shadow: var(--ds-shadow-rest);
+}
+.at-btn--gold:hover,
+.at-btn--gold.is-hover {
+  background-color: var(--ds-accent-light);
+  box-shadow: var(--ds-glow);
+}
+.at-btn--outline {
+  background-color: transparent;
+  border-color: var(--ds-primary);
+  color: var(--ds-primary);
+}
+.at-btn--outline:hover,
+.at-btn--outline.is-hover {
+  background-color: var(--ds-primary);
+  color: var(--ds-ink-on-dark);
+}
+.at-btn--ghost {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--ds-ink);
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 0;
+  box-shadow: inset 0 -1px 0 var(--ds-line);
+}
+.at-btn--ghost:hover,
+.at-btn--ghost.is-hover {
+  color: var(--ds-primary);
+  box-shadow: inset 0 -2px 0 var(--ds-primary);
+}
+.at-btn.is-disabled,
+.at-btn[disabled] {
+  opacity: var(--ds-opacity-disabled);
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* the gold CTA shown on the dark band with a gold hairline at the band's top
+   edge: the modernized gold-cta-band. One band, quiet, surrounded by space. */
+.goldband {
+  margin-top: var(--ds-space-md);
+  padding: var(--ds-space-md);
+  background: var(--ds-primary-deep);
+  border-top: 2px solid var(--ds-accent);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--ds-space-md);
+}
+.goldband__txt {
+  margin: 0;
+  font-family: var(--ds-font-mono);
+  font-size: 11px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ds-ink-soft);
+}
+.goldband .at-link { color: var(--ds-accent); }
+
+/* field: underline-only, the ruled-document input */
+.at-field { display: block; max-width: 320px; }
+.at-field__lab {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ds-accent-ink);
+}
+.at-field--second { margin-top: var(--ds-space-md); }
+.at-field__in {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  color: var(--ds-ink);
+  border: 0;
+  border-bottom: 2px solid var(--ds-ink-soft);
+  border-radius: 0;
+  font-family: var(--ds-font-body);
+  font-size: 16px;
+  line-height: 1.3;
+  transition: border-color var(--ds-dur-fast) var(--ds-ease),
+              box-shadow var(--ds-dur-fast) var(--ds-ease);
+}
+.at-field__in::placeholder { color: var(--ds-ink-soft); opacity: var(--ds-opacity-muted); }
+.at-field__in:focus-visible,
+.at-field__in.is-focus {
+  outline: 0;
+  border-bottom-color: var(--ds-primary);
+  box-shadow: 0 2px 0 0 var(--ds-primary);
+}
+
+/* surface: hairline outline, one restrained two-stop shadow, inset highlight */
+.at-surf {
+  padding: var(--ds-space-md);
+  background: var(--ds-bg-surface);
+  border: 1px solid var(--ds-line);
+  border-radius: var(--ds-r-surface);
+  box-shadow: var(--ds-shadow-card), var(--ds-inset-hi);
+  transition: box-shadow var(--ds-dur) var(--ds-ease),
+              transform var(--ds-dur) var(--ds-ease),
+              border-color var(--ds-dur) var(--ds-ease);
+}
+.at-surf:hover {
+  box-shadow: var(--ds-shadow-lift), var(--ds-inset-hi);
+  transform: translateY(-5px);
+  border-color: var(--ds-primary-soft);
+}
+.at-surf__hd {
+  margin: 0 0 6px;
+  font-family: var(--ds-font-display);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.2;
+  letter-spacing: -.015em;
+  color: var(--ds-ink-heading);
+}
+.at-surf__bd { margin: 0; font-size: 14px; line-height: 1.55; color: var(--ds-ink-soft); }
+
+/* tags, badges, pills */
+.at-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 11px;
+  border-radius: var(--ds-r-control);
+  font-family: var(--ds-font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.at-tag--soft { background: var(--ds-primary-soft); color: var(--ds-primary); }
+.at-tag--seal {
+  background: var(--ds-accent-soft);
+  color: var(--ds-accent-ink);
+  border: 1px solid var(--ds-accent);
+}
+.at-tag--pill {
+  border-radius: var(--ds-r-pill);
+  background: transparent;
+  border: 1px solid var(--ds-line);
+  color: var(--ds-ink-soft);
+  letter-spacing: .08em;
+}
+.at-tag--clause {
+  background: transparent;
+  border-left: 2px solid var(--ds-accent);
+  border-radius: 0;
+  padding-left: 9px;
+  font-family: var(--ds-font-mono);
+  letter-spacing: .04em;
+  color: var(--ds-ink);
+}
+.at-tag--right { margin-left: auto; }
+
+/* text link: underline treatment with a growing rule on hover */
+.at-link {
+  position: relative;
+  color: var(--ds-primary);
+  font-weight: 600;
+  text-decoration: none;
+  padding-bottom: 3px;
+  background-image: linear-gradient(var(--ds-line), var(--ds-line));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 1px;
+}
+.at-link::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 100%; height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--ds-dur) var(--ds-ease);
+}
+.at-link:hover::after,
+.at-link.is-hover::after { transform: scaleX(1); }
+.at-link:focus-visible { outline: 2px solid var(--ds-ink-heading); outline-offset: 3px; }
+
+/* ============================ 05 · MOTIF ================================= */
+.mo__draw {
+  padding: var(--ds-space-lg) var(--ds-space-md);
+  background: var(--ds-bg-surface-2);
+  border: 1px solid var(--ds-line);
+  border-radius: var(--ds-r-surface);
+  box-shadow: var(--ds-shadow-card), var(--ds-inset-hi);
+}
+.mo__draw svg { display: block; width: 100%; height: auto; }
+.mo__key {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(196px, 1fr));
+  gap: var(--ds-space-md);
+  margin: var(--ds-space-md) 0 0;
+  padding: 0;
+  list-style: none;
+}
+.mo__keyrow { display: flex; gap: 10px; align-items: flex-start; }
+.mo__sw { width: 22px; height: 3px; margin-top: 8px; flex: none; background: var(--ds-line); }
+.mo__sw--gold { background: var(--ds-accent); }
+.mo__sw--purple { background: var(--ds-primary); height: 12px; width: 3px; margin-top: 3px; }
+.mo__keytxt { font-size: 12.5px; line-height: 1.5; color: var(--ds-ink-soft); }
+.mo__keytxt b {
+  display: block;
+  color: var(--ds-ink);
+  font-weight: 600;
+  font-family: var(--ds-font-mono);
+  font-size: 11.5px;
+}
+/* the live CSS build of the same motif, at working scale */
+.mo__live { margin-top: var(--ds-space-lg); }
+.mo__rule { display: flex; align-items: flex-end; gap: 0; height: 34px; margin-top: var(--ds-space-sm); }
+.mo__rule--small { height: 26px; }
+.mo__tick {
+  flex: 1;
+  height: 11px;
+  border-left: 1px solid var(--ds-line);
+  border-bottom: 1px solid var(--ds-ink-heading);
+}
+.mo__tick--now {
+  height: 30px;
+  border-left: 2px solid var(--ds-primary);
+  position: relative;
+}
+.mo__tick--now::before {
+  content: "";
+  position: absolute;
+  left: -3px; top: -4px;
+  width: 7px; height: 7px;
+  background: var(--ds-primary);
+}
+.mo__term {
+  flex: none;
+  width: 54px;
+  height: 3px;
+  background: var(--ds-accent);
+  position: relative;
+}
+.mo__term::after {
+  content: "";
+  position: absolute;
+  right: 0; top: -4px;
+  width: 11px; height: 11px;
+  background: var(--ds-accent);
+}
+
+/* ============================ 06 · VIGNETTE ============================== */
+.vg__frame {
+  position: relative;
+  max-width: 460px;
+  padding: var(--ds-space-sm);
+  background: var(--ds-bg-warm);
+  border: 1px dashed var(--ds-line);
+  border-radius: var(--ds-r-surface);
+}
+.vg__panel {
+  max-height: 480px;
+  padding: var(--ds-space-md);
+  background: var(--ds-bg-surface);
+  border: 1px solid var(--ds-line);
+  border-radius: var(--ds-r-surface);
+  box-shadow: var(--ds-shadow-card), var(--ds-inset-hi);
+  overflow: hidden;
+}
+.vg__top { display: flex; align-items: center; gap: var(--ds-space-sm); }
+.vg__portrait {
+  width: 60px; height: 60px;
+  flex: none;
+  object-fit: cover;
+  object-position: 50% 22%;
+  border-radius: var(--ds-r-control);
+  border: 1px solid var(--ds-line);
+  background: var(--ds-bg-surface-2);
+  filter: grayscale(1) contrast(1.06);
+}
+.vg__name {
+  margin: 0;
+  font-family: var(--ds-font-display);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: -.01em;
+  color: var(--ds-ink-heading);
+}
+.vg__role {
+  margin: 3px 0 0;
+  font-family: var(--ds-font-mono);
+  font-size: 11px;
+  color: var(--ds-ink-soft);
+}
+.vg__copy {
+  margin: var(--ds-space-sm) 0 0;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--ds-ink);
+}
+.vg__copy--soft { color: var(--ds-ink-soft); font-size: 12.5px; }
+.vg__cap {
+  margin: var(--ds-space-sm) 0 0;
+  font-family: var(--ds-font-mono);
+  font-size: 10.5px;
+  line-height: 1.5;
+  color: var(--ds-ink-soft);
+}
+.vg__foot {
+  display: flex;
+  align-items: center;
+  gap: var(--ds-space-sm);
+  margin-top: var(--ds-space-sm);
+  flex-wrap: wrap;
+}
+
+/* ============================ colophon =================================== */
+.sheet__foot {
+  display: grid;
+  grid-template-columns: var(--axis) minmax(0, 1fr);
+  gap: 0 var(--ds-space-md);
+  padding: var(--ds-section-py) 0 0;
+}
+.colo__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+  gap: var(--ds-space-lg) var(--ds-space-md);
+  margin-top: var(--ds-space-md);
+}
+.colo__group { min-width: 0; }
+.colo__list { margin: var(--ds-space-xs) 0 0; padding: 0; list-style: none; }
+.colo__list li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--ds-hairline);
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ds-ink-soft);
+}
+.colo__list li b { color: var(--ds-ink); font-weight: 600; }
+.colo__owed {
+  margin-top: var(--ds-space-sm);
+  padding: var(--ds-space-sm) var(--ds-space-md);
+  background: var(--ds-accent-soft);
+  border-left: 3px solid var(--ds-accent);
+  border-radius: 0 var(--ds-r-control) var(--ds-r-control) 0;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--ds-ink);
+}
+.colo__owed b {
+  font-family: var(--ds-font-mono);
+  font-size: 11.5px;
+  color: var(--ds-accent-ink);
+}
+
+/* ---- motion: ONE gesture for the whole sheet ----------------------------- */
+/* a short fade plus a small rise on one curve, with a sibling stagger. Nothing
+   is hidden unless JS is present, so a no-JS reader loses nothing. */
+.js-rise .rise {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--ds-dur-slow) var(--ds-ease-out),
+              transform var(--ds-dur-slow) var(--ds-ease-out);
+  transition-delay: calc(var(--i, 0) * 80ms);
+}
+.js-rise .rise.in-view { opacity: 1; transform: none; }
+
+@media (max-width: 900px) {
+  .sheet { --axis: 60px; }
+  .wm__slot--wide { grid-column: auto; }
+  .wm__row { flex-wrap: wrap; }
+  .wm__row .wm__div { display: none; }
+  .ty__row { grid-template-columns: minmax(0, 1fr); align-items: start; }
+  .pal__head { display: none; }
+  .pal__row { grid-template-columns: 64px minmax(0, 1fr); grid-template-areas: "chip role" "chip hex" "meas meas"; }
+  .pal__chip { grid-area: chip; height: 100%; min-height: 46px; }
+  .pal__role { grid-area: role; }
+  .pal__hex { grid-area: hex; }
+  .pal__meas { grid-area: meas; }
+  .grounds { grid-template-columns: minmax(0, 1fr); }
+  .grounds__p { border-right: 0; border-bottom: 1px solid var(--ds-hairline); }
+}
+@media (max-width: 560px) {
+  .sheet { --axis: 0px; }
+  .axis { display: none; }
+  .sheet__head, .spec, .sheet__foot { grid-template-columns: minmax(0, 1fr); }
+  .spec__no { display: flex; align-items: center; gap: var(--ds-space-sm); padding-bottom: var(--ds-space-sm); }
+  .spec__tick { margin-top: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sheet *, .sheet *::before, .sheet *::after {
+    animation-duration: 1ms;
+    animation-iteration-count: 1;
+    transition-duration: 1ms;
+  }
+  .js-rise .rise { opacity: 1; transform: none; }
+}
+</style>
+</head>
+<body>
+
+<main class="sheet">
+  <div class="sheet__grain" aria-hidden="true"></div>
+  <div class="axis" aria-hidden="true"></div>
+
+  <!-- TITLE BLOCK. The only chrome an identity sheet carries. Not a hero. -->
+  <div class="sheet__head">
+    <div class="sheet__badge">Concept<br>A / 3</div>
+    <div>
+      <p class="eyebrow">Brand identity sheet</p>
+      <h1 class="sheet__title">The Instrument</h1>
+      <p class="sheet__thesis">The guarantee is a contract clause, so the identity is set like a legal instrument: ruled, precise, measured. The wow lives in the precision, not the flourish.</p>
+      <hr class="hr-gold">
+      <ul class="sheet__meta">
+        <li class="sheet__metaitem"><b>First Page SEO Guarantee</b> &middot; seoguarantee.com</li>
+        <li class="sheet__metaitem">James Sutton IV, founder, since <b>2015</b></li>
+        <li class="sheet__metaitem">Las Vegas, NV</li>
+        <li class="sheet__metaitem">Identity round <b>P8</b></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- pick: TYPOGRAPHY-PAIRINGS.md #26 Montserrat + Hind (00-globals/typography/menu.md) | considered: #39 Space Grotesk + Inter, #25 Syne + DM Sans | why: Montserrat is this brand's own MEASURED display face and entry twenty-six is the only pairing in the catalog that puts it in the display role, which is what lets the lockup be TYPESET rather than traced, since the largest logo raster this client owns is 403px wide and cannot render a retina lockup at all; the body face is tuned off entry thirty-nine per that catalog's own "when no library entry matches" clause because Hind reads warm-humanist against a legal instrument, and the heavy 800 compression at -0.035em is what supplies the WOW bar's display-scale contrast (E2 oversized, negative-tracked, near-1.0 leading) from a single face rather than a second one. -->
+  <section class="spec rise" style="--i:0">
+    <div class="spec__no"><span class="spec__num">01</span><span class="spec__tick" aria-hidden="true"></span></div>
+    <div class="spec__body">
+      <div class="spec__hd">
+        <p class="eyebrow">Clause one</p>
+        <h2 class="spec__title">Wordmark lockups</h2>
+        <p class="lead readw">Three lockups, each typeset in the display face. The gold rule under the name is not decoration: it is the first page line, the thing the contract names. It returns as the terminus of the signature motif in clause five.</p>
+      </div>
+
+      <div class="wm__grid">
+        <div class="wm__slot wm__slot--wide">
+          <span class="wm__lock">
+            <span class="wm__row">
+              <span>
+                <span class="wm__first">First Page</span>
+                <span class="wm__rule" aria-hidden="true"></span>
+              </span>
+              <span class="wm__div" aria-hidden="true"></span>
+              <span class="wm__sub">SEO Guarantee</span>
+            </span>
+          </span>
+          <span class="wm__slotlab">primary horizontal &middot; on paper</span>
+        </div>
+
+        <div class="wm__slot wm__slot--wide wm--dark">
+          <span class="wm__lock">
+            <span class="wm__row">
+              <span>
+                <span class="wm__first">First Page</span>
+                <span class="wm__rule" aria-hidden="true"></span>
+              </span>
+              <span class="wm__div" aria-hidden="true"></span>
+              <span class="wm__sub">SEO Guarantee</span>
+            </span>
+          </span>
+          <span class="wm__slotlab">primary horizontal &middot; on the near-black ground</span>
+        </div>
+
+        <div class="wm__slot">
+          <span class="wm__lock">
+            <span class="wm__first">First Page</span>
+            <span class="wm__rule" aria-hidden="true"></span>
+            <span class="wm__sub">SEO Guarantee</span>
+          </span>
+          <span class="wm__slotlab">stacked &middot; on paper</span>
+        </div>
+
+        <div class="wm__slot wm--dark">
+          <span class="wm__lock">
+            <span class="wm__first">First Page</span>
+            <span class="wm__rule" aria-hidden="true"></span>
+            <span class="wm__sub">SEO Guarantee</span>
+          </span>
+          <span class="wm__slotlab">stacked &middot; on the near-black ground</span>
+        </div>
+
+        <div class="wm__slot">
+          <span class="wm__mark">
+            <span class="wm__markletters">FP</span>
+            <span class="wm__markrule" aria-hidden="true"></span>
+          </span>
+          <span class="wm__slotlab">short mark &middot; on paper &middot; minimum 40&nbsp;px square</span>
+        </div>
+
+        <div class="wm__slot wm--dark">
+          <span class="wm__mark">
+            <span class="wm__markletters">FP</span>
+            <span class="wm__markrule" aria-hidden="true"></span>
+          </span>
+          <span class="wm__slotlab">short mark &middot; on the near-black ground</span>
+        </div>
+
+        <div class="wm__slot">
+          <span class="wm__clear">
+            <span class="wm__clearlab">clear space</span>
+            <span class="wm__lock">
+              <span class="wm__first">First Page</span>
+              <span class="wm__rule" aria-hidden="true"></span>
+              <span class="wm__sub">SEO Guarantee</span>
+            </span>
+          </span>
+          <span class="wm__slotlab">clear space equals one cap height of the F, all four sides</span>
+        </div>
+
+        <div class="wm__slot">
+          <span class="wm__min">
+            <span class="wm__minbar">
+              <span class="wm__first">First Page</span>
+              <span class="wm__rule" aria-hidden="true"></span>
+              <span class="wm__sub">SEO Guarantee</span>
+              <span class="wm__dim">
+                <span class="wm__dimrule" aria-hidden="true"></span>
+                <span>132 px</span>
+              </span>
+            </span>
+          </span>
+          <span class="wm__slotlab">minimum reproduction width &middot; below this, use the short mark</span>
+        </div>
+      </div>
+
+      <p class="note readw"><b>LOGO-VECTOR: NEEDS-OWNER.</b> No vector logo exists in any supplied or scraped source, and the largest raster on disk is 403&nbsp;px wide, so every lockup above is typeset in Montserrat rather than placed. When the owner supplies an <span class="mono">.ai</span>, <span class="mono">.svg</span> or <span class="mono">.eps</span>, these lockups are the specification the vector gets drawn to.</p>
+    </div>
+  </section>
+
+  <!-- pick: COLOR-THEORY-PRESETS.md #60 Premium Consulting Burgundy + Gold (00-globals/color/menu.md) | considered: #29 Emerald + Gold, #9 Midnight + Champagne | why: the palette is NOT a free pick here, because purple 7f2199 and gold ffba00 are measured facts of this client's live site, so this cites the closest family for its DERIVATION DISCIPLINE only, per that catalog's own "when no library entry matches" route: entry sixty is the one entry whose token shape is exactly one deep chromatic primary plus a SEPARATE near-black primary-deep plus a warm gold accent over light grounds, which is this brand's shape with different hexes; taking the discipline rather than the hexes is what lets every derived tint here carry a ratio measured this pass, and it satisfies the pattern library's TOP-12 first rule (one accent over a committed neutral, ink tinted and never pure black). -->
+  <section class="spec rise" style="--i:1">
+    <div class="spec__no"><span class="spec__num">02</span><span class="spec__tick" aria-hidden="true"></span></div>
+    <div class="spec__body">
+      <div class="spec__hd">
+        <p class="eyebrow">Clause two</p>
+        <h2 class="spec__title">Palette, by role</h2>
+        <p class="lead readw">Seventeen colour roles. Every ratio printed here was computed this pass against these exact hexes with the WCAG relative-luminance formula, and against the ground the role is actually used on. Where a role fails, the register says so rather than omitting it.</p>
+        <p class="note readw"><b>The one documented exception to the fixed measure:</b> this register runs the full sheet width. A register is not prose. The exception exists so that the measure reads as a decision everywhere else.</p>
+      </div>
+
+      <div class="pal spec__wide">
+        <div class="pal__head">
+          <span class="caps">Swatch</span>
+          <span class="caps">Role</span>
+          <span class="caps">Value</span>
+          <span class="caps">Measured, against the ground it is used on</span>
+        </div>
+
+        <p class="pal__group caps">Brand: purple, the structural accent</p>
+
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-primary)"></span>
+          <span class="pal__role">--ds-primary</span>
+          <span class="pal__hex">#7f2199</span>
+          <span class="pal__meas"><span class="pal__bar">8.14:1</span>on paper. White ink painted on it: <b>7.42:1</b>. CTA surfaces, rules, eyebrows, links, icons. Barred from body copy by brand rule even though the maths passes.</span>
+        </div>
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-primary-deep)"></span>
+          <span class="pal__role">--ds-primary-deep</span>
+          <span class="pal__hex">#1a0426</span>
+          <span class="pal__meas"><span class="pal__bar">19.28:1</span>against paper. <b>The dark ground</b>, not a deeper purple. Ink on dark reads <b>17.59:1</b> on it. It is also the heading ink on light.</span>
+        </div>
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-primary-soft)"></span>
+          <span class="pal__role">--ds-primary-soft</span>
+          <span class="pal__hex">#f1e4f5</span>
+          <span class="pal__meas"><span class="pal__bar">5.65:1</span>accent ink on it. Purple reads <b>6.65:1</b> on it, body ink <b>14.33:1</b>. The soft badge ground.</span>
+        </div>
+
+        <p class="pal__group caps">Accent: gold, the punctuation</p>
+
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-accent)"></span>
+          <span class="pal__role">--ds-accent</span>
+          <span class="pal__hex">#ffba00</span>
+          <span class="pal__meas"><span class="pal__bar pal__bar--fail">1.71:1</span>on paper, a hard fail as text on light, and it misses the 3:1 large-text floor too. So gold is never text on a light ground anywhere in this system. As a <b>surface</b> it is excellent: dark purple ink on it reads <b>11.27:1</b>.</span>
+        </div>
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-accent-ink)"></span>
+          <span class="pal__role">--ds-accent-ink</span>
+          <span class="pal__hex">#7a5200</span>
+          <span class="pal__meas"><span class="pal__bar">6.92:1</span>paper &middot; <b>6.02:1</b> tinted &middot; <b>6.31:1</b> warm &middot; <b>6.12:1</b> on the gold tint. Small gold-family text on light lives here, and only here.</span>
+        </div>
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-accent-soft)"></span>
+          <span class="pal__role">--ds-accent-soft</span>
+          <span class="pal__hex">#fdf0d2</span>
+          <span class="pal__meas"><span class="pal__bar">6.12:1</span>accent ink on it. The seal badge ground and the owed-item callout.</span>
+        </div>
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-accent-deep)"></span>
+          <span class="pal__role">--ds-accent-deep</span>
+          <span class="pal__hex">#6f4a00</span>
+          <span class="pal__meas"><span class="pal__bar">7.91:1</span>paper &middot; <b>6.88:1</b> tinted &middot; <b>7.22:1</b> warm. Ink on dark painted on it: <b>7.21:1</b>. A <b>surface</b> role, distinct from the text role above.</span>
+        </div>
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-accent-light)"></span>
+          <span class="pal__role">--ds-accent-light</span>
+          <span class="pal__hex">#ffc933</span>
+          <span class="pal__meas"><span class="pal__bar">12.54:1</span>on the dark ground &middot; <b>11.41:1</b> on body ink. Gold as foreground, dark grounds only. A modest lift; bleaching it to cream would lose the brand.</span>
+        </div>
+
+        <p class="pal__group caps">Grounds: three, and they are provably different</p>
+
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-bg-surface)"></span>
+          <span class="pal__role">--ds-bg-surface</span>
+          <span class="pal__hex">#ffffff</span>
+          <span class="pal__meas">Paper. Pure white is deliberate: the owner asked for a majority white feel and the live body measures white. The never-pure rule is met at system level instead, because the two grounds below carry a real tint, and the ink rule is kept absolute.</span>
+        </div>
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-bg-surface-2)"></span>
+          <span class="pal__role">--ds-bg-surface-2</span>
+          <span class="pal__hex">#f3edf8</span>
+          <span class="pal__meas"><span class="pal__bar">1.15:1</span>separation from paper. Purple tinted. Panels, the motif stage, ruled registers.</span>
+        </div>
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-bg-warm)"></span>
+          <span class="pal__role">--ds-bg-warm</span>
+          <span class="pal__hex">#fbf4e4</span>
+          <span class="pal__meas"><span class="pal__bar">1.10:1</span>from paper &middot; <b>1.05:1</b> from the tinted ground. Gold tinted, for a specimen mount.</span>
+        </div>
+
+        <p class="pal__group caps">Ink, line and scrim</p>
+
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-ink)"></span>
+          <span class="pal__role">--ds-ink</span>
+          <span class="pal__hex">#241033</span>
+          <span class="pal__meas"><span class="pal__bar">17.54:1</span>paper &middot; <b>15.27:1</b> tinted &middot; <b>16.01:1</b> warm. A purple-tinted near-black, never pure black.</span>
+        </div>
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-ink-heading)"></span>
+          <span class="pal__role">--ds-ink-heading</span>
+          <span class="pal__hex">var(--ds-primary-deep)</span>
+          <span class="pal__meas"><span class="pal__bar">19.28:1</span>on paper. Theme polarity is LIGHT, so heading ink resolves to the dark ground. It also drives every focus ring, which is why the ring stays visible on paper, on gold and on the dark band.</span>
+        </div>
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-ink-soft)"></span>
+          <span class="pal__role">--ds-ink-soft</span>
+          <span class="pal__hex">#5b4a66</span>
+          <span class="pal__meas"><span class="pal__bar">8.03:1</span>paper &middot; <b>6.99:1</b> tinted &middot; <b>7.32:1</b> warm. Secondary text, and the control boundary on the underline field, so that edge clears the non-text floor with room to spare.</span>
+        </div>
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-line)"></span>
+          <span class="pal__role">--ds-line</span>
+          <span class="pal__hex">#c9bcd4</span>
+          <span class="pal__meas"><span class="pal__bar">1.81:1</span>against paper. A rule, never text, and in this concept the rules are the design.</span>
+        </div>
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-ink-on-dark)"></span>
+          <span class="pal__role">--ds-ink-on-dark</span>
+          <span class="pal__hex">#f7f3fa</span>
+          <span class="pal__meas"><span class="pal__bar">17.59:1</span>on the dark ground &middot; <b>16.42:1</b> on the dark panel ground.</span>
+        </div>
+        <div class="pal__row">
+          <span class="pal__chip" style="background: var(--ds-scrim)"></span>
+          <span class="pal__role">--ds-scrim</span>
+          <span class="pal__hex">rgba(26,4,38,.62)</span>
+          <span class="pal__meas">A brand-tinted legibility scrim for any photograph. Shown here over paper so its true translucency is visible.</span>
+        </div>
+      </div>
+
+      <div class="grounds">
+        <div class="grounds__p" style="background: var(--ds-bg-surface)">
+          <span class="grounds__nm">--ds-bg-surface</span>
+          <span class="grounds__lab">#ffffff &middot; paper</span>
+        </div>
+        <div class="grounds__p" style="background: var(--ds-bg-surface-2)">
+          <span class="grounds__nm">--ds-bg-surface-2</span>
+          <span class="grounds__lab">#f3edf8 &middot; 1.15:1 from paper</span>
+        </div>
+        <div class="grounds__p" style="background: var(--ds-bg-warm)">
+          <span class="grounds__nm">--ds-bg-warm</span>
+          <span class="grounds__lab">#fbf4e4 &middot; 1.10:1 from paper</span>
+        </div>
+      </div>
+
+      <div class="anchor surface-dark">
+        <div class="anchor__wash" aria-hidden="true"></div>
+        <p class="eyebrow">The attested ground</p>
+        <h3 class="anchor__ttl">Dark purple chrome, modernized into a ground</h3>
+        <p class="anchor__lead">The live site's structural dark purple measures <span class="mono">#4b0670</span>. It clears contrast at 13.47:1, but it is a mid purple rather than a ground, and that is exactly why the old chrome reads dated. Pushed down to a purple-tinted near-black it becomes an anchor: the same brand, quieter and deeper. This block is hard-edged by rule, with no radius softening it, and it carries a gold hairline at its top edge.</p>
+        <div class="anchor__rows">
+          <div class="anchor__row">
+            <span class="anchor__nm">--ds-ink</span>
+            <span class="anchor__val">#f7f3fa &middot; 17.59:1</span>
+            <span class="anchor__demo">Body ink on the dark ground</span>
+          </div>
+          <div class="anchor__row">
+            <span class="anchor__nm">--ds-ink-soft</span>
+            <span class="anchor__val">#bcaac9 &middot; 8.93:1</span>
+            <span class="anchor__demo anchor__demo--soft">Secondary ink on the dark ground</span>
+          </div>
+          <div class="anchor__row">
+            <span class="anchor__nm">--ds-primary</span>
+            <span class="anchor__val">#c77ad8 &middot; 6.61:1</span>
+            <span class="anchor__demo anchor__demo--primary">Purple, lightened for dark</span>
+          </div>
+          <div class="anchor__row">
+            <span class="anchor__nm">--ds-accent</span>
+            <span class="anchor__val">#ffc933 &middot; 12.54:1</span>
+            <span class="anchor__demo anchor__demo--accent">Gold, as foreground</span>
+          </div>
+        </div>
+        <p class="anchor__note">The secondary brand purple <span class="mono">#a13cbc</span> measures <b>3.57:1</b> on this ground and fails as small text. That is the whole reason the purple is lightened here and darkened on light: one hue, two measured roles, neither of them guessed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- pick: SURFACE-PATTERNS.md #28 Hairline-with-eyebrow-label (numbered) (00-globals/surface/menu.md §4) | considered: #27 Hairline-full-width, #32 Numbered-step | why: the type ladder has to read as a SET document rather than as a font sampler, and the numbered-eyebrow-plus-rule device is what turns each step into a clause line while leaving the specimen itself untouched, where #27 is a bare rule with no wayfinding and #32 puts an 80px numeral column beside every row that would fight the sheet's own left axis; it also delivers TOP-12 #10 (micro-caps eyebrow at .12em with a short accent rule) at zero extra ink, which is the cheapest way this concept buys editorial rhythm without adding a second face. -->
+  <section class="spec rise" style="--i:2">
+    <div class="spec__no"><span class="spec__num">03</span><span class="spec__tick" aria-hidden="true"></span></div>
+    <div class="spec__body">
+      <div class="spec__hd">
+        <p class="eyebrow">Clause three</p>
+        <h2 class="spec__title">Type, as set</h2>
+        <p class="lead readw">Montserrat at 700 and 800, pushed large and compressed. One display face, one body face, one set of numerals. The ladder carries a deliberate hole: there is nothing between the sub-display step and body, so emphasis inside copy is carried by ink weight rather than by an intermediate size.</p>
+      </div>
+
+      <div class="ty__row">
+        <p class="d1">We do not publish a success rate.</p>
+        <p class="ty__met"><b>Display</b>Montserrat 800<br>clamp(52px, 6.4vw, 84px)<br>tracking -0.04em<br>leading 0.96<br>84px at 1440</p>
+      </div>
+
+      <div class="ty__row">
+        <p class="d2">Everything Else Is Complementary</p>
+        <p class="ty__met"><b>Section</b>Montserrat 800<br>clamp(34px, 3.6vw, 46px)<br>tracking -0.03em<br>leading 1.00</p>
+      </div>
+
+      <div class="ty__row">
+        <p class="d3">Assessed month by month, against the key phrases your contract names</p>
+        <p class="ty__met"><b>Sub-display</b>Montserrat 700<br>26px<br>tracking -0.02em<br>leading 1.10</p>
+      </div>
+
+      <p class="ty__hole">the hole: nothing between 26 px and 16 px, by design</p>
+
+      <div class="ty__row">
+        <div>
+          <p class="micro-spec">Clause 04 &middot; the guarantee</p>
+          <p class="body-spec readw" style="margin-top: var(--ds-space-sm)">We guarantee first page for the key phrases named in your contract, or you don't pay.</p>
+          <p class="body-spec readw">Any month we're not delivering what your contract says, we keep working and your billing stops.</p>
+          <p class="note readw">These two sentences travel together, always, on the same surface. The first alone names a remedy it does not describe.</p>
+        </div>
+        <p class="ty__met"><b>Body and eyebrow</b>Inter 400 / 16px<br>leading 1.62<br>measure 66ch<br><br>eyebrow Inter 600<br>11px / .12em caps</p>
+      </div>
+
+      <div class="ty__row">
+        <div>
+          <p class="num-spec">
+            <span class="num-spec__fig">4.9</span>
+            <span class="num-spec__lab">from 35 Google reviews</span>
+          </p>
+          <ul class="cadence">
+            <li class="cadence__m">01</li>
+            <li class="cadence__m">02</li>
+            <li class="cadence__m">03</li>
+            <li class="cadence__m cadence__m--now">04</li>
+            <li class="cadence__m">05</li>
+            <li class="cadence__m">06</li>
+            <li class="cadence__m">07</li>
+            <li class="cadence__m">08</li>
+            <li class="cadence__m">09</li>
+            <li class="cadence__m">10</li>
+            <li class="cadence__m">11</li>
+            <li class="cadence__m">12</li>
+          </ul>
+          <p class="note readw">The oversized-numeral craft survives; what the numeral says changes. Only owned numbers appear at this size: the rating with its count, the year 2015, and the monthly cadence itself. No percentage, no aggregate total, no success rate, no metro count.</p>
+        </div>
+        <p class="ty__met"><b>Numerals</b>Montserrat 800<br>clamp(48px, 5.4vw, 72px)<br>tabular, lining<br>tracking -0.045em<br><br>labels: system mono<br>tabular &middot; zero extra bytes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- pick: SURFACE-PATTERNS.md #17 Solid-square-precise (00-globals/surface/menu.md §3) | considered: #18 Solid-pill-modern-marketing, #20 Underline-only | why: a contractual instrument should not have a friendly pill for a signature button, because the small-radius precise block reads as a control ON a document, which is the register that makes the guarantee believable; #18's pill would import the direct-response feel C7 tells this build to leave behind, and #20 under-affords the one primary action on the surface. The atom set below then earns the WOW bar's detail clause by shipping rest, hover AND a visible focus ring side by side as static specimens, since an outline removed with no replacement is both a polish failure and an accessibility defect. -->
+  <section class="spec rise" style="--i:3">
+    <div class="spec__no"><span class="spec__num">04</span><span class="spec__tick" aria-hidden="true"></span></div>
+    <div class="spec__body">
+      <div class="spec__hd">
+        <p class="eyebrow">Clause four</p>
+        <h2 class="spec__title">Interface atoms</h2>
+        <p class="lead readw">One radius language across the whole set: 4&nbsp;px on controls, 8&nbsp;px on surfaces, full round reserved for a single meta pill. Every state is shown, including focus. Hover transitions name their properties; nothing animates on <span class="mono">all</span>, and nothing states a hover by dropping opacity.</p>
+      </div>
+
+      <div class="at__grid">
+        <div class="at__group">
+          <span class="at__lab">Primary: the gold surface</span>
+          <div class="at__states">
+            <span class="at__state">
+              <button type="button" class="at-btn at-btn--gold">Book a consultation</button>
+              <span class="at__statelab">rest</span>
+            </span>
+            <span class="at__state">
+              <button type="button" class="at-btn at-btn--gold is-hover">Book a consultation</button>
+              <span class="at__statelab">hover</span>
+            </span>
+            <span class="at__state">
+              <button type="button" class="at-btn at-btn--gold is-focus">Book a consultation</button>
+              <span class="at__statelab">focus</span>
+            </span>
+          </div>
+          <p class="note">Dark purple ink on gold, measured <b>11.27:1</b>. White on gold measures 1.71:1 and never ships: the live site's white-on-gold band is the trap this rule exists to close.</p>
+
+          <!-- pick: CTA-PATTERNS.md #11 Full-width band CTA (10-structure-library/sections/cta/menu.md) | considered: #4 Phone-pill CTA, #7 Multi-CTA cluster | why: entry eleven is the structural ancestor of the live site's gold band, so keeping it is HOW the gold-cta-band signature survives instead of being deleted, and the modernization is quantity and quietness: ONE band, a dark ground, a single gold hairline at the top edge and a single primary inside it, where the live page ran a saturated full-bleed gold field. #4 is tempting because the owner set CALL US as a label, so it is kept as the secondary here rather than the primary and the surface still carries exactly one primary, which #7's cluster would break outright. -->
+          <div class="goldband">
+            <p class="goldband__txt">gold-cta-band, modernized</p>
+            <button type="button" class="at-btn at-btn--gold">
+              Book a consultation
+              <svg width="13" height="10" viewBox="0 0 13 10" fill="none" aria-hidden="true"><path d="M8 1l4 4-4 4M12 5H0" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>
+            </button>
+            <a class="at-link" href="tel:+17024207272">CALL US</a>
+          </div>
+        </div>
+
+        <div class="at__group">
+          <span class="at__lab">Secondary and tertiary</span>
+          <div class="at__states">
+            <span class="at__state">
+              <button type="button" class="at-btn at-btn--outline">Read the terms</button>
+              <span class="at__statelab">rest</span>
+            </span>
+            <span class="at__state">
+              <button type="button" class="at-btn at-btn--outline is-hover">Read the terms</button>
+              <span class="at__statelab">hover</span>
+            </span>
+            <span class="at__state">
+              <button type="button" class="at-btn at-btn--outline is-focus">Read the terms</button>
+              <span class="at__statelab">focus</span>
+            </span>
+          </div>
+          <div class="at__states">
+            <span class="at__state">
+              <button type="button" class="at-btn at-btn--ghost">How the mechanic works</button>
+              <span class="at__statelab">ghost, rest</span>
+            </span>
+            <span class="at__state">
+              <button type="button" class="at-btn at-btn--ghost is-hover">How the mechanic works</button>
+              <span class="at__statelab">ghost, hover</span>
+            </span>
+          </div>
+          <div class="at__states">
+            <span class="at__state">
+              <button type="button" class="at-btn at-btn--outline is-disabled" disabled>Book a consultation</button>
+              <span class="at__statelab">disabled</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- pick: SURFACE-PATTERNS.md #40 Underline-only (00-globals/surface/menu.md §6) | considered: #39 Boxed-default, #43 Pill-input | why: an underline-only field is literally a ruled line on a document, which is the one form treatment that BELONGS to this concept rather than being borrowed into it, and setting that rule in --ds-ink-soft at 8.03:1 keeps the field edge far above the non-text floor a faint hairline box would sit under; #39's boxed field would add a competing rectangle language to a sheet whose whole geometry is rules, and #43's pill collides with the 4px control radius locked one atom above. -->
+        <div class="at__group">
+          <span class="at__lab">Field</span>
+          <label class="at-field">
+            <span class="at-field__lab">Business website</span>
+            <input class="at-field__in" type="text" placeholder="example.com">
+          </label>
+          <label class="at-field at-field--second">
+            <span class="at-field__lab">Business website, focus</span>
+            <input class="at-field__in is-focus" type="text" value="seoguarantee.com">
+          </label>
+          <p class="note">Focus lands on the rule itself: it turns purple and thickens. The label keeps its own colour, so the field never depends on the ring alone.</p>
+        </div>
+
+        <!-- pick: SURFACE-PATTERNS.md #9 Hairline-outline (00-globals/surface/menu.md §2) | considered: #10 Soft-shadow-lift, #14 Outlined-thick-editorial | why: a card in an instrument is a clause box, so its identity has to come from the rule and the typography rather than from float, and a hairline outline gives exactly that; the WOW bar is then met by pairing it with ONE ink-tinted two-stop shadow plus the inset top-highlight instead of by deepening the shadow, which is what keeps flat-and-ruled from tipping into unstyled. #10 alone would make every surface hover-y and generic, and #14's 2px brutalist border would shout in a register that must read measured. -->
+        <div class="at__group">
+          <span class="at__lab">Surface</span>
+          <div class="at-surf">
+            <p class="at-surf__hd">Clause 4.2, assessment</p>
+            <p class="at-surf__bd">Each month is assessed against the key phrases your contract names. Hover lifts the surface five pixels and deepens the shadow; the hairline warms. Nothing scales, nothing rotates.</p>
+          </div>
+          <p class="note">Two-stop, purple-tinted shadow. Never a single flat drop, never a pure-black rgba.</p>
+        </div>
+
+        <div class="at__group">
+          <span class="at__lab">Tags, badges, pills</span>
+          <div class="at__states">
+            <span class="at-tag at-tag--soft">Full Suite</span>
+            <span class="at-tag at-tag--seal">
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1 6.2l3.2 3.2L11 2.6" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+              Attested
+            </span>
+            <span class="at-tag at-tag--pill">Las Vegas</span>
+            <span class="at-tag at-tag--clause">CL 4.2</span>
+          </div>
+          <p class="note">Gold appears here only as a hairline and a mark, never as a field of colour on light. That rationing is what makes the seal read as a seal.</p>
+        </div>
+
+        <!-- pick: MOTION-PATTERNS.md #17 Underline-grow (00-globals/motion/menu.md §3) | considered: #18 Color-shift, #19 Highlight-sweep | why: the link is a ruled element like everything else here, so its hover should DRAW a rule rather than repaint the word, and a 2px rule growing from the left over the resting hairline is the same gesture as the clause rule in the motif, which makes one idea do two jobs; #18 changes only colour and would leave a ruled document with no motion signature at all, and #19's highlighter sweep is a warm editorial device that would read as marketing on a contract. -->
+        <div class="at__group">
+          <span class="at__lab">Text link</span>
+          <p class="body-spec">Read <a class="at-link" href="#terms">what the contract actually says</a> before anything else.</p>
+          <p class="body-spec">Hover state, held: <a class="at-link is-hover" href="#terms">what the contract actually says</a></p>
+          <p class="note">The resting rule sits at 1&nbsp;px in the line colour; the hover rule is 2&nbsp;px in the link's own colour, grown from the left on the one easing curve this sheet uses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- pick: DATAVIZ-SECTIONS.md #10 Compact KPI strip (dense single-row metrics) (10-structure-library/sections/dataviz/menu.md) | considered: #3 Horizontal ranked bars (pill tracks), #5 Sparkline list | why: what this brand actually owns is a CADENCE rather than a metric, so the only thing taken from entry ten is its dense single-row structure, twelve equal cells on one baseline, and the occupant is deliberately refused: no number, no client history, no ranking, which keeps the oversized-numeral craft while dropping the unbacked-total shape the category's critic teaches buyers to look for. #3's ranked pill tracks would draw a league table and #5's sparklines would imply a trend nobody has evidenced, and either would turn an honest diagram into fabricated proof. -->
+  <section class="spec rise" style="--i:4">
+    <div class="spec__no"><span class="spec__num">05</span><span class="spec__tick" aria-hidden="true"></span></div>
+    <div class="spec__body">
+      <div class="spec__hd">
+        <p class="eyebrow">Clause five</p>
+        <h2 class="spec__title">The clause rule</h2>
+        <p class="lead readw">The signature motif, isolated, with its construction legible. A single hairline baseline carries one tick per monthly assessment; the assessed month is a taller purple tick with a square node; the rule terminates in a solid gold segment and a square seal. It is drawn, never iconified, and it illustrates the mechanic without reporting anybody's history.</p>
+      </div>
+
+      <div class="mo__draw">
+        <svg viewBox="0 0 880 200" role="img" aria-label="Construction drawing of the clause rule: a hairline baseline with twelve monthly ticks, one taller purple assessed-month tick with a square node, terminating in a solid gold segment and a square seal.">
+          <g stroke="var(--ds-line)" stroke-width="1" opacity="0.6">
+            <line x1="60" y1="30" x2="60" y2="176"/>
+            <line x1="820" y1="30" x2="820" y2="176"/>
+          </g>
+          <line x1="60" y1="120" x2="740" y2="120" stroke="var(--ds-ink-heading)" stroke-width="1.5"/>
+          <g stroke="var(--ds-line)" stroke-width="2">
+            <line x1="60"  y1="120" x2="60"  y2="104"/>
+            <line x1="122" y1="120" x2="122" y2="104"/>
+            <line x1="184" y1="120" x2="184" y2="104"/>
+            <line x1="308" y1="120" x2="308" y2="104"/>
+            <line x1="370" y1="120" x2="370" y2="104"/>
+            <line x1="432" y1="120" x2="432" y2="104"/>
+            <line x1="494" y1="120" x2="494" y2="104"/>
+            <line x1="556" y1="120" x2="556" y2="104"/>
+            <line x1="618" y1="120" x2="618" y2="104"/>
+            <line x1="680" y1="120" x2="680" y2="104"/>
+            <line x1="740" y1="120" x2="740" y2="104"/>
+          </g>
+          <line x1="246" y1="120" x2="246" y2="62" stroke="var(--ds-primary)" stroke-width="3"/>
+          <rect x="240" y="56" width="12" height="12" fill="var(--ds-primary)"/>
+          <line x1="740" y1="120" x2="800" y2="120" stroke="var(--ds-accent)" stroke-width="4"/>
+          <rect x="800" y="110" width="20" height="20" fill="var(--ds-accent)"/>
+          <g stroke="var(--ds-ink-soft)" stroke-width="1" stroke-dasharray="3 3">
+            <line x1="246" y1="52" x2="246" y2="34"/>
+            <line x1="810" y1="106" x2="810" y2="60"/>
+            <line x1="150" y1="130" x2="150" y2="160"/>
+            <line x1="400" y1="126" x2="400" y2="160"/>
+          </g>
+          <g fill="var(--ds-ink-soft)" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" letter-spacing="0.5">
+            <text x="246" y="26" text-anchor="middle">assessed month</text>
+            <text x="810" y="52" text-anchor="middle">the seal</text>
+            <text x="150" y="174" text-anchor="middle">monthly tick, 16px</text>
+            <text x="400" y="174" text-anchor="middle">clause baseline, 1.5px</text>
+          </g>
+          <g fill="var(--ds-primary)" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11">
+            <text x="54" y="192">01</text>
+            <text x="234" y="192">04</text>
+            <text x="732" y="192">12</text>
+          </g>
+        </svg>
+      </div>
+
+      <ul class="mo__key">
+        <li class="mo__keyrow">
+          <span class="mo__sw" aria-hidden="true"></span>
+          <span class="mo__keytxt"><b>--ds-line</b>The twelve monthly ticks. Equal weight, equal spacing: no month is more important than another.</span>
+        </li>
+        <li class="mo__keyrow">
+          <span class="mo__sw mo__sw--purple" aria-hidden="true"></span>
+          <span class="mo__keytxt"><b>--ds-primary</b>The assessed month, raised, with a square node. Purple is the structural accent, so it marks structure.</span>
+        </li>
+        <li class="mo__keyrow">
+          <span class="mo__sw mo__sw--gold" aria-hidden="true"></span>
+          <span class="mo__keytxt"><b>--ds-accent</b>The terminus and its square seal. Gold appears once, at the end, and is the smallest area of colour on the sheet.</span>
+        </li>
+      </ul>
+
+      <div class="mo__live">
+        <p class="micro-spec">The same motif, built in CSS at working scale</p>
+        <div class="mo__rule">
+          <span class="mo__tick"></span>
+          <span class="mo__tick"></span>
+          <span class="mo__tick"></span>
+          <span class="mo__tick mo__tick--now"></span>
+          <span class="mo__tick"></span>
+          <span class="mo__tick"></span>
+          <span class="mo__tick"></span>
+          <span class="mo__tick"></span>
+          <span class="mo__tick"></span>
+          <span class="mo__tick"></span>
+          <span class="mo__tick"></span>
+          <span class="mo__tick"></span>
+          <span class="mo__term"></span>
+        </div>
+        <p class="note readw">The rule scales to any width, needs no asset, and costs nothing to paint, which matters more here than on most brands, because prospects run a performance audit on this vendor's own site as basic due diligence.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- pick: CARD-VARIATIONS.md #8 Team bio card (photo + extended bio) (10-structure-library/cards/cards/menu.md) | considered: #7 Team photo card (full-bleed image + name overlay), #11 Testimonial with avatar circle + quote + name + stars | why: exactly ONE applied vignette is allowed and the honest thing to apply it to is the founder, whose imagery is a stated brand asset and the only rights-clear person on file, so entry eight's photo-plus-extended-copy shape is the right container at card scale, cut down to a specimen inset. #7 would need a full-bleed image and every founder file on disk is web resolution at most 571px wide, so it would have to be upscaled; #11 would put a testimonial in the vignette, which cannot ship because republishing a real client's rank claim is barred and inventing one is worse. -->
+  <section class="spec rise" style="--i:5">
+    <div class="spec__no"><span class="spec__num">06</span><span class="spec__tick" aria-hidden="true"></span></div>
+    <div class="spec__body">
+      <div class="spec__hd">
+        <p class="eyebrow">Clause six</p>
+        <h2 class="spec__title">One vignette</h2>
+        <p class="lead readw">A single small taste of the identity in use, mounted as a specimen rather than shown as a page. Everything inside it is an atom already defined above: the clause tag, the ruled type, the surface, the motif, the gold primary. Nothing new is invented at applied scale.</p>
+      </div>
+
+      <div class="vg__frame">
+        <div class="vg__panel">
+          <div class="vg__top">
+            <img class="vg__portrait" src="../../../../assets/seoguarantee.com_wp-content_themes_theme-child_images_james-approved.png" alt="James Sutton IV, founder of First Page SEO Guarantee." width="60" height="60" loading="lazy" decoding="async">
+            <div>
+              <p class="vg__name">James Sutton IV</p>
+              <p class="vg__role">Founder &middot; since 2015 &middot; Las Vegas</p>
+            </div>
+            <span class="at-tag at-tag--clause at-tag--right">CL 4.2</span>
+          </div>
+          <p class="vg__copy">We guarantee first page for the key phrases named in your contract, or you don't pay.</p>
+          <p class="vg__copy vg__copy--soft">Any month we're not delivering what your contract says, we keep working and your billing stops.</p>
+          <div class="mo__rule mo__rule--small">
+            <span class="mo__tick"></span>
+            <span class="mo__tick"></span>
+            <span class="mo__tick mo__tick--now"></span>
+            <span class="mo__tick"></span>
+            <span class="mo__tick"></span>
+            <span class="mo__tick"></span>
+            <span class="mo__term"></span>
+          </div>
+          <div class="vg__foot">
+            <button type="button" class="at-btn at-btn--gold">
+              Book a consultation
+              <svg width="13" height="10" viewBox="0 0 13 10" fill="none" aria-hidden="true"><path d="M8 1l4 4-4 4M12 5H0" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>
+            </button>
+            <span class="at-tag at-tag--pill">4.9 from 35 Google reviews</span>
+          </div>
+        </div>
+        <p class="vg__cap">VIGNETTE. The identity in use, one specimen only, mounted on the warm ground so the frame reads as a mount and not as a page section. The founder portrait is a real asset at web resolution, used at portrait-chip scale because that is the largest scale the file honestly supports.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="sheet__foot">
+    <div class="sheet__badge">Colophon</div>
+    <div>
+      <p class="eyebrow">What this sheet asserts, and what it does not</p>
+      <div class="colo__grid">
+        <div class="colo__group">
+          <p class="caps">Signature moves, and how each survives</p>
+          <ul class="colo__list">
+            <li><b>dark-hero</b> survives as the attested ground in clause two: a substantial hard-edged near-black block, not a chip.</li>
+            <li><b>dark-purple-chrome</b> survives as a real token, <span class="mono">--ds-primary-deep</span>, pushed from the measured mid purple down to a purple-tinted near-black.</li>
+            <li><b>gold-cta-band</b> survives as the band in clause four: a dark ground, one gold hairline at the top edge, and the primary itself as the gold surface. This concept rations gold hardest, so the survival is stated rather than assumed.</li>
+            <li><b>big-stat-bands</b> keeps its oversized-numeral craft in clause three; the occupant changes to owned numbers only.</li>
+            <li><b>founder-video-hero</b> survives as the portrait chip in the vignette, at the scale the surviving files honestly support.</li>
+          </ul>
+        </div>
+        <div class="colo__group">
+          <p class="caps">Owed, and stated plainly</p>
+          <div class="colo__owed">
+            <b>LOGO-VECTOR: NEEDS-OWNER.</b><br>
+            No vector mark exists in any supplied or scraped source. Every lockup on this sheet is typeset, and it remains the specification a vector would be drawn to.
+          </div>
+          <div class="colo__owed">
+            <b>PALETTE: PROPOSED, NOT RATIFIED.</b><br>
+            The white-dominant ground with purple and gold accents remains provisional and awaits confirmation against a rendered specimen. This sheet is that specimen. It is being proposed for ratification; it is not ratified.
+          </div>
+          <div class="colo__owed">
+            <b>ALSO OWED.</b><br>
+            Founder photography at retina or print resolution, and written permission for the client mockups and client logos, none of which appear here.
+          </div>
+        </div>
+        <div class="colo__group">
+          <p class="caps">Consulted</p>
+          <ul class="colo__list">
+            <li><b>_MODERN-WOW-SPEC</b> is the quality bar: depth, edges, figure and ground, motion, texture, type, light, detail, restraint.</li>
+            <li><b>_MODERN-DESIGN-PATTERN-LIBRARY</b> TOP-12 #3 two-stop ink-tinted shadow, #4 reveal with stagger, #10 eyebrow plus accent rule, #11 section rhythm with one near-black anchor.</li>
+            <li><b>composition-agency-creative</b> is the sector blueprint. Its technique ceiling and composition signature govern the atoms and the motif; its fifteen-slot page spine is deliberately NOT built, because this is an identity sheet.</li>
+            <li><b>BRAND-TOKEN-SCHEMA.md</b>, the required token shape, emitted in full in the linked sheet.</li>
+            <li><b>GLOBALS-OVERLAY-SPEC.md</b>, the fifteen globals, locked once, here.</li>
+            <li>Per-block menu picks are recorded as ledger comments in this file's source, immediately above each clause.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note readw">No price appears anywhere on this sheet, no client is named, no client or press logo appears, no percentage or success rate is stated, no ranking position is claimed, and no scarcity device is used. The terminology is the contracted terminology: first page, key phrases, the guarantee.</p>
+    </div>
+  </div>
+</main>
+
+<script>
+/* ONE gesture for the whole sheet: a short fade plus a small rise, on one curve,
+   with a small sibling stagger. Nothing is hidden before JS runs, and nothing is
+   hidden at all when the reader prefers reduced motion. */
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) return;
+  document.documentElement.classList.add('js-rise');
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
+  document.querySelectorAll('.rise').forEach(function (el) { io.observe(el); });
+})();
+</script>
+</body>
+</html>
